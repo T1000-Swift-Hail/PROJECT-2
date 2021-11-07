@@ -5,17 +5,20 @@
 
 
 ### Project : 
-//Add project name
+ *Electronic accessories store *
 
 ### Project Description :
-// Add your project description
+ A store specializing in electronics such as phones, computers, smart watches  ، and headphones and chargers
+
+It serves the customer in a quick search for a product he wants to buy and choose the right price and preferred method of shipping for him
 
 
 ### Features List :
-// Add your project features list
-- feature 1
-- feature 2
 
+- feature 1
+The arrival of the product to the site and its return in the event of defects or errors
+- feature 2
+Express delivery to the site
 
 ### Define the scenes :
 // Add description of the screens / scenes in your application.
