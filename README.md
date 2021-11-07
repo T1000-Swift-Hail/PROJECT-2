@@ -5,25 +5,34 @@
 
 
 ### Project : 
-//Add project name
+Home Services
 
 ### Project Description :
-// Add your project description
-
+Home Services is the app for all you needs in your home . You can find all home manitenance services and home service in one application . is your fast and reliable solution . You can select what you need, and we'll connect you  with the right service provider .
 
 ### Features List :
-// Add your project features list
-- feature 1
-- feature 2
+
+- One App have all services in home .
+- The App have services Electrical , Air Conditioning , plumbing , Cleaning , Satellite , Cameras .
+- The App have list for any services can choose .
+- The user can see the order he choosing .
+- The user can add phone number and passward and Address to have the service .
+
 
 
 ### Define the scenes :
-// Add description of the screens / scenes in your application.
+
+- login : Phone number , passward , Address .
+- Servicse .
+- Order .
+
 
 
 ### User Stories :
-// Add user stories here.   
-
+- The user have login and add number and passward and Adress .
+- The user can see the servicse and chosing any servicse he want .
+- After the user chosing he can see the list for competent service to the service .
+- The user can see all servicse he choosing in order .
 
 
 
