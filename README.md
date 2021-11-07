@@ -5,16 +5,18 @@
 
 
 ### Project : 
-//Add project name
+Metalic
+
 
 ### Project Description :
-// Add your project description
-
+An app present servise for Custumers and company to order and calculate types of metal works. the factory app has as versuion 1 a few product and difinition  and has calculator for gear ratio 
 
 ### Features List :
-// Add your project features list
-- feature 1
-- feature 2
+- Defination the product
+- calculation
+- log in user 
+- sign up user 
+- list all product 
 
 
 ### Define the scenes :
