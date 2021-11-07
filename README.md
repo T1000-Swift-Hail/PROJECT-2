@@ -5,20 +5,20 @@
 
 
 ### Project : 
-//Add project name
+// Supporter 
 
 ### Project Description :
-// Add your project description
+// It is a platform for matches tackits 
 
 
 ### Features List :
 // Add your project features list
-- feature 1
-- feature 2
-
+- 1 Help the user from the black market
+- 2 Easy to use
+- 3 
 
 ### Define the scenes :
-// Add description of the screens / scenes in your application.
+// First page about the user name  / scenes in your application.
 
 
 ### User Stories :
