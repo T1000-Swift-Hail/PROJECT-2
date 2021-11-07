@@ -5,17 +5,16 @@
 
 
 ### Project : 
-//Add project name
+Project name :My Tasks ...
 
 ### Project Description :
-// Add your project description
-
+To-do list management apps allow you to perform operations more efficiently. These apps enable you to drag and drop tasks to reorder them .
 
 ### Features List :
-// Add your project features list
-- feature 1
-- feature 2
 
+- feature 1 : easy to use.
+- feature 2 : Tasks are added and organized quickly.
+_ feature 3 :The application is very flexible.
 
 ### Define the scenes :
 // Add description of the screens / scenes in your application.
