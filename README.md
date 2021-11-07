@@ -1,30 +1,41 @@
 # PROJECT-2
 
-### Based on what you’ve learned until now , create a project of your choosing (impress us with your imagination).
-### Edit this README.md file with your Project info.
 
 
 ### Project : 
-//Add project name
+library free
 
 ### Project Description :
-// Add your project description
-
+Online library for free reading
+  Allows users to read and download different books
 
 ### Features List :
-// Add your project features list
-- feature 1
-- feature 2
 
+- feature 1 User can login with username and password
+- feature 2 The application allows the user to search all categories of books available in the library
+
+- feature 3 The application allows the user to search by the names of books and books with the highest rating
+
+- feature 4 The application allows the user to download and read books
+ 
 
 ### Define the scenes :
-// Add description of the screens / scenes in your application.
+The scenes in my progect has
+- home
+- log in
+- categories
+- List of all books and top rated books
 
 
 ### User Stories :
-// Add user stories here.   
+- To use the application, the user must register by logging in with the user name and password.
+
+- The user can search all categories of books available in the library
+
+- User can view top rated books
+
+- User can view the most downloaded books
+
+- User can download and read the books 
 
 
-
-
-#### Deadline for this project :  Deliver the project by 9:00 a.m. next Thursday Nov. 11, 2021 
