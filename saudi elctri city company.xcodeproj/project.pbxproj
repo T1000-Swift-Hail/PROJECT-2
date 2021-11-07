@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B4F05A02736F0600050C801 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F059F2736F0600050C801 /* AppDelegate.swift */; };
+		0B4F05A22736F0600050C801 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F05A12736F0600050C801 /* SceneDelegate.swift */; };
+		0B4F05A42736F0600050C801 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F05A32736F0600050C801 /* ViewController.swift */; };
+		0B4F05A72736F0600050C801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4F05A52736F0600050C801 /* Main.storyboard */; };
+		0B4F05AC2736F0610050C801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4F05AA2736F0610050C801 /* LaunchScreen.storyboard */; };
+		0B4F05B72736F0610050C801 /* saudi_elctri_city_companyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F05B62736F0610050C801 /* saudi_elctri_city_companyTests.swift */; };
+		0B4F05C12736F0610050C801 /* saudi_elctri_city_companyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F05C02736F0610050C801 /* saudi_elctri_city_companyUITests.swift */; };
+		0B4F05C32736F0610050C801 /* saudi_elctri_city_companyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F05C22736F0610050C801 /* saudi_elctri_city_companyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B4F05B32736F0610050C801 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B4F05942736F0600050C801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B4F059B2736F0600050C801;
+			remoteInfo = "saudi elctri city company";
+		};
+		0B4F05BD2736F0610050C801 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B4F05942736F0600050C801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B4F059B2736F0600050C801;
+			remoteInfo = "saudi elctri city company";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B4F059C2736F0600050C801 /* saudi elctri city company.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "saudi elctri city company.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B4F059F2736F0600050C801 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B4F05A12736F0600050C801 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0B4F05A32736F0600050C801 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B4F05A62736F0600050C801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B4F05AB2736F0610050C801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B4F05AD2736F0610050C801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B4F05B22736F0610050C801 /* saudi elctri city companyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "saudi elctri city companyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B4F05B62736F0610050C801 /* saudi_elctri_city_companyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saudi_elctri_city_companyTests.swift; sourceTree = "<group>"; };
+		0B4F05BC2736F0610050C801 /* saudi elctri city companyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "saudi elctri city companyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B4F05C02736F0610050C801 /* saudi_elctri_city_companyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saudi_elctri_city_companyUITests.swift; sourceTree = "<group>"; };
+		0B4F05C22736F0610050C801 /* saudi_elctri_city_companyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saudi_elctri_city_companyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B4F05992736F0600050C801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B4F05AF2736F0610050C801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B4F05B92736F0610050C801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B4F05932736F0600050C801 = {
+			isa = PBXGroup;
+			children = (
+				0B4F059E2736F0600050C801 /* saudi elctri city company */,
+				0B4F05B52736F0610050C801 /* saudi elctri city companyTests */,
+				0B4F05BF2736F0610050C801 /* saudi elctri city companyUITests */,
+				0B4F059D2736F0600050C801 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B4F059D2736F0600050C801 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B4F059C2736F0600050C801 /* saudi elctri city company.app */,
+				0B4F05B22736F0610050C801 /* saudi elctri city companyTests.xctest */,
+				0B4F05BC2736F0610050C801 /* saudi elctri city companyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B4F059E2736F0600050C801 /* saudi elctri city company */ = {
+			isa = PBXGroup;
+			children = (
+				0B4F059F2736F0600050C801 /* AppDelegate.swift */,
+				0B4F05A12736F0600050C801 /* SceneDelegate.swift */,
+				0B4F05A32736F0600050C801 /* ViewController.swift */,
+				0B4F05A52736F0600050C801 /* Main.storyboard */,
+				0B4F05AA2736F0610050C801 /* LaunchScreen.storyboard */,
+				0B4F05AD2736F0610050C801 /* Info.plist */,
+			);
+			path = "saudi elctri city company";
+			sourceTree = "<group>";
+		};
+		0B4F05B52736F0610050C801 /* saudi elctri city companyTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B4F05B62736F0610050C801 /* saudi_elctri_city_companyTests.swift */,
+			);
+			path = "saudi elctri city companyTests";
+			sourceTree = "<group>";
+		};
+		0B4F05BF2736F0610050C801 /* saudi elctri city companyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B4F05C02736F0610050C801 /* saudi_elctri_city_companyUITests.swift */,
+				0B4F05C22736F0610050C801 /* saudi_elctri_city_companyUITestsLaunchTests.swift */,
+			);
+			path = "saudi elctri city companyUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B4F059B2736F0600050C801 /* saudi elctri city company */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B4F05C62736F0610050C801 /* Build configuration list for PBXNativeTarget "saudi elctri city company" */;
+			buildPhases = (
+				0B4F05982736F0600050C801 /* Sources */,
+				0B4F05992736F0600050C801 /* Frameworks */,
+				0B4F059A2736F0600050C801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "saudi elctri city company";
+			productName = "saudi elctri city company";
+			productReference = 0B4F059C2736F0600050C801 /* saudi elctri city company.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B4F05B12736F0610050C801 /* saudi elctri city companyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B4F05C92736F0610050C801 /* Build configuration list for PBXNativeTarget "saudi elctri city companyTests" */;
+			buildPhases = (
+				0B4F05AE2736F0610050C801 /* Sources */,
+				0B4F05AF2736F0610050C801 /* Frameworks */,
+				0B4F05B02736F0610050C801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B4F05B42736F0610050C801 /* PBXTargetDependency */,
+			);
+			name = "saudi elctri city companyTests";
+			productName = "saudi elctri city companyTests";
+			productReference = 0B4F05B22736F0610050C801 /* saudi elctri city companyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B4F05BB2736F0610050C801 /* saudi elctri city companyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B4F05CC2736F0610050C801 /* Build configuration list for PBXNativeTarget "saudi elctri city companyUITests" */;
+			buildPhases = (
+				0B4F05B82736F0610050C801 /* Sources */,
+				0B4F05B92736F0610050C801 /* Frameworks */,
+				0B4F05BA2736F0610050C801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B4F05BE2736F0610050C801 /* PBXTargetDependency */,
+			);
+			name = "saudi elctri city companyUITests";
+			productName = "saudi elctri city companyUITests";
+			productReference = 0B4F05BC2736F0610050C801 /* saudi elctri city companyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B4F05942736F0600050C801 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					0B4F059B2736F0600050C801 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					0B4F05B12736F0610050C801 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 0B4F059B2736F0600050C801;
+					};
+					0B4F05BB2736F0610050C801 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 0B4F059B2736F0600050C801;
+					};
+				};
+			};
+			buildConfigurationList = 0B4F05972736F0600050C801 /* Build configuration list for PBXProject "saudi elctri city company" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B4F05932736F0600050C801;
+			productRefGroup = 0B4F059D2736F0600050C801 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B4F059B2736F0600050C801 /* saudi elctri city company */,
+				0B4F05B12736F0610050C801 /* saudi elctri city companyTests */,
+				0B4F05BB2736F0610050C801 /* saudi elctri city companyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B4F059A2736F0600050C801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B4F05AC2736F0610050C801 /* LaunchScreen.storyboard in Resources */,
+				0B4F05A72736F0600050C801 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B4F05B02736F0610050C801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B4F05BA2736F0610050C801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B4F05982736F0600050C801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B4F05A42736F0600050C801 /* ViewController.swift in Sources */,
+				0B4F05A02736F0600050C801 /* AppDelegate.swift in Sources */,
+				0B4F05A22736F0600050C801 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B4F05AE2736F0610050C801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B4F05B72736F0610050C801 /* saudi_elctri_city_companyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B4F05B82736F0610050C801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B4F05C12736F0610050C801 /* saudi_elctri_city_companyUITests.swift in Sources */,
+				0B4F05C32736F0610050C801 /* saudi_elctri_city_companyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B4F05B42736F0610050C801 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B4F059B2736F0600050C801 /* saudi elctri city company */;
+			targetProxy = 0B4F05B32736F0610050C801 /* PBXContainerItemProxy */;
+		};
+		0B4F05BE2736F0610050C801 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B4F059B2736F0600050C801 /* saudi elctri city company */;
+			targetProxy = 0B4F05BD2736F0610050C801 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B4F05A52736F0600050C801 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B4F05A62736F0600050C801 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0B4F05AA2736F0610050C801 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B4F05AB2736F0610050C801 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B4F05C42736F0610050C801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0B4F05C52736F0610050C801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B4F05C72736F0610050C801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "saudi elctri city company/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.saudi-elctri-city-company";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B4F05C82736F0610050C801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "saudi elctri city company/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.saudi-elctri-city-company";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0B4F05CA2736F0610050C801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.saudi-elctri-city-companyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/saudi elctri city company.app/saudi elctri city company";
+			};
+			name = Debug;
+		};
+		0B4F05CB2736F0610050C801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.saudi-elctri-city-companyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/saudi elctri city company.app/saudi elctri city company";
+			};
+			name = Release;
+		};
+		0B4F05CD2736F0610050C801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.saudi-elctri-city-companyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "saudi elctri city company";
+			};
+			name = Debug;
+		};
+		0B4F05CE2736F0610050C801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.saudi-elctri-city-companyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "saudi elctri city company";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B4F05972736F0600050C801 /* Build configuration list for PBXProject "saudi elctri city company" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B4F05C42736F0610050C801 /* Debug */,
+				0B4F05C52736F0610050C801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B4F05C62736F0610050C801 /* Build configuration list for PBXNativeTarget "saudi elctri city company" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B4F05C72736F0610050C801 /* Debug */,
+				0B4F05C82736F0610050C801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B4F05C92736F0610050C801 /* Build configuration list for PBXNativeTarget "saudi elctri city companyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B4F05CA2736F0610050C801 /* Debug */,
+				0B4F05CB2736F0610050C801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B4F05CC2736F0610050C801 /* Build configuration list for PBXNativeTarget "saudi elctri city companyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B4F05CD2736F0610050C801 /* Debug */,
+				0B4F05CE2736F0610050C801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B4F05942736F0600050C801 /* Project object */;
+}
