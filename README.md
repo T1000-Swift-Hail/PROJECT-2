@@ -1,30 +1,27 @@
 # PROJECT-2
 
-### Based on what you’ve learned until now , create a project of your choosing (impress us with your imagination).
-### Edit this README.md file with your Project info.
-
-
-### Project : 
-//Add project name
+### Project Name : 
+My Perfume
 
 ### Project Description :
-// Add your project description
+An online store that offers the best perfumes of all kinds from international brands. The store has two main users: the admin and the customer.
 
 
-### Features List :
-// Add your project features list
-- feature 1
-- feature 2
+###project Features List :
+- It gives the user many different Perfumes options
+- Supports Arabic and English languages
 
 
 ### Define the scenes :
-// Add description of the screens / scenes in your application.
+- Products interface: Show product "perfumes" types.
+- login interface: The customer enters his email and password. 
+
 
 
 ### User Stories :
-// Add user stories here.   
+- The customer is allowed to "log in" to the store using email and password .
+- Allows the customer to browse the perfumes and see the prices.
 
 
 
 
-#### Deadline for this project :  Deliver the project by 9:00 a.m. next Thursday Nov. 11, 2021 
