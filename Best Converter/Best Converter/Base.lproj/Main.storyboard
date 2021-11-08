@@ -26,7 +26,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Unit" titleAlignment="center">
                                             <fontDescription key="titleFontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="25"/>
-                                            <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -41,7 +41,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Currency" titleAlignment="center">
                                             <fontDescription key="titleFontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="25"/>
-                                            <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -74,15 +74,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="bIL-K8-1fn">
-                                <rect key="frame" x="20" y="233" width="374" height="210"/>
+                                <rect key="frame" x="20" y="343" width="374" height="210"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unit Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ws-9M-KAI">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the unit in meter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ws-9M-KAI">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
                                         <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qrc-1C-eJF">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0 m" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qrc-1C-eJF">
                                         <rect key="frame" x="0.0" y="55" width="374" height="34"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -95,14 +95,15 @@
                                         <rect key="frame" x="0.0" y="124" width="374" height="32"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <segments>
-                                            <segment title="m"/>
                                             <segment title="km"/>
+                                            <segment title="cm"/>
+                                            <segment title="inch"/>
                                         </segments>
                                         <connections>
                                             <action selector="segmentUnitAction:" destination="xuD-4j-v30" eventType="valueChanged" id="Unv-kZ-Bn1"/>
                                         </connections>
                                     </segmentedControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6h2-9c-rDw">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6h2-9c-rDw">
                                         <rect key="frame" x="0.0" y="190" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
                                         <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -126,10 +127,12 @@
                         <constraints>
                             <constraint firstItem="rnT-Rz-Das" firstAttribute="trailing" secondItem="bIL-K8-1fn" secondAttribute="trailing" constant="20" id="3FV-fL-fE7"/>
                             <constraint firstItem="bIL-K8-1fn" firstAttribute="leading" secondItem="rnT-Rz-Das" secondAttribute="leading" constant="20" id="69k-hz-vrg"/>
-                            <constraint firstItem="bIL-K8-1fn" firstAttribute="top" secondItem="rnT-Rz-Das" secondAttribute="top" constant="93" id="W9m-7y-dn1"/>
+                            <constraint firstItem="bIL-K8-1fn" firstAttribute="top" secondItem="rnT-Rz-Das" secondAttribute="top" constant="203" id="W9m-7y-dn1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Unit Conversion" id="9RK-GB-Lyu"/>
+                    <navigationItem key="navigationItem" title="Unit Conversion" id="9RK-GB-Lyu">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="bookmark" catalog="system" id="dh2-r1-MZK"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="segmentUnit" destination="gdF-BI-zse" id="Wgy-23-72h"/>
                         <outlet property="textFieldUnit" destination="qrc-1C-eJF" id="wPj-gl-tyB"/>
@@ -149,15 +152,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="1bk-sq-Ghq">
-                                <rect key="frame" x="20" y="233" width="374" height="210"/>
+                                <rect key="frame" x="20" y="343" width="374" height="210"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJS-b0-m88">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the currency in SAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJS-b0-m88">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
                                         <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Hk-la-Nrq">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0 SAR" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Hk-la-Nrq">
                                         <rect key="frame" x="0.0" y="55" width="374" height="34"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -170,14 +173,15 @@
                                         <rect key="frame" x="0.0" y="124" width="374" height="32"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <segments>
-                                            <segment title="SAR"/>
                                             <segment title="USD"/>
+                                            <segment title="ASD"/>
+                                            <segment title="Euru"/>
                                         </segments>
                                         <connections>
-                                            <action selector="egmentCurrencyAction:" destination="iYG-Yi-pus" eventType="valueChanged" id="pIT-xw-YEH"/>
+                                            <action selector="segmentCurrencyAction:" destination="iYG-Yi-pus" eventType="valueChanged" id="8Ol-sg-RcT"/>
                                         </connections>
                                     </segmentedControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 SAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9d-yr-y0c">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9d-yr-y0c">
                                         <rect key="frame" x="0.0" y="190" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
                                         <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -200,7 +204,7 @@
                         <color key="backgroundColor" red="0.84699999999999998" green="0.84699999999999998" blue="0.84699999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="4RX-5i-IZZ" firstAttribute="trailing" secondItem="1bk-sq-Ghq" secondAttribute="trailing" constant="20" id="A2U-eE-cIe"/>
-                            <constraint firstItem="1bk-sq-Ghq" firstAttribute="top" secondItem="4RX-5i-IZZ" secondAttribute="top" constant="93" id="PkL-dX-twb"/>
+                            <constraint firstItem="1bk-sq-Ghq" firstAttribute="top" secondItem="4RX-5i-IZZ" secondAttribute="top" constant="203" id="PkL-dX-twb"/>
                             <constraint firstItem="1bk-sq-Ghq" firstAttribute="leading" secondItem="4RX-5i-IZZ" secondAttribute="leading" constant="20" id="k1c-Z9-BUe"/>
                         </constraints>
                     </view>
@@ -236,21 +240,21 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="66.964285714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--History-->
         <scene sceneID="NdA-h3-7lW">
             <objects>
-                <viewController id="m9M-OO-XhK" sceneMemberID="viewController">
+                <viewController id="m9M-OO-XhK" customClass="HistoryViewController" customModule="Best_Converter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RBd-bR-4Aa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="ByC-Ql-6Nm"/>
                         <color key="backgroundColor" red="0.84699999999999998" green="0.84699999999999998" blue="0.84699999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xbv-5K-LDy"/>
+                    <navigationItem key="navigationItem" title="History" id="xbv-5K-LDy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8eG-3R-03M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="993" y="1227"/>
+            <point key="canvasLocation" x="992.75362318840587" y="1226.7857142857142"/>
         </scene>
         <!--Home-->
         <scene sceneID="PZo-n1-6QB">
@@ -275,11 +279,11 @@
             </objects>
             <point key="canvasLocation" x="1192.753623188406" y="66.964285714285708"/>
         </scene>
-        <!--Setting-->
+        <!--History-->
         <scene sceneID="LCR-dw-yw4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W5Q-pQ-VRh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Setting" image="gearshape" catalog="system" selectedImage="gearshape.fill" id="pvQ-jB-Sq2"/>
+                    <tabBarItem key="tabBarItem" title="History" image="clock" catalog="system" selectedImage="clock.fill" id="pvQ-jB-Sq2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="71j-eR-UEl">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -299,8 +303,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gearshape" catalog="system" width="128" height="121"/>
-        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
     </resources>

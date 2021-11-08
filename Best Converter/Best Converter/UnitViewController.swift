@@ -9,13 +9,14 @@ import UIKit
 import Foundation
 
 enum ConversionUnit {
-    case m
+    case cm
     case km
+    case inch
 }
 
 class UnitViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
-    var conversionUnit = ConversionUnit.m
+    var conversionUnit = ConversionUnit.cm
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,23 +39,26 @@ class UnitViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
         
         switch segmentUnit.selectedSegmentIndex {
         case 0:
-            conversionUnit = .m
+            conversionUnit = .km
             unitLabel.text = "0.0 km"
         case 1:
-            conversionUnit = .km
-            unitLabel.text = "0.0 m"
+            conversionUnit = .cm
+            unitLabel.text = "0.0 cm"
         default:
-            conversionUnit = .m
-            unitLabel.text = "0.0 km"
+            conversionUnit = .inch
+            unitLabel.text = "0.0 inch"
         }
         
     }
     
-    func convertToM( kilometer: Double) -> Double {
-        return kilometer * 1000
-    }
     func convertToKm( meter: Double) -> Double {
         return meter * 0.001
+    }
+    func convertToCm( meter: Double) -> Double {
+        return meter * 100
+    }
+    func convertToInch( meter: Double) -> Double {
+        return meter * 39.370078740157
     }
     
     
@@ -64,12 +68,15 @@ class UnitViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
         let amountUnit = Double(textFieldUnit.text ?? "0.0") ?? 0.0
         
         switch conversionUnit {
-        case .m:
-            let convertedValue = convertToM(kilometer: amountUnit)
-            unitLabel.text = "\(String (format: "%.4f", convertedValue)) km"
         case .km:
-            let convertedValue = convertToKm(meter: amountUnit)
-            unitLabel.text = "\(String (format: "%.4f", convertedValue)) m"
+            let convertedValue = convertToKm(meter:amountUnit)
+            unitLabel.text = "\(String (format: "%.2f", convertedValue)) km"
+        case .cm:
+            let convertedValue = convertToCm(meter: amountUnit)
+            unitLabel.text = "\(String (format: "%.2f", convertedValue)) cm"
+        case .inch:
+            let convertedValue = convertToInch(meter: amountUnit)
+            unitLabel.text = "\(String (format: "%.2f", convertedValue)) inch"
         }
     }
     

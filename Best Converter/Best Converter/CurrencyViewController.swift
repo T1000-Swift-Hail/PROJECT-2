@@ -9,13 +9,14 @@ import UIKit
 import Foundation
 
 enum ConversionCurrency {
-    case SAR
+    case ASD
     case USD
+    case Euru
 }
 
 class CurrencyViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
 
-    var conversionCurrency = ConversionCurrency.SAR
+    var conversionCurrency = ConversionCurrency.USD
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,27 +32,33 @@ class CurrencyViewController: UIViewController, UITextFieldDelegate, UITextViewD
     @IBOutlet weak var currencyLabel: UILabel!
     @IBOutlet weak var textFieldCurrency: UITextField!
     @IBOutlet weak var segmentCurrency: UISegmentedControl!
-    @IBAction func egmentCurrencyAction(_ sender: UISegmentedControl) {
+    @IBAction func segmentCurrencyAction(_ sender: UISegmentedControl) {
         
         textFieldCurrency.text = ""
         switch segmentCurrency.selectedSegmentIndex {
         case 0:
-            conversionCurrency = .SAR
+            conversionCurrency = .USD
             currencyLabel.text = "0.0 USD"
         case 1:
-            conversionCurrency = .USD
-            currencyLabel.text = "0.0 SAR"
+            conversionCurrency = .ASD
+            currencyLabel.text = "0.0 ASD"
+        case 2:
+            conversionCurrency = .Euru
+            currencyLabel.text = "0.0 Euru"
         default:
-            conversionCurrency = .SAR
+            conversionCurrency = .USD
             currencyLabel.text = "0.0 USD"
         }
     }
     
-    func convertToSar( usd: Double) -> Double {
-        return usd / 3.75
-    }
     func convertToUsd( sar: Double) -> Double {
-        return sar * 3.75
+        return sar * 3.75000
+    }
+    func convertToAsd( sar: Double) -> Double {
+        return sar * 2.77579
+    }
+    func convertToEuru( sar: Double) -> Double {
+        return sar * 4.33426
     }
     
     
@@ -60,13 +67,17 @@ class CurrencyViewController: UIViewController, UITextFieldDelegate, UITextViewD
         let amountCurrency = Double(textFieldCurrency.text ?? "0.0") ?? 0.0
         
         switch conversionCurrency {
-        case .SAR:
-            let convertedCurrency = convertToSar(usd: amountCurrency)
-            currencyLabel.text = "\(String(format: "%.4f", convertedCurrency)) USD"
-            
         case .USD:
             let convertedCurrency = convertToUsd(sar: amountCurrency)
-            currencyLabel.text = "\(String(format: "%.4f", convertedCurrency)) SAR"
+            currencyLabel.text = "\(String(format: "%.2f", convertedCurrency)) USD"
+            
+        case .ASD:
+            let convertedCurrency = convertToAsd(sar: amountCurrency)
+            currencyLabel.text = "\(String(format: "%.2f", convertedCurrency)) ASD"
+            
+        case .Euru:
+            let convertedCurrency = convertToAsd(sar: amountCurrency)
+            currencyLabel.text = "\(String(format: "%.2f", convertedCurrency)) Euru"
         }
     }
     
