@@ -1,0 +1,90 @@
+
+/* Class = "UITextField"; placeholder = "Passowrd"; ObjectID = "Etf-JN-Czh"; */
+"Etf-JN-Czh.placeholder" = "Passowrd";
+
+/* Class = "UILabel"; text = "This is an online international brands have the following brands................................."; ObjectID = "GCo-Dr-Zz6"; */
+"GCo-Dr-Zz6.text" = "This is an online international brands have the following brands.................................";
+
+/* Class = "UIButton"; configuration.title = "About Internationl Brands"; ObjectID = "Hjy-4F-W4g"; */
+"Hjy-4F-W4g.configuration.title" = "About Internationl Brands";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Hjy-4F-W4g"; */
+"Hjy-4F-W4g.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Sginup"; ObjectID = "IhC-lu-PoN"; */
+"IhC-lu-PoN.configuration.title" = "Sginup";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "IhC-lu-PoN"; */
+"IhC-lu-PoN.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "LvQ-eE-El3"; */
+"LvQ-eE-El3.placeholder" = "Phone Number";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "Nw0-k4-QuR"; */
+"Nw0-k4-QuR.title" = "Home";
+
+/* Class = "UITextField"; placeholder = "Address"; ObjectID = "OUx-1m-D6B"; */
+"OUx-1m-D6B.placeholder" = "Address";
+
+/* Class = "UIButton"; configuration.title = " "; ObjectID = "QVG-Gw-OMO"; */
+"QVG-Gw-OMO.configuration.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "QVG-Gw-OMO"; */
+"QVG-Gw-OMO.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Middle Name"; ObjectID = "SJM-XJ-l6r"; */
+"SJM-XJ-l6r.placeholder" = "Middle Name";
+
+/* Class = "UITextField"; placeholder = "User Name"; ObjectID = "UC5-d0-cJE"; */
+"UC5-d0-cJE.placeholder" = "User Name";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "UoG-HX-fVZ"; */
+"UoG-HX-fVZ.placeholder" = "Last Name";
+
+/* Class = "UILabel"; text = "Email: Aabdoalaziz1@gmail.com Phone Namber: +996 553167998"; ObjectID = "W0r-3b-ITM"; */
+"W0r-3b-ITM.text" = "Email: Aabdoalaziz1@gmail.com Phone Namber: +996 553167998";
+
+/* Class = "UILabel"; text = "Registeration"; ObjectID = "aue-fD-8M1"; */
+"aue-fD-8M1.text" = "Registeration";
+
+/* Class = "UITableViewSection"; headerTitle = "Section-2"; ObjectID = "dw2-GS-TBn"; */
+"dw2-GS-TBn.headerTitle" = "Section-2";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "eIk-uK-nbi"; */
+"eIk-uK-nbi.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "SignUp"; ObjectID = "eee-0U-GdL"; */
+"eee-0U-GdL.configuration.title" = "SignUp";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "eee-0U-GdL"; */
+"eee-0U-GdL.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Cart"; ObjectID = "fh8-Kn-YlF"; */
+"fh8-Kn-YlF.title" = "Cart";
+
+/* Class = "UITabBarItem"; title = "Cart"; ObjectID = "iWb-CE-XKI"; */
+"iWb-CE-XKI.title" = "Cart";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "lDF-Og-SsG"; */
+"lDF-Og-SsG.placeholder" = "Email";
+
+/* Class = "UITableViewSection"; headerTitle = "Section-1"; ObjectID = "nxa-Wz-k1e"; */
+"nxa-Wz-k1e.headerTitle" = "Section-1";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "pff-Vw-hqy"; */
+"pff-Vw-hqy.title" = "Profile";
+
+/* Class = "UIButton"; configuration.title = "contact Us"; ObjectID = "tG8-pq-jgU"; */
+"tG8-pq-jgU.configuration.title" = "contact Us";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tG8-pq-jgU"; */
+"tG8-pq-jgU.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "uZT-Uz-6lh"; */
+"uZT-Uz-6lh.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uZT-Uz-6lh"; */
+"uZT-Uz-6lh.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "First name"; ObjectID = "zeT-oQ-FrB"; */
+"zeT-oQ-FrB.placeholder" = "First name";

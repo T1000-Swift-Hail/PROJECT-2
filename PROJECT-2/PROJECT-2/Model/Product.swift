@@ -27,11 +27,11 @@ enum SizeTypes: String {
 
 struct Product {
     
-    var productname: String
+    var productName: String
     var price:Int
     var quantity : Int
-    var productsize : SizeTypes
-    var productcolor: String
-    var Category:BrandType
-    var sectionofproduct:[Int:String]
+    var productSize : SizeTypes
+    var productColor: String
+   // var category:BrandType
+  //  var sectionOfProduct:[Int:String]
 }

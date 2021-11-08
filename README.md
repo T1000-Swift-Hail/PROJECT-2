@@ -8,21 +8,29 @@
 Online shopping internationals brands
 
 ### Project Description :
-// Add your project description
+the project aim to create an online shopping brands app using what I have learned throughout swift.
 
 
 ### Features List :
-// Add your project features list
-- feature 1
-- feature 2
+- login screen 
+- Sginup screen
+- Home screen
+- add to cart
+-  profile screen
+- contact screen
+- about online shopping brands
 
 
 ### Define the scenes :
-// Add description of the screens / scenes in your application.
+-login screen contains username and password
+- sginup screen to register as coustomer
+- Home Screen has prodects of clothing 
+- add to cart screen
+- prfile screen has the following the contact info for the app, about online shopping brands.
 
 
 ### User Stories :
-// Add user stories here.   
+As a coustomer I want the coustomer to be able to login or sginup sothat he can be able to view products or add products to the shopping cart to check products out.  
 
 
 

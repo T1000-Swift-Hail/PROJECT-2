@@ -7,31 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04BE4D5D27394BC700A1ABD8 /* SginUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE4D5C27394BC700A1ABD8 /* SginUpViewController.swift */; };
 		04EEC58E2737B121005321B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEC58D2737B121005321B9 /* AppDelegate.swift */; };
 		04EEC5902737B121005321B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEC58F2737B121005321B9 /* SceneDelegate.swift */; };
-		04EEC5922737B121005321B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEC5912737B121005321B9 /* ViewController.swift */; };
+		04EEC5922737B121005321B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEC5912737B121005321B9 /* LoginViewController.swift */; };
 		04EEC5952737B121005321B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EEC5932737B121005321B9 /* Main.storyboard */; };
 		04EEC5972737B124005321B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EEC5962737B124005321B9 /* Assets.xcassets */; };
 		04EEC59A2737B124005321B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EEC5982737B124005321B9 /* LaunchScreen.storyboard */; };
-		04EEC5A22737FCEC005321B9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEC5A12737FCEC005321B9 /* User.swift */; };
 		04EEC5A62737FF97005321B9 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEC5A52737FF97005321B9 /* Customer.swift */; };
 		04EEC5AA27380021005321B9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEC5A927380021005321B9 /* Product.swift */; };
-		04EEC5AC273803DE005321B9 /* SginUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEC5AB273803DE005321B9 /* SginUpViewController.swift */; };
+		04EEC5B127390905005321B9 /* ListofbrandsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEC5B027390905005321B9 /* ListofbrandsTableViewController.swift */; };
+		04EEC5B32739182C005321B9 /* Listofproductcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEC5B22739182C005321B9 /* Listofproductcell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04BE4D5C27394BC700A1ABD8 /* SginUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SginUpViewController.swift; sourceTree = "<group>"; };
 		04EEC58A2737B121005321B9 /* PROJECT-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PROJECT-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EEC58D2737B121005321B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04EEC58F2737B121005321B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04EEC5912737B121005321B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04EEC5912737B121005321B9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04EEC5942737B121005321B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04EEC5962737B124005321B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04EEC5992737B124005321B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04EEC59B2737B125005321B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04EEC5A12737FCEC005321B9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		04EEC5A52737FF97005321B9 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		04EEC5A927380021005321B9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		04EEC5AB273803DE005321B9 /* SginUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SginUpViewController.swift; sourceTree = "<group>"; };
+		04EEC5AF2738FE96005321B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		04EEC5B027390905005321B9 /* ListofbrandsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListofbrandsTableViewController.swift; sourceTree = "<group>"; };
+		04EEC5B22739182C005321B9 /* Listofproductcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listofproductcell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +48,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04BE4D5E273956CB00A1ABD8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04BE4D5C27394BC700A1ABD8 /* SginUpViewController.swift */,
+				04EEC5912737B121005321B9 /* LoginViewController.swift */,
+				04EEC5B027390905005321B9 /* ListofbrandsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		04EEC5812737B121005321B9 = {
 			isa = PBXGroup;
 			children = (
@@ -64,11 +77,10 @@
 		04EEC58C2737B121005321B9 /* PROJECT-2 */ = {
 			isa = PBXGroup;
 			children = (
+				04BE4D5E273956CB00A1ABD8 /* Controllers */,
 				04EEC5AD27380C3A005321B9 /* Model */,
 				04EEC58D2737B121005321B9 /* AppDelegate.swift */,
 				04EEC58F2737B121005321B9 /* SceneDelegate.swift */,
-				04EEC5912737B121005321B9 /* ViewController.swift */,
-				04EEC5AB273803DE005321B9 /* SginUpViewController.swift */,
 				04EEC5932737B121005321B9 /* Main.storyboard */,
 				04EEC5962737B124005321B9 /* Assets.xcassets */,
 				04EEC5982737B124005321B9 /* LaunchScreen.storyboard */,
@@ -80,9 +92,9 @@
 		04EEC5AD27380C3A005321B9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				04EEC5A12737FCEC005321B9 /* User.swift */,
 				04EEC5A52737FF97005321B9 /* Customer.swift */,
 				04EEC5A927380021005321B9 /* Product.swift */,
+				04EEC5B22739182C005321B9 /* Listofproductcell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,10 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04EEC5A22737FCEC005321B9 /* User.swift in Sources */,
+				04BE4D5D27394BC700A1ABD8 /* SginUpViewController.swift in Sources */,
 				04EEC5AA27380021005321B9 /* Product.swift in Sources */,
-				04EEC5AC273803DE005321B9 /* SginUpViewController.swift in Sources */,
-				04EEC5922737B121005321B9 /* ViewController.swift in Sources */,
+				04EEC5B127390905005321B9 /* ListofbrandsTableViewController.swift in Sources */,
+				04EEC5B32739182C005321B9 /* Listofproductcell.swift in Sources */,
+				04EEC5922737B121005321B9 /* LoginViewController.swift in Sources */,
 				04EEC5A62737FF97005321B9 /* Customer.swift in Sources */,
 				04EEC58E2737B121005321B9 /* AppDelegate.swift in Sources */,
 				04EEC5902737B121005321B9 /* SceneDelegate.swift in Sources */,
@@ -175,6 +188,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				04EEC5942737B121005321B9 /* Base */,
+				04EEC5AF2738FE96005321B9 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -313,6 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PZ7PQD6ZL3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PROJECT-2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -340,6 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PZ7PQD6ZL3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PROJECT-2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

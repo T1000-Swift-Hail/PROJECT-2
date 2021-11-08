@@ -6,13 +6,22 @@
 //
 
 import Foundation
-struct Customer:User{
+
+protocol User {
+    var userName :String {get}
+    var userPassword :Int {get}
+    
+}
+
+struct Customer: User {
     var userName: String
     var userPassword: Int
-    var FirstName: String
-    var MiddleName:String?
-    var LastName : String
-    var address:String
-    var ShoppingCart:[Product]?
+    var firstName: String?
+    var middleName:String?
+    var lastName : String?
+    var email:String?
+    var phoneNumber:Int?
+    var address:String?
+    var shoppingCart:[Product]?
     
 }
