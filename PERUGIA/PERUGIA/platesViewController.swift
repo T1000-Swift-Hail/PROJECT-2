@@ -6,9 +6,23 @@
 //
 
 import UIKit
+struct Plates{
+    var name :String
+    var pirce :String
+    var image :Int
+    var panelSize :String
+}
 
-class platesViewController: UIViewController {
 
+class PlatesViewController: UIViewController {
+
+    @IBAction func muralPaintings(_ sender: Any) {
+        let plate : [Plates] = [
+        Plates(name: "aryaf", pirce: "300SR", image: 1, panelSize: "60×90")]
+            
+        }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,5 +39,6 @@ class platesViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6003EB627384B6800E7C84E /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6003EB527384B6800E7C84E /* HomeTableViewCell.swift */; };
+		F60F29442739295D007641BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F60F29432739295C007641BE /* Assets.xcassets */; };
+		F60F2946273934EB007641BE /* SuppliesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F2945273934EB007641BE /* SuppliesTableViewCell.swift */; };
+		F60F294927393700007641BE /* SuppliesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F294827393700007641BE /* SuppliesViewController.swift */; };
 		F697F2AE2737C1C5002E68D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F697F2AD2737C1C5002E68D0 /* AppDelegate.swift */; };
 		F697F2B02737C1C5002E68D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F697F2AF2737C1C5002E68D0 /* SceneDelegate.swift */; };
 		F697F2B22737C1C5002E68D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F697F2B12737C1C5002E68D0 /* ViewController.swift */; };
 		F697F2B52737C1C5002E68D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F697F2B32737C1C5002E68D0 /* Main.storyboard */; };
-		F697F2B72737C1C6002E68D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F697F2B62737C1C6002E68D0 /* Assets.xcassets */; };
 		F697F2BA2737C1C6002E68D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F697F2B82737C1C6002E68D0 /* LaunchScreen.storyboard */; };
+		F6A0FC5B27384E7C00614955 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0FC5A27384E7C00614955 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6003EB527384B6800E7C84E /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		F60F29432739295C007641BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		F60F2945273934EB007641BE /* SuppliesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuppliesTableViewCell.swift; sourceTree = "<group>"; };
+		F60F294827393700007641BE /* SuppliesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuppliesViewController.swift; sourceTree = "<group>"; };
 		F697F2AA2737C1C5002E68D0 /* PERUGIA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PERUGIA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F697F2AD2737C1C5002E68D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F697F2AF2737C1C5002E68D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F697F2B12737C1C5002E68D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F697F2B42737C1C5002E68D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F697F2B62737C1C6002E68D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F697F2B92737C1C6002E68D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F697F2BB2737C1C6002E68D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A0FC5A27384E7C00614955 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				F697F2AC2737C1C5002E68D0 /* PERUGIA */,
+				F60F29432739295C007641BE /* Assets.xcassets */,
 				F697F2AB2737C1C5002E68D0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,9 +69,12 @@
 				F697F2AF2737C1C5002E68D0 /* SceneDelegate.swift */,
 				F697F2B12737C1C5002E68D0 /* ViewController.swift */,
 				F697F2B32737C1C5002E68D0 /* Main.storyboard */,
-				F697F2B62737C1C6002E68D0 /* Assets.xcassets */,
 				F697F2B82737C1C6002E68D0 /* LaunchScreen.storyboard */,
 				F697F2BB2737C1C6002E68D0 /* Info.plist */,
+				F6003EB527384B6800E7C84E /* HomeTableViewCell.swift */,
+				F6A0FC5A27384E7C00614955 /* HomeViewController.swift */,
+				F60F2945273934EB007641BE /* SuppliesTableViewCell.swift */,
+				F60F294827393700007641BE /* SuppliesViewController.swift */,
 			);
 			path = PERUGIA;
 			sourceTree = "<group>";
@@ -126,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F697F2BA2737C1C6002E68D0 /* LaunchScreen.storyboard in Resources */,
-				F697F2B72737C1C6002E68D0 /* Assets.xcassets in Resources */,
+				F60F29442739295D007641BE /* Assets.xcassets in Resources */,
 				F697F2B52737C1C5002E68D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A0FC5B27384E7C00614955 /* HomeViewController.swift in Sources */,
 				F697F2B22737C1C5002E68D0 /* ViewController.swift in Sources */,
 				F697F2AE2737C1C5002E68D0 /* AppDelegate.swift in Sources */,
+				F6003EB627384B6800E7C84E /* HomeTableViewCell.swift in Sources */,
+				F60F294927393700007641BE /* SuppliesViewController.swift in Sources */,
+				F60F2946273934EB007641BE /* SuppliesTableViewCell.swift in Sources */,
 				F697F2B02737C1C5002E68D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
