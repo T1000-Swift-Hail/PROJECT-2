@@ -33,23 +33,35 @@ class ViewController: UIViewController {
 
 
     @IBAction func logIn(_ sender: Any) {
-        let regest = [user1,user2,user3,user4,user5,user6]
-        guard let user = userName.text else { return }
-        guard let pass = userPassword.text else { return }
+        let regist = [user1,user2,user3,user4,user5,user6]
+        guard let userName = userName.text else { return }
+        guard let userPass = userPassword.text else { return }
         
-        for users in regest {
-            if user == userName.text && pass == userPassword.text {
+        for registerdUser in regist {
+            if registerdUser.userName == userName && registerdUser.password == userPass {
                 performSegue(withIdentifier: "Seccond", sender: nil)
+                return
             }
             else {
-            return
+                alerts()
+            
             }
         }
-       
+        func alerts() {
+        let wrong = UIAlertController(title: "Pass or User is Wrong", message: "", preferredStyle: .alert)
         
+        let ok = UIAlertAction(title: "Try Again", style: .default) { action in
+            print("Ok")
+            
+            
+        }
+            wrong.addAction(ok)
+            present(wrong, animated: false)
         
     }
     
     }
+  
 
-
+    
+}
