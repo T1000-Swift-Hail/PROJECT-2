@@ -5,17 +5,26 @@
 
 
 ### Project : 
-//Add project name
+// Project Name:Manege Your Busniss
 
 ### Project Description :
-// Add your project description
+// A program that helps you to manage your business and projects in a professional way through easy-to-use interfaces and also provides you with some additional features, for example, the graphic feature to display your profits and costs, and the employee management feature which you can grant them bonuses or vacations،
 
 
 ### Features List :
 // Add your project features list
-- feature 1
-- feature 2
-
+- feature :user name and password
+- feature :edite profile from settings
+- feature :add busnisses
+- feature :display charts
+- feature :add Employees
+- feature :give vacations
+- feature :give bonuses
+- feature :
+- feature :
+- feature :
+- feature :
+- feature :
 
 ### Define the scenes :
 // Add description of the screens / scenes in your application.
