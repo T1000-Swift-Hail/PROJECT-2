@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CollectionViewA: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout{
+class CollectionViewA : UIViewController , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout{
     
     
     @IBOutlet weak var pageControl: UIPageControl!
@@ -20,8 +20,6 @@ class CollectionViewA: UIViewController , UICollectionViewDelegate , UICollectio
 
         collicton.delegate = self
         collicton.dataSource = self
-        pageControl.numberOfPages = MarsaaiProduct.count
-        
         startTimer()
     }
     func startTimer(){
@@ -35,7 +33,6 @@ class CollectionViewA: UIViewController , UICollectionViewDelegate , UICollectio
         }
         
         collicton.scrollToItem(at: IndexPath(item: currentCallIndex , section: 0), at: .centeredHorizontally , animated: true)
-        pageControl.currentPage = currentCallIndex
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
