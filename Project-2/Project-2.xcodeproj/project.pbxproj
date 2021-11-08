@@ -14,11 +14,12 @@
 		8479A45A2737AE2B0013BB2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8479A4592737AE2B0013BB2D /* Assets.xcassets */; };
 		8479A45D2737AE2B0013BB2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8479A45B2737AE2B0013BB2D /* LaunchScreen.storyboard */; };
 		8479A4662737B9000013BB2D /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479A4652737B9000013BB2D /* Structs.swift */; };
-		8479A4692737C4C00013BB2D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479A4682737C4C00013BB2D /* SecondViewController.swift */; };
+		8479A4692737C4C00013BB2D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479A4682737C4C00013BB2D /* LoginViewController.swift */; };
 		84D788732738F60C00C35B14 /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D788722738F60C00C35B14 /* RoomsViewController.swift */; };
 		84D788752738F6D800C35B14 /* DuplexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D788742738F6D800C35B14 /* DuplexViewController.swift */; };
 		84D7887727390D5200C35B14 /* CountryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7887627390D5200C35B14 /* CountryList.swift */; };
 		84D7887927390F1E00C35B14 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7887827390F1E00C35B14 /* SingleViewController.swift */; };
+		84D7887B27393BB000C35B14 /* RulesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7887A27393BB000C35B14 /* RulesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +32,12 @@
 		8479A45C2737AE2B0013BB2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8479A45E2737AE2B0013BB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8479A4652737B9000013BB2D /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
-		8479A4682737C4C00013BB2D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		8479A4682737C4C00013BB2D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84D788722738F60C00C35B14 /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
 		84D788742738F6D800C35B14 /* DuplexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplexViewController.swift; sourceTree = "<group>"; };
 		84D7887627390D5200C35B14 /* CountryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryList.swift; sourceTree = "<group>"; };
 		84D7887827390F1E00C35B14 /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
+		84D7887A27393BB000C35B14 /* RulesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +95,11 @@
 			isa = PBXGroup;
 			children = (
 				8479A4542737AE260013BB2D /* ViewController.swift */,
-				8479A4682737C4C00013BB2D /* SecondViewController.swift */,
+				8479A4682737C4C00013BB2D /* LoginViewController.swift */,
 				84D788722738F60C00C35B14 /* RoomsViewController.swift */,
 				84D788742738F6D800C35B14 /* DuplexViewController.swift */,
 				84D7887827390F1E00C35B14 /* SingleViewController.swift */,
+				84D7887A27393BB000C35B14 /* RulesTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -175,11 +178,12 @@
 				8479A4662737B9000013BB2D /* Structs.swift in Sources */,
 				84D788732738F60C00C35B14 /* RoomsViewController.swift in Sources */,
 				8479A4552737AE260013BB2D /* ViewController.swift in Sources */,
+				84D7887B27393BB000C35B14 /* RulesTableViewController.swift in Sources */,
 				84D7887927390F1E00C35B14 /* SingleViewController.swift in Sources */,
 				84D788752738F6D800C35B14 /* DuplexViewController.swift in Sources */,
 				84D7887727390D5200C35B14 /* CountryList.swift in Sources */,
 				8479A4512737AE260013BB2D /* AppDelegate.swift in Sources */,
-				8479A4692737C4C00013BB2D /* SecondViewController.swift in Sources */,
+				8479A4692737C4C00013BB2D /* LoginViewController.swift in Sources */,
 				8479A4532737AE260013BB2D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

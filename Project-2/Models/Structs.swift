@@ -11,9 +11,6 @@ import Foundation
 struct Users {
     var id:Int
     var password:String
-    
-  
-    
 }
 
 
