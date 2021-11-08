@@ -42,25 +42,21 @@ class SecondViewController: UIViewController,UITextFieldDelegate {
     @IBAction func loginButton(_ sender: UIButton) {
         let students = [student1,student2,student3,student4,student5,student6]
         
-        guard let id: Int = Int(idTextField.text ?? "nil") else { return }
-        guard let pass = idTextField.text else { return }
-        
-        for student in students {
-            if id == student.id && pass != student.password {
-              performSegue(withIdentifier: "SecondPage", sender: nil)
-                
-            } else if id != student.id && pass != student.password {
-                alerts()
+        guard let id: Int = Int(idTextField.text ?? "nil") else { return alerts(title: "Wrong ID", message: "Please retype your Id")}
+        guard let pass = passwordTextField.text else { return alerts(title: "Wrong Password", message: "Please retype your Password") }
 
-            }
-            else {
+        for student in students {
+            if id == student.id && pass == student.password {
+              performSegue(withIdentifier: "SecondPage", sender: nil)
                 return
+            } else {
+            alerts(title: "Wrong Account", message: "Please retype your account")
             }
         }
     }
     
-        private func alerts () {
-        let alert = UIAlertController(title: "Wrong Account", message: "Please retype your account", preferredStyle: .alert)
+    private func alerts (title:String,message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .default) { ok in
             print("OK")
         }

@@ -95,15 +95,15 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="79.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Rooms View Controller-->
         <scene sceneID="vS1-Ii-wd3">
             <objects>
-                <viewController id="WUc-0Q-6PF" customClass="ViewController" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WUc-0Q-6PF" customClass="RoomsViewController" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zrF-eR-enm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="KHn-MF-Tll">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KHn-MF-Tll">
                                 <rect key="frame" x="6" y="140" width="408" height="300"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udf-y6-yqc">
@@ -117,9 +117,12 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="duplexButton:" destination="WUc-0Q-6PF" eventType="touchUpInside" id="cmC-XD-4mh"/>
+                                        </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Screen Shot 1443-04-02 at 12.00.16 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Zvd-32-pC6" userLabel="Duplex">
-                                        <rect key="frame" x="0.0" y="64.5" width="408" height="235.5"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Duplex" translatesAutoresizingMaskIntoConstraints="NO" id="Zvd-32-pC6" userLabel="Duplex">
+                                        <rect key="frame" x="0.0" y="36.5" width="408" height="263.5"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -127,7 +130,7 @@
                                     <constraint firstAttribute="height" constant="300" id="yhN-EL-aFw"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="D7W-Il-0qR">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="D7W-Il-0qR">
                                 <rect key="frame" x="-22" y="502" width="458" height="300"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGA-dk-aks">
@@ -141,9 +144,12 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleButton:" destination="WUc-0Q-6PF" eventType="touchUpInside" id="qIg-QP-ajA"/>
+                                        </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Screen Shot 1443-04-02 at 12.01.06 PM" translatesAutoresizingMaskIntoConstraints="NO" id="d8K-MP-3Co" userLabel="Single">
-                                        <rect key="frame" x="0.0" y="64.5" width="458" height="235.5"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Single" translatesAutoresizingMaskIntoConstraints="NO" id="d8K-MP-3Co" userLabel="Single">
+                                        <rect key="frame" x="0.0" y="36.5" width="458" height="263.5"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -174,37 +180,59 @@
             </objects>
             <point key="canvasLocation" x="1765" y="80"/>
         </scene>
-        <!--View Controller-->
+        <!--Duplex View Controller-->
         <scene sceneID="V0W-9O-jO7">
             <objects>
-                <viewController id="vsq-1v-Q2r" sceneMemberID="viewController">
+                <viewController id="vsq-1v-Q2r" customClass="DuplexViewController" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jQE-L6-lNQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yr7-WT-J3h">
+                                <rect key="frame" x="103" y="161" width="210" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hFt-t2-RuI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="5PO-St-Qdt"/>
+                    <connections>
+                        <outlet property="textField" destination="yr7-WT-J3h" id="qll-lT-G4L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CxV-Rg-vez" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2551" y="80"/>
+            <point key="canvasLocation" x="2550.7246376811595" y="79.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Single View Controller-->
         <scene sceneID="wms-7H-hUT">
             <objects>
-                <viewController id="L5x-JD-zN8" sceneMemberID="viewController">
+                <viewController id="L5x-JD-zN8" customClass="SingleViewController" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qkh-dB-kn8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tvV-df-pnk">
+                                <rect key="frame" x="109" y="191" width="206" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="sUJ-LY-RsU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="GoV-AR-Msh"/>
+                    <connections>
+                        <outlet property="textField" destination="tvV-df-pnk" id="io6-C8-jys"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mr8-Q7-jUI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2551" y="809"/>
+            <point key="canvasLocation" x="2550.7246376811595" y="808.92857142857144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2r5-Me-aak">
@@ -226,8 +254,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 1443-04-02 at 12.00.16 PM" width="408" height="443"/>
-        <image name="Screen Shot 1443-04-02 at 12.01.06 PM" width="458" height="448"/>
+        <image name="Duplex" width="408" height="443"/>
+        <image name="Single" width="458" height="448"/>
         <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="108"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
