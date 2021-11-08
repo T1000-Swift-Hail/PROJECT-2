@@ -16,22 +16,21 @@ Home Services is the app for all you needs in your home . You can find all home 
 - The App have services Electrical , Air Conditioning , plumbing , Cleaning , Satellite , Cameras .
 - The App have list for any services can choose .
 - The user can see the order he choosing .
-- The user can add phone number and passward and Address to have the service .
+- The user can add User Name and Passward and Address to have the service .
 
 
 
 ### Define the scenes :
 
-- login : Phone number , passward , Address .
+- login :  User Name , passward , Address .
 - Servicse .
 - Order .
 
 
 
 ### User Stories :
-- The user have login and add number and passward and Adress .
+- The user have login and add User Name and passward and Adress .
 - The user can see the servicse and chosing any servicse he want .
-- After the user chosing he can see the list for competent service to the service .
 - The user can see all servicse he choosing in order .
 
 
