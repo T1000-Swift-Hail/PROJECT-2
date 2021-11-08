@@ -20,7 +20,7 @@ class UnitViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        inputTextField.delegate = self
+        textFieldUnit.delegate = self
         
         //MARK: - Tap Gesture Recognizer, dismiss the keyboard when the user taps on the screen
                 let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
@@ -28,23 +28,24 @@ class UnitViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
 
     }
     
-    @IBOutlet weak var conversionLabel: UILabel!
-    @IBOutlet weak var inputTextField: UITextField!
-    @IBOutlet weak var inputSegment: UISegmentedControl!
+    @IBOutlet weak var unitLabel: UILabel!
+    @IBOutlet weak var textFieldUnit: UITextField!
+    @IBOutlet weak var segmentUnit: UISegmentedControl!
     
-    @IBAction func inputSegmentAction(_ sender: UISegmentedControl) {
-        inputTextField.text = ""
+    
+    @IBAction func segmentUnitAction(_ sender: UISegmentedControl) {
+        textFieldUnit.text = ""
         
-        switch inputSegment.selectedSegmentIndex {
+        switch segmentUnit.selectedSegmentIndex {
         case 0:
             conversionUnit = .m
-            conversionLabel.text = "0.0 km"
+            unitLabel.text = "0.0 km"
         case 1:
             conversionUnit = .km
-            conversionLabel.text = "0.0 m"
+            unitLabel.text = "0.0 m"
         default:
             conversionUnit = .m
-            conversionLabel.text = "0.0 km"
+            unitLabel.text = "0.0 km"
         }
         
     }
@@ -57,24 +58,25 @@ class UnitViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
     }
     
     
-    @IBAction func inputTextFieldAction(_ sender: UITextField) {
+    
+    @IBAction func textFieldUnitAction(_ sender: UITextField) {
         
-        let amountUnit = Double(inputTextField.text ?? "0.0") ?? 0.0
+        let amountUnit = Double(textFieldUnit.text ?? "0.0") ?? 0.0
         
         switch conversionUnit {
         case .m:
             let convertedValue = convertToM(kilometer: amountUnit)
-            conversionLabel.text = "\(convertedValue) km"
+            unitLabel.text = "\(String (format: "%.4f", convertedValue)) km"
         case .km:
             let convertedValue = convertToKm(meter: amountUnit)
-            conversionLabel.text = "\(convertedValue) m"
+            unitLabel.text = "\(String (format: "%.4f", convertedValue)) m"
         }
     }
     
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
          
-        if let lessCount = inputTextField.text?.count, lessCount < 4 {
+        if let lessCount = textFieldUnit.text?.count, lessCount < 4 {
             return true
         } else { return false }
     }
