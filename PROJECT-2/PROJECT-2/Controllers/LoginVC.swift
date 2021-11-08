@@ -1,0 +1,14 @@
+//
+//  LoginVC.swift
+//  PROJECT-2
+//
+//  Created by Seham الشطنان on 03/04/1443 AH.
+//
+
+import Foundation
+import UIKit
+class LoginViewController :UIViewController{
+    weak var Entertheusername: UITextField!
+    weak var password: UITextField!
+    
+}

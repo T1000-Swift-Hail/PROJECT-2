@@ -16,10 +16,11 @@ struct Product {
     
     func getProducts() -> [Product] {
         
-        let product1 = Product(color: .darkGray)
+        let product1 = Product(color: .dark,quantity: 50, price: 120 , productType: .darkchocolate)
+        
         let product2 = Product(color: .white)
         let product3 = Product(color: .brown)
-        
+    
         return [product1,product2,product3]
     }
 //

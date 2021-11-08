@@ -15,7 +15,7 @@
 
 - feature 1  Display the chocolate in an innovative and beautiful way
 - feature 2  Buy chocolate to enjoy its taste
-
+- feature 3  best seller review
 
 #### As a customer I should be able to do the following :
 - Buy these types of chocolates: Dark Chocolate,milkChocolate,brownChocolate.,roseChocolate,cofeChocolate
@@ -28,9 +28,10 @@
 
 ### Define the scenes :
 using Tab Bar
-- Home
-- Login
-- List
+- Home ( List of Products )
+
+- Login ( sign up , sign in ) 
+- Profile ( Setting , )
 - Open your ViewController file
 Create  let choices = ["", "", ""]
 - Add a Label under the image view and center it horizontally 
