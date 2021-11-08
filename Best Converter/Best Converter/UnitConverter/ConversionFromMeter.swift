@@ -1,27 +1,20 @@
 //
-//  UnitViewController.swift
+//  ConversionFromMeter.swift
 //  Best Converter
 //
-//  Created by Asma on 07/11/2021.
+//  Created by Asma on 08/11/2021.
 //
 
 import UIKit
-import Foundation
 
-enum ConversionUnit {
-    case cm
-    case km
-    case inch
-}
-
-class UnitViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
+class ConversionFromMeter: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
-    var conversionUnit = ConversionUnit.cm
+    var conversionUnit = ConversionUnit.m
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        textFieldUnit.delegate = self
+        textFieldUnitMeter.delegate = self
         
         //MARK: - Tap Gesture Recognizer, dismiss the keyboard when the user taps on the screen
                 let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
@@ -29,24 +22,24 @@ class UnitViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
 
     }
     
-    @IBOutlet weak var unitLabel: UILabel!
-    @IBOutlet weak var textFieldUnit: UITextField!
-    @IBOutlet weak var segmentUnit: UISegmentedControl!
+    @IBOutlet weak var unitMeterLabel: UILabel!
+    @IBOutlet weak var textFieldUnitMeter: UITextField!
+    @IBOutlet weak var segmentUnitMeter: UISegmentedControl!
     
     
-    @IBAction func segmentUnitAction(_ sender: UISegmentedControl) {
-        textFieldUnit.text = ""
+    @IBAction func segmentUnitMeterAction(_ sender: UISegmentedControl) {
+        textFieldUnitMeter.text = ""
         
-        switch segmentUnit.selectedSegmentIndex {
+        switch segmentUnitMeter.selectedSegmentIndex {
         case 0:
             conversionUnit = .km
-            unitLabel.text = "0.0 km"
+            unitMeterLabel.text = "0.0 km"
         case 1:
             conversionUnit = .cm
-            unitLabel.text = "0.0 cm"
+            unitMeterLabel.text = "0.0 cm"
         default:
             conversionUnit = .inch
-            unitLabel.text = "0.0 inch"
+            unitMeterLabel.text = "0.0 inch"
         }
         
     }
@@ -65,25 +58,26 @@ class UnitViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
     
     @IBAction func textFieldUnitAction(_ sender: UITextField) {
         
-        let amountUnit = Double(textFieldUnit.text ?? "0.0") ?? 0.0
+        let amountUnit = Double(textFieldUnitMeter.text ?? "0.0") ?? 0.0
         
         switch conversionUnit {
         case .km:
             let convertedValue = convertToKm(meter:amountUnit)
-            unitLabel.text = "\(String (format: "%.2f", convertedValue)) km"
+            unitMeterLabel.text = "\(String (format: "%.6f", convertedValue)) km"
         case .cm:
             let convertedValue = convertToCm(meter: amountUnit)
-            unitLabel.text = "\(String (format: "%.2f", convertedValue)) cm"
+            unitMeterLabel.text = "\(String (format: "%.6f", convertedValue)) cm"
         case .inch:
             let convertedValue = convertToInch(meter: amountUnit)
-            unitLabel.text = "\(String (format: "%.2f", convertedValue)) inch"
+            unitMeterLabel.text = "\(String (format: "%.6f", convertedValue)) inch"
+        case .m: break
         }
     }
     
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
          
-        if let lessCount = textFieldUnit.text?.count, lessCount < 4 {
+        if let lessCount = textFieldUnitMeter.text?.count, lessCount < 4 {
             return true
         } else { return false }
     }

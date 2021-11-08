@@ -15,6 +15,14 @@
 		045D97882738A05400B69CB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045D97862738A05400B69CB2 /* LaunchScreen.storyboard */; };
 		045D97902738A09D00B69CB2 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D978F2738A09D00B69CB2 /* CurrencyViewController.swift */; };
 		045D97922738A0B400B69CB2 /* UnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D97912738A0B400B69CB2 /* UnitViewController.swift */; };
+		048EFA4D273995F000247A8E /* ConversionFromMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EFA4C273995F000247A8E /* ConversionFromMeter.swift */; };
+		048EFA4F2739960700247A8E /* ConversionFromKilometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EFA4E2739960700247A8E /* ConversionFromKilometer.swift */; };
+		048EFA512739962500247A8E /* ConversionFromCentimeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EFA502739962500247A8E /* ConversionFromCentimeter.swift */; };
+		048EFA532739963C00247A8E /* ConversionFromInch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EFA522739963C00247A8E /* ConversionFromInch.swift */; };
+		048EFA552739967E00247A8E /* ConversionFromSar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EFA542739967E00247A8E /* ConversionFromSar.swift */; };
+		048EFA572739969400247A8E /* ConversionFromUsd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EFA562739969400247A8E /* ConversionFromUsd.swift */; };
+		048EFA59273996A300247A8E /* ConversionFromAsd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EFA58273996A300247A8E /* ConversionFromAsd.swift */; };
+		048EFA5B273996F700247A8E /* ConversionFromEuro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EFA5A273996F700247A8E /* ConversionFromEuro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +36,14 @@
 		045D97892738A05400B69CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045D978F2738A09D00B69CB2 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		045D97912738A0B400B69CB2 /* UnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitViewController.swift; sourceTree = "<group>"; };
+		048EFA4C273995F000247A8E /* ConversionFromMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionFromMeter.swift; sourceTree = "<group>"; };
+		048EFA4E2739960700247A8E /* ConversionFromKilometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionFromKilometer.swift; sourceTree = "<group>"; };
+		048EFA502739962500247A8E /* ConversionFromCentimeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionFromCentimeter.swift; sourceTree = "<group>"; };
+		048EFA522739963C00247A8E /* ConversionFromInch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionFromInch.swift; sourceTree = "<group>"; };
+		048EFA542739967E00247A8E /* ConversionFromSar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionFromSar.swift; sourceTree = "<group>"; };
+		048EFA562739969400247A8E /* ConversionFromUsd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionFromUsd.swift; sourceTree = "<group>"; };
+		048EFA58273996A300247A8E /* ConversionFromAsd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionFromAsd.swift; sourceTree = "<group>"; };
+		048EFA5A273996F700247A8E /* ConversionFromEuro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionFromEuro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +76,41 @@
 		045D977A2738A05200B69CB2 /* Best Converter */ = {
 			isa = PBXGroup;
 			children = (
+				048EFA4B2739606000247A8E /* CurrencyConverter */,
+				048EFA4A2739604900247A8E /* UnitConverter */,
 				045D977B2738A05200B69CB2 /* AppDelegate.swift */,
 				045D977D2738A05200B69CB2 /* SceneDelegate.swift */,
 				045D977F2738A05200B69CB2 /* ViewController.swift */,
-				045D97912738A0B400B69CB2 /* UnitViewController.swift */,
-				045D978F2738A09D00B69CB2 /* CurrencyViewController.swift */,
 				045D97812738A05200B69CB2 /* Main.storyboard */,
 				045D97842738A05400B69CB2 /* Assets.xcassets */,
 				045D97862738A05400B69CB2 /* LaunchScreen.storyboard */,
 				045D97892738A05400B69CB2 /* Info.plist */,
 			);
 			path = "Best Converter";
+			sourceTree = "<group>";
+		};
+		048EFA4A2739604900247A8E /* UnitConverter */ = {
+			isa = PBXGroup;
+			children = (
+				045D97912738A0B400B69CB2 /* UnitViewController.swift */,
+				048EFA4C273995F000247A8E /* ConversionFromMeter.swift */,
+				048EFA4E2739960700247A8E /* ConversionFromKilometer.swift */,
+				048EFA502739962500247A8E /* ConversionFromCentimeter.swift */,
+				048EFA522739963C00247A8E /* ConversionFromInch.swift */,
+			);
+			path = UnitConverter;
+			sourceTree = "<group>";
+		};
+		048EFA4B2739606000247A8E /* CurrencyConverter */ = {
+			isa = PBXGroup;
+			children = (
+				045D978F2738A09D00B69CB2 /* CurrencyViewController.swift */,
+				048EFA542739967E00247A8E /* ConversionFromSar.swift */,
+				048EFA562739969400247A8E /* ConversionFromUsd.swift */,
+				048EFA58273996A300247A8E /* ConversionFromAsd.swift */,
+				048EFA5A273996F700247A8E /* ConversionFromEuro.swift */,
+			);
+			path = CurrencyConverter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,10 +184,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048EFA5B273996F700247A8E /* ConversionFromEuro.swift in Sources */,
 				045D97802738A05200B69CB2 /* ViewController.swift in Sources */,
+				048EFA4D273995F000247A8E /* ConversionFromMeter.swift in Sources */,
 				045D97902738A09D00B69CB2 /* CurrencyViewController.swift in Sources */,
+				048EFA512739962500247A8E /* ConversionFromCentimeter.swift in Sources */,
+				048EFA59273996A300247A8E /* ConversionFromAsd.swift in Sources */,
+				048EFA552739967E00247A8E /* ConversionFromSar.swift in Sources */,
+				048EFA532739963C00247A8E /* ConversionFromInch.swift in Sources */,
 				045D97922738A0B400B69CB2 /* UnitViewController.swift in Sources */,
+				048EFA572739969400247A8E /* ConversionFromUsd.swift in Sources */,
 				045D977C2738A05200B69CB2 /* AppDelegate.swift in Sources */,
+				048EFA4F2739960700247A8E /* ConversionFromKilometer.swift in Sources */,
 				045D977E2738A05200B69CB2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
