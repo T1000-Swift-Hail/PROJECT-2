@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA222D8B27391B2900280DAD /* ChangeLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222D8A27391B2900280DAD /* ChangeLanguageViewController.swift */; };
+		FA222D8E2739301700280DAD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222D8D2739301700280DAD /* SignInViewController.swift */; };
 		FABD47EC2736E652002565DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD47EB2736E652002565DD /* AppDelegate.swift */; };
 		FABD47EE2736E652002565DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD47ED2736E652002565DD /* SceneDelegate.swift */; };
 		FABD47F02736E652002565DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD47EF2736E652002565DD /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA222D8A27391B2900280DAD /* ChangeLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageViewController.swift; sourceTree = "<group>"; };
+		FA222D8D2739301700280DAD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FABD47E82736E652002565DD /* MySecondProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySecondProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABD47EB2736E652002565DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FABD47ED2736E652002565DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA222D8C27391E4700280DAD /* ProfileFolder */ = {
+			isa = PBXGroup;
+			children = (
+				FA222D8A27391B2900280DAD /* ChangeLanguageViewController.swift */,
+			);
+			path = ProfileFolder;
+			sourceTree = "<group>";
+		};
+		FA222D8F2739604D00280DAD /* signInFolder */ = {
+			isa = PBXGroup;
+			children = (
+				FA222D8D2739301700280DAD /* SignInViewController.swift */,
+			);
+			path = signInFolder;
+			sourceTree = "<group>";
+		};
 		FABD47DF2736E652002565DD = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +83,8 @@
 				FABD47F42736E654002565DD /* Assets.xcassets */,
 				FABD47F62736E654002565DD /* LaunchScreen.storyboard */,
 				FABD47F92736E654002565DD /* Info.plist */,
+				FA222D8C27391E4700280DAD /* ProfileFolder */,
+				FA222D8F2739604D00280DAD /* signInFolder */,
 			);
 			path = MySecondProject;
 			sourceTree = "<group>";
@@ -140,6 +162,8 @@
 			files = (
 				FABD47F02736E652002565DD /* ViewController.swift in Sources */,
 				FABD47EC2736E652002565DD /* AppDelegate.swift in Sources */,
+				FA222D8B27391B2900280DAD /* ChangeLanguageViewController.swift in Sources */,
+				FA222D8E2739301700280DAD /* SignInViewController.swift in Sources */,
 				FABD47EE2736E652002565DD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
