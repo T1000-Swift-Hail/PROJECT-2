@@ -5,15 +5,14 @@
 
 
 ### Project : 
-Project name :My Tasks ...
+Project name :Best Weight ...
 
 ### Project Description :
-To-do list management apps allow you to perform operations more efficiently. These apps enable you to drag and drop tasks to reorder them .
-
+Body Mass Index is a simple calculationusing a person's height and weight. The formula is BMI = kg/m2. where kg is a person's weight in kilograms and m2 is their height in metres squared
 ### Features List :
 
 - feature 1 : easy to use.
-- feature 2 : Tasks are added and organized quickly.
+- feature 2 : BMI can help determine whether a person is at an unhealthy or healthy weight
 _ feature 3 :The application is very flexible.
 
 ### Define the scenes :
@@ -26,4 +25,3 @@ _ feature 3 :The application is very flexible.
 
 
 
-#### Deadline for this project :  Deliver the project by 9:00 a.m. next Thursday Nov. 11, 2021 
