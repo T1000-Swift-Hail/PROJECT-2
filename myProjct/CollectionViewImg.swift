@@ -6,7 +6,7 @@
 //
 
 import UIKit
+//Pictures to review
 class CollectionViewImg: UICollectionViewCell {
-    
     @IBOutlet weak var imgMarssai: UIImageView!
 }
