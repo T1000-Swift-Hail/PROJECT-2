@@ -10,26 +10,31 @@
 
 ### Project Description :
 
-- A n application through which the customer can convert units (Km , m , cm , inch) and convert currencies ( USD , ASD , EURO , SAR )
+- A n application through which the customer can convert units (Km , m , cm , inch) and convert currencies ( USD , AUD , EURO , SAR )
 
 ### Features List :
 
 - Simple and easy conversion of units and currencies.
+- Supports Arabic and English
+- Supports dark mode
 
 
 ### Define the scenes :
 
-- The first interface welcomes the customer and chooses the type of conversion he wants units or currencies
-- The second interface, when choosing the units, will appear for him to write the number to be converted, specify the type of number entered and the type to be converted to
-- The third interface, when choosing currencies, will appear for him to write the number to be converted, and specify the type of the number entered and the type to be converted to.
-- In the tab area, the settings interface has an evaluation of the application in the store, about the application, for help
+- On the main interface, there are two sections in the Tab Bar: Units and Currencies. 
+Section Unit:
+- In the units section, there are 4 sections to convert from ( Meter , Kilometer , Centimeter , Inch )
+- When entering one of the sections, the calculation process interface appears
+Section Currency 
+- In the currency section, there are 4 sections to convert from ( SAR , USD , AUD , Euro )
+- When entering one of the sections, the calculation process interface appears
 
 
 
 
 ### User Stories :
-// Add user stories here.   
 
+- When the user enters the application, his chooses one of the two sections in the tab bar. Sections appear for him to convert from one currency to another or to unit to another, his chooses one of the sections he wants. When entering the section, his writes the number to be transferred and chooses the currency or unit his wants to transfer to
 
 
 

@@ -7,9 +7,11 @@
 
 import UIKit
 
+//MARK: - Created a class for conversion from Euro and used the delegate library
+
 class ConversionFromEuro: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
-    var conversionCurrency = ConversionCurrency.USD
+    var conversionCurrency = ConversionCurrency.Euro
 
     
     override func viewDidLoad() {
@@ -17,15 +19,18 @@ class ConversionFromEuro: UIViewController, UITextFieldDelegate, UITextViewDeleg
 
         textFieldCurrencyEuro.delegate = self
 
-        //MARK: - Tap Gesture Recognizer, dismiss the keyboard when the user taps on the screen
+//MARK: - Tap Gesture Recognizer, dismiss the keyboard when the user taps on the screen
                 let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
                 view.addGestureRecognizer(tap)
     }
     
-    
+//MARK: - This connected the label, text Field and segment with IBOutlet
     @IBOutlet weak var currencyEuroLabel: UILabel!
     @IBOutlet weak var textFieldCurrencyEuro: UITextField!
     @IBOutlet weak var segmentCurrencyEuro: UISegmentedControl!
+    
+//MARK: - Connected Segment with IBAction, and switch cases were called
+    
     @IBAction func segmentCurrencyEuroAction(_ sender: UISegmentedControl) {
         
         textFieldCurrencyEuro.text = ""
@@ -45,6 +50,7 @@ class ConversionFromEuro: UIViewController, UITextFieldDelegate, UITextViewDeleg
         }
     }
     
+//MARK: - Arithmetic functions for each currency
     func convertToUsd( euro: Double) -> Double {
         return euro / 0.865199
     }
@@ -55,6 +61,7 @@ class ConversionFromEuro: UIViewController, UITextFieldDelegate, UITextViewDeleg
         return euro / 0.230720
     }
     
+//MARK: - Connected text field with IBAction, and switch cases were called
     
     @IBAction func textFieldCurrencyAction(_ sender: UITextField) {
         
@@ -76,10 +83,10 @@ class ConversionFromEuro: UIViewController, UITextFieldDelegate, UITextViewDeleg
 
         }
     }
-    
+//MARK: - A Function determines the number of digits to write
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
          
-        if let lessCount = textFieldCurrencyEuro.text?.count, lessCount < 4 {
+        if let lessCount = textFieldCurrencyEuro.text?.count, lessCount < 5 {
             return true
         } else { return false }
     }

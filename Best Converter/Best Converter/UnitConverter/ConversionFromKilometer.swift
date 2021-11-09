@@ -7,6 +7,8 @@
 
 import UIKit
 
+//MARK: - Created a class for conversion from Kilometer and used the delegate library
+
 class ConversionFromKilometer: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
     var conversionUnit = ConversionUnit.km
@@ -16,17 +18,19 @@ class ConversionFromKilometer: UIViewController, UITextFieldDelegate, UITextView
         
         textFieldUnitKilometer.delegate = self
         
-        //MARK: - Tap Gesture Recognizer, dismiss the keyboard when the user taps on the screen
+//MARK: - Tap Gesture Recognizer, dismiss the keyboard when the user taps on the screen
                 let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
                 view.addGestureRecognizer(tap)
 
     }
-    
+//MARK: - This connected the label, text Field and segment with IBOutlet
+
     @IBOutlet weak var unitKilometerLabel: UILabel!
     @IBOutlet weak var textFieldUnitKilometer: UITextField!
     @IBOutlet weak var segmentUnitKilometer: UISegmentedControl!
     
-    
+//MARK: - Connected Segment with IBAction, and switch cases were called
+
     @IBAction func segmentUnitKilometerAction(_ sender: UISegmentedControl) {
         textFieldUnitKilometer.text = ""
         
@@ -44,6 +48,8 @@ class ConversionFromKilometer: UIViewController, UITextFieldDelegate, UITextView
         
     }
     
+//MARK: - Arithmetic functions for each unit
+
     func convertToM( kilometer: Double) -> Double {
         return kilometer * 1000
     }
@@ -54,8 +60,8 @@ class ConversionFromKilometer: UIViewController, UITextFieldDelegate, UITextView
         return kilometer * 39370.078740157
     }
     
-    
-    
+//MARK: - Connected text field with IBAction, and switch cases were called
+
     @IBAction func textFieldUnitAction(_ sender: UITextField) {
         
         let amountUnit = Double(textFieldUnitKilometer.text ?? "0.0") ?? 0.0
@@ -63,21 +69,22 @@ class ConversionFromKilometer: UIViewController, UITextFieldDelegate, UITextView
         switch conversionUnit {
         case .m:
             let convertedValue = convertToM(kilometer:amountUnit)
-            unitKilometerLabel.text = "\(String (format: "%.6f", convertedValue)) m"
+            unitKilometerLabel.text = "\(String (format: "%.2f", convertedValue)) m"
         case .cm:
             let convertedValue = convertToCm(kilometer: amountUnit)
-            unitKilometerLabel.text = "\(String (format: "%.6f", convertedValue)) cm"
+            unitKilometerLabel.text = "\(String (format: "%.2f", convertedValue)) cm"
         case .inch:
             let convertedValue = convertToInch(kilometer: amountUnit)
-            unitKilometerLabel.text = "\(String (format: "%.6f", convertedValue)) inch"
+            unitKilometerLabel.text = "\(String (format: "%.2f", convertedValue)) inch"
         case .km: break
         }
     }
     
-    
+//MARK: - A Function determines the number of digits to write
+
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
          
-        if let lessCount = textFieldUnitKilometer.text?.count, lessCount < 4 {
+        if let lessCount = textFieldUnitKilometer.text?.count, lessCount < 5 {
             return true
         } else { return false }
     }

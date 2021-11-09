@@ -8,6 +8,8 @@
 import UIKit
 import Foundation
 
+//MARK: - Created a Enumeration that calls the cases with other classes
+
 enum ConversionCurrency {
     case SAR
     case AUD
@@ -16,8 +18,6 @@ enum ConversionCurrency {
 }
 
 class CurrencyViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
-
-    var conversionCurrency = ConversionCurrency.USD
 
     override func viewDidLoad() {
         super.viewDidLoad()

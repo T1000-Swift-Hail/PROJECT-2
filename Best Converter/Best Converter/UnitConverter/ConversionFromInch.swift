@@ -7,6 +7,8 @@
 
 import UIKit
 
+//MARK: - Created a class for conversion from Inch and used the delegate library
+
 class ConversionFromInch: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
     var conversionUnit = ConversionUnit.inch
@@ -16,17 +18,20 @@ class ConversionFromInch: UIViewController, UITextFieldDelegate, UITextViewDeleg
         
         textFieldUnitInch.delegate = self
         
-        //MARK: - Tap Gesture Recognizer, dismiss the keyboard when the user taps on the screen
+//MARK: - Tap Gesture Recognizer, dismiss the keyboard when the user taps on the screen
                 let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
                 view.addGestureRecognizer(tap)
 
     }
     
+//MARK: - This connected the label, text Field and segment with IBOutlet
+
     @IBOutlet weak var unitInchLabel: UILabel!
     @IBOutlet weak var textFieldUnitInch: UITextField!
     @IBOutlet weak var segmentUnitInch: UISegmentedControl!
     
-    
+//MARK: - Connected Segment with IBAction, and switch cases were called
+
     @IBAction func segmentUnitInchAction(_ sender: UISegmentedControl) {
         textFieldUnitInch.text = ""
         
@@ -44,6 +49,8 @@ class ConversionFromInch: UIViewController, UITextFieldDelegate, UITextViewDeleg
         
     }
     
+//MARK: - Arithmetic functions for each unit
+
     func convertToKm( inch: Double) -> Double {
         return inch * 0.0000254
     }
@@ -54,8 +61,8 @@ class ConversionFromInch: UIViewController, UITextFieldDelegate, UITextViewDeleg
         return inch * 0.0254
     }
     
-    
-    
+//MARK: - Connected text field with IBAction, and switch cases were called
+
     @IBAction func textFieldUnitAction(_ sender: UITextField) {
         
         let amountUnit = Double(textFieldUnitInch.text ?? "0.0") ?? 0.0
@@ -63,21 +70,22 @@ class ConversionFromInch: UIViewController, UITextFieldDelegate, UITextViewDeleg
         switch conversionUnit {
         case .km:
             let convertedValue = convertToKm(inch:amountUnit)
-            unitInchLabel.text = "\(String (format: "%.6f", convertedValue)) km"
+            unitInchLabel.text = "\(String (format: "%.4f", convertedValue)) km"
         case .cm:
             let convertedValue = convertToCm(inch: amountUnit)
-            unitInchLabel.text = "\(String (format: "%.6f", convertedValue)) cm"
+            unitInchLabel.text = "\(String (format: "%.4f", convertedValue)) cm"
         case .m:
             let convertedValue = convertToM(inch: amountUnit)
-            unitInchLabel.text = "\(String (format: "%.6f", convertedValue)) m"
+            unitInchLabel.text = "\(String (format: "%.4f", convertedValue)) m"
         case .inch: break
         }
     }
     
-    
+//MARK: - A Function determines the number of digits to write
+
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
          
-        if let lessCount = textFieldUnitInch.text?.count, lessCount < 4 {
+        if let lessCount = textFieldUnitInch.text?.count, lessCount < 5 {
             return true
         } else { return false }
     }
