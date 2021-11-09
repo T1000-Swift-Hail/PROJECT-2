@@ -22,6 +22,9 @@
 		B7169E8027394528000E25C4 /* MenPerfumesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E7F27394528000E25C4 /* MenPerfumesViewController.swift */; };
 		B7169E8227398B12000E25C4 /* WomenPerfumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E8127398B12000E25C4 /* WomenPerfumeViewController.swift */; };
 		B7169E84273A1633000E25C4 /* HomePerfumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E83273A1632000E25C4 /* HomePerfumeViewController.swift */; };
+		B7FE40A4273A9C6E008FC1D8 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40A3273A9C6E008FC1D8 /* Cart.swift */; };
+		B7FE40A7273AA925008FC1D8 /* HomeStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40A6273AA925008FC1D8 /* HomeStruct.swift */; };
+		B7FE40AA273AAC7F008FC1D8 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40A9273AAC7F008FC1D8 /* CartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		B7169E7F27394528000E25C4 /* MenPerfumesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenPerfumesViewController.swift; sourceTree = "<group>"; };
 		B7169E8127398B12000E25C4 /* WomenPerfumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenPerfumeViewController.swift; sourceTree = "<group>"; };
 		B7169E83273A1632000E25C4 /* HomePerfumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePerfumeViewController.swift; sourceTree = "<group>"; };
+		B7FE40A3273A9C6E008FC1D8 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		B7FE40A6273AA925008FC1D8 /* HomeStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStruct.swift; sourceTree = "<group>"; };
+		B7FE40A9273AAC7F008FC1D8 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,8 @@
 		B7169E5A2737EEE9000E25C4 /* MY_Second_Project */ = {
 			isa = PBXGroup;
 			children = (
+				B7FE40A8273AAC50008FC1D8 /* cart */,
+				B7FE40A5273AA903008FC1D8 /* Struct */,
 				B7169E782739206F000E25C4 /* Categories */,
 				B7169E6F2738F779000E25C4 /* controller */,
 				B7169E5B2737EEE9000E25C4 /* AppDelegate.swift */,
@@ -108,6 +116,23 @@
 				B7169E83273A1632000E25C4 /* HomePerfumeViewController.swift */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		B7FE40A5273AA903008FC1D8 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE40A6273AA925008FC1D8 /* HomeStruct.swift */,
+			);
+			path = Struct;
+			sourceTree = "<group>";
+		};
+		B7FE40A8273AAC50008FC1D8 /* cart */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE40A3273A9C6E008FC1D8 /* Cart.swift */,
+				B7FE40A9273AAC7F008FC1D8 /* CartViewController.swift */,
+			);
+			path = cart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,13 +209,16 @@
 				B7169E7727390865000E25C4 /* SignUpTableViewController.swift in Sources */,
 				B7169E732738F9CC000E25C4 /* LoginViewController.swift in Sources */,
 				B71271A2273A54D800CBD52A /* CategoriesViewController.swift in Sources */,
+				B7FE40A4273A9C6E008FC1D8 /* Cart.swift in Sources */,
 				B7169E7C2739213A000E25C4 /* WomenPerfumes.swift in Sources */,
 				B7169E602737EEE9000E25C4 /* ViewController.swift in Sources */,
 				B7169E5C2737EEE9000E25C4 /* AppDelegate.swift in Sources */,
+				B7FE40AA273AAC7F008FC1D8 /* CartViewController.swift in Sources */,
 				B7169E84273A1633000E25C4 /* HomePerfumeViewController.swift in Sources */,
 				B7169E7E27392152000E25C4 /* HomePerfumes.swift in Sources */,
 				B7169E8227398B12000E25C4 /* WomenPerfumeViewController.swift in Sources */,
 				B7169E5E2737EEE9000E25C4 /* SceneDelegate.swift in Sources */,
+				B7FE40A7273AA925008FC1D8 /* HomeStruct.swift in Sources */,
 				B7169E7A2739211B000E25C4 /* MenPerfumes.swift in Sources */,
 				B7169E8027394528000E25C4 /* MenPerfumesViewController.swift in Sources */,
 			);

@@ -57,7 +57,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="signUpClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z1j-yX-Jt5"/>
-                                            <segue destination="j0O-tp-W8B" kind="show" id="mUH-gf-5b4"/>
+                                            <segue destination="j0O-tp-W8B" kind="show" id="v63-d2-8Tn"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -87,9 +87,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jhC-lo-4mg"/>
-                    <connections>
-                        <segue destination="j0O-tp-W8B" kind="show" id="dq6-C6-w1e"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -485,7 +482,7 @@
         <scene sceneID="wWD-4m-waN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Rc-Tr-ZsU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="QF4-zz-ogS"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="house" catalog="system" id="QF4-zz-ogS"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Bp-2q-MbN">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -539,21 +536,52 @@
             </objects>
             <point key="canvasLocation" x="878" y="904"/>
         </scene>
-        <!--View Controller-->
+        <!--Cart View Controller-->
         <scene sceneID="BQd-ao-tUR">
             <objects>
-                <viewController id="Fbh-Sa-f6b" sceneMemberID="viewController">
+                <viewController id="Fbh-Sa-f6b" customClass="CartViewController" customModule="MY_Second_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HTw-Hg-TzU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="16Z-th-0ka">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellcart" rowHeight="100" id="7E0-A7-pUk">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7E0-A7-pUk" id="eCk-ad-9wI">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ust-v4-kce"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ust-v4-kce" firstAttribute="trailing" secondItem="16Z-th-0ka" secondAttribute="trailing" id="3MP-YK-nGK"/>
+                            <constraint firstItem="16Z-th-0ka" firstAttribute="leading" secondItem="ust-v4-kce" secondAttribute="leading" id="MaZ-8I-zgl"/>
+                            <constraint firstItem="16Z-th-0ka" firstAttribute="top" secondItem="ust-v4-kce" secondAttribute="top" id="xdC-HM-PXz"/>
+                            <constraint firstAttribute="bottom" secondItem="16Z-th-0ka" secondAttribute="bottom" id="zQS-wI-VuU"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="6Yy-a5-Be7"/>
+                    <navigationItem key="navigationItem" id="6Yy-a5-Be7">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="6O0-ax-EYy">
+                            <connections>
+                                <action selector="editng:" destination="Fbh-Sa-f6b" id="JRc-d8-a03"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cartTable" destination="16Z-th-0ka" id="EoW-4c-Rs6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0je-zp-KbC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1838" y="1861"/>
+            <point key="canvasLocation" x="1837.68115942029" y="1860.9375"/>
         </scene>
         <!--Home Perfume View Controller-->
         <scene sceneID="uCY-Jv-KYd">
@@ -614,7 +642,7 @@
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="filled" title="Add to cart"/>
                                                             <connections>
-                                                                <action selector="addToCart:" destination="HZV-jr-776" eventType="touchUpInside" id="lQ8-i1-e2Q"/>
+                                                                <action selector="addInCart:" destination="pmD-pa-46G" eventType="touchUpInside" id="1Qr-ps-5ee"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -631,7 +659,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="addToCart" destination="p8c-96-cdD" id="fEK-1o-aLr"/>
+                                            <outlet property="addToCart" destination="p8c-96-cdD" id="6dA-J5-UuB"/>
                                             <outlet property="perfumeImg" destination="s4r-U7-EMn" id="keX-rp-8sM"/>
                                             <outlet property="perfumeName" destination="XIP-rD-gVa" id="al2-Po-j7t"/>
                                             <outlet property="perfumePrice" destination="gDB-BB-pas" id="1zf-r8-HsX"/>
@@ -679,12 +707,10 @@
             <point key="canvasLocation" x="877" y="1861"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="mUH-gf-5b4"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="categorie" width="3000" height="1168"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="logo" width="3000" height="3000"/>
         <image name="person.crop.circle.badge.plus" catalog="system" width="128" height="113"/>
         <image name="square.grid.3x3" catalog="system" width="128" height="112"/>
