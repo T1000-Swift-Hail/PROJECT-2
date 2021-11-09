@@ -305,11 +305,11 @@
             </objects>
             <point key="canvasLocation" x="19" y="-1687"/>
         </scene>
-        <!--units-->
+        <!--Currencies-->
         <scene sceneID="LCR-dw-yw4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W5Q-pQ-VRh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="units" image="dollarsign.circle" catalog="system" selectedImage="dollarsign.circle.fill" id="pvQ-jB-Sq2"/>
+                    <tabBarItem key="tabBarItem" title="Currencies" image="dollarsign.circle" catalog="system" selectedImage="dollarsign.circle.fill" id="pvQ-jB-Sq2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="71j-eR-UEl">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
