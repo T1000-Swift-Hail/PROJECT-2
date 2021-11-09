@@ -15,6 +15,12 @@
 		0B4F05B72736F0610050C801 /* saudi_elctri_city_companyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F05B62736F0610050C801 /* saudi_elctri_city_companyTests.swift */; };
 		0B4F05C12736F0610050C801 /* saudi_elctri_city_companyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F05C02736F0610050C801 /* saudi_elctri_city_companyUITests.swift */; };
 		0B4F05C32736F0610050C801 /* saudi_elctri_city_companyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F05C22736F0610050C801 /* saudi_elctri_city_companyUITestsLaunchTests.swift */; };
+		0B76A97B273AF5B1000C7590 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76A97A273AF5B1000C7590 /* TableViewController.swift */; };
+		0BA50D092738F6A50072B199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA50D082738F6A50072B199 /* Assets.xcassets */; };
+		0BA50D0D273910610072B199 /* LanguegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA50D0C273910610072B199 /* LanguegeViewController.swift */; };
+		0BA50D0F27392FFE0072B199 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA50D0E27392FFE0072B199 /* LoginViewController.swift */; };
+		0BDECEB4273A9BF0006C669D /* textBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDECEB3273A9BF0006C669D /* textBoxViewController.swift */; };
+		0BDECEB6273AAE3B006C669D /* segmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDECEB5273AAE3B006C669D /* segmentedControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		0B4F05BC2736F0610050C801 /* saudi elctri city companyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "saudi elctri city companyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B4F05C02736F0610050C801 /* saudi_elctri_city_companyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saudi_elctri_city_companyUITests.swift; sourceTree = "<group>"; };
 		0B4F05C22736F0610050C801 /* saudi_elctri_city_companyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saudi_elctri_city_companyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0B76A97A273AF5B1000C7590 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		0BA50D082738F6A50072B199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0BA50D0C273910610072B199 /* LanguegeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguegeViewController.swift; sourceTree = "<group>"; };
+		0BA50D0E27392FFE0072B199 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0BDECEB3273A9BF0006C669D /* textBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textBoxViewController.swift; sourceTree = "<group>"; };
+		0BDECEB5273AAE3B006C669D /* segmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segmentedControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +114,13 @@
 				0B4F05A32736F0600050C801 /* ViewController.swift */,
 				0B4F05A52736F0600050C801 /* Main.storyboard */,
 				0B4F05AA2736F0610050C801 /* LaunchScreen.storyboard */,
+				0BA50D082738F6A50072B199 /* Assets.xcassets */,
 				0B4F05AD2736F0610050C801 /* Info.plist */,
+				0BA50D0C273910610072B199 /* LanguegeViewController.swift */,
+				0BA50D0E27392FFE0072B199 /* LoginViewController.swift */,
+				0BDECEB3273A9BF0006C669D /* textBoxViewController.swift */,
+				0BDECEB5273AAE3B006C669D /* segmentedControlView.swift */,
+				0B76A97A273AF5B1000C7590 /* TableViewController.swift */,
 			);
 			path = "saudi elctri city company";
 			sourceTree = "<group>";
@@ -229,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B4F05AC2736F0610050C801 /* LaunchScreen.storyboard in Resources */,
+				0BA50D092738F6A50072B199 /* Assets.xcassets in Resources */,
 				0B4F05A72736F0600050C801 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,8 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA50D0D273910610072B199 /* LanguegeViewController.swift in Sources */,
+				0BDECEB4273A9BF0006C669D /* textBoxViewController.swift in Sources */,
 				0B4F05A42736F0600050C801 /* ViewController.swift in Sources */,
+				0B76A97B273AF5B1000C7590 /* TableViewController.swift in Sources */,
 				0B4F05A02736F0600050C801 /* AppDelegate.swift in Sources */,
+				0BDECEB6273AAE3B006C669D /* segmentedControlView.swift in Sources */,
+				0BA50D0F27392FFE0072B199 /* LoginViewController.swift in Sources */,
 				0B4F05A22736F0600050C801 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
