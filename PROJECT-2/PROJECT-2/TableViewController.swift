@@ -30,6 +30,20 @@ class TableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let alert = UIAlertController(title: "Add", message: "Add product", preferredStyle: .actionSheet)
+        let addAction = UIAlertAction(title: "Add", style: .cancel, handler:{ action in })
+    
+        alert.addAction(addAction)
+        present(alert, animated: true)
+    
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
@@ -53,7 +67,7 @@ class TableViewController: UITableViewController {
         
     }
     
-    @IBAction func addItems(_ sender: UIBarButtonItem) {
+        func addItems(_ sender: UIBarButtonItem) {
         
             //getting an instance of UIAlertController
             //getting an instance of UIAlertController
@@ -89,10 +103,8 @@ class TableViewController: UITableViewController {
 
     
     
-        @IBAction func EditingStyle(_ sender: UIBarButtonItem){
+        func EditingStyle(_ sender: UIBarButtonItem){
         isEditing.toggle()
         tableView.setEditing(isEditing, animated: true)
     }
-    
 }
-
