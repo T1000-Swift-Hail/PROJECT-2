@@ -21,7 +21,7 @@ class LoginViewController:
     let customer = Customer(userName: "Abdoalaziz1", userPassword: 1413)
     let customer2 = Customer(userName: "Fahad4", userPassword: 4433)
 
-//    let allCustomer:Customer = [customer,customer2]
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,17 +47,18 @@ class LoginViewController:
     
     func UserLogin () {
         // gaurd to check for user is enterned or ematy
+       // let Users = [customer,customer2]
         guard let userName = userName.text else { return }
         guard let userPassowrd = Int(userPassword.text ?? "0") else { return }
-        
+
         if customer.userName == userName && customer.userPassword == userPassowrd  {
             DisplayAlert(withTitle: "login successful", message: "", isLogin: true)
         } else {
             DisplayAlert(withTitle: "fail", message: "", isLogin: false)
         }
-        
     }
     @IBAction func loginActionBotton(_ sender: Any) {
+        
         UserLogin()
     }
     

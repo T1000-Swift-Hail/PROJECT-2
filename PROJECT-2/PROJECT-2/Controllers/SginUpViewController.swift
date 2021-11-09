@@ -35,10 +35,10 @@ class SginUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func DisplayAlert(withTitle title: String, message: String,isLogin: Bool) {
+    func DisplayAlert(withTitle title: String, message: String,isSginup: Bool) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default, handler: { action in
-            if isLogin {
+            if isSginup {
                 self.performSegue(withIdentifier: "homeScreen", sender: nil)
             } else {
                 
@@ -58,9 +58,9 @@ class SginUpViewController: UIViewController {
         guard let userPassowrd = Int(userPassword.text ?? "0") else { return }
         
         if customer.userName == userName && customer.userPassword == userPassowrd  {
-            DisplayAlert(withTitle: "login successful", message: "", isLogin: true)
+            DisplayAlert(withTitle: "login successful", message: "", isSginup: true)
         } else {
-            DisplayAlert(withTitle: "fail", message: "", isLogin: false)
+            DisplayAlert(withTitle: "fail", message: "", isSginup: false)
         }
 
     /*
