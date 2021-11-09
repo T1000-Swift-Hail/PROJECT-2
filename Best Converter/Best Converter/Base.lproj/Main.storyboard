@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tgv-Vu-j3h">
-    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +28,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Conversion From Meter">
                                             <fontDescription key="titleFontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
-                                            <color key="baseForegroundColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseForegroundColor" name="FontColor"/>
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -43,7 +44,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Conversion From Kilometer" subtitle="">
                                             <fontDescription key="titleFontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
-                                            <color key="baseForegroundColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseForegroundColor" name="FontColor"/>
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -59,7 +60,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Conversion From Centimeter">
                                             <fontDescription key="titleFontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="14"/>
-                                            <color key="baseForegroundColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseForegroundColor" name="FontColor"/>
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -75,7 +76,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Conversion From Inch" titleAlignment="center">
                                             <fontDescription key="titleFontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
-                                            <color key="baseForegroundColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseForegroundColor" name="FontColor"/>
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -96,7 +97,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ekX-3f-e98"/>
-                        <color key="backgroundColor" red="0.84699999999999998" green="0.84699999999999998" blue="0.84699999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="isZ-Wb-eVF" firstAttribute="centerY" secondItem="YQ6-w3-Mm1" secondAttribute="centerY" id="Oic-RX-tJv"/>
                             <constraint firstItem="isZ-Wb-eVF" firstAttribute="centerX" secondItem="YQ6-w3-Mm1" secondAttribute="centerX" id="jO0-0z-VkR"/>
@@ -122,7 +123,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the unit in meter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ws-9M-KAI">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                        <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0 m" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qrc-1C-eJF">
@@ -149,7 +150,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6h2-9c-rDw">
                                         <rect key="frame" x="0.0" y="190" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                        <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -166,7 +167,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rnT-Rz-Das"/>
-                        <color key="backgroundColor" red="0.84699999999999998" green="0.84699999999999998" blue="0.84699999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rnT-Rz-Das" firstAttribute="trailing" secondItem="bIL-K8-1fn" secondAttribute="trailing" constant="20" id="3FV-fL-fE7"/>
                             <constraint firstItem="bIL-K8-1fn" firstAttribute="leading" secondItem="rnT-Rz-Das" secondAttribute="leading" constant="20" id="69k-hz-vrg"/>
@@ -198,7 +199,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the currency in SAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJS-b0-m88">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                        <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0 SAR" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Hk-la-Nrq">
@@ -225,7 +226,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9d-yr-y0c">
                                         <rect key="frame" x="0.0" y="190" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                        <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -242,7 +243,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4RX-5i-IZZ"/>
-                        <color key="backgroundColor" red="0.84699999999999998" green="0.84699999999999998" blue="0.84699999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4RX-5i-IZZ" firstAttribute="trailing" secondItem="1bk-sq-Ghq" secondAttribute="trailing" constant="20" id="A2U-eE-cIe"/>
                             <constraint firstItem="1bk-sq-Ghq" firstAttribute="top" secondItem="4RX-5i-IZZ" secondAttribute="top" constant="203" id="PkL-dX-twb"/>
@@ -270,7 +271,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="selectedImageTintColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" name="FontColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="W5Q-pQ-VRh" kind="relationship" relationship="viewControllers" id="hog-db-5TJ"/>
@@ -281,18 +282,18 @@
             </objects>
             <point key="canvasLocation" x="19" y="-385"/>
         </scene>
-        <!--Unit-->
+        <!--Units-->
         <scene sceneID="PZo-n1-6QB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rYH-7h-1cH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Unit" image="ruler" catalog="system" selectedImage="ruler.fill" id="Gsr-kY-cOG"/>
+                    <tabBarItem key="tabBarItem" title="Units" image="ruler" catalog="system" selectedImage="ruler.fill" id="Gsr-kY-cOG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="B2N-Nh-GGV">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
-                            <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="textColor" name="FontColor"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -304,18 +305,18 @@
             </objects>
             <point key="canvasLocation" x="19" y="-1687"/>
         </scene>
-        <!--Currency-->
+        <!--units-->
         <scene sceneID="LCR-dw-yw4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W5Q-pQ-VRh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Currency" image="dollarsign.circle" catalog="system" selectedImage="dollarsign.circle.fill" id="pvQ-jB-Sq2"/>
+                    <tabBarItem key="tabBarItem" title="units" image="dollarsign.circle" catalog="system" selectedImage="dollarsign.circle.fill" id="pvQ-jB-Sq2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="71j-eR-UEl">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
-                            <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="textColor" name="FontColor"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -347,7 +348,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Conversion From SAR">
                                             <fontDescription key="titleFontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
-                                            <color key="baseForegroundColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseForegroundColor" name="FontColor"/>
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -363,7 +364,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Conversion From USD">
                                             <fontDescription key="titleFontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
-                                            <color key="baseForegroundColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseForegroundColor" name="FontColor"/>
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -379,7 +380,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Conversion From AUD">
                                             <fontDescription key="titleFontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
-                                            <color key="baseForegroundColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseForegroundColor" name="FontColor"/>
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -395,7 +396,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Conversion From Euro">
                                             <fontDescription key="titleFontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
-                                            <color key="baseForegroundColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseForegroundColor" name="FontColor"/>
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -416,7 +417,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Yhw-dU-LXw"/>
-                        <color key="backgroundColor" red="0.84705895190000002" green="0.84705883260000003" blue="0.84705883260000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ICE-hL-zP8" firstAttribute="centerY" secondItem="DYB-K2-QVc" secondAttribute="centerY" id="EL1-Hu-DjL"/>
                             <constraint firstItem="ICE-hL-zP8" firstAttribute="centerX" secondItem="DYB-K2-QVc" secondAttribute="centerX" id="RXE-Mp-dWP"/>
@@ -442,7 +443,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the unit in centimeter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXS-Ht-f92">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                        <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0 cm" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gyf-Ev-BDE">
@@ -469,7 +470,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrB-xN-gZD">
                                         <rect key="frame" x="0.0" y="190" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                        <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -486,7 +487,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KVM-s0-V7i"/>
-                        <color key="backgroundColor" red="0.84699999999999998" green="0.84699999999999998" blue="0.84699999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="KVM-s0-V7i" firstAttribute="trailing" secondItem="AUs-9g-dJj" secondAttribute="trailing" constant="20" id="9qF-7U-ODY"/>
                             <constraint firstItem="AUs-9g-dJj" firstAttribute="top" secondItem="KVM-s0-V7i" secondAttribute="top" constant="203" id="T7U-vC-vnI"/>
@@ -518,7 +519,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the unit in kilometer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvM-9g-13W">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                        <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0 km" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i4X-vJ-DNN">
@@ -545,7 +546,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBF-MM-8aw">
                                         <rect key="frame" x="0.0" y="190" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                        <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -562,7 +563,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xjb-5d-CZb"/>
-                        <color key="backgroundColor" red="0.84699999999999998" green="0.84699999999999998" blue="0.84699999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eZN-8R-GGR" firstAttribute="leading" secondItem="xjb-5d-CZb" secondAttribute="leading" constant="20" id="faz-Qw-SGh"/>
                             <constraint firstItem="xjb-5d-CZb" firstAttribute="trailing" secondItem="eZN-8R-GGR" secondAttribute="trailing" constant="20" id="sSz-24-XNH"/>
@@ -594,7 +595,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the unit in inch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZq-as-Paa">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                        <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0 inch" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vPT-0Y-apn">
@@ -621,7 +622,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djp-vM-bhF">
                                         <rect key="frame" x="0.0" y="190" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                        <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -638,7 +639,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="T5J-uG-R3W"/>
-                        <color key="backgroundColor" red="0.84699999999999998" green="0.84699999999999998" blue="0.84699999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="T5J-uG-R3W" firstAttribute="trailing" secondItem="V1d-qy-FNO" secondAttribute="trailing" constant="20" id="W5Y-eF-WOW"/>
                             <constraint firstItem="V1d-qy-FNO" firstAttribute="leading" secondItem="T5J-uG-R3W" secondAttribute="leading" constant="20" id="dxR-Pa-11v"/>
@@ -746,7 +747,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the currency in USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVm-E7-7FS">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                        <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0 USD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k8x-Sw-YmY">
@@ -773,7 +774,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnY-6U-IFP">
                                         <rect key="frame" x="0.0" y="190" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                        <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -790,7 +791,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Skd-Ao-NHI"/>
-                        <color key="backgroundColor" red="0.84699999999999998" green="0.84699999999999998" blue="0.84699999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="uRB-KS-DIo" firstAttribute="top" secondItem="Skd-Ao-NHI" secondAttribute="top" constant="203" id="G5Q-dd-L9s"/>
                             <constraint firstItem="uRB-KS-DIo" firstAttribute="leading" secondItem="Skd-Ao-NHI" secondAttribute="leading" constant="20" id="KGf-Z4-8WO"/>
@@ -822,7 +823,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the currency in AUD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VI-wA-Qit">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                        <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0 AUD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jNG-HW-P05">
@@ -849,7 +850,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CR-fg-5ZJ">
                                         <rect key="frame" x="0.0" y="190" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                        <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -866,7 +867,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Tfe-Di-Qa4"/>
-                        <color key="backgroundColor" red="0.84699999999999998" green="0.84699999999999998" blue="0.84699999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fmg-H1-ExA" firstAttribute="top" secondItem="Tfe-Di-Qa4" secondAttribute="top" constant="203" id="LOS-7K-Ltd"/>
                             <constraint firstItem="Tfe-Di-Qa4" firstAttribute="trailing" secondItem="fmg-H1-ExA" secondAttribute="trailing" constant="20" id="oz1-Md-qOE"/>
@@ -898,7 +899,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the currency in Euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjF-ow-871">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                        <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0 Euro" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vx2-EK-7Nj">
@@ -925,7 +926,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpW-og-4tN">
                                         <rect key="frame" x="0.0" y="190" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                        <color key="textColor" red="0.19400000000000001" green="0.26400000000000001" blue="0.38600000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -942,7 +943,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="n9N-WF-aNE"/>
-                        <color key="backgroundColor" red="0.84699999999999998" green="0.84699999999999998" blue="0.84699999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dv2-95-Ko7" firstAttribute="leading" secondItem="n9N-WF-aNE" secondAttribute="leading" constant="20" id="ASB-Qx-YPW"/>
                             <constraint firstItem="dv2-95-Ko7" firstAttribute="top" secondItem="n9N-WF-aNE" secondAttribute="top" constant="203" id="ILB-tg-omV"/>
@@ -966,5 +967,11 @@
         <image name="dollarsign.circle.fill" catalog="system" width="128" height="121"/>
         <image name="ruler" catalog="system" width="128" height="57"/>
         <image name="ruler.fill" catalog="system" width="128" height="57"/>
+        <namedColor name="BackgroundColor">
+            <color red="0.83921568627450982" green="0.84705882352941175" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FontColor">
+            <color red="0.11372549019607843" green="0.16470588235294117" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

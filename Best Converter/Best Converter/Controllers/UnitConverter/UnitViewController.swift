@@ -16,13 +16,3 @@ enum ConversionUnit {
     case inch
     case m
 }
-
-class UnitViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
-        
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
-    
-}

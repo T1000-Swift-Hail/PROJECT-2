@@ -16,9 +16,7 @@ class ConversionFromSar: UIViewController, UITextFieldDelegate, UITextViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         textFieldCurrencySar.delegate = self
-
         //MARK: - Tap Gesture Recognizer, dismiss the keyboard when the user taps on the screen
                 let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
                 view.addGestureRecognizer(tap)
