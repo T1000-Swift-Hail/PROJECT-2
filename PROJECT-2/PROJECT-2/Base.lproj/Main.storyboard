@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Od-1u-rnp">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,35 +13,44 @@
             <objects>
                 <tableViewController id="5DL-MT-c8J" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="6vf-ZZ-Add">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
                             <tableViewSection id="ISX-4s-b70">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="225" id="62X-6C-STg">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="225"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="580" id="62X-6C-STg">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="580"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="62X-6C-STg" id="gTu-EC-FpN">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="225"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="580"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5LP-KL-5na">
-                                                    <rect key="frame" x="10" y="0.0" width="394" height="119"/>
-                                                    <string key="text">in recent years,the number of fitness and health services have increased,expanding the interest among the population.Today,health clubs and fitness centers are a reference of  health services,rising the adherence to physical activity.</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="picture" translatesAutoresizingMaskIntoConstraints="NO" id="RSA-qV-nxk">
-                                                    <rect key="frame" x="-33" y="116" width="234" height="98"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="e6p-zs-juC">
+                                                    <rect key="frame" x="10" y="4.6666666666666572" width="370" height="324.33333333333337"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picture" translatesAutoresizingMaskIntoConstraints="NO" id="RSA-qV-nxk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="370" height="150"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="150" id="HN5-8G-4kb"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5LP-KL-5na">
+                                                            <rect key="frame" x="1.3333333333333428" y="157" width="368.66666666666663" height="167.33333333333337"/>
+                                                            <string key="text">in recent years,the number of fitness and health services have increased,expanding the interest among the population.Today,health clubs and fitness centers are a reference of  health services,rising the adherence to physical activity.</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <variation key="heightClass=compact-widthClass=compact" axis="horizontal" distribution="fillEqually"/>
+                                                    <variation key="heightClass=compact-widthClass=regular" alignment="fill" axis="horizontal" distribution="fillEqually"/>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="5LP-KL-5na" secondAttribute="trailing" constant="10" id="6KB-eL-oFX"/>
-                                                <constraint firstItem="5LP-KL-5na" firstAttribute="top" secondItem="gTu-EC-FpN" secondAttribute="top" constant="1" id="J03-UQ-gV2"/>
-                                                <constraint firstItem="5LP-KL-5na" firstAttribute="leading" secondItem="gTu-EC-FpN" secondAttribute="leading" constant="10" id="J8c-0C-Uib"/>
+                                                <constraint firstItem="e6p-zs-juC" firstAttribute="top" secondItem="gTu-EC-FpN" secondAttribute="top" constant="4.5" id="F8d-z2-OaN"/>
+                                                <constraint firstItem="e6p-zs-juC" firstAttribute="leading" secondItem="gTu-EC-FpN" secondAttribute="leading" constant="10" id="P5M-M3-T4N"/>
+                                                <constraint firstAttribute="trailing" secondItem="e6p-zs-juC" secondAttribute="trailing" constant="10" id="zEO-8A-Aln"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -59,20 +68,20 @@
             </objects>
             <point key="canvasLocation" x="-707.24637681159425" y="-1406.25"/>
         </scene>
-        <!--Service Table View Controller-->
+        <!--Our Services-->
         <scene sceneID="Twb-oE-tO0">
             <objects>
                 <tableViewController id="Xnp-ws-xJg" customClass="ServiceTableViewController" customModule="PROJECT_2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="cpf-cd-24J">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="L3e-aF-2YJ" customClass="ServiceCell" customModule="PROJECT_2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L3e-aF-2YJ" id="gai-n4-6Kw">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjD-AH-f7W">
@@ -94,7 +103,7 @@
                             <outlet property="delegate" destination="Xnp-ws-xJg" id="p62-IB-Pl4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="30P-Vn-Svt"/>
+                    <navigationItem key="navigationItem" title="Our Services" id="30P-Vn-Svt"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wq1-kN-Ipr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,7 +114,7 @@
             <objects>
                 <viewController id="8iv-pf-Ktl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j6Y-sg-EY4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjh-Jj-Smv">
@@ -151,25 +160,25 @@
             <objects>
                 <viewController id="4Od-1u-rnp" customClass="LoginViewController" customModule="PROJECT_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hYo-eT-uL3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health Club" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Nr-UE-STW">
-                                <rect key="frame" x="150.5" y="173" width="137.5" height="32.5"/>
+                                <rect key="frame" x="126.66666666666667" y="173" width="137.33333333333331" height="32.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2nl-QP-wO3">
-                                <rect key="frame" x="20" y="338.5" width="374" height="76"/>
+                                <rect key="frame" x="20" y="338.33333333333331" width="350" height="76"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="etf-Z0-O4w">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RUr-z3-REK">
-                                        <rect key="frame" x="0.0" y="42" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="42" width="350" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -214,6 +223,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="mdy-Ut-IUy"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TGC-i7-JEa">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -233,7 +243,7 @@
                     <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="IqN-iE-EK6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hgl-Lg-Ykm">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -252,7 +262,7 @@
                     <tabBarItem key="tabBarItem" title="" image="face.smiling" catalog="system" id="F83-Jo-6zU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eCI-VA-0EK">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

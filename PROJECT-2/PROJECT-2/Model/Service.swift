@@ -12,6 +12,7 @@ struct Service {
     var name : String
     var description : String
     var price : Int
+    
     var ourServices = ["training", "boxing" ,"swimming","yaki","zumba"]
     
     
