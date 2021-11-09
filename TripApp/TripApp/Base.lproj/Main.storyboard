@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vWC-N7-b8U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DMi-mj-vd9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home Page View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomePageViewController" customModule="TripApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +53,8 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onClickSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ZB-aw-1gg"/>
-                                                    <segue destination="MmT-dw-12Y" kind="show" id="rkn-lH-JHV"/>
+                                                    <action selector="onclickLogIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1qq-TJ-EqW"/>
+                                                    <segue destination="Xnx-lJ-5OQ" kind="show" id="xeg-uA-kfs"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -74,7 +75,7 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up" cornerStyle="capsule"/>
                                                 <connections>
                                                     <action selector="onClickSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J6J-rT-mD9"/>
-                                                    <segue destination="Xnx-lJ-5OQ" kind="show" id="Ki6-Zc-Www"/>
+                                                    <segue destination="MmT-dw-12Y" kind="show" id="YKP-d6-CZD"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -100,16 +101,18 @@
                     <connections>
                         <outlet property="btnSign" destination="cWQ-lQ-ahW" id="XMj-6r-CcP"/>
                         <outlet property="btnSignOut" destination="LEt-WA-E08" id="JgS-5f-rwL"/>
+                        <outlet property="buttSignIn" destination="cWQ-lQ-ahW" id="ZUg-fj-gbu"/>
+                        <outlet property="buttSignOut" destination="LEt-WA-E08" id="I0p-mp-GLS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1839.1304347826087" y="64.955357142857139"/>
+            <point key="canvasLocation" x="2749.275362318841" y="64.955357142857139"/>
         </scene>
-        <!--Login View Controller-->
+        <!--View Controller-->
         <scene sceneID="M3I-sL-njd">
             <objects>
-                <viewController id="MmT-dw-12Y" customClass="LoginViewController" customModule="TripApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MmT-dw-12Y" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Exb-MH-PqU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,7 +173,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xm7-HK-diX">
                                                         <rect key="frame" x="0.0" y="49" width="240" height="19.5"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v5N-Ld-GGm">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v5N-Ld-GGm">
                                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="18.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -198,23 +201,24 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kql-Gv-WVT">
-                                                <rect key="frame" x="30" y="150.5" width="274" height="31"/>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmM-QQ-Fst">
+                                                <rect key="frame" x="16" y="139" width="274" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Log In">
+                                                <buttonConfiguration key="configuration" style="filled" title="Sign In">
                                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="btnSuccssLogIn:" destination="MmT-dw-12Y" eventType="touchUpInside" id="z3q-Bc-4rY"/>
+                                                    <action selector="btnSignOutText:" destination="Xnx-lJ-5OQ" eventType="touchUpInside" id="arN-PW-dXr"/>
+                                                    <action selector="btnSuccssLogIn:" destination="Xnx-lJ-5OQ" eventType="touchUpInside" id="8Wc-jo-MSe"/>
+                                                    <action selector="btnSuccssLogIn:" destination="MmT-dw-12Y" eventType="touchUpInside" id="I5O-Ug-4dF"/>
+                                                    <action selector="onclickSignIn:" destination="MmT-dw-12Y" eventType="touchUpInside" id="DjV-uM-tGy"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="kql-Gv-WVT" firstAttribute="leading" secondItem="qWJ-al-WQH" secondAttribute="leading" constant="30" id="AOV-N7-9ue"/>
-                                            <constraint firstAttribute="trailing" secondItem="kql-Gv-WVT" secondAttribute="trailing" constant="30" id="E0l-6A-q8u"/>
                                             <constraint firstAttribute="height" constant="208" id="HXW-Ih-Rhv"/>
-                                            <constraint firstItem="kql-Gv-WVT" firstAttribute="top" secondItem="Uh9-Cj-Ldd" secondAttribute="bottom" constant="28" id="MNp-kz-4h1"/>
                                             <constraint firstAttribute="trailing" secondItem="Uh9-Cj-Ldd" secondAttribute="trailing" constant="30" id="Qhr-WK-JcY"/>
                                             <constraint firstItem="Uh9-Cj-Ldd" firstAttribute="leading" secondItem="qWJ-al-WQH" secondAttribute="leading" constant="30" id="TII-Hy-AyC"/>
                                             <constraint firstItem="Uh9-Cj-Ldd" firstAttribute="top" secondItem="qWJ-al-WQH" secondAttribute="top" constant="23" id="ZJE-9d-nhh"/>
@@ -239,14 +243,49 @@
                     <navigationItem key="navigationItem" id="tuW-ZS-0ki"/>
                     <connections>
                         <outlet property="FullNameText" destination="oAK-zC-nsJ" id="oiF-a4-zxr"/>
-                        <outlet property="LoginBton" destination="kql-Gv-WVT" id="Awp-zR-35Y"/>
+                        <outlet property="LoginBton" destination="QmM-QQ-Fst" id="zj1-Wr-6vM"/>
+                        <outlet property="PassText" destination="v5N-Ld-GGm" id="a3w-tn-GKa"/>
                         <outlet property="PasswordText" destination="v5N-Ld-GGm" id="zgR-58-oIg"/>
                         <outlet property="onClickSucessLogIn" destination="qWJ-al-WQH" id="IIL-UE-voH"/>
+                        <outlet property="passwordText" destination="v5N-Ld-GGm" id="YWO-GV-iRi"/>
+                        <outlet property="yourNameText" destination="oAK-zC-nsJ" id="S01-ri-geS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phM-xN-dXY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2947.826086956522" y="-577.23214285714278"/>
+            <point key="canvasLocation" x="3671.0144927536235" y="251.78571428571428"/>
+        </scene>
+        <!--Places To Visit View Controller-->
+        <scene sceneID="RLD-O3-84B">
+            <objects>
+                <viewController id="O4t-SQ-SQ1" customClass="PlacesToVisitViewController" customModule="TripApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y1S-aD-hnc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ujq-Nm-CER"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7yx-wz-u0J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMT-ep-ylv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4579.7101449275369" y="945.53571428571422"/>
+        </scene>
+        <!--Thing To Do View Controller-->
+        <scene sceneID="mCP-Bo-4a9">
+            <objects>
+                <viewController id="bug-Ku-kGD" customClass="ThingToDoViewController" customModule="TripApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1W5-lN-0JQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GL5-1G-sWQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="htr-Zb-595"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4G2-16-dsn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4579.7101449275369" y="1646.6517857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bXf-GI-rWq">
@@ -265,29 +304,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drY-T3-SMS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="64.955357142857139"/>
+            <point key="canvasLocation" x="1839.1304347826087" y="64.955357142857139"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="AYQ-Yx-hq8">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vWC-N7-b8U" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5JF-YM-Qw4">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="fEi-wC-tDJ" kind="relationship" relationship="viewControllers" id="Y8f-FP-EqE"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N8e-Cw-AKi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="64.955357142857139"/>
-        </scene>
-        <!--Sign Up View Controller-->
+        <!--View Controller-->
         <scene sceneID="ltD-SV-udM">
             <objects>
-                <viewController id="Xnx-lJ-5OQ" customClass="SignUpViewController" customModule="TripApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Xnx-lJ-5OQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iNh-WC-WsH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -388,7 +410,9 @@
                                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
+                                                    <action selector="btnSignOutText:" destination="Xnx-lJ-5OQ" eventType="touchUpInside" id="gft-B1-OXc"/>
                                                     <action selector="btnSuccssLogIn:" destination="Xnx-lJ-5OQ" eventType="touchUpInside" id="K6J-Dv-6UM"/>
+                                                    <action selector="signOutTextBtn:" destination="Xnx-lJ-5OQ" eventType="touchUpInside" id="XGD-v1-dgM"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -421,16 +445,114 @@
                     </view>
                     <navigationItem key="navigationItem" id="FSO-mr-bMt"/>
                     <connections>
+                        <outlet property="emailText" destination="BnI-lr-7qR" id="uT1-ag-gdV"/>
+                        <outlet property="fulNameText" destination="uvC-4o-Fb4" id="VZ9-AQ-ng5"/>
+                        <outlet property="fullNameText" destination="uvC-4o-Fb4" id="z80-2h-Ndm"/>
                         <outlet property="onClickSucessLogIn" destination="bbE-Qm-EvG" id="3VI-XF-MiR"/>
+                        <outlet property="passText" destination="D01-kZ-07m" id="GvF-l7-yrf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEW-kB-s9B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2948" y="105"/>
+            <point key="canvasLocation" x="3671.0144927536235" y="-419.19642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NmR-BA-5Rm">
+            <objects>
+                <viewController id="ZzS-Jj-9L6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NgZ-Ni-lcP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Pgd-GF-JKb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="X9V-dQ-EMl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8Y-7g-S6v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6135" y="65"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="U2h-Nv-PPJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="flK-ry-ddw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="vJR-h9-n8A"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o5i-69-Egm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZzS-Jj-9L6" kind="relationship" relationship="rootViewController" id="V4i-Y2-F3I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d3C-H9-MtB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4832" y="65"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yZt-2e-o24">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="DMi-mj-vd9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T4g-hM-YA3">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fEi-wC-tDJ" kind="relationship" relationship="viewControllers" id="t52-I1-YrT"/>
+                        <segue destination="Ln0-wL-6At" kind="relationship" relationship="viewControllers" id="QXM-38-wxn"/>
+                        <segue destination="YKT-wU-mHp" kind="relationship" relationship="viewControllers" id="tzr-H2-Jg6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xpy-hb-EbY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="594" y="716"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="4cw-fq-XEg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ln0-wL-6At" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="ba0-hQ-HNs"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Utz-VH-nsX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="O4t-SQ-SQ1" kind="relationship" relationship="rootViewController" id="fSX-FF-fNC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2W-y1-4di" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3669.5652173913045" y="945.53571428571422"/>
+        </scene>
+        <!--Things To do-->
+        <scene sceneID="AgO-S5-DJ3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YKT-wU-mHp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Things To do" image="list.number" catalog="system" id="ky4-Tx-dNY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wdz-jj-LQ3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bug-Ku-kGD" kind="relationship" relationship="rootViewController" id="rgz-48-Uk2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IMf-Cm-7OE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3669.5652173913045" y="1646.6517857142856"/>
         </scene>
     </scenes>
     <resources>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="list.number" catalog="system" width="128" height="97"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="travel_icon" width="1280" height="1024"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
