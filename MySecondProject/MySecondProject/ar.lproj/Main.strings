@@ -1,0 +1,156 @@
+
+/* Class = "UILabel"; text = "Change Language"; ObjectID = "0Y5-N1-k1i"; */
+"0Y5-N1-k1i.text" = "تغيير اللغة";
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "6kS-Tw-WBc"; */
+"6kS-Tw-WBc.title" = "الملف الشخصي";
+
+/* Class = "UITextView"; text = "Contact Us Email:Abdulaziz@GlasessStore.com PhoneNumber:0535454757"; ObjectID = "7Xk-fb-5TZ"; */
+"7Xk-fb-5TZ.text" = "تواصل معنا Email:Abdulaziz@GlasessStore.com PhoneNumber:0535454757";
+
+/* Class = "UILabel"; text = "DRESS"; ObjectID = "7rb-Kn-hml"; */
+"7rb-Kn-hml.text" = "النظارات";
+
+/* Class = "UILabel"; text = "Abdulaziz Store"; ObjectID = "9xA-5u-foT"; */
+"9xA-5u-foT.text" = "متجر عبدالعزيز";
+
+/* Class = "UILabel"; text = "PRODUCTS"; ObjectID = "B1X-4c-23P"; */
+"B1X-4c-23P.text" = "المنتجات";
+
+/* Class = "UITextField"; placeholder = "Passward"; ObjectID = "CGO-Ho-VKv"; */
+"CGO-Ho-VKv.placeholder" = "الرقم السري";
+
+/* Class = "UIButton"; configuration.title = " Notification"; ObjectID = "EF3-TF-3WO"; */
+"EF3-TF-3WO.configuration.title" = " الاشعارات";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "EF3-TF-3WO"; */
+"EF3-TF-3WO.normalTitle" = "زر";
+
+/* Class = "UIButton"; configuration.title = " My Order"; ObjectID = "GER-BP-51x"; */
+"GER-BP-51x.configuration.title" = " طلباتي";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "GER-BP-51x"; */
+"GER-BP-51x.normalTitle" = "زر";
+
+/* Class = "UITabBarItem"; title = "Cart"; ObjectID = "GhE-b1-AGB"; */
+"GhE-b1-AGB.title" = "سلة التسوق";
+
+/* Class = "UITextField"; placeholder = "repeat passwoard"; ObjectID = "Gxi-Ts-Umf"; */
+"Gxi-Ts-Umf.placeholder" = "كرر الرقم السري";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "GzE-dE-jnd"; */
+"GzE-dE-jnd.title" = "Item";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "KrV-2h-0B7"; */
+"KrV-2h-0B7.placeholder" = "البريد الالكتروني";
+
+/* Class = "UINavigationItem"; title = "Abdulaziz Store"; ObjectID = "MRm-S9-tUy"; */
+"MRm-S9-tUy.title" = "متجر عبدالعزيز";
+
+/* Class = "UILabel"; text = "Welcome To Abdulaziz Store"; ObjectID = "Nhb-tW-JfJ"; */
+"Nhb-tW-JfJ.text" = "أهلا بكم في متجر عبدالعزيز";
+
+/* Class = "UILabel"; text = "Welcome To Az7 Store"; ObjectID = "Q1x-vP-Rcv"; */
+"Q1x-vP-Rcv.text" = "أهلا بكم في متجرنا";
+
+/* Class = "UITabBarItem"; title = "Categories"; ObjectID = "TeI-8k-jfr"; */
+"TeI-8k-jfr.title" = "الفئات";
+
+/* Class = "UITextField"; placeholder = "User Name Or Email ..."; ObjectID = "Yq5-hK-ZXx"; */
+"Yq5-hK-ZXx.placeholder" = "اسم المستخدم او كلمة المرور ...";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "Zqt-PQ-c62"; */
+"Zqt-PQ-c62.title" = "القائمة الرئيسية";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "bVN-Tm-x3W"; */
+"bVN-Tm-x3W.title" = "القائمة الرئيسية";
+
+/* Class = "UIButton"; configuration.title = "Sign In"; ObjectID = "bd6-hy-xbd"; */
+"bd6-hy-xbd.configuration.title" = "تسجيل دخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bd6-hy-xbd"; */
+"bd6-hy-xbd.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "Sign In "; ObjectID = "c0M-lg-Keo"; */
+"c0M-lg-Keo.text" = "تسجيل دخول ";
+
+/* Class = "UIButton"; configuration.title = "Choose Photo"; ObjectID = "fwW-ys-4SP"; */
+"fwW-ys-4SP.configuration.title" = "أختر صورة";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fwW-ys-4SP"; */
+"fwW-ys-4SP.normalTitle" = "زر";
+
+/* Class = "UITextField"; placeholder = "Passwoard ..."; ObjectID = "gNo-o0-jOl"; */
+"gNo-o0-jOl.placeholder" = "الرقم السري ...";
+
+/* Class = "UILabel"; text = "25,000 Dollers"; ObjectID = "gVZ-sm-1eh"; */
+"gVZ-sm-1eh.text" = "25,000 Dollers";
+
+/* Class = "UILabel"; text = "Registration"; ObjectID = "hKf-y3-aQ3"; */
+"hKf-y3-aQ3.text" = "التسجيل";
+
+/* Class = "UILabel"; text = "Pick the glasses to look for it"; ObjectID = "iY1-ZD-8sy"; */
+"iY1-ZD-8sy.text" = "أختر النظاره لتوفيرها لك";
+
+/* Class = "UILabel"; text = "Turn On Or Turn Off"; ObjectID = "jjJ-d1-pAi"; */
+"jjJ-d1-pAi.text" = "تشغيل او ايقاف";
+
+/* Class = "UIButton"; configuration.title = " Settings"; ObjectID = "jtW-s9-9lk"; */
+"jtW-s9-9lk.configuration.title" = " الاعدادات";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jtW-s9-9lk"; */
+"jtW-s9-9lk.normalTitle" = "زر";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "oZw-ww-54M"; */
+"oZw-ww-54M.configuration.title" = "تسجيل جديد";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oZw-ww-54M"; */
+"oZw-ww-54M.normalTitle" = "زر";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "ox2-A7-OW6"; */
+"ox2-A7-OW6.title" = "الملف الشخصي";
+
+/* Class = "UITextView"; text = "We Are A big Glasess Store And We Have Many Brands For Glasess And Sun Glasess "; ObjectID = "qgW-Rb-dBk"; */
+"qgW-Rb-dBk.text" = "We Are A big Glasess Store And We Have Many Brands For Glasess And Sun Glasess ";
+
+/* Class = "UIButton"; configuration.title = "Create Account"; ObjectID = "t2t-3Z-2V4"; */
+"t2t-3Z-2V4.configuration.title" = "انشاء حساب";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "t2t-3Z-2V4"; */
+"t2t-3Z-2V4.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "SHOP BY CATEGORY"; ObjectID = "tvu-sH-VI8"; */
+"tvu-sH-VI8.text" = "التسوق حسب الفئة";
+
+/* Class = "UIBarButtonItem"; title = "Edit"; ObjectID = "ty8-vV-VIf"; */
+"ty8-vV-VIf.title" = "تعديل";
+
+/* Class = "UIButton"; configuration.title = " Contact Us"; ObjectID = "uci-a9-brw"; */
+"uci-a9-brw.configuration.title" = " تواصل معنا";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uci-a9-brw"; */
+"uci-a9-brw.normalTitle" = "زر";
+
+/* Class = "UIButton"; configuration.title = " About Store"; ObjectID = "vea-3n-bXs"; */
+"vea-3n-bXs.configuration.title" = " عن المتجر";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vea-3n-bXs"; */
+"vea-3n-bXs.normalTitle" = "زر";
+
+/* Class = "UIButton"; configuration.title = " My Account"; ObjectID = "wB7-ET-1LW"; */
+"wB7-ET-1LW.configuration.title" = " حسابي";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wB7-ET-1LW"; */
+"wB7-ET-1LW.normalTitle" = "زر";
+
+/* Class = "UIButton"; configuration.title = "Open Cam"; ObjectID = "wKv-Lg-GCS"; */
+"wKv-Lg-GCS.configuration.title" = "أفتح الكاميرا";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wKv-Lg-GCS"; */
+"wKv-Lg-GCS.normalTitle" = "زر";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "ypt-IF-ziP"; */
+"ypt-IF-ziP.configuration.title" = "دخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ypt-IF-ziP"; */
+"ypt-IF-ziP.normalTitle" = "زر";

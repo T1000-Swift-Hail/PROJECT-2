@@ -9,19 +9,20 @@
 My Project name is Az Glasess store
 
 ### Project Description :
-// Add your project description
+// Add your project description 
 my project is online store for glasses and Sunglasses you can Browse the Products and brand , price , type, and buy it 
 
 ### Features List :
-// Add your project features list
-- Easy to use and all the pages is clear 
-- Easy access to the desired product
+// Add your project features list .
+- Easy to use and all the pages is clear . 
+- Easy access to the desired product .
 - also you can upload any glasses photo to searching to look for it . 
+- also we have too languages Arabic And English by Localization .
 
 
 ### Define the scenes :
 // Add description of the screens / scenes in your application.
-- first screen for login then when you login to the app you have many screen for example Home Screen And Cart And Categories and more
+- first screen for login then when you login to the app you have many screen for example Home Screen And Cart And Categories and more .
 
 ### User Stories :
 // Add user stories here.   

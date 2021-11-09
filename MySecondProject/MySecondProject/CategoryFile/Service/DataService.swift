@@ -23,14 +23,14 @@ class DataService {
         Product(title: "Dior sunglasses", price: "200 Dollers", imageName: "diorSunglasses.webp"),
         Product(title: "Police Sunglasses", price: "70.00 Dollers", imageName: "PoliceSunglasses.jpeg"),
         Product(title: "Fendi Sunglasses", price: "400.00 Dollers", imageName: "FendiSunglasses.jpeg"),
-        Product(title: "Ray Ban Sunglasses", price: "66.00 Dollers", imageName: "RayBanSunglasses.jpeg"),
+        Product(title: "Ray Ban Sunglasses", price: "66.00 Dollers", imageName: "RayBanSunG.jpeg"),
     ]
     // glasses
     private let glasses = [
         Product(title: "Cartier glasses", price: "500.00 Dollers", imageName: "CarterGlasses.jpeg"),
-        Product(title: "Gucci glasses", price: "200.00 Dollers", imageName: "GucciGlasses.jpeg"),
-        Product(title: "D&G glasses", price: "100.00 Dollers", imageName: "DandGglasses.jpeg"),
-        Product(title: "LV glasses", price: "350.00 Dollers", imageName: "LvGlasses.webp"),
+        Product(title: "Gucci glasses", price: "200.00 Dollers", imageName: "GucciGlas.jpeg"),
+        Product(title: "D&G glasses", price: "100.00 Dollers", imageName: "D&Gglas.jpeg"),
+        Product(title: "LV glasses", price: "350.00 Dollers", imageName: "LVglas.png"),
 
     ]
     

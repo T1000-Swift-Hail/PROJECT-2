@@ -211,7 +211,7 @@
                         <outlet property="UserLogin" destination="ypt-IF-ziP" id="V5r-5p-328"/>
                         <outlet property="UserPassword" destination="gNo-o0-jOl" id="b0o-lJ-Ivx"/>
                         <outlet property="UserSign" destination="Yq5-hK-ZXx" id="9Jp-SK-ue8"/>
-                        <segue destination="9sm-yp-dUO" kind="show" identifier="HomePage" id="Xd9-PT-Ksp"/>
+                        <segue destination="9sm-yp-dUO" kind="presentation" identifier="HomePage" id="Xd9-PT-Ksp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kh9-CN-o4s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -273,7 +273,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="YoU-EB-4Ti">
             <objects>
-                <tabBarController id="9sm-yp-dUO" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="9sm-yp-dUO" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="b6G-HJ-M09"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fPX-2p-Loh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
