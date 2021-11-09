@@ -232,6 +232,9 @@
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="filled" title="Add to Cart"/>
+                                                    <connections>
+                                                        <action selector="addToCart:" destination="mfG-kc-qoq" eventType="touchUpInside" id="aTC-bS-5xf"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -345,6 +348,9 @@
                                                             <rect key="frame" x="327.5" y="30.5" width="76.5" height="48"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="filled" title="Add to Cart"/>
+                                                            <connections>
+                                                                <action selector="addToCartButt:" destination="emw-tR-cM5" eventType="touchUpInside" id="TYi-Xr-OSn"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -607,6 +613,9 @@
                                                             <rect key="frame" x="266" y="59" width="132" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="filled" title="Add to cart"/>
+                                                            <connections>
+                                                                <action selector="addToCart:" destination="HZV-jr-776" eventType="touchUpInside" id="lQ8-i1-e2Q"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>

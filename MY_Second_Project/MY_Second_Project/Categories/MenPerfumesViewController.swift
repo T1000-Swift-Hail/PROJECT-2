@@ -8,7 +8,6 @@
 import UIKit
 
 class MenPerfumesViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
-var getData = " "
     @IBOutlet weak var tableView: UITableView!
     var menPerfume = [Perfumee]()
     override func viewDidLoad() {
@@ -34,7 +33,16 @@ var getData = " "
         cell.contentCell(perfumesImage: data.perfumeImg, perfumesName: data.perfumeName, perfumesPrice: data.perfumePrice, perfumesSize: data.perfumeSize)
         return cell
     }
-}
+    
+    @IBAction func addToCart(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Added to Cart!", message:"", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
+                }
+    }
+
 
 struct Perfumee {
     

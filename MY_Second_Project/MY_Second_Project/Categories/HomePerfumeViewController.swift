@@ -9,6 +9,17 @@ import UIKit
 
 class HomePerfumeViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
     
+    @IBAction func addToCart(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Added to Cart!", message:"", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
+                }
+           
+        
+//        (title: “”, message: “It’s recommended you bring your towel before continuing.“, preferredStyle: .alert)
+//
     @IBOutlet weak var tableview: UITableView!
     var homePerfume = [Perffume]()
     override func viewDidLoad() {
