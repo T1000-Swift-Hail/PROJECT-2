@@ -11,10 +11,10 @@
 		4448A9F627390ADB00669A5F /* catogery_prodect_ControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4448A9F527390ADB00669A5F /* catogery_prodect_ControllerTableViewController.swift */; };
 		4448A9F827390B6D00669A5F /* accountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4448A9F727390B6D00669A5F /* accountViewController.swift */; };
 		4448A9FD2739377B00669A5F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4448A9FC2739377B00669A5F /* Product.swift */; };
+		445E1A99273A46D100F8FB0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445E1A98273A46D100F8FB0E /* ViewController.swift */; };
 		446EB77227395CB80068A5E1 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EB77127395CB80068A5E1 /* Cell.swift */; };
 		44F0D43F2737BFBD00E0A0A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F0D43E2737BFBD00E0A0A0 /* AppDelegate.swift */; };
 		44F0D4412737BFBD00E0A0A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F0D4402737BFBD00E0A0A0 /* SceneDelegate.swift */; };
-		44F0D4432737BFBD00E0A0A0 /* ViewController.home in Sources */ = {isa = PBXBuildFile; fileRef = 44F0D4422737BFBD00E0A0A0 /* ViewController.home */; };
 		44F0D4462737BFBD00E0A0A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F0D4442737BFBD00E0A0A0 /* Main.storyboard */; };
 		44F0D4482737BFBD00E0A0A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F0D4472737BFBD00E0A0A0 /* Assets.xcassets */; };
 		44F0D44B2737BFBD00E0A0A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F0D4492737BFBD00E0A0A0 /* LaunchScreen.storyboard */; };
@@ -25,11 +25,11 @@
 		4448A9F527390ADB00669A5F /* catogery_prodect_ControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = catogery_prodect_ControllerTableViewController.swift; sourceTree = "<group>"; };
 		4448A9F727390B6D00669A5F /* accountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accountViewController.swift; sourceTree = "<group>"; };
 		4448A9FC2739377B00669A5F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		445E1A98273A46D100F8FB0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		446EB77127395CB80068A5E1 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		44F0D43B2737BFBD00E0A0A0 /* project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F0D43E2737BFBD00E0A0A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44F0D4402737BFBD00E0A0A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44F0D4422737BFBD00E0A0A0 /* ViewController.home */ = {isa = PBXFileReference; lastKnownFileType = text; path = ViewController.home; sourceTree = "<group>"; };
 		44F0D4452737BFBD00E0A0A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44F0D4472737BFBD00E0A0A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44F0D44A2737BFBD00E0A0A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				4448A9F42738FE3500669A5F /* New Group */,
-				44F0D4422737BFBD00E0A0A0 /* ViewController.home */,
+				445E1A98273A46D100F8FB0E /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,10 +188,10 @@
 				4448A9F12738FCCB00669A5F /* CartViewController.swift in Sources */,
 				4448A9F627390ADB00669A5F /* catogery_prodect_ControllerTableViewController.swift in Sources */,
 				4448A9F827390B6D00669A5F /* accountViewController.swift in Sources */,
-				44F0D4432737BFBD00E0A0A0 /* ViewController.home in Sources */,
 				44F0D43F2737BFBD00E0A0A0 /* AppDelegate.swift in Sources */,
 				446EB77227395CB80068A5E1 /* Cell.swift in Sources */,
 				44F0D4412737BFBD00E0A0A0 /* SceneDelegate.swift in Sources */,
+				445E1A99273A46D100F8FB0E /* ViewController.swift in Sources */,
 				4448A9FD2739377B00669A5F /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,8 +339,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = project2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -355,6 +356,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mastorh.project2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -366,8 +368,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = project2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -382,6 +385,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mastorh.project2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
