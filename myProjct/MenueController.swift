@@ -12,19 +12,27 @@ class MenueController: UIViewController , UITableViewDelegate , UITableViewDataS
     @IBOutlet weak var tableViwe: UITableView!
     //array back to struct
     var arrayProduct = [Pruducts]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViwe.delegate = self
         tableViwe.dataSource = self
         
         //Adding products to the TableView using the Stract
-        arrayProduct.append(Pruducts.init(name: "Urmaki sushi", price: 73.00 , discrip: "Delicious rumaki sushi in the Marssai way", photo: UIImage(named: "Soshi1")!))
-        arrayProduct.append(Pruducts.init(name: "Oshi Sushi", price: 80.00 , discrip: "For sushi lovers with original flavor", photo: UIImage(named: "img13")!))
-        arrayProduct.append(Pruducts.init(name: "Marssai Sushi Cocktail", price: 98.00 , discrip: "Cocktail for sushi lovers", photo: UIImage(named: "img8")!))
-        arrayProduct.append(Pruducts.init(name: "Hoso Maki Roll", price: 88.00 , discrip: "Sushi in Marssai way", photo: UIImage(named: "img23")!))
-        arrayProduct.append(Pruducts.init(name: "Crab salad", price: 44.00 , discrip: "Salad with a special Marssai flavor", photo: UIImage(named: "Soshi1")!))
-        arrayProduct.append(Pruducts.init(name: "Shrimp", price: 44.00 , discrip: "Crispy shrimp with cocktail sauce", photo: UIImage(named: "img4")!))
+        arrayProduct.append(Pruducts.init(name: NSLocalizedString("Urmaki sushi", comment: ""), price: 73.00 , discrip: NSLocalizedString("detailsProduct1", comment: ""), photo: UIImage(named: "Soshi1")!))
+        
+        arrayProduct.append(Pruducts.init(name: NSLocalizedString("Oshi Sushi", comment: ""), price: 80.00 , discrip: NSLocalizedString("detailsProduct2", comment: ""), photo: UIImage(named: "img13")!))
+        
+        
+        arrayProduct.append(Pruducts.init(name: NSLocalizedString("Marssai Sushi Cocktail", comment: ""), price: 98.00 , discrip: NSLocalizedString("detailsProduct3", comment: ""), photo: UIImage(named: "img8")!))
+        
+        arrayProduct.append(Pruducts.init(name: NSLocalizedString("Hoso Maki Roll", comment: "") , price: 88.00 , discrip: NSLocalizedString("detailsProduct4", comment: ""), photo: UIImage(named: "img23")!))
+        
+        
+        arrayProduct.append(Pruducts.init(name: NSLocalizedString("Crab salad", comment: ""), price: 44.00 , discrip: NSLocalizedString("detailsProduct5", comment: ""), photo: UIImage(named: "Soshi1")!))
+        
+        
+        arrayProduct.append(Pruducts.init(name: NSLocalizedString("Shrimp", comment:"" ), price: 44.00 , discrip: "Crispy shrimp with cocktail sauce", photo: UIImage(named: "img4")!))
+        
         arrayProduct.append(Pruducts.init(name: "Chicken tikka masala", price: 77.00 , discrip: "Djmsa marsai dish with indian flavor", photo: UIImage(named: "img12")!))
         arrayProduct.append(Pruducts.init(name: "Fettuccine", price: 45.00 , discrip: "Fettuccine with italian flavor", photo: UIImage(named: "img2")!))
         arrayProduct.append(Pruducts.init(name: "Risotto Seafood", price: 55.00 , discrip: "Tasting pleasure in Marssai", photo: UIImage(named: "img9")!))

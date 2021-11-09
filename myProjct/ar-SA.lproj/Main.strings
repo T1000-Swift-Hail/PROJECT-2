@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "1ys-q1-QeJ"; */
+"1ys-q1-QeJ.text" = "اهلا بكم";
+
+/* Class = "UILabel"; text = "0165356556\n0165356556   "; ObjectID = "6ee-Ss-OxL"; */
+"6ee-Ss-OxL.text" = "0165356556\n0165356556   ";
+
+/* Class = "UILabel"; text = "Marssai Restaurant in Hail is one of the best restaurants specialized in serving seafood. It is located in Prince Saud bin Abdul Mohsen Street, Al-Naqra neighborhood. The restaurant is distinguished by its beautiful and calm decoration, which makes it one of the finest and best restaurants in Hail. It contains a varied menu of seafood such as shrimp, lobster, grilled and fried fish, fillet, seafood soup and many more."; ObjectID = "OSD-wa-qQo"; */
+"OSD-wa-qQo.text" = "Marssai Restaurant in Hail is one of the best restaurants specialized in serving seafood. It is located in Prince Saud bin Abdul Mohsen Street, Al-Naqra neighborhood. The restaurant is distinguished by its beautiful and calm decoration, which makes it one of the finest and best restaurants in Hail. It contains a varied menu of seafood such as shrimp, lobster, grilled and fried fish, fillet, seafood soup and many more.";
+
+/* Class = "UILabel"; text = "From 12 PM\nUntil 2 AM"; ObjectID = "VWt-t8-Vpk"; */
+"VWt-t8-Vpk.text" = "From 12 PM\nUntil 2 AM";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WOT-0X-Xtu"; */
+"WOT-0X-Xtu.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Worktime"; ObjectID = "XtO-ab-ml1"; */
+"XtO-ab-ml1.text" = "Worktime";
+
+/* Class = "UITabBarItem"; title = "Menu"; ObjectID = "bcW-f7-MxN"; */
+"bcW-f7-MxN.title" = "Menu";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fal-6H-7E8"; */
+"fal-6H-7E8.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "More"; ObjectID = "oct-q5-k2M"; */
+"oct-q5-k2M.title" = "More";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rGZ-MH-Imv"; */
+"rGZ-MH-Imv.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wgh-VF-MF6"; */
+"wgh-VF-MF6.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "xGg-sm-Dqk"; */
+"xGg-sm-Dqk.title" = "Home";

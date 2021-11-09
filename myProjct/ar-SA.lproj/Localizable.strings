@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  Marsaai
+
+  Created by Huda N S on 04/04/1443 AH.
+  
+*/
+
+"Urmaki sushi" = "آورماكي سوشي";
+"detailsProduct1" = "سوشي بنكهه مرساي اللذيذة";
+
+"Oshi Sushi" = "آوشي سوشي";
+"detailsProduct2" = "لعشاق السوشي بالنكهه الاصليه";
+
+"Marssai Sushi Cocktail" = "مرساي سوشي كوكتيل";
+"detailsProduct3" = "كوكتيل من السوشي";
+
+"Hoso Maki Roll" = "هوسو ماكي رول" ;
+"detailsProduct4"= "سوشي بطريقه مرساي" ;
+
+"Crab salad" = "سلطة الكراب" ;
+"detailsProduct5" = "سلطه مرساي الخاصه" ;
+
+"Shrimp" = "الروبيان"
+"detailsProduct6" = "الروبيان المقرمش مع كوكتيل الصوص"
+
+

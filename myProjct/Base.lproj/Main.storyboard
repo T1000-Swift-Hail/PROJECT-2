@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EmE-4C-FiV">
-    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -103,7 +103,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lvJ-Go-tkS">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="244"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="270.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JQe-4S-hKi">
                                     <size key="itemSize" width="362" height="146"/>
@@ -113,7 +113,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeCell" id="mmf-dx-YVD" customClass="CollectionViewImg" customModule="Marssai" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="49" width="362" height="146"/>
+                                        <rect key="frame" x="0.0" y="62.5" width="362" height="146"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uJ9-bf-6la">
                                             <rect key="frame" x="0.0" y="0.0" width="362" height="146"/>
@@ -138,7 +138,7 @@
                                 </cells>
                             </collectionView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="wellcomMarsaai" translatesAutoresizingMaskIntoConstraints="NO" id="sWx-Xc-AoS">
-                                <rect key="frame" x="115" y="280" width="184" height="109"/>
+                                <rect key="frame" x="115" y="306.5" width="184" height="109"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="109" id="HOe-qn-npW"/>
                                     <constraint firstAttribute="width" constant="184" id="Myd-N7-D49"/>
@@ -146,9 +146,9 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="26" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSD-wa-qQo">
-                                <rect key="frame" x="20" y="397" width="374" height="315.5"/>
+                                <rect key="frame" x="20" y="423.5" width="374" height="289"/>
                                 <string key="text">Marssai Restaurant in Hail is one of the best restaurants specialized in serving seafood. It is located in Prince Saud bin Abdul Mohsen Street, Al-Naqra neighborhood. The restaurant is distinguished by its beautiful and calm decoration, which makes it one of the finest and best restaurants in Hail. It contains a varied menu of seafood such as shrimp, lobster, grilled and fried fish, fillet, seafood soup and many more.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
                                 <color key="textColor" name="ColorWrite"/>
                                 <nil key="highlightedColor"/>
                             </label>
