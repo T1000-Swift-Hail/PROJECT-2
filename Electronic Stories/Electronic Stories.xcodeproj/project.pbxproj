@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5717D22A273A4F590079E33E /* ViewControllerCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717D229273A4F590079E33E /* ViewControllerCategories.swift */; };
+		5717D236273A9E820079E33E /* ShoipngCart in Sources */ = {isa = PBXBuildFile; fileRef = 5717D235273A9E820079E33E /* ShoipngCart */; };
 		578172DD273951C8005DB1F2 /* phoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578172DC273951C8005DB1F2 /* phoneTableViewCell.swift */; };
 		578172DF27395520005DB1F2 /* phoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578172DE27395520005DB1F2 /* phoneViewController.swift */; };
 		57AD02622737E2E400766B0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AD02612737E2E400766B0F /* AppDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5717D229273A4F590079E33E /* ViewControllerCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCategories.swift; sourceTree = "<group>"; };
+		5717D235273A9E820079E33E /* ShoipngCart */ = {isa = PBXFileReference; lastKnownFileType = text; path = ShoipngCart; sourceTree = "<group>"; };
 		578172DC273951C8005DB1F2 /* phoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneTableViewCell.swift; sourceTree = "<group>"; };
 		578172DE27395520005DB1F2 /* phoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneViewController.swift; sourceTree = "<group>"; };
 		57AD025E2737E2E400766B0F /* Electronic Stories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Electronic Stories.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +81,8 @@
 				57AD026F2737E2E500766B0F /* Info.plist */,
 				578172DC273951C8005DB1F2 /* phoneTableViewCell.swift */,
 				578172DE27395520005DB1F2 /* phoneViewController.swift */,
+				5717D229273A4F590079E33E /* ViewControllerCategories.swift */,
+				5717D235273A9E820079E33E /* ShoipngCart */,
 			);
 			path = "Electronic Stories";
 			sourceTree = "<group>";
@@ -154,8 +160,10 @@
 			files = (
 				578172DD273951C8005DB1F2 /* phoneTableViewCell.swift in Sources */,
 				57AD02662737E2E400766B0F /* ViewController.swift in Sources */,
+				5717D236273A9E820079E33E /* ShoipngCart in Sources */,
 				578172DF27395520005DB1F2 /* phoneViewController.swift in Sources */,
 				57AD02622737E2E400766B0F /* AppDelegate.swift in Sources */,
+				5717D22A273A4F590079E33E /* ViewControllerCategories.swift in Sources */,
 				57AD02642737E2E400766B0F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

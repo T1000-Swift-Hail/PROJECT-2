@@ -7,14 +7,17 @@
 
 import UIKit
 
+
+enum Suges:String {
+    
+    case SecondViewController = "Second"
+    case Third = "Third"
+    
+    
+}
+
 class ViewController: UIViewController {
-    enum Suges:String {
-        
-        case SecondViewController = "Second"
-        case Third = "Third"
-        
-        
-    }
+
     var sectionSelected = -1
     
     override func viewDidLoad() {
@@ -22,18 +25,23 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
 
     }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         
         
         
     }
-    @IBAction func phone(_ sender: UIButton) {
-        sectionSelected = 0
-        performSegue(withIdentifier: "toProducts", sender: nil)
+    
+    
+    @IBAction func showPhoneProducts(_ sender: Any) {
         
-        
+        performSegue(withIdentifier: "toProductsPage", sender: nil)
     }
+    
+    
+    
     
     @IBAction func smartWatches(_ sender: UIButton) {
         sectionSelected = 1
