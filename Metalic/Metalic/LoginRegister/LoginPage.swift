@@ -13,6 +13,7 @@ import UIKit
 
 class LoginPage: UIViewController {
     
+    
     struct Users{
         
         var userNames :String
@@ -20,6 +21,7 @@ class LoginPage: UIViewController {
        
     }
     
+    @IBOutlet var loginicon: UIImageView!
     @IBOutlet var usernameText: UITextField!
     @IBOutlet var passWodText: UITextField!
     
@@ -33,17 +35,23 @@ class LoginPage: UIViewController {
     
     
     
+    @IBOutlet var loginButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        if defaults.bool(forKey: "in Login") {
+            performSegue(withIdentifier:"TabBarHome" , sender: nil)
+        }
+        loginicon.layer.cornerRadius = 12
+        loginButton.layer.cornerRadius = 12
+    
+    
 //        passWodText!.isSecureTextEntry = true
 
 
     }
-
+    
     
     
    
@@ -73,7 +81,7 @@ class LoginPage: UIViewController {
         
         guard let pass = passWodText.text else {return}
         
-
+        defaults.set(true, forKey: "in Login")
         
         for myUsers in userProfile {
             if user == myUsers.userNames && pass == myUsers.passWords {

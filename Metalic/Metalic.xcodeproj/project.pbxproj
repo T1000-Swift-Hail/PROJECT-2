@@ -14,11 +14,10 @@
 		D8AA8BB62737E5A800D40045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8AA8BB52737E5A800D40045 /* Assets.xcassets */; };
 		D8AA8BB92737E5A800D40045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AA8BB72737E5A800D40045 /* LaunchScreen.storyboard */; };
 		D8AA8BC12737F55A00D40045 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BC02737F55A00D40045 /* LoginPage.swift */; };
-		D8AA8BC82738031100D40045 /* TabOneVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BC72738031100D40045 /* TabOneVeiwController.swift */; };
-		D8AA8BCA2738037500D40045 /* TabTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BC92738037500D40045 /* TabTwoViewController.swift */; };
-		D8AA8BCC2738041900D40045 /* TabOneNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BCB2738041900D40045 /* TabOneNavViewController.swift */; };
 		D8AA8BD127390B8100D40045 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BD027390B8100D40045 /* Registration.swift */; };
 		D8AA8BD327395C3900D40045 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BD227395C3900D40045 /* UserStore.swift */; };
+		D8AA8BD5273A60BA00D40045 /* TabCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BD4273A60BA00D40045 /* TabCalculatorViewController.swift */; };
+		D8AA8BD7273A6A2700D40045 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BD6273A6A2700D40045 /* HomeTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +30,10 @@
 		D8AA8BB82737E5A800D40045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8AA8BBA2737E5A800D40045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8AA8BC02737F55A00D40045 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
-		D8AA8BC72738031100D40045 /* TabOneVeiwController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabOneVeiwController.swift; sourceTree = "<group>"; };
-		D8AA8BC92738037500D40045 /* TabTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTwoViewController.swift; sourceTree = "<group>"; };
-		D8AA8BCB2738041900D40045 /* TabOneNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabOneNavViewController.swift; sourceTree = "<group>"; };
 		D8AA8BD027390B8100D40045 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		D8AA8BD227395C3900D40045 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		D8AA8BD4273A60BA00D40045 /* TabCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCalculatorViewController.swift; sourceTree = "<group>"; };
+		D8AA8BD6273A6A2700D40045 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +74,8 @@
 				D8AA8BB52737E5A800D40045 /* Assets.xcassets */,
 				D8AA8BB72737E5A800D40045 /* LaunchScreen.storyboard */,
 				D8AA8BBA2737E5A800D40045 /* Info.plist */,
-				D8AA8BC72738031100D40045 /* TabOneVeiwController.swift */,
-				D8AA8BC92738037500D40045 /* TabTwoViewController.swift */,
-				D8AA8BCB2738041900D40045 /* TabOneNavViewController.swift */,
+				D8AA8BD4273A60BA00D40045 /* TabCalculatorViewController.swift */,
+				D8AA8BD6273A6A2700D40045 /* HomeTabBarViewController.swift */,
 			);
 			path = Metalic;
 			sourceTree = "<group>";
@@ -167,12 +164,11 @@
 				D8AA8BD127390B8100D40045 /* Registration.swift in Sources */,
 				D8AA8BC12737F55A00D40045 /* LoginPage.swift in Sources */,
 				D8AA8BB12737E5A600D40045 /* ViewController.swift in Sources */,
-				D8AA8BCA2738037500D40045 /* TabTwoViewController.swift in Sources */,
 				D8AA8BAD2737E5A600D40045 /* AppDelegate.swift in Sources */,
 				D8AA8BAF2737E5A600D40045 /* SceneDelegate.swift in Sources */,
+				D8AA8BD7273A6A2700D40045 /* HomeTabBarViewController.swift in Sources */,
 				D8AA8BD327395C3900D40045 /* UserStore.swift in Sources */,
-				D8AA8BCC2738041900D40045 /* TabOneNavViewController.swift in Sources */,
-				D8AA8BC82738031100D40045 /* TabOneVeiwController.swift in Sources */,
+				D8AA8BD5273A60BA00D40045 /* TabCalculatorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
