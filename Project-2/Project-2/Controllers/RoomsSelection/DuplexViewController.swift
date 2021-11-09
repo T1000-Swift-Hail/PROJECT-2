@@ -22,6 +22,32 @@ class DuplexViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     //    }()
     @IBOutlet var textField: UITextField!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        createPickerView()
+        dismissPickerView()
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func reserveButton(_ sender: UIButton) {
+        if textField.hasText {
+           firstAlert()
+        }
+        else {
+           errorAlert()
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -58,10 +84,41 @@ class DuplexViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     @objc func action() {
         view.endEditing(true)
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        createPickerView()
-        dismissPickerView()
-        // Do any additional setup after loading the view.
+    
+    
+
+}
+
+
+extension DuplexViewController {
+ 
+    func showAlert () {
+    let alert = UIAlertController(title: "Reservation Completed!", message: "AN SMS HAS BEEN SENT, THANK YOU FOR USING UOH STUDENT HOSTEL", preferredStyle: .alert)
+    let ok = UIAlertAction(title: "OK", style: .default) { ok in
+        print("OK")
+    }
+    alert.addAction(ok)
+    
+    present(alert, animated: false)
+    }
+    
+    func errorAlert() {
+    let alert = UIAlertController(title: "Address unknown!", message: "PLEASE CHOOSE YOUR ADDRESS", preferredStyle: .alert)
+    let ok = UIAlertAction(title: "OK", style: .default) { ok in
+            print("OK")
+        }
+    alert.addAction(ok)
+        present(alert, animated: false)
+    }
+    
+    func firstAlert() {
+    let alert = UIAlertController(title: "Warning!", message: "Are you sure you want to reserve this room?", preferredStyle: .alert)
+    let ok = UIAlertAction(title: "OK", style: .default) { ok in
+        self.showAlert()
+        }
+    let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+    alert.addAction(ok)
+    alert.addAction(cancel)
+        present(alert, animated: false)
     }
 }

@@ -49,11 +49,11 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     
     // MARK: - Password Limit
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let maxLength = 14
+        let maxLength = 16
         let currentLimit: NSString = (passwordTextField.text ?? " ") as NSString
-            let newLimit: NSString =
+        let newLimit: NSString =
         currentLimit.replacingCharacters(in: range, with: string) as NSString
-            return newLimit.length <= maxLength
+        return newLimit.length <= maxLength
     }
     
     // MARK: - Segue Commands
@@ -69,19 +69,19 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     let students = [student1,student2,student3,student4,student5,student6]
         
         // Setting idTextField to accept Only Int
-    guard let id: Int = Int(idTextField.text ?? "nil") else { return alerts(title: "Wrong ID!", message: "Please type your ID correctly!")}
+    guard let id: Int = Int(idTextField.text ?? "nil") else { return showAlert(title: "Wrong ID!", message: "Please type your ID correctly!")}
         
-    guard let pass = passwordTextField.text else { return alerts(title: "Wrong Password!", message: "Retype your password!") }
+    guard let password = passwordTextField.text else { return showAlert(title: "Wrong Password!", message: "Retype your password!") }
         
     userDefault.set(true, forKey: "isLogIn")
         
         // Login Check
     for student in students {
-      if id == student.id && pass == student.password {
+      if id == student.id && password == student.password {
         performSegue(withIdentifier: "WelcomeScreen", sender: nil)
         return
         } else   {
-        alerts(title: "Wrong Account", message: "Please retype your account")
+        showAlert(title: "Wrong Account", message: "Please retype your account")
         }
     }
 }
@@ -95,7 +95,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     }
     
     // MARK: - Alert
-    private func alerts (title:String,message: String) {
+    func showAlert (title:String,message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .default) { ok in
             print("OK")
