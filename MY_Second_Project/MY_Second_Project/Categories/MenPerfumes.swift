@@ -9,7 +9,6 @@ import UIKit
 
 class MenPerfumes: UITableViewCell {
 
-
     @IBOutlet weak var perfumeName: UILabel!
     @IBOutlet weak var perfumeSize: UILabel!
     @IBOutlet weak var perfumePrice: UILabel!

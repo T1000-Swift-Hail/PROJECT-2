@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B71271A2273A54D800CBD52A /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71271A1273A54D800CBD52A /* CategoriesViewController.swift */; };
 		B7169E5C2737EEE9000E25C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E5B2737EEE9000E25C4 /* AppDelegate.swift */; };
 		B7169E5E2737EEE9000E25C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E5D2737EEE9000E25C4 /* SceneDelegate.swift */; };
 		B7169E602737EEE9000E25C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E5F2737EEE9000E25C4 /* ViewController.swift */; };
@@ -19,9 +20,12 @@
 		B7169E7C2739213A000E25C4 /* WomenPerfumes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E7B2739213A000E25C4 /* WomenPerfumes.swift */; };
 		B7169E7E27392152000E25C4 /* HomePerfumes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E7D27392152000E25C4 /* HomePerfumes.swift */; };
 		B7169E8027394528000E25C4 /* MenPerfumesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E7F27394528000E25C4 /* MenPerfumesViewController.swift */; };
+		B7169E8227398B12000E25C4 /* WomenPerfumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E8127398B12000E25C4 /* WomenPerfumeViewController.swift */; };
+		B7169E84273A1633000E25C4 /* HomePerfumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E83273A1632000E25C4 /* HomePerfumeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B71271A1273A54D800CBD52A /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		B7169E582737EEE9000E25C4 /* MY_Second_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MY_Second_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7169E5B2737EEE9000E25C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7169E5D2737EEE9000E25C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		B7169E7B2739213A000E25C4 /* WomenPerfumes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenPerfumes.swift; sourceTree = "<group>"; };
 		B7169E7D27392152000E25C4 /* HomePerfumes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePerfumes.swift; sourceTree = "<group>"; };
 		B7169E7F27394528000E25C4 /* MenPerfumesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenPerfumesViewController.swift; sourceTree = "<group>"; };
+		B7169E8127398B12000E25C4 /* WomenPerfumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenPerfumeViewController.swift; sourceTree = "<group>"; };
+		B7169E83273A1632000E25C4 /* HomePerfumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePerfumeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +99,13 @@
 		B7169E782739206F000E25C4 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				B71271A1273A54D800CBD52A /* CategoriesViewController.swift */,
 				B7169E792739211B000E25C4 /* MenPerfumes.swift */,
-				B7169E7B2739213A000E25C4 /* WomenPerfumes.swift */,
-				B7169E7D27392152000E25C4 /* HomePerfumes.swift */,
 				B7169E7F27394528000E25C4 /* MenPerfumesViewController.swift */,
+				B7169E7B2739213A000E25C4 /* WomenPerfumes.swift */,
+				B7169E8127398B12000E25C4 /* WomenPerfumeViewController.swift */,
+				B7169E7D27392152000E25C4 /* HomePerfumes.swift */,
+				B7169E83273A1632000E25C4 /* HomePerfumeViewController.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -174,10 +183,13 @@
 			files = (
 				B7169E7727390865000E25C4 /* SignUpTableViewController.swift in Sources */,
 				B7169E732738F9CC000E25C4 /* LoginViewController.swift in Sources */,
+				B71271A2273A54D800CBD52A /* CategoriesViewController.swift in Sources */,
 				B7169E7C2739213A000E25C4 /* WomenPerfumes.swift in Sources */,
 				B7169E602737EEE9000E25C4 /* ViewController.swift in Sources */,
 				B7169E5C2737EEE9000E25C4 /* AppDelegate.swift in Sources */,
+				B7169E84273A1633000E25C4 /* HomePerfumeViewController.swift in Sources */,
 				B7169E7E27392152000E25C4 /* HomePerfumes.swift in Sources */,
+				B7169E8227398B12000E25C4 /* WomenPerfumeViewController.swift in Sources */,
 				B7169E5E2737EEE9000E25C4 /* SceneDelegate.swift in Sources */,
 				B7169E7A2739211B000E25C4 /* MenPerfumes.swift in Sources */,
 				B7169E8027394528000E25C4 /* MenPerfumesViewController.swift in Sources */,

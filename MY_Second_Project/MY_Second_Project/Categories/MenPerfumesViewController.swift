@@ -8,20 +8,20 @@
 import UIKit
 
 class MenPerfumesViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
-
+var getData = " "
     @IBOutlet weak var tableView: UITableView!
-    var menPerfume = [perfume]()
+    var menPerfume = [Perfumee]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.delegate = self
         tableView.dataSource = self
         
-        menPerfume.append(perfume.init(perfumeName: "Cartier Declaration", perfumeSize: 100, perfumePrice: 373.75 , perfumeImg:UIImage(named: "menPerfum1.jpg")!))
-        menPerfume.append(perfume.init(perfumeName: "Excellence Jaguar", perfumeSize: 100, perfumePrice: 187.25 , perfumeImg:UIImage(named: "menPerfume2.jpg")!))
-        menPerfume.append(perfume.init(perfumeName: "Tom Ford Noir", perfumeSize: 100, perfumePrice: 500.25 , perfumeImg:UIImage(named: "menPerfume3.jpg")!))
-        menPerfume.append(perfume.init(perfumeName: "Eau Sauvage Parfum by Dior", perfumeSize: 100, perfumePrice: 517.50 , perfumeImg:UIImage(named: "menPerfume4.jpg")!))
-        menPerfume.append(perfume.init(perfumeName: "CALVIN KLEIN", perfumeSize: 100, perfumePrice: 125 , perfumeImg:UIImage(named: "menPerfume5.jpg")!))
+        menPerfume.append(Perfumee.init(perfumeName: "Cartier Declaration 373.75", perfumeSize: 150, perfumePrice: 373.75, perfumeImg: UIImage(named:"menPerfum1.jpg")!))
+        menPerfume.append(Perfumee.init(perfumeName: "Excellence Jaguar", perfumeSize: 100, perfumePrice: 187.25, perfumeImg: UIImage(named:"menPerfume2.jpg")!))
+        menPerfume.append(Perfumee.init(perfumeName: "Tom Ford Noir", perfumeSize: 100, perfumePrice: 500.25, perfumeImg: UIImage(named:"menPerfume3.jpg")!))
+        menPerfume.append(Perfumee.init(perfumeName: "Eau Sauvage Parfum by Dior", perfumeSize: 150, perfumePrice: 500.55, perfumeImg: UIImage(named:"menPerfume4.jpg")!))
+        menPerfume.append(Perfumee.init(perfumeName: "CALVIN KLEIN", perfumeSize: 100, perfumePrice: 373.75, perfumeImg: UIImage(named:"menPerfume5.jpg")!))
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -36,7 +36,7 @@ class MenPerfumesViewController: UIViewController , UITableViewDelegate , UITabl
     }
 }
 
-struct perfume {
+struct Perfumee {
     
     let perfumeName : String
     let perfumeSize : Int
