@@ -5,24 +5,35 @@
 
 
 ### Project : 
-//Add project name
+An petsupplers Store
 
 ### Project Description :
-// Add your project description
+store  is sells PetSuppliers to customers
 
 
 ### Features List :
-// Add your project features list
-- feature 1
-- feature 2
+Helps the customer to find supplies for their pets
 
 
 ### Define the scenes :
-// Add description of the screens / scenes in your application.
+The Home screen contains of 
+-The Login button 
+-Username
+-New username
+-Password
+
+The Seconed Scene is Category which contains of the Products 
+
+The Third Scene is The Cart which the customer can include all his choosen products
+
+The last Scene is the Profile scene which the Customer can put all his info
 
 
 ### User Stories :
-// Add user stories here.   
+view the Products . 
+- Search for Products.
+- Add Products to the shopping cart .
+- Remove a product from the shopping cart.   
 
 
 
