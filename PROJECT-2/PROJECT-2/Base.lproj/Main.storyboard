@@ -31,8 +31,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="square.and.arrow.up" catalog="system" id="CFj-V0-c7M">
-                                            <rect key="frame" x="20.75" y="10.5" width="19" height="21"/>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="greaterthan.circle.fill" catalog="system" id="CFj-V0-c7M">
+                                            <rect key="frame" x="20.25" y="12" width="20" height="19"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -44,39 +44,27 @@
                             <outlet property="delegate" destination="0my-Px-3KD" id="ISP-WM-UA9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="NJk-y0-ZGH"/>
+                    <navigationItem key="navigationItem" id="NJk-y0-ZGH">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="eRh-s2-GTy">
+                            <connections>
+                                <action selector="EditingStyle:" destination="0my-Px-3KD" id="ExN-Km-d50"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="oTe-JF-mYW">
+                            <connections>
+                                <action selector="addItems:" destination="0my-Px-3KD" id="dYf-xa-JqC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70B-th-8o4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1805" y="-464"/>
+            <point key="canvasLocation" x="1835" y="80"/>
         </scene>
         <!--Product DetailsVC-->
         <scene sceneID="lsE-yb-JuI">
             <objects>
                 <viewController id="AlO-x6-Y7v" customClass="ProductDetailsVC" customModule="PROJECT_2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tGW-kY-7su">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="520px-Chocolate" translatesAutoresizingMaskIntoConstraints="NO" id="2a8-iM-U1m">
-                                <rect key="frame" x="87" y="251" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUl-PB-v9C">
-                                <rect key="frame" x="10" y="537" width="394" height="161"/>
-                                <string key="text">Chocolate is usually eaten and enjoyed as a finished productChocolate Made Entirely From The Fruits Cocoa Chocolate Stuffed With Nuts Or Caramel Colored Chocolate For Children Wafer Covered With Chocolate</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="eoC-zM-UoN"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="OUl-PB-v9C" firstAttribute="leading" secondItem="eoC-zM-UoN" secondAttribute="leading" constant="10" id="GBl-rF-6UE"/>
-                            <constraint firstAttribute="trailing" secondItem="OUl-PB-v9C" secondAttribute="trailing" constant="10" id="KCu-dQ-B0I"/>
-                        </constraints>
-                    </view>
                     <navigationItem key="navigationItem" id="D4u-tU-0iN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LzT-gp-vy3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -151,11 +139,11 @@
             </objects>
             <point key="canvasLocation" x="-1254" y="792"/>
         </scene>
-        <!--Home-->
+        <!--Categories-->
         <scene sceneID="3yR-Rx-nhP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NSz-gL-yJM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="S8t-Tq-dxO"/>
+                    <tabBarItem key="tabBarItem" title="Categories" image="list.bullet" catalog="system" id="S8t-Tq-dxO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a75-Le-R0C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -170,11 +158,11 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="80.357142857142847"/>
         </scene>
-        <!--Login-->
+        <!--more-->
         <scene sceneID="L9h-AQ-Qp1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1U3-P2-PQq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Login" id="7XI-vu-Z7k"/>
+                    <tabBarItem key="tabBarItem" title="more" image="folder.circle.fill" catalog="system" id="7XI-vu-Z7k"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vas-ge-oKP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -242,27 +230,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="2RF-UP-o51" imageView="Qs2-Wy-uAz" style="IBUITableViewCellStyleDefault" id="CqK-Bq-OVM">
-                                        <rect key="frame" x="0.0" y="125" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CqK-Bq-OVM" id="kfG-FV-vX6">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="WhitecChocolate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2RF-UP-o51">
-                                                    <rect key="frame" x="79" y="0.0" width="315" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="images-3" id="Qs2-Wy-uAz">
-                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -277,11 +244,11 @@
             </objects>
             <point key="canvasLocation" x="1946" y="1567"/>
         </scene>
-        <!--Profile -->
+        <!--Top seller-->
         <scene sceneID="EPq-u4-m3o">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HYH-Oo-Mhi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile " id="gJE-Le-5fi"/>
+                    <tabBarItem key="tabBarItem" title="Top seller" image="star.circle.fill" catalog="system" id="gJE-Le-5fi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lBF-sf-PfV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -298,12 +265,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="520px-Chocolate" width="520" height="405"/>
+        <image name="folder.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="greaterthan.circle.fill" catalog="system" width="128" height="121"/>
         <image name="images-1" width="299" height="168"/>
-        <image name="images-3" width="225" height="225"/>
         <image name="images-5" width="284" height="177"/>
         <image name="images-6" width="268" height="188"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
+        <image name="star.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
