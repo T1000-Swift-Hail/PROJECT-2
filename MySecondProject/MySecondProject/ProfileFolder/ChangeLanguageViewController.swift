@@ -33,6 +33,12 @@ class ChangeLanguageViewController: UIViewController,UIPickerViewDataSource,UIPi
         return language.count
     }
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        textBox.text = language[row]
+    }
+    
+    
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return language[row]
     }

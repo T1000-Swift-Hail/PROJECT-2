@@ -16,6 +16,7 @@ my project is online store for glasses and Sunglasses you can Browse the Product
 // Add your project features list
 - Easy to use and all the pages is clear 
 - Easy access to the desired product
+- also you can upload any glasses photo to searching to look for it . 
 
 
 ### Define the scenes :

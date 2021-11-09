@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		FA222D8B27391B2900280DAD /* ChangeLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222D8A27391B2900280DAD /* ChangeLanguageViewController.swift */; };
 		FA222D8E2739301700280DAD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222D8D2739301700280DAD /* SignInViewController.swift */; };
+		FA222D952739C46700280DAD /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222D942739C46700280DAD /* Category.swift */; };
+		FA222D972739C47F00280DAD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222D962739C47F00280DAD /* Product.swift */; };
+		FA222D992739C50600280DAD /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222D982739C50600280DAD /* DataService.swift */; };
+		FA222D9B2739C55A00280DAD /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222D9A2739C55A00280DAD /* CategoriesVC.swift */; };
+		FA222D9D2739C56900280DAD /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222D9C2739C56900280DAD /* ProductVC.swift */; };
+		FA222D9F2739C58700280DAD /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222D9E2739C58700280DAD /* CategoryCell.swift */; };
+		FA222DA12739C59900280DAD /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222DA02739C59900280DAD /* ProductCell.swift */; };
+		FA222DA5273A7F4500280DAD /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222DA4273A7F4500280DAD /* CartTableViewController.swift */; };
+		FA222DAA273A8E1C00280DAD /* ImgStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222DA9273A8E1C00280DAD /* ImgStore.swift */; };
 		FABD47EC2736E652002565DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD47EB2736E652002565DD /* AppDelegate.swift */; };
 		FABD47EE2736E652002565DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD47ED2736E652002565DD /* SceneDelegate.swift */; };
 		FABD47F02736E652002565DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD47EF2736E652002565DD /* ViewController.swift */; };
@@ -20,6 +29,15 @@
 /* Begin PBXFileReference section */
 		FA222D8A27391B2900280DAD /* ChangeLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageViewController.swift; sourceTree = "<group>"; };
 		FA222D8D2739301700280DAD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		FA222D942739C46700280DAD /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		FA222D962739C47F00280DAD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FA222D982739C50600280DAD /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		FA222D9A2739C55A00280DAD /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
+		FA222D9C2739C56900280DAD /* ProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
+		FA222D9E2739C58700280DAD /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		FA222DA02739C59900280DAD /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		FA222DA4273A7F4500280DAD /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
+		FA222DA9273A8E1C00280DAD /* ImgStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgStore.swift; sourceTree = "<group>"; };
 		FABD47E82736E652002565DD /* MySecondProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySecondProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABD47EB2736E652002565DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FABD47ED2736E652002565DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +75,68 @@
 			path = signInFolder;
 			sourceTree = "<group>";
 		};
+		FA222D902739C3BD00280DAD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FA222D982739C50600280DAD /* DataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FA222D912739C3DF00280DAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA222D942739C46700280DAD /* Category.swift */,
+				FA222D962739C47F00280DAD /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA222D922739C3F500280DAD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA222D9A2739C55A00280DAD /* CategoriesVC.swift */,
+				FA222D9C2739C56900280DAD /* ProductVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA222D932739C40700280DAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA222D9E2739C58700280DAD /* CategoryCell.swift */,
+				FA222DA02739C59900280DAD /* ProductCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA222DA22739DD4000280DAD /* CategoryFile */ = {
+			isa = PBXGroup;
+			children = (
+				FA222D932739C40700280DAD /* View */,
+				FA222D922739C3F500280DAD /* Controller */,
+				FA222D912739C3DF00280DAD /* Model */,
+				FA222D902739C3BD00280DAD /* Service */,
+			);
+			path = CategoryFile;
+			sourceTree = "<group>";
+		};
+		FA222DA3273A6B2300280DAD /* ShoppingCartFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FA222DA4273A7F4500280DAD /* CartTableViewController.swift */,
+			);
+			path = ShoppingCartFiles;
+			sourceTree = "<group>";
+		};
+		FA222DA6273A8CE900280DAD /* OrderFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FA222DA9273A8E1C00280DAD /* ImgStore.swift */,
+			);
+			path = OrderFiles;
+			sourceTree = "<group>";
+		};
 		FABD47DF2736E652002565DD = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +156,8 @@
 		FABD47EA2736E652002565DD /* MySecondProject */ = {
 			isa = PBXGroup;
 			children = (
+				FA222DA22739DD4000280DAD /* CategoryFile */,
+				FA222DA3273A6B2300280DAD /* ShoppingCartFiles */,
 				FABD47EB2736E652002565DD /* AppDelegate.swift */,
 				FABD47ED2736E652002565DD /* SceneDelegate.swift */,
 				FABD47EF2736E652002565DD /* ViewController.swift */,
@@ -83,6 +165,7 @@
 				FABD47F42736E654002565DD /* Assets.xcassets */,
 				FABD47F62736E654002565DD /* LaunchScreen.storyboard */,
 				FABD47F92736E654002565DD /* Info.plist */,
+				FA222DA6273A8CE900280DAD /* OrderFiles */,
 				FA222D8C27391E4700280DAD /* ProfileFolder */,
 				FA222D8F2739604D00280DAD /* signInFolder */,
 			);
@@ -165,6 +248,15 @@
 				FA222D8B27391B2900280DAD /* ChangeLanguageViewController.swift in Sources */,
 				FA222D8E2739301700280DAD /* SignInViewController.swift in Sources */,
 				FABD47EE2736E652002565DD /* SceneDelegate.swift in Sources */,
+				FA222D952739C46700280DAD /* Category.swift in Sources */,
+				FA222D9B2739C55A00280DAD /* CategoriesVC.swift in Sources */,
+				FA222D972739C47F00280DAD /* Product.swift in Sources */,
+				FA222DAA273A8E1C00280DAD /* ImgStore.swift in Sources */,
+				FA222D9D2739C56900280DAD /* ProductVC.swift in Sources */,
+				FA222DA5273A7F4500280DAD /* CartTableViewController.swift in Sources */,
+				FA222DA12739C59900280DAD /* ProductCell.swift in Sources */,
+				FA222D992739C50600280DAD /* DataService.swift in Sources */,
+				FA222D9F2739C58700280DAD /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,13 +43,15 @@ class SignInViewController: UIViewController {
     
     var userMH = user(name: "Mohammed", phoneNumber: 054345434, age: 20,userPassword:1234)
     
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
 
         // Do any additional setup after loading the view.
     }
+    
     func displayAlert(withTitle title:String, message: String,isLogin:Bool) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -68,8 +70,7 @@ class SignInViewController: UIViewController {
         alert.addAction(okAction)
         self.present(alert,animated: true)
     }
-    
-    
+        
     
     func usersLogin() {
         
