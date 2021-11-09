@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		C2D51AD72737F688002C4E6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D51AD62737F688002C4E6E /* AppDelegate.swift */; };
 		C2D51AD92737F688002C4E6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D51AD82737F688002C4E6E /* SceneDelegate.swift */; };
-		C2D51ADB2737F688002C4E6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D51ADA2737F688002C4E6E /* ViewController.swift */; };
 		C2D51ADE2737F688002C4E6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D51ADC2737F688002C4E6E /* Main.storyboard */; };
 		C2D51AE02737F689002C4E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2D51ADF2737F689002C4E6E /* Assets.xcassets */; };
 		C2D51AE32737F689002C4E6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D51AE12737F689002C4E6E /* LaunchScreen.storyboard */; };
+		C2D51AED27393E61002C4E6E /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D51AEC27393E61002C4E6E /* QuestionsViewController.swift */; };
+		C2D51AEF2739437E002C4E6E /* StartQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D51AEE2739437E002C4E6E /* StartQuizViewController.swift */; };
+		C2D51AF1273A9778002C4E6E /* QuestionsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D51AF0273A9778002C4E6E /* QuestionsPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C2D51AD32737F688002C4E6E /* Abjd Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Abjd Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D51AD62737F688002C4E6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2D51AD82737F688002C4E6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C2D51ADA2737F688002C4E6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C2D51ADD2737F688002C4E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2D51ADF2737F689002C4E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2D51AE22737F689002C4E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2D51AE42737F689002C4E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2D51AEC27393E61002C4E6E /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		C2D51AEE2739437E002C4E6E /* StartQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartQuizViewController.swift; sourceTree = "<group>"; };
+		C2D51AF0273A9778002C4E6E /* QuestionsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +62,12 @@
 			children = (
 				C2D51AD62737F688002C4E6E /* AppDelegate.swift */,
 				C2D51AD82737F688002C4E6E /* SceneDelegate.swift */,
-				C2D51ADA2737F688002C4E6E /* ViewController.swift */,
+				C2D51AEE2739437E002C4E6E /* StartQuizViewController.swift */,
+				C2D51AEC27393E61002C4E6E /* QuestionsViewController.swift */,
+				C2D51AF0273A9778002C4E6E /* QuestionsPageViewController.swift */,
 				C2D51ADC2737F688002C4E6E /* Main.storyboard */,
-				C2D51ADF2737F689002C4E6E /* Assets.xcassets */,
 				C2D51AE12737F689002C4E6E /* LaunchScreen.storyboard */,
+				C2D51ADF2737F689002C4E6E /* Assets.xcassets */,
 				C2D51AE42737F689002C4E6E /* Info.plist */,
 			);
 			path = "Abjd Test";
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2D51ADB2737F688002C4E6E /* ViewController.swift in Sources */,
 				C2D51AD72737F688002C4E6E /* AppDelegate.swift in Sources */,
+				C2D51AEF2739437E002C4E6E /* StartQuizViewController.swift in Sources */,
+				C2D51AF1273A9778002C4E6E /* QuestionsPageViewController.swift in Sources */,
+				C2D51AED27393E61002C4E6E /* QuestionsViewController.swift in Sources */,
 				C2D51AD92737F688002C4E6E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
