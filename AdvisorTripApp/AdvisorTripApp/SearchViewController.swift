@@ -17,7 +17,7 @@ class SearchViewController: UIViewController {
     
 
     @IBAction func romaClick(_ sender: Any) {
-        let alert = UIAlertController(title: "You Have Successfully Logged in to TripApp", message: "It's recommended you bring your towel before continuing.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Soon ", message: "Something new is coming.", preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         
@@ -25,11 +25,23 @@ class SearchViewController: UIViewController {
     }
     
     @IBAction func parisClick(_ sender: Any) {
-        let alert = UIAlertController(title: "You Have Successfully Logged in to TripApp", message: "It's recommended you bring your towel before continuing.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Soon", message: "Something new is coming.", preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         
         self.present(alert, animated: true)
         
     }
+    
+    
+    @IBAction func singaporeBtn(_ sender: Any) {
+        let alert = UIAlertController(title: "Soon", message: "Something new is coming.", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
+        
+    }
+    
+    
 }

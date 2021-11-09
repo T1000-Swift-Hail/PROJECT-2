@@ -14,10 +14,7 @@ class HomeViewController: UIViewController {
     
     
     @IBOutlet weak var yorNameText: UITextField!
-    
-    
     @IBOutlet weak var emailText: UITextField!
-    
     @IBOutlet weak var passSignOutText: UITextField!
     
     let costmer = [String]()
@@ -30,29 +27,25 @@ class HomeViewController: UIViewController {
 
     @IBAction func loginBtn(_ sender: Any) {
         
-        if nameText.text?.isEmpty ?? true{
+        if nameText.text?.isEmpty ?? true || passText.text?.isEmpty ?? true{
             let alert = UIAlertController(title: "You have to Log In first", message: "", preferredStyle: .alert)
 
             alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
             
             self.present(alert, animated: true)
         } else{
-        print("hjhkkh")
-            
+        print(" ")
         }
 }
     
     
     @IBAction func btnSignOut(_ sender: Any) {
-        if yorNameText.text?.isEmpty ?? true{
+        if yorNameText.text?.isEmpty ?? true ||  emailText.text?.isEmpty ?? true && passSignOutText.text?.isEmpty ?? true{
             let alert = UIAlertController(title: "You have to Sign in First", message: "", preferredStyle: .alert)
-
             alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
-            
             self.present(alert, animated: true)
         } else{
-        print("hjhkkh")
-            
+        print(" ")
         }
 }
 }

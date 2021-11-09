@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7517E242273AF62300577120 /* ReviewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7517E241273AF62300577120 /* ReviewsTableViewController.swift */; };
 		751D012B2739A2A0005EEAA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751D012A2739A2A0005EEAA4 /* AppDelegate.swift */; };
 		751D012D2739A2A0005EEAA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751D012C2739A2A0005EEAA4 /* SceneDelegate.swift */; };
 		751D012F2739A2A0005EEAA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751D012E2739A2A0005EEAA4 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7517E241273AF62300577120 /* ReviewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewController.swift; sourceTree = "<group>"; };
 		751D01272739A2A0005EEAA4 /* AdvisorTripApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvisorTripApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		751D012A2739A2A0005EEAA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		751D012C2739A2A0005EEAA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				751D0144273A4708005EEAA4 /* HomeViewController.swift */,
 				751D0146273A6437005EEAA4 /* SearchViewController.swift */,
 				751D0148273A70E6005EEAA4 /* MapViewController.swift */,
+				7517E241273AF62300577120 /* ReviewsTableViewController.swift */,
 			);
 			path = AdvisorTripApp;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				751D0147273A6437005EEAA4 /* SearchViewController.swift in Sources */,
 				751D0149273A70E6005EEAA4 /* MapViewController.swift in Sources */,
+				7517E242273AF62300577120 /* ReviewsTableViewController.swift in Sources */,
 				751D012F2739A2A0005EEAA4 /* ViewController.swift in Sources */,
 				751D012B2739A2A0005EEAA4 /* AppDelegate.swift in Sources */,
 				751D012D2739A2A0005EEAA4 /* SceneDelegate.swift in Sources */,
