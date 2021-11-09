@@ -57,6 +57,8 @@ class catogery_prodect_ControllerTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! Cell
     
         cell.productName.text = arrProduct[indexPath.row].name
+        cell.productprice.text = "\(arrProduct[indexPath.row].price)"
+        cell.imgproduct.image = arrProduct[indexPath.row].photo
         
         return cell
         

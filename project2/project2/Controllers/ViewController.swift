@@ -34,14 +34,16 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     @IBOutlet weak var txtusername: UITextField!
     
     @IBOutlet weak var txtpassward: UITextField!
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         print("viewDidAppear")
     }
     
-    @IBAction func btnlogin(_ sender: Any) {
-        LblTitl.text = "Logged in"
+    @IBAction func btnlogin(_ sender: UIButton) {
+       
     }
-//
+
 //    func textFieldShouldRuturn(_ textField: UITextField) -> Bool {
 //        if textField == txtusername {
 //            txtusername.becomeFirstResponder()
@@ -50,5 +52,5 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 //        }
 //
 //    }
-    
+
 }
