@@ -13,8 +13,8 @@ class Customer {
     var age: Int
     let services : [Service]
     var password: String
-    
     var description : String {
+  
         return " the customer name is \(name) and age is \(age)"
     }
     // customers trainong with the golden car .
@@ -24,7 +24,6 @@ class Customer {
                 print("Your card is gold , you can train . This number is \(payment)")
             } else if (payment < 500) {
                 print("This payment is low you cannot train. Buy the Gold ,The number is \(payment)")
-  throw ErrorPayment.paymentLow
             }else {
             }
             return ""
@@ -33,6 +32,13 @@ class Customer {
         func train(){
             print("\(name) is training ...")
         }
+        
+        func printServices() {
+           
+           for service in services {
+               print("The chosen service by \(name) is:\(service.name),\(service.price),\(service.description)")
+           }
+       }
                 
                 
     
