@@ -100,89 +100,105 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UrI-9c-YEG">
-                                <rect key="frame" x="20" y="108" width="374" height="685"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="drk-km-Ms7">
+                                <rect key="frame" x="60" y="88" width="294" height="726"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWm-wf-FnR">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="215"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <backgroundConfiguration key="background" image="categorie"/>
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Men's Perfumes">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.032015141752577359" green="0.032015141752577359" blue="0.032015141752577359" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <font key="NSFont" size="22" name="Helvetica"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="5" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="menPerfumesButt:" destination="1tQ-0H-3Xb" eventType="touchUpInside" id="UEs-0b-HVs"/>
-                                            <segue destination="mfG-kc-qoq" kind="show" id="YZY-HZ-MbR"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6N-DT-dXi">
-                                        <rect key="frame" x="0.0" y="235" width="374" height="215"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <backgroundConfiguration key="background" image="categorie"/>
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Women's Perfumes">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.032015141752577359" green="0.032015141752577359" blue="0.032015141752577359" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <font key="NSFont" size="22" name="Helvetica"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="5" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="emw-tR-cM5" kind="show" id="AS3-gd-dBo"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDB-jV-bri">
-                                        <rect key="frame" x="0.0" y="470" width="374" height="215"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <backgroundConfiguration key="background" image="categorie"/>
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Home Perfumes">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.030565399484536071" green="0.030565399484536071" blue="0.030565399484536071" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <font key="NSFont" metaFont="system" size="27"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="5" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="HZV-jr-776" kind="show" id="ppw-fD-9fS"/>
-                                        </connections>
-                                    </button>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EmW-Ng-PP6">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="188"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="IMG_0191 2" translatesAutoresizingMaskIntoConstraints="NO" id="RWv-9r-meV">
+                                                <rect key="frame" x="44" y="0.0" width="207" height="188"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Men's Perfumes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qg-nc-YcS">
+                                                <rect key="frame" x="89" y="159" width="141" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbc-q8-IXb">
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="188"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <segue destination="mfG-kc-qoq" kind="show" id="wtA-La-bvi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jea-ci-9FM">
+                                        <rect key="frame" x="0.0" y="218" width="294" height="188"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="IMG_0191 2" translatesAutoresizingMaskIntoConstraints="NO" id="1Gh-b8-rb4">
+                                                <rect key="frame" x="44" y="0.0" width="207" height="188"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Women's Perfumes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hm-1r-mBU">
+                                                <rect key="frame" x="73" y="159" width="149" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tkc-As-lTx">
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="188"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <segue destination="emw-tR-cM5" kind="show" id="2Ha-M8-dEw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2W-r6-Txd">
+                                        <rect key="frame" x="0.0" y="436" width="294" height="290"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="IMG_0191 2" translatesAutoresizingMaskIntoConstraints="NO" id="a39-OD-LOc">
+                                                <rect key="frame" x="44" y="0.0" width="207" height="188"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home Perfumes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42E-QZ-Bld">
+                                                <rect key="frame" x="89" y="159" width="141" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hB-BA-CVJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="188"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <segue destination="HZV-jr-776" kind="show" id="0sy-hI-Zh7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XxN-Vi-PZg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="UrI-9c-YEG" firstAttribute="leading" secondItem="XxN-Vi-PZg" secondAttribute="leading" constant="20" id="6PU-bw-cOT"/>
-                            <constraint firstItem="UrI-9c-YEG" firstAttribute="top" secondItem="XxN-Vi-PZg" secondAttribute="top" constant="20" id="7pg-7f-lDB"/>
-                            <constraint firstItem="XxN-Vi-PZg" firstAttribute="trailing" secondItem="UrI-9c-YEG" secondAttribute="trailing" constant="20" id="XM3-AN-R3W"/>
-                            <constraint firstItem="XxN-Vi-PZg" firstAttribute="bottom" secondItem="UrI-9c-YEG" secondAttribute="bottom" constant="20" id="eUI-Mi-CeM"/>
+                            <constraint firstItem="drk-km-Ms7" firstAttribute="top" secondItem="XxN-Vi-PZg" secondAttribute="top" id="K2H-Jh-tBw"/>
+                            <constraint firstItem="XxN-Vi-PZg" firstAttribute="trailing" secondItem="drk-km-Ms7" secondAttribute="trailing" constant="60" id="baT-VG-iM6"/>
+                            <constraint firstAttribute="bottom" secondItem="drk-km-Ms7" secondAttribute="bottom" constant="82" id="iMZ-lY-KTj"/>
+                            <constraint firstItem="drk-km-Ms7" firstAttribute="leading" secondItem="XxN-Vi-PZg" secondAttribute="leading" constant="60" id="nmE-fR-Rhh"/>
+                            <constraint firstItem="drk-km-Ms7" firstAttribute="top" secondItem="XxN-Vi-PZg" secondAttribute="top" id="wUz-Dy-cWz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WAa-iD-faj"/>
-                    <connections>
-                        <segue destination="mfG-kc-qoq" kind="show" id="swD-ww-b8E"/>
-                        <segue destination="emw-tR-cM5" kind="show" id="V0d-Kp-40Q"/>
-                        <segue destination="HZV-jr-776" kind="show" id="6ME-Wa-rxD"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kos-16-Jkk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1871" y="880"/>
+            <point key="canvasLocation" x="1869.5652173913045" y="879.91071428571422"/>
         </scene>
         <!--Men Perfumes View Controller-->
         <scene sceneID="L39-9r-Ga0">
@@ -350,6 +366,7 @@
                                                         </stackView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBD-jJ-T5z">
                                                             <rect key="frame" x="327.5" y="30.5" width="76.5" height="48"/>
+                                                            <color key="tintColor" red="0.030565399480000002" green="0.030565399480000002" blue="0.030565399480000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="filled" title="Add to Cart"/>
                                                             <connections>
@@ -610,60 +627,59 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="85" translatesAutoresizingMaskIntoConstraints="NO" id="ucD-rD-Tf5">
-                                                    <rect key="frame" x="8" y="5" width="398" height="90"/>
-                                                    <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s4r-U7-EMn">
-                                                            <rect key="frame" x="0.0" y="12" width="53.5" height="78"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="78" id="ofK-lm-CM7"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xUS-eH-qGI">
-                                                            <rect key="frame" x="138.5" y="12" width="42.5" height="78"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIP-rD-gVa">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="42.5" height="21"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ml" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcI-v3-Cms">
-                                                                    <rect key="frame" x="0.0" y="29" width="42.5" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDB-BB-pas">
-                                                                    <rect key="frame" x="0.0" y="57.5" width="42.5" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" secondItem="xUS-eH-qGI" secondAttribute="height" multiplier="6:11" id="dXT-ut-w7g"/>
-                                                            </constraints>
-                                                        </stackView>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8c-96-cdD">
-                                                            <rect key="frame" x="266" y="59" width="132" height="31"/>
-                                                            <state key="normal" title="Button"/>
-                                                            <buttonConfiguration key="configuration" style="filled" title="Add to cart"/>
-                                                            <connections>
-                                                                <action selector="addInCart:" destination="pmD-pa-46G" eventType="touchUpInside" id="1Qr-ps-5ee"/>
-                                                            </connections>
-                                                        </button>
-                                                    </subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIP-rD-gVa">
+                                                    <rect key="frame" x="78" y="11" width="243" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ml" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcI-v3-Cms">
+                                                    <rect key="frame" x="78" y="39.5" width="243" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDB-BB-pas">
+                                                    <rect key="frame" x="78" y="62" width="243" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8c-96-cdD">
+                                                    <rect key="frame" x="329" y="30" width="50" height="40"/>
                                                     <constraints>
-                                                        <constraint firstItem="s4r-U7-EMn" firstAttribute="width" secondItem="ucD-rD-Tf5" secondAttribute="height" multiplier="81:100" constant="-19.440000000000012" id="c8D-rh-Vsz"/>
+                                                        <constraint firstAttribute="width" secondItem="p8c-96-cdD" secondAttribute="height" multiplier="5:4" id="kNL-RP-6xB"/>
                                                     </constraints>
-                                                </stackView>
+                                                    <color key="tintColor" red="0.030565399480000002" green="0.030565399480000002" blue="0.030565399480000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="filled" title="Add to cart"/>
+                                                    <connections>
+                                                        <action selector="addInCart:" destination="pmD-pa-46G" eventType="touchUpInside" id="1Qr-ps-5ee"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s4r-U7-EMn">
+                                                    <rect key="frame" x="20" y="25" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="s4r-U7-EMn" secondAttribute="height" multiplier="1:1" id="pUb-Hv-Xwx"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ucD-rD-Tf5" firstAttribute="leading" secondItem="b3B-KX-1Te" secondAttribute="leading" constant="8" id="0Dj-pW-VWh"/>
-                                                <constraint firstItem="ucD-rD-Tf5" firstAttribute="top" secondItem="b3B-KX-1Te" secondAttribute="top" constant="5" id="3a2-1d-WVa"/>
-                                                <constraint firstAttribute="trailing" secondItem="ucD-rD-Tf5" secondAttribute="trailing" constant="8" id="63P-sc-Phv"/>
-                                                <constraint firstAttribute="bottom" secondItem="ucD-rD-Tf5" secondAttribute="bottom" constant="5" id="v5J-Am-RqK"/>
+                                                <constraint firstItem="xcI-v3-Cms" firstAttribute="leading" secondItem="s4r-U7-EMn" secondAttribute="trailing" constant="8" id="DCd-mD-m3h"/>
+                                                <constraint firstItem="gDB-BB-pas" firstAttribute="top" secondItem="xcI-v3-Cms" secondAttribute="bottom" constant="1.5" id="FOX-nR-WTG"/>
+                                                <constraint firstItem="p8c-96-cdD" firstAttribute="height" secondItem="b3B-KX-1Te" secondAttribute="height" multiplier="0.4" id="GpU-cZ-tK8"/>
+                                                <constraint firstItem="xcI-v3-Cms" firstAttribute="centerY" secondItem="b3B-KX-1Te" secondAttribute="centerY" id="IwV-wn-y0L"/>
+                                                <constraint firstItem="gDB-BB-pas" firstAttribute="leading" secondItem="xcI-v3-Cms" secondAttribute="leading" id="JUH-Q1-6ey"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="p8c-96-cdD" secondAttribute="trailing" constant="15" id="LfZ-3k-NEL"/>
+                                                <constraint firstItem="p8c-96-cdD" firstAttribute="centerY" secondItem="b3B-KX-1Te" secondAttribute="centerY" id="Mga-wX-3Uf"/>
+                                                <constraint firstItem="s4r-U7-EMn" firstAttribute="centerY" secondItem="b3B-KX-1Te" secondAttribute="centerY" id="ahn-An-ZdV"/>
+                                                <constraint firstItem="XIP-rD-gVa" firstAttribute="trailing" secondItem="xcI-v3-Cms" secondAttribute="trailing" id="dz0-bT-KDU"/>
+                                                <constraint firstItem="p8c-96-cdD" firstAttribute="leading" secondItem="xcI-v3-Cms" secondAttribute="trailing" constant="8" id="kfS-05-X5Y"/>
+                                                <constraint firstItem="XIP-rD-gVa" firstAttribute="leading" secondItem="xcI-v3-Cms" secondAttribute="leading" id="m2e-lV-c91"/>
+                                                <constraint firstItem="s4r-U7-EMn" firstAttribute="height" secondItem="b3B-KX-1Te" secondAttribute="height" multiplier="0.5" id="nmZ-MJ-E0A"/>
+                                                <constraint firstItem="gDB-BB-pas" firstAttribute="trailing" secondItem="xcI-v3-Cms" secondAttribute="trailing" id="vo6-Fz-PX2"/>
+                                                <constraint firstItem="s4r-U7-EMn" firstAttribute="leading" secondItem="b3B-KX-1Te" secondAttribute="leadingMargin" id="xxD-QJ-Pow"/>
+                                                <constraint firstItem="xcI-v3-Cms" firstAttribute="top" secondItem="XIP-rD-gVa" secondAttribute="bottom" constant="7.5" id="zuv-dW-ViN"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -693,7 +709,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uo5-8J-sYk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3857" y="1370"/>
+            <point key="canvasLocation" x="3856.521739130435" y="1369.4196428571429"/>
         </scene>
         <!--Cart-->
         <scene sceneID="Lgn-f7-FGA">
@@ -715,14 +731,9 @@
             <point key="canvasLocation" x="877" y="1861"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="6ME-Wa-rxD"/>
-        <segue reference="V0d-Kp-40Q"/>
-        <segue reference="swD-ww-b8E"/>
-    </inferredMetricsTieBreakers>
     <resources>
+        <image name="IMG_0191 2" width="903" height="828"/>
         <image name="cart" catalog="system" width="128" height="102"/>
-        <image name="categorie" width="3000" height="1168"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="logo" width="3000" height="3000"/>
         <image name="person.crop.circle.badge.plus" catalog="system" width="128" height="113"/>
