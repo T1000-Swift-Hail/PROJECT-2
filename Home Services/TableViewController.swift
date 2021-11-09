@@ -11,7 +11,7 @@ class TableViewController: UITableViewController {
     
     let product = ["Electrecial","Air conditioning","Plumbing","Cleaning","Satellite","Camera"]
    
-    let imageNmaes = ["images.png","UmKnown.jpeg","UnKnown-1.jpeg","UnKnown-2.jpeg","images-1.png","images.jpeg"]
+    let imageProduct = ["images.png","UmKnown.jpeg","UnKnown-1.jpeg","UnKnown-2.jpeg","images-1.png","images.jpeg"]
     
     
 
@@ -31,7 +31,8 @@ class TableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 6
+   
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,11 +42,11 @@ class TableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as?
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as?
                 ListTableViewCell else { return UITableViewCell() }
         
         cell.prodact.text = "Electrical"
-        cell.imageProduct.image = UIImage(named: imageNmaes[indexPath.row])
+        cell.imageProduct.image = UIImage(named: imageProduct[indexPath.row])
         
         
         return cell
@@ -54,7 +55,8 @@ class TableViewController: UITableViewController {
     
     
    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 89
+        return 40
+       
     }
     
     /*
