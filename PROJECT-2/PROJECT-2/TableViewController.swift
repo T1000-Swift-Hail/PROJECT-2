@@ -9,7 +9,13 @@ import UIKit
 class TableViewController: UITableViewController {
     
     let product: Product? = nil
-    var Listofproducts = ["darkChocolate","brownChocolate","whiteChocolate"]
+    var Listofproducts = [
+        Product(name: "darkChocolate", image: UIImage(named: "images-6")!),
+        Product(name:"brownChocolate", image: UIImage(named: "images-5")!),
+        Product(name:"whiteChocolate", image: UIImage(named: "images-3")!)]
+    
+
+    
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,20 +29,28 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "mychocolatetype", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mychocolatetype", for: indexPath) as! ProductCell
         
-        cell.textLabel?.text = Listofproducts[indexPath.row]
+        cell.nameProduct.text = Listofproducts[indexPath.row].name
+        
+        cell.productImage.image =  Listofproducts[indexPath.row].image
+        
+        //cell.textLabel?.text = Listofproducts[indexPath.row]
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let alert = UIAlertController(title: "Add", message: "Add product", preferredStyle: .actionSheet)
-        let addAction = UIAlertAction(title: "Add", style: .cancel, handler:{ action in })
-    
+        let addAction = UIAlertAction(title: "Add", style: .cancel, handler:{ action in
+            
+            myShoppingCart.items.append(self.Listofproducts[indexPath.row])
+            
+        })
+        
         alert.addAction(addAction)
         present(alert, animated: true)
-    
+        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -54,7 +68,9 @@ class TableViewController: UITableViewController {
     }
     
     
-    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
     override func tableView(_ _tableView: UITableView,moveRowAt sourceIndexpath: IndexPath, to destinationIndexpath : IndexPath){
         
         if sourceIndexpath == destinationIndexpath {
@@ -67,44 +83,46 @@ class TableViewController: UITableViewController {
         
     }
     
-        func addItems(_ sender: UIBarButtonItem) {
+    func addItems(_ sender: UIBarButtonItem) {
         
-            //getting an instance of UIAlertController
-            //getting an instance of UIAlertController
-              let alert = UIAlertController(title: "What's your name?", message: nil, preferredStyle: .alert)
-              
-              //Adding Cancel Button
-              alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-              
-              //adding a text field
-              alert.addTextField(configurationHandler: { textField in
-               textField.placeholder = "Input your name here..."
-              })
-              
-              //adding an action "O.K."
-              alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-
-                if let name = alert.textFields?.first?.text {
-                  
-                    self.Listofproducts.append(name)
-                    
-                   self.tableView.insertRows(at: [IndexPath(item: self.Listofproducts.count-1, section: 0)], with: .automatic)
-                    
-                    self.defaults.set(self.Listofproducts, forKey: "shoppingList")
-    //                self.tableView.reloadData()
-                    
-                }
-             }))
-
-            self.present(alert, animated: true)
+        //getting an instance of UIAlertController
+        //getting an instance of UIAlertController
+        let alert = UIAlertController(title: "What's your name?", message: nil, preferredStyle: .alert)
+        
+        //Adding Cancel Button
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        //adding a text field
+        alert.addTextField(configurationHandler: { textField in
+            textField.placeholder = "Input your name here..."
+        })
+        
+        //adding an action "O.K."
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
             
-        }
+            if let name = alert.textFields?.first?.text {
+                
+                self.Listofproducts.append(Product(name:name, image:UIImage(named: "")!))
+                
+                self.tableView.insertRows(at: [IndexPath(item: self.Listofproducts.count-1, section: 0)], with: .automatic)
+                
+                self.defaults.set(self.Listofproducts, forKey: "shoppingList")
+                //                self.tableView.reloadData()
+                
+            }
+        }))
+        
+        self.present(alert, animated: true)
+        
+    }
     
-
     
     
-        func EditingStyle(_ sender: UIBarButtonItem){
+    
+    func EditingStyle(_ sender: UIBarButtonItem){
         isEditing.toggle()
         tableView.setEditing(isEditing, animated: true)
     }
+    
 }
+
