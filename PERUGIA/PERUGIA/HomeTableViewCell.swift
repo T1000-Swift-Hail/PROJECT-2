@@ -16,9 +16,7 @@ class HomeTableViewCell: UITableViewCell {
     
     @IBOutlet weak var lblPlateDrscription: UILabel!
     
-    @IBOutlet weak var AddFavorite: UIButton!
-    
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

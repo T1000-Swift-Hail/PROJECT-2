@@ -21,18 +21,35 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         
-        arrPlate.append(Plate.init(name: "mountains", price: 300, description: "the1", photo: UIImage(named: "1")!))
-        arrPlate.append(Plate.init(name: "2", price: 300, description: "the2", photo: UIImage(named: "2")!))
-        arrPlate.append(Plate.init(name: "3", price: 300, description: "the3", photo: UIImage(named: "3")!))
-        arrPlate.append(Plate.init(name: "4", price: 300, description: "the4", photo: UIImage(named: "4")!))
-        arrPlate.append(Plate.init(name: "5", price: 300, description: "the5", photo: UIImage(named: "5")!))
+        guard let image =  UIImage(named: "1") else {return}
+        arrPlate.append(Plate.init(name: "mountains", price: 300, description: "the1", photo: image))
+         
+        guard let image =  UIImage(named: "2") else {return}
+        arrPlate.append(Plate.init(name: "mountains", price: 300, description: "the2", photo: image))
         
+        guard let image = UIImage(named: "3") else {return}
+        arrPlate.append(Plate.init(name: "3", price: 300, description: "the3", photo: image))
         
-        arrPlate.append(Plate.init(name: "6", price: 300, description: "the", photo: UIImage(named: "6")!))
-        arrPlate.append(Plate.init(name: "7", price: 300, description: "the2", photo: UIImage(named: "7")!))
-        arrPlate.append(Plate.init(name: "8", price: 300, description: "the3", photo: UIImage(named: "8")!))
-        arrPlate.append(Plate.init(name: "9", price: 300, description: "the4", photo: UIImage(named: "9")!))
-        arrPlate.append(Plate.init(name: "10", price: 300, description: "the5", photo: UIImage(named: "10")!))
+        guard let image = UIImage(named: "4") else {return}
+        arrPlate.append(Plate.init(name: "4", price: 300, description: "the4", photo: image))
+        
+        guard let image = UIImage(named: "5") else {return}
+        arrPlate.append(Plate.init(name: "5", price: 300, description: "the5", photo: image))
+        
+        guard let image = UIImage(named: "6") else {return}
+        arrPlate.append(Plate.init(name: "6", price: 300, description: "the", photo: image))
+        
+        guard let image = UIImage(named: "7") else {return}
+        arrPlate.append(Plate.init(name: "7", price: 300, description: "the2", photo: image))
+        
+        guard let image = UIImage(named: "8") else {return}
+        arrPlate.append(Plate.init(name: "8", price: 300, description: "the3", photo: image))
+        
+        guard let image = UIImage(named: "9") else {return}
+        arrPlate.append(Plate.init(name: "9", price: 300, description: "the4", photo: image))
+        
+        guard let image = UIImage(named: "10") else {return}
+        arrPlate.append(Plate.init(name: "10", price: 300, description: "the5", photo: image))
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,11 +73,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         print("cell index = \(indexPath.row)")
         
     }
-    @objc
-    func addFavorite(sender:UIButton){
-        print("button index = \(sender.tag)")
-        sender.setImage(UIImage(systemName: "heart.fill"), for: .normal)
-    }
+//    @objc
+//    func addFavorite(sender:UIButton){
+//        print("button index = \(sender.tag)")
+//        sender.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+//    }
 }
 
 
