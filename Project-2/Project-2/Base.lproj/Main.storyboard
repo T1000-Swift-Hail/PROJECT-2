@@ -12,7 +12,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" alpha="0.59999999999999998" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -89,12 +89,12 @@
                     <connections>
                         <outlet property="idTextField" destination="hvu-gN-PEb" id="hfg-vE-mOh"/>
                         <outlet property="passwordTextField" destination="r2q-UC-thB" id="3ga-O0-z0b"/>
-                        <segue destination="WUc-0Q-6PF" kind="show" identifier="SecondPage" id="YYQ-M4-0aZ"/>
+                        <segue destination="DAq-fN-XQe" kind="show" identifier="WelcomeScreen" id="m18-n7-6SK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="79.6875"/>
+            <point key="canvasLocation" x="226" y="80"/>
         </scene>
         <!--Rooms View Controller-->
         <scene sceneID="vS1-Ii-wd3">
@@ -209,6 +209,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcg-Uy-AMq">
+                                <rect key="frame" x="132" y="345" width="150" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hFt-t2-RuI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -221,6 +227,104 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CxV-Rg-vez" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2550.7246376811595" y="79.6875"/>
+        </scene>
+        <!--Welcome Screen-->
+        <scene sceneID="PhT-G5-33q">
+            <objects>
+                <viewController id="DAq-fN-XQe" customClass="WelcomeScreen" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Ce-0c-cBW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Students 👨🏼‍🎓" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hP-71-5VW">
+                                <rect key="frame" x="20" y="150" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you registerd to UOH and you wish to reserve a room while in your current city, Its the place!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aya-Hj-SiF">
+                                <rect key="frame" x="20" y="227.5" width="374" height="93.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NMe-Ld-N2i">
+                                <rect key="frame" x="20" y="356" width="355" height="237.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reserve Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhF-zD-MEp">
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Choose your room type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgx-j0-pKz">
+                                        <rect key="frame" x="0.0" y="50" width="196" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Choose your address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4a-IC-oLr">
+                                        <rect key="frame" x="0.0" y="91.5" width="178.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Press Reserve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pg-xH-rSe">
+                                        <rect key="frame" x="0.0" y="133" width="122" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-We will send your bill with SMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNM-8s-Ep5">
+                                        <rect key="frame" x="0.0" y="174.5" width="254.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Make sure you pay the fees within 24 hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOZ-hC-evP">
+                                        <rect key="frame" x="0.0" y="216" width="355" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01G-u2-i4C">
+                                <rect key="frame" x="308" y="646" width="87" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="NEXT">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                    <color key="baseForegroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToRoomSelection:" destination="DAq-fN-XQe" eventType="touchUpInside" id="ZpI-IY-FmE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pRd-pW-cQD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NMe-Ld-N2i" firstAttribute="leading" secondItem="pRd-pW-cQD" secondAttribute="leading" constant="20" id="2ge-qG-NdO"/>
+                            <constraint firstItem="pRd-pW-cQD" firstAttribute="trailing" secondItem="NMe-Ld-N2i" secondAttribute="trailing" constant="39" id="AJt-lk-L7D"/>
+                            <constraint firstItem="pRd-pW-cQD" firstAttribute="trailing" secondItem="6hP-71-5VW" secondAttribute="trailing" constant="20" id="DbC-Ij-Sm8"/>
+                            <constraint firstItem="Aya-Hj-SiF" firstAttribute="leading" secondItem="pRd-pW-cQD" secondAttribute="leading" constant="20" id="Dbi-CK-RaS"/>
+                            <constraint firstItem="pRd-pW-cQD" firstAttribute="trailing" secondItem="01G-u2-i4C" secondAttribute="trailing" constant="19" id="I2L-sg-biF"/>
+                            <constraint firstItem="pRd-pW-cQD" firstAttribute="trailing" secondItem="Aya-Hj-SiF" secondAttribute="trailing" constant="20" id="Lvz-gw-h6r"/>
+                            <constraint firstItem="NMe-Ld-N2i" firstAttribute="top" secondItem="Aya-Hj-SiF" secondAttribute="bottom" constant="35" id="OSr-Ih-occ"/>
+                            <constraint firstItem="6hP-71-5VW" firstAttribute="top" secondItem="pRd-pW-cQD" secondAttribute="top" constant="62" id="SHK-a4-Lka"/>
+                            <constraint firstItem="01G-u2-i4C" firstAttribute="top" secondItem="NMe-Ld-N2i" secondAttribute="bottom" constant="52.5" id="VpR-0K-No6"/>
+                            <constraint firstItem="NMe-Ld-N2i" firstAttribute="top" secondItem="6hP-71-5VW" secondAttribute="bottom" constant="165" id="jLB-kW-U1H"/>
+                            <constraint firstItem="6hP-71-5VW" firstAttribute="leading" secondItem="pRd-pW-cQD" secondAttribute="leading" constant="20" id="tR7-c1-usP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dcn-ec-6Ts"/>
+                    <connections>
+                        <segue destination="WUc-0Q-6PF" kind="show" identifier="RoomSelection" id="FhX-8f-Qc5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dtT-Q7-ts2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1011.5942028985507" y="79.6875"/>
         </scene>
         <!--Terms and Conditions-->
         <scene sceneID="MbD-IN-BYp">
@@ -335,7 +439,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SK9-5y-YNH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1763.7681159420292" y="808.92857142857144"/>
+            <point key="canvasLocation" x="1012" y="809"/>
         </scene>
         <!--Single View Controller-->
         <scene sceneID="wms-7H-hUT">
@@ -380,7 +484,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o6N-Uk-kpq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
+            <point key="canvasLocation" x="-626" y="80"/>
         </scene>
     </scenes>
     <resources>
