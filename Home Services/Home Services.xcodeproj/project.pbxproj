@@ -19,6 +19,9 @@
 		8139F9C82737C5F000132D42 /* Home_ServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139F9C72737C5F000132D42 /* Home_ServicesTests.swift */; };
 		8139F9D22737C5F000132D42 /* Home_ServicesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139F9D12737C5F000132D42 /* Home_ServicesUITests.swift */; };
 		8139F9D42737C5F000132D42 /* Home_ServicesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139F9D32737C5F000132D42 /* Home_ServicesUITestsLaunchTests.swift */; };
+		81545259273A9E0900D71662 /* FavsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81545258273A9E0900D71662 /* FavsTableViewController.swift */; };
+		8154525B273A9E7F00D71662 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154525A273A9E7F00D71662 /* Product.swift */; };
+		8154525D273A9FAD00D71662 /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154525C273A9FAD00D71662 /* FavoritesList.swift */; };
 		816A1489273A48BA00C2747A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A1488273A48BA00C2747A /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +59,9 @@
 		8139F9CD2737C5F000132D42 /* Home ServicesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Home ServicesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8139F9D12737C5F000132D42 /* Home_ServicesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_ServicesUITests.swift; sourceTree = "<group>"; };
 		8139F9D32737C5F000132D42 /* Home_ServicesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_ServicesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		81545258273A9E0900D71662 /* FavsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsTableViewController.swift; sourceTree = "<group>"; };
+		8154525A273A9E7F00D71662 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		8154525C273A9FAD00D71662 /* FavoritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesList.swift; sourceTree = "<group>"; };
 		816A1488273A48BA00C2747A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +148,9 @@
 			children = (
 				813389F527394815004C3A67 /* TableViewController.swift */,
 				813389F327393F1D004C3A67 /* ListTableViewCell.swift */,
+				81545258273A9E0900D71662 /* FavsTableViewController.swift */,
+				8154525A273A9E7F00D71662 /* Product.swift */,
+				8154525C273A9FAD00D71662 /* FavoritesList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,10 +298,13 @@
 				816A1489273A48BA00C2747A /* LoginViewController.swift in Sources */,
 				813389EE27391C4E004C3A67 /* User.swift in Sources */,
 				813389F627394815004C3A67 /* TableViewController.swift in Sources */,
+				81545259273A9E0900D71662 /* FavsTableViewController.swift in Sources */,
 				8139F9B52737C5EB00132D42 /* ViewController.swift in Sources */,
 				8139F9B12737C5EB00132D42 /* AppDelegate.swift in Sources */,
+				8154525B273A9E7F00D71662 /* Product.swift in Sources */,
 				8139F9B32737C5EB00132D42 /* SceneDelegate.swift in Sources */,
 				813389F427393F1D004C3A67 /* ListTableViewCell.swift in Sources */,
+				8154525D273A9FAD00D71662 /* FavoritesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
