@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+   let userDefaults = UserDefaults.standard
 
     @IBOutlet weak var userName: UITextField!
     
@@ -26,6 +27,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         userPassword.isSecureTextEntry = true
+        if userDefaults.bool(forKey: "Stay logged in") {
+            performSegue(withIdentifier: "Seccond", sender: nil)
+        }
         
         // Do any additional setup after loading the view.
     }
@@ -36,7 +40,7 @@ class ViewController: UIViewController {
         let regist = [user1,user2,user3,user4,user5,user6]
         guard let userName = userName.text else { return }
         guard let userPass = userPassword.text else { return }
-        
+        userDefaults.set(true, forKey: "Stay logged in")
         for registerdUser in regist {
             if registerdUser.userName == userName && registerdUser.password == userPass {
                 performSegue(withIdentifier: "Seccond", sender: nil)
