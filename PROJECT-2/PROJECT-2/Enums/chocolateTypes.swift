@@ -8,7 +8,7 @@
 import Foundation
 // Enumartion for chocolate Types
 enum ChocolateTypes: String {
-    case whiteChocolate = "whitechocolate"
-    case darkChocolate =  "darkGraychocolate"
-    case brownChocolate = "brownchocolate"
+    case whiteChocolate = "whiteChocolate"
+    case darkChocolate =  "darkChocolate"
+    case brownChocolate = "brownChocolate"
 }

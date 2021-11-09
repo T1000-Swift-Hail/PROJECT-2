@@ -9,7 +9,7 @@ import UIKit
 class TableViewController: UITableViewController {
     
     let product: Product? = nil
-    var Listofproducts = ["darkchocolate","brownchocolate","whitechocolate"]
+    var Listofproducts = ["darkChocolate","brownChocolate","whiteChocolate"]
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()

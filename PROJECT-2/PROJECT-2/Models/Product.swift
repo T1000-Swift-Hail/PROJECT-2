@@ -12,31 +12,20 @@ import UIKit
 struct Product {
     
     let color : UIColor?
+    var quantity:Int
+    var price:Int
+    var name : String
+    
     
     
     func getProducts() -> [Product] {
         
-        let product1 = Product(color: .dark,quantity: 50, price: 120 , productType: .darkchocolate)
+        let product1 = Product(color:.darkGray,quantity:50, price:120,name:"darkchocolate")
         
-        let product2 = Product(color: .white)
-        let product3 = Product(color: .brown)
+        let product2 = Product(color: .white,quantity: 100,price: 200,name: "whitechocolate")
+        
+        let product3 = Product(color: .brown,quantity: 120,price: 150,name: "brownchocolate")
     
         return [product1,product2,product3]
     }
-//
-//
-//    var products = ["product":"string","product2":"string","product3":"string]
-//
-//    var product = Products(color: "dark", quantity: 50, price: 120 , name: "dark chocolate", productType: .darkChocolate)
-//
-//    var product2 = Product(color: "white", quantity: 80, price: 150 , name: "milk chocolate", productType: .milkChocolate)
-//    var product3 = Product(color: "brown", quantity: 90, price: 180, name: "brownchocolate", productType: .brownChocolate)
-//
-//
-//
-//
-//    var storeProducts = [product, product2, product3]
-//
-//    print("Our list of prodcuts....")
-
 }
