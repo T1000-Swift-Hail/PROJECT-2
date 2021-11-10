@@ -1,5 +1,5 @@
 //
-//  ViewControllerCategories.swift
+//  LginViewController.swift
 //  Electronic Stories
 //
 //  Created by Asma Rasheed on 04/04/1443 AH.
@@ -7,23 +7,15 @@
 
 import UIKit
 
-class ViewControllerCategories: UIViewController {
+class LginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      
+        // Do any additional setup after loading the view.
     }
     
 
-    
-    
-    @IBAction func showPhoneProducts(_ sender: Any) {
-        
-        performSegue(withIdentifier: "toProductsPage", sender: nil)
-    }
-    
-    
     /*
     // MARK: - Navigation
 

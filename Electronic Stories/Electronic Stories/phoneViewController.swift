@@ -7,11 +7,7 @@
 
 import UIKit
 
-struct Phone {
-    let name : String
-    let price : Double
-    let photo :UIImage
-}
+
 
 class phoneViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource {
  
