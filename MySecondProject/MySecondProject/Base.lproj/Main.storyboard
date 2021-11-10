@@ -363,12 +363,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="arD-MK-2Hz">
-                        <barButtonItem key="leftBarButtonItem" title="Edit" id="ty8-vV-VIf"/>
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="ty8-vV-VIf">
+                            <connections>
+                                <action selector="editingItem:" destination="AU5-f6-R9e" id="MAw-kb-3Qh"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="GzE-dE-jnd"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="editingProdect" destination="ty8-vV-VIf" id="6EE-j2-B5s"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVf-As-TDG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

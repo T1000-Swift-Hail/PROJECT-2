@@ -63,4 +63,9 @@ class ProductsVC: UIViewController, UICollectionViewDataSource,UICollectionViewD
         print(shoppingCart.products)
     }
     
+//    func collectionView(_ collectionView: UICollectionView, editingProdect indexPath: IndexPath) {
+//        _ = products[indexPath.row]
+//        shoppingCart.products.remove(at: 1)
+//        print(shoppingCart.products)
+//    }
 }

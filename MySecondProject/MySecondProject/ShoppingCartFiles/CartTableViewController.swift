@@ -9,7 +9,16 @@ import UIKit
 
 class CartTableViewController: UITableViewController {
     
-    @IBOutlet weak var editingProdect: UIBarButtonItem!
+    @IBAction func editingItem(_ sender: Any) {
+        
+        
+        if tableView.isEditing {
+            tableView.isEditing = false
+        } else {
+            tableView.isEditing = true
+        }
+    }
+    
     
     
     // MARK: - Store data
@@ -52,6 +61,36 @@ class CartTableViewController: UITableViewController {
         
         return cell
     }
+    ///
+    ///
+    ///
+    ///
+    
+    override func tableView(_ tableView: UITableView,commit editingStyle: UITableViewCell.EditingStyle,forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            
+            shoppingCart.products.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+
+        }
+        
+    }
+    
+    
+    
+        override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+            if fromIndexPath == destinationIndexPath {
+                return
+            } else {
+                let movedItem = shoppingCart.products[fromIndexPath.row]
+                shoppingCart.products.remove(at: fromIndexPath.row)
+                shoppingCart.products.insert(movedItem, at: destinationIndexPath.row)
+            }
+        }
+        
+        
+    
     
 
     /*
