@@ -12,7 +12,7 @@ class TableViewController: UITableViewController {
     var Listofproducts = [
         Product(name: "darkChocolate", image: UIImage(named: "images-6")!),
         Product(name:"brownChocolate", image: UIImage(named: "images-5")!),
-        Product(name:"whiteChocolate", image: UIImage(named: "images-3")!)]
+        Product(name:"whiteChocolate", image: UIImage(named: "images-2")!)]
     
 
     
@@ -83,18 +83,18 @@ class TableViewController: UITableViewController {
         
     }
     
-    func addItems(_ sender: UIBarButtonItem) {
+    @IBAction func addItems(_ sender: UIBarButtonItem) {
         
         //getting an instance of UIAlertController
         //getting an instance of UIAlertController
-        let alert = UIAlertController(title: "What's your name?", message: nil, preferredStyle: .alert)
+        let alert = UIAlertController(title: "What's Listofproduct ?", message: nil, preferredStyle: .alert)
         
         //Adding Cancel Button
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
         //adding a text field
         alert.addTextField(configurationHandler: { textField in
-            textField.placeholder = "Input your name here..."
+            textField.placeholder = "Input your product here..."
         })
         
         //adding an action "O.K."
@@ -119,7 +119,7 @@ class TableViewController: UITableViewController {
     
     
     
-    func EditingStyle(_ sender: UIBarButtonItem){
+    @IBAction func EditingStyle(_ sender: UIBarButtonItem){
         isEditing.toggle()
         tableView.setEditing(isEditing, animated: true)
     }

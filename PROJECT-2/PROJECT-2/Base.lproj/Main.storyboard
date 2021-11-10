@@ -59,12 +59,12 @@
                     <navigationItem key="navigationItem" id="NJk-y0-ZGH">
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="eRh-s2-GTy">
                             <connections>
-                                <action selector="EditingStyle:" destination="0my-Px-3KD" id="ExN-Km-d50"/>
+                                <action selector="EditingStyle:" destination="0my-Px-3KD" id="Tb5-2V-TbR"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="oTe-JF-mYW">
                             <connections>
-                                <action selector="addItems:" destination="0my-Px-3KD" id="dYf-xa-JqC"/>
+                                <action selector="addItems:" destination="0my-Px-3KD" id="Kv3-RK-Ozb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -221,16 +221,6 @@
         <scene sceneID="H7z-La-Mjm">
             <objects>
                 <tableViewController id="OVM-lx-RxY" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="7z7-lY-Jmh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="OVM-lx-RxY" id="9XF-PB-anZ"/>
-                            <outlet property="delegate" destination="OVM-lx-RxY" id="FC9-HA-R9I"/>
-                        </connections>
-                    </tableView>
                     <navigationItem key="navigationItem" id="hM0-QN-o5O"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lDB-ev-60T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
