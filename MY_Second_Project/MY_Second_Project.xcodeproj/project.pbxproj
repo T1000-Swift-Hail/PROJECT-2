@@ -14,7 +14,6 @@
 		B7169E632737EEE9000E25C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7169E612737EEE9000E25C4 /* Main.storyboard */; };
 		B7169E652737EEEA000E25C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7169E642737EEEA000E25C4 /* Assets.xcassets */; };
 		B7169E682737EEEA000E25C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7169E662737EEEA000E25C4 /* LaunchScreen.storyboard */; };
-		B7169E732738F9CC000E25C4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E722738F9CC000E25C4 /* LoginViewController.swift */; };
 		B7169E7A2739211B000E25C4 /* MenPerfumes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E792739211B000E25C4 /* MenPerfumes.swift */; };
 		B7169E7C2739213A000E25C4 /* WomenPerfumes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E7B2739213A000E25C4 /* WomenPerfumes.swift */; };
 		B7169E7E27392152000E25C4 /* HomePerfumes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E7D27392152000E25C4 /* HomePerfumes.swift */; };
@@ -24,7 +23,6 @@
 		B7FE40A4273A9C6E008FC1D8 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40A3273A9C6E008FC1D8 /* Cart.swift */; };
 		B7FE40A7273AA925008FC1D8 /* HomeStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40A6273AA925008FC1D8 /* HomeStruct.swift */; };
 		B7FE40AA273AAC7F008FC1D8 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40A9273AAC7F008FC1D8 /* CartViewController.swift */; };
-		B7FE40B0273B02AE008FC1D8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40AF273B02AE008FC1D8 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +35,6 @@
 		B7169E642737EEEA000E25C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7169E672737EEEA000E25C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7169E692737EEEA000E25C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7169E722738F9CC000E25C4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B7169E792739211B000E25C4 /* MenPerfumes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenPerfumes.swift; sourceTree = "<group>"; };
 		B7169E7B2739213A000E25C4 /* WomenPerfumes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenPerfumes.swift; sourceTree = "<group>"; };
 		B7169E7D27392152000E25C4 /* HomePerfumes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePerfumes.swift; sourceTree = "<group>"; };
@@ -47,7 +44,6 @@
 		B7FE40A3273A9C6E008FC1D8 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		B7FE40A6273AA925008FC1D8 /* HomeStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStruct.swift; sourceTree = "<group>"; };
 		B7FE40A9273AAC7F008FC1D8 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
-		B7FE40AF273B02AE008FC1D8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +94,6 @@
 		B7169E6F2738F779000E25C4 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				B7169E722738F9CC000E25C4 /* LoginViewController.swift */,
-				B7FE40AF273B02AE008FC1D8 /* SignUpViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -206,7 +200,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7169E732738F9CC000E25C4 /* LoginViewController.swift in Sources */,
 				B71271A2273A54D800CBD52A /* CategoriesViewController.swift in Sources */,
 				B7FE40A4273A9C6E008FC1D8 /* Cart.swift in Sources */,
 				B7169E7C2739213A000E25C4 /* WomenPerfumes.swift in Sources */,
@@ -215,7 +208,6 @@
 				B7FE40AA273AAC7F008FC1D8 /* CartViewController.swift in Sources */,
 				B7169E84273A1633000E25C4 /* HomePerfumeViewController.swift in Sources */,
 				B7169E7E27392152000E25C4 /* HomePerfumes.swift in Sources */,
-				B7FE40B0273B02AE008FC1D8 /* SignUpViewController.swift in Sources */,
 				B7169E8227398B12000E25C4 /* WomenPerfumeViewController.swift in Sources */,
 				B7169E5E2737EEE9000E25C4 /* SceneDelegate.swift in Sources */,
 				B7FE40A7273AA925008FC1D8 /* HomeStruct.swift in Sources */,
