@@ -25,7 +25,7 @@ class BarViewController: UIViewController , ChartViewDelegate {
         
         var entries = [BarChartDataEntry]()
         
-        for x in 1..<10 {
+        for x in 0..<10 {
             entries.append(BarChartDataEntry(x:Double(x),
                                            y:Double(x)))
         }

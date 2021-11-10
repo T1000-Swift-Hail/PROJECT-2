@@ -22,11 +22,13 @@ class LoginAndRegisterViewController: UIViewController {
     
     @IBOutlet weak var txtPasswordSignin: UITextField!
     
-    @IBOutlet weak var indicatorLogin: UIActivityIndicatorView!
+
     
     var users = Users(email: "ahmed@ahmed.com", password: "1234")
     
+    @IBOutlet weak var SignUPEmail: UITextField!
     
+    @IBOutlet weak var SignUpPassword: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,4 +65,11 @@ class LoginAndRegisterViewController: UIViewController {
         self.present(alert,animated: true)
         
     }
+    
+    @IBAction func Signup(_ sender: Any) {
+        
+       
+    
 }
+}
+

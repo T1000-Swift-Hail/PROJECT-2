@@ -8,23 +8,16 @@
 // Project Name:Manege Your Busniss
 
 ### Project Description :
-// A program that helps you to manage your business and projects in a professional way through easy-to-use interfaces and also provides you with some additional features, for example, the graphic feature to display your profits and costs, and the employee management feature which you can grant them bonuses or vacations،
+// A program that helps you to manage your business and projects in a professional way through easy-to-use interfaces and also provides you with some additional features, for example, the graphic feature to display your profits and costs .
 
 
 ### Features List :
 // Add your project features list
-- feature :user name and password
+- feature :sign up user name and password
+- feature :sign in
 - feature :edite profile from settings
-- feature :add busnisses
+- feature :display busnisses
 - feature :display charts
-- feature :add Employees
-- feature :give vacations
-- feature :give bonuses
-- feature :
-- feature :
-- feature :
-- feature :
-- feature :
 
 ### Define the scenes :
 // Add description of the screens / scenes in your application.
