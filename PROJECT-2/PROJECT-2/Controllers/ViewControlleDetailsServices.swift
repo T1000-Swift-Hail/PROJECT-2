@@ -1,0 +1,40 @@
+//
+//  ViewControlleDetailsServices.swift
+//  PROJECT-2
+//
+//  Created by HIND12 on 05/04/1443 AH.
+//
+
+import UIKit
+
+class ViewControlleDetailsServices: UIViewController {
+
+    @IBOutlet weak var titel: UILabel!
+    @IBOutlet weak var descreb: UILabel!
+    @IBOutlet weak var price: UILabel!
+    
+    var servicDetails : Service!
+
+    override func viewDidLoad(){
+        super.viewDidLoad()
+        
+        titel.text = servicDetails.name
+        descreb.text = servicDetails.description
+        price.text = "\(servicDetails.price) SR"
+
+        // Do any additional setup after loading the view.
+    }
+
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

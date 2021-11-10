@@ -18,6 +18,7 @@
 		3AD117432739370A00ED881A /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD117422739370A00ED881A /* Customer.swift */; };
 		3AD11746273A49B300ED881A /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD11745273A49B300ED881A /* ServiceCell.swift */; };
 		3AD11748273A49FB00ED881A /* ServiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD11747273A49FB00ED881A /* ServiceTableViewController.swift */; };
+		3AD1174A273B9D3700ED881A /* ViewControlleDetailsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD11749273B9D3700ED881A /* ViewControlleDetailsServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3AD117422739370A00ED881A /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		3AD11745273A49B300ED881A /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
 		3AD11747273A49FB00ED881A /* ServiceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewController.swift; sourceTree = "<group>"; };
+		3AD11749273B9D3700ED881A /* ViewControlleDetailsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControlleDetailsServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				3AD1173C2738FA8200ED881A /* LoginViewController.swift */,
+				3AD11749273B9D3700ED881A /* ViewControlleDetailsServices.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				3AD11746273A49B300ED881A /* ServiceCell.swift in Sources */,
 				3AD117432739370A00ED881A /* Customer.swift in Sources */,
 				3AD117292737DCAD00ED881A /* AppDelegate.swift in Sources */,
+				3AD1174A273B9D3700ED881A /* ViewControlleDetailsServices.swift in Sources */,
 				3AD11748273A49FB00ED881A /* ServiceTableViewController.swift in Sources */,
 				3AD1172B2737DCAD00ED881A /* SceneDelegate.swift in Sources */,
 			);

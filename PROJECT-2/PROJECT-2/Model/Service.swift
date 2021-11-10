@@ -13,35 +13,13 @@ struct Service {
     var description : String
     var price : Int
     
-    var ourServices = ["training", "boxing" ,"swimming","yaki","zumba"]
-    
-    
-//
-//    print("\n our services are :")
-//    for service in ourServices {
-//        print("service is : \(service.name) for price \(service.price)")
-//    }
-//
-//
-//
-
-
-
-      //  return " the customer name is \(name) and age is \(age)"
  
     
-
-
- 
- 
-
- //  print("\n our services are :")
-  //    for service in ourServices {
-   // print("service is : \(service.name) for price \(service.price)")
+    
 }
 
   
     
 
 
-// customers can use more than one service all categories .
+

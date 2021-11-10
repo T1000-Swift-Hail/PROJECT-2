@@ -17,7 +17,8 @@ class Customer {
   
         return " the customer name is \(name) and age is \(age)"
     }
-    // customers trainong with the golden car .
+  // customers trainong with the golden car .
+ //class information for customer .
         func buyPackage(payment : Int) throws -> String {
             print("\(name) paid \(payment)")
             if (payment>500)  {
