@@ -22,10 +22,9 @@ class HomeTableViewCell: UITableViewCell {
         // Initialization code
     }
   
-    func setupCell(photo: UIImage, name: String, price: Double, description: String) {
+    func setupCell(photo: UIImage, name: String, description: String) {
         imgPlatePhoto.image = photo
         lblPlateName.text = name
-        lblPlatePrice.text = "\(price)SAR"
         lblPlateDrscription.text = description
         
     }
