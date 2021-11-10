@@ -17,12 +17,12 @@ class BookingViewController: UIViewController {
     
 
     fileprivate func paymentAlert() {
-        let alert = UIAlertController(title: "Are you sure", message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Are you sure".translated, message: "", preferredStyle: .alert)
         
-        let ok = UIAlertAction(title: "OK", style: .default) { ok in
+        let ok = UIAlertAction(title: "Yes".translated, style: .default) { ok in
             self.performSegue(withIdentifier: "Fourth", sender: nil)
         }
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let cancel = UIAlertAction(title: "No".translated, style: .cancel, handler: nil)
         alert.addAction(ok)
         alert.addAction(cancel)
         
@@ -31,19 +31,19 @@ class BookingViewController: UIViewController {
     
 
     
-    @IBAction func FirstMatch(_ sender: Any) {
+    @IBAction func firstMatch(_ sender: Any) {
         paymentAlert()
     }
     
-    @IBAction func SeccondMatch(_ sender: Any) {
+    @IBAction func seccondMatch(_ sender: Any) {
         paymentAlert()
     }
     
-    @IBAction func ThirdMatch(_ sender: Any) {
+    @IBAction func thirdMatch(_ sender: Any) {
        paymentAlert()
     }
     
-    @IBAction func FourthMatch(_ sender: Any) {
+    @IBAction func fourthMatch(_ sender: Any) {
         paymentAlert()
     }
     
@@ -60,3 +60,4 @@ class BookingViewController: UIViewController {
     */
 
 }
+

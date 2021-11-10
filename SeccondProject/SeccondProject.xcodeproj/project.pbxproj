@@ -10,6 +10,7 @@
 		CE3546A1273A699E00DF3D28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3546A0273A699E00DF3D28 /* Assets.xcassets */; };
 		CE3546A3273A971900DF3D28 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3546A2273A971900DF3D28 /* BookingViewController.swift */; };
 		CE4ED661273939E000ED9D6F /* SeccondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4ED660273939E000ED9D6F /* SeccondViewController.swift */; };
+		CEB0EDB3273BAC4D00E4179F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEB0EDB5273BAC4D00E4179F /* Localizable.strings */; };
 		CEDCF7382737C1C7007A86EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDCF7372737C1C7007A86EC /* AppDelegate.swift */; };
 		CEDCF73A2737C1C7007A86EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDCF7392737C1C7007A86EC /* SceneDelegate.swift */; };
 		CEDCF73C2737C1C7007A86EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDCF73B2737C1C7007A86EC /* ViewController.swift */; };
@@ -22,6 +23,9 @@
 		CE3546A0273A699E00DF3D28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE3546A2273A971900DF3D28 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
 		CE4ED660273939E000ED9D6F /* SeccondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeccondViewController.swift; sourceTree = "<group>"; };
+		CEB0EDAF273BA2AF00E4179F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		CEB0EDB0273BA2AF00E4179F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CEB0EDB4273BAC4D00E4179F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEDCF7342737C1C7007A86EC /* SeccondProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeccondProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDCF7372737C1C7007A86EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEDCF7392737C1C7007A86EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 				CE4ED660273939E000ED9D6F /* SeccondViewController.swift */,
 				CE3546A0273A699E00DF3D28 /* Assets.xcassets */,
 				CE3546A2273A971900DF3D28 /* BookingViewController.swift */,
+				CEB0EDB5273BAC4D00E4179F /* Localizable.strings */,
 			);
 			path = SeccondProject;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = CEDCF72B2737C1C7007A86EC;
 			productRefGroup = CEDCF7352737C1C7007A86EC /* Products */;
@@ -134,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB0EDB3273BAC4D00E4179F /* Localizable.strings in Resources */,
 				CEDCF7442737C1C8007A86EC /* LaunchScreen.storyboard in Resources */,
 				CE3546A1273A699E00DF3D28 /* Assets.xcassets in Resources */,
 				CEDCF73F2737C1C7007A86EC /* Main.storyboard in Resources */,
@@ -159,10 +166,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		CEB0EDB5273BAC4D00E4179F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB0EDB4273BAC4D00E4179F /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		CEDCF73D2737C1C7007A86EC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CEDCF73E2737C1C7007A86EC /* Base */,
+				CEB0EDAF273BA2AF00E4179F /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -171,6 +187,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CEDCF7432737C1C8007A86EC /* Base */,
+				CEB0EDB0273BA2AF00E4179F /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -182,6 +199,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -243,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

@@ -1,0 +1,96 @@
+
+/* Class = "UILabel"; text = "Next Matches"; ObjectID = "0f3-Xv-BJS"; */
+"0f3-Xv-BJS.text" = "المباريات القادمة";
+
+/* Class = "UILabel"; text = "At this app you can support your team easier by booking your tackit in what ever you are chose your match and enjoy !"; ObjectID = "0fp-4S-ccb"; */
+"0fp-4S-ccb.text" = "في هذاالتطبيق بإمكانك دعم فريقك بطريقة سهلة عن طريق حجزك لتذكرتك في المكان الذي انت ترغب ، سارع في الحجز واستمتع !";
+
+/* Class = "UILabel"; text = "Ittihad VS AL-Ahli"; ObjectID = "1g1-vN-yba"; */
+"1g1-vN-yba.text" = "الاتحاد VS الاهلي";
+
+/* Class = "UILabel"; text = "AL-Hilal VS Ettifaq"; ObjectID = "2b5-UX-ldK"; */
+"2b5-UX-ldK.text" = "الهلالVS الاتفاق";
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "8V8-VS-P4Z"; */
+"8V8-VS-P4Z.text" = "Welcome";
+
+/* Class = "UILabel"; text = "Sat 13/11/2021"; ObjectID = "8ml-2n-uoi"; */
+"8ml-2n-uoi.text" = "السبت١٣/١١/٢٠٢١";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "ARC-m0-fQQ"; */
+"ARC-m0-fQQ.configuration.title" = "تسجيل دخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ARC-m0-fQQ"; */
+"ARC-m0-fQQ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Sat 13/11/2021"; ObjectID = "CCW-IA-fIZ"; */
+"CCW-IA-fIZ.text" = "السبت ١٣/١١/٢٠٢١";
+
+/* Class = "UIButton"; configuration.title = "Book"; ObjectID = "CRg-eB-hk1"; */
+"CRg-eB-hk1.configuration.title" = "احجز";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "CRg-eB-hk1"; */
+"CRg-eB-hk1.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Book"; ObjectID = "FOv-Q0-J13"; */
+"FOv-Q0-J13.configuration.title" = "احجز";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "FOv-Q0-J13"; */
+"FOv-Q0-J13.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Price:50SR"; ObjectID = "J9J-ln-x9c"; */
+"J9J-ln-x9c.text" = "القيمة:٥٠";
+
+/* Class = "UILabel"; text = "AL-Nassr VS AL-Faisly"; ObjectID = "QsL-cC-bDR"; */
+"QsL-cC-bDR.text" = "النصر VS الفيصلي";
+
+/* Class = "UILabel"; text = "Time: 19:40 At Marsool Park Stadium"; ObjectID = "V73-hY-cB0"; */
+"V73-hY-cB0.text" = "الوقت:١٩:٤٠ استاد مرسول بارك";
+
+/* Class = "UILabel"; text = "Price : 70SR"; ObjectID = "ahN-Z5-8gK"; */
+"ahN-Z5-8gK.text" = "القيمة:٧٠";
+
+/* Class = "UIButton"; configuration.title = "Book"; ObjectID = "bKE-Jo-P0f"; */
+"bKE-Jo-P0f.configuration.title" = "احجز";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bKE-Jo-P0f"; */
+"bKE-Jo-P0f.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Time : 20:30 At King Fahad Stadium"; ObjectID = "dxd-YK-StI"; */
+"dxd-YK-StI.text" = "الوقت:٢٠:٣٠ استاد الملك فهد الدولي";
+
+/* Class = "UILabel"; text = "AL-Shabab VS AL-Tawoun."; ObjectID = "fwb-aO-AIV"; */
+"fwb-aO-AIV.text" = "الشباب VS التعاون.";
+
+/* Class = "UILabel"; text = "Fri 12/11/2021"; ObjectID = "kGl-YH-XGo"; */
+"kGl-YH-XGo.text" = "الجمعة ١٢/١١/٢٠٢١";
+
+/* Class = "UIButton"; configuration.title = "Book"; ObjectID = "l6N-1Q-wcd"; */
+"l6N-1Q-wcd.configuration.title" = "احجز";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "l6N-1Q-wcd"; */
+"l6N-1Q-wcd.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Time: 17:30 At AL-Malaaz Stadium"; ObjectID = "nAA-iG-bHz"; */
+"nAA-iG-bHz.text" = "الوقت:١٧:٣٠ استاد الملز";
+
+/* Class = "UILabel"; text = "Price:30SR"; ObjectID = "paG-mY-wYf"; */
+"paG-mY-wYf.text" = "القيمة: ٣٠";
+
+/* Class = "UILabel"; text = "Time : 20:00 At Prince Abdullah AL-Faisal Stadium"; ObjectID = "pzM-T1-CVU"; */
+"pzM-T1-CVU.text" = "الوقت:٢٠:٠٠ استاد الامير عبدالله الفيصل";
+
+/* Class = "UILabel"; text = "Price: 100SR"; ObjectID = "rbf-OO-WaN"; */
+"rbf-OO-WaN.text" = "القيمة: ١٠٠";
+
+/* Class = "UITextField"; placeholder = "password.."; ObjectID = "tAu-Dl-q0A"; */
+"tAu-Dl-q0A.placeholder" = "كلمة المرور..";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vTf-pz-cDG"; */
+"vTf-pz-cDG.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Thur 11/11/2021"; ObjectID = "vVP-m5-5DY"; */
+"vVP-m5-5DY.text" = "الخميس ١١/١١/٢٠٢١";
+
+/* Class = "UITextField"; placeholder = "user name.."; ObjectID = "wlw-zL-0FU"; */
+"wlw-zL-0FU.placeholder" = "أسم المستخدم..";

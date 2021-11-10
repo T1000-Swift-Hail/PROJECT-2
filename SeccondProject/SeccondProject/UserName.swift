@@ -11,11 +11,6 @@ import Foundation
 struct UserName {
     var userName : String
     var password : String
-    
-    
-    
-    
-    
 }
 
 
