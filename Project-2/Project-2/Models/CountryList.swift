@@ -6,7 +6,7 @@
 //
 import UIKit
 import Foundation
-let countryList = [" ","Abha", "Buraydah", "Al Bahah", "Buq a", "Dammam", "Dhahran", "Dumat Al-Jandal", "Dawadmi", "Hotat Bani Tamim", "Hofuf", "Hafr Al-Batin", "Jeddah", "Khafji", "Khamis Mushait", "Khobar", "Al Majma'ah", "Medina", "Mecca", "Qatif", "Qurayyat", "Rafha", "Taif", "Tabuk", "Yanbu"]
+let countryList = [" ","Abha".localized, "Buraydah".localized, "Al Bahah".localized, "Buq a".localized, "Dammam".localized, "Dhahran".localized, "Dumat Al-Jandal".localized, "Dawadmi".localized, "Hotat Bani Tamim".localized, "Hofuf".localized, "Hafr Al-Batin".localized, "Jeddah".localized, "Khafji".localized, "Khamis Mushait".localized, "Khobar".localized, "Al Majma'ah".localized, "Medina".localized, "Mecca".localized, "Qatif".localized, "Qurayyat".localized, "Rafha".localized, "Taif".localized, "Tabuk".localized, "Yanbu".localized]
 
 
 

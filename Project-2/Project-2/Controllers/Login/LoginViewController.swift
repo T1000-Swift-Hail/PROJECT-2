@@ -34,6 +34,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if userDefault.bool(forKey: "isLogIn") {
             performSegue(withIdentifier: "WelcomeScreen", sender: nil)
         }
@@ -48,13 +49,13 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     }
     
     // MARK: - Password Limit
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let maxLength = 16
-        let currentLimit: NSString = (passwordTextField.text ?? " ") as NSString
-        let newLimit: NSString =
-        currentLimit.replacingCharacters(in: range, with: string) as NSString
-        return newLimit.length <= maxLength
-    }
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//        let maxLength = 16
+//        let currentLimit: NSString = (passwordTextField.text ?? " ") as NSString
+//        let newLimit: NSString =
+//        currentLimit.replacingCharacters(in: range, with: string) as NSString
+//        return newLimit.length <= maxLength
+//    }
     
     // MARK: - Segue Commands
     
@@ -69,9 +70,9 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     let students = [student1,student2,student3,student4,student5,student6]
         
         // Setting idTextField to accept Only Int
-    guard let id: Int = Int(idTextField.text ?? "nil") else { return showAlert(title: "Wrong ID!", message: "Please type your ID correctly!")}
+        guard let id: Int = Int(idTextField.text ?? "nil") else { return showAlert(title: "Wrong ID!".localized, message: "Please type your ID correctly!".localized)}
         
-    guard let password = passwordTextField.text else { return showAlert(title: "Wrong Password!", message: "Retype your password!") }
+        guard let password = passwordTextField.text else { return showAlert(title: "Wrong Password!".localized, message: "Retype your password!".localized) }
         
     userDefault.set(true, forKey: "isLogIn")
         
@@ -81,7 +82,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         performSegue(withIdentifier: "WelcomeScreen", sender: nil)
         return
         } else   {
-        showAlert(title: "Wrong Account", message: "Please retype your account")
+            showAlert(title: "Wrong Account".localized, message: "Please retype your account".localized)
         }
     }
 }
@@ -97,8 +98,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     // MARK: - Alert
     func showAlert (title:String,message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let ok = UIAlertAction(title: "OK", style: .default) { ok in
-            print("OK")
+        let ok = UIAlertAction(title: "OK".localized, style: .default) { ok in
+            print("OK".localized)
         }
             alert.addAction(ok)
             

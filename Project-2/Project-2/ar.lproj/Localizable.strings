@@ -1,0 +1,48 @@
+/* 
+  File.strings
+  Project-2
+
+  Created by Majed Alshammari on 05/04/1443 AH.
+  
+*/
+"Are you sure you want to reserve this room?" = "هل انت متأكد برغبتك بالحجز؟";
+"Reservation Completed!" = "تم الحجز بنجاح!";
+"AN SMS HAS BEEN SENT, THANK YOU FOR USING UOH STUDENT HOSTEL" = "تم ارسال رسالة نصية، شكرا لاستخدامكم برنامج سكن الطلاب";
+"OK" = "تم";
+"Warning!" = "تحذير!";
+"Address unknown!" = "العنوان غير معروف!";
+"PLEASE CHOOSE YOUR ADDRESS" = "الرجاء اختيار عنوانك";
+"Cancel" = "الغاء";
+"Done" = "تم";
+"Wrong ID!" = "رقم جامعي خاطئ!";
+"Wrong Account" = "حساب خاطئ";
+"Please type your ID correctly!" = "الرجاء ادخال رقم جامعي صحيح!";
+"Wrong Password!" = "كلمة المرور خاطئة!";
+"Retype your password!" = "الرجاء ادخال كلمة المرور!";
+"Please retype your account" = "الرجاء ادخال حسابك بشكل صحيح";
+"NEXT  〉" = "التالي 〉";
+"Abha" = "ابها";
+"Buraydah" = "بريدة";
+"Al Bahah" = "الباحة";
+"Buq a" = "بقعاء";
+"Dammam" = "الدمام";
+"Dhahran" = "الظهران";
+"Dumat Al-Jandal" = "دومة الجندل";
+"Dawadmi" = "الدوادمي";
+"Hotat Bani Tamim" = "حوطة بني تميم";
+"Hofuf" = "الهفوف";
+"Hafr Al-Batin" = "حفرالباطن";
+"Jeddah" = "جدة";
+"Khafji" = "الخفجي";
+"Khamis Mushait" = "خميس مشيط";
+"Khobar" = "الخبر";
+"Al Majma'ah" = "المجمعة";
+"Medina" = "المدينة";
+"Mecca" = "مكة";
+"Qatif" = "القطيف";
+"Qurayyat" = "القريات";
+"Rafha" = "رفحاء";
+"Taif" = "الطايف";
+"Tabuk" = "تبوك";
+"Yanbu" = "ينبع";
+

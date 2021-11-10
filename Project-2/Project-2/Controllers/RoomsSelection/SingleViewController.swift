@@ -23,7 +23,7 @@ class SingleViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     
     @IBAction func reserveButton(_ sender: UIButton) {
         if textField.hasText {
-            firstAlert()
+            warningAlert()
         }
         else {
             errorAlert()
@@ -60,7 +60,7 @@ class SingleViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     func dismissPickerView() {
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
-        let button = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.action))
+        let button = UIBarButtonItem(title: "Done".localized, style: .plain, target: self, action: #selector(self.action))
         toolBar.setItems([button], animated: true)
         toolBar.isUserInteractionEnabled = true
         textField.inputAccessoryView = toolBar
@@ -74,31 +74,33 @@ class SingleViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
 
 
 extension SingleViewController {
- func showAlert () {
-    let alert = UIAlertController(title: "Reservation Completed!", message: "AN SMS HAS BEEN SENT, THANK YOU FOR USING UOH STUDENT HOSTEL", preferredStyle: .alert)
-    let ok = UIAlertAction(title: "OK", style: .default) { ok in
-        print("OK")
+ func completedAlert () {
+     let alert = UIAlertController(title: "Reservation Completed!".localized, message: "AN SMS HAS BEEN SENT, THANK YOU FOR USING UOH STUDENT HOSTEL".localized, preferredStyle: .alert)
+     let ok = UIAlertAction(title: "OK".localized, style: .default) { ok in
+         print("OK".localized)
     }
     alert.addAction(ok)
     
     present(alert, animated: false)
     }
     
+    
     func errorAlert() {
-    let alert = UIAlertController(title: "Address unknown!", message: "PLEASE CHOOSE YOUR ADDRESS", preferredStyle: .alert)
-    let ok = UIAlertAction(title: "OK", style: .default) { ok in
-            print("OK")
+        let alert = UIAlertController(title: "Address unknown!".localized, message: "PLEASE CHOOSE YOUR ADDRESS".localized, preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK".localized, style: .default) { ok in
+            print("OK".localized)
         }
     alert.addAction(ok)
         present(alert, animated: false)
     }
     
-    func firstAlert() {
-    let alert = UIAlertController(title: "Warning!", message: "Are you sure you want to reserve this room?", preferredStyle: .alert)
-    let ok = UIAlertAction(title: "OK", style: .default) { ok in
-        self.showAlert()
+    
+    func warningAlert() {
+        let alert = UIAlertController(title: "Warning!".localized, message: "Are you sure you want to reserve this room?".localized, preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK".localized, style: .default) { ok in
+        self.completedAlert()
         }
-    let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let cancel = UIAlertAction(title: "Cancel".localized, style: .cancel, handler: nil)
     alert.addAction(ok)
     alert.addAction(cancel)
         present(alert, animated: false)

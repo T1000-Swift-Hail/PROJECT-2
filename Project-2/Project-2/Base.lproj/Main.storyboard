@@ -8,6 +8,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="The Humble.ttf">
+            <string>TheHumbleScript</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--UOH Student Hostel-->
         <scene sceneID="tne-QT-ifu">
@@ -111,6 +116,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udf-y6-yqc">
                                         <rect key="frame" x="102.5" y="0.0" width="203.5" height="26.5"/>
+                                        <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="154" id="FmR-Jd-LE9"/>
                                             <constraint firstAttribute="height" constant="26.5" id="dwN-Jn-LDx"/>
@@ -138,6 +144,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGA-dk-aks">
                                         <rect key="frame" x="126.5" y="0.0" width="205.5" height="26.5"/>
+                                        <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="154" id="2sY-8w-Yts"/>
                                             <constraint firstAttribute="height" constant="26.5" id="H8V-PN-OMG"/>
@@ -196,7 +203,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="112" id="rNZ-t1-xNp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -204,8 +211,8 @@
                                 <rect key="frame" x="102" y="239" width="210" height="125.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Address :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fc-jS-QaN">
-                                        <rect key="frame" x="18.5" y="0.0" width="173" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="13" y="0.0" width="184" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -260,69 +267,84 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Students 👨🏼‍🎓" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hP-71-5VW">
-                                <rect key="frame" x="20" y="150" width="374" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <rect key="frame" x="20" y="118" width="374" height="65.5"/>
+                                <fontDescription key="fontDescription" name="TheHumbleScript" family="The Humble Script" pointSize="39"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you registerd to UOH and you wish to reserve a room while in your current city, Its the place!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aya-Hj-SiF">
-                                <rect key="frame" x="20" y="227.5" width="374" height="93.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <rect key="frame" x="20" y="212" width="374" height="85"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NMe-Ld-N2i">
-                                <rect key="frame" x="20" y="356" width="355" height="237.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reserve Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhF-zD-MEp">
-                                        <rect key="frame" x="0.0" y="0.0" width="154" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Choose your room type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgx-j0-pKz">
-                                        <rect key="frame" x="0.0" y="50" width="196" height="21.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Choose your address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4a-IC-oLr">
-                                        <rect key="frame" x="0.0" y="91.5" width="178.5" height="21.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Press Reserve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pg-xH-rSe">
-                                        <rect key="frame" x="0.0" y="133" width="122" height="21.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-We will send your bill with SMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNM-8s-Ep5">
-                                        <rect key="frame" x="0.0" y="174.5" width="254.5" height="21.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Make sure you pay the fees within 24 hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOZ-hC-evP">
-                                        <rect key="frame" x="0.0" y="216" width="355" height="21.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01G-u2-i4C">
-                                <rect key="frame" x="308" y="646" width="87" height="44"/>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01G-u2-i4C">
+                                <rect key="frame" x="296.5" y="636" width="117.5" height="44"/>
+                                <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="NEXT">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="NEXT ">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="25"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="〉">
+                                            <attributes>
+                                                <font key="NSFont" size="25" name=".PingFangSC-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                     <color key="baseForegroundColor" red="0.1485113502" green="0.091835126619999999" blue="0.093893090590000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="goToRoomSelection:" destination="DAq-fN-XQe" eventType="touchUpInside" id="ZpI-IY-FmE"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NMe-Ld-N2i">
+                                <rect key="frame" x="20" y="331.5" width="355" height="203"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reserve Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhF-zD-MEp">
+                                        <rect key="frame" x="0.0" y="0.0" width="138.5" height="25.5"/>
+                                        <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Choose your room type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgx-j0-pKz">
+                                        <rect key="frame" x="0.0" y="45.5" width="172.5" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Choose your address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4a-IC-oLr">
+                                        <rect key="frame" x="0.0" y="81" width="157" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Press Reserve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pg-xH-rSe">
+                                        <rect key="frame" x="0.0" y="116.5" width="110" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-We will send your bill with SMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNM-8s-Ep5">
+                                        <rect key="frame" x="0.0" y="152" width="250.5" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Make sure you pay the fees within 24 hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOZ-hC-evP">
+                                        <rect key="frame" x="0.0" y="187.5" width="337" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pRd-pW-cQD"/>
                         <color key="backgroundColor" name="CustomAdaptiveColor"/>
@@ -331,17 +353,18 @@
                             <constraint firstItem="pRd-pW-cQD" firstAttribute="trailing" secondItem="NMe-Ld-N2i" secondAttribute="trailing" constant="39" id="AJt-lk-L7D"/>
                             <constraint firstItem="pRd-pW-cQD" firstAttribute="trailing" secondItem="6hP-71-5VW" secondAttribute="trailing" constant="20" id="DbC-Ij-Sm8"/>
                             <constraint firstItem="Aya-Hj-SiF" firstAttribute="leading" secondItem="pRd-pW-cQD" secondAttribute="leading" constant="20" id="Dbi-CK-RaS"/>
-                            <constraint firstItem="pRd-pW-cQD" firstAttribute="trailing" secondItem="01G-u2-i4C" secondAttribute="trailing" constant="19" id="I2L-sg-biF"/>
                             <constraint firstItem="pRd-pW-cQD" firstAttribute="trailing" secondItem="Aya-Hj-SiF" secondAttribute="trailing" constant="20" id="Lvz-gw-h6r"/>
-                            <constraint firstItem="NMe-Ld-N2i" firstAttribute="top" secondItem="Aya-Hj-SiF" secondAttribute="bottom" constant="35" id="OSr-Ih-occ"/>
-                            <constraint firstItem="6hP-71-5VW" firstAttribute="top" secondItem="pRd-pW-cQD" secondAttribute="top" constant="62" id="SHK-a4-Lka"/>
-                            <constraint firstItem="01G-u2-i4C" firstAttribute="top" secondItem="NMe-Ld-N2i" secondAttribute="bottom" constant="52.5" id="VpR-0K-No6"/>
-                            <constraint firstItem="NMe-Ld-N2i" firstAttribute="top" secondItem="6hP-71-5VW" secondAttribute="bottom" constant="165" id="jLB-kW-U1H"/>
+                            <constraint firstItem="NMe-Ld-N2i" firstAttribute="top" secondItem="Aya-Hj-SiF" secondAttribute="bottom" constant="34.5" id="OSr-Ih-occ"/>
+                            <constraint firstItem="6hP-71-5VW" firstAttribute="top" secondItem="pRd-pW-cQD" secondAttribute="top" constant="30" id="SHK-a4-Lka"/>
+                            <constraint firstItem="01G-u2-i4C" firstAttribute="top" secondItem="NMe-Ld-N2i" secondAttribute="bottom" constant="101.5" id="VpR-0K-No6"/>
+                            <constraint firstItem="pRd-pW-cQD" firstAttribute="trailing" secondItem="01G-u2-i4C" secondAttribute="trailing" id="gbf-fN-OWY"/>
+                            <constraint firstItem="NMe-Ld-N2i" firstAttribute="top" secondItem="6hP-71-5VW" secondAttribute="bottom" constant="148" id="jLB-kW-U1H"/>
                             <constraint firstItem="6hP-71-5VW" firstAttribute="leading" secondItem="pRd-pW-cQD" secondAttribute="leading" constant="20" id="tR7-c1-usP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dcn-ec-6Ts"/>
                     <connections>
+                        <outlet property="goToNextScreen" destination="01G-u2-i4C" id="ZKG-0y-xFS"/>
                         <segue destination="WUc-0Q-6PF" kind="show" identifier="RoomSelection" id="FhX-8f-Qc5"/>
                     </connections>
                 </viewController>

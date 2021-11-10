@@ -1,0 +1,108 @@
+
+/* Class = "UIButton"; configuration.title = "NEXT 〉"; ObjectID = "01G-u2-i4C"; */
+"01G-u2-i4C.configuration.title" = "التالي";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "01G-u2-i4C"; */
+"01G-u2-i4C.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Terms and Conditions"; ObjectID = "2jv-C1-Uc2"; */
+"2jv-C1-Uc2.configuration.title" = "الاحكام و الشروط";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2jv-C1-Uc2"; */
+"2jv-C1-Uc2.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Choose Your Address :"; ObjectID = "5Fc-jS-QaN"; */
+"5Fc-jS-QaN.text" = "اختر عنوانك :";
+
+/* Class = "UILabel"; text = "Hello Students 👨🏼‍🎓"; ObjectID = "6hP-71-5VW"; */
+"6hP-71-5VW.text" = "مرحبا طلابنا 👨🏼‍🎓";
+
+/* Class = "UILabel"; text = "-Press Reserve"; ObjectID = "8Pg-xH-rSe"; */
+"8Pg-xH-rSe.text" = "-اضغط حجز";
+
+/* Class = "UILabel"; text = "If you registerd to UOH and you wish to reserve a room while in your current city, Its the place!"; ObjectID = "Aya-Hj-SiF"; */
+"Aya-Hj-SiF.text" = "اذا قمت بالتسجيل في جامعة حائل وترغب فالحصول على غرفة في السكن، انت في المكان الصحيح!";
+
+/* Class = "UIButton"; configuration.title = "Reserve"; ObjectID = "BW8-5c-Mzf"; */
+"BW8-5c-Mzf.configuration.title" = "حجز";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BW8-5c-Mzf"; */
+"BW8-5c-Mzf.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "-Choose your room type"; ObjectID = "Bgx-j0-pKz"; */
+"Bgx-j0-pKz.text" = "-اختر نوع غرفتك";
+
+/* Class = "UILabel"; text = "-We will send your bill with SMS"; ObjectID = "FNM-8s-Ep5"; */
+"FNM-8s-Ep5.text" = "-سوف نرسل لك الفاتورة عبر الرسائل النصية";
+
+/* Class = "UILabel"; text = "Has not been previously dismissed from the hostel as a result of violating the rules or regulations in force inside the residence"; ObjectID = "Hnt-1D-7fU"; */
+"Hnt-1D-7fU.text" = "ان لايكون قد سبق فصله من السكن نتيجه اخلاله بالقواعد والانظمة داخل السكن";
+
+/* Class = "UILabel"; text = "Reserve Steps"; ObjectID = "OhF-zD-MEp"; */
+"OhF-zD-MEp.text" = "خطوات التسجيل";
+
+/* Class = "UINavigationItem"; title = "Terms and Conditions"; ObjectID = "QgP-Sc-kp0"; */
+"QgP-Sc-kp0.title" = "الاحكام والشروط";
+
+/* Class = "UIButton"; configuration.title = "Single Room : 1200SAR"; ObjectID = "TGA-dk-aks"; */
+"TGA-dk-aks.configuration.title" = "غرفة منفردة:١٢٠٠ريال";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TGA-dk-aks"; */
+"TGA-dk-aks.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Reserve"; ObjectID = "Tcg-Uy-AMq"; */
+"Tcg-Uy-AMq.configuration.title" = "حجز";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Tcg-Uy-AMq"; */
+"Tcg-Uy-AMq.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Dear Student, Please choose your current address "; ObjectID = "VfN-qH-ezL"; */
+"VfN-qH-ezL.text" = "عزيزي الطالب، اختر عنوانك من فضلك";
+
+/* Class = "UILabel"; text = "Adherence to university hostel regulations and rules and not violating them"; ObjectID = "axM-sg-biJ"; */
+"axM-sg-biJ.text" = "التقيد بانظمة وقواعد السكن وعدم مخالفتها";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "hj8-JW-jf9"; */
+"hj8-JW-jf9.configuration.title" = "تسجيل الدخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hj8-JW-jf9"; */
+"hj8-JW-jf9.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Student ID..."; ObjectID = "hvu-gN-PEb"; */
+"hvu-gN-PEb.placeholder" = "الرقم الجامعي...";
+
+/* Class = "UINavigationItem"; title = "UOH Student Hostel"; ObjectID = "mAz-mC-bAd"; */
+"mAz-mC-bAd.title" = "سكن طلاب جامعة حائل";
+
+/* Class = "UILabel"; text = "-Choose your address"; ObjectID = "p4a-IC-oLr"; */
+"p4a-IC-oLr.text" = "-اختر عنوانك";
+
+/* Class = "UILabel"; text = "The student is a regular at the university and registered for the semester in which he wishes to reside in hostel"; ObjectID = "pYl-n9-cmk"; */
+"pYl-n9-cmk.text" = "ان يكون الطالب منتظما بالجامعة ومسجلا للفصل الدراسي الذي يرغب فيه بالاقامة بالسكن الجامعي";
+
+/* Class = "UITextField"; placeholder = "Password..."; ObjectID = "r2q-UC-thB"; */
+"r2q-UC-thB.placeholder" = "كلمة المرور...";
+
+/* Class = "UILabel"; text = "If you are not coming to your room more than 1 week it may result your reservation to being cancelled"; ObjectID = "rxA-Je-qQL"; */
+"rxA-Je-qQL.text" = "في حال عدم قدومك للسكن في مدة اقصاها اسبوع ولم تخبر الادارة، قد يتسبب ذلك بالغاء حجزك";
+
+/* Class = "UILabel"; text = "Dear Student, Please choose your current address "; ObjectID = "s1P-pX-L4P"; */
+"s1P-pX-L4P.text" = "عزيزي الطالب، اختر عنوانك من فضلك";
+
+/* Class = "UIButton"; configuration.title = "UOH WebSite"; ObjectID = "u0I-Pl-Mgi"; */
+"u0I-Pl-Mgi.configuration.title" = "موقع الجامعة";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "u0I-Pl-Mgi"; */
+"u0I-Pl-Mgi.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Duplex Room : 900SAR"; ObjectID = "udf-y6-yqc"; */
+"udf-y6-yqc.configuration.title" = "غرفة مزدوجة:٩٠٠ريال";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "udf-y6-yqc"; */
+"udf-y6-yqc.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "-Make sure you pay the fees within 24 hours"; ObjectID = "wOZ-hC-evP"; */
+"wOZ-hC-evP.text" = "-تأكد ان تدفع الرسوم خلال ٢٤ ساعة";
+
+/* Class = "UILabel"; text = "Choose Your Address :"; ObjectID = "yTO-9i-AoY"; */
+"yTO-9i-AoY.text" = "اختر عنوانك :";
