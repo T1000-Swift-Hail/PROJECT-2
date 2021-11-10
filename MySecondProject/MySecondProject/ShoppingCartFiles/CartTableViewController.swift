@@ -9,39 +9,50 @@ import UIKit
 
 class CartTableViewController: UITableViewController {
     
+    @IBOutlet weak var editingProdect: UIBarButtonItem!
     
+    
+    // MARK: - Store data
+        // Create variables for receiving data (title and data from image) from VC
+        //  var titleItem: String?
+        // var image: SomeImage?
+        var newItem: Cart?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+        // Create shopping cart - array of selected items
+        var cartItems = [Cart]()
+        // Does not seem to be needed     var cartItem: Cart?
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-
+        override func viewDidLoad() {
+            super.viewDidLoad()
+        }
+     
+        override func viewWillAppear(_ animated: Bool) {
+        
+            tableView.reloadData()
+        }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return shoppingCart.products.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "shoppingCartCell", for: indexPath)
 
-        // Configure the cell...
-
+        cell.textLabel?.text = shoppingCart.products[indexPath.row].title
+        cell.imageView?.image = UIImage(named:  shoppingCart.products[indexPath.row].imageName )
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -59,7 +70,7 @@ class CartTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 
@@ -87,5 +98,5 @@ class CartTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

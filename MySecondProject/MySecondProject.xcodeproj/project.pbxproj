@@ -18,6 +18,7 @@
 		FA222DA12739C59900280DAD /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222DA02739C59900280DAD /* ProductCell.swift */; };
 		FA222DA5273A7F4500280DAD /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222DA4273A7F4500280DAD /* CartTableViewController.swift */; };
 		FA222DAA273A8E1C00280DAD /* ImgStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222DA9273A8E1C00280DAD /* ImgStore.swift */; };
+		FA222DB0273BA0D200280DAD /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA222DAF273BA0D200280DAD /* CartViewController.swift */; };
 		FABD47EC2736E652002565DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD47EB2736E652002565DD /* AppDelegate.swift */; };
 		FABD47EE2736E652002565DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD47ED2736E652002565DD /* SceneDelegate.swift */; };
 		FABD47F02736E652002565DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD47EF2736E652002565DD /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		FA222DA9273A8E1C00280DAD /* ImgStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgStore.swift; sourceTree = "<group>"; };
 		FA222DAD273B0D5400280DAD /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		FA222DAE273B0D5400280DAD /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FA222DAF273BA0D200280DAD /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		FABD47E82736E652002565DD /* MySecondProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySecondProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABD47EB2736E652002565DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FABD47ED2736E652002565DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				FA222DA4273A7F4500280DAD /* CartTableViewController.swift */,
+				FA222DAF273BA0D200280DAD /* CartViewController.swift */,
 			);
 			path = ShoppingCartFiles;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				FABD47EE2736E652002565DD /* SceneDelegate.swift in Sources */,
 				FA222D952739C46700280DAD /* Category.swift in Sources */,
 				FA222D9B2739C55A00280DAD /* CategoriesVC.swift in Sources */,
+				FA222DB0273BA0D200280DAD /* CartViewController.swift in Sources */,
 				FA222D972739C47F00280DAD /* Product.swift in Sources */,
 				FA222DAA273A8E1C00280DAD /* ImgStore.swift in Sources */,
 				FA222D9D2739C56900280DAD /* ProductVC.swift in Sources */,

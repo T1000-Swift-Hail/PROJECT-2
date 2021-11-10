@@ -57,4 +57,10 @@ class ProductsVC: UIViewController, UICollectionViewDataSource,UICollectionViewD
         return ProductCell()
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedProduct = products[indexPath.row]
+        shoppingCart.products.append(selectedProduct)
+        print(shoppingCart.products)
+    }
+    
 }
