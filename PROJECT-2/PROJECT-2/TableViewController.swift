@@ -19,7 +19,6 @@ class TableViewController: UITableViewController {
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
         
     }
@@ -102,12 +101,14 @@ class TableViewController: UITableViewController {
             
             if let name = alert.textFields?.first?.text {
                 
-                self.Listofproducts.append(Product(name:name, image:UIImage(named: "")!))
+                guard let image = UIImage(named: "images-3") else { return }
+                let newProductToAdd = Product(name:name, image: image )
                 
-                self.tableView.insertRows(at: [IndexPath(item: self.Listofproducts.count-1, section: 0)], with: .automatic)
-                
-                self.defaults.set(self.Listofproducts, forKey: "shoppingList")
-                //                self.tableView.reloadData()
+                self.Listofproducts.append(newProductToAdd)
+                let index = [IndexPath(item: self.Listofproducts.count-1, section: 0)]
+                self.tableView.insertRows(at: index, with: .automatic)
+                myShoppingCart.items.append(newProductToAdd)
+                self.tableView.reloadData()
                 
             }
         }))

@@ -1,0 +1,27 @@
+
+/* Class = "UITabBarItem"; title = "shoppingCart"; ObjectID = "7XI-vu-Z7k"; */
+"7XI-vu-Z7k.title" = "shoppingCart";
+
+/* Class = "UITextField"; placeholder = "userName"; ObjectID = "BIW-xq-2wi"; */
+"BIW-xq-2wi.placeholder" = "userName";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "DEW-uY-yZh"; */
+"DEW-uY-yZh.text" = "Title";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "S8t-Tq-dxO"; */
+"S8t-Tq-dxO.title" = "Home";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "dfc-j4-mdY"; */
+"dfc-j4-mdY.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dfc-j4-mdY"; */
+"dfc-j4-mdY.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "passWord"; ObjectID = "gEH-a7-hDB"; */
+"gEH-a7-hDB.placeholder" = "passWord";
+
+/* Class = "UITabBarItem"; title = "profile"; ObjectID = "gJE-Le-5fi"; */
+"gJE-Le-5fi.title" = "profile";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xYe-CB-NbO"; */
+"xYe-CB-NbO.text" = "Label";

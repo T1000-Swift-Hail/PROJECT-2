@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+//This arry product items
 class ShoppingCart {
     var items = [Product]()
 }
