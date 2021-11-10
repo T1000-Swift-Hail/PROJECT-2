@@ -18,6 +18,11 @@
 		D8AA8BD327395C3900D40045 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BD227395C3900D40045 /* UserStore.swift */; };
 		D8AA8BD5273A60BA00D40045 /* TabCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BD4273A60BA00D40045 /* TabCalculatorViewController.swift */; };
 		D8AA8BD7273A6A2700D40045 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BD6273A6A2700D40045 /* HomeTabBarViewController.swift */; };
+		D8E14B11273AB33B0098A6FD /* DifinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E14B10273AB33B0098A6FD /* DifinationView.swift */; };
+		D8E14B17273BAADB0098A6FD /* CaviarDreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8E14B13273BAADB0098A6FD /* CaviarDreams_Bold.ttf */; };
+		D8E14B18273BAADB0098A6FD /* CaviarDreams_BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8E14B14273BAADB0098A6FD /* CaviarDreams_BoldItalic.ttf */; };
+		D8E14B19273BAADB0098A6FD /* CaviarDreams.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8E14B15273BAADB0098A6FD /* CaviarDreams.ttf */; };
+		D8E14B1A273BAADB0098A6FD /* CaviarDreams_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8E14B16273BAADB0098A6FD /* CaviarDreams_Italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		D8AA8BD227395C3900D40045 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		D8AA8BD4273A60BA00D40045 /* TabCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCalculatorViewController.swift; sourceTree = "<group>"; };
 		D8AA8BD6273A6A2700D40045 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		D8E14B10273AB33B0098A6FD /* DifinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifinationView.swift; sourceTree = "<group>"; };
+		D8E14B13273BAADB0098A6FD /* CaviarDreams_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Bold.ttf; sourceTree = "<group>"; };
+		D8E14B14273BAADB0098A6FD /* CaviarDreams_BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_BoldItalic.ttf; sourceTree = "<group>"; };
+		D8E14B15273BAADB0098A6FD /* CaviarDreams.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams.ttf; sourceTree = "<group>"; };
+		D8E14B16273BAADB0098A6FD /* CaviarDreams_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Italic.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,7 @@
 		D8AA8BAB2737E5A600D40045 /* Metalic */ = {
 			isa = PBXGroup;
 			children = (
+				D8E14B12273BAAAC0098A6FD /* Fonts */,
 				D8AA8BCD2739074000D40045 /* LoginRegister */,
 				D8AA8BAC2737E5A600D40045 /* AppDelegate.swift */,
 				D8AA8BAE2737E5A600D40045 /* SceneDelegate.swift */,
@@ -76,6 +87,7 @@
 				D8AA8BBA2737E5A800D40045 /* Info.plist */,
 				D8AA8BD4273A60BA00D40045 /* TabCalculatorViewController.swift */,
 				D8AA8BD6273A6A2700D40045 /* HomeTabBarViewController.swift */,
+				D8E14B10273AB33B0098A6FD /* DifinationView.swift */,
 			);
 			path = Metalic;
 			sourceTree = "<group>";
@@ -88,6 +100,17 @@
 				D8AA8BD227395C3900D40045 /* UserStore.swift */,
 			);
 			path = LoginRegister;
+			sourceTree = "<group>";
+		};
+		D8E14B12273BAAAC0098A6FD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D8E14B13273BAADB0098A6FD /* CaviarDreams_Bold.ttf */,
+				D8E14B14273BAADB0098A6FD /* CaviarDreams_BoldItalic.ttf */,
+				D8E14B16273BAADB0098A6FD /* CaviarDreams_Italic.ttf */,
+				D8E14B15273BAADB0098A6FD /* CaviarDreams.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +173,11 @@
 			files = (
 				D8AA8BB92737E5A800D40045 /* LaunchScreen.storyboard in Resources */,
 				D8AA8BB62737E5A800D40045 /* Assets.xcassets in Resources */,
+				D8E14B19273BAADB0098A6FD /* CaviarDreams.ttf in Resources */,
 				D8AA8BB42737E5A600D40045 /* Main.storyboard in Resources */,
+				D8E14B1A273BAADB0098A6FD /* CaviarDreams_Italic.ttf in Resources */,
+				D8E14B18273BAADB0098A6FD /* CaviarDreams_BoldItalic.ttf in Resources */,
+				D8E14B17273BAADB0098A6FD /* CaviarDreams_Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +194,7 @@
 				D8AA8BAD2737E5A600D40045 /* AppDelegate.swift in Sources */,
 				D8AA8BAF2737E5A600D40045 /* SceneDelegate.swift in Sources */,
 				D8AA8BD7273A6A2700D40045 /* HomeTabBarViewController.swift in Sources */,
+				D8E14B11273AB33B0098A6FD /* DifinationView.swift in Sources */,
 				D8AA8BD327395C3900D40045 /* UserStore.swift in Sources */,
 				D8AA8BD5273A60BA00D40045 /* TabCalculatorViewController.swift in Sources */,
 			);
