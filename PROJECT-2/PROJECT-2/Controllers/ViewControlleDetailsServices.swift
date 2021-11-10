@@ -24,7 +24,8 @@ class ViewControlleDetailsServices: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    //var ourServices = [training, boxing,swimming,yaki,zumba]
+    // var DiversityofDiversityOfDiversityOfDiversityof = ["Cash", "Mada", "Applepay"]
     
 
     /*

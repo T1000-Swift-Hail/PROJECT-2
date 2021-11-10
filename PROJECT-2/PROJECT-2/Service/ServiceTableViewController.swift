@@ -8,14 +8,16 @@
 import UIKit
 
 class ServiceTableViewController: UITableViewController {
-
-    let trainingService = Service(name: "Training", description: "ggg", price: 444)
-    let boxingService = Service(name: "boxing", description: "", price: 450)
-    let swimmingService = Service(name: "Training", description: "", price: 450)
-    //let trainingService = Service(name: "Training", description: "", price: 450)
-    //let trainingService = Service(name: "Training", description: "", price: 450)
-    
-    var ourServices  = [Service]()
+    //let PROJECT_NAME = "Health Club"
+    //let desc = "The health club is available most of the services"
+    let trainingService = Service(name: "Training", description: "muscle strengthening", price: 140)
+    let boxingService = Service(name: "boxing", description: "increase muscle mass", price: 160)
+    let swimmingService = Service(name: "swimming", description: "physical activity", price: 170)
+    //let trainingService = Service(name: "Training", description: "muscle strengthening", price: 140)
+    //let trainingService = Service(name: "Training", description: "muscle strengthening", price: 140)
+   let yakiService = Service(name:"yaki",description: "relaxation",price: 120)
+    let zumbaService = Service(name:"zumba",description: "fitness",price: 150)
+ var ourServices  = [Service]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,8 @@ class ServiceTableViewController: UITableViewController {
         ourServices.append(trainingService)
         ourServices.append(boxingService)
         ourServices.append(swimmingService)
+        ourServices.append(yakiService)
+        ourServices.append(zumbaService)
         
     }
 

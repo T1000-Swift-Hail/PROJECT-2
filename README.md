@@ -5,17 +5,16 @@
 
 
 ### Project : Health Club
-//Add project name
+
 
 ### Project Description : in recent years,the number of fitness and health services have increased,expanding the interest among the population.Today,health clubs and fitness centers are a reference of  health services,rising the adherence to physical activity.
-// Add your project description
 
 
 ### Features List : 
 // Add your project features list
 - feature 1 The customer is trained if he has a gold card with all services at a reduced value
-- feature 2  Online booking is available .
--feature 3  Diversity of payment ways cash , Mada and Apple pay .
+- feature 2  Online booking is available (soon).
+- feature 3  Diversity of payment ways cash , Mada and Apple pay.
 
 
 ### Define the scenes : Dinamic Service ,Navigation controller Tab Bar controoler 
@@ -23,7 +22,10 @@
 
 
 ### User Stories : User name and Password
-// Add user stories here.   
+Services var ourServices ,training, boxing,swimming,yaki,zumba
+ var DiversityofDiversityOfDiversityOfDiversityof ,"Cash", "Mada", "Applepay"
+Customers If the customer has a gold card, he gets discounted services, and the subscription price is 500 RS
+The customer enters and records the username and code
 
 
 
