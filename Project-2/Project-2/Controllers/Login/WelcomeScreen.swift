@@ -11,6 +11,8 @@ class WelcomeScreen: UIViewController {
 
     @IBOutlet var goToNextScreen: UIButton!
     override func viewDidLoad() {
+        
+        
         super.viewDidLoad()
         goToNextScreen.setTitle("NEXT  〉".localized, for: .normal)
         // Do any additional setup after loading the view.

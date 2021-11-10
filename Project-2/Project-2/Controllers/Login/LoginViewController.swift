@@ -13,7 +13,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet var passwordTextField: UITextField!
     
     
-    let titleName = "Second Page"
+    
     
     let userDefault = UserDefaults.standard
     
@@ -35,9 +35,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if userDefault.bool(forKey: "isLogIn") {
-            performSegue(withIdentifier: "WelcomeScreen", sender: nil)
-        }
+
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissTap))
         view.addGestureRecognizer(tap)
@@ -46,6 +44,15 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         idTextField.keyboardType = .numberPad
         passwordTextField.isSecureTextEntry = true
     
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let isLoggedIn = userDefault.bool(forKey: "isLogIn")
+        
+        if isLoggedIn {
+            
+            performSegue(withIdentifier: "WelcomeScreen", sender: nil)
+        }
     }
     
     // MARK: - Password Limit
@@ -57,13 +64,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
 //        return newLimit.length <= maxLength
 //    }
     
+   
     // MARK: - Segue Commands
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as? ViewController
-        vc?.get = titleName
-    }
-    
     
     @IBAction func loginButton(_ sender: UIButton) {
         
@@ -74,8 +76,10 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         
         guard let password = passwordTextField.text else { return showAlert(title: "Wrong Password!".localized, message: "Retype your password!".localized) }
         
-    userDefault.set(true, forKey: "isLogIn")
-        
+
+        userDefault.set(true, forKey: "isLogIn")
+        userDefault.synchronize()
+
         // Login Check
     for student in students {
       if id == student.id && password == student.password {

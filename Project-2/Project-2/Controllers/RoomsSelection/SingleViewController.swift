@@ -8,7 +8,7 @@
 import UIKit
 
 class SingleViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate {
-    var get = ""
+    
     var selectedCountry: String?
 
     
@@ -37,13 +37,16 @@ class SingleViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
         return 1
     }
     
+    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return countryList.count
     }
     
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return countryList[row]
     }
+    
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedCountry = countryList[row] // selected item
@@ -57,6 +60,8 @@ class SingleViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
         textField.inputView = pickerView
         textField.delegate = self
     }
+    
+    
     func dismissPickerView() {
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
@@ -65,6 +70,7 @@ class SingleViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
         toolBar.isUserInteractionEnabled = true
         textField.inputAccessoryView = toolBar
     }
+    
     @objc func action() {
         view.endEditing(true)
     }

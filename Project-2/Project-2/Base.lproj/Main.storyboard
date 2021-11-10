@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1HZ-Wu-5gw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -30,11 +30,13 @@
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Student ID..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hvu-gN-PEb">
                                                 <rect key="frame" x="0.0" y="0.0" width="234" height="34"/>
+                                                <color key="backgroundColor" name="CustomAdaptiveColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r2q-UC-thB">
                                                 <rect key="frame" x="0.0" y="55" width="234" height="34"/>
+                                                <color key="backgroundColor" name="CustomAdaptiveColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -96,12 +98,12 @@
                     <connections>
                         <outlet property="idTextField" destination="hvu-gN-PEb" id="hfg-vE-mOh"/>
                         <outlet property="passwordTextField" destination="r2q-UC-thB" id="3ga-O0-z0b"/>
-                        <segue destination="DAq-fN-XQe" kind="show" identifier="WelcomeScreen" id="m18-n7-6SK"/>
+                        <segue destination="1HZ-Wu-5gw" kind="presentation" identifier="WelcomeScreen" modalPresentationStyle="fullScreen" id="86y-j2-ekh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="226" y="80"/>
+            <point key="canvasLocation" x="-768" y="96"/>
         </scene>
         <!--Rooms View Controller-->
         <scene sceneID="vS1-Ii-wd3">
@@ -124,7 +126,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Duplex Room : 900SAR">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
-                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" name="CustomFontColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="duplexButton:" destination="WUc-0Q-6PF" eventType="touchUpInside" id="cmC-XD-4mh"/>
@@ -152,7 +154,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Single Room : 1200SAR">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
-                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" name="CustomFontColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="singleButton:" destination="WUc-0Q-6PF" eventType="touchUpInside" id="qIg-QP-ajA"/>
@@ -204,7 +206,7 @@
                                     <constraint firstAttribute="height" constant="112" id="rNZ-t1-xNp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="23"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="CustomFontColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="P4A-UY-lAn">
@@ -213,11 +215,12 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Address :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fc-jS-QaN">
                                         <rect key="frame" x="13" y="0.0" width="184" height="20.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="CustomFontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yr7-WT-J3h">
                                         <rect key="frame" x="0.0" y="40.5" width="210" height="34"/>
+                                        <color key="backgroundColor" name="CustomAdaptiveColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="210" id="wHd-ch-sxz"/>
                                         </constraints>
@@ -229,7 +232,7 @@
                                         <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Reserve">
-                                            <color key="baseForegroundColor" red="0.079772146030000005" green="0.09147778258" blue="0.1485113502" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseForegroundColor" name="CustomFontColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="reserveButton:" destination="vsq-1v-Q2r" eventType="touchUpInside" id="PLb-PB-Oai"/>
@@ -269,13 +272,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Students 👨🏼‍🎓" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hP-71-5VW">
                                 <rect key="frame" x="20" y="118" width="374" height="65.5"/>
                                 <fontDescription key="fontDescription" name="TheHumbleScript" family="The Humble Script" pointSize="39"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="CustomFontColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you registerd to UOH and you wish to reserve a room while in your current city, Its the place!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aya-Hj-SiF">
                                 <rect key="frame" x="20" y="212" width="374" height="85"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="CustomFontColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01G-u2-i4C">
@@ -297,7 +300,7 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
-                                    <color key="baseForegroundColor" red="0.1485113502" green="0.091835126619999999" blue="0.093893090590000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseForegroundColor" name="CustomFontColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="goToRoomSelection:" destination="DAq-fN-XQe" eventType="touchUpInside" id="ZpI-IY-FmE"/>
@@ -310,37 +313,37 @@
                                         <rect key="frame" x="0.0" y="0.0" width="138.5" height="25.5"/>
                                         <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="22"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="CustomFontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Choose your room type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgx-j0-pKz">
                                         <rect key="frame" x="0.0" y="45.5" width="172.5" height="15.5"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="CustomFontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Choose your address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4a-IC-oLr">
                                         <rect key="frame" x="0.0" y="81" width="157" height="15.5"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="CustomFontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Press Reserve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pg-xH-rSe">
                                         <rect key="frame" x="0.0" y="116.5" width="110" height="15.5"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="CustomFontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-We will send your bill with SMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNM-8s-Ep5">
                                         <rect key="frame" x="0.0" y="152" width="250.5" height="15.5"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="CustomFontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Make sure you pay the fees within 24 hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOZ-hC-evP">
                                         <rect key="frame" x="0.0" y="187.5" width="337" height="15.5"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="CustomFontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -377,7 +380,7 @@
             <objects>
                 <tableViewController id="yhE-hC-KOM" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Vnk-Ow-1hA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="TermsCustomColor"/>
                         <sections>
@@ -393,7 +396,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The student is a regular at the university and registered for the semester in which he wishes to reside in hostel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYl-n9-cmk">
                                                     <rect key="frame" x="20" y="11" width="374" height="88"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="CustomFontColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -416,7 +419,7 @@
                                                     <rect key="frame" x="20" y="11" width="374" height="88"/>
                                                     <string key="text">Has not been previously dismissed from the hostel as a result of violating the rules or regulations in force inside the residence</string>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="CustomFontColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -438,7 +441,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adherence to university hostel regulations and rules and not violating them" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axM-sg-biJ">
                                                     <rect key="frame" x="20" y="11" width="374" height="88"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="CustomFontColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -460,7 +463,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you are not coming to your room more than 1 week it may result your reservation to being cancelled" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxA-Je-qQL">
                                                     <rect key="frame" x="20" y="11" width="374" height="88"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="CustomFontColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -514,6 +517,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tvV-df-pnk">
                                         <rect key="frame" x="0.0" y="34.5" width="210" height="34"/>
+                                        <color key="backgroundColor" name="CustomAdaptiveColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="210" id="zzg-e6-s9t"/>
                                         </constraints>
@@ -558,20 +562,21 @@
         <!--Navigation Controller-->
         <scene sceneID="2r5-Me-aak">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6N-Uk-kpq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1HZ-Wu-5gw" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ujy-1H-ACk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Pa-J1-0eo">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Swc-Vt-7be"/>
+                        <segue destination="DAq-fN-XQe" kind="relationship" relationship="rootViewController" id="HUU-XH-wu1"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o6N-Uk-kpq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-626" y="80"/>
+            <point key="canvasLocation" x="165" y="80"/>
         </scene>
     </scenes>
     <resources>
@@ -580,6 +585,9 @@
         <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="108"/>
         <namedColor name="CustomAdaptiveColor">
             <color red="0.91987591981887817" green="0.84418433904647827" blue="0.66398507356643677" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomFontColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TermsCustomColor">
             <color red="0.92479681968688965" green="1" blue="0.9707372784614563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
