@@ -159,6 +159,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Edit"/>
+                                <connections>
+                                    <action selector="edit:" destination="N2N-dv-QBI" eventType="touchUpInside" id="qbG-cc-yUa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmc-rt-ry1">
                                 <rect key="frame" x="364" y="93" width="30" height="26"/>
@@ -188,6 +191,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abQ-B0-EAw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="N2N-dv-QBI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-800.00000000000011" y="1293.75"/>
         </scene>
@@ -402,7 +406,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Zjg-0e-Iwh"/>
-        <segue reference="xj4-lv-tDs"/>
+        <segue reference="bUr-Wj-qfW"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
