@@ -10,11 +10,11 @@ import UIKit
 class WomenPerfumeViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
 
     @IBAction func addToCartButt(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Added to Cart!", message:"", preferredStyle: .alert)
-        
-        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
-        
-        self.present(alert, animated: true)
+//        let alert = UIAlertController(title: "Added to Cart!", message:"", preferredStyle: .alert)
+//        
+//        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
+//        
+//        self.present(alert, animated: true)
                 }
     
     @IBOutlet weak var tableView: UITableView!
