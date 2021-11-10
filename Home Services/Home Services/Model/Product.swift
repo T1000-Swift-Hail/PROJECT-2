@@ -8,7 +8,12 @@
 import Foundation
 import UIKit
 
-struct Product {
+// This for production in name product and image
+
+
+struct Product  {
+   
     let name : String
     let image : UIImage
+
 }

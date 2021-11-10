@@ -12,12 +12,10 @@ class FavsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
+    
+ 
     
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
@@ -25,21 +23,29 @@ class FavsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+   // This section for the number for section
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+        
         return 1
     }
 
+   // This for number of rows
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        
+     // The return in order list
+        
         return myFavoritesList.items.count
     }
 
-    
+    // This section for but in section al arry for product and image
+ 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "favsCell", for: indexPath)
 
         // Configure the cell...
+       
         cell.textLabel?.text  = myFavoritesList.items[indexPath.row].name
         
         cell.imageView?.image = myFavoritesList.items[indexPath.row].image

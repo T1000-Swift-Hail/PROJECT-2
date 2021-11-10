@@ -1,0 +1,63 @@
+
+/* Class = "UITabBarItem"; title = "Order"; ObjectID = "3pi-n4-XMb"; */
+"3pi-n4-XMb.title" = "الطلبات";
+
+/* Class = "UILabel"; text = "ACCOUNT INFORMATION"; ObjectID = "67g-OI-BLV"; */
+"67g-OI-BLV.text" = "المعلومات الشخصيه";
+
+/* Class = "UITabBarItem"; title = "Services"; ObjectID = "9Z4-cZ-aSd"; */
+"9Z4-cZ-aSd.title" = "الخدمات";
+
+/* Class = "UINavigationItem"; title = "Home Services"; ObjectID = "HNY-p0-RLd"; */
+"HNY-p0-RLd.title" = "خدمات المنزل";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "RVq-yC-kqb"; */
+"RVq-yC-kqb.placeholder" = "البريد الالكتروني";
+
+/* Class = "UITextField"; placeholder = "Address.."; ObjectID = "TfR-XW-9Oy"; */
+"TfR-XW-9Oy.placeholder" = "العنوان";
+
+/* Class = "UITextField"; placeholder = "Bulding Number"; ObjectID = "Uje-UY-Adu"; */
+"Uje-UY-Adu.placeholder" = "رقم المنزل";
+
+/* Class = "UITextField"; placeholder = "Postcode"; ObjectID = "VBG-rh-G0r"; */
+"VBG-rh-G0r.placeholder" = "رمز البريد";
+
+/* Class = "UITextField"; placeholder = "Age"; ObjectID = "XJ6-fs-e14"; */
+"XJ6-fs-e14.placeholder" = "العمر";
+
+/* Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "cxr-YC-cuT"; */
+"cxr-YC-cuT.placeholder" = "رقم الجوال";
+
+/* Class = "UINavigationItem"; title = "Favorites List "; ObjectID = "gFT-da-A0K"; */
+"gFT-da-A0K.title" = "قائمه المفضلات ";
+
+/* Class = "UILabel"; text = "ADD ADDRESS "; ObjectID = "hBI-FM-9e8"; */
+"hBI-FM-9e8.text" = "اضاف العنوان";
+
+/* Class = "UITextField"; placeholder = "Town "; ObjectID = "iD8-Qq-0Bv"; */
+"iD8-Qq-0Bv.placeholder" = "اسم المدينه ";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "l8U-0S-NHq"; */
+"l8U-0S-NHq.configuration.title" = "التسجيل";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "l8U-0S-NHq"; */
+"l8U-0S-NHq.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "User Name.."; ObjectID = "lPK-O4-Px2"; */
+"lPK-O4-Px2.placeholder" = "اسم المستخدم";
+
+/* Class = "UITextField"; placeholder = "City"; ObjectID = "r4Y-BT-faH"; */
+"r4Y-BT-faH.placeholder" = "البلد";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "uJA-Xe-dhd"; */
+"uJA-Xe-dhd.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Bulding Address"; ObjectID = "unQ-DI-8Xv"; */
+"unQ-DI-8Xv.placeholder" = "عنوان المنزل";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "xSv-R8-1x3"; */
+"xSv-R8-1x3.title" = "الملف الشخصي";
+
+/* Class = "UITextField"; placeholder = "password.."; ObjectID = "ymG-es-TLn"; */
+"ymG-es-TLn.placeholder" = "الرقم السري";

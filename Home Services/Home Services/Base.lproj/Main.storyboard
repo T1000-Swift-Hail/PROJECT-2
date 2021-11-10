@@ -14,7 +14,7 @@
                 <navigationController id="uJW-i3-jlt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="xSv-R8-1x3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vfO-nj-vHI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -77,7 +77,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4Y-BT-faH">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4Y-BT-faH">
                                         <rect key="frame" x="0.0" y="126" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -129,7 +129,7 @@
             <objects>
                 <tableViewController id="zeL-ah-1rH" customClass="TableViewController" customModule="Home_Services" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="4c8-Gh-cDo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -225,7 +225,6 @@
                                                 <connections>
                                                     <action selector="singin:" destination="GMY-0b-OZu" eventType="touchUpInside" id="8Xm-yY-DnT"/>
                                                     <action selector="singin:" destination="Jcd-RE-gu4" eventType="touchUpInside" id="NR3-82-HFE"/>
-                                                    <segue destination="tqh-AP-fec" kind="show" id="ifB-mJ-pKd"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -246,7 +245,7 @@
                         <outlet property="address" destination="TfR-XW-9Oy" id="0Xu-GV-BTJ"/>
                         <outlet property="password" destination="ymG-es-TLn" id="5bD-Vt-jQK"/>
                         <outlet property="username" destination="lPK-O4-Px2" id="tnQ-kY-JoJ"/>
-                        <segue destination="tqh-AP-fec" kind="presentation" id="sBh-l1-hNH"/>
+                        <segue destination="tqh-AP-fec" kind="presentation" identifier="profile" id="sBh-l1-hNH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5r-9P-Pdn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -281,7 +280,7 @@
                     <tabBarItem key="tabBarItem" title="Services" image="square.grid.2x2" catalog="system" id="9Z4-cZ-aSd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gET-P0-p9Q">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -300,7 +299,7 @@
                     <tabBarItem key="tabBarItem" title="Order" image="heart" catalog="system" id="3pi-n4-XMb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="R1O-pm-yF7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -312,7 +311,7 @@
             </objects>
             <point key="canvasLocation" x="-509" y="70"/>
         </scene>
-        <!--Favs Table View Controller-->
+        <!--Favorites List -->
         <scene sceneID="B3c-C1-v8a">
             <objects>
                 <tableViewController id="wk1-0v-2Xz" customClass="FavsTableViewController" customModule="Home_Services" customModuleProvider="target" sceneMemberID="viewController">
@@ -328,7 +327,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1MF-p2-Wln">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1MF-p2-Wln">
                                             <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
@@ -345,7 +344,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="gFT-da-A0K"/>
+                    <navigationItem key="navigationItem" title="Favorites List " id="gFT-da-A0K"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjf-fE-ZoC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -353,9 +352,6 @@
             <point key="canvasLocation" x="287" y="70"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="ifB-mJ-pKd"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="download" width="261" height="188"/>
         <image name="heart" catalog="system" width="128" height="109"/>

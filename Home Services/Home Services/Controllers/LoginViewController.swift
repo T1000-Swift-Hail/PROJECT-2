@@ -7,6 +7,8 @@
 
 import UIKit
 
+  // class of login in user
+
 class LoginViewController: UIViewController {
 
    
@@ -17,9 +19,9 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var address: UITextField!
     
-    
+    //Exampel of user
    
-    let user = User(username: "munira", address: "Hail", passward: 0000)
+    let user = User(username: "munira", address: "Hail", passward: 1234)
     
     
     override func viewDidLoad() {
@@ -27,17 +29,26 @@ class LoginViewController: UIViewController {
 
         
     }
+ 
+    // Button of login to going in App
     
     @IBAction func singin(_ sender: UIButton) {
         
-        if (username.text == user.username) && (address.text == user.address) {
+        // This section is for username and password put to transition in login buttom to application
+        
+        let inputPassword = Int(password.text ?? "0") ?? 0
+        if (username.text == user.username) && (inputPassword == user.passward) {
            
             performSegue(withIdentifier: "profile", sender: nil)
 
         } else {
             
+           // Here if the user dont but username and password
+            
+            
             let alert = UIAlertController(title: "Error", message: "wrong username or password or address", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
+            
             present(alert, animated: true)
 
         }

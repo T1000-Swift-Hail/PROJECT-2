@@ -7,9 +7,13 @@
 
 import Foundation
 
+ // This for evry product i choosing going to favorit List in order page
 
-class FavoritesList {
+class FavoritesList  {
+  
+    
     var items = [Product]()
+
 }
 
 let myFavoritesList = FavoritesList()
