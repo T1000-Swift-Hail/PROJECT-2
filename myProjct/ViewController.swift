@@ -27,9 +27,10 @@ class ViewController: UIViewController {
             self.animate()
         })
     }
+    
     //function to determine the width and height of the image for animation
     private func animate() {
-        UIView.animate(withDuration: 1 , animations: {
+        UIView.animate(withDuration: 1.5 , animations: {
             let size = self.view.frame.size.width * 2
             let diffX = size - self.view.frame.size.width
             let diffY = self.view.frame.size.height - size
@@ -41,7 +42,7 @@ class ViewController: UIViewController {
             //in order for the animation to be in full view
         }, completion: { done in
             if done {
-                DispatchQueue.main.asyncAfter(deadline: .now()+1.2 , execute: {
+                DispatchQueue.main.asyncAfter(deadline: .now()+2 , execute: {
                     let storyBoard = UIStoryboard(name: "Main", bundle: nil)
                     let vc = storyBoard.instantiateViewController(withIdentifier: "storyboardID") as! HomeViewController
                     vc.modalTransitionStyle = .coverVertical

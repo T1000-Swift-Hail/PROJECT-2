@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CollectionViewA : UIViewController , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout{
+class HomeCollectionView : UIViewController , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout{
     //In this class, I designed the HomeViewController
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var collicton: UICollectionView!
@@ -18,7 +18,6 @@ class CollectionViewA : UIViewController , UICollectionViewDelegate , UICollecti
     var currentCallIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     //to call functions
         collicton.delegate = self
         collicton.dataSource = self
@@ -55,7 +54,7 @@ class CollectionViewA : UIViewController , UICollectionViewDelegate , UICollecti
     //function to specify the width and height of the cell
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width , height: collectionView.frame.height)
-      }
+    }
     
     //function to determine the distance between each cell
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

@@ -97,7 +97,7 @@
         <!--Home-->
         <scene sceneID="WJe-5B-M0t">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Wms-N4-lZE" customClass="CollectionViewA" customModule="Marssai" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Wms-N4-lZE" customClass="HomeCollectionView" customModule="Marssai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jow-Z8-RoG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t8t-me-AA8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4279.7101449275369" y="-1454.4642857142856"/>
+            <point key="canvasLocation" x="4280" y="-2138"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9gE-UQ-PXt">
@@ -253,7 +253,37 @@ Until 2 AM</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IfR-SJ-rl2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5189.8550724637689" y="424.55357142857139"/>
+            <point key="canvasLocation" x="5070" y="631"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="3l9-Ic-txS">
+            <objects>
+                <viewController id="1EH-Vu-yIN" customClass="Map" customModule="Marssai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jYh-EY-LsC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="paP-Nv-jBi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="W3Q-oZ-Jer"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="paP-Nv-jBi" firstAttribute="leading" secondItem="jYh-EY-LsC" secondAttribute="leading" id="Auc-6C-Ar6"/>
+                            <constraint firstAttribute="trailing" secondItem="paP-Nv-jBi" secondAttribute="trailing" id="ItY-DR-i2c"/>
+                            <constraint firstItem="paP-Nv-jBi" firstAttribute="top" secondItem="jYh-EY-LsC" secondAttribute="top" id="Nl7-99-ccj"/>
+                            <constraint firstAttribute="bottom" secondItem="paP-Nv-jBi" secondAttribute="bottom" id="ZUA-vP-ldk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JON-MZ-3xH"/>
+                    <connections>
+                        <outlet property="mapViwe" destination="paP-Nv-jBi" id="7Z6-lK-hzl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HFC-hk-13n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5070" y="-252"/>
         </scene>
         <!--Menue Controller-->
         <scene sceneID="5iT-pz-IHE">
@@ -340,7 +370,7 @@ Until 2 AM</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIb-zL-xZO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5189.8550724637689" y="-557.14285714285711"/>
+            <point key="canvasLocation" x="5070" y="-1152"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aBG-jX-E5S">
@@ -376,7 +406,8 @@ Until 2 AM</string>
                     <connections>
                         <segue destination="Wms-N4-lZE" kind="relationship" relationship="viewControllers" id="LZd-cj-CaG"/>
                         <segue destination="Kgj-Y7-6OE" kind="relationship" relationship="viewControllers" id="WaY-T9-LOp"/>
-                        <segue destination="1vV-te-IZk" kind="relationship" relationship="viewControllers" id="6mj-rL-7aY"/>
+                        <segue destination="fD3-6m-lYL" kind="relationship" relationship="viewControllers" id="Nhh-LG-Esd"/>
+                        <segue destination="1vV-te-IZk" kind="relationship" relationship="viewControllers" id="zge-tt-FEn"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQ4-6C-ig9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -402,13 +433,13 @@ Until 2 AM</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cn1-rf-ZaM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4279.7101449275369" y="-557.14285714285711"/>
+            <point key="canvasLocation" x="4280" y="-1152"/>
         </scene>
         <!--More-->
         <scene sceneID="Lbp-eV-Hk0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1vV-te-IZk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="More" image="rectangle.grid.3x2.fill" catalog="system" selectedImage="rectangle.grid.3x2" id="oct-q5-k2M"/>
+                    <tabBarItem key="tabBarItem" title="More" image="ellipsis" catalog="system" selectedImage="ellipsis" id="oct-q5-k2M"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pog-TH-5ZY">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -421,18 +452,38 @@ Until 2 AM</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0s-Ng-Cb6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4279.7101449275369" y="424.55357142857139"/>
+            <point key="canvasLocation" x="4280" y="631"/>
+        </scene>
+        <!--location-->
+        <scene sceneID="3WZ-vw-RD8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fD3-6m-lYL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="location" image="location.fill" catalog="system" selectedImage="location" id="NK6-Dd-FJx"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zxI-1F-BKg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1EH-Vu-yIN" kind="relationship" relationship="rootViewController" id="V3L-tN-dQ8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KZS-Ky-tMW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4280" y="-252"/>
         </scene>
     </scenes>
     <resources>
         <image name="Soshi1" width="886" height="886"/>
         <image name="doc.plaintext" catalog="system" width="115" height="128"/>
         <image name="doc.plaintext.fill" catalog="system" width="115" height="128"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="location" catalog="system" width="128" height="118"/>
+        <image name="location.fill" catalog="system" width="128" height="121"/>
         <image name="phone" catalog="system" width="128" height="115"/>
-        <image name="rectangle.grid.3x2" catalog="system" width="128" height="101"/>
-        <image name="rectangle.grid.3x2.fill" catalog="system" width="128" height="101"/>
         <image name="timer" catalog="system" width="128" height="121"/>
         <image name="wellcomMarsaai" width="246" height="109"/>
         <namedColor name="ColorDiscrip">

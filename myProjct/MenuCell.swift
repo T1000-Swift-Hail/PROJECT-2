@@ -8,6 +8,7 @@
 import UIKit
 
 class MenuCell: UITableViewCell {
+    
     //cell items
     @IBOutlet weak var imgProductPhoto: UIImageView!
     @IBOutlet weak var nameProduct: UILabel!
@@ -28,6 +29,7 @@ class MenuCell: UITableViewCell {
         priceProduct.text = "\(price) SAR"
         discripProduct.text = discrip
     }
+    
     //The selection affects the appearance of labels, image, and background.
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
