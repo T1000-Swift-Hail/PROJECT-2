@@ -27,7 +27,6 @@ class ViewController: UIViewController {
             self.animate()
         })
     }
-    
     //function to determine the width and height of the image for animation
     private func animate() {
         UIView.animate(withDuration: 1.5 , animations: {

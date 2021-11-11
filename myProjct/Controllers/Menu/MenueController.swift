@@ -7,11 +7,21 @@
 
 import UIKit
 
+
+////struct to view product details
+//struct Pruducts {
+//    let name : String
+//    let price : Double
+//    let discrip : String
+//    let photo : UIImage
+//}
+
+
 class MenueController: UIViewController , UITableViewDelegate , UITableViewDataSource {
     
     @IBOutlet weak var tableViwe: UITableView!
     //array back to struct
-    var arrayProduct = [Pruducts]()
+//    var arrayProduct = [Pruducts]()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViwe.delegate = self
@@ -31,12 +41,10 @@ class MenueController: UIViewController , UITableViewDelegate , UITableViewDataS
         arrayProduct.append(Pruducts.init(name:NSLocalizedString("Appetizer mix", comment: "") , price: 32.00 , discrip:NSLocalizedString("detailsProduct12", comment: ""), photo: UIImage(named: "img14")!))
         arrayProduct.append(Pruducts.init(name: NSLocalizedString("Tabbouleh", comment: ""), price: 38.00 , discrip:NSLocalizedString("detailsProduct13", comment: "" ), photo: UIImage(named: "img7")!))
     }
-    
     //function to display products in Table View
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayProduct.count
     }
-    
     //Insert the cell at a specific location in the table view.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let call = tableViwe.dequeueReusableCell(withIdentifier: "MenuCell") as! MenuCell
@@ -44,17 +52,8 @@ class MenueController: UIViewController , UITableViewDelegate , UITableViewDataS
         call.setupCell(photo: data.photo, name: data.name, price: data.price, discrip: data.discrip)
         return call
     }
-    
     //function of determining the width and height of the cell
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
-}
-
-//struct to view product details
-struct Pruducts {
-    let name : String
-    let price : Double
-    let discrip : String
-    let photo : UIImage
 }
