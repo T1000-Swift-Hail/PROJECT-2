@@ -53,6 +53,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="e6p-zs-juC" secondAttribute="trailing" constant="10" id="zEO-8A-Aln"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -112,10 +113,10 @@
             </objects>
             <point key="canvasLocation" x="-707.24637681159425" y="-709.15178571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirmation View Controller-->
         <scene sceneID="gWy-Vg-Wyh">
             <objects>
-                <viewController id="8iv-pf-Ktl" customClass="ViewController" customModule="PROJECT_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8iv-pf-Ktl" customClass="ConfirmationViewController" customModule="PROJECT_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j6Y-sg-EY4">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,15 +154,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image3" translatesAutoresizingMaskIntoConstraints="NO" id="8KK-AL-PQY">
+                                <rect key="frame" x="69" y="554" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TVv-5m-9D9"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="person.crop.circle.badge.moon.fill" catalog="system" id="egM-BA-iAD"/>
                     <navigationItem key="navigationItem" id="oc0-U6-B9B"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6jA-LZ-Z9l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="790.76923076923072" y="-709.47867298578194"/>
+            <point key="canvasLocation" x="-1565" y="19"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="jFe-R0-jvh">
@@ -238,6 +244,7 @@
                     <connections>
                         <segue destination="JHV-aA-rQM" kind="relationship" relationship="viewControllers" id="udt-Yv-Xi4"/>
                         <segue destination="8MS-DM-GKk" kind="relationship" relationship="viewControllers" id="fJC-Ko-mJu"/>
+                        <segue destination="8iv-pf-Ktl" kind="relationship" relationship="viewControllers" id="B1a-aA-Zuj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BvV-aR-yPL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -270,9 +277,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image4" translatesAutoresizingMaskIntoConstraints="NO" id="rUu-Dv-1yQ">
+                                <rect key="frame" x="130" y="98" width="131" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3e7-OB-6rO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="ESN-RZ-iT7" firstAttribute="trailing" secondItem="3e7-OB-6rO" secondAttribute="trailing" constant="20" id="3cj-od-dPJ"/>
                             <constraint firstItem="ESN-RZ-iT7" firstAttribute="top" secondItem="smg-6T-yn9" secondAttribute="bottom" constant="80" id="4I3-l6-KVn"/>
@@ -289,7 +300,6 @@
                         <outlet property="descreb" destination="ESN-RZ-iT7" id="sIr-hs-YCr"/>
                         <outlet property="price" destination="5sw-j8-Zq5" id="Uf5-eA-LBA"/>
                         <outlet property="titel" destination="smg-6T-yn9" id="Dam-PY-PE7"/>
-                        <segue destination="8iv-pf-Ktl" kind="show" id="2sp-XP-vwM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8jM-T1-kKN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -338,13 +348,19 @@
     <resources>
         <image name="face.smiling" catalog="system" width="128" height="121"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="image3" width="512" height="586"/>
+        <image name="image4" width="267" height="189"/>
         <image name="images" width="300" height="168"/>
+        <image name="person.crop.circle.badge.moon.fill" catalog="system" width="128" height="113"/>
         <image name="picture" width="900" height="550"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
