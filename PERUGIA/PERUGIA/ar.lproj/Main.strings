@@ -1,0 +1,105 @@
+
+/* Class = "UILabel"; text = "Sunlight and shadow"; ObjectID = "0dr-oV-jUv"; */
+"0dr-oV-jUv.text" = "ضوء الشمس والظل";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "2xJ-U9-Fuc"; */
+"2xJ-U9-Fuc.text" = "البريد الإلكتروني";
+
+/* Class = "UILabel"; text = "Gloucester Harbor"; ObjectID = "58K-9p-aQY"; */
+"58K-9p-aQY.text" = "مرفأ غلوستر";
+
+/* Class = "UITextField"; placeholder = "Enter Email Address"; ObjectID = "6Md-5Z-hwp"; */
+"6Md-5Z-hwp.placeholder" = "أدخل عنوان البريد الالكتروني";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "7So-Ea-2WN"; */
+"7So-Ea-2WN.text" = "وصف";
+
+/* Class = "UILabel"; text = "password"; ObjectID = "A3F-nt-gf6"; */
+"A3F-nt-gf6.text" = "كلمة السر";
+
+/* Class = "UITextField"; placeholder = "Enter  Password"; ObjectID = "ABD-uq-NcI"; */
+"ABD-uq-NcI.placeholder" = "أدخل كلمة المرور";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "DVg-m7-yA2"; */
+"DVg-m7-yA2.text" = "الاسم";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "INe-ha-5XY"; */
+"INe-ha-5XY.text" = "كلمة المرور";
+
+/* Class = "UITextField"; placeholder = "Mobail Number.."; ObjectID = "JUf-nM-EEb"; */
+"JUf-nM-EEb.placeholder" = "رقم الهاتف المحمول";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "KDn-JH-e8P"; */
+"KDn-JH-e8P.configuration.title" = "تسجيل دخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KDn-JH-e8P"; */
+"KDn-JH-e8P.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Art Kids"; ObjectID = "KFB-Yy-Nxk"; */
+"KFB-Yy-Nxk.configuration.title" = "أطفال الفن";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KFB-Yy-Nxk"; */
+"KFB-Yy-Nxk.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Skip"; ObjectID = "NVc-on-XQP"; */
+"NVc-on-XQP.configuration.title" = "تخطي";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NVc-on-XQP"; */
+"NVc-on-XQP.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "Nh8-Fs-pGx"; */
+"Nh8-Fs-pGx.text" = "البريد الإلكتروني";
+
+/* Class = "UIButton"; configuration.title = "Best Paintings"; ObjectID = "Oug-hQ-E74"; */
+"Oug-hQ-E74.configuration.title" = "أفضل اللوحات";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Oug-hQ-E74"; */
+"Oug-hQ-E74.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Mobail Number"; ObjectID = "PSv-Zf-5fS"; */
+"PSv-Zf-5fS.text" = "رقم الهاتف المحمول";
+
+/* Class = "UITextField"; placeholder = "Email.."; ObjectID = "RCE-Ni-I9i"; */
+"RCE-Ni-I9i.placeholder" = "البريد الالكتروني";
+
+/* Class = "UIButton"; configuration.title = "see more"; ObjectID = "VOa-Mb-DfX"; */
+"VOa-Mb-DfX.configuration.title" = "شاهد المزيد";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "VOa-Mb-DfX"; */
+"VOa-Mb-DfX.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "ZCS-II-kdp"; */
+"ZCS-II-kdp.text" = "الاسم";
+
+/* Class = "UITextField"; placeholder = "Name.."; ObjectID = "bxa-0r-QJh"; */
+"bxa-0r-QJh.placeholder" = "الاسم..";
+
+/* Class = "UITextField"; placeholder = "password.."; ObjectID = "drz-Ju-gAL"; */
+"drz-Ju-gAL.placeholder" = "كلمة السر ..";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "f2b-FR-xkm"; */
+"f2b-FR-xkm.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "create new account"; ObjectID = "f9I-ng-jod"; */
+"f9I-ng-jod.configuration.title" = "إنشاء حساب جديد";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "f9I-ng-jod"; */
+"f9I-ng-jod.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Create new account"; ObjectID = "gSO-xW-Qd9"; */
+"gSO-xW-Qd9.configuration.title" = "إنشاء حساب جديد";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gSO-xW-Qd9"; */
+"gSO-xW-Qd9.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Mural Paintings"; ObjectID = "qwx-Cv-jFb"; */
+"qwx-Cv-jFb.configuration.title" = "اللوحات الجدارية";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qwx-Cv-jFb"; */
+"qwx-Cv-jFb.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Water Lilies"; ObjectID = "uB4-uJ-Pfg"; */
+"uB4-uJ-Pfg.text" = "زنابق الماء";
+
+/* Class = "UILabel"; text = "or"; ObjectID = "vcd-u5-MNA"; */
+"vcd-u5-MNA.text" = "او";

@@ -34,10 +34,13 @@ class HomeTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBAction func addFavorite(_ sender: Any) {
-//        cell.btnAddfavorite.addTarget(self, action: #selector(Addfavorite(sender :)),
-//        for: .touchUpInside)
-    }
+    @IBAction func addFavorite(_ sender: UIButton) {
+        print("clicked")
+        
+        sender.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+
+
    
+        }
 
 }

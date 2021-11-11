@@ -9,7 +9,13 @@
 /* Begin PBXBuildFile section */
 		F6003EB627384B6800E7C84E /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6003EB527384B6800E7C84E /* HomeTableViewCell.swift */; };
 		F60F29442739295D007641BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F60F29432739295C007641BE /* Assets.xcassets */; };
-		F612996F273AFD5700DA3A65 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F612996E273AFD5700DA3A65 /* loginViewController.swift */; };
+		F6129974273BCF7600DA3A65 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6129976273BCF7600DA3A65 /* Localizable.strings */; };
+		F62E3194273BF387002687E4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E3193273BF387002687E4 /* CollectionViewController.swift */; };
+		F62E3196273BF3B1002687E4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E3195273BF3B1002687E4 /* CollectionViewCell.swift */; };
+		F62E3198273C42CE002687E4 /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E3197273C42CE002687E4 /* FirstScreenViewController.swift */; };
+		F63A4705273C62DD00E79BF6 /* PopArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63A4704273C62DD00E79BF6 /* PopArtViewController.swift */; };
+		F63A4707273C630900E79BF6 /* PopArtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63A4706273C630900E79BF6 /* PopArtTableViewCell.swift */; };
+		F684434F273C47CE000E5972 /* thirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684434E273C47CE000E5972 /* thirdScreenViewController.swift */; };
 		F697F2AE2737C1C5002E68D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F697F2AD2737C1C5002E68D0 /* AppDelegate.swift */; };
 		F697F2B02737C1C5002E68D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F697F2AF2737C1C5002E68D0 /* SceneDelegate.swift */; };
 		F697F2B22737C1C5002E68D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F697F2B12737C1C5002E68D0 /* ViewController.swift */; };
@@ -21,7 +27,15 @@
 /* Begin PBXFileReference section */
 		F6003EB527384B6800E7C84E /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		F60F29432739295C007641BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F612996E273AFD5700DA3A65 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		F6129970273BC7C200DA3A65 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		F6129971273BC7C200DA3A65 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F6129975273BCF7600DA3A65 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F62E3193273BF387002687E4 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		F62E3195273BF3B1002687E4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		F62E3197273C42CE002687E4 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
+		F63A4704273C62DD00E79BF6 /* PopArtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopArtViewController.swift; sourceTree = "<group>"; };
+		F63A4706273C630900E79BF6 /* PopArtTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopArtTableViewCell.swift; sourceTree = "<group>"; };
+		F684434E273C47CE000E5972 /* thirdScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdScreenViewController.swift; sourceTree = "<group>"; };
 		F697F2AA2737C1C5002E68D0 /* PERUGIA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PERUGIA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F697F2AD2737C1C5002E68D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F697F2AF2737C1C5002E68D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +57,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F62E3199273C45D8002687E4 /* FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F62E3197273C42CE002687E4 /* FirstScreenViewController.swift */,
+			);
+			path = FirstScreen;
+			sourceTree = "<group>";
+		};
+		F62E319A273C46DD002687E4 /* SecondScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F684434E273C47CE000E5972 /* thirdScreenViewController.swift */,
+			);
+			path = SecondScreen;
+			sourceTree = "<group>";
+		};
+		F6844350273C49F7000E5972 /* ThirdScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F62E3193273BF387002687E4 /* CollectionViewController.swift */,
+				F62E3195273BF3B1002687E4 /* CollectionViewCell.swift */,
+			);
+			path = ThirdScreen;
+			sourceTree = "<group>";
+		};
+		F6844351273C4A3C000E5972 /* FourthScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F6003EB527384B6800E7C84E /* HomeTableViewCell.swift */,
+				F6A0FC5A27384E7C00614955 /* HomeViewController.swift */,
+			);
+			path = FourthScreen;
+			sourceTree = "<group>";
+		};
+		F6844352273C4C5F000E5972 /* FifthScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F63A4704273C62DD00E79BF6 /* PopArtViewController.swift */,
+				F63A4706273C630900E79BF6 /* PopArtTableViewCell.swift */,
+			);
+			path = FifthScreen;
+			sourceTree = "<group>";
+		};
 		F697F2A12737C1C5002E68D0 = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +119,19 @@
 		F697F2AC2737C1C5002E68D0 /* PERUGIA */ = {
 			isa = PBXGroup;
 			children = (
+				F6844352273C4C5F000E5972 /* FifthScreen */,
+				F6844351273C4A3C000E5972 /* FourthScreen */,
+				F6844350273C49F7000E5972 /* ThirdScreen */,
+				F62E319A273C46DD002687E4 /* SecondScreen */,
+				F62E3199273C45D8002687E4 /* FirstScreen */,
 				F697F2AD2737C1C5002E68D0 /* AppDelegate.swift */,
 				F697F2AF2737C1C5002E68D0 /* SceneDelegate.swift */,
 				F697F2B12737C1C5002E68D0 /* ViewController.swift */,
-				F6003EB527384B6800E7C84E /* HomeTableViewCell.swift */,
-				F6A0FC5A27384E7C00614955 /* HomeViewController.swift */,
-				F612996E273AFD5700DA3A65 /* loginViewController.swift */,
 				F60F29432739295C007641BE /* Assets.xcassets */,
 				F697F2B32737C1C5002E68D0 /* Main.storyboard */,
 				F697F2B82737C1C6002E68D0 /* LaunchScreen.storyboard */,
 				F697F2BB2737C1C6002E68D0 /* Info.plist */,
+				F6129976273BCF7600DA3A65 /* Localizable.strings */,
 			);
 			path = PERUGIA;
 			sourceTree = "<group>";
@@ -118,6 +178,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = F697F2A12737C1C5002E68D0;
 			productRefGroup = F697F2AB2737C1C5002E68D0 /* Products */;
@@ -135,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F697F2BA2737C1C6002E68D0 /* LaunchScreen.storyboard in Resources */,
+				F6129974273BCF7600DA3A65 /* Localizable.strings in Resources */,
 				F60F29442739295D007641BE /* Assets.xcassets in Resources */,
 				F697F2B52737C1C5002E68D0 /* Main.storyboard in Resources */,
 			);
@@ -147,22 +209,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F63A4705273C62DD00E79BF6 /* PopArtViewController.swift in Sources */,
+				F62E3194273BF387002687E4 /* CollectionViewController.swift in Sources */,
 				F6A0FC5B27384E7C00614955 /* HomeViewController.swift in Sources */,
 				F697F2B22737C1C5002E68D0 /* ViewController.swift in Sources */,
-				F612996F273AFD5700DA3A65 /* loginViewController.swift in Sources */,
+				F62E3196273BF3B1002687E4 /* CollectionViewCell.swift in Sources */,
+				F62E3198273C42CE002687E4 /* FirstScreenViewController.swift in Sources */,
 				F697F2AE2737C1C5002E68D0 /* AppDelegate.swift in Sources */,
 				F6003EB627384B6800E7C84E /* HomeTableViewCell.swift in Sources */,
+				F684434F273C47CE000E5972 /* thirdScreenViewController.swift in Sources */,
 				F697F2B02737C1C5002E68D0 /* SceneDelegate.swift in Sources */,
+				F63A4707273C630900E79BF6 /* PopArtTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		F6129976273BCF7600DA3A65 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6129975273BCF7600DA3A65 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		F697F2B32737C1C5002E68D0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F697F2B42737C1C5002E68D0 /* Base */,
+				F6129970273BC7C200DA3A65 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -171,6 +247,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F697F2B92737C1C6002E68D0 /* Base */,
+				F6129971273BC7C200DA3A65 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -182,6 +259,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -243,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
