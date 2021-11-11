@@ -17,6 +17,8 @@ class Listofproductcell: UITableViewCell {
     
     @IBOutlet weak var productImage: UIImageView!
     
+    var prodcutImageColors : [String]!
+    
     @IBOutlet weak var colorClothing: UISegmentedControl!
     
     @IBOutlet weak var priceClothing: UILabel!
@@ -26,7 +28,7 @@ class Listofproductcell: UITableViewCell {
     let sizes = [SizeTypes.l,SizeTypes.m,SizeTypes.s,SizeTypes.xl,SizeTypes.other]
     
     let colors = [ColorType.black,ColorType.blue,ColorType.white,ColorType.yellow,ColorType.other,]
-    
+    var prodcut = Product()
     
     @IBOutlet weak var addCard: UIButton!
     override func awakeFromNib() {
@@ -53,19 +55,25 @@ class Listofproductcell: UITableViewCell {
 
     @IBAction func changeColorProduct(_ sender: UISegmentedControl) {
         guard let title = sender.titleForSegment(at: sender.selectedSegmentIndex) else { return }
-//        switch title {
-//        case "Black":
-//            productImage.image = UIImage(named: "00")
-//        case "Yellow":
-//            productImage.image = UIImage(named: "01")
-//        case "white":
-//            productImage.image = UIImage(named: "02")
-//        case "Blue":
-//            productImage.image = UIImage(named: "03")
-//        default:
-//            productImage.image = UIImage(named: "")
-//        }
-//
+     
+       
+            
+            switch title {
+            case "Black":
+                productImage.image = UIImage(named: prodcutImageColors[0])
+            case "Yellow":
+                productImage.image = UIImage(named: prodcutImageColors[1])
+            case "white":
+                productImage.image = UIImage(named: prodcutImageColors[2])
+            case "Blue":
+                productImage.image = UIImage(named: prodcutImageColors[3])
+            default:
+                productImage.image = UIImage(named: "")
+            }
+            
+        
+        
+
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

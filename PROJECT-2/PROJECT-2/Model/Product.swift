@@ -34,92 +34,74 @@ enum ColorType: String {
     case other = "Other"
 }
 
+enum ProductType {
+    case tshirt
+    case pants
+    case shoes
+}
+
 struct Product {
-    
+    var productType:ProductType?
     var productName: String?
     var price:Int?
     var quantity :Int?
     var productSize : SizeTypes?
     var productBrand: BrandType?
     var productColor: ColorType?
+    var prodcutImageColors : [String] = ["","","",""]
     
     //var productColor: String
     var uiImage : UIImage?
     var tshirtImage :UIImage?
     
-   // var category:BrandType
-  //  var sectionOfProduct:[Int:String]
+
     
     
     func getProducts() -> [Product] {
         
-        let productAddias = Product(productName: "T-shirt", price: 600, quantity: 18, productSize: .l, productBrand: .addias, productColor: .blue, uiImage: UIImage(named: "1")!, tshirtImage: UIImage(named: "addias blue shirt")!)
+        var productAddias = Product(productType: .tshirt, productName: "T-shirt", price: 600, quantity: 18, productSize: .l, productBrand: .addias, productColor: .blue, uiImage: UIImage(named: "1")!, tshirtImage: UIImage(named: "addias black shirt")!)
+        
+        productAddias.prodcutImageColors = ["addias black shirt", "addias yellow shirt","addias white shirt", "addias blue shirt"]
         
         
-        let productAddias2 = Product(productName: "pants", price: 590, quantity: 5, productSize: .s, productBrand: .addias, productColor: .black, uiImage: UIImage(named: "1")!, tshirtImage: UIImage(named: "addais black pants")!)
+        var productAddias2 = Product(productType:.pants, productName: "pants", price: 590, quantity: 33, productSize: .s, productBrand: .addias, productColor: .black, uiImage: UIImage(named: "1")!, tshirtImage: UIImage(named: "addais black pants")!)
+    
+        productAddias2.prodcutImageColors = ["addais black pants","addias yellow pants","addias white pants","addias blue pants"]
         
-        let productAddias3 = Product(productName: "shoes", price: 780, quantity: 3, productSize: .xl, productBrand: .addias, productColor: .blue, uiImage: UIImage(named: "1")!, tshirtImage: UIImage(named: "addias shoes blue")!)
+        var productAddias3 = Product(productType: .shoes, productName: "shoes", price: 780, quantity: 3, productSize: .xl, productBrand: .addias, productColor: .blue, uiImage: UIImage(named: "1")!, tshirtImage: UIImage(named: "addias black shoes")!)
+        productAddias3.prodcutImageColors = ["addias black shoes","addias yellow shoes","addias white shoes","addias blue shoes"]
         
-        let productAddias4 = Product(productName: "T-shirt", price: 600, quantity: 8, productSize: .m, productBrand: .addias, productColor: .black, uiImage: UIImage(named: "1")!, tshirtImage: UIImage(named: "addias shirt black")!)
+       
+        var productNiki = Product(productType: .tshirt, productName: "T-shirt", price: 300, quantity: 16, productSize: .s, productBrand: .niki, productColor: .yellow, uiImage: UIImage(named: "2")!, tshirtImage: UIImage(named: "niki black shirt")!)
         
-        
-        let productNiki = Product(productName: "T-shirt", price: 300, quantity: 16, productSize: .s, productBrand: .niki, productColor: .yellow, uiImage: UIImage(named: "2")!, tshirtImage: UIImage(named: "niki tishrt yellow")!)
-        
-        let productNiki2 = Product(productName: "shoes", price: 250, quantity: 3, productSize: .m, productBrand: .niki, productColor: .white, uiImage: UIImage(named: "2")!, tshirtImage: UIImage(named: "white addias")!)
-        
-        let productNiki3 = Product(productName: "pants", price: 210, quantity: 14, productSize: .l, productBrand: .niki, productColor: .black, uiImage: UIImage(named: "2")!, tshirtImage: UIImage(named: "niki pants black")!)
-        
-        let productNiki4 = Product(productName: "shoes", price: 300, quantity: 33, productSize: .xl, productBrand: .niki, productColor: .white, uiImage: UIImage(named: "2")!, tshirtImage: UIImage(named: "white niki shoes")!)
+        productNiki.prodcutImageColors = ["niki black shirt","niki yellow shirt","niki white shirt","niki blue shirt"]
         
         
-        let productpuma = Product(productName: "T-shirt", price: 290, quantity: 16, productSize: .m, productBrand: .Puma, productColor: .black, uiImage: UIImage(named: "3")!, tshirtImage: UIImage(named: "black tishrt puma")!)
+        var productNiki2 = Product(productType: .shoes, productName: "shoes", price: 250, quantity: 3, productSize: .m, productBrand: .niki, productColor: .white, uiImage: UIImage(named: "2")!, tshirtImage: UIImage(named: "niki black shoes")!)
         
-        let productpuma2 = Product(productName: "T-shirt", price: 300, quantity: 16, productSize: .l, productBrand:.Puma, productColor: .yellow, uiImage: UIImage(named: "3")!, tshirtImage: UIImage(named: "puma tishrt yellow")!)
+        productNiki2.prodcutImageColors = ["niki black shoes","niki yellow shoes","niki white shoes","niki blue shoes"]
         
-        let productpuma3 = Product(productName: "pants", price: 300, quantity: 16, productSize: .xl, productBrand: .Puma, productColor: .yellow, uiImage: UIImage(named: "3")!, tshirtImage: UIImage(named: "blue pants puma")!)
         
-        let productpuma4 = Product(productName: "T-shirt", price: 300, quantity: 16, productSize: .s, productBrand: .Puma, productColor: .yellow, uiImage: UIImage(named: "3")!, tshirtImage: UIImage(named: "black tishrt puma")!)
+        var productNiki3 = Product(productType: .pants, productName: "pants", price: 210, quantity: 14, productSize: .l, productBrand: .niki, productColor: .black, uiImage: UIImage(named: "2")!, tshirtImage: UIImage(named: "niki black pants")!)
+        
+        productNiki3.prodcutImageColors = ["niki black pants","niki yellow pants","niki white pants","addias blue pants"]
+        
+//        var productNiki4 = Product(productType: .shoes, productName: "shoes", price: 300, quantity: 33, productSize: .xl, productBrand: .niki, productColor: .white, uiImage: UIImage(named: "2")!, tshirtImage: UIImage(named: "addias shoes blue")!)
+        
+        
+        var productpuma = Product(productType: .tshirt, productName: "T-shirt", price: 290, quantity: 16, productSize: .m, productBrand: .Puma, productColor: .black, uiImage: UIImage(named: "3")!, tshirtImage: UIImage(named: "puma black shirt")!)
+        
+        productpuma.prodcutImageColors = ["puma black shirt","puma yellow shirt","puma white shirt","puma blue shirt"]
 
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-//        let productNike = Product(productName: "Jeans", price: 250, quantity: 3, productSize: .l, productBrand: .addias, productColor: .yellow, uiImage: UIImage(named: "1")!, tshirtImage: UIImage(named: "04")!)
+        var productpuma2 = Product(productType: .shoes, productName: "Shoes", price: 300, quantity: 16, productSize: .s, productBrand: .Puma, productColor: .yellow, uiImage: UIImage(named: "3")!, tshirtImage: UIImage(named: "puma black shoes")!)
 
-     
-      //    let productNike = Product(productName: "Nike", price: 24, quantity: 5, productSize: .s, productColor: "red", uiImage: UIImage(named: "2")!,tshirtImage: UIImage(named: "55")!)
-      //
-      //    let productNike1 = Product(productName: "Nike", price: 550, quantity: 7, productSize: .m, productColor: "black", uiImage: UIImage(named: "2")!,tshirtImage: UIImage(named: "55")! )
-      //
-      //    let productNike2 = Product(productName: "Nike", price: 24, quantity: 5, productSize: .other, productColor: "red", uiImage: UIImage(named: "2")!,tshirtImage: UIImage(named: "55")!)
-      //
-      //    let productAddias1 = Product(productName: "Nike", price: 24, quantity: 5, productSize: .other, productColor: "red", uiImage: UIImage(named: "2")!,tshirtImage: UIImage(named: "55")!)
-      //
-      //    let productAdias2 = Product(productName: "Nike", price: 24, quantity: 5, productSize: .other, productColor: "red", uiImage: UIImage(named: "2")!,tshirtImage: UIImage(named: "55")!)
-      //
+        productpuma2.prodcutImageColors = ["puma black shoes", "puma yellow shoes","puma white shoes","puma blue shoes"]
         
+        var productpuma3 = Product(productType: .pants, productName: "Pants", price: 300, quantity: 66, productSize: .l, productBrand:.Puma, productColor: .yellow, uiImage: UIImage(named: "3")!, tshirtImage: UIImage(named: "puma black pants")!)
         
-     //   products.append(productAddias)
-      //  products?.append(productAddias2)
-//
-//        products2.append(productNike)
-//        products2.append(productNike1)
-//        products2.append(productNike2)
-//        products2.append(productAddias)
-//        products2.append(productAddias1)
-//        products2.append(productAdias2)
-//
+        productpuma3.prodcutImageColors = ["puma black pants", "puma yellow pants","puma white pants","puma blue pants"]
         
-        
-        
-        
-        return [productAddias,productAddias2,productAddias3,productAddias4,productNiki,productNiki2,productNiki3,productNiki, productpuma, productpuma2, productpuma3, productpuma4]
+        return [productAddias,productAddias2,productAddias3,productNiki,productNiki2,productNiki3,productpuma,productpuma2,productpuma3]
     }
 }

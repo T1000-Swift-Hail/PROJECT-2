@@ -25,15 +25,45 @@ class SginUpViewController: UIViewController {
     
     @IBOutlet weak var userPassword: UITextField!
     
-    @IBOutlet weak var signUp: UIButton!
-    
-    let customer = Customer(userName: "Sultan", userPassword: 123)
-    let customer2 = Customer(userName: "Turki", userPassword: 9900)
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    @IBAction func signUp(_ sender: Any) {
+        
+        let firstName = firstName.text
+        let middleName = middleName.text
+        let lastName = lastName.text
+        let userName = userName.text
+        let email = email.text
+        let phoneNumber = phoneNumber.text
+        let address = address.text
+        let userPassword = userPassword.text
+        
+
+        
+        if firstName != nil && middleName != nil && lastName != nil && userName != nil && email != nil && phoneNumber != nil && address != nil && userPassword != nil {
+            
+            DisplayAlert(withTitle: "Signup successful", message: "", isSginup: true)
+            
+            
+        
+        
+        }else{
+        
+            DisplayAlert(withTitle: "fail", message: "", isSginup: false)
+        
+        
+    }
+    
+    
+    
+    }
+
+    
     
     func DisplayAlert(withTitle title: String, message: String,isSginup: Bool) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -52,26 +82,7 @@ class SginUpViewController: UIViewController {
     
     
     
-    func UserLogin () {
-        // gaurd to check for user is enterned or ematy
-        guard let userName = userName.text else { return }
-        guard let userPassowrd = Int(userPassword.text ?? "0") else { return }
+   
         
-        if customer.userName == userName && customer.userPassword == userPassowrd  {
-            DisplayAlert(withTitle: "login successful", message: "", isSginup: true)
-        } else {
-            DisplayAlert(withTitle: "fail", message: "", isSginup: false)
-        }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
-}
+

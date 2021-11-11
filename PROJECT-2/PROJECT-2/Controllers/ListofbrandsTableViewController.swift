@@ -29,16 +29,21 @@ class ListofbrandsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as!Listofproductcell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! Listofproductcell
         
+        cell.prodcut = allProducts[indexPath.row]
         cell.nameClothing.text = allProducts[indexPath.row].productName
         cell.profileImage.image = allProducts[indexPath.row].uiImage
         cell.productImage.image = allProducts[indexPath.row].tshirtImage
-//        guard let priceClothings = Int(priceClothing.text ?? "0") else { return}
-        cell.priceClothing.text = "price: \(allProducts [indexPath.row].price) SAR"
-//        guard let quantityProduct = Int (quantityProduct.text ?? ) else{return}
-        cell.quantityProduct.text = "quantity: \(allProducts[indexPath.row].quantity)"
-     //   cell.colorClothing.SizeTypes.l = imageForSegment(at:00)
+        cell.prodcutImageColors = allProducts[indexPath.row].prodcutImageColors
+        
+        
+        guard let priceClothings = allProducts [indexPath.row].price else { return UITableViewCell() }
+        cell.priceClothing.text = "price: \(priceClothings) SAR"
+        
+        guard let quantityProducts = allProducts [indexPath.row].quantity else { return UITableViewCell() }
+        cell.quantityProduct.text = "quantity: \(quantityProducts)"
+
                                             
         return cell
     }

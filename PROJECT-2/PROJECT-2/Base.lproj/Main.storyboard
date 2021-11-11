@@ -135,6 +135,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="SignUp"/>
                                 <connections>
+                                    <action selector="signUp:" destination="3A7-tL-zAc" eventType="touchUpInside" id="3LY-y1-ROU"/>
                                     <segue destination="ext-2Z-wyH" kind="show" identifier="homeScreen" id="wXm-TF-LBy"/>
                                 </connections>
                             </button>
@@ -150,7 +151,6 @@
                         <outlet property="lastName" destination="UoG-HX-fVZ" id="1Ma-9f-exs"/>
                         <outlet property="middleName" destination="SJM-XJ-l6r" id="ZEu-Xy-xc1"/>
                         <outlet property="phoneNumber" destination="LvQ-eE-El3" id="X0I-LB-Iy3"/>
-                        <outlet property="signUp" destination="eee-0U-GdL" id="mgd-nh-lM2"/>
                         <outlet property="userName" destination="Viq-Bx-JjF" id="wL6-Qx-UPR"/>
                         <outlet property="userPassword" destination="Cn4-l5-Q6x" id="Jko-xX-Voq"/>
                     </connections>
@@ -159,17 +159,42 @@
             </objects>
             <point key="canvasLocation" x="-1428" y="512"/>
         </scene>
-        <!--Cart-->
+        <!--Shopping Cart-->
         <scene sceneID="K48-Ng-8pV">
             <objects>
                 <viewController id="Fx1-XP-tKQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G3C-y1-WVs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="acG-28-vL2">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Xfy-UQ-WL9">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xfy-UQ-WL9" id="tsL-LZ-126">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="szU-tQ-2xT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="szU-tQ-2xT" firstAttribute="bottom" secondItem="acG-28-vL2" secondAttribute="bottom" id="9Dl-Pk-vhA"/>
+                            <constraint firstItem="szU-tQ-2xT" firstAttribute="trailing" secondItem="acG-28-vL2" secondAttribute="trailing" id="HyQ-KN-MA1"/>
+                            <constraint firstItem="acG-28-vL2" firstAttribute="leading" secondItem="szU-tQ-2xT" secondAttribute="leading" id="LQP-13-S5D"/>
+                            <constraint firstItem="acG-28-vL2" firstAttribute="top" secondItem="szU-tQ-2xT" secondAttribute="top" id="jS9-Ys-Fap"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Cart" id="fh8-Kn-YlF"/>
+                    <navigationItem key="navigationItem" title="Shopping Cart" id="fh8-Kn-YlF">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="JSp-0F-WGK"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ywL-8b-idO"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="al6-gY-sYm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -615,7 +640,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Evl-Vu-Hz1"/>
+        <segue reference="wXm-TF-LBy"/>
         <segue reference="PIM-qE-F4m"/>
     </inferredMetricsTieBreakers>
     <resources>

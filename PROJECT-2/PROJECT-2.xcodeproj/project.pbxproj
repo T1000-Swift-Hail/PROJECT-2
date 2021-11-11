@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0474A9C6273B1E8F00A00983 /* TableViewControllerAddToCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474A9C5273B1E8F00A00983 /* TableViewControllerAddToCart.swift */; };
 		04BE4D5D27394BC700A1ABD8 /* SginUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE4D5C27394BC700A1ABD8 /* SginUpViewController.swift */; };
 		04EEC58E2737B121005321B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEC58D2737B121005321B9 /* AppDelegate.swift */; };
 		04EEC5902737B121005321B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEC58F2737B121005321B9 /* SceneDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0474A9C5273B1E8F00A00983 /* TableViewControllerAddToCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerAddToCart.swift; sourceTree = "<group>"; };
 		04BE4D5C27394BC700A1ABD8 /* SginUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SginUpViewController.swift; sourceTree = "<group>"; };
 		04EEC58A2737B121005321B9 /* PROJECT-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PROJECT-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EEC58D2737B121005321B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 				04BE4D5C27394BC700A1ABD8 /* SginUpViewController.swift */,
 				04EEC5912737B121005321B9 /* LoginViewController.swift */,
 				04EEC5B027390905005321B9 /* ListofbrandsTableViewController.swift */,
+				0474A9C5273B1E8F00A00983 /* TableViewControllerAddToCart.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				04EEC5A62737FF97005321B9 /* Customer.swift in Sources */,
 				04EEC58E2737B121005321B9 /* AppDelegate.swift in Sources */,
 				04EEC5902737B121005321B9 /* SceneDelegate.swift in Sources */,
+				0474A9C6273B1E8F00A00983 /* TableViewControllerAddToCart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

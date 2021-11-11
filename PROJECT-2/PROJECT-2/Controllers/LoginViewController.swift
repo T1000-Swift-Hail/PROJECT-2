@@ -18,7 +18,7 @@ class LoginViewController:
     @IBOutlet weak var loginAction: UIButton!
     //background.color =.lighterColor
     
-    let customer = Customer(userName: "Abdoalaziz1", userPassword: 1413)
+    let customer = Customer(userName: "q", userPassword: 1)
     let customer2 = Customer(userName: "Fahad4", userPassword: 4433)
 
 
@@ -26,6 +26,7 @@ class LoginViewController:
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
     
     func DisplayAlert(withTitle title: String, message: String,isLogin: Bool) {
@@ -57,9 +58,15 @@ class LoginViewController:
             DisplayAlert(withTitle: "fail", message: "", isLogin: false)
         }
     }
+    
+    
     @IBAction func loginActionBotton(_ sender: Any) {
-        
+       
         UserLogin()
     }
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        
+    }
+
 }
