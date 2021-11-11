@@ -3,7 +3,6 @@
 //  DecAntique
 //
 //  Created by Dalal AlSaidi on 04/04/1443 AH.
-
 //
 
 import UIKit
@@ -17,7 +16,12 @@ class SplashVC: BaseVC {
     }
     
     @objc func gotoLogin() {
-        gotoVC("AuthNav", true)
+        let email = userDefaluts.string(forKey: "user_email")
+        if email == nil || email == "" {
+            gotoVC("AuthNav", true)
+        } else {
+            gotoVC("TabbarVC", true)
+        }
     }
 
 }

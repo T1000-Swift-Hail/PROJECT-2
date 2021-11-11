@@ -2,19 +2,96 @@
 //  BaseVC.swift
 //  DecAntique
 //
-//  Created by Dalal AlSaidi on 04/04/1443 AH.
+//  Created by Dalal AlSaidi on 03/04/1443 AH.
 //
 
 import UIKit
+import MBProgressHUD
 
 class BaseVC: UIViewController {
-
+    var hud: MBProgressHUD?
+    var tap:UITapGestureRecognizer?
+    let userDefaluts = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        hideKeyboardWhenTappedAround()
+    }
+    
+    // MARK: - progressHUD function
+    func getProgressHUD(view : UIView, mode: MBProgressHUDMode = .annularDeterminate) -> MBProgressHUD {
+    
+        let hud = MBProgressHUD.showAdded(to:view, animated: true)
+        hud.mode = mode
+        hud.label.text = "Loading";
+        hud.animationType = .zoomIn
+        hud.tintColor = UIColor.white
+        hud.contentColor = UIColor.systemBlue
+        hud.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+        return hud
+    }
+    
+    func showLoadingView(view : UIView, label: String = "", mode: MBProgressHUDMode = .indeterminate) {
+    
+        hud = MBProgressHUD.showAdded(to:view, animated: true)
+        hud!.mode = mode
+        if label != "" {
+            hud!.label.text = label;
+        }
+        hud!.animationType = .zoomIn
+        hud!.tintColor = UIColor.white
+        hud!.contentColor = UIColor.systemBlue
+        hud!.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+    }
+    
+    func showLoadingView(label: String = "") {
+
+        let window = UIApplication.shared.key!.rootViewController
+
+        if window != nil {
+            hud = MBProgressHUD.showAdded(to: window!.view, animated: true)
+        } else {
+            hud = MBProgressHUD()
+        }
+        
+        if label != "" {
+            hud!.label.text = label;
+        }
+        
+        hud!.mode = .indeterminate
+        hud!.animationType = .zoomIn
+        hud!.tintColor = UIColor.gray
+        hud!.contentColor = UIColor.systemBlue
+        hud!.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+        
+    }
+    
+    func showLoadingView(vc: UIViewController, label: String = "") {
+        
+        hud = MBProgressHUD.showAdded(to: vc.view, animated: true)
+        
+        if label != "" {
+            hud!.label.text = label;
+        }
+        hud!.mode = .indeterminate
+        hud!.animationType = .zoomIn
+        hud!.tintColor = UIColor.darkGray
+        hud!.contentColor = UIColor.systemBlue
+        hud!.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+    }
+    
+    func hideLoadingView() {
+       if let hud = hud {
+           hud.hide(animated: true)
+       }
+    }
     
     // MARK: - goto new viewcontroller or dismiss
     func gotoNavVC (_ nameVC: String, _ animated: Bool = true) {
@@ -87,5 +164,26 @@ class BaseVC: UIViewController {
      
     func showAlert(_ message: String!) {
         showAlertDialog(title: "Alert", message: message, positive: "OK", negative: nil)
+    }
+    
+    //MARK: -
+    
+    func hideKeyboardWhenTappedAround() {
+
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        
+        self.tap = tap
+        view.addGestureRecognizer(tap)
+    }
+
+    func keepKeyboardShowing() {
+        if let tapGes = self.tap {
+            view.removeGestureRecognizer(tapGes)
+        }
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

@@ -7,44 +7,67 @@
 
 import UIKit
 
-class ShoppingCartVC: BaseVC {
+class ShoppingCartVC: BaseVC, UISearchBarDelegate {
         
-//        let userDefaluts = UserDefaults.standard
-        
-    @IBOutlet weak var uiTabieview: UITableView!
+    @IBOutlet weak var uiTableview: UITableView!
     
+    @IBOutlet weak var uiSearchbar: UISearchBar!
+    var allData = [ProductModel]()
     var dataSource = [ProductModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        uiTabieview.dataSource = self
-        uiTabieview.delegate = self
+        uiSearchbar.delegate = self
+        uiTableview.dataSource = self
+        uiTableview.delegate = self
+        uiTableview.tableFooterView = UIView()
         
-        dataSource.append(ProductModel(id: 1, product_name: "AAA", price: 150.3, flag: false))
-        dataSource.append(ProductModel(id: 2, product_name: "asf", price: 200.0, flag: true))
-        dataSource.append(ProductModel(id: 3, product_name: "asf", price: 300.0, flag: true))
-        dataSource.append(ProductModel(id: 4, product_name: "asf", price: 150.3, flag: false))
-        dataSource.append(ProductModel(id: 5, product_name: "zxc", price: 200.0, flag: true))
-        dataSource.append(ProductModel(id: 6, product_name: "123", price: 300.0, flag: true))
-        dataSource.append(ProductModel(id: 7, product_name: "gjk", price: 150.3, flag: false))
-        dataSource.append(ProductModel(id: 8, product_name: "iop", price: 200.0, flag: true))
-        dataSource.append(ProductModel(id: 9, product_name: "tyu", price: 150.3, flag: true))
-        dataSource.append(ProductModel(id: 10, product_name: "rtw", price: 300.0, flag: false))
     }
-     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        allData = DataBaseHelper.shared.getCartListByUser(user_id: Int32(userDefaluts.integer(forKey: "user_id")))!
+        dataSource = allData
+        uiTableview.reloadData()
+    }
+    
+    //MARK: - delegate uisearchbar
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if searchBar.text!.isEmpty {
+            showAlert("Please input product name.")
+            return
+        }
+        
+        dataSource = allData.filter { $0.product_name.lowercased().contains(searchBar.text!.lowercased())}
+        uiTableview.reloadData()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+        
+        dataSource = allData.filter { $0.product_name.lowercased().contains(searchText.lowercased())}
+        uiTableview.reloadData()
+    }
+    
+    //MARK: - custom function
     private func callShoppingCartItem(_ indexPath: IndexPath) {
+        let userId = Int32(userDefaluts.integer(forKey: "user_id"))
+        
+        if userId == 0 {
+            showAlert("Please login to add or remove Shopping cart.")
+            return
+        }
         
         let message = "Would you like to remove this from shopping cart?"
         self.showAlert(title: nil, message: message, positive: "OK", negative: "CANCEL") {
-//            self.showLoadingView(view:  self.tabBarController!.view)
-//
-//            FirebaseAPI.shared.blockUser(data.sender_id, data.room_id, !data.is_block) { (res) in
-//                self.hideLoadingView()
-//                if res != CONSTANT.CODE_SUCCESS {
-//                    self.showAlert(res)
-//                }
-//            }
+            let res = DataBaseHelper.shared.removeCart(product_id: self.dataSource[indexPath.row].id, user_id: userId)
+            
+            if res.hasPrefix("success") {
+                self.dataSource.remove(at: indexPath.row)
+                self.uiTableview.reloadData()
+            }
         }
     }
 }
@@ -56,9 +79,7 @@ extension ShoppingCartVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath) as! ProductCell
-
-        cell.lblProductName.text = "Name \(dataSource[indexPath.row].product_name)"
-        cell.lblPrice.text = "\(dataSource[indexPath.row].price) USD"
+        cell.entity = dataSource[indexPath.row]
 
         return cell
     }
@@ -83,4 +104,14 @@ extension ShoppingCartVC: UITableViewDelegate, UITableViewDataSource {
         return configuration
         
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        if let data = dataSource[indexPath.row].photo, let img = UIImage(data: data) {
+            let rate = img.size.height / img.size.width
+            return self.view.bounds.size.width * rate
+        }
+        return 350
+    }
+    
 }

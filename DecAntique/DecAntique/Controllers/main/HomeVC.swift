@@ -7,41 +7,72 @@
 
 import UIKit
 
-class HomeVC: BaseVC {
+class HomeVC: BaseVC, UISearchBarDelegate {
 
+    @IBOutlet weak var uiSearchbar: UISearchBar!
     @IBOutlet weak var uiTableview: UITableView!
     
+    var allData = [ProductModel]()
     var dataSource = [ProductModel]()
+    var userType = "customer"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        uiSearchbar.delegate = self
         uiTableview.delegate = self
         uiTableview.dataSource = self
+        uiTableview.tableFooterView = UIView()
+
+        userType = userDefaluts.string(forKey: "user_type") ?? "customer"
         
-        dataSource.append(ProductModel(id: 1, product_name: "AAA", price: 150.3, flag: false))
-        dataSource.append(ProductModel(id: 2, product_name: "asf", price: 200.0, flag: true))
-        dataSource.append(ProductModel(id: 3, product_name: "asf", price: 300.0, flag: true))
-        dataSource.append(ProductModel(id: 4, product_name: "asf", price: 150.3, flag: false))
-        dataSource.append(ProductModel(id: 5, product_name: "zxc", price: 200.0, flag: true))
-        dataSource.append(ProductModel(id: 6, product_name: "123", price: 300.0, flag: true))
-        dataSource.append(ProductModel(id: 7, product_name: "gjk", price: 150.3, flag: false))
-        dataSource.append(ProductModel(id: 8, product_name: "iop", price: 200.0, flag: true))
-        dataSource.append(ProductModel(id: 9, product_name: "tyu", price: 150.3, flag: true))
-        dataSource.append(ProductModel(id: 10, product_name: "rtw", price: 300.0, flag: false))
+        if userDefaluts.string(forKey: "user_type") == "manager" {
+            self.tabBarController?.viewControllers?.remove(at: 1)
+        } else {
+            self.tabBarController?.viewControllers?.remove(at: 2)
+        }
         
-//        self.tabBarController?.viewControllers?.remove(at: 1)
-        //
         addNavButton()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let userID = userType == "customer" ? Int32(userDefaluts.integer(forKey: "user_id")) : nil
+        allData = DataBaseHelper.shared.getAllProducts(user_id: userID)!
+        dataSource = allData
+        uiTableview.reloadData()
+    }
+    
+    
+    //MARK: - delegate uisearchbar
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if searchBar.text!.isEmpty {
+            showAlert("Please input product name.")
+            return
+        }
+        
+        dataSource = allData.filter { $0.product_name.lowercased().contains(searchBar.text!.lowercased())}
+        uiTableview.reloadData()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+        
+        dataSource = allData.filter { $0.product_name.lowercased().contains(searchText.lowercased())}
+        uiTableview.reloadData()
+    }
+    
+    //MARK: - custom function
     func addNavButton() {
         
         let config = UIImage.SymbolConfiguration(pointSize: 25)
+        
         //left barbutton
         let butExit = UIButton(type: .custom)
-        butExit.setImage(UIImage(systemName: "square.and.arrow.up.circle", withConfiguration: config), for: .normal)
-        butExit.addTarget(self, action: #selector(self.addTappedRightSignout), for: .touchUpInside)
+        
+        butExit.setImage(UIImage(systemName: "power", withConfiguration: config), for: .normal)
+        butExit.addTarget(self, action: #selector(self.addTappedSignout), for: .touchUpInside)
         butExit.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         butExit.tintColor = .systemBlue
         let barButtonItemExit = UIBarButtonItem(customView: butExit)
@@ -49,23 +80,33 @@ class HomeVC: BaseVC {
         barButtonItemExit.customView?.heightAnchor.constraint(equalToConstant: 35).isActive = true
         self.navigationItem.leftBarButtonItem = barButtonItemExit
         
-        
-        //right barbutton
-        let butAdd = UIButton(type: .custom)
-        butAdd.setImage(UIImage (systemName: "plus.circle", withConfiguration: config), for: .normal)
-        butAdd.addTarget(self, action: #selector(self.addTappedAdd), for: .touchUpInside)
-        butAdd.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        butAdd.tintColor = .systemBlue
-        let barButtonItemAdd = UIBarButtonItem(customView: butAdd)
-        barButtonItemAdd.customView?.widthAnchor.constraint(equalToConstant: 35).isActive = true
-        barButtonItemAdd.customView?.heightAnchor.constraint(equalToConstant: 35).isActive = true
-        self.navigationItem.rightBarButtonItem = barButtonItemAdd
+        if userType == "manager" {
+            //right barbutton
+            let butAdd = UIButton(type: .custom)
+            butAdd.setImage(UIImage (systemName: "plus.circle", withConfiguration: config), for: .normal)
+            butAdd.addTarget(self, action: #selector(self.addTappedAdd), for: .touchUpInside)
+            butAdd.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+            butAdd.tintColor = .systemBlue
+            let barButtonItemAdd = UIBarButtonItem(customView: butAdd)
+            barButtonItemAdd.customView?.widthAnchor.constraint(equalToConstant: 35).isActive = true
+            barButtonItemAdd.customView?.heightAnchor.constraint(equalToConstant: 35).isActive = true
+            self.navigationItem.rightBarButtonItem = barButtonItemAdd
+        }
+       
     }
     
-    @objc func addTappedRightSignout(isConfirm: Bool) {
-        showAlert(title: "Would you like to log out?", message: nil, positive: "Log Out", negative: "Cancel") {
-//            clearUserInfo()
+    @objc func addTappedSignout(isConfirm: Bool) {
+        if userDefaluts.string(forKey: "user_email") == "" || userDefaluts.string(forKey: "user_email") == nil {
             self.gotoVC("AuthNav", true)
+        } else {
+            showAlert(title: "Would you like to log out?", message: nil, positive: "Log Out", negative: "Cancel") {
+                self.userDefaluts.set(0, forKey: "user_id")
+                self.userDefaluts.set("", forKey: "user_name")
+                self.userDefaluts.set("", forKey: "user_email")
+                self.userDefaluts.set("", forKey: "user_type")
+                
+                self.gotoVC("AuthNav", true)
+            }
         }
     }
     
@@ -75,18 +116,29 @@ class HomeVC: BaseVC {
 
     private func callShoppingCartItem(_ indexPath: IndexPath) {
         
-        let message = self.dataSource[indexPath.row].added_cart
-        ? "Would you like to remove this from shopping cart?"
-        : "Would you like to add this from shopping cart?"
-        self.showAlert(title: nil, message: message, positive: "OK", negative: "CANCEL") {
-//            self.showLoadingView(view:  self.tabBarController!.view)
-//
-//            FirebaseAPI.shared.blockUser(data.sender_id, data.room_id, !data.is_block) { (res) in
-//                self.hideLoadingView()
-//                if res != CONSTANT.CODE_SUCCESS {
-//                    self.showAlert(res)
-//                }
-//            }
+        let addedCart = dataSource[indexPath.row].added_cart
+        let userId = Int32(userDefaluts.integer(forKey: "user_id"))
+        
+        if userId == 0 {
+            showAlert("Please login to add or remove Shopping cart.")
+            return
+        }
+        
+        
+        let message = addedCart ? "Would you like to remove this from shopping cart?"
+                        : "Would you like to add this from shopping cart?"
+        showAlert(title: nil, message: message, positive: "OK", negative: "CANCEL") {
+            var res = ""
+            if addedCart {
+                res = DataBaseHelper.shared.removeCart(product_id: self.dataSource[indexPath.row].id, user_id: userId)
+            } else {
+                res = DataBaseHelper.shared.addCart(product_id: self.dataSource[indexPath.row].id, user_id: userId)
+            }
+
+            if res.hasPrefix("success") {
+                self.dataSource[indexPath.row].added_cart = !addedCart
+                self.uiTableview.reloadData()
+            }
         }
     }
 }
@@ -98,9 +150,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath) as! ProductCell
-
-        cell.lblProductName.text = "Name \(dataSource[indexPath.row].product_name)"
-        cell.lblPrice.text = "\(dataSource[indexPath.row].price) USD"
+        cell.entity = dataSource[indexPath.row]
 
         return cell
     }
@@ -110,6 +160,11 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        if userType == "manager" {
+            return nil
+        }
+        
         let flag = dataSource[indexPath.row].added_cart
         let title = flag ? "Remove" : "Add"
         let icon = flag ? UIImage(systemName: "heart") : UIImage(systemName: "heart.fill")
@@ -127,4 +182,16 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         return configuration
         
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        if let data = dataSource[indexPath.row].photo, let img = UIImage(data: data) {
+            let rate = img.size.height / img.size.width
+            return self.view.bounds.size.width * rate
+        }
+        return 350
+    }
+    
+    
+
 }
