@@ -1,0 +1,39 @@
+
+/* Class = "UITabBarItem"; title = "categories"; ObjectID = "139-iK-3ch"; */
+"139-iK-3ch.title" = "categories";
+
+/* Class = "UIButton"; configuration.title = "LOGIN"; ObjectID = "B9t-Yq-DJI"; */
+"B9t-Yq-DJI.configuration.title" = "LOGIN";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "B9t-Yq-DJI"; */
+"B9t-Yq-DJI.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Enter your email"; ObjectID = "BaM-ZW-9bb"; */
+"BaM-ZW-9bb.placeholder" = "Enter your email";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "FGH-zD-tAa"; */
+"FGH-zD-tAa.title" = "Item";
+
+/* Class = "UILabel"; text = "Contact us :"; ObjectID = "Lcl-dQ-cx8"; */
+"Lcl-dQ-cx8.text" = "Contact us :";
+
+/* Class = "UILabel"; text = "Philosophy"; ObjectID = "UdI-lz-rcU"; */
+"UdI-lz-rcU.text" = "Philosophy";
+
+/* Class = "UILabel"; text = "I Am Kind"; ObjectID = "dJT-CG-30s"; */
+"dJT-CG-30s.text" = "I Am Kind";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "pLs-tg-991"; */
+"pLs-tg-991.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Books Rating"; ObjectID = "pQa-Ga-vA9"; */
+"pQa-Ga-vA9.title" = "Books Rating";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "q8r-f4-Grc"; */
+"q8r-f4-Grc.text" = "Label";
+
+/* Class = "UILabel"; text = "We welcome your comments and suggestions:"; ObjectID = "sYZ-Ie-9yh"; */
+"sYZ-Ie-9yh.text" = "We welcome your comments and suggestions:";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "uG9-30-1Yt"; */
+"uG9-30-1Yt.placeholder" = "Password";
