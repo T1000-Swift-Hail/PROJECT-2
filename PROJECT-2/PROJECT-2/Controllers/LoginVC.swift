@@ -13,13 +13,18 @@ class LoginVC :UIViewController{
     
     @IBOutlet weak var passWord: UITextField!
     
-    
-   
-    
+   // let user = User()
+//
+//
+//
     let customer1 = User(email: "seham1413@hotmail.com", phone: 0501789655, name: "seham", thenumber: 297, price: 150, shoppingCart: [], passWord: "56ss", age: 29)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        let users = user.getUser()
+//        for user in users {
+//
+//        }
     }
     
     @IBAction func login(_ sender: Any) {

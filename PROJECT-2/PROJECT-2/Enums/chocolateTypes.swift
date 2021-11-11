@@ -11,4 +11,6 @@ enum ChocolateTypes: String {
     case whiteChocolate = "whiteChocolate"
     case darkChocolate =  "darkChocolate"
     case brownChocolate = "brownChocolate"
+    case proteinChocolate = "protenChocolate"
+     case belgianChocolate = "belgianChocolate"
 }

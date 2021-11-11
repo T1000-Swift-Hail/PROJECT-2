@@ -25,7 +25,7 @@ Chocolate is usually eaten and enjoyed as a finished productChocolate Made Entir
 Login button ,(userName,password)textfield,image
 -use constraints
 - using Tab Bar controller and  Navigation Controller
-- Tab Bar  (Home,shoppingCart,profile)
+- Tab Bar  (Home,shoppingCart,profile,Trending)
 - Navigation Bar
 
 - Home ( List of Products ) Dynamic Prototypes
@@ -44,6 +44,12 @@ New File  productCell ( nameProduct,productImage)func setSelected
 image and label use
 - use the constraints
 
+- Navigation Controller Trending
+- Open your ViewController file Trending
+-  static cells ( table view section 2)
+section 1:Best sellers Belgian Chocolate
+section 2:New Releases Protein Chocolate
+
 ### Make a login screen that is adaptive to the device appearance in Light & Dark mode. 
 
  
@@ -58,7 +64,7 @@ image and label use
 -as user shopping card  
 - as a user for the profile browse Title chocolate
 inside (nameBostain,Location,phone number) 
-- 
-
+- as user Best sellers the chocolate 
+- as user New Releases the Chocolate
 
 #### Deadline for this project :  Deliver the project by 9:00 a.m. next Thursday Nov. 11, 2021 

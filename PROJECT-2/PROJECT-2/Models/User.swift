@@ -22,10 +22,11 @@ struct User {
     
     
 
-    func getUser () -> User {
+    func getUser () -> [User] {
         let newUser =  User(email: "Hind234@gmail.com", phone: 050765432, name: "Hind", thenumber: 160, price: 345, shoppingCart: [], passWord: "34As", age: 29)
-  
-        return newUser
+        let newUser_2 =  User(email: "Hind234@gmail.com", phone: 050765432, name: "Hind", thenumber: 160, price: 345, shoppingCart: [], passWord: "34As", age: 29)
+        
+        return [newUser,newUser_2]
     }
 }
 

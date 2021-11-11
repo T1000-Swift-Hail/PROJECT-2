@@ -12,9 +12,10 @@ class TableViewController: UITableViewController {
     var Listofproducts = [
         Product(name: "darkChocolate", image: UIImage(named: "images-6")!),
         Product(name:"brownChocolate", image: UIImage(named: "images-5")!),
-        Product(name:"whiteChocolate", image: UIImage(named: "images-2")!)]
-    
-
+        Product(name:"whiteChocolate", image: UIImage(named: "images-2")!),
+        
+        Product(name:"proteinChocolate", image: UIImage(named: "images-4")!),
+    Product(name:"belgianChocolate", image: UIImage(named: "images-9")!)]
     
     let defaults = UserDefaults.standard
     override func viewDidLoad() {

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9D0FD6B22738FAFE00EA9CEB /* chocolateTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FD6B12738FAFE00EA9CEB /* chocolateTypes.swift */; };
-		9D0FD6B42739422300EA9CEB /* ProductDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FD6B32739422300EA9CEB /* ProductDetailsVC.swift */; };
 		9D0FD6BD27395EFF00EA9CEB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FD6BC27395EFF00EA9CEB /* LoginVC.swift */; };
 		9D0FD6BF27395FC300EA9CEB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FD6BE27395FC300EA9CEB /* User.swift */; };
 		9D13BB7D273AA18500976C63 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D13BB7C273AA18500976C63 /* ShoppingCart.swift */; };
@@ -47,7 +46,6 @@
 		9D089741273BA26F0016F5CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		9D089742273BA26F0016F5CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		9D0FD6B12738FAFE00EA9CEB /* chocolateTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chocolateTypes.swift; sourceTree = "<group>"; };
-		9D0FD6B32739422300EA9CEB /* ProductDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsVC.swift; sourceTree = "<group>"; };
 		9D0FD6BC27395EFF00EA9CEB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9D0FD6BE27395FC300EA9CEB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9D13BB7C273AA18500976C63 /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 		9D0FD6BB27395D5100EA9CEB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9D0FD6B32739422300EA9CEB /* ProductDetailsVC.swift */,
 				9D0FD6BC27395EFF00EA9CEB /* LoginVC.swift */,
 				9D13BB80273AB33200976C63 /* ShoppingCartTableViewController.swift */,
 			);
@@ -319,7 +316,6 @@
 				9D13BB7F273AAC8A00976C63 /* ProductCell.swift in Sources */,
 				9D8D557A2737DF2100CF4E32 /* SceneDelegate.swift in Sources */,
 				9D13BB81273AB33200976C63 /* ShoppingCartTableViewController.swift in Sources */,
-				9D0FD6B42739422300EA9CEB /* ProductDetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,8 +496,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PROJECT-2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -516,6 +514,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.googel.PROJECT-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -527,8 +526,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PROJECT-2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -543,6 +544,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.googel.PROJECT-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
