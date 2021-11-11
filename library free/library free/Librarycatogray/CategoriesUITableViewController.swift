@@ -9,6 +9,11 @@ import UIKit
 
 class CategoriesUITableViewController: UITableViewController {
 
+    
+    
+    let Categories = ["Philosophy","kdisStories", "history"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,23 +28,26 @@ class CategoriesUITableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return Categories.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCel") as! ListTableViewCell
+        cell.BookLbl.text = Categories[indexPath.row]
+        
+    return cell
     }
-    */
+    
+    
+    
+
 
     /*
     // Override to support conditional editing of the table view.
