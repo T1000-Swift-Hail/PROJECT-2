@@ -368,7 +368,6 @@
                                 <action selector="editingItem:" destination="AU5-f6-R9e" id="MAw-kb-3Qh"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="GzE-dE-jnd"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVf-As-TDG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -744,28 +743,28 @@
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zMh-la-g4Z">
-                                    <size key="itemSize" width="147" height="217"/>
+                                    <size key="itemSize" width="199" height="242"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="dx4-8e-15R" customClass="ProductCell" customModule="MySecondProject" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="147" height="217"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="199" height="242"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="147" height="217"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="199" height="242"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dress_01" translatesAutoresizingMaskIntoConstraints="NO" id="pX5-cu-UjU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="147" height="147"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="199" height="147"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="147" id="cGS-I8-fvh"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abdulaziz Store" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9xA-5u-foT">
-                                                    <rect key="frame" x="8" y="152" width="131" height="33"/>
+                                                    <rect key="frame" x="8" y="152" width="183" height="33"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="33" id="C8X-Zw-K1a"/>
                                                     </constraints>
@@ -774,7 +773,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25,000 Dollers" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVZ-sm-1eh">
-                                                    <rect key="frame" x="8" y="193.5" width="110" height="23.5"/>
+                                                    <rect key="frame" x="8" y="218.5" width="110" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -792,6 +791,7 @@
                                             <constraint firstItem="gVZ-sm-1eh" firstAttribute="leading" secondItem="9xA-5u-foT" secondAttribute="leading" id="lGS-rG-TNe"/>
                                             <constraint firstItem="pX5-cu-UjU" firstAttribute="leading" secondItem="dx4-8e-15R" secondAttribute="leading" id="z1w-PN-2jJ"/>
                                         </constraints>
+                                        <size key="customSize" width="199" height="242"/>
                                         <connections>
                                             <outlet property="productImage" destination="pX5-cu-UjU" id="I0n-TK-e5u"/>
                                             <outlet property="productPrice" destination="gVZ-sm-1eh" id="Tat-R8-ypw"/>
@@ -820,7 +820,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h5U-0L-5h0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2296" y="386"/>
+            <point key="canvasLocation" x="2295.6521739130435" y="385.71428571428572"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7nk-HX-phh">
@@ -902,7 +902,6 @@
         <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="regestration Screen" width="1920" height="1200"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -10,7 +10,7 @@ My Project name is Az Glasess store
 
 ### Project Description :
 // Add your project description 
-my project is online store for glasses and Sunglasses you can Browse the Products and brand , price , type, and buy it 
+my project is online store for glasses and Sunglasses and more, also you can Browse the Products and brand , price , type, and buy it 
 
 ### Features List :
 // Add your project features list .
