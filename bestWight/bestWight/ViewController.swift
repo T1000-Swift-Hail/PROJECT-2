@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController , UIPickerViewDataSource , UIPickerViewDelegate , UITextFieldDelegate {
     
-    var gender = ["Male" , "female"]
+    var gender = ["Male".loclaized , "female".loclaized]
     
     
     @IBOutlet weak var SelctedGender: UILabel!
@@ -24,7 +24,7 @@ class ViewController: UIViewController , UIPickerViewDataSource , UIPickerViewDe
         // Do any additional setup after loading the view.
         PickerGender.dataSource = self
         PickerGender.delegate = self
-       
+   
     }
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -57,7 +57,7 @@ class ViewController: UIViewController , UIPickerViewDataSource , UIPickerViewDe
         
         if textWeight.text?.isEmpty ?? true || textWeight.text?.isEmpty ?? true || textName.text?.isEmpty ?? true {
             
-            let alert = UIAlertController (title:  "", message:"Please Inter Your Weight And Height!" , preferredStyle: .alert)
+            let alert = UIAlertController (title:  "", message:"Please Enter Your Weight And Height!" , preferredStyle: .alert)
             
             alert.addAction(UIAlertAction(title: "Done".loclaized, style: .default, handler: nil))
             self.present(alert, animated: true)
@@ -74,7 +74,7 @@ class ViewController: UIViewController , UIPickerViewDataSource , UIPickerViewDe
     }
     
     
-    //resultScreedn
+    //resultScreen
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.

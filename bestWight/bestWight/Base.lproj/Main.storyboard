@@ -78,9 +78,6 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AVp-2e-aXk" userLabel="TextWeight">
                                         <rect key="frame" x="0.0" y="0.0" width="190" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="190" id="Eqt-bb-JhW"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
@@ -90,9 +87,6 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jn9-r4-DLT" userLabel="TextHeight">
                                         <rect key="frame" x="0.0" y="62" width="190" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="190" id="4xy-k2-voU"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <connections>
@@ -204,14 +198,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODa-36-8rH">
-                                <rect key="frame" x="62" y="278" width="318" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <segmentedControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uf6-pU-krD">
                                 <rect key="frame" x="20" y="127" width="374" height="31"/>
+                                <color key="backgroundColor" name="background color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="qHa-ZT-Syb"/>
                                 </constraints>
@@ -220,15 +209,13 @@
                                     <segment title="Normal"/>
                                     <segment title="Over Weight!"/>
                                 </segments>
+                                <color key="tintColor" name="Font"/>
                                 <connections>
                                     <action selector="changeModes:" destination="2fU-HG-jUU" eventType="valueChanged" id="qcG-Ha-rwj"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDH-hF-1OG">
-                                <rect key="frame" x="30" y="249" width="354" height="146"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="146" id="7oc-qt-fMU"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODa-36-8rH">
+                                <rect key="frame" x="20" y="228" width="374" height="159"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -238,14 +225,12 @@
                         <color key="backgroundColor" name="background color"/>
                         <constraints>
                             <constraint firstItem="uf6-pU-krD" firstAttribute="leading" secondItem="GuJ-NC-dxs" secondAttribute="leading" constant="20" id="3xo-Lg-BrN"/>
-                            <constraint firstItem="YDH-hF-1OG" firstAttribute="leading" secondItem="GuJ-NC-dxs" secondAttribute="leading" constant="30" id="KeX-Ki-IEP"/>
-                            <constraint firstItem="GuJ-NC-dxs" firstAttribute="trailing" secondItem="ODa-36-8rH" secondAttribute="trailing" constant="34" id="MaJ-DA-3LM"/>
+                            <constraint firstItem="GuJ-NC-dxs" firstAttribute="bottom" secondItem="ODa-36-8rH" secondAttribute="bottom" constant="426" id="Czy-7W-HX7"/>
+                            <constraint firstItem="ODa-36-8rH" firstAttribute="leading" secondItem="uf6-pU-krD" secondAttribute="leading" id="FJF-fC-SIx"/>
+                            <constraint firstItem="ODa-36-8rH" firstAttribute="top" secondItem="uf6-pU-krD" secondAttribute="bottom" constant="71" id="HRu-cQ-LHn"/>
                             <constraint firstItem="uf6-pU-krD" firstAttribute="top" secondItem="GuJ-NC-dxs" secondAttribute="top" constant="39" id="SJR-n1-H0v"/>
                             <constraint firstItem="GuJ-NC-dxs" firstAttribute="trailing" secondItem="uf6-pU-krD" secondAttribute="trailing" constant="20" id="W9Z-dC-oAg"/>
-                            <constraint firstItem="GuJ-NC-dxs" firstAttribute="bottom" secondItem="ODa-36-8rH" secondAttribute="bottom" constant="535" id="c7s-k2-jWF"/>
-                            <constraint firstItem="YDH-hF-1OG" firstAttribute="top" secondItem="uf6-pU-krD" secondAttribute="bottom" constant="92" id="gV1-Fu-mnN"/>
-                            <constraint firstItem="ODa-36-8rH" firstAttribute="leading" secondItem="GuJ-NC-dxs" secondAttribute="leading" constant="62" id="knW-pp-JVw"/>
-                            <constraint firstItem="GuJ-NC-dxs" firstAttribute="trailing" secondItem="YDH-hF-1OG" secondAttribute="trailing" constant="30" id="sZE-0F-ClH"/>
+                            <constraint firstItem="ODa-36-8rH" firstAttribute="trailing" secondItem="uf6-pU-krD" secondAttribute="trailing" id="fI3-AZ-D0f"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7wM-DA-pG3"/>
@@ -284,7 +269,10 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="TAU-a8-KKN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="background color"/>
+                        <color key="tintColor" name="Font"/>
+                        <color key="separatorColor" name="background color"/>
+                        <color key="sectionIndexColor" name="background color"/>
                         <color key="sectionIndexBackgroundColor" name="background color"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="xjn-uj-6si" style="IBUITableViewCellStyleDefault" id="fUL-Ee-GO7">
@@ -303,6 +291,8 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" name="background color"/>
+                                <color key="tintColor" name="background color"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -370,7 +360,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7i1-pg-OH9"/>
+        <segue reference="gy0-B9-X49"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="IMG-3030-2" width="626" height="939"/>

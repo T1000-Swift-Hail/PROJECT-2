@@ -16,11 +16,10 @@
 		9E04E20A2737066500CF00C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E04E2082737066500CF00C4 /* LaunchScreen.storyboard */; };
 		9E088AC22739168C0097BE07 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E088AC12739168C0097BE07 /* HealthKit.framework */; };
 		9E088AC6273920CE0097BE07 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E088AC5273920CE0097BE07 /* InformationViewController.swift */; };
+		9E0EC6B6273D43C600FDD755 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E0EC6B8273D43C600FDD755 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9E045B34273BB48F008B4813 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
-		9E045B35273BB48F008B4813 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		9E045B38273BC81C008B4813 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		9E04E1FA2737066300CF00C4 /* bestWight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bestWight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E04E1FD2737066300CF00C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +31,10 @@
 		9E04E20B2737066500CF00C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E088AC12739168C0097BE07 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9E088AC5273920CE0097BE07 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		9E0EC6B1273D3D8800FDD755 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		9E0EC6B2273D3D8800FDD755 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9E0EC6B7273D43C600FDD755 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9E0EC6B9273D43CC00FDD755 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,7 @@
 				9E04E20B2737066500CF00C4 /* Info.plist */,
 				9E088AC5273920CE0097BE07 /* InformationViewController.swift */,
 				9E045B38273BC81C008B4813 /* HistoryTableViewController.swift */,
+				9E0EC6B8273D43C600FDD755 /* Localizable.strings */,
 			);
 			path = bestWight;
 			sourceTree = "<group>";
@@ -146,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E0EC6B6273D43C600FDD755 /* Localizable.strings in Resources */,
 				9E04E20A2737066500CF00C4 /* LaunchScreen.storyboard in Resources */,
 				9E04E2072737066500CF00C4 /* Assets.xcassets in Resources */,
 				9E04E2052737066300CF00C4 /* Main.storyboard in Resources */,
@@ -174,7 +179,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9E04E2042737066300CF00C4 /* Base */,
-				9E045B34273BB48F008B4813 /* ar */,
+				9E0EC6B1273D3D8800FDD755 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -183,9 +188,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				9E04E2092737066500CF00C4 /* Base */,
-				9E045B35273BB48F008B4813 /* ar */,
+				9E0EC6B2273D3D8800FDD755 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9E0EC6B8273D43C600FDD755 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E0EC6B7273D43C600FDD755 /* en */,
+				9E0EC6B9273D43CC00FDD755 /* ar */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

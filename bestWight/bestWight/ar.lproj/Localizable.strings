@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  bestWight
+
+  Created by Hesah Alqhtani on 11/11/2021.
+  
+*/
+"Male" = "ذكر";
+"female" = "انثى";
+"Write Name..." = "ادخل الاسم";
+"normal" = "وزن طبيعي";
+"underweight" = "وزن منخفض";
+"overweight" = "وزن عالي";
+"Your BMI is \(bmi) . You're Underweight!" = "كتله الجسم هي/(كتله الجسم ) وزن منخفض";
+"Your BMI is \(bmi) . You're Healthy!" = "Your BMI is \(bmi) . You're Healthy!";
+"Your BMI is \(bmi) .You're Overweight!" = "Your BMI is \(bmi) .You're Overweight!";

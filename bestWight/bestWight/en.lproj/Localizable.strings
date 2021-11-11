@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  bestWight
+
+  Created by Hesah Alqhtani on 11/11/2021.
+  
+*/
+
+"Male"  = "Male";
+"female" = "female";
+"Write Name..." = "Write Name...";
+"overweight" = "overweight";
+"normal" = "normal";
+"underweight" = "underweight";
+"overweight" = "overweight";
+"Your BMI is \(bmi) . You're Underweight!" = "Your BMI is \(bmi) . You're Underweight!";
+"Your BMI is \(bmi) . You're Healthy!" = "Your BMI is \(bmi) . You're Healthy!";
+"Your BMI is \(bmi) .You're Overweight!" = "Your BMI is \(bmi) .You're Overweight!";

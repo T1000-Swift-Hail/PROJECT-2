@@ -61,11 +61,11 @@ class HistoryTableViewController: UITableViewController {
             }
             let cuncal = UIAlertAction(title: "cuncel", style: .cancel, handler: nil)
             alert.addTextField { textFiledSet in
-                textFiledSet.placeholder = "Write Name..."
+                textFiledSet.placeholder = "Write Name...".loclaized
                 textFiled = textFiledSet
             }
             alert.addTextField { textFiled in
-                textFiled.placeholder = " Write Your Weight "
+                textFiled.placeholder = "Write Your Weight. ".loclaized
                 textFiledTwo = textFiled
             }
             alert.addAction(cuncal)

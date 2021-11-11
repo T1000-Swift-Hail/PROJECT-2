@@ -23,7 +23,7 @@ class InformationViewController: UIViewController{
     
     @IBOutlet weak var segmentControl: UISegmentedControl!
     
-    let results = ["overweight" , "normal" , "underweight"]
+    let results = ["overweight".loclaized , "normal".loclaized , "underweight".loclaized]
     @IBOutlet weak var laDisplyBestWeight: UILabel!
     
     
@@ -58,19 +58,19 @@ class InformationViewController: UIViewController{
             segmentControl.selectedSegmentIndex = 0
             segmentControl.setTitle("overweight", forSegmentAt: 0)
             view.backgroundColor = .systemRed
-            return "Your BMI is \(bmi) .You're Overweight!"
+            return "Your BMI is \(bmi) .You're Overweight!".loclaized
             
         } else if bmi >= 18.5 && bmi <= 25 {
             segmentControl.selectedSegmentIndex = 1
             segmentControl.setTitle("Normal Rang", forSegmentAt: 1)
             view.backgroundColor = .systemGreen
-            return "Your BMI is \(bmi) . You're Healthy!"
+            return "Your BMI is \(bmi) . You're Healthy!".loclaized
             
         } else {
             segmentControl.selectedSegmentIndex = 2
             segmentControl.setTitle("Under Weight", forSegmentAt: 2)
             view.backgroundColor = .systemYellow
-            return "Your BMI is \(bmi) . You're Underweight!"
+            return "Your BMI is \(bmi) . You're Underweight!".loclaized
        }
         
     }

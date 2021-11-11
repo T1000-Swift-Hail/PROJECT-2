@@ -1,15 +1,15 @@
 
 /* Class = "UILabel"; text = "Weight( kg)"; ObjectID = "6KA-Bz-kfa"; */
-"6KA-Bz-kfa.text" = " (كج)الوزن ";
+"6KA-Bz-kfa.text" = "الوزن (كج)";
 
 /* Class = "UITextField"; placeholder = "0.0"; ObjectID = "AVp-2e-aXk"; */
 "AVp-2e-aXk.placeholder" = "0.0";
 
 /* Class = "UITextField"; placeholder = "Enter Your Name"; ObjectID = "AWm-qO-31S"; */
-"AWm-qO-31S.placeholder" = "ادخل اسمك";
+"AWm-qO-31S.placeholder" = "ادخل الاسم";
 
 /* Class = "UIBarButtonItem"; title = "Add"; ObjectID = "Ape-9P-QnL"; */
-"Ape-9P-QnL.title" = "Add";
+"Ape-9P-QnL.title" = "اضافه";
 
 /* Class = "UIButton"; configuration.title = "continue"; ObjectID = "G2J-RB-hqJ"; */
 "G2J-RB-hqJ.configuration.title" = "دخول";
@@ -18,19 +18,16 @@
 "G2J-RB-hqJ.normalTitle" = "Button";
 
 /* Class = "UIBarButtonItem"; title = "Edit"; ObjectID = "IrS-7R-8TV"; */
-"IrS-7R-8TV.title" = "Edit";
+"IrS-7R-8TV.title" = "تعديل";
 
 /* Class = "UILabel"; text = "Height (m)"; ObjectID = "Q8V-wI-EF9"; */
-"Q8V-wI-EF9.text" = "(سم)الطول ";
+"Q8V-wI-EF9.text" = "الطول (س)";
 
 /* Class = "UILabel"; text = "welcome to Best Weight App "; ObjectID = "R3c-ye-LwT"; */
 "R3c-ye-LwT.text" = "مرحبا بك في تطبيق الوزن المثالي ";
 
-/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "XNF-5a-qRv"; */
-"XNF-5a-qRv.title" = "Item";
-
 /* Class = "UILabel"; text = "Selcet Your Gender .."; ObjectID = "YZd-2C-tx9"; */
-"YZd-2C-tx9.text" = ".. اختر الجنس ";
+"YZd-2C-tx9.text" = "اختر الجنس ..";
 
 /* Class = "UITextField"; placeholder = "0.0"; ObjectID = "jn9-r4-DLT"; */
 "jn9-r4-DLT.placeholder" = "0.0";
@@ -45,10 +42,10 @@
 "uf6-pU-krD.segmentTitles[1]" = "طبيعي";
 
 /* Class = "UISegmentedControl"; uf6-pU-krD.segmentTitles[2] = "Over Weight!"; ObjectID = "uf6-pU-krD"; */
-"uf6-pU-krD.segmentTitles[2]" = " !زياده وزن";
+"uf6-pU-krD.segmentTitles[2]" = "وزن طبيعي";
 
 /* Class = "UIButton"; configuration.title = "Calculate BMI"; ObjectID = "xFU-4g-IVG"; */
-"xFU-4g-IVG.configuration.title" = "حساب الكتله";
+"xFU-4g-IVG.configuration.title" = "احسب الكتله";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xFU-4g-IVG"; */
 "xFU-4g-IVG.normalTitle" = "Button";
