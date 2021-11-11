@@ -8,9 +8,9 @@
 import UIKit
 
 class DuplexViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate {
-    var get = ""
-    var selectedCountry: String?
     
+    var selectedCountry: String?
+    var get = ""
     
     //    let address:UITextField? = {
     //        let textFiled = UITextField()
@@ -93,11 +93,12 @@ extension DuplexViewController {
  func completedAlert () {
      let alert = UIAlertController(title: "Reservation Completed!".localized, message: "AN SMS HAS BEEN SENT, THANK YOU FOR USING UOH STUDENT HOSTEL".localized, preferredStyle: .alert)
      let ok = UIAlertAction(title: "OK".localized, style: .default) { ok in
-         print("OK".localized)
+         self.performSegue(withIdentifier: "WelcomeScreen", sender: nil)
     }
     alert.addAction(ok)
     
     present(alert, animated: false)
+     
     }
     
     

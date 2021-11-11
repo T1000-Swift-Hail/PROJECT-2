@@ -17,18 +17,15 @@ class RoomsViewController: UIViewController {
     
     
     
-    
     @IBAction func duplexButton(_ sender: UIButton) {
-        
         performSegue(withIdentifier: "Duplex", sender: nil)
     }
     
-    
-    
+
     @IBAction func singleButton(_ sender: UIButton) {
         performSegue(withIdentifier: "Single", sender: nil)
     }
     
-   
+
 
 }

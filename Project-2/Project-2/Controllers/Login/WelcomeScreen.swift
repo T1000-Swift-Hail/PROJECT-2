@@ -11,8 +11,6 @@ class WelcomeScreen: UIViewController {
 
     @IBOutlet var goToNextScreen: UIButton!
     override func viewDidLoad() {
-        
-        
         super.viewDidLoad()
         goToNextScreen.setTitle("NEXT  〉".localized, for: .normal)
         // Do any additional setup after loading the view.
@@ -21,6 +19,6 @@ class WelcomeScreen: UIViewController {
         performSegue(withIdentifier: "RoomSelection", sender: nil)
     }
     
-
+     //func unwindToController2(segue:UIStoryboardSegue) { } 
 
 }

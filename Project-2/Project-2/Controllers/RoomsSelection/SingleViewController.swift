@@ -10,8 +10,8 @@ import UIKit
 class SingleViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate {
     
     var selectedCountry: String?
+    var buttonChosed: UIButton?
 
-    
     @IBOutlet var textField: UITextField!
     
     override func viewDidLoad() {
