@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D024B02273D3C0900DD8C3D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D024B01273D3C0900DD8C3D /* Localizable.strings */; };
 		9D0FD6B22738FAFE00EA9CEB /* chocolateTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FD6B12738FAFE00EA9CEB /* chocolateTypes.swift */; };
 		9D0FD6BD27395EFF00EA9CEB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FD6BC27395EFF00EA9CEB /* LoginVC.swift */; };
 		9D0FD6BF27395FC300EA9CEB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FD6BE27395FC300EA9CEB /* User.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D024B01273D3C0900DD8C3D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9D089741273BA26F0016F5CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		9D089742273BA26F0016F5CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		9D0FD6B12738FAFE00EA9CEB /* chocolateTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chocolateTypes.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				9D8D55772737DF2100CF4E32 /* AppDelegate.swift */,
 				9D8D55792737DF2100CF4E32 /* SceneDelegate.swift */,
 				9D8D557B2737DF2100CF4E32 /* TableViewController.swift */,
+				9D024B01273D3C0900DD8C3D /* Localizable.strings */,
 				9D8D557D2737DF2100CF4E32 /* Main.storyboard */,
 				9D8D55802737DF2200CF4E32 /* Assets.xcassets */,
 				9D8D55822737DF2200CF4E32 /* LaunchScreen.storyboard */,
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D8D55842737DF2200CF4E32 /* LaunchScreen.storyboard in Resources */,
+				9D024B02273D3C0900DD8C3D /* Localizable.strings in Resources */,
 				9D8D55812737DF2200CF4E32 /* Assets.xcassets in Resources */,
 				9D8D557F2737DF2100CF4E32 /* Main.storyboard in Resources */,
 			);

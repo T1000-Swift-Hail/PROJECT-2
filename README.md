@@ -29,12 +29,12 @@ Login button ,(userName,password)textfield,image
 - Navigation Bar
 
 - Home ( List of Products ) Dynamic Prototypes
-New File  TableViewController   two label (Add,Edit)
-New File  productCell ( nameProduct,productImage)func setSelected
+  TableViewController   two label (Add,Edit)
+  productCell ( nameProduct,productImage)func setSelected
 
 -  Navigation Controller  shoppingCart(items)product
 
-- New File shoppingcartTableViewController
+- shoppingcartTableViewController
     func viewWillAppear
     func numberOfSections
  
@@ -43,28 +43,28 @@ New File  productCell ( nameProduct,productImage)func setSelected
 -  static cells( Name,location,phone number )
 image and label use
 - use the constraints
-
+for the profile browse Title chocolate
+inside (nameBostain,Location,phone number) 
 - Navigation Controller Trending
 - Open your ViewController file Trending
 -  static cells ( table view section 2)
 section 1:Best sellers Belgian Chocolate
 section 2:New Releases Protein Chocolate
 
-### Make a login screen that is adaptive to the device appearance in Light & Dark mode. 
 
+
+### Make  screens  is adaptive to the device appearance in Light & Dark mode. 
+### make  localized in one other language
  
-
-
 ### User Storieschocolate:
-   
 ##### user
 
-- as user the home list the product
-- as user To buy chocolate call buychocolate()
--as user shopping card  
-- as a user for the profile browse Title chocolate
-inside (nameBostain,Location,phone number) 
-- as user Best sellers the chocolate 
-- as user New Releases the Chocolate
+- As user open the login page see  user name and passward
+- As user browse the home page and select products
+- As user add the product to your shopping cart
+- As user browse the profile of the application
+- As a user see trends for the best sellers and new releases
+- The user can see the order he choosing
+
 
 #### Deadline for this project :  Deliver the project by 9:00 a.m. next Thursday Nov. 11, 2021 
