@@ -12,26 +12,21 @@ import UIKit
 class ConversionFromCentimeter: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
     var conversionUnit = ConversionUnit.cm
+    //MARK: - This connected the label, text Field and segment with IBOutlet
+    
+    @IBOutlet weak var unitCentimeterLabel: UILabel!
+    @IBOutlet weak var textFieldUnitCentimeter: UITextField!
+    @IBOutlet weak var segmentUnitCentimeter: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         textFieldUnitCentimeter.delegate = self
-        
-//MARK: - Tap Gesture Recognizer, dismiss the keyboard when the user taps on the screen
-                let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
-                view.addGestureRecognizer(tap)
-
+        //MARK: - Tap Gesture Recognizer, dismiss the keyboard when the user taps on the screen
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
     }
-    
-//MARK: - This connected the label, text Field and segment with IBOutlet
-
-    @IBOutlet weak var unitCentimeterLabel: UILabel!
-    @IBOutlet weak var textFieldUnitCentimeter: UITextField!
-    @IBOutlet weak var segmentUnitCentimeter: UISegmentedControl!
-    
-//MARK: - Connected Segment with IBAction, and switch cases were called
-
+    //MARK: - Connected Segment with IBAction, and switch cases were called
     @IBAction func segmentUnitCentimeterAction(_ sender: UISegmentedControl) {
         textFieldUnitCentimeter.text = ""
         
@@ -46,11 +41,8 @@ class ConversionFromCentimeter: UIViewController, UITextFieldDelegate, UITextVie
             conversionUnit = .inch
             unitCentimeterLabel.text = "0.0 inch"
         }
-        
     }
-    
-//MARK: - Arithmetic functions for each unit
-
+    //MARK: - Arithmetic functions for each unit
     func convertToKm( centimeter: Double) -> Double {
         return centimeter * 0.00001
     }
@@ -61,8 +53,7 @@ class ConversionFromCentimeter: UIViewController, UITextFieldDelegate, UITextVie
         return centimeter * 0.39370078740157
     }
     
-//MARK: - Connected text field with IBAction, and switch cases were called
-
+    //MARK: - Connected text field with IBAction, and switch cases were called
     @IBAction func textFieldUnitAction(_ sender: UITextField) {
         
         let amountUnit = Double(textFieldUnitCentimeter.text ?? "0.0") ?? 0.0
@@ -70,24 +61,22 @@ class ConversionFromCentimeter: UIViewController, UITextFieldDelegate, UITextVie
         switch conversionUnit {
         case .km:
             let convertedValue = convertToKm(centimeter:amountUnit)
-            unitCentimeterLabel.text = "\(String (format: "%.4f", convertedValue)) km"
+            unitCentimeterLabel.text = "\(String (format: "%.5f", convertedValue)) km"
         case .m:
             let convertedValue = convertToM(centimeter: amountUnit)
-            unitCentimeterLabel.text = "\(String (format: "%.4f", convertedValue)) m"
+            unitCentimeterLabel.text = "\(String (format: "%.5f", convertedValue)) m"
         case .inch:
             let convertedValue = convertToInch(centimeter: amountUnit)
-            unitCentimeterLabel.text = "\(String (format: "%.4f", convertedValue)) inch"
+            unitCentimeterLabel.text = "\(String (format: "%.5f", convertedValue)) inch"
         case .cm: break
         }
     }
+    //MARK: - A Function determines the number of digits to write
     
-//MARK: - A Function determines the number of digits to write
-
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-         
+        
         if let lessCount = textFieldUnitCentimeter.text?.count, lessCount < 5 {
             return true
         } else { return false }
     }
-    
 }

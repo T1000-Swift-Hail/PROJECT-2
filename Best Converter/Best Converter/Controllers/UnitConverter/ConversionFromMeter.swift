@@ -12,25 +12,20 @@ import UIKit
 class ConversionFromMeter: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
     var conversionUnit = ConversionUnit.m
+    //MARK: - This connected the label, text Field and segment with IBOutlet
+    @IBOutlet weak var unitMeterLabel: UILabel!
+    @IBOutlet weak var textFieldUnitMeter: UITextField!
+    @IBOutlet weak var segmentUnitMeter: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         textFieldUnitMeter.delegate = self
-        
-//MARK: - Tap Gesture Recognizer, dismiss the keyboard when the user taps on the screen
-                let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
-                view.addGestureRecognizer(tap)
-
+        //MARK: - Tap Gesture Recognizer, dismiss the keyboard when the user taps on the screen
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
     }
-//MARK: - This connected the label, text Field and segment with IBOutlet
-
-    @IBOutlet weak var unitMeterLabel: UILabel!
-    @IBOutlet weak var textFieldUnitMeter: UITextField!
-    @IBOutlet weak var segmentUnitMeter: UISegmentedControl!
-    
-//MARK: - Connected Segment with IBAction, and switch cases were called
-
+    //MARK: - Connected Segment with IBAction, and switch cases were called
     @IBAction func segmentUnitMeterAction(_ sender: UISegmentedControl) {
         textFieldUnitMeter.text = ""
         
@@ -47,8 +42,8 @@ class ConversionFromMeter: UIViewController, UITextFieldDelegate, UITextViewDele
         }
         
     }
-//MARK: - Arithmetic functions for each unit
-
+    //MARK: - Arithmetic functions for each unit
+    
     func convertToKm( meter: Double) -> Double {
         return meter * 0.001
     }
@@ -58,9 +53,8 @@ class ConversionFromMeter: UIViewController, UITextFieldDelegate, UITextViewDele
     func convertToInch( meter: Double) -> Double {
         return meter * 39.370078740157
     }
+    //MARK: - Connected text field with IBAction, and switch cases were called
     
-//MARK: - Connected text field with IBAction, and switch cases were called
-
     @IBAction func textFieldUnitAction(_ sender: UITextField) {
         
         let amountUnit = Double(textFieldUnitMeter.text ?? "0.0") ?? 0.0
@@ -68,7 +62,7 @@ class ConversionFromMeter: UIViewController, UITextFieldDelegate, UITextViewDele
         switch conversionUnit {
         case .km:
             let convertedValue = convertToKm(meter:amountUnit)
-            unitMeterLabel.text = "\(String (format: "%.2f", convertedValue)) km"
+            unitMeterLabel.text = "\(String (format: "%.5f", convertedValue)) km"
         case .cm:
             let convertedValue = convertToCm(meter: amountUnit)
             unitMeterLabel.text = "\(String (format: "%.2f", convertedValue)) cm"
@@ -78,13 +72,12 @@ class ConversionFromMeter: UIViewController, UITextFieldDelegate, UITextViewDele
         case .m: break
         }
     }
-//MARK: - A Function determines the number of digits to write
-
+    //MARK: - A Function determines the number of digits to write
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-         
+        
         if let lessCount = textFieldUnitMeter.text?.count, lessCount < 5 {
             return true
         } else { return false }
     }
-    
 }

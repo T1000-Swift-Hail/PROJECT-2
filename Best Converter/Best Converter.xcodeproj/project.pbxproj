@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044E9E92273CEED7003A7D31 /* ConversionCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E9E91273CEED7003A7D31 /* ConversionCurrency.swift */; };
+		044E9E94273CEF58003A7D31 /* ConversionUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E9E93273CEF58003A7D31 /* ConversionUnit.swift */; };
 		045D977C2738A05200B69CB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D977B2738A05200B69CB2 /* AppDelegate.swift */; };
 		045D977E2738A05200B69CB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D977D2738A05200B69CB2 /* SceneDelegate.swift */; };
 		045D97832738A05200B69CB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045D97812738A05200B69CB2 /* Main.storyboard */; };
 		045D97852738A05400B69CB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045D97842738A05400B69CB2 /* Assets.xcassets */; };
 		045D97882738A05400B69CB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045D97862738A05400B69CB2 /* LaunchScreen.storyboard */; };
-		045D97902738A09D00B69CB2 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D978F2738A09D00B69CB2 /* CurrencyViewController.swift */; };
-		045D97922738A0B400B69CB2 /* UnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D97912738A0B400B69CB2 /* UnitViewController.swift */; };
 		048EFA4D273995F000247A8E /* ConversionFromMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EFA4C273995F000247A8E /* ConversionFromMeter.swift */; };
 		048EFA4F2739960700247A8E /* ConversionFromKilometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EFA4E2739960700247A8E /* ConversionFromKilometer.swift */; };
 		048EFA512739962500247A8E /* ConversionFromCentimeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EFA502739962500247A8E /* ConversionFromCentimeter.swift */; };
@@ -25,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044E9E91273CEED7003A7D31 /* ConversionCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionCurrency.swift; sourceTree = "<group>"; };
+		044E9E93273CEF58003A7D31 /* ConversionUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionUnit.swift; sourceTree = "<group>"; };
 		045D97782738A05200B69CB2 /* Best Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Best Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D977B2738A05200B69CB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045D977D2738A05200B69CB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,8 +34,6 @@
 		045D97842738A05400B69CB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045D97872738A05400B69CB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045D97892738A05400B69CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		045D978F2738A09D00B69CB2 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
-		045D97912738A0B400B69CB2 /* UnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitViewController.swift; sourceTree = "<group>"; };
 		048EFA4C273995F000247A8E /* ConversionFromMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionFromMeter.swift; sourceTree = "<group>"; };
 		048EFA4E2739960700247A8E /* ConversionFromKilometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionFromKilometer.swift; sourceTree = "<group>"; };
 		048EFA502739962500247A8E /* ConversionFromCentimeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionFromCentimeter.swift; sourceTree = "<group>"; };
@@ -57,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044E9E90273CED6E003A7D31 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				044E9E91273CEED7003A7D31 /* ConversionCurrency.swift */,
+				044E9E93273CEF58003A7D31 /* ConversionUnit.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		045D976F2738A05200B69CB2 = {
 			isa = PBXGroup;
 			children = (
@@ -76,7 +85,7 @@
 		045D977A2738A05200B69CB2 /* Best Converter */ = {
 			isa = PBXGroup;
 			children = (
-				04B56243273A7F59000CFC60 /* Models */,
+				044E9E90273CED6E003A7D31 /* Enums */,
 				04B56240273A7F06000CFC60 /* Controllers */,
 				045D977B2738A05200B69CB2 /* AppDelegate.swift */,
 				045D977D2738A05200B69CB2 /* SceneDelegate.swift */,
@@ -100,7 +109,6 @@
 		04B56241273A7F20000CFC60 /* CurrencyConverter */ = {
 			isa = PBXGroup;
 			children = (
-				045D978F2738A09D00B69CB2 /* CurrencyViewController.swift */,
 				048EFA542739967E00247A8E /* ConversionFromSar.swift */,
 				048EFA562739969400247A8E /* ConversionFromUsd.swift */,
 				048EFA58273996A300247A8E /* ConversionFromAsd.swift */,
@@ -112,20 +120,12 @@
 		04B56242273A7F51000CFC60 /* UnitConverter */ = {
 			isa = PBXGroup;
 			children = (
-				045D97912738A0B400B69CB2 /* UnitViewController.swift */,
 				048EFA4C273995F000247A8E /* ConversionFromMeter.swift */,
 				048EFA4E2739960700247A8E /* ConversionFromKilometer.swift */,
 				048EFA502739962500247A8E /* ConversionFromCentimeter.swift */,
 				048EFA522739963C00247A8E /* ConversionFromInch.swift */,
 			);
 			path = UnitConverter;
-			sourceTree = "<group>";
-		};
-		04B56243273A7F59000CFC60 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,12 +202,12 @@
 			files = (
 				048EFA5B273996F700247A8E /* ConversionFromEuro.swift in Sources */,
 				048EFA4D273995F000247A8E /* ConversionFromMeter.swift in Sources */,
-				045D97902738A09D00B69CB2 /* CurrencyViewController.swift in Sources */,
 				048EFA512739962500247A8E /* ConversionFromCentimeter.swift in Sources */,
+				044E9E94273CEF58003A7D31 /* ConversionUnit.swift in Sources */,
+				044E9E92273CEED7003A7D31 /* ConversionCurrency.swift in Sources */,
 				048EFA59273996A300247A8E /* ConversionFromAsd.swift in Sources */,
 				048EFA552739967E00247A8E /* ConversionFromSar.swift in Sources */,
 				048EFA532739963C00247A8E /* ConversionFromInch.swift in Sources */,
-				045D97922738A0B400B69CB2 /* UnitViewController.swift in Sources */,
 				048EFA572739969400247A8E /* ConversionFromUsd.swift in Sources */,
 				045D977C2738A05200B69CB2 /* AppDelegate.swift in Sources */,
 				048EFA4F2739960700247A8E /* ConversionFromKilometer.swift in Sources */,

@@ -11,23 +11,20 @@ import UIKit
 class ConversionFromUsd: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
     var conversionCurrency = ConversionCurrency.USD
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        textFieldCurrencyUsd.delegate = self
-
-//MARK: - Tap Gesture Recognizer, dismiss the keyboard when the user taps on the screen
-                let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
-                view.addGestureRecognizer(tap)
-    }
-    
-//MARK: - This connected the label, text Field and segment with IBOutlet
+    //MARK: - This connected the label, text Field and segment with IBOutlet
     @IBOutlet weak var currencyUsdLabel: UILabel!
     @IBOutlet weak var textFieldCurrencyUsd: UITextField!
     @IBOutlet weak var segmentCurrencyUsd: UISegmentedControl!
     
-//MARK: - Connected Segment with IBAction, and switch cases were called
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        textFieldCurrencyUsd.delegate = self
+        //MARK: - Tap Gesture Recognizer, dismiss the keyboard when the user taps on the screen
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
+    }
+    //MARK: - Connected Segment with IBAction, and switch cases were called
     @IBAction func segmentCurrencyUsdAction(_ sender: UISegmentedControl) {
         
         textFieldCurrencyUsd.text = ""
@@ -46,8 +43,7 @@ class ConversionFromUsd: UIViewController, UITextFieldDelegate, UITextViewDelega
             currencyUsdLabel.text = "0.0 SAR"
         }
     }
-    
-//MARK: - Arithmetic functions for each currency
+    //MARK: - Arithmetic functions for each currency
     func convertToSar( usd: Double) -> Double {
         return usd / 0.266667
     }
@@ -57,8 +53,7 @@ class ConversionFromUsd: UIViewController, UITextFieldDelegate, UITextViewDelega
     func convertToEuro( usd: Double) -> Double {
         return usd / 1.15878
     }
-    
-//MARK: - Connected text field with IBAction, and switch cases were called
+    //MARK: - Connected text field with IBAction, and switch cases were called
     @IBAction func textFieldCurrencyAction(_ sender: UITextField) {
         
         let amountCurrency = Double(textFieldCurrencyUsd.text ?? "0.0") ?? 0.0
@@ -76,18 +71,13 @@ class ConversionFromUsd: UIViewController, UITextFieldDelegate, UITextViewDelega
             let convertedCurrency = convertToEuro(usd: amountCurrency)
             currencyUsdLabel.text = "\(String(format: "%.2f", convertedCurrency)) Euro"
         case .USD: break
-
         }
     }
-    
-//MARK: - A Function determines the number of digits to write
-
+    //MARK: - A Function determines the number of digits to write
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-         
+        
         if let lessCount = textFieldCurrencyUsd.text?.count, lessCount < 5 {
             return true
         } else { return false }
     }
-    
-
 }
