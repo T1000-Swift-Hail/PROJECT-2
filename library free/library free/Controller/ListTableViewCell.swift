@@ -9,6 +9,11 @@ import UIKit
 
 class ListTableViewCell: UITableViewCell {
 
+    
+    
+    @IBOutlet weak var bookImage: UIImageView!
+    @IBOutlet weak var BookLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
