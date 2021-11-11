@@ -22,11 +22,11 @@ class Cell: UITableViewCell {
         // Initialization code
     }
  
-    func setupCall(photo: UIImage, name: String, price: Int) {
-        imgproduct.image = photo
-        productName.text = name
-        productprice.text = "\(price) SAR"
-    }
+//    func setupCall(photo: UIImage, name: String, price: Int) {
+//        imgproduct.image = photo
+//        productName.text = name
+//        productprice.text = "\(price) SAR"
+//    }
     @IBAction func btnAdd(_ sender: UIButton) {
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
