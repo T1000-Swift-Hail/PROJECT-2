@@ -6,10 +6,10 @@
 //
 
 import UIKit
-
+import QuartzCore
 class SingInViewController: UIViewController {
 //
-//    let constant = Constants()
+
     
     
     
@@ -19,76 +19,27 @@ class SingInViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
 
     @IBOutlet weak var signLable: UIButton!
+   
+    private var idx: Int = 0
+      
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-    configureGestures()
-            setupUI()
+            super.viewDidLoad()
             
-        }
-        
-        
-        
+        emailAdress.alpha = 0;
+            password.alpha = 0;
+        signLable.alpha   = 0;
+ 
+                self.emailAdress.alpha = 1.0
+                self.password.alpha = 1.0
+                self.signLable.alpha   = 0.9
+     
+               
+            }
+    func loginButton(enabled: Bool) -> () {
+           func enable(){
+              
+                  
+           }
     }
-
-
-    extension SingInViewController {
-        
-        func setupUI(){
-            emailAdress.layer.cornerRadius = emailAdress.frame.height / 2
-            password.layer.cornerRadius = password.frame.height / 2
-        }
-        
-    
-    
-        func configureGestures(){
-                let signInlabelTap = UITapGestureRecognizer(target: self, action: #selector(signInlabelTapped))
-                
-            signLable.addGestureRecognizer(signInlabelTap)
-            signLable.isUserInteractionEnabled = true
-            }
-            
-            @objc func signInlabelTapped(){
-                
-                
-//                let signinVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier:constant.signinID) as! SingInViewController
-                
-//                self.present(signinVC, animated: true, completion: nil)
-                
-                
-            }
-            
-            
-        }
-    
-    
-////    configureGestures()
-////            setupUI()
-//}
-//
-//extension SingInViewController {
-//
-//    func setupUI(){
-//
-//        emailAdress.layer.cornerRadius = emailAdress.frame.height
-//        password.layer.cornerRadius = password.frame.height
-//        signLable.layer.cornerRadius = signLable.frame.height
-//    }
-//
-//    // configure gesture recognizers
-//    func configureGestures(){
-//        let signInlabelTap = UITapGestureRecognizer(target: self, action: #selector(signInlabelTapped))
-//
-//        signLable.addGestureRecognizer(signInlabelTap)
-//        signLable.isUserInteractionEnabled = true
-//    }
-//
-//    @objc func signInlabelTapped(){
-//
-//
-//        let signinVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: constant.signinID) as! SingInViewController
-//
-//        self.present(signinVC, animated: true, completion: nil)
-//    }
-//}
-//
-//
+}

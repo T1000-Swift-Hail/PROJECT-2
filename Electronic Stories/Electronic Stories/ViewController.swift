@@ -12,8 +12,8 @@ import UIKit
 //
 //    case SecondViewController = "Second"
 //    case Third = "Third"
-    
-    
+//
+//
 //}
 
 class ViewController: UIViewController {
@@ -28,26 +28,27 @@ class ViewController: UIViewController {
     
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        
-//        
-//        
-//        
+//
+//
+//
+//
 //    }
-//    
-//    
+//
+//
 //    @IBAction func showPhoneProducts(_ sender: Any) {
-//        
+//
 //        performSegue(withIdentifier: "toProductsPage", sender: nil)
 //    }
-//    
-//    
-//    
-//    
+//
+//
+//
+//
 //    @IBAction func smartWatches(_ sender: UIButton) {
-//        sectionSelected = 1
+////        sectionSelected = 1
 //        performSegue(withIdentifier: "toProducts", sender: nil)
 //    }
-//    
-    
-}
+//
+//
+//}
 
+}

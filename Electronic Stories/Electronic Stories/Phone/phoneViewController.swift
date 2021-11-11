@@ -20,7 +20,7 @@ class phoneViewController: UIViewController ,UITableViewDelegate, UITableViewDat
 
         tableView.delegate = self
         tableView.dataSource = self
-        arrPhone.append(Phone.init(name:"Glass Protector" , price: 120, photo: UIImage(named: "Glass Protector")!))
+        
         arrPhone.append(Phone.init(name:"Case Iphone 13" , price: 70, photo: UIImage(named: "case")!))
         arrPhone.append(Phone.init(name:"Case Iphone 12" , price: 40, photo: UIImage(named: "case1")!))
         arrPhone.append(Phone.init(name:"charge" , price: 240, photo: UIImage(named: "charge")!))
@@ -28,6 +28,7 @@ class phoneViewController: UIViewController ,UITableViewDelegate, UITableViewDat
         arrPhone.append(Phone.init(name:"Headphones2" , price: 600, photo: UIImage(named: "Headphones2")!))
         arrPhone.append(Phone.init(name:"Bluetooth headset" , price: 400, photo: UIImage(named: "Bluetooth headset")!))
         arrPhone.append(Phone.init(name:"bluetooth earbuds" , price: 300, photo: UIImage(named: "bluetooth earbuds")!))
+        arrPhone.append(Phone.init(name:"Glass Protector" , price: 120, photo: UIImage(named: "Glass Protector")!))
     }
     
     

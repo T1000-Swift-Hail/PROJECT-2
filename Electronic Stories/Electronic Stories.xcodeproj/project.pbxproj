@@ -12,7 +12,6 @@
 		5717D23A273AB2570079E33E /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717D239273AB2570079E33E /* CartViewController.swift */; };
 		5717D23C273AB51B0079E33E /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717D23B273AB51B0079E33E /* Shopping.swift */; };
 		573738EA273AE53000B8DE38 /* DarkMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573738E9273AE53000B8DE38 /* DarkMoodViewController.swift */; };
-		573738EE273AED2600B8DE38 /* SingInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573738ED273AED2600B8DE38 /* SingInViewController.swift */; };
 		573738F0273B00E800B8DE38 /* LoginnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573738EF273B00E800B8DE38 /* LoginnViewController.swift */; };
 		578172DD273951C8005DB1F2 /* phoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578172DC273951C8005DB1F2 /* phoneTableViewCell.swift */; };
 		578172DF27395520005DB1F2 /* phoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578172DE27395520005DB1F2 /* phoneViewController.swift */; };
@@ -22,6 +21,7 @@
 		57AD02692737E2E400766B0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AD02672737E2E400766B0F /* Main.storyboard */; };
 		57AD026B2737E2E500766B0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57AD026A2737E2E500766B0F /* Assets.xcassets */; };
 		57AD026E2737E2E500766B0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AD026C2737E2E500766B0F /* LaunchScreen.storyboard */; };
+		57AD455C273BBC5B0020AD9F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57AD455E273BBC5B0020AD9F /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,6 @@
 		573738E9273AE53000B8DE38 /* DarkMoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkMoodViewController.swift; sourceTree = "<group>"; };
 		573738EB273AEA5B00B8DE38 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		573738EC273AEA5B00B8DE38 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		573738ED273AED2600B8DE38 /* SingInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInViewController.swift; sourceTree = "<group>"; };
 		573738EF273B00E800B8DE38 /* LoginnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginnViewController.swift; sourceTree = "<group>"; };
 		578172DC273951C8005DB1F2 /* phoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneTableViewCell.swift; sourceTree = "<group>"; };
 		578172DE27395520005DB1F2 /* phoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +43,8 @@
 		57AD026A2737E2E500766B0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57AD026D2737E2E500766B0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57AD026F2737E2E500766B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57AD455D273BBC5B0020AD9F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		57AD455F273BBC620020AD9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5777E9F8273CEB9A000828A2 /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				578172DE27395520005DB1F2 /* phoneViewController.swift */,
+				578172DC273951C8005DB1F2 /* phoneTableViewCell.swift */,
+				5717D23B273AB51B0079E33E /* Shopping.swift */,
+				5717D237273AB0F60079E33E /* Cartsturct.swift */,
+				5717D239273AB2570079E33E /* CartViewController.swift */,
+			);
+			path = Phone;
+			sourceTree = "<group>";
+		};
 		578172D927392EDB005DB1F2 /* VcController */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +97,7 @@
 		57AD02602737E2E400766B0F /* Electronic Stories */ = {
 			isa = PBXGroup;
 			children = (
+				5777E9F8273CEB9A000828A2 /* Phone */,
 				578172D927392EDB005DB1F2 /* VcController */,
 				57AD02612737E2E400766B0F /* AppDelegate.swift */,
 				57AD02632737E2E400766B0F /* SceneDelegate.swift */,
@@ -92,14 +106,9 @@
 				57AD026A2737E2E500766B0F /* Assets.xcassets */,
 				57AD026C2737E2E500766B0F /* LaunchScreen.storyboard */,
 				57AD026F2737E2E500766B0F /* Info.plist */,
-				578172DC273951C8005DB1F2 /* phoneTableViewCell.swift */,
-				578172DE27395520005DB1F2 /* phoneViewController.swift */,
 				5717D229273A4F590079E33E /* ViewControllerCategories.swift */,
-				5717D237273AB0F60079E33E /* Cartsturct.swift */,
-				5717D239273AB2570079E33E /* CartViewController.swift */,
-				5717D23B273AB51B0079E33E /* Shopping.swift */,
 				573738E9273AE53000B8DE38 /* DarkMoodViewController.swift */,
-				573738ED273AED2600B8DE38 /* SingInViewController.swift */,
+				57AD455E273BBC5B0020AD9F /* Localizable.strings */,
 			);
 			path = "Electronic Stories";
 			sourceTree = "<group>";
@@ -164,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57AD026E2737E2E500766B0F /* LaunchScreen.storyboard in Resources */,
+				57AD455C273BBC5B0020AD9F /* Localizable.strings in Resources */,
 				57AD026B2737E2E500766B0F /* Assets.xcassets in Resources */,
 				57AD02692737E2E400766B0F /* Main.storyboard in Resources */,
 			);
@@ -176,7 +186,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				573738EE273AED2600B8DE38 /* SingInViewController.swift in Sources */,
 				578172DD273951C8005DB1F2 /* phoneTableViewCell.swift in Sources */,
 				5717D23C273AB51B0079E33E /* Shopping.swift in Sources */,
 				57AD02662737E2E400766B0F /* ViewController.swift in Sources */,
@@ -210,6 +219,15 @@
 				573738EC273AEA5B00B8DE38 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		57AD455E273BBC5B0020AD9F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57AD455D273BBC5B0020AD9F /* ar */,
+				57AD455F273BBC620020AD9F /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

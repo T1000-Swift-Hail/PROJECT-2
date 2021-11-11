@@ -22,7 +22,7 @@ class phoneTableViewCell: UITableViewCell {
     func contentCell (photo : UIImage, name :String , price : Double ){
         imgPhone.image = photo
         namePhone.text = name
-        pricePhone.text = "\(price)SAR "
+        pricePhone.text = "\(price) SAR "
        
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
