@@ -21,37 +21,34 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         
-        guard let image =  UIImage(named: "1") else {return}
+        guard let image =  UIImage(named: "1img") else {return}
         arrPlate.append(Plate.init(name: "Mountains", description: "Mountain mural", photo: image))
          
-        guard let image =  UIImage(named: "2") else {return}
+        guard let image =  UIImage(named: "2img") else {return}
         arrPlate.append(Plate.init(name: "Mountains", description: "Mountain mural", photo: image))
         
-        guard let image = UIImage(named: "3") else {return}
+        guard let image = UIImage(named: "3img") else {return}
         arrPlate.append(Plate.init(name: "Mountains", description: "Mountain mural", photo: image))
         
-        guard let image = UIImage(named: "4") else {return}
+        guard let image = UIImage(named: "4img") else {return}
         arrPlate.append(Plate.init(name: "Beaches", description: "Beach canvas wall art", photo: image))
         
-        guard let image = UIImage(named: "5") else {return}
+        guard let image = UIImage(named: "5img") else {return}
         arrPlate.append(Plate.init(name: "Canvas mural", description: "Beautiful Canvas Wall Painting", photo: image))
         
-        guard let image = UIImage(named: "6") else {return}
+        guard let image = UIImage(named: "6img") else {return}
         arrPlate.append(Plate.init(name: "Girl",  description: "canvas painting", photo: image))
         
-        guard let image = UIImage(named: "7") else {return}
-        arrPlate.append(Plate.init(name: "Boy", description: "canvas painting", photo: image))
-        
-        guard let image = UIImage(named: "8") else {return}
+//        guard let image = UIImage(named: "7img") else {return}
+//        arrPlate.append(Plate.init(name: "Boy", description: "canvas painting", photo: image))
+//        
+        guard let image = UIImage(named: "8img") else {return}
         arrPlate.append(Plate.init(name: "Canvas mural", description: "Beautiful Canvas Wall Painting", photo: image))
         
-        guard let image = UIImage(named: "9") else {return}
+        guard let image = UIImage(named: "9img") else {return}
         arrPlate.append(Plate.init(name: "coffee cup", description: "canvas painting", photo: image))
         
-        guard let image = UIImage(named: "10") else {return}
-        arrPlate.append(Plate.init(name: "love", description: "canvas painting", photo: image))
-        
-    }
+}
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrPlate.count
     }
@@ -60,9 +57,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell") as! HomeTableViewCell
         let Date = arrPlate[indexPath.row]
         cell.setupCell(photo: Date.photo, name: Date.name, description: Date.description)
-       // cell.btnAddFavorite.tag = indexPath.row
-    // cell.btnAddfavorite.addTarget(self, action: #selector(AddFavorite(sender :)),
-      // for: .touchUpInside)
+      
         return cell
     }
     
@@ -73,18 +68,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         print("cell index = \(indexPath.row)")
         
     }
-    @IBAction func addFavorite(_ sender: Any) {
-    
-//        print("button index = \(sender.tag)")
-//        sender.setImage(UIImage(systemName: "heart.fill"), for: .normal)
-    }
+   
 }
-
 
 
 struct Plate{
     let name: String
-//    let price: Double
     let description: String
     let photo: UIImage
 }

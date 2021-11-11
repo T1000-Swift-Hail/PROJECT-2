@@ -12,16 +12,16 @@
 		F6129974273BCF7600DA3A65 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6129976273BCF7600DA3A65 /* Localizable.strings */; };
 		F62E3194273BF387002687E4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E3193273BF387002687E4 /* CollectionViewController.swift */; };
 		F62E3196273BF3B1002687E4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E3195273BF3B1002687E4 /* CollectionViewCell.swift */; };
-		F62E3198273C42CE002687E4 /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E3197273C42CE002687E4 /* FirstScreenViewController.swift */; };
 		F63A4705273C62DD00E79BF6 /* PopArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63A4704273C62DD00E79BF6 /* PopArtViewController.swift */; };
-		F63A4707273C630900E79BF6 /* PopArtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63A4706273C630900E79BF6 /* PopArtTableViewCell.swift */; };
-		F684434F273C47CE000E5972 /* thirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684434E273C47CE000E5972 /* thirdScreenViewController.swift */; };
 		F697F2AE2737C1C5002E68D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F697F2AD2737C1C5002E68D0 /* AppDelegate.swift */; };
 		F697F2B02737C1C5002E68D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F697F2AF2737C1C5002E68D0 /* SceneDelegate.swift */; };
 		F697F2B22737C1C5002E68D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F697F2B12737C1C5002E68D0 /* ViewController.swift */; };
 		F697F2B52737C1C5002E68D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F697F2B32737C1C5002E68D0 /* Main.storyboard */; };
 		F697F2BA2737C1C6002E68D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F697F2B82737C1C6002E68D0 /* LaunchScreen.storyboard */; };
 		F6A0FC5B27384E7C00614955 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0FC5A27384E7C00614955 /* HomeViewController.swift */; };
+		F6E04E55273CF84F00F84EDB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E04E54273CF84F00F84EDB /* FirstViewController.swift */; };
+		F6E04E57273CFB5B00F84EDB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E04E56273CFB5B00F84EDB /* SecondViewController.swift */; };
+		F6E04E5B273D225400F84EDB /* PopArtCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E04E5A273D225400F84EDB /* PopArtCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +32,7 @@
 		F6129975273BCF7600DA3A65 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F62E3193273BF387002687E4 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		F62E3195273BF3B1002687E4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		F62E3197273C42CE002687E4 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
 		F63A4704273C62DD00E79BF6 /* PopArtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopArtViewController.swift; sourceTree = "<group>"; };
-		F63A4706273C630900E79BF6 /* PopArtTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopArtTableViewCell.swift; sourceTree = "<group>"; };
-		F684434E273C47CE000E5972 /* thirdScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdScreenViewController.swift; sourceTree = "<group>"; };
 		F697F2AA2737C1C5002E68D0 /* PERUGIA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PERUGIA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F697F2AD2737C1C5002E68D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F697F2AF2737C1C5002E68D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +41,9 @@
 		F697F2B92737C1C6002E68D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F697F2BB2737C1C6002E68D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6A0FC5A27384E7C00614955 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F6E04E54273CF84F00F84EDB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F6E04E56273CFB5B00F84EDB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F6E04E5A273D225400F84EDB /* PopArtCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopArtCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		F62E3199273C45D8002687E4 /* FirstScreen */ = {
 			isa = PBXGroup;
 			children = (
-				F62E3197273C42CE002687E4 /* FirstScreenViewController.swift */,
+				F6E04E54273CF84F00F84EDB /* FirstViewController.swift */,
 			);
 			path = FirstScreen;
 			sourceTree = "<group>";
@@ -68,7 +68,7 @@
 		F62E319A273C46DD002687E4 /* SecondScreen */ = {
 			isa = PBXGroup;
 			children = (
-				F684434E273C47CE000E5972 /* thirdScreenViewController.swift */,
+				F6E04E56273CFB5B00F84EDB /* SecondViewController.swift */,
 			);
 			path = SecondScreen;
 			sourceTree = "<group>";
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				F63A4704273C62DD00E79BF6 /* PopArtViewController.swift */,
-				F63A4706273C630900E79BF6 /* PopArtTableViewCell.swift */,
+				F6E04E5A273D225400F84EDB /* PopArtCollectionViewCell.swift */,
 			);
 			path = FifthScreen;
 			sourceTree = "<group>";
@@ -209,17 +209,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E04E57273CFB5B00F84EDB /* SecondViewController.swift in Sources */,
+				F6E04E5B273D225400F84EDB /* PopArtCollectionViewCell.swift in Sources */,
 				F63A4705273C62DD00E79BF6 /* PopArtViewController.swift in Sources */,
 				F62E3194273BF387002687E4 /* CollectionViewController.swift in Sources */,
 				F6A0FC5B27384E7C00614955 /* HomeViewController.swift in Sources */,
+				F6E04E55273CF84F00F84EDB /* FirstViewController.swift in Sources */,
 				F697F2B22737C1C5002E68D0 /* ViewController.swift in Sources */,
 				F62E3196273BF3B1002687E4 /* CollectionViewCell.swift in Sources */,
-				F62E3198273C42CE002687E4 /* FirstScreenViewController.swift in Sources */,
 				F697F2AE2737C1C5002E68D0 /* AppDelegate.swift in Sources */,
 				F6003EB627384B6800E7C84E /* HomeTableViewCell.swift in Sources */,
-				F684434F273C47CE000E5972 /* thirdScreenViewController.swift in Sources */,
 				F697F2B02737C1C5002E68D0 /* SceneDelegate.swift in Sources */,
-				F63A4707273C630900E79BF6 /* PopArtTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

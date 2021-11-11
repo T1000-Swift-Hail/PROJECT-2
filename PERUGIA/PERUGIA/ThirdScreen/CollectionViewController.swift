@@ -19,9 +19,6 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
 
     
     
-   
-    
-    
     
     var timer : Timer?
     var currentCellIndex = 0

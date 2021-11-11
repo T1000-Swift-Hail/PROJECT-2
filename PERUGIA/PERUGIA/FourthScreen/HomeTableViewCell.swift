@@ -12,11 +12,9 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var imgPlatePhoto: UIImageView!
     @IBOutlet weak var lblPlateName: UILabel!
     
-    @IBOutlet weak var lblPlatePrice: UILabel!
-    
     @IBOutlet weak var lblPlateDrscription: UILabel!
     
-
+//    var check = true
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -37,8 +35,20 @@ class HomeTableViewCell: UITableViewCell {
     @IBAction func addFavorite(_ sender: UIButton) {
         print("clicked")
         
-        sender.setImage(UIImage(systemName: "heart.fill"), for: .normal)
-
+        
+        let currentImage = sender.imageView?.image
+        
+        if currentImage == UIImage(systemName: "heart.fill") {
+            
+            
+            sender.setImage(UIImage(systemName: "heart"), for: .normal)
+            
+            
+        } else {
+            
+            sender.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+            
+        }
 
    
         }
