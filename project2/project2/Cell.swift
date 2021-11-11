@@ -28,6 +28,10 @@ class Cell: UITableViewCell {
 //        productprice.text = "\(price) SAR"
 //    }
     @IBAction func btnAdd(_ sender: UIButton) {
+        let product = Product(name: productName.text ?? "", price: Int(productprice.text ?? "0") ?? 0 ,photo: imgproduct.image!)
+        shoppingCart.items.append(product)
+//        btnAdd.titleLable?.text = "Added"
+        
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
