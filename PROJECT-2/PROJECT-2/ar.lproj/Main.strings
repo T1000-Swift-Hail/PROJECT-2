@@ -1,27 +1,27 @@
 
 /* Class = "UITabBarItem"; title = "shoppingCart"; ObjectID = "7XI-vu-Z7k"; */
-"7XI-vu-Z7k.title" = "shoppingCart";
+"7XI-vu-Z7k.title" = "عربة التسوق";
 
 /* Class = "UITextField"; placeholder = "userName"; ObjectID = "BIW-xq-2wi"; */
-"BIW-xq-2wi.placeholder" = "userName";
+"BIW-xq-2wi.placeholder" = "اسم المستخدم";
 
 /* Class = "UILabel"; text = "Title"; ObjectID = "DEW-uY-yZh"; */
 "DEW-uY-yZh.text" = "Title";
 
 /* Class = "UITabBarItem"; title = "Home"; ObjectID = "S8t-Tq-dxO"; */
-"S8t-Tq-dxO.title" = "Home";
+"S8t-Tq-dxO.title" = "الصفحة الرئيسية";
 
 /* Class = "UIButton"; configuration.title = "Login"; ObjectID = "dfc-j4-mdY"; */
-"dfc-j4-mdY.configuration.title" = "Login";
+"dfc-j4-mdY.configuration.title" = "تسجيل الدخول";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dfc-j4-mdY"; */
 "dfc-j4-mdY.normalTitle" = "Button";
 
 /* Class = "UITextField"; placeholder = "passWord"; ObjectID = "gEH-a7-hDB"; */
-"gEH-a7-hDB.placeholder" = "passWord";
+"gEH-a7-hDB.placeholder" = "كلمه السر";
 
 /* Class = "UITabBarItem"; title = "profile"; ObjectID = "gJE-Le-5fi"; */
-"gJE-Le-5fi.title" = "profile";
+"gJE-Le-5fi.title" = "الملف الشخصي";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "xYe-CB-NbO"; */
 "xYe-CB-NbO.text" = "Label";

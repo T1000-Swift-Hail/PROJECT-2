@@ -10,12 +10,12 @@ class TableViewController: UITableViewController {
     
     let product: Product? = nil
     var Listofproducts = [
-        Product(name: "darkChocolate", image: UIImage(named: "images-6")!),
-        Product(name:"brownChocolate", image: UIImage(named: "images-5")!),
-        Product(name:"whiteChocolate", image: UIImage(named: "images-8")!),
+        Product(name: "darkChocolate".localized, image: UIImage(named: "images-6")!),
+        Product(name:"brownChocolate".localized, image: UIImage(named: "images-5")!),
+        Product(name:"whiteChocolate".localized, image: UIImage(named: "images-8")!),
         
-        Product(name:"proteinChocolate", image: UIImage(named: "images-4")!),
-    Product(name:"belgianChocolate", image: UIImage(named: "images-9")!)]
+        Product(name:"proteinChocolate".localized, image: UIImage(named: "images-4")!),
+        Product(name:"belgianChocolate".localized, image: UIImage(named: "images-9")!)]
     
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
@@ -41,8 +41,8 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let alert = UIAlertController(title: "Add", message: "Add product", preferredStyle: .actionSheet)
-        let addAction = UIAlertAction(title: "Add", style: .cancel, handler:{ action in
+        let alert = UIAlertController(title: "Add".localized, message: "Add product".localized, preferredStyle: .actionSheet)
+        let addAction = UIAlertAction(title: "Add".localized, style: .cancel, handler:{ action in
             
             myShoppingCart.items.append(self.Listofproducts[indexPath.row])
             
@@ -87,18 +87,18 @@ class TableViewController: UITableViewController {
         
         //getting an instance of UIAlertController
         //getting an instance of UIAlertController
-        let alert = UIAlertController(title: "What's Listofproduct ?", message: nil, preferredStyle: .alert)
+        let alert = UIAlertController(title: "What's Listofproduct ?".localized, message: nil, preferredStyle: .alert)
         
         //Adding Cancel Button
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel".localized, style: .cancel, handler: nil))
         
         //adding a text field
         alert.addTextField(configurationHandler: { textField in
-            textField.placeholder = "Input your product here..."
+            textField.placeholder = "Input your product here...".localized
         })
         
         //adding an action "O.K."
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+        alert.addAction(UIAlertAction(title: "OK".localized, style: .default, handler: { action in
             
             if let name = alert.textFields?.first?.text {
                 
@@ -128,3 +128,11 @@ class TableViewController: UITableViewController {
     
 }
 
+extension String {
+    
+    var localized: String {
+        return NSLocalizedString(self, comment: "")
+        
+    }
+    
+}
