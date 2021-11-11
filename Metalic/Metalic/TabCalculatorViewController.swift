@@ -21,52 +21,65 @@ class TabCalculatorViewController: UIViewController {
     var conversionType = ConversionType.mm
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
     
-    func calculateMM(NumberOfteaath:Double, OutDimeter:Double){
-        guard let intNumberNT : Double = Double(textfiledNT.text ?? "nil") else {return}
-        guard let intNumberOD : Double = Double(textfieldOD.text ?? "nil") else {return}
+    func calculateMM(NumberOfteaath:Double, OutDimeter:Double) -> String {
+        guard let intNumberNT : Double = Double(textfiledNT.text ?? "nil") else {return ""}
+        guard let intNumberOD : Double = Double(textfieldOD.text ?? "nil") else {return ""}
         
         
         let resDP = ((intNumberOD * intNumberNT) / intNumberNT + 2)
         let MOD = ((resDP)/intNumberNT)
-        
-        conversionLabel.text = "\(String(format:"%.2f",MOD)) mm"
+        let resultMM = "\(String(format:"%.2f",MOD)) MOD"
+        conversionLabel.text = resultMM
+        return resultMM
     }
     
     
-    func calculateInch(numberOfTeeth:Double, outDimeter:Double){
-        guard let intNumberNT : Double = Double(textfiledNT.text ?? "nil") else { return }
-        guard let intNumberOD : Double = Double(textfieldOD.text ?? "nil") else { return }
+    func calculateInch(numberOfTeeth:Double, outDimeter:Double) -> String {
+        guard let intNumberNT : Double = Double(textfiledNT.text ?? "nil") else { return "" }
+        guard let intNumberOD : Double = Double(textfieldOD.text ?? "nil") else { return "" }
         let resDP = ((intNumberOD * intNumberNT) / intNumberNT + 2)
-        conversionLabel.text = "\(String(format:"%.2f",resDP)) Inch"
+        let resultInch = "\(String(format:"%.2f",resDP)) Dimetral"
+        conversionLabel.text = resultInch
         
-        
+        return resultInch
     }
-    @IBAction func CalculateButton(_ sender: Any) {  guard let intNumberNT : Double = Double(textfiledNT.text ?? "nil") else {return}
+    @IBAction func CalculateButton(_ sender: Any) {
+        var numberOfTeeth = 0.0
+        var outDimeter = 0.0
+        guard let intNumberNT : Double = Double(textfiledNT.text ?? "nil") else {return}
         guard let intNumberOD : Double = Double(textfieldOD.text ?? "nil") else {return}
+        numberOfTeeth = intNumberNT
+        outDimeter = intNumberOD
         switch conversionType {
         case .mm:
-            let convertedValue: () = calculateMM(NumberOfteaath:intNumberNT , OutDimeter: intNumberOD)
-            conversionLabel.text = "\(convertedValue) Pound"
+            
+           let convertedValue = calculateMM(NumberOfteaath: numberOfTeeth , OutDimeter: outDimeter)
+            conversionLabel.text = "\(convertedValue) "
         case .inch :
-            let convertedValue: () = calculateInch(numberOfTeeth: intNumberNT,outDimeter: intNumberOD);           conversionLabel.text = "\(convertedValue) Inch"
+            let convertedValue = calculateInch(numberOfTeeth: numberOfTeeth ,outDimeter: outDimeter)
+            conversionLabel.text = "\(convertedValue)"
         }
     }
     
-    @IBAction func segmentAction(_ sender: Any) {
-        
+   
+    @IBAction func segmantUnitAction (_ sender: Any, forEvent event: UIEvent) {
         switch segmantUnit.selectedSegmentIndex {
-            
         case 0:
-            conversionType = .mm; conversionLabel.text = "0.0 MM"
+            conversionType = .mm
+            conversionLabel.text = "0.0 Module"
         case 1:
-            conversionType = .inch; conversionLabel.text = "0.0 Inch"
+            conversionType = .inch
+            conversionLabel.text = "0.0 Dimetral"
         default:
-            conversionType = .mm; conversionLabel.text = "0.0 MM"}
+            conversionType = .mm
+            conversionLabel.text = "0.0 Module"}
     }
     
 }

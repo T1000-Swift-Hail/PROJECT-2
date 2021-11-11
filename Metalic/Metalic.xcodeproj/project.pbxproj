@@ -23,6 +23,7 @@
 		D8E14B18273BAADB0098A6FD /* CaviarDreams_BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8E14B14273BAADB0098A6FD /* CaviarDreams_BoldItalic.ttf */; };
 		D8E14B19273BAADB0098A6FD /* CaviarDreams.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8E14B15273BAADB0098A6FD /* CaviarDreams.ttf */; };
 		D8E14B1A273BAADB0098A6FD /* CaviarDreams_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8E14B16273BAADB0098A6FD /* CaviarDreams_Italic.ttf */; };
+		D8E14B1C273CEA2D0098A6FD /* secondcalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E14B1B273CEA2D0098A6FD /* secondcalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		D8E14B14273BAADB0098A6FD /* CaviarDreams_BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_BoldItalic.ttf; sourceTree = "<group>"; };
 		D8E14B15273BAADB0098A6FD /* CaviarDreams.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams.ttf; sourceTree = "<group>"; };
 		D8E14B16273BAADB0098A6FD /* CaviarDreams_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Italic.ttf; sourceTree = "<group>"; };
+		D8E14B1B273CEA2D0098A6FD /* secondcalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondcalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				D8AA8BD4273A60BA00D40045 /* TabCalculatorViewController.swift */,
 				D8AA8BD6273A6A2700D40045 /* HomeTabBarViewController.swift */,
 				D8E14B10273AB33B0098A6FD /* DifinationView.swift */,
+				D8E14B1B273CEA2D0098A6FD /* secondcalculatorViewController.swift */,
 			);
 			path = Metalic;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			files = (
 				D8AA8BD127390B8100D40045 /* Registration.swift in Sources */,
 				D8AA8BC12737F55A00D40045 /* LoginPage.swift in Sources */,
+				D8E14B1C273CEA2D0098A6FD /* secondcalculatorViewController.swift in Sources */,
 				D8AA8BB12737E5A600D40045 /* ViewController.swift in Sources */,
 				D8AA8BAD2737E5A600D40045 /* AppDelegate.swift in Sources */,
 				D8AA8BAF2737E5A600D40045 /* SceneDelegate.swift in Sources */,
