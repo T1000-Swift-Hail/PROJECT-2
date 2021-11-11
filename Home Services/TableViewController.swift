@@ -7,25 +7,29 @@
 
 import UIKit
 
- // Arry of the name and image in services
+ // Arry of the name and image in services for localized to Arabic
 
 class TableViewController: UITableViewController {
     
     
     
     let products = [
-        Product(name: "Electrecial", image: UIImage(named: "images")!),
-        Product(name: "Air conditioning", image: UIImage(named: "images-1")!),
-        Product(name: "Plumbing", image: UIImage(named: "images-2")!),
-        Product(name: "Cleaning", image: UIImage(named: "download-2")!),
-        Product(name: "Satellite", image: UIImage(named: "download-3")!),
-        Product(name: "Camera", image: UIImage(named: "images-3")!)
+        Product(name: "Electrecial".localized, image: UIImage(named: "images")!),
+        Product(name: "Air conditioning".localized, image: UIImage(named: "images-1")!),
+        Product(name: "Plumbing".localized, image: UIImage(named: "images-2")!),
+        Product(name: "Cleaning".localized, image: UIImage(named: "download-2")!),
+        Product(name: "Satellite".localized, image: UIImage(named: "download-3")!),
+        Product(name: "Camera".localized, image: UIImage(named: "images-3")!),
+        Product(name: "Painting".localized, image: UIImage(named: "images-4")!)
+        
     ]
     
-
+ // extension for title in servise list and favorit list localized
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Serivse List".localized
+        self.title = "Favorites List".localized
         
     }
     
@@ -39,7 +43,7 @@ class TableViewController: UITableViewController {
         
     }
     
-    // The product name in cout of row section
+    // The product name in count of row section
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -115,4 +119,16 @@ class TableViewController: UITableViewController {
      }
      */
     
+ // extension localized in Arabic of Arry productons
+
+}
+
+
+extension String {
+    
+    var localized: String {
+        return NSLocalizedString(self, comment: "")
+   
+    }
+
 }

@@ -8,13 +8,15 @@
 import Foundation
 import UIKit
 
-// struct of user how login in app
+// struct of user login in app
 
 struct User {
     
     var username : String
     var address : String
     var passward : Int
+    
+    // function if user put username and address and password return true
     
     func login(username : String, address : String, password : String ) -> Bool {
        
@@ -23,6 +25,8 @@ struct User {
         return true
         
     }
+    
+  // static username
     
     static func getAllUsers(arrayOfUsers: [User]) {
         for user in arrayOfUsers {

@@ -22,6 +22,8 @@ class ListTableViewCell: UITableViewCell {
         
     }
 
+    // func selected to bool
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

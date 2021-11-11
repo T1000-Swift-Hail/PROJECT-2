@@ -124,7 +124,7 @@
             </objects>
             <point key="canvasLocation" x="286.95652173913044" y="-1356.0267857142856"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Services List-->
         <scene sceneID="BWQ-HM-B6y">
             <objects>
                 <tableViewController id="zeL-ah-1rH" customClass="TableViewController" customModule="Home_Services" customModuleProvider="target" sceneMemberID="viewController">
@@ -140,27 +140,27 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="82"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJA-Xe-dhd">
-                                            <rect key="frame" x="28" y="19" width="298" height="44"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJA-Xe-dhd">
+                                            <rect key="frame" x="92" y="19" width="298" height="44"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="93D-et-rX2">
-                                            <rect key="frame" x="334" y="1" width="80" height="80"/>
+                                            <rect key="frame" x="20" y="11" width="64" height="60"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="80" id="xOf-yu-dO8"/>
-                                                <constraint firstAttribute="height" constant="80" id="yng-6m-ncc"/>
+                                                <constraint firstAttribute="width" constant="64" id="jzt-fS-Eqh"/>
+                                                <constraint firstAttribute="height" constant="60" id="wLf-iz-tO3"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="93D-et-rX2" firstAttribute="leading" secondItem="uJA-Xe-dhd" secondAttribute="trailing" constant="8" id="2lt-cF-G3u"/>
-                                        <constraint firstItem="uJA-Xe-dhd" firstAttribute="top" secondItem="Hdw-WG-fSY" secondAttribute="topMargin" constant="8" id="3j4-ca-1eD"/>
-                                        <constraint firstItem="93D-et-rX2" firstAttribute="centerY" secondItem="Hdw-WG-fSY" secondAttribute="centerY" id="64b-RN-eRQ"/>
-                                        <constraint firstItem="uJA-Xe-dhd" firstAttribute="leading" secondItem="Hdw-WG-fSY" secondAttribute="leadingMargin" constant="8" id="TWt-vj-hFd"/>
-                                        <constraint firstAttribute="trailing" secondItem="93D-et-rX2" secondAttribute="trailing" id="ZZw-n1-lGw"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="uJA-Xe-dhd" secondAttribute="bottom" constant="8" id="cga-5x-buW"/>
+                                        <constraint firstItem="uJA-Xe-dhd" firstAttribute="top" secondItem="Hdw-WG-fSY" secondAttribute="topMargin" constant="8" id="6aU-bV-Sls"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="uJA-Xe-dhd" secondAttribute="bottom" constant="8" id="Ht7-K8-vw4"/>
+                                        <constraint firstItem="uJA-Xe-dhd" firstAttribute="leading" secondItem="93D-et-rX2" secondAttribute="trailing" constant="8" symbolic="YES" id="JsR-yW-RPB"/>
+                                        <constraint firstItem="93D-et-rX2" firstAttribute="top" secondItem="Hdw-WG-fSY" secondAttribute="topMargin" id="UVn-uO-32b"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="uJA-Xe-dhd" secondAttribute="trailing" constant="4" id="crh-B8-Wp0"/>
+                                        <constraint firstItem="93D-et-rX2" firstAttribute="leading" secondItem="Hdw-WG-fSY" secondAttribute="leadingMargin" id="rFJ-sU-qzx"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -174,7 +174,7 @@
                             <outlet property="delegate" destination="zeL-ah-1rH" id="ZbD-tc-npr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="xbO-Wl-ZlN"/>
+                    <navigationItem key="navigationItem" title="Services List" largeTitleDisplayMode="always" id="xbO-Wl-ZlN"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DnL-lA-b1d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -279,8 +279,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FcX-WR-Vo1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Services" image="square.grid.2x2" catalog="system" id="9Z4-cZ-aSd"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gET-P0-p9Q">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="gET-P0-p9Q">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -344,7 +344,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Favorites List " id="gFT-da-A0K"/>
+                    <navigationItem key="navigationItem" title="Favorites List " largeTitleDisplayMode="always" id="gFT-da-A0K"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjf-fE-ZoC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

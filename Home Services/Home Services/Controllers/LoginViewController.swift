@@ -11,7 +11,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-   
+   // Link username and password and address
     
     @IBOutlet weak var username: UITextField!
     
@@ -39,11 +39,13 @@ class LoginViewController: UIViewController {
         let inputPassword = Int(password.text ?? "0") ?? 0
         if (username.text == user.username) && (inputPassword == user.passward) {
            
+            //perform to suegue to profile after login
+           
             performSegue(withIdentifier: "profile", sender: nil)
 
         } else {
             
-           // Here if the user dont but username and password
+           // Here if the user dont but username and password see this massage
             
             
             let alert = UIAlertController(title: "Error", message: "wrong username or password or address", preferredStyle: .alert)

@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Home Services
+
+  Created by Munira abdullah on 06/04/1443 AH.
+  
+*/
+
+ // Localizable for servise and titl in Arabic
+
+
+"Electrecial" = "كهربائي";
+"Air conditioning" = "تكيف";
+"Plumbing" = "سباك";
+"Cleaning" = "تنظيف";
+"Satellite" = "الاقمار الصناعية";
+"Camera" = "كميرات مراقبه";
+"Serivse List" = "الخدمات";
+"Painting" = "دهان";
+"Favorites List" = "المفضلات";

@@ -15,7 +15,7 @@ class FavsTableViewController: UITableViewController {
         
     }
     
- 
+ // in view will Appear in reload data
     
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
