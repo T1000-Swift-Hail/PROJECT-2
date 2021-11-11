@@ -26,30 +26,71 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginButt(_ sender: UIButton) {
+        
+        let userEmail = userEmailTextField.text ?? ""
+        let userPassword = passwordTextField.text ?? ""
+        
+        if  userEmail.isEmpty || userPassword.isEmpty {
+            let myAlert = UIAlertController(title: "Login Invalid", message:"All fields are required!", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+                
+            myAlert.addAction(okAction)
+            present(myAlert , animated : true , completion : nil)
     }
+     else{
+            let myAlert = UIAlertController(title: "Login is successfully", message:"Welcome To My Perfume", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+                
+            myAlert.addAction(okAction)
+            present(myAlert , animated : true , completion : nil) }
+        
+        performSegue(withIdentifier: "loginIdentifier" , sender: nil)
+        }
+    
+
+
+            
+    
+    @IBAction func createNewAcount(_ sender: UIButton) {
+        performSegue(withIdentifier: "createNewAcount", sender: nil)
+    }
+    
+  
+        
+    
     
     @IBAction func signUpButt(_ sender: Any) {
         
-//        let userEmail = userEmailSign.text
-//        let userPassword = userPasswordSign.text
-//        let repeatPasswordUser = repeatPsswordSign.text
-//        if ( userEmail.isEmpty || userPassword.isEmpty || repeatPasswordUser.isEmpty )
-//        {
-//                   displyMyAlertMessage("All fields are required!")
-//                   return
-//              }
-//               if (userPassword1 != repeatPasswordUser1)
-//             {
-//                  displyMyAlertMessage("Passwords do not match!")
-//                   return
-//              }
-//            }
-//    func displyMyAlertMessage(userMessage : String){
-//            var myAlert = UIAlertController(title: "Alert", message:userMessage, preferredStyle: .alert)
-//           let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
-//           myAlert.addAction(okAction)
-//           self.presentationController(myAlert , animated : true , completion : nil)
+        let userEmail =  userEmailSign.text ?? ""
+        let userPassword = userPasswordSign.text ?? ""
+        let repeatUserPassword = repeatPsswordSign.text ?? ""
+        
+        if  userEmail.isEmpty || userPassword.isEmpty || repeatUserPassword.isEmpty {
+            let myAlert = UIAlertController(title: "Invalid Sign-Up", message:"All fields are required!", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+                
+            myAlert.addAction(okAction)
+            present(myAlert , animated : true , completion : nil)
+            
+        }
+        
+        else if (userPassword != repeatUserPassword){
+            let alert = UIAlertController(title: "Invalid Sign-Up", message:"Passwords do not match!", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+            alert.addAction(okAction)
+            self.present(alert , animated : true , completion : nil)
+        }
+        
+        else {
+            let alert = UIAlertController(title: "Sign-Up is successfully", message:"Welcome To My Perfume!", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+            alert.addAction(okAction)
+            self.present(alert , animated : true , completion : nil)
+                       
+        }
+        performSegue(withIdentifier: "signUpIdentifier", sender: nil)
+        
        }
-    
 }
+
 

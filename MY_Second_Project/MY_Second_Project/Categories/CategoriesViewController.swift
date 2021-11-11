@@ -8,48 +8,28 @@
 import UIKit
 
 
-//enum Suges:String {
-//
-//    case MenPerfumesViewController = "Men Perfumes"
-//    case WomenPerfumeViewController = "Women Perfumes"
-//}
-//class CategoriesViewController: UIViewController {
-//var check = true
-//let titleNeedToPass = " "
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Do any additional setup after loading the view.
-//    }
-//
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if check {
-//             let vc = segue.destination as? MenPerfumesViewController
-//            vc?.getData = titleNeedToPass
-//        } else {
-//
-//        }
-//    }
-//
-//
-//
-//    @IBAction func menPerfumesButt(_ sender: Any) {
-//
-//    //    @IBAction func menPerfumes(_ sender: UIButton) {
-//
-//        if check {
-//            performSegue(withIdentifier: Suges.MenPerfumesViewController.rawValue, sender: nil)
-//
-//        } else {
-//            performSegue(withIdentifier: Suges.WomenPerfumeViewController.rawValue, sender: nil)
-//        }
-//        }
-//
-//
-//
-//
-//    }
-//
+class CategoriesViewController: UIViewController {
+
+    override func viewDidLoad() {
+       super.viewDidLoad()
+  }
+
+    @IBAction func menPerfumeButt(_ sender: UIButton) {
+        performSegue(withIdentifier: "MenPerfumes", sender: nil)
+        
+    }
+    
+    
+    @IBAction func womenPerfumeButt(_ sender: UIButton) {
+        performSegue(withIdentifier: "WomenPerfume" , sender: nil)
+    }
+    
+    @IBAction func homePerfumeButt(_ sender: UIButton) {
+        performSegue(withIdentifier: "HomePerfume", sender: nil)
+    }
+   
+    }
+
 
     /*
     // MARK: - Navigation

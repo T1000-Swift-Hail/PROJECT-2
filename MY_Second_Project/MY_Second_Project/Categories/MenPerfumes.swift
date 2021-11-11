@@ -20,21 +20,26 @@ class MenPerfumes: UITableViewCell {
         // Initialization code
     }
 
-    func contentCell(perfumesImage : UIImage , perfumesName :String , perfumesPrice : Double , perfumesSize : Int){
+    func contentCell(perfume : Perfume){
         
-        perfumeName.text = perfumesName
-        perfumeSize.text = "\(perfumesSize)ml"
-        perfumePrice.text = "\(perfumesPrice) SAR"
-        imgMenPerfumes.image = perfumesImage
+        perfumeName.text = perfume.perfumeName
+        perfumeSize.text = "\(perfume.perfumeSize) ml "
+        perfumePrice.text = "\(perfume.perfumePrice) SAR"
+        imgMenPerfumes.image = perfume.perfumeImg
     }
     
-    
+
     @IBAction func addToCartButt(_ sender: UIButton) {
-        let PerfumeMen = Perffume(perfumeName: perfumeName.text ?? "", perfumeSize: Int(perfumeSize.text ?? "0" ) ?? 0 , perfumePrice: Double(perfumePrice.text ?? "0.0") ?? 0.0 , perfumeImg: imgMenPerfumes.image!)
-        cart.product.append(PerfumeMen)
-//        let Perffumee = Perffume(perfumeName: perfumeName.text ?? "", perfumeSize: Int(perfumeSize.text ?? "0" ) ?? 0 , perfumePrice: Double(perfumePrice.text ?? "0.0") ?? 0.0, perfumeImg: perfumeImg.image!)
-//        cart.product.append(Perffumee)
+        
+        let perfumeSize = Int(perfumeSize.text ?? "0") ?? 0
+        let perfumePrice = Double(perfumePrice.text ?? "0.0") ?? 0.0
+
+        let newPerfum = Perfume(perfumeName: perfumeName.text!, perfumeSize: perfumeSize, perfumePrice: perfumePrice, perfumeImg: imgMenPerfumes.image!)
+        
+
+        myShoppingCart.products.append(newPerfum)
     }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

@@ -18,19 +18,17 @@ class WomenPerfumes: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    func contentCell(perfumesImage : UIImage , perfumesName :String , perfumesPrice : Double , perfumesSize : Int){
+    func contentCell(perfume : Perfume){
         
-        perfumeName.text = perfumesName
-        perfumeSise.text = "\(perfumesSize)ml"
-        perfumePrice.text = "\(perfumesPrice) SAR"
-        imgPerfume.image = perfumesImage
+        perfumeName.text = perfume.perfumeName
+        perfumeSise.text = "\(perfume.perfumeSize) ml"
+        perfumePrice.text = "\(perfume.perfumePrice) SAR"
+        imgPerfume.image = perfume.perfumeImg
     }
     
     @IBAction func addToCartButt(_ sender: UIButton) {
-        let PerfumeWomen = Perffume(perfumeName: perfumeName.text ?? "", perfumeSize: Int(perfumeSise.text ?? "0") ?? 0, perfumePrice: Double(perfumePrice.text ?? "0.0") ?? 0.0, perfumeImg: imgPerfume.image!)
-        cart.product.append(PerfumeWomen)
-//        let Perffumee = Perffume(perfumeName: perfumeName.text ?? "", perfumeSize: Int(perfumeSize.text ?? "0" ) ?? 0 , perfumePrice: Double(perfumePrice.text ?? "0.0") ?? 0.0, perfumeImg: perfumeImg.image!)
-//        cart.product.append(Perffumee)
+
+     
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

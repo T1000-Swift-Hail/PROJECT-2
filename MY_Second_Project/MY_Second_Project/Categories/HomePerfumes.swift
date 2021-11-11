@@ -21,17 +21,16 @@ class HomePerfumes: UITableViewCell {
     }
     
    
-    func contentCell(perfumesImage : UIImage , perfumesName :String , perfumesPrice : Double , perfumesSize : Int){
+    func contentCell(perfume : Perfume){
         
-        perfumeName.text = perfumesName
-        perfumeSize.text = "\(perfumesSize)ml"
-        perfumePrice.text = "\(perfumesPrice) SAR"
-        perfumeImg.image = perfumesImage
+        perfumeName.text = perfume.perfumeName
+        perfumeSize.text = "\(perfume.perfumeSize) ml"
+        perfumePrice.text = "\(perfume.perfumePrice) SAR"
+        perfumeImg.image = perfume.perfumeImg
     }
     
     @IBAction func addInCart(_ sender: UIButton) {
-        let Perffumee = Perffume(perfumeName: perfumeName.text ?? "", perfumeSize: Int(perfumeSize.text ?? "0" ) ?? 0 , perfumePrice: Double(perfumePrice.text ?? "0.0") ?? 0.0, perfumeImg: perfumeImg.image!)
-        cart.product.append(Perffumee)
+
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

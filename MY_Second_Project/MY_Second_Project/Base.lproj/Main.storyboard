@@ -50,7 +50,6 @@
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vn5-UH-Bcd"/>
                                             <action selector="loginButt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jk2-mT-i6d"/>
                                         </connections>
                                     </button>
@@ -61,7 +60,7 @@
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="bux-W9-mCu" kind="show" id="FMd-1A-2vk"/>
+                                            <action selector="createNewAcount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nlq-Zk-KbH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -93,9 +92,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="jhC-lo-4mg"/>
                     <connections>
-                        <outlet property="PasswordTextField" destination="pUm-02-kNk" id="NgY-Pu-zhf"/>
                         <outlet property="loginButt" destination="oMA-HG-DPL" id="9vT-Ot-fQe"/>
+                        <outlet property="passwordTextField" destination="pUm-02-kNk" id="nJ7-t4-UUF"/>
                         <outlet property="userEmailTextField" destination="wk7-92-dId" id="XlP-L7-5Es"/>
+                        <segue destination="1tQ-0H-3Xb" kind="show" identifier="loginIdentifier" id="gaG-JY-5Yn"/>
+                        <segue destination="bux-W9-mCu" kind="show" identifier="createNewAcount" id="h7P-xy-xGU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -168,8 +169,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Create"/>
                                 <connections>
-                                    <action selector="registerButton:" destination="bux-W9-mCu" eventType="touchUpInside" id="WPE-Mk-Y1o"/>
-                                    <action selector="signUpButt:" destination="bux-W9-mCu" eventType="touchUpInside" id="Kx3-e0-IX4"/>
+                                    <action selector="signUpButt:" destination="bux-W9-mCu" eventType="touchUpInside" id="Hpe-NT-zTf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -187,9 +187,9 @@
                     <navigationItem key="navigationItem" id="R0M-q8-8Kr"/>
                     <connections>
                         <outlet property="repeatPsswordSign" destination="t0c-mf-wmZ" id="uoy-WA-Gm5"/>
-                        <outlet property="signUpButt" destination="AlT-OQ-KB3" id="SGw-l1-Yfl"/>
                         <outlet property="userEmailSign" destination="eoX-qH-ReB" id="ZE3-jy-qap"/>
                         <outlet property="userPasswordSign" destination="j2E-Ky-PZj" id="p4D-eV-T5h"/>
+                        <segue destination="1tQ-0H-3Xb" kind="show" identifier="signUpIdentifier" id="Ofd-m3-0cm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B72-EU-h6R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -227,7 +227,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                                 <connections>
-                                                    <segue destination="mfG-kc-qoq" kind="show" id="wtA-La-bvi"/>
+                                                    <action selector="menPerfumeButt:" destination="1tQ-0H-3Xb" eventType="touchUpInside" id="GEt-ma-ZEO"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -256,7 +256,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
-                                                    <segue destination="emw-tR-cM5" kind="show" id="2Ha-M8-dEw"/>
+                                                    <action selector="womenPerfumeButt:" destination="1tQ-0H-3Xb" eventType="touchUpInside" id="2qr-kn-OQM"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -285,7 +285,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
-                                                    <segue destination="HZV-jr-776" kind="show" id="0sy-hI-Zh7"/>
+                                                    <action selector="homePerfumeButt:" destination="1tQ-0H-3Xb" eventType="touchUpInside" id="tq2-zU-HjC"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -307,10 +307,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WAa-iD-faj"/>
+                    <connections>
+                        <segue destination="mfG-kc-qoq" kind="show" identifier="MenPerfumes" id="d4J-zF-HT3"/>
+                        <segue destination="HZV-jr-776" kind="show" identifier="HomePerfume" id="2ci-ir-srb"/>
+                        <segue destination="emw-tR-cM5" kind="show" identifier="WomenPerfume" id="QVh-fa-3oO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kos-16-Jkk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1869.5652173913045" y="879.91071428571422"/>
+            <point key="canvasLocation" x="1943" y="903"/>
         </scene>
         <!--Men Perfumes View Controller-->
         <scene sceneID="L39-9r-Ga0">
@@ -363,7 +368,6 @@
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="filled" title="Add to Cart"/>
                                                     <connections>
-                                                        <action selector="addToCart:" destination="mfG-kc-qoq" eventType="touchUpInside" id="aTC-bS-5xf"/>
                                                         <action selector="addToCartButt:" destination="vaK-sd-Vyw" eventType="touchUpInside" id="mAB-hV-EpJ"/>
                                                     </connections>
                                                 </button>
@@ -601,15 +605,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Yy-a5-Be7">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="6O0-ax-EYy">
-                            <connections>
-                                <action selector="editng:" destination="Fbh-Sa-f6b" id="JRc-d8-a03"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="6O0-ax-EYy"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="cartTable" destination="16Z-th-0ka" id="EoW-4c-Rs6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0je-zp-KbC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -618,6 +615,7 @@
         <!--Home Perfume View Controller-->
         <scene sceneID="uCY-Jv-KYd">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uo5-8J-sYk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="HZV-jr-776" customClass="HomePerfumeViewController" customModule="MY_Second_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hXD-fG-TP4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -714,7 +712,6 @@
                         <outlet property="tableview" destination="rp2-nX-GeE" id="9en-SH-Vhf"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uo5-8J-sYk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3856.521739130435" y="1369.4196428571429"/>
         </scene>
@@ -757,6 +754,9 @@
             <point key="canvasLocation" x="877" y="96"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gaG-JY-5Yn"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="IMG_0191 2" width="903" height="828"/>
         <image name="cart" catalog="system" width="128" height="102"/>
