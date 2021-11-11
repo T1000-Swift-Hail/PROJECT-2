@@ -19,6 +19,7 @@ class InformationViewController: UIViewController{
     var setUserResult : Int = 0
     var setUserWeight : Double = 0
     var setUserHeight : Double = 0
+
     
     @IBOutlet weak var segmentControl: UISegmentedControl!
     
@@ -39,8 +40,8 @@ class InformationViewController: UIViewController{
     
     @IBAction func changeModes(_ sender: UISegmentedControl) {
         laDisplyBestWeight.text = " \(results[segmentControl.selectedSegmentIndex])  ! "
-        
-        
+
+
     }
     func bmiCalclator (weight : Double , height : Double ) -> String {
         
@@ -56,36 +57,26 @@ class InformationViewController: UIViewController{
         if bmi > 25 {
             segmentControl.selectedSegmentIndex = 0
             segmentControl.setTitle("overweight", forSegmentAt: 0)
-            view.backgroundColor = .red
-            return "Your BMI is \(bmi) . You are overweight"
+            view.backgroundColor = .systemRed
+            return "Your BMI is \(bmi) .You're Overweight!"
             
         } else if bmi >= 18.5 && bmi <= 25 {
             segmentControl.selectedSegmentIndex = 1
             segmentControl.setTitle("Normal Rang", forSegmentAt: 1)
-            view.backgroundColor = .green
-            return " Your BMI is \(bmi) . You are at a normal weight"
+            view.backgroundColor = .systemGreen
+            return "Your BMI is \(bmi) . You're Healthy!"
             
         } else {
             segmentControl.selectedSegmentIndex = 2
             segmentControl.setTitle("Under Weight", forSegmentAt: 2)
-            view.backgroundColor = .yellow
-            return "Your BMI is \(bmi) . You are underweight"
-        }
+            view.backgroundColor = .systemYellow
+            return "Your BMI is \(bmi) . You're Underweight!"
+       }
+        
     }
     
     
     
-    //    }
-    //    mutating func bmiCalclator(height: Float, weight: Float) {
-    //        let BMIvalue = weight / pow(height, 2)
-    //
-    //        if BMIvalue < 18.5 {
-    //            bmi = BCBMI(value: BMIvalue, advice: "You're Underweight!", color: .systemYellow)
-    //        } else if BMIvalue < 24.9 {
-    //            bmi = BCBMI(value: BMIvalue, advice: "You're Healthy!", color: .systemGreen)
-    //        } else {
-    //            bmi = BCBMI(value: BMIvalue, advice: "You're Overweight!", color: .systemRed)
-    //        }
-    
+   
     
 }

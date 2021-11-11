@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E045B39273BC81C008B4813 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E045B38273BC81C008B4813 /* HistoryTableViewController.swift */; };
 		9E04E1FE2737066300CF00C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04E1FD2737066300CF00C4 /* AppDelegate.swift */; };
 		9E04E2002737066300CF00C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04E1FF2737066300CF00C4 /* SceneDelegate.swift */; };
 		9E04E2022737066300CF00C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04E2012737066300CF00C4 /* ViewController.swift */; };
@@ -15,10 +16,12 @@
 		9E04E20A2737066500CF00C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E04E2082737066500CF00C4 /* LaunchScreen.storyboard */; };
 		9E088AC22739168C0097BE07 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E088AC12739168C0097BE07 /* HealthKit.framework */; };
 		9E088AC6273920CE0097BE07 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E088AC5273920CE0097BE07 /* InformationViewController.swift */; };
-		9E1CA3B1273A83B400C60ECA /* TableViewControllerHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1CA3B0273A83B400C60ECA /* TableViewControllerHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E045B34273BB48F008B4813 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		9E045B35273BB48F008B4813 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9E045B38273BC81C008B4813 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		9E04E1FA2737066300CF00C4 /* bestWight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bestWight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E04E1FD2737066300CF00C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E04E1FF2737066300CF00C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +32,6 @@
 		9E04E20B2737066500CF00C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E088AC12739168C0097BE07 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9E088AC5273920CE0097BE07 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
-		9E1CA3B0273A83B400C60ECA /* TableViewControllerHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +74,7 @@
 				9E04E2082737066500CF00C4 /* LaunchScreen.storyboard */,
 				9E04E20B2737066500CF00C4 /* Info.plist */,
 				9E088AC5273920CE0097BE07 /* InformationViewController.swift */,
-				9E1CA3B0273A83B400C60ECA /* TableViewControllerHistory.swift */,
+				9E045B38273BC81C008B4813 /* HistoryTableViewController.swift */,
 			);
 			path = bestWight;
 			sourceTree = "<group>";
@@ -127,6 +129,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 9E04E1F12737066300CF00C4;
 			productRefGroup = 9E04E1FB2737066300CF00C4 /* Products */;
@@ -158,9 +161,9 @@
 			files = (
 				9E04E2022737066300CF00C4 /* ViewController.swift in Sources */,
 				9E04E1FE2737066300CF00C4 /* AppDelegate.swift in Sources */,
-				9E1CA3B1273A83B400C60ECA /* TableViewControllerHistory.swift in Sources */,
 				9E04E2002737066300CF00C4 /* SceneDelegate.swift in Sources */,
 				9E088AC6273920CE0097BE07 /* InformationViewController.swift in Sources */,
+				9E045B39273BC81C008B4813 /* HistoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +174,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9E04E2042737066300CF00C4 /* Base */,
+				9E045B34273BB48F008B4813 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -179,6 +183,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9E04E2092737066500CF00C4 /* Base */,
+				9E045B35273BB48F008B4813 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -251,6 +257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

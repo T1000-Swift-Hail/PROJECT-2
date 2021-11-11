@@ -17,6 +17,8 @@ class ViewController: UIViewController , UIPickerViewDataSource , UIPickerViewDe
     
     @IBOutlet weak var textWeight: UITextField!
     @IBOutlet weak var textHeight: UITextField!
+    
+    @IBOutlet weak var textName: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -48,16 +50,27 @@ class ViewController: UIViewController , UIPickerViewDataSource , UIPickerViewDe
         self.view.endEditing(true)
         return true
     }
+        
 }
     
     @IBAction func calculateWeight(_ sender: Any) {
         
-        //
+        if textWeight.text?.isEmpty ?? true || textWeight.text?.isEmpty ?? true || textName.text?.isEmpty ?? true {
+            
+            let alert = UIAlertController (title:  "", message:"Please Inter Your Weight And Height!" , preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Done".loclaized, style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }else{
+            
+            
+            
+        }
         
         
-        // let result
+//        let result
         
-        performSegue(withIdentifier: "resultScreedn", sender: nil)
+        performSegue(withIdentifier: "resultScreen", sender: nil)
     }
     
     
@@ -66,11 +79,11 @@ class ViewController: UIViewController , UIPickerViewDataSource , UIPickerViewDe
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "resultScreedn" {
+        if segue.identifier == "resultScreen" {
             
             let informationViewController = segue.destination as! InformationViewController
             
-            print("-height:\(textHeight.text)")
+//           print("-height:\(textHeight.text)")
             informationViewController.setUserResult = 1
             informationViewController.setUserWeight = Double(textWeight.text ?? "1") ?? 1
             informationViewController.setUserHeight = Double(textHeight.text ?? "1") ?? 1
@@ -79,4 +92,13 @@ class ViewController: UIViewController , UIPickerViewDataSource , UIPickerViewDe
     }
 
 
+}
+
+extension String {
+    
+    var loclaized: String {
+        return NSLocalizedString(self, comment: "")
+    }
+    
+    
 }
