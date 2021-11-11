@@ -454,11 +454,11 @@ Until 2 AM</string>
             </objects>
             <point key="canvasLocation" x="4280" y="631"/>
         </scene>
-        <!--location-->
+        <!--Location-->
         <scene sceneID="3WZ-vw-RD8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fD3-6m-lYL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="location" image="location.fill" catalog="system" selectedImage="location" id="NK6-Dd-FJx"/>
+                    <tabBarItem key="tabBarItem" title="Location" image="location.fill" catalog="system" selectedImage="location" id="NK6-Dd-FJx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zxI-1F-BKg">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

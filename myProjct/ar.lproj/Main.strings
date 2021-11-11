@@ -9,10 +9,11 @@
 "NK6-Dd-FJx.title" = "الموقع";
 
 /* Class = "UILabel"; text = "Marssai Restaurant in Hail is one of the best restaurants specialized in serving seafood. It is located in Prince Saud bin Abdul Mohsen Street, Al-Naqra neighborhood. The restaurant is distinguished by its beautiful and calm decoration, which makes it one of the finest and best restaurants in Hail. It contains a varied menu of seafood such as shrimp, lobster, grilled and fried fish, fillet, seafood soup and many more."; ObjectID = "OSD-wa-qQo"; */
-"OSD-wa-qQo.text" = "يعد مطعم مرسى بحائل من أفضل المطاعم المتخصصة فى تقديم المأكولات البحرية. يقع في شارع الأمير سعود بن عبد المحسن حي النقرة. يتميز المطعم بديكوره الجميل والهادئ مما يجعله من أرقى وأفضل المطاعم في حائل. يحتوي على قائمة متنوعة من المأكولات البحرية مثل الجمبري والكركند والأسماك المشوية والمقلية والفيليه وحساء المأكولات البحرية وغيرها الكثير";
+"OSD-wa-qQo.text" ="يعد مطعم مرساي بحائل من أفضل المطاعم المتخصصة فى تقديم المأكولات البحرية. يقع في شارع الأمير سعود بن عبد المحسن حي النقرة. يتميز المطعم بديكوره الجميل والهادئ مما يجعله من أرقى وأفضل المطاعم في حائل. يحتوي على قائمة متنوعة من المأكولات البحرية مثل الجمبري والكركند والأسماك المشوية والمقلية والفيليه وحساء المأكولات البحرية وغيرها الكثير";
+
 
 /* Class = "UILabel"; text = "From 12 PM\nUntil 2 AM"; ObjectID = "VWt-t8-Vpk"; */
-"VWt-t8-Vpk.text" = "من الساعة ١٢ م\حتى ٢ ص";
+"VWt-t8-Vpk.text" = "من الساعة ١٢ م \ حتى الساعة ٢ ص";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WOT-0X-Xtu"; */
 "WOT-0X-Xtu.normalTitle" = "Button";

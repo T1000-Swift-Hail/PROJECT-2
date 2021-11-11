@@ -25,10 +25,9 @@ class MenueController: UIViewController , UITableViewDelegate , UITableViewDataS
         arrayProduct.append(Pruducts.init(name: NSLocalizedString("Crab salad", comment: ""), price: 44.00 , discrip: NSLocalizedString("detailsProduct5", comment: ""), photo: UIImage(named: "Soshi1")!))
         arrayProduct.append(Pruducts.init(name: NSLocalizedString("Shrimp", comment:"" ), price: 44.00 , discrip:NSLocalizedString("detailsProduct6", comment: ""), photo: UIImage(named: "img4")!))
         arrayProduct.append(Pruducts.init(name: NSLocalizedString("Chicken tikka masala", comment:"") , price: 77.00 , discrip: NSLocalizedString("detailsProduct7", comment:"" ), photo: UIImage(named: "img12")!))
-        arrayProduct.append(Pruducts.init(name: NSLocalizedString("Fettuccine ", comment: ""), price: 45.00 , discrip: NSLocalizedString("detailsProduct8", comment:""), photo: UIImage(named: "img2")!))
+        arrayProduct.append(Pruducts.init(name: NSLocalizedString("Fettuccine", comment: ""), price: 45.00 , discrip: NSLocalizedString("detailsProduct8", comment:""), photo: UIImage(named: "img2")!))
         arrayProduct.append(Pruducts.init(name: NSLocalizedString("Risotto Seafood", comment: "") , price: 55.00 , discrip: NSLocalizedString("detailsProduct9", comment: ""), photo: UIImage(named: "img9")!))
         arrayProduct.append(Pruducts.init(name:NSLocalizedString("Beef Lasagna", comment:""), price: 65.00 , discrip: NSLocalizedString("detailsProduct10", comment: ""), photo: UIImage(named: "img3")!))
-        arrayProduct.append(Pruducts.init(name: "Hot kibok", price: 33.00 , discrip: NSLocalizedString("detailsProduct11", comment: "" ), photo: UIImage(named: "img10")!))
         arrayProduct.append(Pruducts.init(name:NSLocalizedString("Appetizer mix", comment: "") , price: 32.00 , discrip:NSLocalizedString("detailsProduct12", comment: ""), photo: UIImage(named: "img14")!))
         arrayProduct.append(Pruducts.init(name: NSLocalizedString("Tabbouleh", comment: ""), price: 38.00 , discrip:NSLocalizedString("detailsProduct13", comment: "" ), photo: UIImage(named: "img7")!))
     }

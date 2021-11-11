@@ -1,10 +1,12 @@
-/* 
+/*
   Localizable.strings
   Marsaai
 
-  Created by Huda N S on 04/04/1443 AH.
+  Created by Huda N S on 05/04/1443 AH.
   
 */
+
+
 
 "Urmaki sushi" = "Urmaki sushi";
 "detailsProduct1" = "Delicious rumaki sushi in the Marssai way";
@@ -36,11 +38,9 @@
 "Beef Lasagna" = "Beef Lasagna";
 "detailsProduct10" = "Lasagna with fresh meat" ;
 
-"Hot kibok" = "Hot kibok" ;
-"detailsProduct11" = "Chili flavored kibok" ;
-
 "Appetizer mix" = "Appetizer mix" ;
 "detailsProduct12" = "Marssai special appetizer" ;
 
 "Tabbouleh" = "Tabbouleh" ;
 "detailsProduct13" = "Tabbouleh pineapple" ;
+

@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   Marsaai
 
@@ -36,6 +36,7 @@
 
 "Beef Lasagna" ="ريش لحم" ;
 "detailsProduct10" = "ريش اللحم الطازجة" ;
+
 
 "Appetizer mix" = "مشكل مقبلات" ;
 "detailsProduct12" = "مشكل مقبلات مرساي المميزة";
