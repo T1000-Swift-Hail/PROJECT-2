@@ -25,7 +25,11 @@
 Services var ourServices ,training, boxing,swimming,yaki,zumba
  var DiversityofDiversityOfDiversityOfDiversityof ,"Cash", "Mada", "Applepay"
 Customers If the customer has a gold card, he gets discounted services, and the subscription price is 500 RS
-The customer enters and records the username and code and there are our services with prices ,reservation confirmation .
+
+
+As a user I login using my user name& password so that I use the app
+As a user can see the servicse and chosing any servicse he want 
+As a user can see all servicse he choosing in order 
 
 
 
