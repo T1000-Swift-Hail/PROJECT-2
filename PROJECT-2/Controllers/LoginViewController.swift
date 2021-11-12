@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     
  let customer = Customer(name: "Hind", age: 20, service: [Service(name: "training", description: "muscle strengthening", price: 140)], password: "987Hh")
    
-    
+  // The customer writes the user name and password and enters it on the application
     override func viewDidLoad() {
         super.viewDidLoad()
         

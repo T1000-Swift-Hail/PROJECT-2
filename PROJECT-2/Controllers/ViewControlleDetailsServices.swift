@@ -17,7 +17,7 @@ class ViewControlleDetailsServices: UIViewController {
 
     override func viewDidLoad(){
         super.viewDidLoad()
-        
+// The customer shows him the services,description and the price .
         titel.text = servicDetails.name
         descreb.text = servicDetails.description
         price.text = "\(servicDetails.price) SR"
