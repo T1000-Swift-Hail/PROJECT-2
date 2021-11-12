@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F46840227395E70003B6EAD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46840127395E70003B6EAD /* LoginVC.swift */; };
+		9F4D0401273EBD4200F4A107 /* SingleProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4D0400273EBD4200F4A107 /* SingleProductVC.swift */; };
 		9F8C1A3B2737C26500DCCA49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8C1A3A2737C26500DCCA49 /* AppDelegate.swift */; };
 		9F8C1A3D2737C26500DCCA49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8C1A3C2737C26500DCCA49 /* SceneDelegate.swift */; };
 		9F8C1A3F2737C26500DCCA49 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8C1A3E2737C26500DCCA49 /* HomeVC.swift */; };
@@ -37,6 +38,7 @@
 		88B61411817F25E8346EC4A0 /* Pods_DecAntique.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DecAntique.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B68CE1BC61AE1364E396386 /* Pods-DecAntique.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecAntique.release.xcconfig"; path = "Target Support Files/Pods-DecAntique/Pods-DecAntique.release.xcconfig"; sourceTree = "<group>"; };
 		9F46840127395E70003B6EAD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		9F4D0400273EBD4200F4A107 /* SingleProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleProductVC.swift; sourceTree = "<group>"; };
 		9F8C1A372737C26500DCCA49 /* DecAntique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecAntique.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8C1A3A2737C26500DCCA49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F8C1A3C2737C26500DCCA49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				A435E7D6273A645F004DA530 /* AddNewProduct.swift */,
 				A435E77E2739CF73004DA530 /* SettingsVC.swift */,
 				A45072AC273B9FE7001042DE /* UserListVC.swift */,
+				9F4D0400273EBD4200F4A107 /* SingleProductVC.swift */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				A435E78C273A1E2E004DA530 /* ProductCell.swift in Sources */,
 				A435E7DB273AF8C2004DA530 /* UIApplication+extension.swift in Sources */,
 				9F8C1A3B2737C26500DCCA49 /* AppDelegate.swift in Sources */,
+				9F4D0401273EBD4200F4A107 /* SingleProductVC.swift in Sources */,
 				9F8C1A592739406200DCCA49 /* UserModel.swift in Sources */,
 				A45072AD273B9FE7001042DE /* UserListVC.swift in Sources */,
 				A45072AF273BA0F1001042DE /* UserCell.swift in Sources */,

@@ -2,7 +2,7 @@
 //  ProductCell.swift
 //  DecAntique
 //
-//  Created by Dalal AlSaidi on 04/04/1443 AH.
+//  Created by Dalal AlSaidi on 04/04/1443 AH..
 //
 
 import UIKit

@@ -207,7 +207,7 @@ class DataBaseHelper {
     
     func getCartDataByProduct(user_id: Int32, product_id: Int32) -> Carts? {
         
-        var fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Carts")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Carts")
         let converstationKeyPredicate = NSPredicate(format: "user_id = %d", user_id)
         let messageKeyPredicate = NSPredicate(format: "product_id = %d", product_id)
         let andPredicate = NSCompoundPredicate(type: .and, subpredicates: [converstationKeyPredicate, messageKeyPredicate])
@@ -248,6 +248,32 @@ class DataBaseHelper {
         }
         
         return result
+    }
+    
+    func removeProduct(product_id: Int32) -> String {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Product")
+        fetchRequest.predicate = NSPredicate(format: "id = %d", product_id)
+        
+        let cartRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Carts")
+        
+        do {
+            let fetchedItems = try context.fetch(fetchRequest)
+            for item in fetchedItems{
+                context.delete(item as! NSManagedObject)
+                
+                cartRequest.predicate = NSPredicate(format: "product_id = %d", (item as! NSManagedObject).value(forKey: "id") as! Int32)
+                let fetchedCartItems = try context.fetch(cartRequest)
+                for one in fetchedCartItems {
+                    context.delete(one as! NSManagedObject)
+                }
+            }
+            try context.save()
+            
+            return "success"
+        } catch {
+            print(error.localizedDescription)
+            return error.localizedDescription
+        }
     }
     
     // MARK: - carts table

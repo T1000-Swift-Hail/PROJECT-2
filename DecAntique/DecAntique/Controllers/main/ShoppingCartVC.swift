@@ -86,6 +86,10 @@ extension ShoppingCartVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let toVC = self.storyboard?.instantiateViewController( withIdentifier: "SingleProductVC") as! SingleProductVC
+        toVC.product = dataSource[indexPath.row]
+        self.navigationController?.pushViewController(toVC, animated: true)
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {

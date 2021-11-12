@@ -7,16 +7,7 @@
 
 import Foundation
 
-enum LoginType: String {
-  case normal = "Sign In normally"
-  case facebook = "Facebook"
-  case apple = "Apple"
-  case google = "Google"
-  
-  var name: String {
-    return self.rawValue
-  }
-}
+
 
 struct UserModel {
     var id: Int32?

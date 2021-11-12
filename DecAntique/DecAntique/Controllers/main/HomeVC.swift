@@ -23,7 +23,13 @@ class HomeVC: BaseVC, UISearchBarDelegate {
         uiTableview.delegate = self
         uiTableview.dataSource = self
         uiTableview.tableFooterView = UIView()
-
+        
+        let userID = Int32(userDefaluts.integer(forKey: "user_id"))
+        
+        if userID == 0 {
+            self.tabBarController?.viewControllers?.remove(at: 3)
+        }
+        
         userType = userDefaluts.string(forKey: "user_type") ?? "customer"
         
         if userDefaluts.string(forKey: "user_type") == "manager" {
@@ -141,6 +147,26 @@ class HomeVC: BaseVC, UISearchBarDelegate {
             }
         }
     }
+    
+    func callDeleteItem(_ indexPath: IndexPath)  {
+        
+        let userId = Int32(userDefaluts.integer(forKey: "user_id"))
+        
+        if userId == 0 {
+            showAlert("Please login to delete product.")
+            return
+        }
+        
+        let message = "Would you like to delete this product?"
+        showAlert(title: nil, message: message, positive: "OK", negative: "CANCEL") {
+            let res =  DataBaseHelper.shared.removeProduct(product_id: self.dataSource[indexPath.row].id)
+
+            if res.hasPrefix("success") {
+                self.dataSource.remove(at: indexPath.row)
+                self.uiTableview.reloadData()
+            }
+        }
+    }
 }
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
@@ -157,12 +183,27 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let toVC = self.storyboard?.instantiateViewController( withIdentifier: "SingleProductVC") as! SingleProductVC
+        toVC.product = dataSource[indexPath.row]
+        self.navigationController?.pushViewController(toVC, animated: true)
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         if userType == "manager" {
-            return nil
+            let action = UIContextualAction(style: .normal, title: "Delete", handler: { (action, view, completionHandler) in
+                
+                self.callDeleteItem(indexPath)
+                completionHandler(true)
+            })
+
+            action.image = UIImage(systemName: "trash")
+            action.image?.withTintColor(.systemGreen)
+            action.backgroundColor = .red
+
+            let configuration = UISwipeActionsConfiguration(actions: [action])
+            return configuration
         }
         
         let flag = dataSource[indexPath.row].added_cart
@@ -185,11 +226,15 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
+        //when product image exist
         if let data = dataSource[indexPath.row].photo, let img = UIImage(data: data) {
             let rate = img.size.height / img.size.width
-            return self.view.bounds.size.width * rate
+            return 300
+//            self.view.bounds.size.width * rate
         }
-        return 350
+        
+        //default - when no image
+        return 250
     }
     
     

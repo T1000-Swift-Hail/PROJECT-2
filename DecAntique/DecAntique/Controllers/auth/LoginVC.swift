@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginVC: BaseVC {
+class LoginVC: BaseVC, UITextFieldDelegate {
 
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
@@ -15,6 +15,18 @@ class LoginVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tfPassword.delegate = self
+        tfPassword.returnKeyType = .go
+    }
+        
+    //MARK: - ui textfield delegate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == tfPassword {
+            doLogin()
+            return true
+        }
+        
+        return false
     }
     
     func isValidCheck() -> Bool {
@@ -32,16 +44,18 @@ class LoginVC: BaseVC {
         return true
     }
     
-    @IBAction func didTapLogin(_ sender: Any) {
+    func doLogin() {
         if !isValidCheck() {
             return
         }
         
+        //show loading view
         showLoadingView(vc: self)
         let email = tfEmail.text
         let password = tfPassword.text
         
         if let user = DataBaseHelper.shared.getOneUser(id: nil, email: email) {
+            //hide loading view
             hideLoadingView()
             if user.password == password {
                 userDefaluts.set(user.id, forKey: "user_id")
@@ -58,6 +72,10 @@ class LoginVC: BaseVC {
             hideLoadingView()
             showAlert("Email is not registered or deleted by manager.")
         }
+    }
+    
+    @IBAction func didTapLogin(_ sender: Any) {
+        doLogin()
     }
     
     
