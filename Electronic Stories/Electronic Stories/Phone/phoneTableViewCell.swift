@@ -33,6 +33,8 @@ class phoneTableViewCell: UITableViewCell {
     @IBAction func addCart(_ sender: Any) {
        let proudect = Phone(name:namePhone.text ?? "" ,price: Double(Int(pricePhone.text ?? "0") ?? 0) , photo : imgPhone.image!)
         shoppingCart.item.append(proudect)
+        
+        
 
     }
     

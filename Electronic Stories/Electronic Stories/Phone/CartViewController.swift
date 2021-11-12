@@ -46,7 +46,7 @@ class CartViewController: UIViewController , UITableViewDelegate , UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") {
+        let deleteAction = UIContextualAction(style: .destructive, title: "") {
           ( action, view, complettionHandler) in
            shoppingCart.item.remove(at :indexPath.row)
             tableView.beginUpdates()
@@ -55,10 +55,17 @@ class CartViewController: UIViewController , UITableViewDelegate , UITableViewDa
             complettionHandler(true)
         }
         
-        let favoriteAction = UIContextualAction(style: .normal, title: "Favorite") { (_, _, _) in
+        let favoriteAction = UIContextualAction(style: .normal, title: "") { (_, _, _) in
             print("Add To Favorite")
         }
+        
+        favoriteAction.image = UIImage(systemName: "heart")
+        
+        deleteAction.image = UIImage (systemName: "trash")
+        
         return UISwipeActionsConfiguration(actions: [deleteAction,favoriteAction])
     }
 
+    
+    
 }
