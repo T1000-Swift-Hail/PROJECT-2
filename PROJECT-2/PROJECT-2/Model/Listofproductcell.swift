@@ -9,7 +9,7 @@ import UIKit
 
 class Listofproductcell: UITableViewCell {
 
-    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var brandsImage: UIImageView!
     
     @IBOutlet weak var nameClothing: UILabel!
     
@@ -29,6 +29,7 @@ class Listofproductcell: UITableViewCell {
     
     let colors = [ColorType.black,ColorType.blue,ColorType.white,ColorType.yellow,ColorType.other,]
     var prodcut = Product()
+    let userDefalts = UserDefaults.standard
     
     @IBOutlet weak var addCard: UIButton!
     override func awakeFromNib() {
@@ -53,6 +54,17 @@ class Listofproductcell: UITableViewCell {
         // Initialization code
     }
 
+    @IBAction func addToCart(_ sender: UIButton) {
+    
+       // DispatchQueue.main.sync {
+        
+
+
+       // }
+        
+       
+    
+    }
     @IBAction func changeColorProduct(_ sender: UISegmentedControl) {
         guard let title = sender.titleForSegment(at: sender.selectedSegmentIndex) else { return }
      

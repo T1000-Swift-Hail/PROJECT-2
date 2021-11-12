@@ -12,11 +12,15 @@ class ListofbrandsTableViewController: UITableViewController {
         var products = Product()
         var allProducts: [Product] = []
     
+        var selectedProducts = [String]()
+        var userDefalts = UserDefaults.standard
+    
         override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         allProducts = products.getProducts()
+
             
     }
 
@@ -33,7 +37,7 @@ class ListofbrandsTableViewController: UITableViewController {
         
         cell.prodcut = allProducts[indexPath.row]
         cell.nameClothing.text = allProducts[indexPath.row].productName
-        cell.profileImage.image = allProducts[indexPath.row].uiImage
+        cell.brandsImage.image = allProducts[indexPath.row].uiImage
         cell.productImage.image = allProducts[indexPath.row].tshirtImage
         cell.prodcutImageColors = allProducts[indexPath.row].prodcutImageColors
         
@@ -50,6 +54,13 @@ class ListofbrandsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 350
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        selectedProducts.append(allProducts[indexPath.row].productName ?? "")
+        userDefalts.set(selectedProducts, forKey: "products")
     }
     
 }
