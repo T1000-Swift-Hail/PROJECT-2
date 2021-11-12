@@ -39,6 +39,8 @@
 		8B68CE1BC61AE1364E396386 /* Pods-DecAntique.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecAntique.release.xcconfig"; path = "Target Support Files/Pods-DecAntique/Pods-DecAntique.release.xcconfig"; sourceTree = "<group>"; };
 		9F46840127395E70003B6EAD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9F4D0400273EBD4200F4A107 /* SingleProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleProductVC.swift; sourceTree = "<group>"; };
+		9F4D0402273EF08500F4A107 /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Main.strings"; sourceTree = "<group>"; };
+		9F4D0403273EF08500F4A107 /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		9F8C1A372737C26500DCCA49 /* DecAntique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecAntique.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8C1A3A2737C26500DCCA49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F8C1A3C2737C26500DCCA49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"ar-SA",
 			);
 			mainGroup = 9F8C1A2E2737C26500DCCA49;
 			productRefGroup = 9F8C1A382737C26500DCCA49 /* Products */;
@@ -351,6 +354,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9F8C1A412737C26500DCCA49 /* Base */,
+				9F4D0402273EF08500F4A107 /* ar-SA */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -359,6 +363,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9F8C1A462737C26600DCCA49 /* Base */,
+				9F4D0403273EF08500F4A107 /* ar-SA */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -370,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -431,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
