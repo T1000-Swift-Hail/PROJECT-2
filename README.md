@@ -1,23 +1,22 @@
 # PROJECT-2
 
-### Based on what you’ve learned until now , create a project of your choosing (impress us with your imagination).
-### Edit this README.md file with your Project info.
-
 
 ### Project : 
-//Add project name
+// Daweerha
 
 ### Project Description :
-// Add your project description
+// It is a project for app that aims to encourage people to recycle more by giving a helpful information and tips for recycling.
 
 
 ### Features List :
 // Add your project features list
-- feature 1
-- feature 2
+- Give information and tips for recycling
+- Educate people about the waste types
+- contact people with the partners of the recycle companies in case they want to recycle their waste
 
 
 ### Define the scenes :
+
 // Add description of the screens / scenes in your application.
 
 
@@ -25,6 +24,3 @@
 // Add user stories here.   
 
 
-
-
-#### Deadline for this project :  Deliver the project by 9:00 a.m. next Thursday Nov. 11, 2021 
