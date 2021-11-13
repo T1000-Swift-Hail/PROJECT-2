@@ -51,6 +51,29 @@ class LoginAndRegisterViewController: UIViewController {
             }
         
     }
+    
+    
+    @IBAction func Signup(_ sender: Any) {
+     
+        let SignUPEmail = SignUPEmail.text
+        let SignUpPassword = SignUpPassword.text
+        
+        if SignUPEmail != nil && SignUpPassword != nil {
+            
+            
+            
+            displayAlert(withTitle: "sign up succesful", message:"",isLogin: true)
+            
+    }else{
+            
+            displayAlert(withTitle: "Try again", message: "",isLogin: false)
+            
+        }
+    
+        
+       
+    
+}
     func displayAlert(withTitle title: String, message: String,isLogin:Bool) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style:.default, handler: {
@@ -66,10 +89,5 @@ class LoginAndRegisterViewController: UIViewController {
         
     }
     
-    @IBAction func Signup(_ sender: Any) {
-        
-       
-    
-}
 }
 

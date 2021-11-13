@@ -11,6 +11,11 @@ class LineViewController: UIViewController , ChartViewDelegate {
 
     
     var lineChart = LineChartView()
+//    
+//    var factory = Busniss(busnissName: "Concret", busnissImege:UIImage(named: "ConcretFactory")!, busnissNumberEmployer: 10, busnissRevenu: 100000, busnissTotalCost: 50000, busnissNetProfit: 50000)
+//    var gasStation = Busniss(busnissName: "Gas station", busnissImege: UIImage(named:"Gas Station")!, busnissNumberEmployer: 6, busnissRevenu: 30000, busnissTotalCost: 20000, busnissNetProfit: 10000)
+//    var company = Busniss(busnissName: "Company", busnissImege: UIImage(named:"Company")!, busnissNumberEmployer: 30, busnissRevenu: 500000, busnissTotalCost: 250000, busnissNetProfit: 250000)
+//    
     override func viewDidLoad() {
         super.viewDidLoad()
         lineChart.delegate = self

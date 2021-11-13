@@ -93,6 +93,7 @@ extension ProfileViewController: UINavigationControllerDelegate,PHPickerViewCont
                             self.caching.setImage(image, forKey: "url")
                             //cache.setObject(image, forKey: NSString(string: "url"))
                             self.imegeProfile.image = image
+                            
                         }
                     }
                     

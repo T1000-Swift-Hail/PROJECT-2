@@ -13,6 +13,8 @@ import Foundation
 
 open class BarChartDataEntry: ChartDataEntry
 {
+    private var _names: [String]?
+    
     /// the values the stacked barchart holds
     private var _yVals: [Double]?
     
@@ -24,6 +26,7 @@ open class BarChartDataEntry: ChartDataEntry
     
     /// the sum of all positive values this entry (if stacked) contains
     private var _positiveSum: Double = 0.0
+   
     
     public required init()
     {
@@ -49,6 +52,8 @@ open class BarChartDataEntry: ChartDataEntry
         self.init(x: x, y: y)
         self.icon = icon
     }
+    
+    
     
     /// Constructor for normal bars (not stacked).
     public convenience init(x: Double, y: Double, icon: NSUIImage?, data: Any?)
@@ -227,4 +232,5 @@ open class BarChartDataEntry: ChartDataEntry
         
         return sum
     }
+    
 }
