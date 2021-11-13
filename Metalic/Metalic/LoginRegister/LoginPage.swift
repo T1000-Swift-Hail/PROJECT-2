@@ -18,6 +18,7 @@ class LoginPage: UIViewController {
         
         var userNames :String
         var passWords : String
+        var company : String
         
     }
     
@@ -28,10 +29,10 @@ class LoginPage: UIViewController {
     let defaults = UserDefaults.standard
     
     
-    var users  = [Users(userNames: "Anas", passWords: "123123")
-                  ,Users(userNames: "Fahad", passWords: "123")
-                  ,Users(userNames: "Khaled", passWords: "887788")
-                  ,Users(userNames: "Majed", passWords: "576576")]
+    var users  = [Users(userNames: "Anas", passWords:"123123",company: "Aramco")
+                  ,Users(userNames: "Fahad", passWords: "123",company: "Maaden")
+                  ,Users(userNames: "Khaled", passWords: "887788",company: "Saudico")
+                  ,Users(userNames: "Majed", passWords: "576576",company: "Sabic")]
     
     
     
@@ -49,25 +50,22 @@ class LoginPage: UIViewController {
             performSegue(withIdentifier: "TabBarHome" , sender: nil)
         }
        passWodText?.isSecureTextEntry = true
-        
-        
-        
+
     }
     
+    
     @IBAction func logIn(_ sender: Any) {
-        
-       
-        
-        
-        
         let userProfile = users
         guard let user = usernameText.text else {return}
-        
         guard let pass = passWodText.text else {return}
         
+       
+
+       
         for myUsers in userProfile {
             if user == myUsers.userNames && pass == myUsers.passWords  {
                 performSegue(withIdentifier: "TabBarHome", sender: nil)
+                
                 defaults.set(true, forKey: "in Login")
             }
             if  user == defaults.string(forKey: "userName") && pass == defaults.string(forKey: "passWord"){
@@ -91,7 +89,8 @@ class LoginPage: UIViewController {
     @IBAction func skipButton(_ sender: Any) {
 
         performSegue(withIdentifier: "TabBarHome", sender: nil)
-        
+        defaults.removeObject(forKey: "userName")
+        defaults.removeObject(forKey: "companyName")
     }
     func DisplayMyAlert(title: String, message: String){
         

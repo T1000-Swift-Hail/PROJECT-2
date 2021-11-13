@@ -18,7 +18,9 @@ import UIKit
 }
      //MARK: -  List Of Variables
      
-    @IBOutlet var userRegister: UITextField!
+    
+     @IBOutlet var companyName: UITextField!
+     @IBOutlet var userRegister: UITextField!
     @IBOutlet var passRegister: UITextField!
     @IBOutlet var rePassword: UITextField!
     @IBOutlet var registerLabel: UILabel!
@@ -42,8 +44,9 @@ import UIKit
        
         
             defaults.set(userRegister.text, forKey: "userName")
+            defaults.set(companyName.text, forKey: "companyName")
             defaults.set(passRegister.text, forKey: "passWord")
-            print(defaults)
+            
             DisplayMyAlert(title: "Registration", message: "You are Registed..!")
         }
         
