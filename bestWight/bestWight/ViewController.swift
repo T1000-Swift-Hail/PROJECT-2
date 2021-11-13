@@ -57,7 +57,7 @@ class ViewController: UIViewController , UIPickerViewDataSource , UIPickerViewDe
         
         if textWeight.text?.isEmpty ?? true || textWeight.text?.isEmpty ?? true || textName.text?.isEmpty ?? true {
             
-            let alert = UIAlertController (title:  "", message:"Please Enter Your Weight And Height!" , preferredStyle: .alert)
+            let alert = UIAlertController (title:  "", message:"Please Enter Your Weight And Height!" .loclaized, preferredStyle: .alert)
             
             alert.addAction(UIAlertAction(title: "Done".loclaized, style: .default, handler: nil))
             self.present(alert, animated: true)

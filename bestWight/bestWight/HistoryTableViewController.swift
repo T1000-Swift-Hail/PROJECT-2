@@ -46,8 +46,8 @@ class HistoryTableViewController: UITableViewController {
             var textFiled = UITextField()
             var textFiledTwo = UITextField()
             
-            let alert = UIAlertController(title: "Add Names", message: "", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Add", style: .default) { action in
+            let alert = UIAlertController(title: "Add Names".loclaized, message: "", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Add".loclaized, style: .default) { action in
                 
                 guard let text = textFiled.text else {return}
                 self.items.append(text)
@@ -59,7 +59,7 @@ class HistoryTableViewController: UITableViewController {
                 self.userDefaluts.set(self.weight, forKey: "weight")
                 self.tableView.reloadData()
             }
-            let cuncal = UIAlertAction(title: "cuncel", style: .cancel, handler: nil)
+            let cuncal = UIAlertAction(title: "cuncel".loclaized, style: .cancel, handler: nil)
             alert.addTextField { textFiledSet in
                 textFiledSet.placeholder = "Write Name...".loclaized
                 textFiled = textFiledSet

@@ -12,5 +12,10 @@
 "underweight" = "وزن منخفض";
 "overweight" = "وزن عالي";
 "Your BMI is \(bmi) . You're Underweight!" = "كتله الجسم هي/(كتله الجسم ) وزن منخفض";
-"Your BMI is \(bmi) . You're Healthy!" = "Your BMI is \(bmi) . You're Healthy!";
-"Your BMI is \(bmi) .You're Overweight!" = "Your BMI is \(bmi) .You're Overweight!";
+"Your BMI is \(bmi) . You're Healthy!" = "كتله الجسم هي /(كتله الجسم)وزن طبيعي";
+"Your BMI is \(bmi) .You're Overweight!" = "كتله الجسم هي /(كتله الجسم) وزن زائد";
+"Add Names" = "اضافه بيانات ";
+"Write Your Weight. " = "ادخل الوزن";
+"Add" = "اضافه";
+"cuncel" = "مسح";
+"Please Enter Your Weight And Height!" = "الرجاء ادخل الطول والوزن";
