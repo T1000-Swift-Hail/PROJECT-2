@@ -8,13 +8,29 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-
+    
+    
+    let titleNeedToPass = "OverView"
+    let sigaporeTitle = "Singaora"
+    let derscraptionNeedToPass = "This tiny island city-state is a study of fusion and contrasts bursting with wonders waiting to be explored. Tranquil parks about futuristic skyscrapers and luxe shopping malls."
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let vc = segue.destination as? SingaporeViewController
+        vc?.getData = titleNeedToPass
+        
+        let vccc = segue.destination as? SingaporeViewController
+        vccc?.getSingaporeData = derscraptionNeedToPass
+        
+        let vcc = segue.destination as? SingaporeViewController
+        vcc?.getSecondData = sigaporeTitle
+        
+    }
 
     @IBAction func romaClick(_ sender: Any) {
         let alert = UIAlertController(title: "Soon ", message: "Something new is coming.", preferredStyle: .alert)

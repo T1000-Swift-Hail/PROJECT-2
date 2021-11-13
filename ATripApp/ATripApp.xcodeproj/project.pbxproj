@@ -17,6 +17,8 @@
 		751D0145273A4708005EEAA4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751D0144273A4708005EEAA4 /* HomeViewController.swift */; };
 		751D0147273A6437005EEAA4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751D0146273A6437005EEAA4 /* SearchViewController.swift */; };
 		751D0149273A70E6005EEAA4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751D0148273A70E6005EEAA4 /* MapViewController.swift */; };
+		7552A658273FB2FF00BDB726 /* SingaporeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552A657273FB2FF00BDB726 /* SingaporeViewController.swift */; };
+		7552A65E2740592A00BDB726 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552A65D2740592A00BDB726 /* Countries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		751D0144273A4708005EEAA4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		751D0146273A6437005EEAA4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		751D0148273A70E6005EEAA4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7552A657273FB2FF00BDB726 /* SingaporeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingaporeViewController.swift; sourceTree = "<group>"; };
+		7552A65D2740592A00BDB726 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +68,53 @@
 		751D01292739A2A0005EEAA4 /* AdvisorTripApp */ = {
 			isa = PBXGroup;
 			children = (
-				751D012A2739A2A0005EEAA4 /* AppDelegate.swift */,
-				751D012C2739A2A0005EEAA4 /* SceneDelegate.swift */,
-				751D012E2739A2A0005EEAA4 /* ViewController.swift */,
+				7552A65C274058EA00BDB726 /* Modles */,
+				7552A65B274058C300BDB726 /* Assests */,
+				7552A65A274058A400BDB726 /* Resoures */,
+				7552A6592740586F00BDB726 /* VControllers */,
 				751D01302739A2A0005EEAA4 /* Main.storyboard */,
-				751D01332739A2A4005EEAA4 /* Assets.xcassets */,
 				751D01352739A2A4005EEAA4 /* LaunchScreen.storyboard */,
 				751D01382739A2A4005EEAA4 /* Info.plist */,
+			);
+			path = AdvisorTripApp;
+			sourceTree = "<group>";
+		};
+		7552A6592740586F00BDB726 /* VControllers */ = {
+			isa = PBXGroup;
+			children = (
 				751D0144273A4708005EEAA4 /* HomeViewController.swift */,
 				751D0146273A6437005EEAA4 /* SearchViewController.swift */,
 				751D0148273A70E6005EEAA4 /* MapViewController.swift */,
 				7517E241273AF62300577120 /* ReviewsTableViewController.swift */,
+				7552A657273FB2FF00BDB726 /* SingaporeViewController.swift */,
+				751D012E2739A2A0005EEAA4 /* ViewController.swift */,
+				7552A65D2740592A00BDB726 /* Countries.swift */,
 			);
-			path = AdvisorTripApp;
+			path = VControllers;
+			sourceTree = "<group>";
+		};
+		7552A65A274058A400BDB726 /* Resoures */ = {
+			isa = PBXGroup;
+			children = (
+				751D012A2739A2A0005EEAA4 /* AppDelegate.swift */,
+				751D012C2739A2A0005EEAA4 /* SceneDelegate.swift */,
+			);
+			path = Resoures;
+			sourceTree = "<group>";
+		};
+		7552A65B274058C300BDB726 /* Assests */ = {
+			isa = PBXGroup;
+			children = (
+				751D01332739A2A4005EEAA4 /* Assets.xcassets */,
+			);
+			path = Assests;
+			sourceTree = "<group>";
+		};
+		7552A65C274058EA00BDB726 /* Modles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,7 +152,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 751D01222739A2A0005EEAA4 /* Build configuration list for PBXProject "AdvisorTripApp" */;
+			buildConfigurationList = 751D01222739A2A0005EEAA4 /* Build configuration list for PBXProject "ATripApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -154,9 +192,11 @@
 				751D0149273A70E6005EEAA4 /* MapViewController.swift in Sources */,
 				7517E242273AF62300577120 /* ReviewsTableViewController.swift in Sources */,
 				751D012F2739A2A0005EEAA4 /* ViewController.swift in Sources */,
+				7552A65E2740592A00BDB726 /* Countries.swift in Sources */,
 				751D012B2739A2A0005EEAA4 /* AppDelegate.swift in Sources */,
 				751D012D2739A2A0005EEAA4 /* SceneDelegate.swift in Sources */,
 				751D0145273A4708005EEAA4 /* HomeViewController.swift in Sources */,
+				7552A658273FB2FF00BDB726 /* SingaporeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +395,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		751D01222739A2A0005EEAA4 /* Build configuration list for PBXProject "AdvisorTripApp" */ = {
+		751D01222739A2A0005EEAA4 /* Build configuration list for PBXProject "ATripApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				751D01392739A2A4005EEAA4 /* Debug */,
