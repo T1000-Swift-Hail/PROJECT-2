@@ -19,18 +19,15 @@ class Cell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    
     }
  
-//    func setupCall(photo: UIImage, name: String, price: Int) {
-//        imgproduct.image = photo
-//        productName.text = name
-//        productprice.text = "\(price) SAR"
-//    }
+
+    //add products to shoppingcart
     @IBAction func btnAdd(_ sender: UIButton) {
         let product = Product(name: productName.text ?? "", price: Int(productprice.text ?? "0") ?? 0 ,photo: imgproduct.image!)
         shoppingCart.items.append(product)
-//        btnAdd.titleLable?.text = "Added"
+
         
     }
     override func setSelected(_ selected: Bool, animated: Bool) {

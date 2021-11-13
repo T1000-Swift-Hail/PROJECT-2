@@ -19,7 +19,7 @@ class catogery_prodect_ControllerTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-       
+       // add product
         let product1 = Product(name:NSLocalizedString("Inaba", comment: "") , price: 34, photo: UIImage(named: "birds food-1")!)
        let product2 = Product(name:NSLocalizedString("kitcat", comment: "") , price: 50, photo: UIImage(named: "catfood")!)
         let product3 = Product(name:NSLocalizedString("Apoly", comment: "") , price: 34, photo: UIImage(named: "dog food2")!)
@@ -62,7 +62,7 @@ class catogery_prodect_ControllerTableViewController: UITableViewController {
         
         return cell
         
-    }
+    }//heightFoRowat
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 105
     }

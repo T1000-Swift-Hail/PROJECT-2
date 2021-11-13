@@ -84,6 +84,7 @@
 		4448A9F927390EE400669A5F /* models */ = {
 			isa = PBXGroup;
 			children = (
+				44F5FCF4273CF2280003DCC0 /* ShoppingCart.swift */,
 				4448A9FC2739377B00669A5F /* Product.swift */,
 			);
 			path = models;
@@ -109,6 +110,7 @@
 		44F0D43D2737BFBD00E0A0A0 /* project2 */ = {
 			isa = PBXGroup;
 			children = (
+				44F5FCFE273D58B70003DCC0 /* Cotroolers */,
 				4448A9F927390EE400669A5F /* models */,
 				4448A9F32738FDEB00669A5F /* images */,
 				4448A9F22738FD6E00669A5F /* Controllers */,
@@ -118,9 +120,15 @@
 				44F0D4492737BFBD00E0A0A0 /* LaunchScreen.storyboard */,
 				44F0D44C2737BFBD00E0A0A0 /* Info.plist */,
 				446EB77127395CB80068A5E1 /* Cell.swift */,
-				44F5FCF4273CF2280003DCC0 /* ShoppingCart.swift */,
 			);
 			path = project2;
+			sourceTree = "<group>";
+		};
+		44F5FCFE273D58B70003DCC0 /* Cotroolers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cotroolers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

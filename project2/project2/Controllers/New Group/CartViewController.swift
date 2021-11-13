@@ -9,12 +9,8 @@ import UIKit
 
 class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
-//    class ShoppingCart {
-//        var items = [Product]()
-//
-//    }
-    @IBOutlet weak var Edit: UIButton!
-   
+
+
     @IBOutlet weak var Add: UIButton!
     
     @IBOutlet weak var shoppingCartTable: UITableView!
@@ -24,7 +20,6 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         shoppingCartTable.delegate = self
         shoppingCartTable.dataSource = self
         
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,7 +33,7 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! UITableViewCell
+    let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! UITableViewCell
         
                 cell.textLabel?.text = shoppingCart.items[indexPath.row].name
         
@@ -47,8 +42,34 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
             }
     
+    
+    
+    @IBAction func editing(_ sender: UIButton) {
+        
+        
+        if shoppingCartTable.isEditing {
+            shoppingCartTable.isEditing = false
+        }else {
+            shoppingCartTable.isEditing = true
+         }
+        
+    }
 
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        switch editingStyle {
+        case .delete :
+            shoppingCart.items.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            
+        default :
+            return
+        }
+        
+    }
+    
+    
       
     
-
 }
+
