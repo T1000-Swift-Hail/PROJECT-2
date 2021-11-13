@@ -9,8 +9,9 @@ import UIKit
 
 class SingleViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate {
     
-    var selectedCountry: String?
+    var selectedCity: String?
     var buttonChosed: UIButton?
+    let userDefault = UserDefaults.standard
 
     @IBOutlet var textField: UITextField!
     
@@ -39,18 +40,18 @@ class SingleViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return countryList.count
+        return cityList.count
     }
     
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return countryList[row]
+        return cityList[row]
     }
     
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        selectedCountry = countryList[row] // selected item
-        textField.text = selectedCountry
+        selectedCity = cityList[row] // selected item
+        textField.text = selectedCity
     }
     
     

@@ -14,14 +14,14 @@
 /* Class = "UILabel"; text = "Choose Your Address :"; ObjectID = "5Fc-jS-QaN"; */
 "5Fc-jS-QaN.text" = "اختر عنوانك :";
 
-/* Class = "UILabel"; text = "Hello Students 👨🏼‍🎓"; ObjectID = "6hP-71-5VW"; */
-"6hP-71-5VW.text" = "مرحبا طلابنا 👨🏼‍🎓";
+/* Class = "UILabel"; text = "Welcome UOH Students👨🏼‍🎓"; ObjectID = "6hP-71-5VW"; */
+"6hP-71-5VW.text" = "مرحبا طلاب جامعة حائل 👨🏼‍🎓";
 
 /* Class = "UILabel"; text = "-Press Reserve"; ObjectID = "8Pg-xH-rSe"; */
 "8Pg-xH-rSe.text" = "-اضغط حجز";
 
 /* Class = "UILabel"; text = "If you registerd to UOH and you wish to reserve a room while in your current city, Its the place!"; ObjectID = "Aya-Hj-SiF"; */
-"Aya-Hj-SiF.text" = "اذا قمت بالتسجيل في جامعة حائل وترغب فالحصول على غرفة في السكن، انت في المكان الصحيح!";
+"Aya-Hj-SiF.text" = "اذا قمت بالتسجيل في جامعة حائل وترغب فالحصول على غرفة في السكن، اتّبع الخطوات!";
 
 /* Class = "UIButton"; configuration.title = "Reserve"; ObjectID = "BW8-5c-Mzf"; */
 "BW8-5c-Mzf.configuration.title" = "حجز";

@@ -9,23 +9,20 @@ import UIKit
 
 class DuplexViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate {
     
-    var selectedCountry: String?
-    var get = ""
+    var selectedCity: String?
+    let userDefault = UserDefaults.standard
+
     
-    //    let address:UITextField? = {
-    //        let textFiled = UITextField()
-    //
-    //        textFiled.translatesAutoresizingMaskIntoConstraints = false
-    //
-    //        return textFiled
-    //
-    //    }()
+    
     @IBOutlet var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         createPickerView()
         dismissPickerView()
+        if textField.hasText {
+            userDefault.bool(forKey: "selectedAddress")
+        }
     
     }
     
@@ -49,18 +46,19 @@ class DuplexViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return countryList.count
+        return cityList.count
     }
     
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return countryList[row]
+        return cityList[row]
     }
     
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        selectedCountry = countryList[row] // selected item
-        textField.text = selectedCountry
+        selectedCity = cityList[row] // selected item
+        textField.text = selectedCity
+        
     }
     
     
@@ -93,7 +91,7 @@ extension DuplexViewController {
  func completedAlert () {
      let alert = UIAlertController(title: "Reservation Completed!".localized, message: "AN SMS HAS BEEN SENT, THANK YOU FOR USING UOH STUDENT HOSTEL".localized, preferredStyle: .alert)
      let ok = UIAlertAction(title: "OK".localized, style: .default) { ok in
-         self.performSegue(withIdentifier: "WelcomeScreen", sender: nil)
+         print("OK")
     }
     alert.addAction(ok)
     

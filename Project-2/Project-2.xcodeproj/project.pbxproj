@@ -15,6 +15,7 @@
 		8479A4662737B9000013BB2D /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479A4652737B9000013BB2D /* Structs.swift */; };
 		8479A4692737C4C00013BB2D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479A4682737C4C00013BB2D /* LoginViewController.swift */; };
 		84A2FDC2273D05C000B9AEA0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2FDC1273D05C000B9AEA0 /* ProfileViewController.swift */; };
+		84A2FDC4273D4CA600B9AEA0 /* MyReservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2FDC3273D4CA500B9AEA0 /* MyReservation.swift */; };
 		84D788732738F60C00C35B14 /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D788722738F60C00C35B14 /* RoomsViewController.swift */; };
 		84D788752738F6D800C35B14 /* DuplexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D788742738F6D800C35B14 /* DuplexViewController.swift */; };
 		84D7887727390D5200C35B14 /* CountryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7887627390D5200C35B14 /* CountryList.swift */; };
@@ -38,6 +39,7 @@
 		8479A4652737B9000013BB2D /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		8479A4682737C4C00013BB2D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84A2FDC1273D05C000B9AEA0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		84A2FDC3273D4CA500B9AEA0 /* MyReservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReservation.swift; sourceTree = "<group>"; };
 		84D788722738F60C00C35B14 /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
 		84D788742738F6D800C35B14 /* DuplexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplexViewController.swift; sourceTree = "<group>"; };
 		84D7887627390D5200C35B14 /* CountryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryList.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				8479A4682737C4C00013BB2D /* LoginViewController.swift */,
 				84D7887C273A5DDB00C35B14 /* WelcomeScreen.swift */,
 				84A2FDC1273D05C000B9AEA0 /* ProfileViewController.swift */,
+				84A2FDC3273D4CA500B9AEA0 /* MyReservation.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				84D7887D273A5DDB00C35B14 /* WelcomeScreen.swift in Sources */,
 				8479A4512737AE260013BB2D /* AppDelegate.swift in Sources */,
 				8479A4692737C4C00013BB2D /* LoginViewController.swift in Sources */,
+				84A2FDC4273D4CA600B9AEA0 /* MyReservation.swift in Sources */,
 				8479A4532737AE260013BB2D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

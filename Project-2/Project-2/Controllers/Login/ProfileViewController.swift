@@ -9,7 +9,10 @@ import UIKit
 
 
 class ProfileViewController:UIViewController {
-
+    @IBOutlet weak var logOutName: UIButton!
+    @IBOutlet var profileID: UILabel!
+    
+    @IBOutlet var profileName: UILabel!
     @IBOutlet var showID: UILabel!
     
     @IBOutlet var showName: UILabel!
@@ -17,6 +20,11 @@ class ProfileViewController:UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        logOutName.setTitle("Log Out".localized, for: .normal)
+        profileID.text = "Student ID:".localized
+        profileName.text = "Student Name:".localized
+        
+
 //        print("1:\(userDefault.string(forKey: "id"))")
         let id = userDefault.string(forKey: "id")
         showID.text = id
@@ -24,8 +32,11 @@ class ProfileViewController:UIViewController {
         showName.text = name
     }
     
+    override func awakeFromNib() {
+        tabBarItem.title = "Profile".localized
+    }
+    
     @IBAction func logOutButton(_ sender: UIButton) {
-        
         userDefault.set(false, forKey: "isLogIn")
         userDefault.set("", forKey: "id")
         userDefault.set("", forKey: "name")
