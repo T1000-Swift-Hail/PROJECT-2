@@ -11,8 +11,7 @@ class CartViewController: UIViewController , UITableViewDelegate , UITableViewDa
 
     @IBOutlet weak var carttableView: UITableView!
     
-    
-        override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         carttableView.delegate=self

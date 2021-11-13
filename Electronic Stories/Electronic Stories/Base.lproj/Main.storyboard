@@ -38,7 +38,7 @@
                                     <constraint firstAttribute="height" constant="100" id="gOQ-6y-XyA"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Phone ">
+                                <buttonConfiguration key="configuration" style="plain" title="IPhone ">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
                                     <color key="baseForegroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                 </buttonConfiguration>
@@ -64,7 +64,7 @@
                                     <color key="baseForegroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="showPhoneProducts:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Q2-mX-JPt"/>
+                                    <segue destination="FGV-Gq-d15" kind="show" id="cxN-L5-Z7S"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -184,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QD2-MY-2N4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-613.04347826086962" y="2022.9910714285713"/>
+            <point key="canvasLocation" x="-217" y="2023"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="M9L-lq-wCr">
@@ -241,11 +241,11 @@
                                 <rect key="frame" x="0.0" y="137" width="414" height="676"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cartCell" rowHeight="133" id="mhs-cI-M8g">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="133"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cartCell" rowHeight="140" id="mhs-cI-M8g">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mhs-cI-M8g" id="3cL-hg-RdJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="133"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -280,6 +280,104 @@
             </objects>
             <point key="canvasLocation" x="1069.5652173913045" y="1277.6785714285713"/>
         </scene>
+        <!--Order View Controller-->
+        <scene sceneID="Xvm-w7-PaA">
+            <objects>
+                <viewController id="8fx-3H-oYv" customClass="OrderViewController" customModule="Electronic_Stories" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v1d-Aj-ZRo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="istockphoto-637350420-170667a" translatesAutoresizingMaskIntoConstraints="NO" id="vxv-Bu-CRI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the appropriate payment method :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UA-Hk-hFs">
+                                <rect key="frame" x="20" y="174" width="374" height="21.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="EDw-8e-hwK">
+                                <rect key="frame" x="113" y="265" width="130" height="212.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MADA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvc-MS-N2f">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VISA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCp-bS-0Ey">
+                                        <rect key="frame" x="0.0" y="95.5" width="130" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAYPAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaT-Kh-sv4">
+                                        <rect key="frame" x="0.0" y="188.5" width="130" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="AWl-FR-qXF"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="J80-2b-QFy">
+                                <rect key="frame" x="36" y="265" width="49" height="211"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p3a-VD-kHp">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                        <color key="onTintColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="madaAction:" destination="8fx-3H-oYv" eventType="valueChanged" id="Pny-Hp-Gtg"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g38-3J-Mp5">
+                                        <rect key="frame" x="0.0" y="90" width="51" height="31"/>
+                                        <color key="onTintColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="visaAction:" destination="8fx-3H-oYv" eventType="valueChanged" id="vHi-KB-r68"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jWw-Ge-a0t">
+                                        <rect key="frame" x="0.0" y="180" width="51" height="31"/>
+                                        <color key="onTintColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="paypalAction:" destination="8fx-3H-oYv" eventType="valueChanged" id="d1p-ly-0sl"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zgg-NN-bym"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vxv-Bu-CRI" firstAttribute="leading" secondItem="Zgg-NN-bym" secondAttribute="leading" id="1p2-NH-Kvw"/>
+                            <constraint firstItem="6UA-Hk-hFs" firstAttribute="leading" secondItem="Zgg-NN-bym" secondAttribute="leading" constant="20" id="6pw-3d-xfZ"/>
+                            <constraint firstItem="J80-2b-QFy" firstAttribute="leading" secondItem="Zgg-NN-bym" secondAttribute="leading" constant="36" id="7Ha-cz-BtK"/>
+                            <constraint firstItem="EDw-8e-hwK" firstAttribute="top" secondItem="6UA-Hk-hFs" secondAttribute="bottom" constant="69.5" id="9hF-Ny-eNh"/>
+                            <constraint firstAttribute="bottom" secondItem="vxv-Bu-CRI" secondAttribute="bottom" id="Dcl-9d-O2w"/>
+                            <constraint firstItem="EDw-8e-hwK" firstAttribute="leading" secondItem="J80-2b-QFy" secondAttribute="trailing" constant="28" id="O3L-dH-KXp"/>
+                            <constraint firstItem="6UA-Hk-hFs" firstAttribute="top" secondItem="Zgg-NN-bym" secondAttribute="top" constant="86" id="TF7-rW-0IS"/>
+                            <constraint firstItem="vxv-Bu-CRI" firstAttribute="top" secondItem="v1d-Aj-ZRo" secondAttribute="top" id="a7n-SS-hQd"/>
+                            <constraint firstItem="J80-2b-QFy" firstAttribute="top" secondItem="6UA-Hk-hFs" secondAttribute="bottom" constant="69.5" id="ech-JK-l1R"/>
+                            <constraint firstItem="Zgg-NN-bym" firstAttribute="trailing" secondItem="6UA-Hk-hFs" secondAttribute="trailing" constant="20" id="glz-lQ-lzE"/>
+                            <constraint firstItem="EDw-8e-hwK" firstAttribute="leading" secondItem="Zgg-NN-bym" secondAttribute="leading" constant="113" id="npA-ku-btI"/>
+                            <constraint firstItem="Zgg-NN-bym" firstAttribute="bottom" secondItem="J80-2b-QFy" secondAttribute="bottom" constant="337" id="qPm-xu-gfM"/>
+                            <constraint firstItem="vxv-Bu-CRI" firstAttribute="trailing" secondItem="Zgg-NN-bym" secondAttribute="trailing" id="ur4-KM-8Os"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vu3-Z3-hH7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rpf-Ps-sUi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3034.7826086956525" y="2047.7678571428571"/>
+        </scene>
         <!--Search View Controller-->
         <scene sceneID="Xlg-oA-H7B">
             <objects>
@@ -308,7 +406,7 @@
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="k6b-IZ-MAZ" kind="show" id="B6w-op-E9q"/>
+                                            <segue destination="k6b-IZ-MAZ" kind="show" id="Nua-JB-6Lx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHm-bZ-cYQ">
@@ -321,6 +419,7 @@
                                         <connections>
                                             <action selector="addOrder:" destination="XzO-Eq-Ngd" eventType="touchUpInside" id="Nee-lz-RvN"/>
                                             <action selector="tableview:" destination="XzO-Eq-Ngd" eventType="touchUpInside" id="51h-fs-C7K"/>
+                                            <segue destination="8fx-3H-oYv" kind="show" id="hWx-5W-cXv"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -392,13 +491,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="KEb-he-NBE">
                                 <rect key="frame" x="20" y="322" width="374" height="109"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Emil address" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7nE-TN-rIH">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Emil address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7nE-TN-rIH">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                         <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iRE-Gq-Ci1">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iRE-Gq-Ci1">
                                         <rect key="frame" x="0.0" y="75" width="374" height="34"/>
                                         <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -413,6 +512,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="sign in">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="signIn:" destination="k6b-IZ-MAZ" eventType="touchUpInside" id="EW3-kk-Uk7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kf0-Hu-8d8">
                                 <rect key="frame" x="38" y="542" width="263" height="31"/>
@@ -445,10 +547,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rYA-Sa-Obq"/>
+                    <connections>
+                        <outlet property="emailAddress" destination="7nE-TN-rIH" id="9Hx-6w-S24"/>
+                        <outlet property="password" destination="iRE-Gq-Ci1" id="kWe-mu-FJE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ytp-sk-XE6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4737.68115942029" y="1305.8035714285713"/>
+            <point key="canvasLocation" x="3819" y="1306"/>
         </scene>
         <!--Loginn View Controller-->
         <scene sceneID="hLd-0W-T7j">
@@ -536,7 +642,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IHQ-VE-Wov" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3600" y="2190"/>
+            <point key="canvasLocation" x="5155" y="2048"/>
         </scene>
         <!--Cart-->
         <scene sceneID="Q4K-yJ-eo6">
@@ -577,24 +683,6 @@
             <point key="canvasLocation" x="2020" y="503"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="80s-0D-J2r">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ejL-ip-anY" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OUh-EQ-V7W">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="k6b-IZ-MAZ" kind="relationship" relationship="rootViewController" id="cvd-cI-Lop"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DfX-pW-aNR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3818.8405797101454" y="1305.8035714285713"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="zlI-TM-ysL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qTw-uZ-pv8" sceneMemberID="viewController">
@@ -610,7 +698,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Qe-oA-Jlu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4443" y="2190"/>
+            <point key="canvasLocation" x="5936" y="2048"/>
         </scene>
         <!--Android View Controller-->
         <scene sceneID="Hog-Z2-qYZ">
@@ -661,8 +749,8 @@
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="cart.fill" catalog="system"/>
                                                     <connections>
-                                                        <action selector="addCart:" destination="akd-4Y-dVD" eventType="touchUpInside" id="abl-RW-WzO"/>
-                                                        <action selector="cartAndroid:" destination="akd-4Y-dVD" eventType="touchUpInside" id="XpT-dW-0Fm"/>
+                                                        <action selector="addGalaxy:" destination="0dk-H6-bp9" eventType="touchUpInside" id="fSJ-Bx-JWE"/>
+                                                        <action selector="cartGalaxy:" destination="0dk-H6-bp9" eventType="touchUpInside" id="Op0-6m-Zgi"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -679,13 +767,9 @@
                                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="CartAndeoid" destination="Qtc-SP-a4k" id="WWk-Z4-zbz"/>
-                                            <outlet property="addToCart" destination="Qtc-SP-a4k" id="h5e-ti-6NU"/>
                                             <outlet property="imgAndroid" destination="kqB-hD-JEt" id="jR4-Jw-3Yr"/>
-                                            <outlet property="imgPhone" destination="kqB-hD-JEt" id="K9C-j0-ClI"/>
                                             <outlet property="nameAndroid" destination="Ss7-AS-Rsl" id="xLa-bX-o0b"/>
-                                            <outlet property="namePhone" destination="Ss7-AS-Rsl" id="Sq6-KI-6wg"/>
                                             <outlet property="priceAndroid" destination="SdK-XB-Hzq" id="dWq-0J-Hih"/>
-                                            <outlet property="pricePhone" destination="SdK-XB-Hzq" id="1A2-IU-cQQ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -696,17 +780,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="3Bj-Je-PO6"/>
                     <connections>
-                        <outlet property="tableView" destination="s5e-W9-cHc" id="KG5-Lz-F00"/>
+                        <outlet property="tableView" destination="s5e-W9-cHc" id="Nbm-Y2-j06"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D07-V8-6dV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="0dk-H6-bp9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="538" y="2023"/>
+            <point key="canvasLocation" x="537.68115942028987" y="2022.9910714285713"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Q9z-na-sOn"/>
-        <segue reference="cvd-cI-Lop"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Galaxy" width="720" height="720"/>
@@ -722,6 +806,9 @@
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

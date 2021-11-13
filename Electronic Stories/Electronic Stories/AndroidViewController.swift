@@ -17,7 +17,7 @@ class AndroidViewController: UIViewController , UITableViewDelegate , UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         tableView.delegate = self
         tableView.dataSource = self
     
@@ -32,12 +32,12 @@ class AndroidViewController: UIViewController , UITableViewDelegate , UITableVie
     
    
     
-    performSegue(withIdentifier: "Galaxy", sender: nil)
+//    performSegue(withIdentifier: "Galaxy", sender: nil)
 }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! AndroidViewController
-        vc.arrAndroid = arrAndroid
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let vc = segue.destination as! AndroidViewController
+//        vc.arrAndroid = arrAndroid
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrAndroid.count
@@ -49,6 +49,8 @@ class AndroidViewController: UIViewController , UITableViewDelegate , UITableVie
         cell.myCell(photo: data.photo, name: data.name, price: data.price)
         return cell
     }
+    
+    
         
     }
 

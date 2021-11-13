@@ -22,8 +22,11 @@ class ViewControllerCategories: UIViewController {
         
         performSegue(withIdentifier: "toProductsPage", sender: nil)
     }
-    
-    
    
 
+    
 }
+
+
+
+

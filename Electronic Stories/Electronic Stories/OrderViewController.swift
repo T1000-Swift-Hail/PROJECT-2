@@ -2,29 +2,27 @@
 //  OrderViewController.swift
 //  Electronic Stories
 //
-//  Created by Asma Rasheed on 04/04/1443 AH.
+//  Created by Asma Rasheed on 08/04/1443 AH.
 //
 
 import UIKit
 
-class OrderViewController: UIViewController , UITableViewDelegate , UITableViewDataSource{
-    @IBAction func tableview(_ sender: UIButton) {
-        let pay = ["mada", "visa","paypal"]
-        override func viewDidLoad() {
-            super.viewDidLoad()
+class OrderViewController: UIViewController {
 
-            tableview.delegate = self
-            tableview.dataSource = self
-        }
-   
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
- 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pay.count
+       
     }
-    func tableView(_ tableView: UITableView, cellForRowAt IndexPath: IndexPath) -> UITableViewCell  {
-        let cell = tableview.dequeueReusableCell(withReuseIdentifier: "cell", for: IndexPath)
-        cell.textLabel?.text = pay [IndexPath]
-        return cell
+    
+    @IBAction func madaAction(_ sender: UISwitch) {
     }
+    
+    @IBAction func visaAction(_ sender: UISwitch) {
+    }
+    
+    @IBAction func paypalAction(_ sender: UISwitch) {
+        print ("status = \(sender.isOn)")
+    }
+    
 }

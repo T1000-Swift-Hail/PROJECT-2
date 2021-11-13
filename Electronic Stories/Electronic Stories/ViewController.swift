@@ -8,17 +8,17 @@
 import UIKit
 
 
-//enum Suges:String {
-//
-//    case SecondViewController = "Second"
+enum Suges:String {
+
+    case SecondViewController = "Second"
 //    case Third = "Third"
 //
 //
-//}
+}
 
 class ViewController: UIViewController {
 
-//    var sectionSelected = -1
+    var sectionSelected = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,8 @@ class ViewController: UIViewController {
     }
     
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    }
 
 }
+    
