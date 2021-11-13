@@ -53,7 +53,7 @@ class FirstViewController: UIViewController {
         }
     
     @IBAction func btnSkip(_ sender: Any) {
-        performSegue(withIdentifier: "skip", sender: nil)
+        performSegue(withIdentifier: "IdentitfirerLogin", sender: nil)
     }
     
     
