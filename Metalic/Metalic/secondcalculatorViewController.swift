@@ -34,24 +34,26 @@ class secondcalculatorViewController: UIViewController {
     @IBAction func actionBottun(_ sender: Any) {
         
         guard let secSpeed : Double = Double(speedTwo.text ?? "nil") else {return }
-        guard let firSpeed : Double = Double(speedTwo.text ?? "nil") else {return }
+        guard let firSpeed : Double = Double(speedOne.text ?? "nil") else {return }
         guard let secTeeth : Double = Double(teethTwo.text ?? "nil") else {return }
         guard let firTeeth : Double = Double(teethOne.text ?? "nil") else {return }
     
         switch choosenValue {
         case .firstSpeed:
-           let convertedValue = firstSpeed(secSpeed: secSpeed, teTwo: secTeeth, fTeeth: firTeeth)
+           let convertedValue = firstSpeed(secSpeed: secSpeed, secTeeth: secTeeth, firTeeth: firTeeth)
             converValue.text = "\(convertedValue) "
         case .secondSpeed :
-            let convertedValue = secondSpeed(firrSpeed: firSpeed, teTwo: secTeeth, fTeeth: firTeeth)
-            converValue.text = "\(convertedValue)"
+            let convertedValue = secondSpeed (firSpeed: firSpeed, secTeeth: secTeeth, firTeeth: firTeeth)
+            converValue.text = "\(convertedValue).rpm"
         case .teethFrist:
-            let convertedValue = firstTeeth(secSpeed: secSpeed, teTwo: secTeeth, fTeeth: firTeeth)
+            let convertedValue = firstTeeth(secSpeed: secSpeed, secTeeth: secTeeth, firTeeth: firTeeth)
             converValue.text = "\(convertedValue)"
         case .teethSecond:
-            let convertedValue = SecondTeeth(secSpeed: secSpeed, teTwo: secTeeth, fTeeth: firTeeth)
+            let convertedValue = secondTeeth(secSpeed: secSpeed, firSpeed: firSpeed, firTeeth: firTeeth)
             converValue.text = "\(convertedValue)"
-        }}
+        }
+        
+    }
         
     
     
@@ -61,16 +63,28 @@ class secondcalculatorViewController: UIViewController {
             
         case 0:
             choosenValue = .firstSpeed
-            
+            speedOne.isHidden = true
+            teethTwo.isHidden = false
+            speedTwo.isHidden = false
+            teethOne.isHidden = false
         case 1:
             choosenValue = .teethFrist
-         
+            teethOne.isHidden = true
+            teethTwo.isHidden = false
+            speedTwo.isHidden = false
+            speedOne.isHidden = false
         case 2:
             choosenValue = .secondSpeed
-            
+            speedTwo.isHidden = true
+            teethTwo.isHidden = false
+            speedOne.isHidden = false
+            teethOne.isHidden = false
         case 3:
             choosenValue = .teethSecond
-            
+            teethTwo.isHidden = true
+            speedTwo.isHidden = false
+            speedOne.isHidden = false
+            teethOne.isHidden = false
         default:
             choosenValue = .firstSpeed
             
@@ -79,52 +93,52 @@ class secondcalculatorViewController: UIViewController {
         
     }
     
-    func firstSpeed(secSpeed:Double , teTwo:Double, fTeeth:Double) -> String {
+    func firstSpeed(secSpeed:Double , secTeeth:Double, firTeeth:Double) -> String {
         
      
         guard let secSpeed : Double = Double(speedTwo.text ?? "nil") else {return ""}
         guard let secTeeth : Double = Double(teethTwo.text ?? "nil") else {return ""}
         guard let firTeeth : Double = Double(teethOne.text ?? "nil") else {return ""}
         let frSpeed = ((secSpeed * firTeeth) / secTeeth)
-        let resultFirstSpeed = "\(String(format:"%.2f",frSpeed))"
-        converValue.text = resultFirstSpeed
-        return resultFirstSpeed
+        let results = "\(String(format:"%.2f",frSpeed))"
+        converValue.text = results
+        return results
         
     }
-    func secondSpeed(firrSpeed:Double , teTwo:Double, fTeeth:Double) -> String {
+    func secondSpeed(firSpeed:Double , secTeeth:Double, firTeeth:Double) -> String {
         
      
-        guard let firSpeed : Double = Double(speedTwo.text ?? "nil") else {return ""}
+        guard let firSpeed : Double = Double(speedOne.text ?? "nil") else {return ""}
         guard let secTeeth : Double = Double(teethTwo.text ?? "nil") else {return ""}
         guard let firTeeth : Double = Double(teethOne.text ?? "nil") else {return ""}
         let secSpeed = ((firSpeed * firTeeth) / secTeeth)
-        let resultFirstSpeed = "\(String(format:"%.2f",secSpeed))"
-        converValue.text = resultFirstSpeed
-        return resultFirstSpeed
+        let results = "\(String(format:"%.2f",secSpeed))"
+        converValue.text = results
+        return results
         
     }
-    func firstTeeth(secSpeed:Double , teTwo:Double, fTeeth:Double) -> String {
+    func firstTeeth(secSpeed:Double , secTeeth:Double, firTeeth:Double) -> String {
         
      
         guard let secSpeed : Double = Double(speedTwo.text ?? "nil") else {return ""}
         guard let secTeeth : Double = Double(teethTwo.text ?? "nil") else {return ""}
-        guard let firSpeed : Double = Double(teethOne.text ?? "nil") else {return ""}
+        guard let firSpeed : Double = Double(speedOne.text ?? "nil") else {return ""}
         let firTeeth = ((secSpeed * secTeeth) / firSpeed)
-        let resultFirstSpeed = "\(String(format:"%.2f",firTeeth))"
-        converValue.text = resultFirstSpeed
-        return resultFirstSpeed
+        let results = "\(String(format:"%.2f",firTeeth))"
+        converValue.text = results
+        return results
         
     }
-    func SecondTeeth(secSpeed:Double , teTwo:Double, fTeeth:Double) -> String {
+    func secondTeeth(secSpeed:Double , firSpeed:Double, firTeeth:Double) -> String {
         
      
         guard let secSpeed : Double = Double(speedTwo.text ?? "nil") else {return ""}
-        guard let firSpeed : Double = Double(teethTwo.text ?? "nil") else {return ""}
+        guard let firSpeed : Double = Double(speedOne.text ?? "nil") else {return ""}
         guard let firTeeth : Double = Double(teethOne.text ?? "nil") else {return ""}
         let secTeeth = ((firSpeed * firTeeth) / secSpeed)
-        let resultFirstSpeed = "\(String(format:"%.2f",secTeeth))"
-        converValue.text = resultFirstSpeed
-        return resultFirstSpeed
+        let results = "\(String(format:"%.2f",secTeeth))"
+        converValue.text = results
+        return results
         
     }
          func CalculateAction(_ sender: Any) {

@@ -37,6 +37,10 @@ class LoginPage: UIViewController {
     
     @IBOutlet var loginButton: UIButton!
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,20 +49,14 @@ class LoginPage: UIViewController {
             performSegue(withIdentifier: "TabBarHome" , sender: nil)
         }
        passWodText?.isSecureTextEntry = true
+        
+        
+        
     }
     
     @IBAction func logIn(_ sender: Any) {
         
-        
-        var savedUser = Users(userNames: "", passWords: "")
-        
-        if let setUserName = defaults.string(forKey: "userName"){
-            savedUser.userNames = setUserName
-        }
-        if let setPassword = defaults.string(forKey: "PassWord") {
-            savedUser.passWords = setPassword
-            
-        }
+       
         
         
         
@@ -67,18 +65,22 @@ class LoginPage: UIViewController {
         
         guard let pass = passWodText.text else {return}
         
-        defaults.set(true, forKey: "in Login")
-        
         for myUsers in userProfile {
-            if user == myUsers.userNames && pass == myUsers.passWords {
+            if user == myUsers.userNames && pass == myUsers.passWords  {
                 performSegue(withIdentifier: "TabBarHome", sender: nil)
-                return
-            } else if (usernameText.text!.isEmpty || passWodText.text!.isEmpty){
+                defaults.set(true, forKey: "in Login")
+            }
+            if  user == defaults.string(forKey: "userName") && pass == defaults.string(forKey: "passWord"){
+                
+                performSegue(withIdentifier: "TabBarHome", sender: nil)
+                
+            }
+          if (usernameText.text!.isEmpty || passWodText.text!.isEmpty){
+              
                 DisplayMyAlert(title: "Wrong", message: "UserName or Password is empity")
             } else {
-                DisplayMyAlert(title: "Wrong", message: "UserName or Password is Wrong")
-            }
-        }
+                DisplayMyAlert(title: "Wrong", message: "UserName or Password is Wrong")}
+    }
     }
     
     @IBAction func joinUsButton(_ sender: Any) {

@@ -53,7 +53,7 @@
                                 <rect key="frame" x="45" y="88" width="325" height="191.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRS-w8-MBt">
-                                        <rect key="frame" x="55" y="0.0" width="215.5" height="28"/>
+                                        <rect key="frame" x="53" y="0.0" width="219" height="28"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Welcome To Metalic">
                                                 <attributes>
@@ -415,13 +415,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZH-k7-RNN">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="RPW-iK-0ao">
-                                                <rect key="frame" x="59" y="104" width="297" height="298"/>
+                                                <rect key="frame" x="59" y="104" width="297" height="746"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Module 0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIp-g1-d1c">
-                                                        <rect key="frame" x="96" y="0.0" width="105" height="34"/>
+                                                        <rect key="frame" x="96" y="0.0" width="105" height="123.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="22" id="ybL-Z7-N3g"/>
                                                         </constraints>
@@ -430,27 +430,27 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="s8i-WL-3g7">
-                                                        <rect key="frame" x="103" y="66" width="91" height="35"/>
+                                                        <rect key="frame" x="103" y="155.5" width="91" height="124.5"/>
                                                         <segments>
                                                             <segment title="MM"/>
                                                             <segment title="Inch"/>
                                                         </segments>
                                                         <connections>
-                                                            <action selector="ojfndlkjfn:forEvent:" destination="LWZ-A5-LxL" eventType="valueChanged" id="Waz-O8-dIY"/>
+                                                            <action selector="segmantUnitAction:forEvent:" destination="LWZ-A5-LxL" eventType="valueChanged" id="eUV-tv-2GW"/>
                                                         </connections>
                                                     </segmentedControl>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Teath" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L7x-qC-5og">
-                                                        <rect key="frame" x="80.5" y="132" width="136.5" height="34"/>
+                                                        <rect key="frame" x="80.5" y="311" width="136.5" height="124"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Out Dimiter..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vrF-aI-whb">
-                                                        <rect key="frame" x="74.5" y="198" width="148.5" height="34"/>
+                                                        <rect key="frame" x="74.5" y="467" width="148.5" height="123.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Ljp-ma-c1g">
-                                                        <rect key="frame" x="110" y="264" width="77" height="34"/>
+                                                        <rect key="frame" x="110" y="622.5" width="77" height="123.5"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="tinted" title="Clculate"/>
@@ -469,12 +469,6 @@
                                             <constraint firstAttribute="trailing" secondItem="RPW-iK-0ao" secondAttribute="trailing" constant="58" id="SbV-cy-SyM"/>
                                         </constraints>
                                     </view>
-                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLu-WJ-4Dp">
-                                        <rect key="frame" x="0.0" y="448" width="414" height="448"/>
-                                        <connections>
-                                            <segue destination="Gyc-cN-Yu6" kind="embed" id="Evv-0g-FBs"/>
-                                        </connections>
-                                    </containerView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -499,7 +493,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKC-8d-88s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5740.579710144928" y="754.6875"/>
+            <point key="canvasLocation" x="5538" y="611"/>
         </scene>
         <!--Registration-->
         <scene sceneID="0It-Au-zih">
@@ -576,6 +570,7 @@
         <!--Metalic-->
         <scene sceneID="K5U-oO-cPw">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YzP-zh-i34" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="CustumTapViewController" id="DMz-Sr-fGs" customClass="CustumTapViewController" customModule="Metalic" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Metalic" largeTitleDisplayMode="always" id="68x-F6-Rs3"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" itemPositioning="fill" id="Ahw-a1-4Jy">
@@ -590,7 +585,6 @@
                         <segue destination="5Gh-vN-FSB" kind="relationship" relationship="viewControllers" id="ePi-2b-zul"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YzP-zh-i34" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2083" y="384"/>
         </scene>
@@ -604,6 +598,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xog-2R-ccF">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="U2V-E0-NEY"/>
                     </connections>
@@ -627,34 +624,64 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="LWZ-A5-LxL" kind="relationship" relationship="rootViewController" id="MOC-KP-G9O"/>
+                        <segue destination="nTi-cC-2IV" kind="relationship" relationship="rootViewController" id="3eb-JN-w6Q"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVn-Py-fQK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3879.7101449275365" y="754.6875"/>
+            <point key="canvasLocation" x="3349" y="940"/>
         </scene>
-        <!--View Controller-->
+        <!--For Bottun Calculator-->
         <scene sceneID="7J6-2G-bh9">
             <objects>
-                <viewController id="nTi-cC-2IV" sceneMemberID="viewController">
+                <viewController id="nTi-cC-2IV" customClass="ForBottunCalculator" customModule="Metalic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5IO-BA-mHU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUr-6f-SYa">
+                                <rect key="frame" x="118" y="302" width="178" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Gear Pressure angle">
+                                    <backgroundConfiguration key="background" image="bottun" imageContentMode="scaleToFill"/>
+                                    <color key="baseForegroundColor" red="0.84699999999999998" green="0.84699999999999998" blue="0.84699999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="bottunPressure:" destination="nTi-cC-2IV" eventType="touchUpInside" id="plD-fk-GYB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aO-BC-auQ">
+                                <rect key="frame" x="118" y="399" width="178" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Gear Ratio ">
+                                    <backgroundConfiguration key="background" image="bottun"/>
+                                    <color key="baseForegroundColor" systemColor="opaqueSeparatorColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="bottunRation:" destination="nTi-cC-2IV" eventType="touchUpInside" id="4C6-zD-kCn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6is-dx-o9E"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tfI-Ei-Ehv"/>
+                    <connections>
+                        <segue destination="Gyc-cN-Yu6" kind="show" identifier="speedRation" id="K2p-DR-MjV"/>
+                        <segue destination="LWZ-A5-LxL" kind="show" identifier="pressureGear" id="90t-Fy-qvS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dD5-Dy-wt8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4754" y="1133"/>
+            <point key="canvasLocation" x="4758" y="1064"/>
         </scene>
         <!--Secondcalculator View Controller-->
         <scene sceneID="XSi-QH-8NV">
             <objects>
                 <viewController id="Gyc-cN-Yu6" customClass="secondcalculatorViewController" customModule="Metalic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QKf-gM-z4s">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Speed Gear One" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4o2-WC-Iiu">
@@ -670,7 +697,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Speed Gear Two" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vxh-eL-mDA">
-                                <rect key="frame" x="259.5" y="99" width="134.5" height="34"/>
+                                <rect key="frame" x="259.5" y="143" width="134.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -680,25 +707,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhX-9y-O45">
-                                <rect key="frame" x="138" y="209" width="108" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
-                                <connections>
-                                    <action selector="CalculateButton:" destination="LWZ-A5-LxL" eventType="touchUpInside" id="gdL-el-9B5"/>
-                                    <action selector="actionBottun:" destination="Gyc-cN-Yu6" eventType="touchUpInside" id="DRG-8Q-BLh"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Module 0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlE-4i-37b">
-                                <rect key="frame" x="20" y="297" width="136" height="31.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1Mg-RY-ktG">
-                                <rect key="frame" x="0.0" y="44" width="414" height="32"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="32"/>
                                 <segments>
                                     <segment title="First Speed"/>
                                     <segment title="First Teeth"/>
@@ -709,6 +719,22 @@
                                     <action selector="segGearSpeedTypes:" destination="Gyc-cN-Yu6" eventType="valueChanged" id="WL0-fy-tr4"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Module 0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlE-4i-37b">
+                                <rect key="frame" x="20" y="297" width="136" height="31.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhX-9y-O45">
+                                <rect key="frame" x="34" y="196" width="108" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                <connections>
+                                    <action selector="actionBottun:" destination="Gyc-cN-Yu6" eventType="touchUpInside" id="QRC-th-ssR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K3A-kb-cj4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -719,6 +745,7 @@
                             <constraint firstItem="1Mg-RY-ktG" firstAttribute="trailing" secondItem="K3A-kb-cj4" secondAttribute="trailing" id="wgc-AW-38d"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="yAo-3O-q16"/>
                     <connections>
                         <outlet property="converValue" destination="vlE-4i-37b" id="Pnj-P5-xEt"/>
                         <outlet property="segmantUnit" destination="1Mg-RY-ktG" id="nkw-Pd-M98"/>
@@ -730,11 +757,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="adl-pN-1s2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6576.811594202899" y="754.6875"/>
+            <point key="canvasLocation" x="5693" y="1340"/>
         </scene>
     </scenes>
     <resources>
         <image name="Rack" width="2560" height="1384"/>
+        <image name="bottun" width="2880" height="1800"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="helical" width="720" height="405"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
@@ -751,6 +779,9 @@
         <namedColor name="typingcolor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8507FA527400BF600AAF78D /* ForBottunCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507FA427400BF600AAF78D /* ForBottunCalculator.swift */; };
 		D8AA8BAD2737E5A600D40045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BAC2737E5A600D40045 /* AppDelegate.swift */; };
 		D8AA8BAF2737E5A600D40045 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BAE2737E5A600D40045 /* SceneDelegate.swift */; };
 		D8AA8BB12737E5A600D40045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BB02737E5A600D40045 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D8507FA427400BF600AAF78D /* ForBottunCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForBottunCalculator.swift; sourceTree = "<group>"; };
 		D8AA8BA92737E5A600D40045 /* Metalic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metalic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8AA8BAC2737E5A600D40045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8AA8BAE2737E5A600D40045 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				D8AA8BD6273A6A2700D40045 /* HomeTabBarViewController.swift */,
 				D8E14B10273AB33B0098A6FD /* DifinationView.swift */,
 				D8E14B1B273CEA2D0098A6FD /* secondcalculatorViewController.swift */,
+				D8507FA427400BF600AAF78D /* ForBottunCalculator.swift */,
 			);
 			path = Metalic;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				D8AA8BD127390B8100D40045 /* Registration.swift in Sources */,
 				D8AA8BC12737F55A00D40045 /* LoginPage.swift in Sources */,
 				D8E14B1C273CEA2D0098A6FD /* secondcalculatorViewController.swift in Sources */,
+				D8507FA527400BF600AAF78D /* ForBottunCalculator.swift in Sources */,
 				D8AA8BB12737E5A600D40045 /* ViewController.swift in Sources */,
 				D8AA8BAD2737E5A600D40045 /* AppDelegate.swift in Sources */,
 				D8AA8BAF2737E5A600D40045 /* SceneDelegate.swift in Sources */,

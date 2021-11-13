@@ -22,27 +22,35 @@ import UIKit
     @IBOutlet var passRegister: UITextField!
     @IBOutlet var rePassword: UITextField!
     @IBOutlet var registerLabel: UILabel!
-     var userDefaluts = UserDefaults.standard
+     
      
      //MARK: - Registoratio Button Action
+     override func viewWillAppear(_ animated: Bool) {
+         navigationController?.isNavigationBarHidden = false
+     }
      
     @IBAction func RegisterBottun(_ sender: Any) {
-        let userName = userRegister.text
-        let passWord = passRegister.text
-        let rePassWord = rePassword.text
         
         //correction inputs
-        if userName!.isEmpty || passWord!.isEmpty || rePassWord!.isEmpty {
+        if userRegister.text?.isEmpty == true || passRegister.text?.isEmpty == true || rePassword.text?.isEmpty == true {
             DisplayMyAlert(title: "Wrong", message: "user or password is empity ")
-            return
+            
         }
-        if (passWord != rePassWord){
+        if (passRegister.text != rePassword.text){
             DisplayMyAlert(title: "Wrong", message: "Passwor don't match")
+        }else{
+       
+        
+            defaults.set(userRegister.text, forKey: "userName")
+            defaults.set(passRegister.text, forKey: "passWord")
+            print(defaults)
+            DisplayMyAlert(title: "Registration", message: "You are Registed..!")
         }
-        DisplayMyAlert(title: "Registration", message: "You are Registed..!")
-        defaults.set(userName, forKey: "userName")
-        defaults.set(passWord, forKey: "PassWord")
-        defaults.synchronize()
+        
+//
+//        
+        
+        
     }
  //MARK: - Alert Function
      override func DisplayMyAlert(title: String, message: String){
@@ -53,6 +61,7 @@ import UIKit
             
             alert.addAction(Ok)
             present(alert, animated: true, completion: nil)
+        
             
         }
  }

@@ -18,6 +18,13 @@ class HomeTabBarViewController: UIViewController {
     var imageSelected: UIImage?
     var textSelected :String?
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+            self.tabBarController?.navigationItem.hidesBackButton = true
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
