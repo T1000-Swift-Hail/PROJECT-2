@@ -21,81 +21,67 @@ class secondcalculatorViewController: UIViewController {
     @IBOutlet var teethOne: UITextField!
     @IBOutlet var speedTwo: UITextField!
     @IBOutlet var teethTwo: UITextField!
-    @IBOutlet var segmantUnit: UISegmentedControl!
     @IBOutlet var converValue: UILabel!
     var choosenValue = ChangeInput.firstSpeed
+    var segmantUnit: UISegmentedControl?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
+    // MARK: - calculating bottuns
     @IBAction func actionBottun(_ sender: Any) {
         
         guard let secSpeed : Double = Double(speedTwo.text ?? "nil") else {return }
         guard let firSpeed : Double = Double(speedOne.text ?? "nil") else {return }
         guard let secTeeth : Double = Double(teethTwo.text ?? "nil") else {return }
         guard let firTeeth : Double = Double(teethOne.text ?? "nil") else {return }
-    
+        
+    //segmant switch
         switch choosenValue {
         case .firstSpeed:
            let convertedValue = firstSpeed(secSpeed: secSpeed, secTeeth: secTeeth, firTeeth: firTeeth)
             converValue.text = "\(convertedValue) "
         case .secondSpeed :
             let convertedValue = secondSpeed (firSpeed: firSpeed, secTeeth: secTeeth, firTeeth: firTeeth)
-            converValue.text = "\(convertedValue).rpm"
+            converValue.text = "\(convertedValue)"
         case .teethFrist:
-            let convertedValue = firstTeeth(secSpeed: secSpeed, secTeeth: secTeeth, firTeeth: firTeeth)
+            let convertedValue = firstTeeth(secSpeed: secSpeed, secTeeth: secTeeth, firSpeed: firSpeed)
             converValue.text = "\(convertedValue)"
         case .teethSecond:
             let convertedValue = secondTeeth(secSpeed: secSpeed, firSpeed: firSpeed, firTeeth: firTeeth)
             converValue.text = "\(convertedValue)"
         }
-        
     }
         
-    
+    // MARK: -segmant selection
     
     @IBAction func segGearSpeedTypes(_ sender: UISegmentedControl) {
         
-        switch segmantUnit.selectedSegmentIndex {
+        switch segmantUnit?.selectedSegmentIndex {
             
         case 0:
             choosenValue = .firstSpeed
-            speedOne.isHidden = true
-            teethTwo.isHidden = false
-            speedTwo.isHidden = false
-            teethOne.isHidden = false
+            speedOne.isEnabled = false
         case 1:
             choosenValue = .teethFrist
-            teethOne.isHidden = true
-            teethTwo.isHidden = false
-            speedTwo.isHidden = false
-            speedOne.isHidden = false
+            teethOne.isEnabled = false
         case 2:
             choosenValue = .secondSpeed
-            speedTwo.isHidden = true
-            teethTwo.isHidden = false
-            speedOne.isHidden = false
-            teethOne.isHidden = false
+            speedTwo.isEnabled = false
         case 3:
             choosenValue = .teethSecond
-            teethTwo.isHidden = true
-            speedTwo.isHidden = false
-            speedOne.isHidden = false
-            teethOne.isHidden = false
+            teethTwo.isEnabled = false
         default:
             choosenValue = .firstSpeed
-            
-        
         }
-        
     }
+    // MARK: - list calculation for each case in segmant
     
     func firstSpeed(secSpeed:Double , secTeeth:Double, firTeeth:Double) -> String {
         
-     
+        
         guard let secSpeed : Double = Double(speedTwo.text ?? "nil") else {return ""}
         guard let secTeeth : Double = Double(teethTwo.text ?? "nil") else {return ""}
         guard let firTeeth : Double = Double(teethOne.text ?? "nil") else {return ""}
@@ -107,7 +93,6 @@ class secondcalculatorViewController: UIViewController {
     }
     func secondSpeed(firSpeed:Double , secTeeth:Double, firTeeth:Double) -> String {
         
-     
         guard let firSpeed : Double = Double(speedOne.text ?? "nil") else {return ""}
         guard let secTeeth : Double = Double(teethTwo.text ?? "nil") else {return ""}
         guard let firTeeth : Double = Double(teethOne.text ?? "nil") else {return ""}
@@ -117,7 +102,7 @@ class secondcalculatorViewController: UIViewController {
         return results
         
     }
-    func firstTeeth(secSpeed:Double , secTeeth:Double, firTeeth:Double) -> String {
+    func firstTeeth(secSpeed:Double , secTeeth:Double, firSpeed:Double) -> String {
         
      
         guard let secSpeed : Double = Double(speedTwo.text ?? "nil") else {return ""}
@@ -141,21 +126,5 @@ class secondcalculatorViewController: UIViewController {
         return results
         
     }
-         func CalculateAction(_ sender: Any) {
-           
-            
-        
-}
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-
+ 
 }

@@ -419,11 +419,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZH-k7-RNN">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="RPW-iK-0ao">
-                                                <rect key="frame" x="59" y="104" width="297" height="746"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="RPW-iK-0ao">
+                                                <rect key="frame" x="20" y="104" width="374" height="388"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Module 0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIp-g1-d1c">
-                                                        <rect key="frame" x="96" y="0.0" width="105" height="123.5"/>
+                                                        <rect key="frame" x="134.5" y="0.0" width="105" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="22" id="ybL-Z7-N3g"/>
                                                         </constraints>
@@ -432,7 +432,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="s8i-WL-3g7">
-                                                        <rect key="frame" x="103" y="155.5" width="91" height="124.5"/>
+                                                        <rect key="frame" x="141.5" y="118" width="91" height="35"/>
                                                         <segments>
                                                             <segment title="MM"/>
                                                             <segment title="Inch"/>
@@ -442,33 +442,33 @@
                                                         </connections>
                                                     </segmentedControl>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Teath" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L7x-qC-5og">
-                                                        <rect key="frame" x="80.5" y="311" width="136.5" height="124"/>
+                                                        <rect key="frame" x="119" y="236" width="136.5" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Out Dimiter..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vrF-aI-whb">
-                                                        <rect key="frame" x="74.5" y="467" width="148.5" height="123.5"/>
+                                                        <rect key="frame" x="113" y="354" width="148.5" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Ljp-ma-c1g">
-                                                        <rect key="frame" x="110" y="622.5" width="77" height="123.5"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="tinted" title="Clculate"/>
-                                                        <connections>
-                                                            <action selector="CalculateButton:" destination="LWZ-A5-LxL" eventType="touchUpInside" id="1xQ-6b-1zm"/>
-                                                        </connections>
-                                                    </button>
                                                 </subviews>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Ljp-ma-c1g">
+                                                <rect key="frame" x="169" y="507" width="77" height="49"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Clculate"/>
+                                                <connections>
+                                                    <action selector="CalculateButton:" destination="LWZ-A5-LxL" eventType="touchUpInside" id="1xQ-6b-1zm"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="RPW-iK-0ao" firstAttribute="leading" secondItem="qZH-k7-RNN" secondAttribute="leading" constant="59" id="BO2-Bx-SBb"/>
-                                            <constraint firstItem="RPW-iK-0ao" firstAttribute="top" secondItem="qZH-k7-RNN" secondAttribute="top" constant="104" id="Q7g-3j-i8v"/>
-                                            <constraint firstAttribute="bottom" secondItem="RPW-iK-0ao" secondAttribute="bottom" constant="46" id="SHh-wa-6xr"/>
-                                            <constraint firstAttribute="trailing" secondItem="RPW-iK-0ao" secondAttribute="trailing" constant="58" id="SbV-cy-SyM"/>
+                                            <constraint firstAttribute="trailing" secondItem="RPW-iK-0ao" secondAttribute="trailing" constant="20" id="E2e-aw-fWg"/>
+                                            <constraint firstItem="RPW-iK-0ao" firstAttribute="leading" secondItem="qZH-k7-RNN" secondAttribute="leading" constant="20" id="cpS-Ku-b3a"/>
+                                            <constraint firstItem="RPW-iK-0ao" firstAttribute="top" secondItem="qZH-k7-RNN" secondAttribute="top" constant="104" id="lI2-9K-aIA"/>
+                                            <constraint firstItem="Ljp-ma-c1g" firstAttribute="top" secondItem="RPW-iK-0ao" secondAttribute="bottom" constant="64" id="qn5-iC-TbK"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -495,7 +495,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKC-8d-88s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5538" y="611"/>
+            <point key="canvasLocation" x="5537.68115942029" y="610.71428571428567"/>
         </scene>
         <!--Registration-->
         <scene sceneID="0It-Au-zih">
@@ -578,7 +578,6 @@
         <!--Metalic-->
         <scene sceneID="K5U-oO-cPw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YzP-zh-i34" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="CustumTapViewController" id="DMz-Sr-fGs" customClass="CustumTapViewController" customModule="Metalic" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Metalic" largeTitleDisplayMode="always" id="68x-F6-Rs3"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" itemPositioning="fill" id="Ahw-a1-4Jy">
@@ -594,6 +593,7 @@
                         <segue destination="6RK-bX-VUr" kind="relationship" relationship="viewControllers" id="9B0-V6-U4H"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YzP-zh-i34" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2083" y="384"/>
         </scene>
@@ -760,24 +760,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Speed Gear One" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4o2-WC-Iiu">
-                                <rect key="frame" x="262" y="170" width="134.5" height="34"/>
+                                <rect key="frame" x="20" y="254" width="134.5" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teeth Gear one" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oz9-Al-R8P">
-                                <rect key="frame" x="268" y="254" width="127" height="34"/>
+                                <rect key="frame" x="270" y="254" width="127" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Speed Gear Two" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vxh-eL-mDA">
-                                <rect key="frame" x="259.5" y="143" width="134.5" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Speed Gear Two" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vxh-eL-mDA">
+                                <rect key="frame" x="20" y="187" width="134.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teeth Gear Two" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NJx-fA-BMG">
-                                <rect key="frame" x="265" y="212" width="129" height="34"/>
+                                <rect key="frame" x="268" y="187" width="129" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -791,25 +791,25 @@
                                     <segment title="Second Teeth"/>
                                 </segments>
                                 <connections>
-                                    <action selector="segGearSpeedTypes:" destination="Gyc-cN-Yu6" eventType="valueChanged" id="WL0-fy-tr4"/>
+                                    <action selector="segGearSpeedTypes:" destination="Gyc-cN-Yu6" eventType="valueChanged" id="9IH-Lt-xaM"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Module 0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlE-4i-37b">
-                                <rect key="frame" x="20" y="297" width="136" height="31.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhX-9y-O45">
+                                <rect key="frame" x="153" y="350" width="108" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="calculate"/>
+                                <connections>
+                                    <action selector="actionBottun:" destination="Gyc-cN-Yu6" eventType="touchUpInside" id="CbR-cD-NGh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlE-4i-37b">
+                                <rect key="frame" x="109" y="433" width="195" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhX-9y-O45">
-                                <rect key="frame" x="34" y="196" width="108" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
-                                <connections>
-                                    <action selector="actionBottun:" destination="Gyc-cN-Yu6" eventType="touchUpInside" id="QRC-th-ssR"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K3A-kb-cj4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -822,17 +822,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="yAo-3O-q16"/>
                     <connections>
-                        <outlet property="converValue" destination="vlE-4i-37b" id="Pnj-P5-xEt"/>
-                        <outlet property="segmantUnit" destination="1Mg-RY-ktG" id="nkw-Pd-M98"/>
-                        <outlet property="speedOne" destination="4o2-WC-Iiu" id="Oom-Wl-k22"/>
-                        <outlet property="speedTwo" destination="vxh-eL-mDA" id="lgi-nX-eKV"/>
-                        <outlet property="teethOne" destination="oz9-Al-R8P" id="rbG-ud-42w"/>
-                        <outlet property="teethTwo" destination="NJx-fA-BMG" id="ecX-Xy-wll"/>
+                        <outlet property="converValue" destination="vlE-4i-37b" id="vur-yR-Lcy"/>
+                        <outlet property="speedOne" destination="4o2-WC-Iiu" id="aAc-1h-KZO"/>
+                        <outlet property="speedTwo" destination="vxh-eL-mDA" id="hBA-RJ-pyT"/>
+                        <outlet property="teethOne" destination="oz9-Al-R8P" id="otw-u0-2OR"/>
+                        <outlet property="teethTwo" destination="NJx-fA-BMG" id="xxr-1U-3NZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="adl-pN-1s2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5693" y="1340"/>
+            <point key="canvasLocation" x="5692.753623188406" y="1339.9553571428571"/>
         </scene>
     </scenes>
     <resources>

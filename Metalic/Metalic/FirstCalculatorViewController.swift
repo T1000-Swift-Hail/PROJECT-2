@@ -20,14 +20,10 @@ class TabCalculatorViewController: UIViewController {
     var numberOutDimeter : Double?
     var conversionType = ConversionType.mm
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
     }
-    
     func calculateMM(NumberOfteaath:Double, OutDimeter:Double) -> String {
         guard let intNumberNT : Double = Double(textfiledNT.text ?? "nil") else {return ""}
         guard let intNumberOD : Double = Double(textfieldOD.text ?? "nil") else {return ""}
@@ -39,8 +35,6 @@ class TabCalculatorViewController: UIViewController {
         conversionLabel.text = resultMM
         return resultMM
     }
-    
-    
     func calculateInch(numberOfTeeth:Double, outDimeter:Double) -> String {
         guard let intNumberNT : Double = Double(textfiledNT.text ?? "nil") else { return "" }
         guard let intNumberOD : Double = Double(textfieldOD.text ?? "nil") else { return "" }
@@ -49,6 +43,7 @@ class TabCalculatorViewController: UIViewController {
         conversionLabel.text = resultInch
         
         return resultInch
+        
     }
     @IBAction func CalculateButton(_ sender: Any) {
         var numberOfTeeth = 0.0
@@ -57,6 +52,7 @@ class TabCalculatorViewController: UIViewController {
         guard let intNumberOD : Double = Double(textfieldOD.text ?? "nil") else {return}
         numberOfTeeth = intNumberNT
         outDimeter = intNumberOD
+        
         switch conversionType {
         case .mm:
             
@@ -66,9 +62,8 @@ class TabCalculatorViewController: UIViewController {
             let convertedValue = calculateInch(numberOfTeeth: numberOfTeeth ,outDimeter: outDimeter)
             conversionLabel.text = "\(convertedValue)"
         }
+        
     }
-    
-   
     @IBAction func segmantUnitAction (_ sender: Any, forEvent event: UIEvent) {
         switch segmantUnit.selectedSegmentIndex {
         case 0:

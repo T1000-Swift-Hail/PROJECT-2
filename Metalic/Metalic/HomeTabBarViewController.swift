@@ -8,40 +8,23 @@
 import UIKit
 
 class HomeTabBarViewController: UIViewController {
- 
+    
     @IBOutlet var rackButton: UIButton!
     @IBOutlet var impllerButton: UIButton!
     @IBOutlet var helicalButton: UIButton!
     @IBOutlet var SpurButton: UIButton!
     @IBOutlet var wormButton: UIButton!
-    
     var imageSelected: UIImage?
     var textSelected :String?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-            self.tabBarController?.navigationItem.hidesBackButton = true
-        
+        self.tabBarController?.navigationItem.hidesBackButton = true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        if let image = UIImage(named: "Rack") {
-//            rackButton.setImage(image, for: .normal)}
-//        if let image = UIImage(named: "impller") {
-//            impllerButton.setImage(image, for: .normal)}
-//        if let image = UIImage(named: "spure") {
-//            SpurButton.setImage(image, for: .normal)}
-//        if let image = UIImage(named: "worm") {
-//            wormButton.setImage(image, for: .normal)}
-//        if let image = UIImage(named: "helical") {
-//            helicalButton.setImage(image, for: .normal)}
-       
-        
-        
-        // Do any additional setup after loading the view.
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! DifinationView
@@ -49,7 +32,6 @@ class HomeTabBarViewController: UIViewController {
         vc.TextSelected = textSelected
         
     }
-    
     @IBAction func SpurButton(_ sender: Any) {
         
         imageSelected = UIImage(named: "spurecad")
@@ -62,8 +44,8 @@ class HomeTabBarViewController: UIViewController {
         imageSelected = UIImage(named: "RackCad")
         textSelected = "Rack and pinion define: :is a type of linear actuator that comprises a circular gear (the pinion) engaging a linear gear (the rack) application: automotive market factory in production line shape: bar shaped gear"
         performSegue(withIdentifier: "Difenition", sender: nil)
+        
     }
-    
     @IBAction func helicalButton(_ sender: Any) {
         imageSelected = UIImage(named: "HelicalCad")
         textSelected = "Helical : gears are similar to spur gears except that their teeth are cut at an angle plastic industries elevators compressors.angle cut teath"
@@ -74,10 +56,9 @@ class HomeTabBarViewController: UIViewController {
         
         imageSelected = UIImage(named: "WormCad")
         textSelected = "Worm Gear define: A worm drive is a gear arrangement in which a worm (which is a gear in the form of a screw) meshes with a worm wheel (which is similar in appearance to a spur gear). The two elements are also called the worm screw and worm gear , application:  presses, rolling mills, conveying engineering, shape: which is a gear in the form of a screw "
-        
         performSegue(withIdentifier: "Difenition", sender: nil)
+        
     }
-    
     @IBAction func impllerButton(_ sender: Any) {
         
         imageSelected = UIImage(named: "ImpllerCad")
