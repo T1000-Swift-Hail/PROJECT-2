@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "14N-gw-Dfw"; */
+"14N-gw-Dfw.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Book Details"; ObjectID = "3q0-3O-8Qi"; */
+"3q0-3O-8Qi.title" = "Book Details";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4As-hw-pDR"; */
+"4As-hw-pDR.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4YG-fT-x9i"; */
+"4YG-fT-x9i.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "LogIn"; ObjectID = "5FO-85-TgI"; */
+"5FO-85-TgI.configuration.title" = "LogIn";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5FO-85-TgI"; */
+"5FO-85-TgI.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "7AB-vz-J1S"; */
+"7AB-vz-J1S.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "My Favorites "; ObjectID = "Le5-4E-rFU"; */
+"Le5-4E-rFU.title" = "My Favorites ";
+
+/* Class = "UINavigationItem"; title = "Categories"; ObjectID = "Mwo-tE-JPb"; */
+"Mwo-tE-JPb.title" = "Categories";
+
+/* Class = "UITabBarItem"; title = "Top Rated"; ObjectID = "Wq4-FH-Wbo"; */
+"Wq4-FH-Wbo.title" = "Top Rated";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ZGc-V9-maK"; */
+"ZGc-V9-maK.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Categories"; ObjectID = "bNZ-fW-rmR"; */
+"bNZ-fW-rmR.title" = "Categories";
+
+/* Class = "UINavigationItem"; title = "Top Rated Books"; ObjectID = "cJc-tM-c7J"; */
+"cJc-tM-c7J.title" = "Top Rated Books";
+
+/* Class = "UITextField"; placeholder = "email"; ObjectID = "hqt-2e-kwl"; */
+"hqt-2e-kwl.placeholder" = "email";
+
+/* Class = "UINavigationItem"; title = "My Favorites Books"; ObjectID = "vkM-0t-Nix"; */
+"vkM-0t-Nix.title" = "My Favorites Books";
