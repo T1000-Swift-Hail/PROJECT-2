@@ -1,6 +1,6 @@
 
 /* Class = "UILabel"; text = "Weight( kg)"; ObjectID = "6KA-Bz-kfa"; */
-"6KA-Bz-kfa.text" = "الوزن (كج)";
+"6KA-Bz-kfa.text" = "الوزن(كج)";
 
 /* Class = "UITextField"; placeholder = "0.0"; ObjectID = "AVp-2e-aXk"; */
 "AVp-2e-aXk.placeholder" = "0.0";
@@ -21,10 +21,10 @@
 "IrS-7R-8TV.title" = "تعديل";
 
 /* Class = "UILabel"; text = "Height (m)"; ObjectID = "Q8V-wI-EF9"; */
-"Q8V-wI-EF9.text" = "الطول (س)";
+"Q8V-wI-EF9.text" = "الطول(س)";
 
 /* Class = "UILabel"; text = "welcome to Best Weight App "; ObjectID = "R3c-ye-LwT"; */
-"R3c-ye-LwT.text" = "مرحبا بك في تطبيق الوزن المثالي ";
+"R3c-ye-LwT.text" = "مرحبآ بك في تطبيق الوزن المثالي ";
 
 /* Class = "UILabel"; text = "Selcet Your Gender .."; ObjectID = "YZd-2C-tx9"; */
 "YZd-2C-tx9.text" = "اختر الجنس ..";
@@ -32,17 +32,20 @@
 /* Class = "UITextField"; placeholder = "0.0"; ObjectID = "jn9-r4-DLT"; */
 "jn9-r4-DLT.placeholder" = "0.0";
 
+/* Class = "UILabel"; text = "Detail"; ObjectID = "l8w-Qv-hny"; */
+"l8w-Qv-hny.text" = "التفاصيل";
+
 /* Class = "UILabel"; text = "Name"; ObjectID = "nEz-y0-zCX"; */
 "nEz-y0-zCX.text" = "الاسم";
 
-/* Class = "UISegmentedControl"; uf6-pU-krD.segmentTitles[0] = "Under Weight"; ObjectID = "uf6-pU-krD"; */
-"uf6-pU-krD.segmentTitles[0]" = "وزن منخفض";
+/* Class = "UISegmentedControl"; uf6-pU-krD.segmentTitles[2] = "Under Weight"; ObjectID = "uf6-pU-krD"; */
+"uf6-pU-krD.segmentTitles[2]" = "وزن منخفض";
 
 /* Class = "UISegmentedControl"; uf6-pU-krD.segmentTitles[1] = "Normal"; ObjectID = "uf6-pU-krD"; */
 "uf6-pU-krD.segmentTitles[1]" = "طبيعي";
 
-/* Class = "UISegmentedControl"; uf6-pU-krD.segmentTitles[2] = "Over Weight!"; ObjectID = "uf6-pU-krD"; */
-"uf6-pU-krD.segmentTitles[2]" = "وزن طبيعي";
+/* Class = "UISegmentedControl"; uf6-pU-krD.segmentTitles[0] = "OverWeight!"; ObjectID = "uf6-pU-krD"; */
+"uf6-pU-krD.segmentTitles[0]" = "وزن عالي!";
 
 /* Class = "UIButton"; configuration.title = "Calculate BMI"; ObjectID = "xFU-4g-IVG"; */
 "xFU-4g-IVG.configuration.title" = "احسب الكتله";

@@ -6,12 +6,12 @@
 //
 
 import UIKit
-
+//delegates for picker + text field
 class ViewController: UIViewController , UIPickerViewDataSource , UIPickerViewDelegate , UITextFieldDelegate {
-    
+//    use array to define user's gender
     var gender = ["Male".loclaized , "female".loclaized]
     
-    
+
     @IBOutlet weak var SelctedGender: UILabel!
     @IBOutlet weak var PickerGender: UIPickerView!
     
@@ -42,19 +42,19 @@ class ViewController: UIViewController , UIPickerViewDataSource , UIPickerViewDe
     }
     
     @IBAction func GitBestWeight(_ sender: Any) {
-
+        //dismiss keyboard when user touch blank spots
         func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+       view.endEditing(true)
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        return true
+       view.endEditing(true)
+        return false
     }
         
 }
     
     @IBAction func calculateWeight(_ sender: Any) {
-        
+//        use if statment If the data is empty, an alert is used to fill in the data..
         if textWeight.text?.isEmpty ?? true || textWeight.text?.isEmpty ?? true || textName.text?.isEmpty ?? true {
             
             let alert = UIAlertController (title:  "", message:"Please Enter Your Weight And Height!" .loclaized, preferredStyle: .alert)
@@ -93,7 +93,7 @@ class ViewController: UIViewController , UIPickerViewDataSource , UIPickerViewDe
 
 
 }
-
+// use extention to localization......
 extension String {
     
     var loclaized: String {

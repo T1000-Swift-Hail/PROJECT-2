@@ -6,20 +6,16 @@
 //
 
 import UIKit
-
+//Use class for history of users
 class HistoryTableViewController: UITableViewController {
     
-    
-    
-        
-        
-        var items: [String] = []
-        var weight = [Int] ()
+    var items: [String] = []
+    var weight : [Int] = []
         
         let userDefaluts = UserDefaults.standard
         
         
-        
+//        user defoults..
         override func viewDidLoad() {
             super.viewDidLoad()
             
@@ -45,7 +41,7 @@ class HistoryTableViewController: UITableViewController {
             
             var textFiled = UITextField()
             var textFiledTwo = UITextField()
-            
+//            use alert 
             let alert = UIAlertController(title: "Add Names".loclaized, message: "", preferredStyle: .alert)
             let action = UIAlertAction(title: "Add".loclaized, style: .default) { action in
                 
@@ -55,6 +51,7 @@ class HistoryTableViewController: UITableViewController {
                 self.tableView.reloadData()
                 
                 guard let text:Int = Int(textFiledTwo.text ?? "nil") else {return}
+                print(text)
                 self.weight.append(text)
                 self.userDefaluts.set(self.weight, forKey: "weight")
                 self.tableView.reloadData()
@@ -92,6 +89,7 @@ class HistoryTableViewController: UITableViewController {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             cell.textLabel?.text = items[indexPath.row]
+            cell.detailTextLabel?.text = "\(weight[indexPath.row])"
             // Configure the cell...
             
             return cell
