@@ -7,18 +7,25 @@
 
 import UIKit
 
+extension String {
+    
+    var localizable: String {
+        return NSLocalizedString(self, comment: "")
+    }
+    
+}
 class LoginVC: BaseVC, UITextFieldDelegate {
-
+    
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tfEmail.placeholder = "Email...".localizable
         tfPassword.delegate = self
         tfPassword.returnKeyType = .go
     }
-        
+    
     //MARK: - ui textfield delegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == tfPassword {
@@ -31,13 +38,13 @@ class LoginVC: BaseVC, UITextFieldDelegate {
     
     func isValidCheck() -> Bool {
         if tfEmail.text!.isEmpty {
-            showAlert("Please input your email.")
+            showAlert("Please input your email.".localizable)
             return false
         } else if !isValidEmail(email: tfEmail.text!) {
-            showAlert("Please input valid email.")
+            showAlert("Please input valid email.".localizable)
             return false
         } else if tfPassword.text!.isEmpty {
-            showAlert("Please input password.")
+            showAlert("Please input password.".localizable)
             return false
         }
         
@@ -66,11 +73,11 @@ class LoginVC: BaseVC, UITextFieldDelegate {
                 
                 gotoVC("TabbarVC", true)
             } else {
-                showAlert("Please input correct password.")
+                showAlert("Please input correct password.".localizable)
             }
         } else {
             hideLoadingView()
-            showAlert("Email is not registered or deleted by manager.")
+            showAlert("Email is not registered or deleted by manager.".localizable)
         }
     }
     

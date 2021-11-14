@@ -32,9 +32,9 @@ extension UIApplication {
         
         return viewController
     }
-
+    
     var visibleViewController: UIViewController? {
-
+        
         guard let rootViewController = key?.rootViewController else {
             return nil
         }
@@ -42,27 +42,27 @@ extension UIApplication {
     }
     
     private func getVisibleViewController(_ rootViewController: UIViewController?) -> UIViewController? {
-
+        
         var rootVC = rootViewController
         if rootVC == nil {
             rootVC = UIApplication.shared.key?.rootViewController
         }
-
+        
         if rootVC?.presentedViewController == nil {
             return rootVC
         }
-
+        
         if let presented = rootVC?.presentedViewController {
             if presented.isKind(of: UINavigationController.self) {
                 let navigationController = presented as! UINavigationController
                 return navigationController.viewControllers.last!
             }
-
+            
             if presented.isKind(of: UITabBarController.self) {
                 let tabBarController = presented as! UITabBarController
                 return tabBarController.selectedViewController!
             }
-
+            
             return getVisibleViewController(presented)
         }
         return nil

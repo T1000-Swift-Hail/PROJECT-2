@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeVC: BaseVC, UISearchBarDelegate {
-
+    
     @IBOutlet weak var uiSearchbar: UISearchBar!
     @IBOutlet weak var uiTableview: UITableView!
     
@@ -18,7 +18,7 @@ class HomeVC: BaseVC, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Home".localizable
         uiSearchbar.delegate = self
         uiTableview.delegate = self
         uiTableview.dataSource = self
@@ -54,7 +54,7 @@ class HomeVC: BaseVC, UISearchBarDelegate {
     //MARK: - delegate uisearchbar
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if searchBar.text!.isEmpty {
-            showAlert("Please input product name.")
+            showAlert("Please input product name.".localizable)
             return
         }
         
@@ -98,14 +98,14 @@ class HomeVC: BaseVC, UISearchBarDelegate {
             barButtonItemAdd.customView?.heightAnchor.constraint(equalToConstant: 35).isActive = true
             self.navigationItem.rightBarButtonItem = barButtonItemAdd
         }
-       
+        
     }
     
     @objc func addTappedSignout(isConfirm: Bool) {
         if userDefaluts.string(forKey: "user_email") == "" || userDefaluts.string(forKey: "user_email") == nil {
             self.gotoVC("AuthNav", true)
         } else {
-            showAlert(title: "Would you like to log out?", message: nil, positive: "Log Out", negative: "Cancel") {
+            showAlert(title: "Would you like to log out?".localizable, message: nil, positive: "Log Out".localizable, negative: "Cancel".localizable) {
                 self.userDefaluts.set(0, forKey: "user_id")
                 self.userDefaluts.set("", forKey: "user_name")
                 self.userDefaluts.set("", forKey: "user_email")
@@ -119,28 +119,28 @@ class HomeVC: BaseVC, UISearchBarDelegate {
     @objc func addTappedAdd(isConfirm: Bool) {
         gotoNavVC("AddNewProduct")
     }
-
+    
     private func callShoppingCartItem(_ indexPath: IndexPath) {
         
         let addedCart = dataSource[indexPath.row].added_cart
         let userId = Int32(userDefaluts.integer(forKey: "user_id"))
         
         if userId == 0 {
-            showAlert("Please login to add or remove Shopping cart.")
+            showAlert("Please login to add or remove Shopping cart.".localizable)
             return
         }
         
         
-        let message = addedCart ? "Would you like to remove this from shopping cart?"
-                        : "Would you like to add this from shopping cart?"
-        showAlert(title: nil, message: message, positive: "OK", negative: "CANCEL") {
+        let message = addedCart ? "Would you like to remove product from Favorite list?".localizable
+        : "Would you like to add product to favorit list?".localizable
+        showAlert(title: nil, message: message, positive: "OK".localizable, negative: "CANCEL".localizable) {
             var res = ""
             if addedCart {
                 res = DataBaseHelper.shared.removeCart(product_id: self.dataSource[indexPath.row].id, user_id: userId)
             } else {
                 res = DataBaseHelper.shared.addCart(product_id: self.dataSource[indexPath.row].id, user_id: userId)
             }
-
+            
             if res.hasPrefix("success") {
                 self.dataSource[indexPath.row].added_cart = !addedCart
                 self.uiTableview.reloadData()
@@ -153,14 +153,14 @@ class HomeVC: BaseVC, UISearchBarDelegate {
         let userId = Int32(userDefaluts.integer(forKey: "user_id"))
         
         if userId == 0 {
-            showAlert("Please login to delete product.")
+            showAlert("Please login to delete product.".localizable)
             return
         }
         
-        let message = "Would you like to delete this product?"
-        showAlert(title: nil, message: message, positive: "OK", negative: "CANCEL") {
+        let message = "Would you like to delete this product?".localizable
+        showAlert(title: nil, message: message, positive: "OK".localizable, negative: "CANCEL".localizable) {
             let res =  DataBaseHelper.shared.removeProduct(product_id: self.dataSource[indexPath.row].id)
-
+            
             if res.hasPrefix("success") {
                 self.dataSource.remove(at: indexPath.row)
                 self.uiTableview.reloadData()
@@ -177,7 +177,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath) as! ProductCell
         cell.entity = dataSource[indexPath.row]
-
+        
         return cell
     }
     
@@ -192,33 +192,33 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         if userType == "manager" {
-            let action = UIContextualAction(style: .normal, title: "Delete", handler: { (action, view, completionHandler) in
+            let action = UIContextualAction(style: .normal, title: "Delete".localizable, handler: { (action, view, completionHandler) in
                 
                 self.callDeleteItem(indexPath)
                 completionHandler(true)
             })
-
+            
             action.image = UIImage(systemName: "trash")
             action.image?.withTintColor(.systemGreen)
             action.backgroundColor = .red
-
+            
             let configuration = UISwipeActionsConfiguration(actions: [action])
             return configuration
         }
         
         let flag = dataSource[indexPath.row].added_cart
-        let title = flag ? "Remove" : "Add"
+        let title = flag ? "Remove".localizable : "Add".localizable
         let icon = flag ? UIImage(systemName: "heart") : UIImage(systemName: "heart.fill")
         let action = UIContextualAction(style: .normal, title: title, handler: { (action, view, completionHandler) in
             
             self.callShoppingCartItem(indexPath)
             completionHandler(true)
         })
-
+        
         action.image = icon
         action.image?.withTintColor(.systemGreen)
         action.backgroundColor = flag ? .systemOrange : .red
-
+        
         let configuration = UISwipeActionsConfiguration(actions: [action])
         return configuration
         
@@ -227,16 +227,16 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         //when product image exist
-        if let data = dataSource[indexPath.row].photo, let img = UIImage(data: data) {
-            let rate = img.size.height / img.size.width
-            return 300
-//            self.view.bounds.size.width * rate
-        }
-        
-        //default - when no image
-        return 250
+        //        if let data = dataSource[indexPath.row].photo, let img = UIImage(data: data) {
+        //            let rate = img.size.height / img.size.width
+        return 320
+        //            self.view.bounds.size.width * rate
     }
     
+    //default - when no image
+    //        return 250
+    //    }
+    //
+    //
     
-
 }

@@ -8,7 +8,7 @@
 import UIKit
 
 class ShoppingCartVC: BaseVC, UISearchBarDelegate {
-        
+    
     @IBOutlet weak var uiTableview: UITableView!
     
     @IBOutlet weak var uiSearchbar: UISearchBar!
@@ -17,7 +17,7 @@ class ShoppingCartVC: BaseVC, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         uiSearchbar.delegate = self
         uiTableview.dataSource = self
         uiTableview.delegate = self
@@ -36,7 +36,7 @@ class ShoppingCartVC: BaseVC, UISearchBarDelegate {
     //MARK: - delegate uisearchbar
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if searchBar.text!.isEmpty {
-            showAlert("Please input product name.")
+            showAlert("Please input product name.".localizable)
             return
         }
         
@@ -56,12 +56,12 @@ class ShoppingCartVC: BaseVC, UISearchBarDelegate {
         let userId = Int32(userDefaluts.integer(forKey: "user_id"))
         
         if userId == 0 {
-            showAlert("Please login to add or remove Shopping cart.")
+            showAlert("Please login to add or remove Shopping cart.".localizable)
             return
         }
         
-        let message = "Would you like to remove this from shopping cart?"
-        self.showAlert(title: nil, message: message, positive: "OK", negative: "CANCEL") {
+        let message = "Would you like to remove product from Favorite list?".localizable
+        self.showAlert(title: nil, message: message, positive: "OK".localizable, negative: "CANCEL".localizable) {
             let res = DataBaseHelper.shared.removeCart(product_id: self.dataSource[indexPath.row].id, user_id: userId)
             
             if res.hasPrefix("success") {
@@ -80,7 +80,7 @@ extension ShoppingCartVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath) as! ProductCell
         cell.entity = dataSource[indexPath.row]
-
+        
         return cell
     }
     
@@ -94,16 +94,16 @@ extension ShoppingCartVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
-        let action = UIContextualAction(style: .normal, title: "Remove", handler: { (action, view, completionHandler) in
+        let action = UIContextualAction(style: .normal, title: "Remove".localizable, handler: { (action, view, completionHandler) in
             
             self.callShoppingCartItem(indexPath)
             completionHandler(true)
         })
-
+        
         action.image = UIImage(systemName: "trash")
         action.image?.withTintColor(.systemGreen)
         action.backgroundColor = .systemOrange
-
+        
         let configuration = UISwipeActionsConfiguration(actions: [action])
         return configuration
         
@@ -111,11 +111,11 @@ extension ShoppingCartVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        if let data = dataSource[indexPath.row].photo, let img = UIImage(data: data) {
-            let rate = img.size.height / img.size.width
-            return self.view.bounds.size.width * rate
-        }
-        return 350
+        //        if let data = dataSource[indexPath.row].photo, let img = UIImage(data: data) {
+        //            let rate = img.size.height / img.size.width
+        //            return self.view.bounds.size.width * rate
+        //        }
+        return 320
     }
     
 }

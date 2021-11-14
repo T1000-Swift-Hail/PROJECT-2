@@ -8,7 +8,7 @@
 import UIKit
 
 class ProductCell: UITableViewCell {
-
+    
     @IBOutlet weak var lblProductName: UILabel!
     @IBOutlet weak var lblPrice: UILabel!
     @IBOutlet weak var imgPhoto: UIImageView!
@@ -16,6 +16,19 @@ class ProductCell: UITableViewCell {
     var entity: ProductModel! {
         didSet {
             lblProductName.text = "\(entity.product_name)"
+            
+            //            print("-")
+            //            if Locale.current.languageCode == "en" {
+            //
+            //                print("-1")
+            //                //
+            //                lblProductName.text = "\(entity.product_name)"
+            //            } else {
+            //                //
+            //                print("-2")
+            //                lblProductName.text = "\(entity.product_name)"
+            //            }
+            
             lblPrice.text = "\(entity.price)"
             if let img = entity.photo {
                 imgPhoto.image = UIImage(data: img)
@@ -25,5 +38,5 @@ class ProductCell: UITableViewCell {
             
         }
     }
-
+    
 }

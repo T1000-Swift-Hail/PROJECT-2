@@ -8,13 +8,13 @@
 import UIKit
 
 class UserListVC: BaseVC {
-
+    
     @IBOutlet weak var uiTableview: UITableView!
     var dataSource = [UserModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         uiTableview.delegate = self
         uiTableview.dataSource = self
         uiTableview.tableFooterView = UIView()
@@ -22,7 +22,7 @@ class UserListVC: BaseVC {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        
         if let temp = DataBaseHelper.shared.getAllUsers() {
             dataSource = temp.filter { $0.type == "customer"}
         }
@@ -32,8 +32,8 @@ class UserListVC: BaseVC {
     
     private func callUserItem(_ indexPath: IndexPath) {
         
-        let message = "Would you like to delete this user?"
-        showAlert(title: nil, message: message, positive: "OK", negative: "CANCEL") {
+        let message = "Would you like to delete this user?".localizable
+        showAlert(title: nil, message: message, positive: "OK".localizable, negative: "CANCEL".localizable) {
             let res = DataBaseHelper.shared.deleteUser(user_id: self.dataSource[indexPath.row].id!)
             
             if res == "success" {
@@ -52,7 +52,7 @@ extension UserListVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as! UserCell
         cell.entity = dataSource[indexPath.row]
-
+        
         return cell
     }
     
@@ -61,20 +61,20 @@ extension UserListVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-
-        let action = UIContextualAction(style: .normal, title: "Delete", handler: { (action, view, completionHandler) in
+        
+        let action = UIContextualAction(style: .normal, title: "Delete".localizable, handler: { (action, view, completionHandler) in
             
             self.callUserItem(indexPath)
             completionHandler(true)
         })
-
+        
         action.image = UIImage(systemName: "trash")
         action.image?.withTintColor(.systemGreen)
         action.backgroundColor = .red
-
+        
         let configuration = UISwipeActionsConfiguration(actions: [action])
         return configuration
         
     }
-
+    
 }

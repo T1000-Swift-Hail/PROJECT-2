@@ -1,0 +1,48 @@
+/* 
+ Localizable.strings
+ DecAntique
+ 
+ Created by Dalal AlSaidi on 09/04/1443 AH.
+ 
+ */
+
+
+
+"Home" = "الرئيسية";
+"Prducts Details" = "تفاصيل المنتج";
+"Email..." = "البريد الإلكتروني";
+"Please login to add or remove Shopping cart." = "يرجى تسجيل الدخول";
+"Alert" = "تنبيه";
+"OK" = "موافق";
+"CANCEL" = "إلغاء";
+"Loading" = "جاري التحميل";
+"Please input your email." = "يرجى إدخال بريدك الإلكتروني";
+"Please input valid email." = "يرجى إدخال بريد إلكتروني صحيح";
+"Please input password." = "يرجى إدخال كلمة السر";
+"Please confirm password." = "يرجى تأكيد كلمة السر";
+"Please input correct password." = "يرجى إدخال كلمة سر صحيحة";
+"Email is not registered or deleted by manager." = "البريد الإلكتروني غير صحيح أو تم حذف الحساب";
+"Please login to delete product." = "يرجى تسجيل الدخول لحذف المنتج";
+"Would you like to delete this product?" = "هل تريد حذف المنتج؟";
+"Remove" = "حذف";
+"Add" = "أَضِف";
+"Please select photo." = "يرجى إختيار صورة";
+"Please input product name." = "يرجى إدخال الإسم";
+"Please input product price." = "يرجى إدخال السعر";
+"Please input description." = "يرجى إدخال الوصف";
+"Your profile was updated successfuly." = "تم تحديث معلوماتك بنجاح";
+"Would you like to remove product from Favorite list?" = "هل تريد حذف المنتج من المفضلة؟";
+"Would you like to add product to favorit list?" = "هل تريد إضافة المنتج للمفضلة";
+"Please input user name." = "يرجى إدخال إسم المستخدم";
+"Please input email." = "يرجى إدخال بريد إلكتروني";
+"Please input vaild email." = "يرجى إدخال بريد إلكتروني صحيح";
+"Please input current password correctly." = "يرجى إدخال كلمة السر الحالية بشكل صحيح";
+"Please input vaild new password." = "يرجى إدخال كلمة جديدة سر صحيحة";
+"Would you like to delete this user?" = "هل تريد حذف هذا المستخدم؟";
+"Would you like to log out?" = "هل تريد تسجيل الخروج؟";
+"Log Out" = "تسجيل خروج";
+"Cancel" = "إلغاء";
+"Delete" = "حذف";
+"" = "";
+"" = "";
+"" = "";

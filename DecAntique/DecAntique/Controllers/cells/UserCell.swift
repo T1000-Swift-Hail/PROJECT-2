@@ -8,7 +8,7 @@
 import UIKit
 
 class UserCell: UITableViewCell {
-
+    
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblEmail: UILabel!
     
@@ -18,5 +18,5 @@ class UserCell: UITableViewCell {
             lblEmail.text = "\(entity.email!)"
         }
     }
-
+    
 }

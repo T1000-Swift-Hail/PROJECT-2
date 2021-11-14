@@ -8,7 +8,7 @@
 import UIKit
 
 class SingleProductVC: BaseVC {
-
+    
     var product: ProductModel?
     
     @IBOutlet weak var imgPhoto: UIImageView!
@@ -19,10 +19,10 @@ class SingleProductVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Prducts Details".localizable
         if let data = product {
             
-            self.parent?.title = "Product Details"
+            
             
             imgPhoto.image = UIImage(data: data.photo!)
             lblName.text = data.product_name
@@ -31,9 +31,5 @@ class SingleProductVC: BaseVC {
         } else {
             doDismiss()
         }
-        
-        
     }
-
-
 }

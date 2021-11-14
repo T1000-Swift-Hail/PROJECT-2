@@ -15,7 +15,7 @@ class BaseVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -27,10 +27,10 @@ class BaseVC: UIViewController {
     
     // MARK: - progressHUD function
     func getProgressHUD(view : UIView, mode: MBProgressHUDMode = .annularDeterminate) -> MBProgressHUD {
-    
+        
         let hud = MBProgressHUD.showAdded(to:view, animated: true)
         hud.mode = mode
-        hud.label.text = "Loading";
+        hud.label.text = "Loading".localizable;
         hud.animationType = .zoomIn
         hud.tintColor = UIColor.white
         hud.contentColor = UIColor.systemBlue
@@ -39,7 +39,7 @@ class BaseVC: UIViewController {
     }
     
     func showLoadingView(view : UIView, label: String = "", mode: MBProgressHUDMode = .indeterminate) {
-    
+        
         hud = MBProgressHUD.showAdded(to:view, animated: true)
         hud!.mode = mode
         if label != "" {
@@ -52,9 +52,9 @@ class BaseVC: UIViewController {
     }
     
     func showLoadingView(label: String = "") {
-
+        
         let window = UIApplication.shared.key!.rootViewController
-
+        
         if window != nil {
             hud = MBProgressHUD.showAdded(to: window!.view, animated: true)
         } else {
@@ -88,9 +88,9 @@ class BaseVC: UIViewController {
     }
     
     func hideLoadingView() {
-       if let hud = hud {
-           hud.hide(animated: true)
-       }
+        if let hud = hud {
+            hud.hide(animated: true)
+        }
     }
     
     // MARK: - goto new viewcontroller or dismiss
@@ -116,30 +116,30 @@ class BaseVC: UIViewController {
     
     // MARK: - show alert
     func showAlertDialog(title: String!, message: String!, positive: String?, negative: String?) {
-
+        
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-
+        
         if (positive != nil) {
             alert.addAction(UIAlertAction(title: positive, style: .default, handler: nil))
         }
-
+        
         if (negative != nil) {
             alert.addAction(UIAlertAction(title: negative, style: .default, handler: nil))
         }
-
+        
         DispatchQueue.main.async(execute:  {
-         self.present(alert, animated: true, completion: nil)
+            self.present(alert, animated: true, completion: nil)
         })
     }
-
+    
     func showError(_ message: String!) {
-        showAlertDialog(title: "", message: message, positive:"OK", negative: nil)
+        showAlertDialog(title: "", message: message, positive:"OK".localizable, negative: nil)
     }
-
+    
     func showSuccess(_ message: String!) {
-        showAlertDialog(title: "", message: message, positive: "OK", negative: nil)
+        showAlertDialog(title: "", message: message, positive: "OK".localizable, negative: nil)
     }
-     
+    
     internal func showAlert(title: String?, message: String?, positive: String, negative: String?, okClosure: (() -> Void)?, cancelClosure: (() -> Void)? = nil) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         if negative != nil {
@@ -157,26 +157,26 @@ class BaseVC: UIViewController {
             }
         })
         alertController.addAction(yesAction)
-
-
+        
+        
         self.present(alertController, animated: true, completion: nil)
     }
-     
+    
     func showAlert(_ message: String!) {
-        showAlertDialog(title: "Alert", message: message, positive: "OK", negative: nil)
+        showAlertDialog(title: "Alert".localizable, message: message, positive: "OK".localizable, negative: nil)
     }
     
     //MARK: -
     
     func hideKeyboardWhenTappedAround() {
-
+        
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         tap.cancelsTouchesInView = false
         
         self.tap = tap
         view.addGestureRecognizer(tap)
     }
-
+    
     func keepKeyboardShowing() {
         if let tapGes = self.tap {
             view.removeGestureRecognizer(tapGes)

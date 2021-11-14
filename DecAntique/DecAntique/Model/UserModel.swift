@@ -8,7 +8,6 @@
 import Foundation
 
 
-
 struct UserModel {
     var id: Int32?
     var username: String?
@@ -16,7 +15,7 @@ struct UserModel {
     var password: String?
     var type: String = "customer"
     var token: String?
-
+    
     init(id: Int32?, username: String?, email: String?, type: String = "customer", password: String? = nil, token: String? = nil) {
         self.id         = id
         self.username   = username
