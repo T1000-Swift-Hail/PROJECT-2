@@ -18,7 +18,7 @@ Chocolate is usually eaten and enjoyed as a finished productChocolate Made Entir
 - Pay for chocolate
 - View a list of product
 - add product to shooping cart
-
+- products Description
 
 ### Define the scenes :
  - New File    LoginVC 
@@ -40,18 +40,13 @@ Login button ,(userName,password)textfield,image
  
 -  Navigation Controller Profile 
 - Open your ViewController file
--  static cells( Name,location,phone number )
-image and label use
+-  for the profile  browse store in formation
+- store in formation
+inside(name,address,phone,web,Email)
 - use the constraints
-for the profile browse Title chocolate
-inside (nameBostain,Location,phone number) 
 - Navigation Controller Trending
-- Open your ViewController file Trending
--  static cells ( table view section 2)
-section 1:Best sellers Belgian Chocolate
-section 2:New Releases Protein Chocolate
-
-
+- Trending (best sellers)name chocolate and Describe
+- Trending (New Releases)name chocolate and Describe
 
 ### Make  screens  is adaptive to the device appearance in Light & Dark mode. 
 ### make  localized in one other language
