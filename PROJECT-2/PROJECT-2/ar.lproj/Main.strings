@@ -1,27 +1,105 @@
 
+/* Class = "UILabel"; text = "Label"; ObjectID = "2L7-fR-pNw"; */
+"2L7-fR-pNw.text" = "Label";
+
+/* Class = "UILabel"; text = "Chocolate raw"; ObjectID = "70T-Ym-2ut"; */
+"70T-Ym-2ut.text" = "Chocolate raw";
+
 /* Class = "UITabBarItem"; title = "shoppingCart"; ObjectID = "7XI-vu-Z7k"; */
-"7XI-vu-Z7k.title" = "عربة التسوق";
+"7XI-vu-Z7k.title" = "shoppingCart";
+
+/* Class = "UITabBarItem"; title = "Trending"; ObjectID = "7ZT-Mr-2cC"; */
+"7ZT-Mr-2cC.title" = "Trending";
+
+/* Class = "UILabel"; text = "Chocolate brownies"; ObjectID = "8IJ-ba-rBR"; */
+"8IJ-ba-rBR.text" = "Chocolate brownies";
+
+/* Class = "UITableViewSection"; headerTitle = "Best Sellers"; ObjectID = "9gh-x5-1ZV"; */
+"9gh-x5-1ZV.headerTitle" = "Best Sellers";
+
+/* Class = "UILabel"; text = "Chocolate raw"; ObjectID = "BFo-Js-wGI"; */
+"BFo-Js-wGI.text" = "Chocolate raw";
 
 /* Class = "UITextField"; placeholder = "userName"; ObjectID = "BIW-xq-2wi"; */
-"BIW-xq-2wi.placeholder" = "اسم المستخدم";
+"BIW-xq-2wi.placeholder" = "userName";
 
-/* Class = "UILabel"; text = "Title"; ObjectID = "DEW-uY-yZh"; */
-"DEW-uY-yZh.text" = "Title";
+/* Class = "UILabel"; text = "Belgian Chocolate"; ObjectID = "D0T-1D-npp"; */
+"D0T-1D-npp.text" = "Belgian Chocolate";
+
+/* Class = "UIButton"; configuration.title = "5017896878"; ObjectID = "J4B-IC-0yg"; */
+"J4B-IC-0yg.configuration.title" = "5017896878";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "J4B-IC-0yg"; */
+"J4B-IC-0yg.normalTitle" = "Button";
+
+/* Class = "UITableViewSection"; headerTitle = "New Releases"; ObjectID = "NT2-cL-y46"; */
+"NT2-cL-y46.headerTitle" = "New Releases";
+
+/* Class = "UIButton"; configuration.title = "bostainichocolate6@gmail.com"; ObjectID = "Qux-6f-tFO"; */
+"Qux-6f-tFO.configuration.title" = "bostainichocolate6@gmail.com";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Qux-6f-tFO"; */
+"Qux-6f-tFO.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Trending"; ObjectID = "RRO-c9-c6Z"; */
+"RRO-c9-c6Z.title" = "Trending";
 
 /* Class = "UITabBarItem"; title = "Home"; ObjectID = "S8t-Tq-dxO"; */
-"S8t-Tq-dxO.title" = "الصفحة الرئيسية";
+"S8t-Tq-dxO.title" = "Home";
+
+/* Class = "UIButton"; configuration.title = "bostanichocolate.com"; ObjectID = "SgY-lw-vlu"; */
+"SgY-lw-vlu.configuration.title" = "bostanichocolate.com";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SgY-lw-vlu"; */
+"SgY-lw-vlu.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Today, it is considered the icon of Belgian chocolate, and its manufacture is based on cocoa beans imported from Ghana in Africa. Famous for its symbolic representation of the elephant, it is known for making the finest dark chocolate."; ObjectID = "YD0-SU-Z05"; */
+"YD0-SU-Z05.text" = "Today, it is considered the icon of Belgian chocolate, and its manufacture is based on cocoa beans imported from Ghana in Africa. Famous for its symbolic representation of the elephant, it is known for making the finest dark chocolate.";
+
+/* Class = "UILabel"; text = "It is a type of cake rich in chocolate, popular in the United States and spread around the world, usually served with chocolate sundae, milk or cream. Prepared from milk, flour, small pieces of chocolate, sugar, almonds or any other type of nuts, baking powder and cocoa."; ObjectID = "d42-Mg-dgJ"; */
+"d42-Mg-dgJ.text" = "It is a type of cake rich in chocolate, popular in the United States and spread around the world, usually served with chocolate sundae, milk or cream. Prepared from milk, flour, small pieces of chocolate, sugar, almonds or any other type of nuts, baking powder and cocoa.";
 
 /* Class = "UIButton"; configuration.title = "Login"; ObjectID = "dfc-j4-mdY"; */
-"dfc-j4-mdY.configuration.title" = "تسجيل الدخول";
+"dfc-j4-mdY.configuration.title" = "Login";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dfc-j4-mdY"; */
 "dfc-j4-mdY.normalTitle" = "Button";
 
+/* Class = "UILabel"; text = "Chocolate brownies"; ObjectID = "fVf-D4-uhm"; */
+"fVf-D4-uhm.text" = "Chocolate brownies";
+
+/* Class = "UILabel"; text = "Belgian Chocolate"; ObjectID = "fvY-ha-R7M"; */
+"fvY-ha-R7M.text" = "Belgian Chocolate";
+
 /* Class = "UITextField"; placeholder = "passWord"; ObjectID = "gEH-a7-hDB"; */
-"gEH-a7-hDB.placeholder" = "كلمه السر";
+"gEH-a7-hDB.placeholder" = "passWord";
 
 /* Class = "UITabBarItem"; title = "profile"; ObjectID = "gJE-Le-5fi"; */
-"gJE-Le-5fi.title" = "الملف الشخصي";
+"gJE-Le-5fi.title" = "profile";
+
+/* Class = "UILabel"; text = "It is an important and beneficial protein for the health of the body, in addition to the presence of fiber and carbohydrates in it and some other additions such as dried fruits and nuts."; ObjectID = "oRb-GI-bTh"; */
+"oRb-GI-bTh.text" = "It is an important and beneficial protein for the health of the body, in addition to the presence of fiber and carbohydrates in it and some other additions such as dried fruits and nuts.";
+
+/* Class = "UILabel"; text = "Bostani Chocolate"; ObjectID = "rKD-2U-IdB"; */
+"rKD-2U-IdB.text" = "Bostani Chocolate";
+
+/* Class = "UILabel"; text = "Rich in fatty acids such as omega-6 films contain a significant enzyme in the regeneration and repair of cells. It has a high absorbency that makes it wonderful for the skin from the sun's UV rays."; ObjectID = "tdF-Qg-OE3"; */
+"tdF-Qg-OE3.text" = "Rich in fatty acids such as omega-6 films contain a significant enzyme in the regeneration and repair of cells. It has a high absorbency that makes it wonderful for the skin from the sun's UV rays.";
+
+/* Class = "UIButton"; configuration.title = "Hail Al-Naqra"; ObjectID = "va2-DT-QF8"; */
+"va2-DT-QF8.configuration.title" = "Hail Al-Naqra";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "va2-DT-QF8"; */
+"va2-DT-QF8.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Protein Chocolate"; ObjectID = "wyH-x7-B8k"; */
+"wyH-x7-B8k.text" = "Protein Chocolate";
+
+/* Class = "UILabel"; text = "Protein Chocolate"; ObjectID = "xGm-hm-Pv8"; */
+"xGm-hm-Pv8.text" = "Protein Chocolate";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "xYe-CB-NbO"; */
 "xYe-CB-NbO.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "store Information"; ObjectID = "xtO-LE-fRo"; */
+"xtO-LE-fRo.title" = "store Information";
