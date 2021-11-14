@@ -8,11 +8,19 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="TimesNewRoman.ttf">
+            <string>.SFUI-Regular</string>
+        </array>
+        <array key="Vogue.ttf">
+            <string>Vogue-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--UOH Student Hostel-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Login" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" alpha="0.90000000000000002" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="-768" y="80"/>
         </scene>
-        <!--Rooms View Controller-->
+        <!--Rooms Select-->
         <scene sceneID="vS1-Ii-wd3">
             <objects>
-                <viewController id="WUc-0Q-6PF" customClass="RoomsViewController" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WUc-0Q-6PF" customClass="RoomsSelect" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zrF-eR-enm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -187,8 +195,8 @@
                     <connections>
                         <outlet property="duplexTitle" destination="jJ0-9i-P9v" id="HWZ-oj-8xR"/>
                         <outlet property="singleTitle" destination="paI-XN-wxG" id="Ghs-3W-prI"/>
-                        <segue destination="vsq-1v-Q2r" kind="show" identifier="Duplex" id="Ix2-HU-eaO"/>
-                        <segue destination="L5x-JD-zN8" kind="show" identifier="Single" id="P1G-3X-f7o"/>
+                        <segue destination="vsq-1v-Q2r" kind="show" identifier="DuplexRoom" id="Ix2-HU-eaO"/>
+                        <segue destination="L5x-JD-zN8" kind="show" identifier="SingleRoom" id="P1G-3X-f7o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wge-Mb-FGW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -289,34 +297,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your chosen room :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8x-xT-CEK">
-                                <rect key="frame" x="80" y="110" width="255" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="nKs-VP-2cn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" name="CustomFontColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yam-Ke-Gxg">
                                 <rect key="frame" x="93" y="195" width="229" height="263"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="UFh-Ia-19L">
+                                <rect key="frame" x="80" y="537" width="255" height="66.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reserve Status :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGA-n5-BLe">
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Vogue-Regular" family="Vogue" pointSize="22"/>
+                                        <color key="textColor" name="CustomFontColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTc-P5-QIC">
+                                        <rect key="frame" x="0.0" y="46.5" width="255" height="20"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                                        <color key="textColor" name="Pending"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="GxF-ZE-z7R"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Chosen Room :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8x-xT-CEK">
+                                <rect key="frame" x="80" y="128" width="255" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="nKs-VP-2cn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="22"/>
+                                <color key="textColor" name="CustomFontColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NbI-ws-zAf"/>
                         <color key="backgroundColor" name="CustomAdaptiveColor"/>
                         <constraints>
+                            <constraint firstItem="UFh-Ia-19L" firstAttribute="top" secondItem="Yam-Ke-Gxg" secondAttribute="bottom" constant="79" id="BLY-tP-rJd"/>
                             <constraint firstItem="NbI-ws-zAf" firstAttribute="bottom" secondItem="Yam-Ke-Gxg" secondAttribute="bottom" constant="355" id="Ojk-ie-U3i"/>
-                            <constraint firstItem="n8x-xT-CEK" firstAttribute="top" secondItem="NbI-ws-zAf" secondAttribute="top" constant="22" id="kvf-tg-ajA"/>
-                            <constraint firstItem="Yam-Ke-Gxg" firstAttribute="top" secondItem="n8x-xT-CEK" secondAttribute="bottom" constant="39" id="mfK-Of-x1E"/>
+                            <constraint firstItem="n8x-xT-CEK" firstAttribute="top" secondItem="NbI-ws-zAf" secondAttribute="top" constant="40" id="kvf-tg-ajA"/>
+                            <constraint firstItem="Yam-Ke-Gxg" firstAttribute="top" secondItem="n8x-xT-CEK" secondAttribute="bottom" constant="21" id="mfK-Of-x1E"/>
                             <constraint firstItem="n8x-xT-CEK" firstAttribute="centerX" secondItem="Yam-Ke-Gxg" secondAttribute="centerX" id="nNo-NP-6ma"/>
                             <constraint firstItem="NbI-ws-zAf" firstAttribute="trailing" secondItem="Yam-Ke-Gxg" secondAttribute="trailing" constant="92" id="np7-rn-cC1"/>
+                            <constraint firstItem="UFh-Ia-19L" firstAttribute="leading" secondItem="NbI-ws-zAf" secondAttribute="leading" constant="80" id="qpG-iW-2zb"/>
                             <constraint firstItem="n8x-xT-CEK" firstAttribute="leading" secondItem="NbI-ws-zAf" secondAttribute="leading" constant="80" id="tIC-Jb-rYe"/>
                             <constraint firstItem="Yam-Ke-Gxg" firstAttribute="leading" secondItem="NbI-ws-zAf" secondAttribute="leading" constant="93" id="y3I-KC-aOH"/>
+                            <constraint firstItem="NbI-ws-zAf" firstAttribute="trailing" secondItem="UFh-Ia-19L" secondAttribute="trailing" constant="79" id="yGT-4I-61N"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X9G-R7-Tfh"/>
                     <connections>
                         <outlet property="selctedImage" destination="Yam-Ke-Gxg" id="103-so-pSs"/>
+                        <outlet property="statusLabel" destination="KGA-n5-BLe" id="VXF-Mu-9vB"/>
+                        <outlet property="statusResult" destination="KTc-P5-QIC" id="u0O-eo-ajr"/>
+                        <outlet property="titleLabel" destination="n8x-xT-CEK" id="h7Z-C5-gQ3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rCy-sc-vdA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -701,7 +735,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlT-C2-t7S">
-                                <rect key="frame" x="100" y="447" width="200" height="31"/>
+                                <rect key="frame" x="107" y="462" width="200" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log Out"/>
                                 <connections>
@@ -772,6 +806,9 @@
         </namedColor>
         <namedColor name="CustomFontColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Pending">
+            <color red="0.0" green="0.57671397924423218" blue="0.38301858305931091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TermsCustomColor">
             <color red="0.92500001192092896" green="1" blue="0.97100001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

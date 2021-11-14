@@ -5,6 +5,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>BebasNeue-Regular.ttf</string>
+		<string>Akira Expanded Demo.ttf</string>
+		<string>Vogue.ttf</string>
 		<string>The Humble.ttf</string>
 		<string>Moutarde DEMO.ttf</string>
 	</array>

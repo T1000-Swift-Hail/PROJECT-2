@@ -7,7 +7,7 @@
 import SafariServices
 import UIKit
 
-class LoginViewController: UIViewController,UITextFieldDelegate {
+class Login: UIViewController,UITextFieldDelegate {
 
     @IBOutlet var idTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -34,6 +34,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     override func awakeFromNib() {
         tabBarItem.title = "Home".localized
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -19,12 +19,12 @@ class SingleViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
         super.viewDidLoad()
         createPickerView()
         dismissPickerView()
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func reserveButton(_ sender: UIButton) {
         if textField.hasText {
             warningAlert()
+        userDefault.set(true, forKey: "SelectedSingle")
         }
         else {
             errorAlert()

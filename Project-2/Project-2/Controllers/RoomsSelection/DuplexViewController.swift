@@ -20,18 +20,17 @@ class DuplexViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
         super.viewDidLoad()
         createPickerView()
         dismissPickerView()
-        if textField.hasText {
-            userDefault.bool(forKey: "selectedAddress")
-        }
     
     }
     
     
     @IBAction func reserveButton(_ sender: UIButton) {
+        
         if textField.hasText {
            warningAlert()
-        }
-        else {
+        userDefault.set(true, forKey: "SelectedAddress")
+
+        } else {
            errorAlert()
         }
         
@@ -81,6 +80,9 @@ class DuplexViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     
     
     @objc func action() {
+        
+        
+        //
         view.endEditing(true)
     }
     

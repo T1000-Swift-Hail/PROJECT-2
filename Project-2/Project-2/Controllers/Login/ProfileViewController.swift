@@ -24,8 +24,6 @@ class ProfileViewController:UIViewController {
         profileID.text = "Student ID:".localized
         profileName.text = "Student Name:".localized
         
-
-//        print("1:\(userDefault.string(forKey: "id"))")
         let id = userDefault.string(forKey: "id")
         showID.text = id
         let name = userDefault.string(forKey: "name")
@@ -38,20 +36,12 @@ class ProfileViewController:UIViewController {
     
     @IBAction func logOutButton(_ sender: UIButton) {
         userDefault.set(false, forKey: "isLogIn")
+        //userDefault.set(false, forKey: "imageNameSelected")
         userDefault.set("", forKey: "id")
         userDefault.set("", forKey: "name")
         userDefault.synchronize()
         performSegue(withIdentifier: "LogOut", sender: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

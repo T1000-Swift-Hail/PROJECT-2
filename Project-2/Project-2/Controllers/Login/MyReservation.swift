@@ -8,24 +8,38 @@
 import UIKit
 
 let userDefault = UserDefaults.standard
-var imageSelected : UIImage?
 
 class MyReservation: UIViewController {
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var statusResult: UILabel!
     @IBOutlet var selctedImage: UIImageView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-//        if userDefault.bool(forKey: "selectedAddress") {
-//            selctedImage.image = UIImage(named: "Duplex")
-//        }
-//        let image = userDefault.object(forKey: "duplexImage")
-//        selctedImage.image = image as? UIImage
-      
-        //userDefault.set(selctedImage, forKey: "duplexImage")
-        selctedImage.image = imageSelected
+        titleLabel.text = "Your Chosen Room :".localized
+        statusLabel.text = "Reserve Status :".localized
+        statusResult.text = "Pending...".localized
+    
+        }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if userDefault.bool(forKey: "SelectedAddress") {
+            
+            DispatchQueue.main.async {
+            let selectedImage = userDefault.string(forKey: "imageNameSelected")
+                self.selctedImage.image = UIImage(named: selectedImage!)
+            }
+        }
+        
+    }
+        
+        
     }
     
    
     
     
   
-}
+
