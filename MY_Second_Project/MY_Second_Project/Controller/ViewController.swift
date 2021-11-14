@@ -11,14 +11,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
 
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButt: UIButton!
-    
     
     @IBOutlet weak var userEmailSign: UITextField!
     @IBOutlet weak var userPasswordSign: UITextField!
@@ -32,7 +29,8 @@ class ViewController: UIViewController {
         
         let userEmail = userEmailTextField.text ?? ""
         let userPassword = passwordTextField.text ?? ""
-        
+        //Check for empty fields
+        //Display alert message
         if  userEmail.isEmpty || userPassword.isEmpty {
             let myAlert = UIAlertController(title:NSLocalizedString("Login Invalid", comment: ""), message:NSLocalizedString("All fields are required!", comment: ""), preferredStyle: .alert)
             let okAction = UIAlertAction(title: NSLocalizedString("ok", comment: ""), style: .default, handler: nil)
@@ -41,7 +39,7 @@ class ViewController: UIViewController {
             present(myAlert , animated : true , completion : nil)
     }
      else{
-         print("Logged IN ...")
+         //Display alert message
          let myAlert = UIAlertController(title: "Login is successfully".localized, message:"Welcome To My Perfume".localized, preferredStyle: .alert)
          let okAction = UIAlertAction(title: "ok".localized, style: .default, handler: { alertt in
              self.performSegue(withIdentifier: "loginIdentifier" , sender: nil)
@@ -52,26 +50,19 @@ class ViewController: UIViewController {
             present(myAlert , animated : true , completion : nil)
             
      }
-        }
-    
-
-
-            
+ }
     
     @IBAction func createNewAcount(_ sender: UIButton) {
-        performSegue(withIdentifier: "createNewAcount", sender: nil)
-    }
-    
-  
-        
-    
+    performSegue(withIdentifier: "createNewAcount", sender: nil)
+ }
     
     @IBAction func signUpButt(_ sender: Any) {
         
         let userEmail =  userEmailSign.text ?? ""
         let userPassword = userPasswordSign.text ?? ""
         let repeatUserPassword = repeatPsswordSign.text ?? ""
-        
+        //Check for empty fields
+        //Display alert message
         if  userEmail.isEmpty || userPassword.isEmpty || repeatUserPassword.isEmpty {
             let myAlert = UIAlertController(title: "Invalid Sign-Up".localized, message:"All fields are required!".localized, preferredStyle: .alert)
             let okAction = UIAlertAction(title: "ok".localized, style: .default, handler: nil)
@@ -80,7 +71,8 @@ class ViewController: UIViewController {
             present(myAlert , animated : true , completion : nil)
             
         }
-        
+        // Check if passwords match
+        //Display alert message
         else if (userPassword != repeatUserPassword){
             let alert = UIAlertController(title: "Invalid Sign-Up".localized, message:"Passwords do not match!".localized, preferredStyle: .alert)
             let okAction = UIAlertAction(title: "ok".localized, style: .default, handler: nil)
@@ -89,6 +81,7 @@ class ViewController: UIViewController {
         }
         
         else {
+            //Display alert message
             let alert = UIAlertController(title: "Sign-Up is successfully".localized, message:"Welcome To My Perfume!".localized, preferredStyle: .alert)
             let okAction = UIAlertAction(title: "ok".localized, style: .default, handler: { al in
                 self.performSegue(withIdentifier: "signUpIdentifier", sender: nil)
@@ -97,12 +90,11 @@ class ViewController: UIViewController {
             alert.addAction(okAction)
             self.present(alert , animated : true , completion : nil)
                        
+            }
+        
         }
-        
-        
-       }
-}
-
+   }
+// extension for localized
 extension String {
     
     var localized : String{

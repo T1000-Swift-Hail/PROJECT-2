@@ -8,30 +8,36 @@
 import UIKit
 
 class MenPerfumesViewController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
-    var menPerfume :[Perfume] = []
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        menPerfume = creatArray()
-        tableView.delegate = self
-        tableView.dataSource = self
-    }
+  
+// create array for data
+ var menPerfume :[Perfume] = []
     
-    func creatArray() -> [Perfume] {
+@IBOutlet weak var tableView: UITableView!
+
+    
+override func viewDidLoad() {
+super.viewDidLoad()
+menPerfume = creatArray()
+tableView.delegate = self
+tableView.dataSource = self
+     
+      }
+    // creat data and return  into array 
+func creatArray() -> [Perfume] {
         
-        var PerfumeType : [Perfume] = []
+var PerfumeType : [Perfume] = []
         
-        let perfume1 = Perfume(perfumeName:"Cartier Declaration".localized , perfumeSize: 150, perfumePrice: 373.75, perfumeImg:UIImage(named:"menPerfum1")!)
-        let perfume2 = Perfume(perfumeName: "Excellence Jaguar".localized, perfumeSize: 100 , perfumePrice: 187.25 , perfumeImg: UIImage(named:"menPerfume2")!)
-        let perfume3 = Perfume(perfumeName: "Tom Ford Noir".localized, perfumeSize: 150, perfumePrice: 500.25 , perfumeImg: UIImage(named:"menPerfume3")!)
-        let perfume4 = Perfume(perfumeName: "Eau Sauvage Parfum by Dior".localized, perfumeSize: 100, perfumePrice: 500.55, perfumeImg: UIImage(named:"menPerfume4")!)
-        let perfume5 = Perfume(perfumeName: "CALVIN KLEIN".localized, perfumeSize: 100, perfumePrice: 373.75, perfumeImg: UIImage(named:"menPerfume5")!)
+let perfume1 = Perfume(perfumeName:"Cartier Declaration".localized , perfumeSize: 150, perfumePrice: 373.75, perfumeImg:UIImage(named:"menPerfum1")!)
+let perfume2 = Perfume(perfumeName: "Excellence Jaguar".localized, perfumeSize: 100 , perfumePrice: 187.25 , perfumeImg: UIImage(named:"menPerfume2")!)
+let perfume3 = Perfume(perfumeName: "Tom Ford Noir".localized, perfumeSize: 150, perfumePrice: 500.25 , perfumeImg: UIImage(named:"menPerfume3")!)
+let perfume4 = Perfume(perfumeName: "Eau Sauvage Parfum by Dior".localized, perfumeSize: 100, perfumePrice: 500.55, perfumeImg: UIImage(named:"menPerfume4")!)
+let perfume5 = Perfume(perfumeName: "CALVIN KLEIN".localized, perfumeSize: 100, perfumePrice: 373.75, perfumeImg: UIImage(named:"menPerfume5")!)
         
-        PerfumeType.append(perfume1)
-        PerfumeType.append(perfume2)
-        PerfumeType.append(perfume3)
-        PerfumeType.append(perfume4)
-        PerfumeType.append(perfume5)
+ PerfumeType.append(perfume1)
+ PerfumeType.append(perfume2)
+ PerfumeType.append(perfume3)
+ PerfumeType.append(perfume4)
+ PerfumeType.append(perfume5)
         
         return PerfumeType
         
@@ -41,26 +47,21 @@ class MenPerfumesViewController: UIViewController {
 
 extension MenPerfumesViewController: UITableViewDelegate , UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+// return the number of rows
+func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menPerfume.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let perfume = menPerfume[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "perfumeMenCell") as! MenPerfumes
-        cell.contentCell(perfume: perfume)
+//Configure the cell...
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  let perfume = menPerfume[indexPath.row]
+  let cell = tableView.dequeueReusableCell(withIdentifier: "perfumeMenCell") as! MenPerfumes
+  cell.contentCell(perfume: perfume)
         return cell
     }
 }
 
-//
-//
-//    @IBAction func addToCart(_ sender: UIButton) {
-//        let alert = UIAlertController(title: "Added to Cart!", message:"", preferredStyle: .alert)
-//
-//        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
-//
-//        self.present(alert, animated: true)
+
             
     
 

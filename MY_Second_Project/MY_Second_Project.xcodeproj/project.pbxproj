@@ -22,7 +22,7 @@
 		B7169E84273A1633000E25C4 /* HomePerfumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E83273A1632000E25C4 /* HomePerfumeViewController.swift */; };
 		B71FEFD02740F5A80084873F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B71FEFD22740F5A80084873F /* Localizable.strings */; };
 		B7FE40AA273AAC7F008FC1D8 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40A9273AAC7F008FC1D8 /* CartViewController.swift */; };
-		B7FE40B2273BE6A4008FC1D8 /* PerfumeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40B1273BE6A4008FC1D8 /* PerfumeDescription.swift */; };
+		B7FE40B2273BE6A4008FC1D8 /* Perfume.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40B1273BE6A4008FC1D8 /* Perfume.swift */; };
 		B7FE40B6273CF46B008FC1D8 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40B5273CF46B008FC1D8 /* ShoppingCart.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +47,7 @@
 		B71FEFD12740F5A80084873F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B71FEFD32740F5AA0084873F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B7FE40A9273AAC7F008FC1D8 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
-		B7FE40B1273BE6A4008FC1D8 /* PerfumeDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfumeDescription.swift; sourceTree = "<group>"; };
+		B7FE40B1273BE6A4008FC1D8 /* Perfume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfume.swift; sourceTree = "<group>"; };
 		B7FE40B5273CF46B008FC1D8 /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,7 +121,7 @@
 		B7FE40A5273AA903008FC1D8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B7FE40B1273BE6A4008FC1D8 /* PerfumeDescription.swift */,
+				B7FE40B1273BE6A4008FC1D8 /* Perfume.swift */,
 				B7FE40B5273CF46B008FC1D8 /* ShoppingCart.swift */,
 			);
 			path = Models;
@@ -207,7 +207,7 @@
 				B7FE40AA273AAC7F008FC1D8 /* CartViewController.swift in Sources */,
 				B7169E84273A1633000E25C4 /* HomePerfumeViewController.swift in Sources */,
 				B7169E7E27392152000E25C4 /* HomePerfumes.swift in Sources */,
-				B7FE40B2273BE6A4008FC1D8 /* PerfumeDescription.swift in Sources */,
+				B7FE40B2273BE6A4008FC1D8 /* Perfume.swift in Sources */,
 				B7169E8227398B12000E25C4 /* WomenPerfumeViewController.swift in Sources */,
 				B7169E5E2737EEE9000E25C4 /* SceneDelegate.swift in Sources */,
 				B7FE40B6273CF46B008FC1D8 /* ShoppingCart.swift in Sources */,
@@ -376,6 +376,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MY_Second_Project/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "My perfume";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -403,6 +404,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MY_Second_Project/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "My perfume";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

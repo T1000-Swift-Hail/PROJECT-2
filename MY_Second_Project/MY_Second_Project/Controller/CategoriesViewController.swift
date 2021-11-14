@@ -12,7 +12,8 @@ class CategoriesViewController: UIViewController {
 
     override func viewDidLoad() {
        super.viewDidLoad()
-  }
+     }
+    
 
     @IBAction func menPerfumeButt(_ sender: UIButton) {
         performSegue(withIdentifier: "MenPerfumes", sender: nil)
@@ -24,11 +25,13 @@ class CategoriesViewController: UIViewController {
         performSegue(withIdentifier: "WomenPerfume" , sender: nil)
     }
     
+    
     @IBAction func homePerfumeButt(_ sender: UIButton) {
         performSegue(withIdentifier: "HomePerfume", sender: nil)
+        
     }
    
-    }
+   }
 
 
     /*

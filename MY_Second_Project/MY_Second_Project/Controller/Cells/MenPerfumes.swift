@@ -17,34 +17,32 @@ class MenPerfumes: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
+        
+       }
 
     func contentCell(perfume : Perfume){
         
-        perfumeName.text = perfume.perfumeName
-        perfumeSize.text = "\(perfume.perfumeSize) ml "
-        perfumePrice.text = "\(perfume.perfumePrice) SAR"
-        imgMenPerfumes.image = perfume.perfumeImg
-    }
+    perfumeName.text = perfume.perfumeName
+    perfumeSize.text = "\(perfume.perfumeSize) ml "
+    perfumePrice.text = "\(perfume.perfumePrice) SAR"
+    imgMenPerfumes.image = perfume.perfumeImg
+    
+       }
     
 
     @IBAction func addToCartButt(_ sender: UIButton) {
         
-        let perfumeSize = Int(perfumeSize.text ?? "0") ?? 0
-        let perfumePrice = Double(perfumePrice.text ?? "0.0") ?? 0.0
-
-        let newPerfum = Perfume(perfumeName: perfumeName.text!, perfumeSize: perfumeSize, perfumePrice: perfumePrice, perfumeImg: imgMenPerfumes.image!)
+    let perfumeSize = Int(perfumeSize.text ?? "0") ?? 0
+    let perfumePrice = Double(perfumePrice.text ?? "0.0") ?? 0.0
+    let newPerfum = Perfume(perfumeName: perfumeName.text!, perfumeSize: perfumeSize, perfumePrice: perfumePrice, perfumeImg: imgMenPerfumes.image!)
+    myShoppingCart.products.append(newPerfum)
         
-
-        myShoppingCart.products.append(newPerfum)
-        
-    }
+        }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+
     }
 
 }

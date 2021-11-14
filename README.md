@@ -15,13 +15,15 @@ An online store that offers the perfumes of all kinds from international brands.
 
 ### Define the scenes :
 - Products interface: Show product "perfumes" types.
-- login interface: The customer enters his email and password. 
+- login interface: The customer enters his email and password.
+
 
 
 
 ### User Stories :
 - The customer is allowed to "log in" to the store using email and password .
-- Allows the customer to browse the perfumes and see the prices.
+- Allows the customer to browse the perfumes .
+
 
 
 
