@@ -8,8 +8,7 @@
 import UIKit
 
 class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-   
-
+   // cart class to add or delete product
 
     @IBOutlet weak var Add: UIButton!
     
@@ -19,7 +18,6 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         shoppingCartTable.delegate = self
         shoppingCartTable.dataSource = self
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,8 +39,6 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
                 
         return cell
             }
-    
-    
     
     @IBAction func editing(_ sender: UIButton) {
         

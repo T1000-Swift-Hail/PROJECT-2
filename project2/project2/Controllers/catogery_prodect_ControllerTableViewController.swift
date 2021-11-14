@@ -9,7 +9,7 @@ import UIKit
 
 class catogery_prodect_ControllerTableViewController: UITableViewController {
     
-
+//add product to tableView
 
 
     @IBOutlet var tableview: UITableView!
@@ -19,7 +19,7 @@ class catogery_prodect_ControllerTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-       // add product
+       
         let product1 = Product(name:NSLocalizedString("Inaba", comment: "") , price: 34, photo: UIImage(named: "birds food-1")!)
        let product2 = Product(name:NSLocalizedString("kitcat", comment: "") , price: 50, photo: UIImage(named: "catfood")!)
         let product3 = Product(name:NSLocalizedString("Apoly", comment: "") , price: 34, photo: UIImage(named: "dog food2")!)
