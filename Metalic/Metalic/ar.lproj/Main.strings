@@ -1,18 +1,18 @@
 
 /* Class = "UISegmentedControl"; 1Mg-RY-ktG.segmentTitles[0] = "First Speed"; ObjectID = "1Mg-RY-ktG"; */
-"1Mg-RY-ktG.segmentTitles[0]" = "First Speed";
+"1Mg-RY-ktG.segmentTitles[0]" = "السرعه الاولى";
 
 /* Class = "UISegmentedControl"; 1Mg-RY-ktG.segmentTitles[1] = "First Teeth"; ObjectID = "1Mg-RY-ktG"; */
-"1Mg-RY-ktG.segmentTitles[1]" = "First Teeth";
+"1Mg-RY-ktG.segmentTitles[1]" = "الاسنان الاولى";
 
 /* Class = "UISegmentedControl"; 1Mg-RY-ktG.segmentTitles[2] = "Second Speed"; ObjectID = "1Mg-RY-ktG"; */
-"1Mg-RY-ktG.segmentTitles[2]" = "Second Speed";
+"1Mg-RY-ktG.segmentTitles[2]" = "السرعه الثانيه";
 
 /* Class = "UISegmentedControl"; 1Mg-RY-ktG.segmentTitles[3] = "Second Teeth"; ObjectID = "1Mg-RY-ktG"; */
-"1Mg-RY-ktG.segmentTitles[3]" = "Second Teeth";
+"1Mg-RY-ktG.segmentTitles[3]" = "الاسنان الثانيه";
 
 /* Class = "UIButton"; configuration.title = "LogOut"; ObjectID = "2OT-CH-TCh"; */
-"2OT-CH-TCh.configuration.title" = "LogOut";
+"2OT-CH-TCh.configuration.title" = "تسجيل خروج";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2OT-CH-TCh"; */
 "2OT-CH-TCh.normalTitle" = "Button";
@@ -21,7 +21,7 @@
 "4o2-WC-Iiu.placeholder" = "Speed Gear One";
 
 /* Class = "UIButton"; configuration.title = "Gear Ratio "; ObjectID = "5aO-BC-auQ"; */
-"5aO-BC-auQ.configuration.title" = "Gear Ratio ";
+"5aO-BC-auQ.configuration.title" = "معدل الترس ";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5aO-BC-auQ"; */
 "5aO-BC-auQ.normalTitle" = "Button";
@@ -48,19 +48,19 @@
 "L7x-qC-5og.placeholder" = "Number of Teath";
 
 /* Class = "UIButton"; configuration.title = "Clculate"; ObjectID = "Ljp-ma-c1g"; */
-"Ljp-ma-c1g.configuration.title" = "Clculate";
+"Ljp-ma-c1g.configuration.title" = "احسب";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ljp-ma-c1g"; */
 "Ljp-ma-c1g.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Gear Pressure angle"; ObjectID = "MUr-6f-SYa"; */
-"MUr-6f-SYa.configuration.title" = "Gear Pressure angle";
+"MUr-6f-SYa.configuration.title" = "زاويه الضغط";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MUr-6f-SYa"; */
 "MUr-6f-SYa.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "calculate"; ObjectID = "MhX-9y-O45"; */
-"MhX-9y-O45.configuration.title" = "calculate";
+"MhX-9y-O45.configuration.title" = "احسب";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MhX-9y-O45"; */
 "MhX-9y-O45.normalTitle" = "Button";
@@ -75,7 +75,7 @@
 "NJx-fA-BMG.placeholder" = "Teeth Gear Two";
 
 /* Class = "UIButton"; configuration.title = "Login"; ObjectID = "PZx-s3-rQf"; */
-"PZx-s3-rQf.configuration.title" = "Login";
+"PZx-s3-rQf.configuration.title" = "تسجيل دخول";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "PZx-s3-rQf"; */
 "PZx-s3-rQf.normalTitle" = "Button";
@@ -90,22 +90,22 @@
 "Xg4-6n-v7y.text" = "Label";
 
 /* Class = "UITabBarItem"; title = "Profile"; ObjectID = "Xz2-H8-6Vl"; */
-"Xz2-H8-6Vl.title" = "Profile";
+"Xz2-H8-6Vl.title" = "ملف شخصي";
 
 /* Class = "UITextField"; placeholder = "Re-password"; ObjectID = "YNX-8C-okd"; */
 "YNX-8C-okd.placeholder" = "Re-password";
 
 /* Class = "UIButton"; configuration.title = "Join Us"; ObjectID = "Yxh-gx-ONY"; */
-"Yxh-gx-ONY.configuration.title" = "Join Us";
+"Yxh-gx-ONY.configuration.title" = "انضم الينا";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Yxh-gx-ONY"; */
 "Yxh-gx-ONY.normalTitle" = "Button";
 
 /* Class = "UILabel"; text = "Company Name :"; ObjectID = "Z1P-qs-ySL"; */
-"Z1P-qs-ySL.text" = "Company Name :";
+"Z1P-qs-ySL.text" = "اسم الشركه :";
 
 /* Class = "UIButton"; configuration.title = "Join"; ObjectID = "c9t-jY-zHr"; */
-"c9t-jY-zHr.configuration.title" = "Join";
+"c9t-jY-zHr.configuration.title" = "انضم";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "c9t-jY-zHr"; */
 "c9t-jY-zHr.normalTitle" = "Button";
@@ -114,7 +114,7 @@
 "fBU-eI-Toj.placeholder" = "UserName";
 
 /* Class = "UILabel"; text = "Register"; ObjectID = "fPz-uZ-JAa"; */
-"fPz-uZ-JAa.text" = "Register";
+"fPz-uZ-JAa.text" = "تسجيل";
 
 /* Class = "UIButton"; configuration.title = "Rack and Pnion"; ObjectID = "mj2-Gs-vSU"; */
 "mj2-Gs-vSU.configuration.title" = "Rack and Pnion";
@@ -126,16 +126,16 @@
 "myv-98-aMv.placeholder" = "Password";
 
 /* Class = "UITabBarItem"; title = "Gear Ratio"; ObjectID = "nz2-jv-wDZ"; */
-"nz2-jv-wDZ.title" = "Gear Ratio";
+"nz2-jv-wDZ.title" = "معدل الترس";
 
 /* Class = "UILabel"; text = "UserName :"; ObjectID = "pQp-cF-Snb"; */
-"pQp-cF-Snb.text" = "UserName :";
+"pQp-cF-Snb.text" = "الاسم المستعار :";
 
 /* Class = "UILabel"; text = "Module 0.0"; ObjectID = "rIp-g1-d1c"; */
 "rIp-g1-d1c.text" = "Module 0.0";
 
 /* Class = "UIButton"; configuration.title = "More Info"; ObjectID = "rj8-XH-OQN"; */
-"rj8-XH-OQN.configuration.title" = "More Info";
+"rj8-XH-OQN.configuration.title" = "تعلم المزيد";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rj8-XH-OQN"; */
 "rj8-XH-OQN.normalTitle" = "Button";
@@ -144,25 +144,25 @@
 "s2E-ap-hoo.title" = "Home";
 
 /* Class = "UISegmentedControl"; s8i-WL-3g7.segmentTitles[0] = "MM"; ObjectID = "s8i-WL-3g7"; */
-"s8i-WL-3g7.segmentTitles[0]" = "MM";
+"s8i-WL-3g7.segmentTitles[0]" = "ملم";
 
 /* Class = "UISegmentedControl"; s8i-WL-3g7.segmentTitles[1] = "Inch"; ObjectID = "s8i-WL-3g7"; */
-"s8i-WL-3g7.segmentTitles[1]" = "Inch";
+"s8i-WL-3g7.segmentTitles[1]" = "انش";
 
 /* Class = "UIButton"; configuration.title = "PreOdrer ⚙️"; ObjectID = "uCp-9T-Zav"; */
-"uCp-9T-Zav.configuration.title" = "PreOdrer ⚙️";
+"uCp-9T-Zav.configuration.title" = "طلب مسبق ⚙️";
 
 /* Class = "UITextField"; placeholder = "Company"; ObjectID = "ujR-S9-Yga"; */
-"ujR-S9-Yga.placeholder" = "Company";
+"ujR-S9-Yga.placeholder" = "الشركه";
 
 /* Class = "UIButton"; configuration.title = "Cuntact us"; ObjectID = "umx-y0-OfC"; */
-"umx-y0-OfC.configuration.title" = "Cuntact us";
+"umx-y0-OfC.configuration.title" = "اتصل بنا";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "umx-y0-OfC"; */
 "umx-y0-OfC.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Skip"; ObjectID = "vjq-uu-TbV"; */
-"vjq-uu-TbV.configuration.title" = "Skip";
+"vjq-uu-TbV.configuration.title" = "تخطي";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vjq-uu-TbV"; */
 "vjq-uu-TbV.normalTitle" = "Button";

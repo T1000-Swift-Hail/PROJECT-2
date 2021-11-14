@@ -33,7 +33,7 @@ class LoginPage: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.isNavigationBarHidden = true
-      
+        
     }
     
     // MARK: - Functions
@@ -46,8 +46,10 @@ class LoginPage: UIViewController {
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissTap))
             view.addGestureRecognizer(tap)
-        loginButton.setTitle("logIn".localized, for: .normal)
+        
     }
+  
+
     
     // MARK: - Login Bottun
     
