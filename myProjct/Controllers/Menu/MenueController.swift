@@ -8,20 +8,9 @@
 import UIKit
 
 
-////struct to view product details
-//struct Pruducts {
-//    let name : String
-//    let price : Double
-//    let discrip : String
-//    let photo : UIImage
-//}
-
-
 class MenueController: UIViewController , UITableViewDelegate , UITableViewDataSource {
     
     @IBOutlet weak var tableViwe: UITableView!
-    //array back to struct
-//    var arrayProduct = [Pruducts]()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViwe.delegate = self
