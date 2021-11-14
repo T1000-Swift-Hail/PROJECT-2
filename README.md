@@ -38,12 +38,6 @@ When open application, after the lunch screen hides,user can see the login page,
 If  login as Admin , Admin can add products, delete Products, delete users. Also, Admin can update his account information by going to settings screen.
 Screen Shots:
 
-<img src = https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Launch%20Screen.png width="300" height="600" />
-<img src = https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Login%20Screen.png width="300" height="600" />
-<img src = https://github.com/DalalAlsaidi/PROJECT-2/blob/main/Home%20Screen.png width="300" height="600" />
-
-<img src = https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Registration%20Screen.png width="300" height="600" />
-
 
 <p align="right" >
    <img src = https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Launch%20Screen.png width="300" height="600" />
