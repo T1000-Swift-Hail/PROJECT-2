@@ -6,14 +6,16 @@
 //
 
 import UIKit
-
+// using class to profile Image with lable
 class ProfileImage: UITableViewCell {
     
     @IBOutlet weak var ImageProfile: UIImageView!
     @IBOutlet weak var NameProfile: UILabel!
     
+    // using func to change font and size all the row
     override func awakeFromNib() {
         super.awakeFromNib()
+        NameProfile.font = UIFont(name: "Amiri-Bold", size: 20)
         // Initialization code
     }
 

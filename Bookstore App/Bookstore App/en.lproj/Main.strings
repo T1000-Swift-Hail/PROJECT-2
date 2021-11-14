@@ -1,0 +1,84 @@
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "20Y-QL-B5K"; */
+"20Y-QL-B5K.title" = "Home";
+
+/* Class = "UIButton"; configuration.title = "NEXT"; ObjectID = "6LR-sI-VmT"; */
+"6LR-sI-VmT.configuration.title" = "NEXT";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6LR-sI-VmT"; */
+"6LR-sI-VmT.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6tQ-IU-uXh"; */
+"6tQ-IU-uXh.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Ag0-uI-WGz"; */
+"Ag0-uI-WGz.text" = "Label";
+
+/* Class = "UITableViewSection"; headerTitle = "Address ..."; ObjectID = "Alc-3a-LHh"; */
+"Alc-3a-LHh.headerTitle" = "Address ...";
+
+/* Class = "UIButton"; configuration.title = "New Joining"; ObjectID = "BPh-fo-LTu"; */
+"BPh-fo-LTu.configuration.title" = "New Joining";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BPh-fo-LTu"; */
+"BPh-fo-LTu.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Dl0-V1-46Q"; */
+"Dl0-V1-46Q.text" = "Label";
+
+/* Class = "UILabel"; text = "Hello Dear , in our store we have three type of departments book"; ObjectID = "E0D-aS-ckf"; */
+"E0D-aS-ckf.text" = "Hello Dear , in our store we have three type of departments book";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "GPv-Ww-UKL"; */
+"GPv-Ww-UKL.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Hello Dear, Welcome in the free encyclopedia, We have three type of departments ."; ObjectID = "Gul-eQ-qgh"; */
+"Gul-eQ-qgh.text" = "Hello Dear, Welcome in the free encyclopedia, We have three type of departments .";
+
+/* Class = "UIButton"; configuration.title = "Join As Visiter"; ObjectID = "QH1-gr-Id5"; */
+"QH1-gr-Id5.configuration.title" = "Join As Visiter";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "QH1-gr-Id5"; */
+"QH1-gr-Id5.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Confirm New Password ..."; ObjectID = "Zad-vw-qdv"; */
+"Zad-vw-qdv.placeholder" = "Confirm New Password ...";
+
+/* Class = "UITextField"; placeholder = "Add New Password ..."; ObjectID = "a1A-JR-76l"; */
+"a1A-JR-76l.placeholder" = "Add New Password ...";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "h8m-wX-sh6"; */
+"h8m-wX-sh6.title" = "Home";
+
+/* Class = "UITableViewSection"; headerTitle = "User Name ..."; ObjectID = "hIv-Ae-ZZF"; */
+"hIv-Ae-ZZF.headerTitle" = "User Name ...";
+
+/* Class = "UITableViewSection"; headerTitle = "Connection ..."; ObjectID = "imH-1w-EU6"; */
+"imH-1w-EU6.headerTitle" = "Connection ...";
+
+/* Class = "UITextField"; placeholder = "Password ..."; ObjectID = "jV1-eB-H8L"; */
+"jV1-eB-H8L.placeholder" = "Password ...";
+
+/* Class = "UITextField"; placeholder = "User Name ..."; ObjectID = "oVo-jj-lD9"; */
+"oVo-jj-lD9.placeholder" = "User Name ...";
+
+/* Class = "UITextField"; placeholder = "Add your Email Address ..."; ObjectID = "oZY-Mt-tIA"; */
+"oZY-Mt-tIA.placeholder" = "Add your Email Address ...";
+
+/* Class = "UITextField"; placeholder = "Add Your City ..."; ObjectID = "oow-b2-5uq"; */
+"oow-b2-5uq.placeholder" = "Add Your City ...";
+
+/* Class = "UITextField"; placeholder = "Add Your Phone Number ..."; ObjectID = "oz8-13-EpI"; */
+"oz8-13-EpI.placeholder" = "Add Your Phone Number ...";
+
+/* Class = "UITextField"; placeholder = "Add New User Name ..."; ObjectID = "pwd-aG-2QZ"; */
+"pwd-aG-2QZ.placeholder" = "Add New User Name ...";
+
+/* Class = "UITableViewSection"; headerTitle = "Password ..."; ObjectID = "uXZ-wN-7VA"; */
+"uXZ-wN-7VA.headerTitle" = "Password ...";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "wCQ-cZ-hj2"; */
+"wCQ-cZ-hj2.text" = "Login";
+
+/* Class = "UITextField"; placeholder = "Add Your Country ..."; ObjectID = "zrB-1s-F5q"; */
+"zrB-1s-F5q.placeholder" = "Add Your Country ...";

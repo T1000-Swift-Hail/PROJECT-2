@@ -16,20 +16,36 @@
 		77790D3D27380DFD002B6C53 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77790D3C27380DFD002B6C53 /* User.swift */; };
 		77790D412738FBAC002B6C53 /* DepartmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77790D402738FBAC002B6C53 /* DepartmentTableViewController.swift */; };
 		77790D4427390CB1002B6C53 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77790D4327390CB0002B6C53 /* ProfileImage.swift */; };
+		77790D4C273A682C002B6C53 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77790D4B273A682C002B6C53 /* Book.swift */; };
+		77790D4E273AB251002B6C53 /* DetalsBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77790D4D273AB251002B6C53 /* DetalsBook.swift */; };
+		779A044A273CF00500B66502 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 779A044C273CF00500B66502 /* Localizable.strings */; };
+		77C4DF662740EAAF0009ADA4 /* Amiri-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77C4DF622740EAAF0009ADA4 /* Amiri-Italic.ttf */; };
+		77C4DF672740EAAF0009ADA4 /* Amiri-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77C4DF632740EAAF0009ADA4 /* Amiri-Bold.ttf */; };
+		77C4DF682740EAAF0009ADA4 /* Amiri-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77C4DF642740EAAF0009ADA4 /* Amiri-BoldItalic.ttf */; };
+		77C4DF692740EAAF0009ADA4 /* Amiri-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77C4DF652740EAAF0009ADA4 /* Amiri-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		772FEFDD2740EE880090BCA8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77790D202737BA64002B6C53 /* Bookstore App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bookstore App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77790D232737BA64002B6C53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77790D252737BA64002B6C53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		77790D272737BA64002B6C53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		77790D2A2737BA64002B6C53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77790D2F2737BA66002B6C53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		77790D312737BA66002B6C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77790D3A2737E778002B6C53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77790D3C27380DFD002B6C53 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		77790D402738FBAC002B6C53 /* DepartmentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentTableViewController.swift; sourceTree = "<group>"; };
 		77790D4327390CB0002B6C53 /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		77790D4B273A682C002B6C53 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		77790D4D273AB251002B6C53 /* DetalsBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalsBook.swift; sourceTree = "<group>"; };
+		779A0444273CED7D00B66502 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		779A0445273CED7D00B66502 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		779A044B273CF00500B66502 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		77C4DF622740EAAF0009ADA4 /* Amiri-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amiri-Italic.ttf"; sourceTree = "<group>"; };
+		77C4DF632740EAAF0009ADA4 /* Amiri-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amiri-Bold.ttf"; sourceTree = "<group>"; };
+		77C4DF642740EAAF0009ADA4 /* Amiri-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amiri-BoldItalic.ttf"; sourceTree = "<group>"; };
+		77C4DF652740EAAF0009ADA4 /* Amiri-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amiri-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		772FEFDB2740EC400090BCA8 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				779A044C273CF00500B66502 /* Localizable.strings */,
+				77C4DF632740EAAF0009ADA4 /* Amiri-Bold.ttf */,
+				77C4DF642740EAAF0009ADA4 /* Amiri-BoldItalic.ttf */,
+				77C4DF622740EAAF0009ADA4 /* Amiri-Italic.ttf */,
+				77C4DF652740EAAF0009ADA4 /* Amiri-Regular.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 		77790D172737BA64002B6C53 = {
 			isa = PBXGroup;
 			children = (
@@ -62,15 +90,15 @@
 		77790D222737BA64002B6C53 /* Bookstore App */ = {
 			isa = PBXGroup;
 			children = (
+				772FEFDD2740EE880090BCA8 /* Info.plist */,
+				772FEFDB2740EC400090BCA8 /* font */,
 				77790D422739018D002B6C53 /* Model */,
 				77790D232737BA64002B6C53 /* AppDelegate.swift */,
 				77790D252737BA64002B6C53 /* SceneDelegate.swift */,
 				77790D272737BA64002B6C53 /* ViewController.swift */,
-				77790D3C27380DFD002B6C53 /* User.swift */,
 				77790D292737BA64002B6C53 /* Main.storyboard */,
 				77790D3A2737E778002B6C53 /* Assets.xcassets */,
 				77790D2E2737BA66002B6C53 /* LaunchScreen.storyboard */,
-				77790D312737BA66002B6C53 /* Info.plist */,
 			);
 			path = "Bookstore App";
 			sourceTree = "<group>";
@@ -80,6 +108,9 @@
 			children = (
 				77790D402738FBAC002B6C53 /* DepartmentTableViewController.swift */,
 				77790D4327390CB0002B6C53 /* ProfileImage.swift */,
+				77790D3C27380DFD002B6C53 /* User.swift */,
+				77790D4B273A682C002B6C53 /* Book.swift */,
+				77790D4D273AB251002B6C53 /* DetalsBook.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -126,6 +157,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 77790D172737BA64002B6C53;
 			productRefGroup = 77790D212737BA64002B6C53 /* Products */;
@@ -143,6 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				77790D302737BA66002B6C53 /* LaunchScreen.storyboard in Resources */,
+				779A044A273CF00500B66502 /* Localizable.strings in Resources */,
+				77C4DF662740EAAF0009ADA4 /* Amiri-Italic.ttf in Resources */,
+				77C4DF682740EAAF0009ADA4 /* Amiri-BoldItalic.ttf in Resources */,
+				77C4DF672740EAAF0009ADA4 /* Amiri-Bold.ttf in Resources */,
+				77C4DF692740EAAF0009ADA4 /* Amiri-Regular.ttf in Resources */,
 				77790D3B2737E778002B6C53 /* Assets.xcassets in Resources */,
 				77790D2B2737BA64002B6C53 /* Main.storyboard in Resources */,
 			);
@@ -157,6 +194,8 @@
 			files = (
 				77790D3D27380DFD002B6C53 /* User.swift in Sources */,
 				77790D4427390CB1002B6C53 /* ProfileImage.swift in Sources */,
+				77790D4C273A682C002B6C53 /* Book.swift in Sources */,
+				77790D4E273AB251002B6C53 /* DetalsBook.swift in Sources */,
 				77790D282737BA64002B6C53 /* ViewController.swift in Sources */,
 				77790D242737BA64002B6C53 /* AppDelegate.swift in Sources */,
 				77790D412738FBAC002B6C53 /* DepartmentTableViewController.swift in Sources */,
@@ -171,6 +210,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				77790D2A2737BA64002B6C53 /* Base */,
+				779A0444273CED7D00B66502 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -179,8 +219,17 @@
 			isa = PBXVariantGroup;
 			children = (
 				77790D2F2737BA66002B6C53 /* Base */,
+				779A0445273CED7D00B66502 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		779A044C273CF00500B66502 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				779A044B273CF00500B66502 /* ar */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -190,6 +239,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -251,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -311,6 +362,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Bookstore App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "الموسوعة الحرة";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -338,6 +390,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Bookstore App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "الموسوعة الحرة";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
