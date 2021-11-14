@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "14N-gw-Dfw"; */
+"14N-gw-Dfw.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Book Details"; ObjectID = "3q0-3O-8Qi"; */
+"3q0-3O-8Qi.title" = "تفاصيل الكتاب";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4As-hw-pDR"; */
+"4As-hw-pDR.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4YG-fT-x9i"; */
+"4YG-fT-x9i.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "LogIn"; ObjectID = "5FO-85-TgI"; */
+"5FO-85-TgI.configuration.title" = "تسجيل دخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5FO-85-TgI"; */
+"5FO-85-TgI.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Library Book"; ObjectID = "Mwo-tE-JPb"; */
+"Mwo-tE-JPb.title" = "كتب المكتبة";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "R5K-tX-7ug"; */
+"R5K-tX-7ug.placeholder" = "كلمة المرور";
+
+/* Class = "UITabBarItem"; title = "Top Rated"; ObjectID = "Wq4-FH-Wbo"; */
+"Wq4-FH-Wbo.title" = "الأكثر تقييما";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ZGc-V9-maK"; */
+"ZGc-V9-maK.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Books"; ObjectID = "bNZ-fW-rmR"; */
+"bNZ-fW-rmR.title" = "كتب";
+
+/* Class = "UINavigationItem"; title = "Top Rated Books"; ObjectID = "cJc-tM-c7J"; */
+"cJc-tM-c7J.title" = "الكتب الأكثر تقييما";
+
+/* Class = "UITextField"; placeholder = "email"; ObjectID = "hqt-2e-kwl"; */
+"hqt-2e-kwl.placeholder" = "الإيميل";
