@@ -19,24 +19,21 @@ class MyReservation: UIViewController {
         super.viewDidLoad()
         titleLabel.text = "Your Chosen Room :".localized
         statusLabel.text = "Reserve Status :".localized
-        statusResult.text = "Pending...".localized
-    
         }
     
     
     override func viewWillAppear(_ animated: Bool) {
         if userDefault.bool(forKey: "SelectedAddress") {
-            
             DispatchQueue.main.async {
             let selectedImage = userDefault.string(forKey: "imageNameSelected")
                 self.selctedImage.image = UIImage(named: selectedImage!)
             }
+            statusResult.text = "Pending...".localized
         }
-        
     }
         
         
-    }
+}
     
    
     

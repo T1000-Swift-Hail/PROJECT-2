@@ -9,8 +9,8 @@ import Foundation
 
 
 struct Users {
-    var id:Int
-    var password:String
+    var id : Int
+    var password : String
     var name : String
 }
 

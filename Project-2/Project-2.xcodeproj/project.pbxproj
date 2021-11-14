@@ -17,10 +17,10 @@
 		84A2FDC2273D05C000B9AEA0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2FDC1273D05C000B9AEA0 /* ProfileViewController.swift */; };
 		84A2FDC4273D4CA600B9AEA0 /* MyReservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2FDC3273D4CA500B9AEA0 /* MyReservation.swift */; };
 		84D788732738F60C00C35B14 /* RoomsSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D788722738F60C00C35B14 /* RoomsSelect.swift */; };
-		84D788752738F6D800C35B14 /* DuplexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D788742738F6D800C35B14 /* DuplexViewController.swift */; };
-		84D7887727390D5200C35B14 /* CountryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7887627390D5200C35B14 /* CountryList.swift */; };
-		84D7887927390F1E00C35B14 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7887827390F1E00C35B14 /* SingleViewController.swift */; };
-		84D7887B27393BB000C35B14 /* RulesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7887A27393BB000C35B14 /* RulesTableViewController.swift */; };
+		84D788752738F6D800C35B14 /* DuplexRoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D788742738F6D800C35B14 /* DuplexRoomVC.swift */; };
+		84D7887727390D5200C35B14 /* CityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7887627390D5200C35B14 /* CityList.swift */; };
+		84D7887927390F1E00C35B14 /* SingleRoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7887827390F1E00C35B14 /* SingleRoomVC.swift */; };
+		84D7887B27393BB000C35B14 /* TermsAndConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7887A27393BB000C35B14 /* TermsAndConditions.swift */; };
 		84D7887D273A5DDB00C35B14 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7887C273A5DDB00C35B14 /* WelcomeScreen.swift */; };
 		84D78883273ACA0700C35B14 /* Moutarde DEMO.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D78882273ACA0600C35B14 /* Moutarde DEMO.ttf */; };
 		84D78885273B9A6F00C35B14 /* The Humble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D78884273B9A6E00C35B14 /* The Humble.ttf */; };
@@ -28,6 +28,7 @@
 		84D7888C273BA5FD00C35B14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84D7888E273BA5FD00C35B14 /* Localizable.strings */; };
 		84FC1BDE27411A9B00DD0616 /* Vogue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1BDD27411A9B00DD0616 /* Vogue.ttf */; };
 		84FC1BE027411B9400DD0616 /* Akira Expanded Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1BDF27411B9400DD0616 /* Akira Expanded Demo.ttf */; };
+		84FC1BE227411D3300DD0616 /* Albertyne Font by Kelik (7NTypes).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1BE127411D3300DD0616 /* Albertyne Font by Kelik (7NTypes).ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,10 +44,10 @@
 		84A2FDC1273D05C000B9AEA0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		84A2FDC3273D4CA500B9AEA0 /* MyReservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReservation.swift; sourceTree = "<group>"; };
 		84D788722738F60C00C35B14 /* RoomsSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsSelect.swift; sourceTree = "<group>"; };
-		84D788742738F6D800C35B14 /* DuplexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplexViewController.swift; sourceTree = "<group>"; };
-		84D7887627390D5200C35B14 /* CountryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryList.swift; sourceTree = "<group>"; };
-		84D7887827390F1E00C35B14 /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
-		84D7887A27393BB000C35B14 /* RulesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesTableViewController.swift; sourceTree = "<group>"; };
+		84D788742738F6D800C35B14 /* DuplexRoomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplexRoomVC.swift; sourceTree = "<group>"; };
+		84D7887627390D5200C35B14 /* CityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityList.swift; sourceTree = "<group>"; };
+		84D7887827390F1E00C35B14 /* SingleRoomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRoomVC.swift; sourceTree = "<group>"; };
+		84D7887A27393BB000C35B14 /* TermsAndConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditions.swift; sourceTree = "<group>"; };
 		84D7887C273A5DDB00C35B14 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		84D78882273ACA0600C35B14 /* Moutarde DEMO.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moutarde DEMO.ttf"; sourceTree = "<group>"; };
 		84D78884273B9A6E00C35B14 /* The Humble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Humble.ttf"; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		84D7888D273BA5FD00C35B14 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		84FC1BDD27411A9B00DD0616 /* Vogue.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Vogue.ttf; sourceTree = "<group>"; };
 		84FC1BDF27411B9400DD0616 /* Akira Expanded Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akira Expanded Demo.ttf"; sourceTree = "<group>"; };
+		84FC1BE127411D3300DD0616 /* Albertyne Font by Kelik (7NTypes).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albertyne Font by Kelik (7NTypes).ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				8479A4652737B9000013BB2D /* Structs.swift */,
-				84D7887627390D5200C35B14 /* CountryList.swift */,
+				84D7887627390D5200C35B14 /* CityList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -136,8 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				84D788722738F60C00C35B14 /* RoomsSelect.swift */,
-				84D788742738F6D800C35B14 /* DuplexViewController.swift */,
-				84D7887827390F1E00C35B14 /* SingleViewController.swift */,
+				84D788742738F6D800C35B14 /* DuplexRoomVC.swift */,
+				84D7887827390F1E00C35B14 /* SingleRoomVC.swift */,
 			);
 			path = RoomsSelection;
 			sourceTree = "<group>";
@@ -145,7 +147,7 @@
 		84D78880273A65BC00C35B14 /* TermsAndConditions */ = {
 			isa = PBXGroup;
 			children = (
-				84D7887A27393BB000C35B14 /* RulesTableViewController.swift */,
+				84D7887A27393BB000C35B14 /* TermsAndConditions.swift */,
 			);
 			path = TermsAndConditions;
 			sourceTree = "<group>";
@@ -153,6 +155,7 @@
 		84D78881273AC98E00C35B14 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				84FC1BE127411D3300DD0616 /* Albertyne Font by Kelik (7NTypes).ttf */,
 				84FC1BDF27411B9400DD0616 /* Akira Expanded Demo.ttf */,
 				84FC1BDD27411A9B00DD0616 /* Vogue.ttf */,
 				84D78886273B9B5200C35B14 /* BebasNeue-Regular.ttf */,
@@ -227,6 +230,7 @@
 				84FC1BDE27411A9B00DD0616 /* Vogue.ttf in Resources */,
 				84D78887273B9B5200C35B14 /* BebasNeue-Regular.ttf in Resources */,
 				84FC1BE027411B9400DD0616 /* Akira Expanded Demo.ttf in Resources */,
+				84FC1BE227411D3300DD0616 /* Albertyne Font by Kelik (7NTypes).ttf in Resources */,
 				8479A4582737AE270013BB2D /* Main.storyboard in Resources */,
 				84D78885273B9A6F00C35B14 /* The Humble.ttf in Resources */,
 				84D78883273ACA0700C35B14 /* Moutarde DEMO.ttf in Resources */,
@@ -242,10 +246,10 @@
 			files = (
 				8479A4662737B9000013BB2D /* Structs.swift in Sources */,
 				84D788732738F60C00C35B14 /* RoomsSelect.swift in Sources */,
-				84D7887B27393BB000C35B14 /* RulesTableViewController.swift in Sources */,
-				84D7887927390F1E00C35B14 /* SingleViewController.swift in Sources */,
-				84D788752738F6D800C35B14 /* DuplexViewController.swift in Sources */,
-				84D7887727390D5200C35B14 /* CountryList.swift in Sources */,
+				84D7887B27393BB000C35B14 /* TermsAndConditions.swift in Sources */,
+				84D7887927390F1E00C35B14 /* SingleRoomVC.swift in Sources */,
+				84D788752738F6D800C35B14 /* DuplexRoomVC.swift in Sources */,
+				84D7887727390D5200C35B14 /* CityList.swift in Sources */,
 				84A2FDC2273D05C000B9AEA0 /* ProfileViewController.swift in Sources */,
 				84D7887D273A5DDB00C35B14 /* WelcomeScreen.swift in Sources */,
 				8479A4512737AE260013BB2D /* AppDelegate.swift in Sources */,
@@ -412,6 +416,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Project-2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -419,6 +424,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,6 +445,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Project-2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -446,6 +453,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,8 +7,9 @@
 import SafariServices
 import UIKit
 
-class Login: UIViewController,UITextFieldDelegate {
+class Login: UIViewController {
 
+    @IBOutlet weak var loginImage: UIImageView!
     @IBOutlet var idTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
@@ -19,7 +20,7 @@ class Login: UIViewController,UITextFieldDelegate {
     
     // MARK: - Students Users
     
-    let student1 = Users(id: 20214429, password: "qqww1234", name: "Faris Abdullah".localized)
+    let student1 = Users(id: 20214429, password: "qqww1234", name: "Nawaf Altmimi".localized)
     let student2 = Users(id: 20215000, password: "aass1234", name: "Abdullah Alanzi".localized)
     let student3 = Users(id: 20218742, password: "zzxx1234", name: "Fahad Saud".localized)
     let student4 = Users(id: 20213425, password: "Qwqw1234", name: "Khalid Alshammari".localized)
@@ -31,22 +32,21 @@ class Login: UIViewController,UITextFieldDelegate {
     let student10 = Users(id: 20217203, password: "Ll536214", name: "Nayef Altmimi".localized)
 
     
-    override func awakeFromNib() {
-        tabBarItem.title = "Home".localized
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginImage.image = UIImage(named: "StudentLogo")
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissTap))
         view.addGestureRecognizer(tap)
-        idTextField.delegate = self
-        passwordTextField.delegate = self
+      
         idTextField.keyboardType = .numberPad
         passwordTextField.isSecureTextEntry = true
     
     }
     
+    // Skip login screen if logged in already
     override func viewDidAppear(_ animated: Bool) {
         let isLoggedIn = userDefault.bool(forKey: "isLogIn")
         if isLoggedIn {
@@ -55,14 +55,6 @@ class Login: UIViewController,UITextFieldDelegate {
         }
     }
     
-    // MARK: - Password Limit
-//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//        let maxLength = 16
-//        let currentLimit: NSString = (passwordTextField.text ?? " ") as NSString
-//        let newLimit: NSString =
-//        currentLimit.replacingCharacters(in: range, with: string) as NSString
-//        return newLimit.length <= maxLength
-//    }
     
    
     // MARK: - Segue Commands
@@ -78,7 +70,7 @@ class Login: UIViewController,UITextFieldDelegate {
         guard let password = passwordTextField.text else { return showAlert(title: "Wrong Password!".localized, message: "Retype your password!".localized) }
         
         
-
+       // Saving user default
         userDefault.set(true, forKey: "isLogIn")
         userDefault.set(idTextField.text, forKey: "id")
         let loggedInUser = students.first(where: { user in
@@ -88,6 +80,7 @@ class Login: UIViewController,UITextFieldDelegate {
         userDefault.set(loggedInUser?.name, forKey: "name")
         userDefault.synchronize()
 
+        
         // Login Check
         for student in students {
            
@@ -96,9 +89,8 @@ class Login: UIViewController,UITextFieldDelegate {
         return
       }
     }
-        
+
         showAlert(title: "Wrong Account".localized, message: "Please retype your account".localized)
-        
 }
     
     

@@ -1,5 +1,5 @@
 //
-//  DuplexViewController.swift
+//  SingleViewController.swift
 //  Project-2
 //
 //  Created by Majed Alshammari on 03/04/1443 AH.
@@ -7,25 +7,23 @@
 
 import UIKit
 
-class DuplexViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate {
+class SingleRoomVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
     
     var selectedCity: String?
+    var buttonChosed: UIButton?
     let userDefault = UserDefaults.standard
 
-    
-    
     @IBOutlet var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         createPickerView()
         dismissPickerView()
-    
     }
     
     
+  
     @IBAction func reserveButton(_ sender: UIButton) {
-        
         if textField.hasText {
            warningAlert()
         userDefault.set(true, forKey: "SelectedAddress")
@@ -33,11 +31,10 @@ class DuplexViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
         } else {
            errorAlert()
         }
-        
     }
     
     
-
+   
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -57,7 +54,6 @@ class DuplexViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedCity = cityList[row] // selected item
         textField.text = selectedCity
-        
     }
     
     
@@ -65,7 +61,6 @@ class DuplexViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
         let pickerView = UIPickerView()
         pickerView.delegate = self
         textField.inputView = pickerView
-        textField.delegate = self
     }
     
     
@@ -75,30 +70,26 @@ class DuplexViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
         let button = UIBarButtonItem(title: "Done".localized, style: .plain, target: self, action: #selector(self.action))
         toolBar.setItems([button], animated: true)
         toolBar.isUserInteractionEnabled = true
-        textField?.inputAccessoryView = toolBar
+        textField.inputAccessoryView = toolBar
     }
-    
     
     @objc func action() {
-        
-        
-        //
         view.endEditing(true)
     }
+    
     
 }
 
 
-extension DuplexViewController {
+extension SingleRoomVC {
  func completedAlert () {
      let alert = UIAlertController(title: "Reservation Completed!".localized, message: "AN SMS HAS BEEN SENT, THANK YOU FOR USING UOH STUDENT HOSTEL".localized, preferredStyle: .alert)
      let ok = UIAlertAction(title: "OK".localized, style: .default) { ok in
-         print("OK")
+         print("OK".localized)
     }
     alert.addAction(ok)
     
     present(alert, animated: false)
-     
     }
     
     
@@ -123,11 +114,3 @@ extension DuplexViewController {
         present(alert, animated: false)
     }
 }
-
-extension String {
-    
-    var localized: String {
-        return NSLocalizedString(self, comment: "")
-    }
-}
-
