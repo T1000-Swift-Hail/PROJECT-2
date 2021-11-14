@@ -13,13 +13,15 @@
 		AD26EE172737C79000F8F200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD26EE152737C79000F8F200 /* Main.storyboard */; };
 		AD26EE192737C79600F8F200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD26EE182737C79600F8F200 /* Assets.xcassets */; };
 		AD26EE1C2737C79600F8F200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD26EE1A2737C79600F8F200 /* LaunchScreen.storyboard */; };
-		AD7466472739081C00B5BE66 /* contactPartenersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7466462739081C00B5BE66 /* contactPartenersViewController.swift */; };
+		AD7466472739081C00B5BE66 /* ContactPartenersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7466462739081C00B5BE66 /* ContactPartenersViewController.swift */; };
 		AD7466492739083E00B5BE66 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7466482739083E00B5BE66 /* loginViewController.swift */; };
 		ADF2ED06273B356000E5F4C2 /* sortingGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF2ED05273B356000E5F4C2 /* sortingGuideViewController.swift */; };
 		ADF2ED0A273BF0F500E5F4C2 /* SortingGuideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF2ED09273BF0F500E5F4C2 /* SortingGuideCell.swift */; };
 		ADF2ED0C273BF48000E5F4C2 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF2ED0B273BF48000E5F4C2 /* SecondVC.swift */; };
 		ADF2ED342740211A00E5F4C2 /* RecycleIdeasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF2ED332740211A00E5F4C2 /* RecycleIdeasViewController.swift */; };
 		ADF2ED362740217800E5F4C2 /* IdeasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF2ED352740217800E5F4C2 /* IdeasCollectionViewCell.swift */; };
+		ADF2ED3B2740817000E5F4C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADF2ED3D2740817000E5F4C2 /* Localizable.strings */; };
+		ADF2ED422740EC8E00E5F4C2 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF2ED412740EC8E00E5F4C2 /* MessageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +33,18 @@
 		AD26EE182737C79600F8F200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD26EE1B2737C79600F8F200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD26EE1D2737C79600F8F200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD7466462739081C00B5BE66 /* contactPartenersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactPartenersViewController.swift; sourceTree = "<group>"; };
+		AD7466462739081C00B5BE66 /* ContactPartenersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPartenersViewController.swift; sourceTree = "<group>"; };
 		AD7466482739083E00B5BE66 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		ADF2ED05273B356000E5F4C2 /* sortingGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sortingGuideViewController.swift; sourceTree = "<group>"; };
 		ADF2ED09273BF0F500E5F4C2 /* SortingGuideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingGuideCell.swift; sourceTree = "<group>"; };
 		ADF2ED0B273BF48000E5F4C2 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		ADF2ED332740211A00E5F4C2 /* RecycleIdeasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleIdeasViewController.swift; sourceTree = "<group>"; };
 		ADF2ED352740217800E5F4C2 /* IdeasCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeasCollectionViewCell.swift; sourceTree = "<group>"; };
+		ADF2ED372740806400E5F4C2 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		ADF2ED382740806500E5F4C2 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		ADF2ED3C2740817000E5F4C2 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ADF2ED3E2740817300E5F4C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ADF2ED412740EC8E00E5F4C2 /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,22 +77,32 @@
 		AD26EE0E2737C79000F8F200 /* PROJECT-2 */ = {
 			isa = PBXGroup;
 			children = (
+				ADF2ED432740EFD600E5F4C2 /* New Group */,
 				AD26EE0F2737C79000F8F200 /* AppDelegate.swift */,
 				AD26EE112737C79000F8F200 /* SceneDelegate.swift */,
 				AD26EE132737C79000F8F200 /* ViewController.swift */,
+				AD7466482739083E00B5BE66 /* loginViewController.swift */,
 				ADF2ED05273B356000E5F4C2 /* sortingGuideViewController.swift */,
 				ADF2ED0B273BF48000E5F4C2 /* SecondVC.swift */,
 				ADF2ED09273BF0F500E5F4C2 /* SortingGuideCell.swift */,
-				AD7466462739081C00B5BE66 /* contactPartenersViewController.swift */,
-				AD7466482739083E00B5BE66 /* loginViewController.swift */,
+				ADF2ED332740211A00E5F4C2 /* RecycleIdeasViewController.swift */,
+				ADF2ED352740217800E5F4C2 /* IdeasCollectionViewCell.swift */,
+				AD7466462739081C00B5BE66 /* ContactPartenersViewController.swift */,
+				ADF2ED412740EC8E00E5F4C2 /* MessageVC.swift */,
 				AD26EE152737C79000F8F200 /* Main.storyboard */,
 				AD26EE182737C79600F8F200 /* Assets.xcassets */,
 				AD26EE1A2737C79600F8F200 /* LaunchScreen.storyboard */,
 				AD26EE1D2737C79600F8F200 /* Info.plist */,
-				ADF2ED332740211A00E5F4C2 /* RecycleIdeasViewController.swift */,
-				ADF2ED352740217800E5F4C2 /* IdeasCollectionViewCell.swift */,
+				ADF2ED3D2740817000E5F4C2 /* Localizable.strings */,
 			);
 			path = "PROJECT-2";
+			sourceTree = "<group>";
+		};
+		ADF2ED432740EFD600E5F4C2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +147,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = AD26EE032737C79000F8F200;
 			productRefGroup = AD26EE0D2737C79000F8F200 /* Products */;
@@ -147,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD26EE1C2737C79600F8F200 /* LaunchScreen.storyboard in Resources */,
+				ADF2ED3B2740817000E5F4C2 /* Localizable.strings in Resources */,
 				AD26EE192737C79600F8F200 /* Assets.xcassets in Resources */,
 				AD26EE172737C79000F8F200 /* Main.storyboard in Resources */,
 			);
@@ -162,12 +181,13 @@
 				AD26EE142737C79000F8F200 /* ViewController.swift in Sources */,
 				AD7466492739083E00B5BE66 /* loginViewController.swift in Sources */,
 				ADF2ED06273B356000E5F4C2 /* sortingGuideViewController.swift in Sources */,
-				AD7466472739081C00B5BE66 /* contactPartenersViewController.swift in Sources */,
+				AD7466472739081C00B5BE66 /* ContactPartenersViewController.swift in Sources */,
 				ADF2ED0C273BF48000E5F4C2 /* SecondVC.swift in Sources */,
 				ADF2ED0A273BF0F500E5F4C2 /* SortingGuideCell.swift in Sources */,
 				AD26EE102737C79000F8F200 /* AppDelegate.swift in Sources */,
 				AD26EE122737C79000F8F200 /* SceneDelegate.swift in Sources */,
 				ADF2ED342740211A00E5F4C2 /* RecycleIdeasViewController.swift in Sources */,
+				ADF2ED422740EC8E00E5F4C2 /* MessageVC.swift in Sources */,
 				ADF2ED362740217800E5F4C2 /* IdeasCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,6 +199,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AD26EE162737C79000F8F200 /* Base */,
+				ADF2ED372740806400E5F4C2 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -187,8 +208,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				AD26EE1B2737C79600F8F200 /* Base */,
+				ADF2ED382740806500E5F4C2 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ADF2ED3D2740817000E5F4C2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF2ED3C2740817000E5F4C2 /* ar */,
+				ADF2ED3E2740817300E5F4C2 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -198,6 +229,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -259,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -319,6 +352,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PROJECT-2/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -346,6 +380,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PROJECT-2/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

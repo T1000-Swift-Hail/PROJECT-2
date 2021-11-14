@@ -1,0 +1,129 @@
+
+/* Class = "UIViewController"; title = "Recycle Ideas"; ObjectID = "3pv-AH-iQe"; */
+"3pv-AH-iQe.title" = "Recycle Ideas";
+
+/* Class = "UIViewController"; title = "Login"; ObjectID = "5Tt-5C-WdK"; */
+"5Tt-5C-WdK.title" = "Login";
+
+/* Class = "UINavigationController"; title = "recycleIdeas"; ObjectID = "6bt-yE-GwK"; */
+"6bt-yE-GwK.title" = "recycleIdeas";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "864-TC-NhP"; */
+"864-TC-NhP.title" = "Login";
+
+/* Class = "UILabel"; text = "DAWEERHA"; ObjectID = "8Xa-A6-Erz"; */
+"8Xa-A6-Erz.text" = "DAWEERHA";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "GFn-Sd-uWN"; */
+"GFn-Sd-uWN.placeholder" = "First Name";
+
+/* Class = "UITextField"; placeholder = "Mobile Number"; ObjectID = "GMH-Kx-5aU"; */
+"GMH-Kx-5aU.placeholder" = "Mobile Number";
+
+/* Class = "UIButton"; configuration.title = "Create Account"; ObjectID = "H5e-G8-mzw"; */
+"H5e-G8-mzw.configuration.title" = "Create Account";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "H5e-G8-mzw"; */
+"H5e-G8-mzw.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Sign up"; ObjectID = "IzC-kX-Xwm"; */
+"IzC-kX-Xwm.title" = "Sign up";
+
+/* Class = "UITextField"; placeholder = "email"; ObjectID = "Kkd-Hj-g59"; */
+"Kkd-Hj-g59.placeholder" = "email";
+
+/* Class = "UINavigationController"; title = "Home"; ObjectID = "MYs-EW-5xx"; */
+"MYs-EW-5xx.title" = "Home";
+
+/* Class = "UINavigationController"; title = "Sorting Guide"; ObjectID = "OvE-1E-yfh"; */
+"OvE-1E-yfh.title" = "Sorting Guide";
+
+/* Class = "UINavigationItem"; title = "Contact Partners"; ObjectID = "Py2-zH-gnP"; */
+"Py2-zH-gnP.title" = "Contact Partners";
+
+/* Class = "UINavigationItem"; title = "Recycle Ideas"; ObjectID = "QuF-UC-LEe"; */
+"QuF-UC-LEe.title" = "Recycle Ideas";
+
+/* Class = "UIButton"; configuration.title = "Send"; ObjectID = "RY1-sF-D24"; */
+"RY1-sF-D24.configuration.title" = "Send";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "RY1-sF-D24"; */
+"RY1-sF-D24.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "TnX-AT-fKZ"; */
+"TnX-AT-fKZ.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TnX-AT-fKZ"; */
+"TnX-AT-fKZ.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "Txj-Bj-2E1"; */
+"Txj-Bj-2E1.placeholder" = "Username";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "Uos-QM-t7J"; */
+"Uos-QM-t7J.placeholder" = "Last Name";
+
+/* Class = "UILabel"; text = "Plastic"; ObjectID = "VfW-P0-FII"; */
+"VfW-P0-FII.text" = "Plastic";
+
+/* Class = "UIViewController"; title = "message"; ObjectID = "Vpc-wr-4Cy"; */
+"Vpc-wr-4Cy.title" = "message";
+
+/* Class = "UILabel"; text = "Save Earth"; ObjectID = "XCQ-VN-jsB"; */
+"XCQ-VN-jsB.text" = "Save Earth";
+
+/* Class = "UITextField"; placeholder = "To: Email"; ObjectID = "aHF-zK-AkN"; */
+"aHF-zK-AkN.placeholder" = "To: Email";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "bfC-em-e7D"; */
+"bfC-em-e7D.title" = "Home";
+
+/* Class = "UILabel"; text = "Welcome Back"; ObjectID = "df9-Er-BZI"; */
+"df9-Er-BZI.text" = "Welcome Back";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "iHM-St-MYc"; */
+"iHM-St-MYc.placeholder" = "Password";
+
+/* Class = "UIViewController"; title = "secondVC"; ObjectID = "jQE-FU-gHA"; */
+"jQE-FU-gHA.title" = "secondVC";
+
+/* Class = "UISegmentedControl"; jQk-8b-2pF.segmentTitles[0] = "Plastic"; ObjectID = "jQk-8b-2pF"; */
+"jQk-8b-2pF.segmentTitles[0]" = "Plastic";
+
+/* Class = "UISegmentedControl"; jQk-8b-2pF.segmentTitles[1] = "Nylon"; ObjectID = "jQk-8b-2pF"; */
+"jQk-8b-2pF.segmentTitles[1]" = "Nylon";
+
+/* Class = "UISegmentedControl"; jQk-8b-2pF.segmentTitles[2] = "Paper"; ObjectID = "jQk-8b-2pF"; */
+"jQk-8b-2pF.segmentTitles[2]" = "Paper";
+
+/* Class = "UISegmentedControl"; jQk-8b-2pF.segmentTitles[3] = "Cans"; ObjectID = "jQk-8b-2pF"; */
+"jQk-8b-2pF.segmentTitles[3]" = "Cans";
+
+/* Class = "UILabel"; text = "Plastic"; ObjectID = "kcm-7c-Dyw"; */
+"kcm-7c-Dyw.text" = "Plastic";
+
+/* Class = "UINavigationItem"; title = "Sorting Guide"; ObjectID = "pUe-L0-jUB"; */
+"pUe-L0-jUB.title" = "Sorting Guide";
+
+/* Class = "UIButton"; configuration.title = "next"; ObjectID = "tNu-DT-ALW"; */
+"tNu-DT-ALW.configuration.title" = "next";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tNu-DT-ALW"; */
+"tNu-DT-ALW.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "tZg-c9-h6A"; */
+"tZg-c9-h6A.configuration.title" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tZg-c9-h6A"; */
+"tZg-c9-h6A.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Write your message"; ObjectID = "tag-4D-BT7"; */
+"tag-4D-BT7.text" = "Write your message";
+
+/* Class = "UIViewController"; title = "sortingGuide"; ObjectID = "uz4-Pe-PbS"; */
+"uz4-Pe-PbS.title" = "sortingGuide";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "zGQ-2c-9Oz"; */
+"zGQ-2c-9Oz.placeholder" = "Email";
+
+/* Class = "UITextField"; placeholder = "Your Message"; ObjectID = "zgr-bX-rZ9"; */
+"zgr-bX-rZ9.placeholder" = "Your Message";

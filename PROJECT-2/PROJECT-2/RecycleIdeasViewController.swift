@@ -9,6 +9,7 @@ import UIKit
 
 class RecycleIdeasViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    
     @IBOutlet weak var collectionView: UICollectionView!
     var arrExampleIdea = [UIImage(named: "item1")!, UIImage(named: "item2")!, UIImage(named: "item3")!, UIImage(named: "item4")!, UIImage(named: "item5")!, UIImage(named: "item7")!, UIImage(named: "item8")!, UIImage(named: "item9")!]
     var timer : Timer?
@@ -44,11 +45,13 @@ class RecycleIdeasViewController: UIViewController, UICollectionViewDelegate, UI
         cell.imgExample.image = arrExampleIdea[indexPath.row]
         return cell
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    
+    //Size func is not working because of the CGSize // CGFloat
+    //func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        //return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
         
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat{
         return 0
         }
     }
-}
+ 

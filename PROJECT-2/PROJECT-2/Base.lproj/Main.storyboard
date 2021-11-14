@@ -56,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaj-h6-Wgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4999.1999999999998" y="302.6986506746627"/>
+            <point key="canvasLocation" x="-5418" y="331"/>
         </scene>
         <!--secondVC-->
         <scene sceneID="uxT-Xr-MkP">
@@ -86,7 +86,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kKw-xm-N2a"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="6TD-xH-hEX" firstAttribute="top" secondItem="G1z-BJ-eJu" secondAttribute="bottom" constant="12" id="0LZ-Ah-PFu"/>
                             <constraint firstItem="kcm-7c-Dyw" firstAttribute="leading" secondItem="kKw-xm-N2a" secondAttribute="leading" constant="37" id="4jc-0T-1Uc"/>
@@ -108,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fH5-cp-dbQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4015.1999999999998" y="1127.5862068965519"/>
+            <point key="canvasLocation" x="-3439" y="1126"/>
         </scene>
         <!--sortingGuide-->
         <scene sceneID="PLT-cI-nPW">
@@ -146,7 +146,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pux-Cl-TgZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="pux-Cl-TgZ" firstAttribute="trailing" secondItem="MUN-hc-XrI" secondAttribute="trailing" id="67n-ak-7ki"/>
                             <constraint firstItem="MUN-hc-XrI" firstAttribute="leading" secondItem="pux-Cl-TgZ" secondAttribute="leading" id="MzX-9O-vji"/>
@@ -162,13 +162,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="es7-8v-0wo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4015.1999999999998" y="302.6986506746627"/>
+            <point key="canvasLocation" x="-3439" y="331"/>
         </scene>
         <!--Recycle Ideas-->
         <scene sceneID="ZIn-xb-mZq">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kKw-AO-gr4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController title="Recycle Ideas" id="3pv-AH-iQe" customClass="recycleIdeasViewController" sceneMemberID="viewController">
+                <viewController title="Recycle Ideas" id="3pv-AH-iQe" customClass="RecycleIdeasViewController" customModule="PROJECT_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iH9-t6-8w7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,16 +219,17 @@
                     </view>
                     <navigationItem key="navigationItem" title="Recycle Ideas" id="QuF-UC-LEe"/>
                     <connections>
-                        <outlet property="collectionView" destination="4C8-eE-ocD" id="n4y-HL-qCB"/>
+                        <outlet property="collectionView" destination="4C8-eE-ocD" id="rJG-ZA-XGd"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKw-AO-gr4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3151.1999999999998" y="302.6986506746627"/>
+            <point key="canvasLocation" x="-2471" y="331"/>
         </scene>
         <!--Contact Partners-->
         <scene sceneID="psw-Sy-Djv">
             <objects>
-                <viewController id="qAh-Gs-nr1" customClass="contactPartenersViewController" customModule="PROJECT_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qAh-Gs-nr1" customClass="ContactPartenersViewController" customModule="PROJECT_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M6c-HS-PCS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -307,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S7c-mc-0d8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2212" y="302.6986506746627"/>
+            <point key="canvasLocation" x="-1599" y="331"/>
         </scene>
         <!--message-->
         <scene sceneID="qCo-NG-fs6">
@@ -346,12 +346,12 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Send"/>
                                 <connections>
-                                    <action selector="sendMessage:" destination="Vpc-wr-4Cy" eventType="touchUpInside" id="8YF-y1-XR1"/>
+                                    <action selector="sendMessage:" destination="Vpc-wr-4Cy" eventType="touchUpInside" id="aw7-j5-gvx"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aQN-8i-Tql"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="neK-BZ-hKV" firstAttribute="leading" secondItem="aQN-8i-Tql" secondAttribute="leading" constant="20" id="5MA-tt-jdK"/>
                             <constraint firstItem="aQN-8i-Tql" firstAttribute="trailing" secondItem="neK-BZ-hKV" secondAttribute="trailing" constant="20" id="HcM-su-fdH"/>
@@ -366,12 +366,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="wsB-Wz-gKE"/>
                     <connections>
-                        <outlet property="messageToPartners" destination="zgr-bX-rZ9" id="RpM-5b-uMu"/>
+                        <outlet property="messageToPartners" destination="zgr-bX-rZ9" id="0hD-ZT-qPv"/>
+                        <outlet property="partnerEmail" destination="aHF-zK-AkN" id="Tbm-vf-kgr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDg-vt-BeH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2212" y="1127.5862068965519"/>
+            <point key="canvasLocation" x="-1599" y="1126"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HmS-Ir-Ed8">
@@ -384,15 +385,15 @@
                     </tabBar>
                     <connections>
                         <segue destination="MYs-EW-5xx" kind="relationship" relationship="viewControllers" id="Iay-P1-ers"/>
+                        <segue destination="gsL-5f-hy7" kind="relationship" relationship="viewControllers" id="ah3-fr-naj"/>
                         <segue destination="OvE-1E-yfh" kind="relationship" relationship="viewControllers" id="k4u-zi-vfD"/>
                         <segue destination="6bt-yE-GwK" kind="relationship" relationship="viewControllers" id="Hq5-gX-7pq"/>
                         <segue destination="xBP-L6-9Wr" kind="relationship" relationship="viewControllers" id="vWZ-Ma-ord"/>
-                        <segue destination="gsL-5f-hy7" kind="relationship" relationship="viewControllers" id="ah3-fr-naj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lHa-sQ-gfN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3151" y="-1611"/>
+            <point key="canvasLocation" x="-3439" y="-1614"/>
         </scene>
         <!--Home-->
         <scene sceneID="hY1-mI-8WN">
@@ -413,7 +414,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WHw-9b-DnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4999" y="-488"/>
+            <point key="canvasLocation" x="-5418" y="-488"/>
         </scene>
         <!--recycleIdeas-->
         <scene sceneID="oVS-gF-ibg">
@@ -432,7 +433,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ph-Mi-Tmu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3151" y="-488"/>
+            <point key="canvasLocation" x="-2470" y="-488"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qri-2c-8iK">
@@ -451,7 +452,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAG-Fa-iO7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2212" y="-488"/>
+            <point key="canvasLocation" x="-1599" y="-488"/>
         </scene>
         <!--Login-->
         <scene sceneID="TnY-f2-bsr">
@@ -538,7 +539,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pI2-LD-S5N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1322.4000000000001" y="302.6986506746627"/>
+            <point key="canvasLocation" x="-4455" y="331"/>
         </scene>
         <!--Sign up-->
         <scene sceneID="YT2-dW-cvX">
@@ -602,7 +603,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="798-nj-pxZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1322" y="1128"/>
+            <point key="canvasLocation" x="-4455" y="1126"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="2wZ-Ce-LhE">
@@ -621,7 +622,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wVk-CE-sv5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1322" y="-488"/>
+            <point key="canvasLocation" x="-4454" y="-488"/>
         </scene>
         <!--Sorting Guide-->
         <scene sceneID="il0-xT-RaL">
@@ -640,7 +641,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Fi-4L-VDD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4014" y="-488"/>
+            <point key="canvasLocation" x="-3439" y="-488"/>
         </scene>
     </scenes>
     <resources>
