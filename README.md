@@ -18,7 +18,7 @@
 
 
 ### Define the scenes : Dinamic Service ,Navigation controller Tab Bar controoler 
-// Add description of the screens / scenes in your application.
+- face login , TapBar controller ,our services ,description of service and price ,fitness room ,reservation confirmation.
 
 
 ### User Stories : User name and Password
@@ -28,8 +28,8 @@ Customers If the customer has a gold card, he gets discounted services, and the 
 
 
 As a user I login using my user name& password so that I use the app
-As a user can see the servicse and chosing any servicse he want 
-As a user can see all servicse he choosing in order 
+As a user I can see the servicse and chosing any servicse he want 
+As a user I can see all servicse he choosing in order 
 
 
 

@@ -1,0 +1,50 @@
+
+/* Class = "UINavigationItem"; title = "Our Services"; ObjectID = "30P-Vn-Svt"; */
+"30P-Vn-Svt.title" = "Our Services";
+
+/* Class = "UINavigationItem"; title = "Our Services"; ObjectID = "30P-Vn-Svt"; */
+"30P-Vn-Svt.title" = "خدماتنا";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "5sw-j8-Zq5"; */
+"5sw-j8-Zq5.text" = "Label";
+
+/* Class = "UILabel"; text = "in recent years,the number of fitness and health services have increased,expanding the interest among the population.Today,health clubs and fitness centers are a reference of  health services,rising the adherence to physical activity."; ObjectID = "89Q-RB-1nw"; */
+"89Q-RB-1nw.text" = "في السنوات الأخيرة ، ازداد عدد خدمات اللياقة والصحة ، مما زاد الاهتمام بين السكان ، واليوم أصبحت النوادي الصحية ومراكز اللياقة البدنية مرجعية للخدمات الصحية ، مما أدى إلى زيادة الالتزام بالنشاط البدني.";
+
+/* Class = "UILabel"; text = "Health Club"; ObjectID = "9Nr-UE-STW"; */
+"9Nr-UE-STW.text" = "نادي الصحي";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ESN-RZ-iT7"; */
+"ESN-RZ-iT7.text" = "Label";
+
+/* Class = "UILabel"; text = "reservation confirmation"; ObjectID = "FcU-Ng-Zof"; */
+"FcU-Ng-Zof.text" = "تأكيد الحجز";
+
+/* Class = "UILabel"; text = "programSelection"; ObjectID = "G1z-Ba-pri"; */
+"G1z-Ba-pri.text" = "أختيار البرنامج";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "RUr-z3-REK"; */
+"RUr-z3-REK.placeholder" = "كلمة السر";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "XjD-AH-f7W"; */
+"XjD-AH-f7W.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Signin"; ObjectID = "ZU1-rj-e15"; */
+"ZU1-rj-e15.configuration.title" = "تسجيل الدخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZU1-rj-e15"; */
+"ZU1-rj-e15.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "username"; ObjectID = "etf-Z0-O4w"; */
+"etf-Z0-O4w.placeholder" = "اسم المستخدم";
+
+/* Class = "UINavigationItem"; title = "Fitness Room"; ObjectID = "pW4-L8-40K"; */
+"pW4-L8-40K.title" = "غرفة اللياقة";
+
+"30P-Vn-Svt.title" = "خدماتنا";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "smg-6T-yn9"; */
+"smg-6T-yn9.text" = "Label";
+
+/* Class = "UILabel"; text = "Payment methods"; ObjectID = "vNe-4v-sKX"; */
+"vNe-4v-sKX.text" = "طرق الدفع";

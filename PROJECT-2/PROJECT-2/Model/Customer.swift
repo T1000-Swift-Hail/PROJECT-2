@@ -41,8 +41,6 @@ class Customer {
                print("The chosen service by \(name) is:\(service.name),\(service.price),\(service.description)")
            }
        }
-                
-                
     
     init (name : String, age : Int, service:[Service],password:String) {
     self.name = name

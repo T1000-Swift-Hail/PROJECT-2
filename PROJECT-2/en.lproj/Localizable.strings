@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  PROJECT-2
+
+  Created by HIND12 on 09/04/1443 AH.
+  
+*/
+
+"Training" = "Training";
+"boxing" = "boxing" ;
+"swimming"= "swimming";
+ "yaki" = "yaki" ;
+"zumba" = "zumba" ;
+
+"muscle strengthening" = "muscle strengthening" ;
+"increase muscle mass" = "increase muscle mass";
+"physical activity" = "physical activity" ;
+"relaxation" = "relaxation";
+"fitness" = "fitness";

@@ -13,9 +13,6 @@ struct Service {
     var description : String
     var price : Int
     
- 
-    
-    
 }
 
   

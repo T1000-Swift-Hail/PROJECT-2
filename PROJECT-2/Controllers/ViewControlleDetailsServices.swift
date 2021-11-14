@@ -18,8 +18,8 @@ class ViewControlleDetailsServices: UIViewController {
     override func viewDidLoad(){
         super.viewDidLoad()
 // The customer shows him the services,description and the price .
-        titel.text = servicDetails.name
-        descreb.text = servicDetails.description
+        titel.text = servicDetails.name.localized
+        descreb.text = servicDetails.description.localized
         price.text = "\(servicDetails.price) SR"
 
         // Do any additional setup after loading the view.
