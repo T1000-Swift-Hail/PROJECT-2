@@ -1,0 +1,54 @@
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "2XV-t9-9gi"; */
+"2XV-t9-9gi.text" = "Title";
+
+/* Class = "UITabBarItem"; title = "Test"; ObjectID = "BI7-UG-v0Z"; */
+"BI7-UG-v0Z.title" = "أختبار";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "V8W-ud-wOK"; */
+"V8W-ud-wOK.normalTitle" = "عودة";
+
+/* Class = "UIButton"; configuration.title = "START"; ObjectID = "WOY-CV-48S"; */
+"WOY-CV-48S.configuration.title" = "ابدأ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WOY-CV-48S"; */
+"WOY-CV-48S.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Done"; ObjectID = "WZ4-BG-B91"; */
+"WZ4-BG-B91.configuration.title" = "تم";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WZ4-BG-B91"; */
+"WZ4-BG-B91.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "Wzv-Rb-UgB"; */
+"Wzv-Rb-UgB.title" = "الصفحة الشخصية";
+
+/* Class = "UIButton"; configuration.title = "Confirm"; ObjectID = "dzX-0d-Mr6"; */
+"dzX-0d-Mr6.configuration.title" = "موافقة";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dzX-0d-Mr6"; */
+"dzX-0d-Mr6.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Abjd Test"; ObjectID = "g44-sV-ESv"; */
+"g44-sV-ESv.text" = "Abjd Test";
+
+/* Class = "UIButton"; configuration.title = "Open Camera"; ObjectID = "uuB-oo-CwB"; */
+"uuB-oo-CwB.configuration.title" = "افتح الكاميرا";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uuB-oo-CwB"; */
+"uuB-oo-CwB.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wHY-UK-eOu"; */
+"wHY-UK-eOu.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "choose photo"; ObjectID = "wRM-QC-Hv1"; */
+"wRM-QC-Hv1.configuration.title" = "اختيار الصورة";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wRM-QC-Hv1"; */
+"wRM-QC-Hv1.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Your Score"; ObjectID = "wTX-UA-FBD"; */
+"wTX-UA-FBD.text" = "نقاطك";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "wUz-OC-Z1H"; */
+"wUz-OC-Z1H.text" = "٠";

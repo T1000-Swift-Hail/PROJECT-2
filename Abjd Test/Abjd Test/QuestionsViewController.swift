@@ -38,7 +38,7 @@ class QuestionsViewController: UIViewController, UITableViewDelegate, UITableVie
     private func checkAnswer(answer: Answer, question: Question) -> Bool {
         return question.answers.contains(where: { $0.text == answer.text }) && answer.correct
         
-
+        
     }
 
     
