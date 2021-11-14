@@ -36,5 +36,9 @@ An online store that sells flowers to customers. This online store has 2 main us
 ### User Stories :
 When open application, after the lunch screen hides,user can see the login page,he can  complete as a guest, login if he have an account, or register if he didnt. After that Customer can see all of products and search products, Also he can addding products to shopping cart. Also, user can update his account information by going to settings screen.
 If  login as Admin , Admin can add products, delete Products, delete users. Also, Admin can update his account information by going to settings screen.
-
+Screen Shots:
+![alt text](https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Launch%20Screen.png)
+![alt text](https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Login%20Screen.png)
+![alt text](https://github.com/DalalAlsaidi/PROJECT-2/blob/main/Home%20Screen.png?raw=true)
+![alt text](https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Registration%20Screen.png)
 
