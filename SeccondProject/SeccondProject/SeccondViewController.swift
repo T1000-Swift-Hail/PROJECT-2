@@ -8,7 +8,7 @@
 import UIKit
 
 class SeccondViewController: UIViewController {
-
+    let userDefaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,6 +16,12 @@ class SeccondViewController: UIViewController {
     }
     
 
+    @IBAction func logOut(_ sender: UIButton) {
+        print("loggin out")
+        userDefaults.set(false, forKey: "Stay logged in")
+    
+        performSegue(withIdentifier: "Logout", sender: nil)
+    }
     @IBAction func clickToGo(_ sender: Any) {
         performSegue(withIdentifier: "Tickets", sender: nil)
     }

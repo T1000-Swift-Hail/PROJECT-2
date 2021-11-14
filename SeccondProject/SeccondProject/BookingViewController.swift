@@ -17,7 +17,7 @@ class BookingViewController: UIViewController {
     
 
     fileprivate func paymentAlert() {
-        let alert = UIAlertController(title: "Are you sure".translated, message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Are you sure?".translated, message: "", preferredStyle: .alert)
         
         let ok = UIAlertAction(title: "Yes".translated, style: .default) { ok in
             self.performSegue(withIdentifier: "Payment", sender: nil)

@@ -8,7 +8,7 @@
 // Supporter 
 
 ### Project Description :
-// It is a platform for matches tackits 
+// It is a platform for matches tickits
 
 
 ### Features List :
@@ -18,7 +18,10 @@
 - 3 
 
 ### Define the scenes :
-// First page about the user name  / scenes in your application.
+// First page about the user name using struct and alert if user name and pass is correct.  
+Seccond page it is a brief about the app
+Third page it is the zone of booking
+Last page it is about the user purchases
 
 
 ### User Stories :

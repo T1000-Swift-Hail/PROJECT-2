@@ -27,13 +27,13 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        firstMatch.text = "AL-Hilal VS AL-Faisly"
-        seccondMatch.text = "AL-Hilal VS AL-Shabab"
-        thirdMatch.text = "AL-Hilal VS AL-Raid"
+        firstMatch.text = "AL-Hilal VS AL-Faisly".translated
+        seccondMatch.text = "AL-Hilal VS AL-Shabab".translated
+        thirdMatch.text = "AL-Hilal VS AL-Raid".translated
         
-        nextMatch1.text = "AL-Hilal VS AL-Nassr"
-        nextMatch2.text = "AL-Hilal VS AL-Ittihad"
-        nextMatch3.text = "AL-Hilal VS AL-Ahli"
+        nextMatch1.text = "AL-Hilal VS AL-Nassr".translated
+        nextMatch2.text = "AL-Hilal VS AL-Ittihad".translated
+        nextMatch3.text = "AL-Hilal VS AL-Ahli".translated
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
