@@ -39,7 +39,7 @@ If  login as Admin , Admin can add products, delete Products, delete users. Also
 Screen Shots:
 
 
-<p align="right" >
+<p align="left" >
    <img src = https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Launch%20Screen.png width="300" height="600" />
 <img src = https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Login%20Screen.png width="300" height="600" />
 <img src = https://github.com/DalalAlsaidi/PROJECT-2/blob/main/Home%20Screen.png width="300" height="600" />
