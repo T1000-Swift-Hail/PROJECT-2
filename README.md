@@ -18,6 +18,7 @@ my project is online store for glasses and Sunglasses and more, also you can Bro
 - Easy access to the desired product .
 - also you can upload any glasses photo to searching to look for it . 
 - also we have too languages Arabic And English by Localization .
+- also you can upload photo for any Product and we will look for the product and we will contact you when we find the product .
 
 
 ### Define the scenes :
