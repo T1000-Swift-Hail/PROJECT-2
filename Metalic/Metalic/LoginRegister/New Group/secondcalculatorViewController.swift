@@ -9,122 +9,165 @@ import UIKit
 
 enum ChangeInput{
     case firstSpeed
+    case fristTeeth
     case secondSpeed
-    case teethFrist
-    case teethSecond
+    case secondteeth
 }
 
 
 class secondcalculatorViewController: UIViewController {
     
-    @IBOutlet var speedOne: UITextField!
-    @IBOutlet var teethOne: UITextField!
-    @IBOutlet var speedTwo: UITextField!
-    @IBOutlet var teethTwo: UITextField!
+    @IBOutlet var firstInput: UITextField!
+    @IBOutlet var secondInput: UITextField!
+    @IBOutlet var thirdInput: UITextField!
+    
     @IBOutlet var converValue: UILabel!
-    var choosenValue = ChangeInput.firstSpeed
+    var choosenValue:ChangeInput = .firstSpeed
     var segmantUnit: UISegmentedControl?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUI(changeInput: .firstSpeed)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissTap))
+            view.addGestureRecognizer(tap)
+    }
+    func setUI(changeInput:ChangeInput) {
+        
+        firstInput.keyboardType = .decimalPad
+        secondInput.keyboardType = .decimalPad
+        thirdInput.keyboardType = .decimalPad
+        
+        switch changeInput {
+        case .firstSpeed:
+            firstInput.placeholder = "secSpeed"
+            secondInput.placeholder = "secTeeth"
+            thirdInput.placeholder = "firTeeth"
+        case .fristTeeth:
+            firstInput.placeholder = "secSpeed"
+            secondInput.placeholder = "secTeeth"
+            thirdInput.placeholder = "firSpeed"
+        case .secondSpeed:
+            firstInput.placeholder = "firSpeed"
+            secondInput.placeholder = "secTeeth"
+            thirdInput.placeholder = "firTeeth"
+        case .secondteeth:
+            firstInput.placeholder = "secSpeed"
+            secondInput.placeholder = "firSpeed"
+            thirdInput.placeholder = "firTeeth"
+            
+        }
+        
     }
     
     // MARK: - calculating bottuns
     @IBAction func actionBottun(_ sender: Any) {
         
-        guard let secSpeed : Double = Double(speedTwo.text ?? "nil") else {return }
-        guard let firSpeed : Double = Double(speedOne.text ?? "nil") else {return }
-        guard let secTeeth : Double = Double(teethTwo.text ?? "nil") else {return }
-        guard let firTeeth : Double = Double(teethOne.text ?? "nil") else {return }
-        
-    //segmant switch
         switch choosenValue {
         case .firstSpeed:
-           let convertedValue = firstSpeed(secSpeed: secSpeed, secTeeth: secTeeth, firTeeth: firTeeth)
-            converValue.text = "\(convertedValue) "
+            
+            let convertedValue = firstSpeed(secSpeed: firstInput.text, secTeeth: secondInput.text, firTeeth: thirdInput.text)
+            
+            converValue.text = "\(convertedValue)"
+            
+            
         case .secondSpeed :
-            let convertedValue = secondSpeed (firSpeed: firSpeed, secTeeth: secTeeth, firTeeth: firTeeth)
+            
+            let convertedValue = secondSpeed(firSpeed: firstInput.text, secTeeth: secondInput.text, firTeeth: thirdInput.text)
+            
             converValue.text = "\(convertedValue)"
-        case .teethFrist:
-            let convertedValue = firstTeeth(secSpeed: secSpeed, secTeeth: secTeeth, firSpeed: firSpeed)
+            
+        case .fristTeeth:
+            
+            let convertedValue = firstTeeth(secSpeed: firstInput.text, secTeeth: secondInput.text, firSpeed: thirdInput.text)
+            
             converValue.text = "\(convertedValue)"
-        case .teethSecond:
-            let convertedValue = secondTeeth(secSpeed: secSpeed, firSpeed: firSpeed, firTeeth: firTeeth)
+            
+        case .secondteeth:
+            
+            let convertedValue = secondTeeth(secSpeed: firstInput.text, firSpeed: secondInput.text, firTeeth: thirdInput.text)
+            
             converValue.text = "\(convertedValue)"
+            
         }
     }
-        
+    
     // MARK: -segmant selection
     
     @IBAction func segGearSpeedTypes(_ sender: UISegmentedControl) {
         
-        switch segmantUnit?.selectedSegmentIndex {
+        switch sender.selectedSegmentIndex {
             
         case 0:
+            setUI(changeInput: .firstSpeed)
             choosenValue = .firstSpeed
-            speedOne.isEnabled = false
         case 1:
-            choosenValue = .teethFrist
-            teethOne.isEnabled = false
+            setUI(changeInput: .fristTeeth)
+            choosenValue = .fristTeeth
         case 2:
+            setUI(changeInput: .secondSpeed)
             choosenValue = .secondSpeed
-            speedTwo.isEnabled = false
         case 3:
-            choosenValue = .teethSecond
-            teethTwo.isEnabled = false
+             setUI(changeInput: .secondteeth)
+            choosenValue = .secondteeth
         default:
-            choosenValue = .firstSpeed
+            print("")
         }
     }
     // MARK: - list calculation for each case in segmant
     
-    func firstSpeed(secSpeed:Double , secTeeth:Double, firTeeth:Double) -> String {
+    func firstSpeed(secSpeed:String? , secTeeth:String?, firTeeth:String?) -> String {
         
-        
-        guard let secSpeed : Double = Double(speedTwo.text ?? "nil") else {return ""}
-        guard let secTeeth : Double = Double(teethTwo.text ?? "nil") else {return ""}
-        guard let firTeeth : Double = Double(teethOne.text ?? "nil") else {return ""}
+        guard let secSpeed : Double = Double(firstInput.text ?? "nil") else {return ""}
+        guard let secTeeth : Double = Double(secondInput.text ?? "nil") else {return ""}
+        guard let firTeeth : Double = Double(thirdInput.text ?? "nil") else {return ""}
         let frSpeed = ((secSpeed * firTeeth) / secTeeth)
         let results = "\(String(format:"%.2f",frSpeed))"
         converValue.text = results
         return results
         
     }
-    func secondSpeed(firSpeed:Double , secTeeth:Double, firTeeth:Double) -> String {
+    func secondSpeed(firSpeed:String? , secTeeth:String?, firTeeth:String?) -> String {
         
-        guard let firSpeed : Double = Double(speedOne.text ?? "nil") else {return ""}
-        guard let secTeeth : Double = Double(teethTwo.text ?? "nil") else {return ""}
-        guard let firTeeth : Double = Double(teethOne.text ?? "nil") else {return ""}
+        guard let firSpeed : Double = Double(firstInput.text ?? "nil") else {return ""}
+        guard let secTeeth : Double = Double(secondInput.text ?? "nil") else {return ""}
+        guard let firTeeth : Double = Double(thirdInput.text ?? "nil") else {return ""}
         let secSpeed = ((firSpeed * firTeeth) / secTeeth)
         let results = "\(String(format:"%.2f",secSpeed))"
         converValue.text = results
         return results
         
     }
-    func firstTeeth(secSpeed:Double , secTeeth:Double, firSpeed:Double) -> String {
+    func firstTeeth(secSpeed:String? , secTeeth:String?, firSpeed:String?) -> String {
         
-     
-        guard let secSpeed : Double = Double(speedTwo.text ?? "nil") else {return ""}
-        guard let secTeeth : Double = Double(teethTwo.text ?? "nil") else {return ""}
-        guard let firSpeed : Double = Double(speedOne.text ?? "nil") else {return ""}
+        
+        guard let secSpeed : Double = Double(firstInput.text ?? "nil") else {return ""}
+        guard let secTeeth : Double = Double(secondInput.text ?? "nil") else {return ""}
+        guard let firSpeed : Double = Double(thirdInput.text ?? "nil") else {return ""}
         let firTeeth = ((secSpeed * secTeeth) / firSpeed)
         let results = "\(String(format:"%.2f",firTeeth))"
         converValue.text = results
         return results
         
     }
-    func secondTeeth(secSpeed:Double , firSpeed:Double, firTeeth:Double) -> String {
+    func secondTeeth(secSpeed:String?, firSpeed:String?, firTeeth:String?) -> String {
         
-     
-        guard let secSpeed : Double = Double(speedTwo.text ?? "nil") else {return ""}
-        guard let firSpeed : Double = Double(speedOne.text ?? "nil") else {return ""}
-        guard let firTeeth : Double = Double(teethOne.text ?? "nil") else {return ""}
+        
+        guard let secSpeed : Double = Double(firstInput.text ?? "nil") else {return ""}
+        guard let firSpeed : Double = Double(secondInput.text ?? "nil") else {return ""}
+        guard let firTeeth : Double = Double(thirdInput.text ?? "nil") else {return ""}
         let secTeeth = ((firSpeed * firTeeth) / secSpeed)
         let results = "\(String(format:"%.2f",secTeeth))"
         converValue.text = results
         return results
         
     }
- 
+    @objc  func dismissTap() {
+        firstInput.resignFirstResponder()
+        secondInput.resignFirstResponder()
+        thirdInput.resignFirstResponder()
+        
+      }
+    
+    
 }

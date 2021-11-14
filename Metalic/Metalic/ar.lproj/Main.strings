@@ -1,0 +1,183 @@
+
+/* Class = "UISegmentedControl"; 1Mg-RY-ktG.segmentTitles[0] = "First Speed"; ObjectID = "1Mg-RY-ktG"; */
+"1Mg-RY-ktG.segmentTitles[0]" = "First Speed";
+
+/* Class = "UISegmentedControl"; 1Mg-RY-ktG.segmentTitles[1] = "First Teeth"; ObjectID = "1Mg-RY-ktG"; */
+"1Mg-RY-ktG.segmentTitles[1]" = "First Teeth";
+
+/* Class = "UISegmentedControl"; 1Mg-RY-ktG.segmentTitles[2] = "Second Speed"; ObjectID = "1Mg-RY-ktG"; */
+"1Mg-RY-ktG.segmentTitles[2]" = "Second Speed";
+
+/* Class = "UISegmentedControl"; 1Mg-RY-ktG.segmentTitles[3] = "Second Teeth"; ObjectID = "1Mg-RY-ktG"; */
+"1Mg-RY-ktG.segmentTitles[3]" = "Second Teeth";
+
+/* Class = "UIButton"; configuration.title = "LogOut"; ObjectID = "2OT-CH-TCh"; */
+"2OT-CH-TCh.configuration.title" = "LogOut";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2OT-CH-TCh"; */
+"2OT-CH-TCh.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Speed Gear One"; ObjectID = "4o2-WC-Iiu"; */
+"4o2-WC-Iiu.placeholder" = "Speed Gear One";
+
+/* Class = "UIButton"; configuration.title = "Gear Ratio "; ObjectID = "5aO-BC-auQ"; */
+"5aO-BC-auQ.configuration.title" = "Gear Ratio ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5aO-BC-auQ"; */
+"5aO-BC-auQ.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Metalic"; ObjectID = "68x-F6-Rs3"; */
+"68x-F6-Rs3.title" = "Metalic";
+
+/* Class = "UIButton"; configuration.title = "Impeller"; ObjectID = "DqM-nT-cy6"; */
+"DqM-nT-cy6.configuration.title" = "Impeller";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DqM-nT-cy6"; */
+"DqM-nT-cy6.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FBO-YQ-h1g"; */
+"FBO-YQ-h1g.text" = "Label";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "FUv-B2-Dod"; */
+"FUv-B2-Dod.text" = "0";
+
+/* Class = "UIButton"; configuration.title = "Spur Gear"; ObjectID = "JZG-0Q-h3q"; */
+"JZG-0Q-h3q.configuration.title" = "Spur Gear";
+
+/* Class = "UITextField"; placeholder = "Number of Teath"; ObjectID = "L7x-qC-5og"; */
+"L7x-qC-5og.placeholder" = "Number of Teath";
+
+/* Class = "UIButton"; configuration.title = "Clculate"; ObjectID = "Ljp-ma-c1g"; */
+"Ljp-ma-c1g.configuration.title" = "Clculate";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ljp-ma-c1g"; */
+"Ljp-ma-c1g.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Gear Pressure angle"; ObjectID = "MUr-6f-SYa"; */
+"MUr-6f-SYa.configuration.title" = "Gear Pressure angle";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MUr-6f-SYa"; */
+"MUr-6f-SYa.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "calculate"; ObjectID = "MhX-9y-O45"; */
+"MhX-9y-O45.configuration.title" = "calculate";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MhX-9y-O45"; */
+"MhX-9y-O45.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Helical Gear"; ObjectID = "NHM-eq-QWo"; */
+"NHM-eq-QWo.configuration.title" = "Helical Gear";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NHM-eq-QWo"; */
+"NHM-eq-QWo.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Teeth Gear Two"; ObjectID = "NJx-fA-BMG"; */
+"NJx-fA-BMG.placeholder" = "Teeth Gear Two";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "PZx-s3-rQf"; */
+"PZx-s3-rQf.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "PZx-s3-rQf"; */
+"PZx-s3-rQf.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "R4E-yX-G25"; */
+"R4E-yX-G25.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "TGY-vj-yQr"; */
+"TGY-vj-yQr.placeholder" = "Username";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Xg4-6n-v7y"; */
+"Xg4-6n-v7y.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "Xz2-H8-6Vl"; */
+"Xz2-H8-6Vl.title" = "Profile";
+
+/* Class = "UITextField"; placeholder = "Re-password"; ObjectID = "YNX-8C-okd"; */
+"YNX-8C-okd.placeholder" = "Re-password";
+
+/* Class = "UIButton"; configuration.title = "Join Us"; ObjectID = "Yxh-gx-ONY"; */
+"Yxh-gx-ONY.configuration.title" = "Join Us";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Yxh-gx-ONY"; */
+"Yxh-gx-ONY.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Company Name :"; ObjectID = "Z1P-qs-ySL"; */
+"Z1P-qs-ySL.text" = "Company Name :";
+
+/* Class = "UIButton"; configuration.title = "Join"; ObjectID = "c9t-jY-zHr"; */
+"c9t-jY-zHr.configuration.title" = "Join";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "c9t-jY-zHr"; */
+"c9t-jY-zHr.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "UserName"; ObjectID = "fBU-eI-Toj"; */
+"fBU-eI-Toj.placeholder" = "UserName";
+
+/* Class = "UILabel"; text = "Register"; ObjectID = "fPz-uZ-JAa"; */
+"fPz-uZ-JAa.text" = "Register";
+
+/* Class = "UIButton"; configuration.title = "Rack and Pnion"; ObjectID = "mj2-Gs-vSU"; */
+"mj2-Gs-vSU.configuration.title" = "Rack and Pnion";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "mj2-Gs-vSU"; */
+"mj2-Gs-vSU.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "myv-98-aMv"; */
+"myv-98-aMv.placeholder" = "Password";
+
+/* Class = "UITabBarItem"; title = "Gear Ratio"; ObjectID = "nz2-jv-wDZ"; */
+"nz2-jv-wDZ.title" = "Gear Ratio";
+
+/* Class = "UILabel"; text = "UserName :"; ObjectID = "pQp-cF-Snb"; */
+"pQp-cF-Snb.text" = "UserName :";
+
+/* Class = "UILabel"; text = "Module 0.0"; ObjectID = "rIp-g1-d1c"; */
+"rIp-g1-d1c.text" = "Module 0.0";
+
+/* Class = "UIButton"; configuration.title = "More Info"; ObjectID = "rj8-XH-OQN"; */
+"rj8-XH-OQN.configuration.title" = "More Info";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rj8-XH-OQN"; */
+"rj8-XH-OQN.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "s2E-ap-hoo"; */
+"s2E-ap-hoo.title" = "Home";
+
+/* Class = "UISegmentedControl"; s8i-WL-3g7.segmentTitles[0] = "MM"; ObjectID = "s8i-WL-3g7"; */
+"s8i-WL-3g7.segmentTitles[0]" = "MM";
+
+/* Class = "UISegmentedControl"; s8i-WL-3g7.segmentTitles[1] = "Inch"; ObjectID = "s8i-WL-3g7"; */
+"s8i-WL-3g7.segmentTitles[1]" = "Inch";
+
+/* Class = "UIButton"; configuration.title = "PreOdrer ⚙️"; ObjectID = "uCp-9T-Zav"; */
+"uCp-9T-Zav.configuration.title" = "PreOdrer ⚙️";
+
+/* Class = "UITextField"; placeholder = "Company"; ObjectID = "ujR-S9-Yga"; */
+"ujR-S9-Yga.placeholder" = "Company";
+
+/* Class = "UIButton"; configuration.title = "Cuntact us"; ObjectID = "umx-y0-OfC"; */
+"umx-y0-OfC.configuration.title" = "Cuntact us";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "umx-y0-OfC"; */
+"umx-y0-OfC.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Skip"; ObjectID = "vjq-uu-TbV"; */
+"vjq-uu-TbV.configuration.title" = "Skip";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vjq-uu-TbV"; */
+"vjq-uu-TbV.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = " 0.0"; ObjectID = "vlE-4i-37b"; */
+"vlE-4i-37b.text" = " 0.0";
+
+/* Class = "UITextField"; placeholder = "Type Out Dimiter..."; ObjectID = "vrF-aI-whb"; */
+"vrF-aI-whb.placeholder" = "Type Out Dimiter...";
+
+/* Class = "UITextField"; placeholder = "Speed Gear Two"; ObjectID = "vxh-eL-mDA"; */
+"vxh-eL-mDA.placeholder" = "Speed Gear Two";
+
+/* Class = "UIButton"; configuration.title = "Worm Gear"; ObjectID = "vzQ-PE-lda"; */
+"vzQ-PE-lda.configuration.title" = "Worm Gear";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vzQ-PE-lda"; */
+"vzQ-PE-lda.normalTitle" = "Button";

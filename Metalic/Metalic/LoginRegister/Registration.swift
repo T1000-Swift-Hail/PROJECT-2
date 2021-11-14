@@ -15,6 +15,8 @@ class Registration : LoginPage {
     override func viewDidLoad() {
         passRegister.isSecureTextEntry = true
         rePassword.isSecureTextEntry = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissTap))
+            view.addGestureRecognizer(tap)
     }
     //MARK: -  List Of Variables
     
@@ -35,23 +37,23 @@ class Registration : LoginPage {
         
         //chick if Empity
         if userRegister.text?.isEmpty == true || passRegister.text?.isEmpty == true || rePassword.text?.isEmpty == true {
-            DisplayMyAlert(title: "Wrong", message: "user or password is empity ")
+            displayMyAlert(title: NSLocalizedString("Wrong", comment: ""), message: NSLocalizedString("user or password is empity", comment: ""))
         }
         // Chick if equal
         if (passRegister.text != rePassword.text){
-            DisplayMyAlert(title: "Wrong", message: "Passwor don't match")
+            displayMyAlert(title: NSLocalizedString("Wrong", comment: ""), message:NSLocalizedString("Passwor don't match", comment: ""))
         }
         //User Defults
         else{
             defaults.set(userRegister.text, forKey: "userName")
             defaults.set(companyName.text, forKey: "companyName")
             defaults.set(passRegister.text, forKey: "passWord")
-            DisplayMyAlert(title: "Registration", message: "You are Registed..!")
+            displayMyAlert(title: NSLocalizedString("Registration", comment: ""), message: NSLocalizedString("You are Registed..!", comment: ""))
         }
     }
     //MARK: - Alert Function
     
-    override func DisplayMyAlert(title: String, message: String){
+    override func displayMyAlert(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let Ok = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(Ok)
@@ -59,6 +61,12 @@ class Registration : LoginPage {
         
         
     }
+    @objc override func dismissTap() {
+        userRegister.resignFirstResponder()
+        passRegister.resignFirstResponder()
+        rePassword.resignFirstResponder()
+        companyName.resignFirstResponder()
+      }
 }
 
 

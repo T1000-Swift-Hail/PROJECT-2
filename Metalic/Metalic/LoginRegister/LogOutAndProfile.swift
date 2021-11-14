@@ -18,7 +18,7 @@ class LogOut: UIViewController {
         companyName.text = UserDefaults.standard.string(forKey: "companyName")
 
     }
-    @IBAction func logUotBottun(_ sender: Any) {
+    @IBAction func logOutBottun(_ sender: Any) {
         UserDefaults.standard.set(false, forKey: "in Login")
         self.navigationController?.popToRootViewController(animated: true)
         

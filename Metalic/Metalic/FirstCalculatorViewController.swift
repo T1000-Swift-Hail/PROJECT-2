@@ -22,6 +22,8 @@ class TabCalculatorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissTap))
+            view.addGestureRecognizer(tap)
         
     }
     func calculateMM(NumberOfteaath:Double, OutDimeter:Double) -> String {
@@ -45,7 +47,7 @@ class TabCalculatorViewController: UIViewController {
         return resultInch
         
     }
-    @IBAction func CalculateButton(_ sender: Any) {
+    @IBAction func calculateButton(_ sender: Any) {
         var numberOfTeeth = 0.0
         var outDimeter = 0.0
         guard let intNumberNT : Double = Double(textfiledNT.text ?? "nil") else {return}
@@ -76,5 +78,10 @@ class TabCalculatorViewController: UIViewController {
             conversionType = .mm
             conversionLabel.text = "0.0 Module"}
     }
+    @objc  func dismissTap() {
+        textfieldOD.resignFirstResponder()
+        textfiledNT.resignFirstResponder()
+
+      }
     
 }

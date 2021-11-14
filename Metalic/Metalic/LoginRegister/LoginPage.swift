@@ -19,7 +19,7 @@ class LoginPage: UIViewController {
         var company : String
     }
     
-    @IBOutlet var loginicon: UIImageView!
+    @IBOutlet var loginIcon: UIImageView!
     @IBOutlet var usernameText: UITextField!
     @IBOutlet var passWodText: UITextField!
     @IBOutlet var loginButton: UIButton!
@@ -33,6 +33,7 @@ class LoginPage: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.isNavigationBarHidden = true
+      
     }
     
     // MARK: - Functions
@@ -42,11 +43,16 @@ class LoginPage: UIViewController {
         if defaults.bool(forKey: "in Login") {
             performSegue(withIdentifier: "TabBarHome" , sender: nil)}
         passWodText?.isSecureTextEntry = true
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissTap))
+            view.addGestureRecognizer(tap)
+        loginButton.setTitle("logIn".localized, for: .normal)
     }
     
     // MARK: - Login Bottun
     
     @IBAction func logIn(_ sender: Any) {
+        
         let userProfile = users
         guard let user = usernameText.text else {return}
         guard let pass = passWodText.text else {return}
@@ -63,11 +69,11 @@ class LoginPage: UIViewController {
             }
             // if is empety username and password
             if (usernameText.text!.isEmpty || passWodText.text!.isEmpty){
-                DisplayMyAlert(title: "Wrong", message: "UserName or Password is empity")
+                displayMyAlert(title: NSLocalizedString("Wrong", comment: ""), message: NSLocalizedString("UserName or Password is empity", comment: "") )
             }
             
             else {
-                DisplayMyAlert(title: "Wrong", message: "UserName or Password is Wrong")}
+                displayMyAlert(title: NSLocalizedString("Wrong", comment: ""), message: NSLocalizedString("UserName or Password is Wrong", comment: ""))}
         }
     }
     // MARK: - For registoration
@@ -84,12 +90,16 @@ class LoginPage: UIViewController {
     }
     // MARK: -  alert
     
-    func DisplayMyAlert(title: String, message: String){
+    func displayMyAlert(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let Ok = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(Ok)
         present(alert, animated: true, completion: nil)
     }
+    @objc func dismissTap() {
+        usernameText.resignFirstResponder()
+        passWodText.resignFirstResponder()
+      }
 }
 
 

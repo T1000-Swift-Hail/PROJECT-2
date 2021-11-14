@@ -11,6 +11,7 @@
 		D8507FB02740764D00AAF78D /* secondcalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507FAD2740764D00AAF78D /* secondcalculatorViewController.swift */; };
 		D8507FB22740764D00AAF78D /* ForBottunCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507FAF2740764D00AAF78D /* ForBottunCalculator.swift */; };
 		D8507FB72740776300AAF78D /* FirstCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507FB62740776300AAF78D /* FirstCalculatorViewController.swift */; };
+		D850907527417EBB002447E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D850907727417EBB002447E0 /* Localizable.strings */; };
 		D8AA8BAD2737E5A600D40045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BAC2737E5A600D40045 /* AppDelegate.swift */; };
 		D8AA8BAF2737E5A600D40045 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BAE2737E5A600D40045 /* SceneDelegate.swift */; };
 		D8AA8BB12737E5A600D40045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BB02737E5A600D40045 /* ViewController.swift */; };
@@ -32,7 +33,11 @@
 		D8507FAD2740764D00AAF78D /* secondcalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = secondcalculatorViewController.swift; path = "LoginRegister/New Group/secondcalculatorViewController.swift"; sourceTree = "<group>"; };
 		D8507FAF2740764D00AAF78D /* ForBottunCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForBottunCalculator.swift; path = "LoginRegister/New Group/ForBottunCalculator.swift"; sourceTree = "<group>"; };
 		D8507FB62740776300AAF78D /* FirstCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCalculatorViewController.swift; sourceTree = "<group>"; };
-		D8AA8BA92737E5A600D40045 /* Metalic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Metalic.app; path = "/Users/anashamad/Desktop/T1000/PROJECT-2/Metalic/build/Debug-iphoneos/Metalic.app"; sourceTree = "<absolute>"; };
+		D850906D27417AE6002447E0 /* Metalic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Metalic.app; path = "/Users/anashamad/Desktop/T1000/PROJECT-2/Metalic/build/Debug-iphoneos/Metalic.app"; sourceTree = "<absolute>"; };
+		D850907127417E19002447E0 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D850907227417E19002447E0 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		D850907627417EBB002447E0 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D850907827417EDA002447E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D8AA8BAC2737E5A600D40045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8AA8BAE2737E5A600D40045 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D8AA8BB02737E5A600D40045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +90,7 @@
 				D8E14B10273AB33B0098A6FD /* DifinationView.swift */,
 				D8AA8BB52737E5A800D40045 /* Assets.xcassets */,
 				D8AA8BB22737E5A600D40045 /* Main.storyboard */,
+				D850907727417EBB002447E0 /* Localizable.strings */,
 			);
 			path = Metalic;
 			sourceTree = "<group>";
@@ -127,7 +133,7 @@
 			);
 			name = Metalic;
 			productName = Metalic;
-			productReference = D8AA8BA92737E5A600D40045 /* Metalic.app */;
+			productReference = D850906D27417AE6002447E0 /* Metalic.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,6 +158,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = D8AA8BA02737E5A600D40045;
 			productRefGroup = D8AA8BA02737E5A600D40045;
@@ -173,6 +180,7 @@
 				D8E14B19273BAADB0098A6FD /* CaviarDreams.ttf in Resources */,
 				D8AA8BB42737E5A600D40045 /* Main.storyboard in Resources */,
 				D8E14B1A273BAADB0098A6FD /* CaviarDreams_Italic.ttf in Resources */,
+				D850907527417EBB002447E0 /* Localizable.strings in Resources */,
 				D8E14B18273BAADB0098A6FD /* CaviarDreams_BoldItalic.ttf in Resources */,
 				D8E14B17273BAADB0098A6FD /* CaviarDreams_Bold.ttf in Resources */,
 			);
@@ -202,10 +210,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		D850907727417EBB002447E0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D850907627417EBB002447E0 /* ar */,
+				D850907827417EDA002447E0 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		D8AA8BB22737E5A600D40045 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D8AA8BB32737E5A600D40045 /* Base */,
+				D850907227417E19002447E0 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -214,6 +232,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D8AA8BB82737E5A800D40045 /* Base */,
+				D850907127417E19002447E0 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -225,6 +244,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -286,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -345,6 +366,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NQUCPJVZ5U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Metalic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -352,6 +374,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,6 +395,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NQUCPJVZ5U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Metalic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -379,6 +403,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
