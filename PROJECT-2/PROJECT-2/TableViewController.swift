@@ -108,7 +108,7 @@ class TableViewController: UITableViewController {
                 self.Listofproducts.append(newProductToAdd)
                 let index = [IndexPath(item: self.Listofproducts.count-1, section: 0)]
                 self.tableView.insertRows(at: index, with: .automatic)
-                myShoppingCart.items.append(newProductToAdd)
+               // myShoppingCart.items.append(newProductToAdd)
                 self.tableView.reloadData()
                 
             }

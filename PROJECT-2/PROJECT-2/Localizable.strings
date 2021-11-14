@@ -1,23 +1,17 @@
-/* 
+/*
   Localizable.strings
   PROJECT-2
 
   Created by Seham الشطنان on 06/04/1443 AH.
-  
 */
-
 "darkChocolate" =  "الشوكولاته الداكنة";
 "brownChocolate" = "شوكولاتة بنية";
 "whiteChocolate" = "شوكولاته بيضاء";
 "proteinChocolate" = "بروتين شوكولاتة";
 "belgianChocolate" = "الشوكولاته البلجيكية";
-"Chocolate" = "شوكولاتة";
-"Name:Bostani" = "الاسم:بستاني";
-"Location" = "موقع";
-"phonenumber" = "رقم الهاتف";
-"Trending" = "الشائع";
-"Bestsellers" = "الأكثر مبيعًا";
-"NewReleases" = "الإصدارات الجديدة";
+
+
+
 
 "Add" = "يضيف";
 "Add product" = "أضف منتج";
@@ -25,3 +19,8 @@
 "Input your product here..." = "...ضع منتجك هنا";
 "OK" = "نعم";
 "Trending" = "الشائع";
+"Cancel" = "إلغاء";
+
+
+"New Releases" = "الإصدارات الجديدة";
+"Best Sellers" = "الأكثر مبيعًا";
