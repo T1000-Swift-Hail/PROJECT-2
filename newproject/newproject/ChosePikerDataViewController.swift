@@ -42,7 +42,7 @@ class ChosePikerDataViewController: UIViewController,UIPickerViewDelegate, UIPic
     
     var ArrynameBusniss: [ArrynameBusniss] = [.none,.factory,.company,.gasStation]
     
-    
+    // data
     var factory = Busniss(busnissName: "Concret", busnissImege:UIImage(named: "ConcretFactory")!, busnissNumberEmployer: "10", busnissRevenu: "100000", busnissTotalCost: "50000", busnissNetProfit: "50000")
     var gasStation = Busniss(busnissName: "Gas station", busnissImege: UIImage(named:"Gas Station")!, busnissNumberEmployer: "6", busnissRevenu: "30000", busnissTotalCost: "20000", busnissNetProfit: "10000")
     var company = Busniss(busnissName: "Company", busnissImege: UIImage(named:"Company")!, busnissNumberEmployer: "30", busnissRevenu: "500000", busnissTotalCost: "250000", busnissNetProfit: "250000")
@@ -56,18 +56,20 @@ class ChosePikerDataViewController: UIViewController,UIPickerViewDelegate, UIPic
     }
     
     
-    
+    // For Number Of components in the pickerView
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    
+    //For Number Of rows in the pickerView
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return ArrynameBusniss.count
     }
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return ArrynameBusniss[row].rawValue
         
     }
+    //For showing data that assign to the pikerview
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         DataType.text = ArrynameBusniss[row].rawValue

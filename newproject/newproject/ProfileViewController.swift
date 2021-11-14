@@ -28,18 +28,9 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate {
         self.imegeProfile.image = image
     }
     
-    // MARK: - Storyboard Segue
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//        let detailViewController = segue.destination as! SecondViewController
-//        detailViewController.caching = caching
-//
-//    }
+    
+
     // MARK: - Buttons Actions
-    
-    
-    
-    
 
     @IBAction func deleteImageFromCach(_ sender: UIButton) {
         caching.deleteImageFromCach(forKey: "url")
@@ -54,12 +45,9 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate {
     
     
     
-    
-   
     @IBAction func choseImage(_ sender: UIButton) {
     
-    //        imagePicker.sourceType = .photoLibrary
-        //        present(imagePicker, animated: true, completion: nil)
+   
         var configuration = PHPickerConfiguration()
         configuration.selectionLimit = 4
         configuration.filter = .images
