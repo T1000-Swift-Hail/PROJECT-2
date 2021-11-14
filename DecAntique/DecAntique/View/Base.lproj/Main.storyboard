@@ -840,7 +840,7 @@
             </objects>
             <point key="canvasLocation" x="-181" y="204"/>
         </scene>
-        <!--Shopping Cart-->
+        <!--Favorite List-->
         <scene sceneID="GJR-kg-NuW">
             <objects>
                 <viewController storyboardIdentifier="ShoppingCartVC" id="ziy-dI-3OB" customClass="ShoppingCartVC" customModule="DecAntique" customModuleProvider="target" sceneMemberID="viewController">
@@ -928,7 +928,7 @@
                             <constraint firstItem="64m-uJ-GcI" firstAttribute="leading" secondItem="0ps-0P-hIj" secondAttribute="leading" id="g1h-Lg-yhI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Shopping Cart" id="mYj-3v-sR5"/>
+                    <navigationItem key="navigationItem" title="Favorite List" id="mYj-3v-sR5"/>
                     <connections>
                         <outlet property="uiSearchbar" destination="64m-uJ-GcI" id="ZAO-TR-s5n"/>
                         <outlet property="uiTableview" destination="4nZ-HG-DhF" id="AxH-Up-I57"/>
@@ -1236,10 +1236,10 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" id="QBl-yY-dSm" customClass="UserCell" customModule="DecAntique" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="73"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="73.333335876464844"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QBl-yY-dSm" id="xwT-Ea-4Bv">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="73"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="73.333335876464844"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4g-I8-HKT">
@@ -1252,7 +1252,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3u-CU-Xyf">
-                                                    <rect key="frame" x="20" y="41" width="350" height="20"/>
+                                                    <rect key="frame" x="20" y="41" width="350" height="20.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
