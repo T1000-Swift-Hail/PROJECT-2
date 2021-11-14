@@ -17,7 +17,7 @@ class SeccondViewController: UIViewController {
     
 
     @IBAction func clickToGo(_ sender: Any) {
-        performSegue(withIdentifier: "Third", sender: nil)
+        performSegue(withIdentifier: "Tickets", sender: nil)
     }
     
     /*
