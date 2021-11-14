@@ -39,7 +39,15 @@ If  login as Admin , Admin can add products, delete Products, delete users. Also
 Screen Shots:
 
 <img src = https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Launch%20Screen.png width="300" height="600" />
-<img src = https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Login%20Screen.png width="300" height="500" />
-<img src = https://github.com/DalalAlsaidi/PROJECT-2/blob/main/Home%20Screen.png width="400" height="700" />
+<img src = https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Login%20Screen.png width="300" height="600" />
+<img src = https://github.com/DalalAlsaidi/PROJECT-2/blob/main/Home%20Screen.png width="300" height="600" />
 
-<img src = https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Registration%20Screen.png width="100" height="100" />
+<img src = https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Registration%20Screen.png width="300" height="600" />
+
+
+<p align="right" >
+   <img src = https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Launch%20Screen.png width="300" height="600" />
+<img src = https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Login%20Screen.png width="300" height="600" />
+<img src = https://github.com/DalalAlsaidi/PROJECT-2/blob/main/Home%20Screen.png width="300" height="600" />
+<img src = https://raw.githubusercontent.com/DalalAlsaidi/PROJECT-2/main/Registration%20Screen.png width="300" height="600" />
+</p>
