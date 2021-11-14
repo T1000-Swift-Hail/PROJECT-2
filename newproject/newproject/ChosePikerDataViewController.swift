@@ -17,6 +17,12 @@ struct Busniss {
     
     
 }
+enum ArrynameBusniss:String {
+    case none = ""
+    case factory = "Factory"
+    case gasStation = "Gas Station"
+    case company = "Company"
+}
 
 class ChosePikerDataViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource{
     
@@ -34,9 +40,7 @@ class ChosePikerDataViewController: UIViewController,UIPickerViewDelegate, UIPic
     
     @IBOutlet weak var PikerBusnissData: UIPickerView!
     
-    var ArrynameBusniss = ["factory","Gas Station","Company"]
-    
-   
+    var ArrynameBusniss: [ArrynameBusniss] = [.none,.factory,.company,.gasStation]
     
     
     var factory = Busniss(busnissName: "Concret", busnissImege:UIImage(named: "ConcretFactory")!, busnissNumberEmployer: "10", busnissRevenu: "100000", busnissTotalCost: "50000", busnissNetProfit: "50000")
@@ -50,49 +54,9 @@ class ChosePikerDataViewController: UIViewController,UIPickerViewDelegate, UIPic
         PikerBusnissData.dataSource = self
         
     }
-   
     
-   
-    @IBAction func Data(_ sender: Any) {
-        var EmplyerNumber = EmplyerNumber.text
-        var RevenLabal = RevenLabal.text
-        var NetProfitLabal = NetProfitLabal.text
-        var TotalCostLabal = TotalCostLabal.text
-        
-        
-        if  DataType.text == ArrynameBusniss[PikerBusnissData.selectedRow(inComponent: 0)] {
-            
-            NetProfitLabal = factory.busnissNetProfit
-            TotalCostLabal = factory.busnissTotalCost
-            RevenLabal = factory.busnissRevenu
-            EmplyerNumber = factory.busnissNumberEmployer
-           print("hhhhh\(factory.busnissNumberEmployer)")
-            
-            
-        }else if DataType.text == ArrynameBusniss[PikerBusnissData.selectedRow(inComponent: 1)] {
-            
-            
-            
-            NetProfitLabal = gasStation.busnissNetProfit
-            TotalCostLabal = gasStation.busnissTotalCost
-            RevenLabal = gasStation.busnissRevenu
-            EmplyerNumber = gasStation.busnissNumberEmployer
-        }else {
-                
-                
-            
-            NetProfitLabal = company.busnissNetProfit
-            TotalCostLabal = company.busnissTotalCost
-            RevenLabal = company.busnissRevenu
-            EmplyerNumber = company.busnissNumberEmployer
-            
-            }
-        
-        
-        
-            
     
-    }
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -101,8 +65,38 @@ class ChosePikerDataViewController: UIViewController,UIPickerViewDelegate, UIPic
         return ArrynameBusniss.count
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return ArrynameBusniss[row]
+        return ArrynameBusniss[row].rawValue
         
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        DataType.text = ArrynameBusniss[row].rawValue
+        
+        switch ArrynameBusniss[row] {
+        case .factory:
+            BusnissImeg.image  = factory.busnissImege
+            NetProfitLabal.text = factory.busnissNetProfit
+            TotalCostLabal.text = factory.busnissTotalCost
+            RevenLabal.text = factory.busnissRevenu
+            EmplyerNumber.text = factory.busnissNumberEmployer
+            
+        case .gasStation:
+            BusnissImeg.image  = gasStation.busnissImege
+            NetProfitLabal.text = gasStation.busnissNetProfit
+            TotalCostLabal.text = gasStation.busnissTotalCost
+            RevenLabal.text = gasStation.busnissRevenu
+            EmplyerNumber.text = gasStation.busnissNumberEmployer
+            
+        case .company:
+            BusnissImeg.image  = company.busnissImege
+            NetProfitLabal.text = company.busnissNetProfit
+            TotalCostLabal.text = company.busnissTotalCost
+            RevenLabal.text = company.busnissRevenu
+            EmplyerNumber.text = company.busnissNumberEmployer
+            
+        case .none:
+            print("")
+        }
     }
     
 }

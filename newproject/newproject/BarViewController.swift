@@ -11,11 +11,9 @@ class BarViewController: UIViewController , ChartViewDelegate {
 
     
     var barChart = BarChartView()
-//    
-//    var factory = Busniss(busnissName: "Concret", busnissImege:UIImage(named: "ConcretFactory")!, busnissNumberEmployer: 10, busnissRevenu: 100000, busnissTotalCost: 50000, busnissNetProfit: 50000)
-//    var gasStation = Busniss(busnissName: "Gas station", busnissImege: UIImage(named:"Gas Station")!, busnissNumberEmployer: 6, busnissRevenu: 30000, busnissTotalCost: 20000, busnissNetProfit: 10000)
-//    var company = Busniss(busnissName: "Company", busnissImege: UIImage(named:"Company")!, busnissNumberEmployer: 30, busnissRevenu: 500000, busnissTotalCost: 250000, busnissNetProfit: 250000)
-//    
+    
+    var marketValus = [Double]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         barChart.delegate = self
@@ -28,14 +26,16 @@ class BarViewController: UIViewController , ChartViewDelegate {
         barChart.center = view.center
         view.addSubview(barChart)
         
+       
         var entries = [BarChartDataEntry]()
-        
+//        var marketValus = [20000,25000,30000,28000,33000,27000,25000]
         for x in 0..<10 {
             entries.append(BarChartDataEntry(x:Double(x),
                                            y:Double(x)))
-        }
+           
+       
         
-        let set =  BarChartDataSet(entries : entries)
+            let set =  BarChartDataSet(entries:entries)
         set.colors = ChartColorTemplates.joyful()
         let data = BarChartData(dataSet: set)
         barChart.data = data
@@ -43,3 +43,4 @@ class BarViewController: UIViewController , ChartViewDelegate {
 
 }
 
+}
