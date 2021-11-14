@@ -20,7 +20,7 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         categoryTable.dataSource = self
         categoryTable.delegate = self
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //
         return DataService.instance.getCategories().count

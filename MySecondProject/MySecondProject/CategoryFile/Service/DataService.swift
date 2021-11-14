@@ -9,7 +9,7 @@ import Foundation
 
 
 class DataService {
-   
+    
     static let instance = DataService()
     
     
@@ -34,7 +34,7 @@ class DataService {
         Product(title: "Gucci glasses", price: "200.00 Dollers", imageName: "GucciGlas.jpeg"),
         Product(title: "D&G glasses", price: "100.00 Dollers", imageName: "D&Gglas.jpeg"),
         Product(title: "LV glasses", price: "350.00 Dollers", imageName: "LVglas.png"),
-
+        
     ]
     // vr glasses
     private let varGlasses = [
@@ -42,7 +42,7 @@ class DataService {
         Product(title: "HTC VR", price: "2500.00 Dollers", imageName: "HTCvr.jpeg"),
         Product(title: "HTC mi VR", price: "150.00 Dollers", imageName: "HTCvr1.jpeg"),
         Product(title: "HTC ni VR", price: "350.00 Dollers", imageName: "HTCvr2.png"),
-
+        
     ]
     
     
@@ -51,7 +51,7 @@ class DataService {
         Product(title: "fb smart", price: "220.00 Dollers", imageName: "smartGlas2.jpeg"),
         Product(title: "Sn smart", price: "150.00 Dollers", imageName: "smartGlas3.jpeg"),
         Product(title: "hu smart", price: "120.00 Dollers", imageName: "smartGlas4.png"),
-
+        
     ]
     
     
@@ -60,7 +60,7 @@ class DataService {
         Product(title: "kids", price: "50.00 Dollers", imageName: "kidsGlas2.jpeg"),
         Product(title: "kids", price: "40.00 Dollers", imageName: "kidsGlas3.jpeg"),
         Product(title: "kids", price: "60.00 Dollers", imageName: "kidsGlas4.png"),
-
+        
     ]
     
     
@@ -76,7 +76,7 @@ class DataService {
         case "SunGlasses":
             return getSunglasses()
         case "Glasses":
-           return getGlasses()
+            return getGlasses()
         case "VR Glasses":
             return getvarGlasses()
         case "Smart Glasses":
@@ -84,7 +84,7 @@ class DataService {
         case "Kids Glasses":
             return getKidsGlasses()
         default:
-           return getGlasses()
+            return getGlasses()
         }
     }
     

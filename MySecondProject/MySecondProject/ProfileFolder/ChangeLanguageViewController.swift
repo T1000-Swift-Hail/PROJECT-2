@@ -10,7 +10,6 @@ import UIKit
 class ChangeLanguageViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     
     @IBOutlet weak var textBox: UITextField!
-    
     @IBOutlet weak var dropDown: UIPickerView!
     
     var list = ["1","2"]
@@ -18,7 +17,7 @@ class ChangeLanguageViewController: UIViewController,UIPickerViewDataSource,UIPi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         dropDown.delegate = self
@@ -28,7 +27,7 @@ class ChangeLanguageViewController: UIViewController,UIPickerViewDataSource,UIPi
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         1
     }
-
+    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return language.count
     }
@@ -37,19 +36,17 @@ class ChangeLanguageViewController: UIViewController,UIPickerViewDataSource,UIPi
         textBox.text = language[row]
     }
     
-    
-    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return language[row]
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

@@ -9,14 +9,14 @@ import Foundation
 import UIKit
 
 class CategoryCell: UITableViewCell {
-
+    
     // connect button
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryTitle: UILabel!
     @IBOutlet weak var view: UIView!
     
     /*
-    
+     
      */
     func updateViews(category: Category){
         //
@@ -28,5 +28,5 @@ class CategoryCell: UITableViewCell {
         view.isHidden = false
         categoryTitle.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     }
-
+    
 }

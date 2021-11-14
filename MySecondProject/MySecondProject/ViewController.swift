@@ -65,7 +65,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         // Store the image in the ImageStore for the item's key
         imgStore.setImage(image, forKey: myFavImage)
-    
+        
     }
     
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
