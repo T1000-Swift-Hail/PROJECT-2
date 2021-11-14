@@ -73,9 +73,7 @@ class SignInViewController: UIViewController {
         
     
     func usersLogin() {
-        
-        
-        
+                
         guard let UserSign = userSign.text else {return}
         guard let userPass = Int(userPassword.text ?? "0") else {return}
         if userAz.name == UserSign && userAz.userPassword == userPass {
@@ -86,6 +84,8 @@ class SignInViewController: UIViewController {
             displayAlert(withTitle: "User Name Or Password is incorrect", message: "", isLogin: false)
         
         }
+        
+       
         
         
     }

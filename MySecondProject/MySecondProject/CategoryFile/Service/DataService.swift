@@ -23,7 +23,7 @@ class DataService {
     
     //Sunglasses
     private let sunglasses = [
-        Product(title: "Dior sunglasses", price: "200 Dollers", imageName: "diorSunglasses.webp"),
+        Product(title: "Dior sunglasses", price: "200 Dollers", imageName: "diorSun.jpeg"),
         Product(title: "Police Sunglasses", price: "70.00 Dollers", imageName: "PoliceSunglasses.jpeg"),
         Product(title: "Fendi Sunglasses", price: "400.00 Dollers", imageName: "FendiSunglasses.jpeg"),
         Product(title: "Ray Ban Sunglasses", price: "66.00 Dollers", imageName: "RayBanSunG.jpeg"),
