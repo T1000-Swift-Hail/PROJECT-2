@@ -1,0 +1,117 @@
+
+/* Class = "UILabel"; text = "Women's Perfumes"; ObjectID = "2Hm-1r-mBU"; */
+"2Hm-1r-mBU.text" = "عطورات نسائية";
+
+/* Class = "UILabel"; text = "Men's Perfumes"; ObjectID = "3qg-nc-YcS"; */
+"3qg-nc-YcS.text" = "عطورات رجالية";
+
+/* Class = "UILabel"; text = "Home Perfumes"; ObjectID = "42E-QZ-Bld"; */
+"42E-QZ-Bld.text" = "عطورات المنزل";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7hB-BA-CVJ"; */
+"7hB-BA-CVJ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "ml"; ObjectID = "7vG-w9-hA8"; */
+"7vG-w9-hA8.text" = "مل";
+
+/* Class = "UIButton"; configuration.title = "Create"; ObjectID = "AlT-OQ-KB3"; */
+"AlT-OQ-KB3.configuration.title" = "انشاء";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "AlT-OQ-KB3"; */
+"AlT-OQ-KB3.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Cart"; ObjectID = "C8S-Hn-IQ7"; */
+"C8S-Hn-IQ7.title" = "السله";
+
+/* Class = "UILabel"; text = "ml"; ObjectID = "IoI-F2-g0G"; */
+"IoI-F2-g0G.text" = "مل";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "JBx-cJ-zCV"; */
+"JBx-cJ-zCV.text" = "السعر";
+
+/* Class = "UIButton"; configuration.title = "Add to Cart"; ObjectID = "KBD-jJ-T5z"; */
+"KBD-jJ-T5z.configuration.title" = "اضافة الى السله";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KBD-jJ-T5z"; */
+"KBD-jJ-T5z.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Repeat Password"; ObjectID = "NXM-Vy-5OC"; */
+"NXM-Vy-5OC.text" = "اعادة كلمة السر";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Rbc-q8-IXb"; */
+"Rbc-q8-IXb.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Tkc-As-lTx"; */
+"Tkc-As-lTx.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Name "; ObjectID = "UPu-mC-5oA"; */
+"UPu-mC-5oA.text" = "الاسم ";
+
+/* Class = "UILabel"; text = "name"; ObjectID = "XIP-rD-gVa"; */
+"XIP-rD-gVa.text" = "الاسم";
+
+/* Class = "UIButton"; configuration.title = "Add to Cart"; ObjectID = "ZoF-g0-3ul"; */
+"ZoF-g0-3ul.configuration.title" = "اضافة الى السله";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZoF-g0-3ul"; */
+"ZoF-g0-3ul.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Enter Your Email.."; ObjectID = "eoX-qH-ReB"; */
+"eoX-qH-ReB.placeholder" = "ادخل البريد الالكتروني ...";
+
+/* Class = "UILabel"; text = "Nmae"; ObjectID = "fjE-Q2-YIG"; */
+"fjE-Q2-YIG.text" = "الاسم";
+
+/* Class = "UILabel"; text = "price"; ObjectID = "gDB-BB-pas"; */
+"gDB-BB-pas.text" = "السعر";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "hC0-ki-Nne"; */
+"hC0-ki-Nne.text" = "كلمة السر";
+
+/* Class = "UITextField"; placeholder = "Enter The password.."; ObjectID = "j2E-Ky-PZj"; */
+"j2E-Ky-PZj.placeholder" = "ادخل كلمة السر ...";
+
+/* Class = "UILabel"; text = "Welcome to My Perfume"; ObjectID = "j9W-WP-dxt"; */
+"j9W-WP-dxt.text" = "اهلا بك في عطري";
+
+/* Class = "UILabel"; text = "Email:"; ObjectID = "nnk-SA-Tcm"; */
+"nnk-SA-Tcm.text" = "البريد الالكتروني :";
+
+/* Class = "UITabBarItem"; title = "Categories"; ObjectID = "nst-nM-kyV"; */
+"nst-nM-kyV.title" = "التصنيفات";
+
+/* Class = "UIButton"; configuration.title = "login"; ObjectID = "oMA-HG-DPL"; */
+"oMA-HG-DPL.configuration.title" = "تسجيل الدخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oMA-HG-DPL"; */
+"oMA-HG-DPL.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "My Account"; ObjectID = "oQb-Lv-JiT"; */
+"oQb-Lv-JiT.title" = "حسابي";
+
+/* Class = "UIButton"; configuration.title = "Don't have an acount ? Sign Up"; ObjectID = "oow-zH-g8b"; */
+"oow-zH-g8b.configuration.title" = "ليس لديك حساب؟ سجل الان";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oow-zH-g8b"; */
+"oow-zH-g8b.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Add to cart"; ObjectID = "p8c-96-cdD"; */
+"p8c-96-cdD.configuration.title" = "اضافه الى السله";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "p8c-96-cdD"; */
+"p8c-96-cdD.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "pUm-02-kNk"; */
+"pUm-02-kNk.placeholder" = "كلمة السر";
+
+/* Class = "UITextField"; placeholder = "Repeat The password.."; ObjectID = "t0c-mf-wmZ"; */
+"t0c-mf-wmZ.placeholder" = "اعادة كلمة السر ...";
+
+/* Class = "UILabel"; text = "price"; ObjectID = "vla-vq-FYN"; */
+"vla-vq-FYN.text" = "السعر";
+
+/* Class = "UITextField"; placeholder = "User Email.."; ObjectID = "wk7-92-dId"; */
+"wk7-92-dId.placeholder" = "البريد الالكتروني ...";
+
+/* Class = "UILabel"; text = "ml"; ObjectID = "xcI-v3-Cms"; */
+"xcI-v3-Cms.text" = "مل";

@@ -8,6 +8,7 @@
 import Foundation
 
 class ShoppingCart {
+    
     var products = [Perfume]()
 }
 

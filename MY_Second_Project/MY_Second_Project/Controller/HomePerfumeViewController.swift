@@ -24,11 +24,11 @@ class HomePerfumeViewController: UIViewController {
         
         var PerfumeType : [Perfume] = []
         
-        let perfume1 = Perfume(perfumeName: "Home Perfume", perfumeSize: 150, perfumePrice: 66.75, perfumeImg:UIImage(named:"homeperfume2")!)
-        let perfume2 = Perfume(perfumeName: "Home Perfume", perfumeSize: 200, perfumePrice: 187.25, perfumeImg:UIImage(named:"homeperfume3")!)
-        let perfume3 = Perfume(perfumeName: "Home Perfume", perfumeSize: 150, perfumePrice: 135.25, perfumeImg: UIImage(named:"homeperfume4")!)
-        let perfume4 = Perfume(perfumeName: "Home Perfume", perfumeSize: 100, perfumePrice: 400.00, perfumeImg:UIImage(named:"homeperfume5")!)
-        let perfume5 = Perfume(perfumeName: "Home Perfume", perfumeSize: 100, perfumePrice: 125, perfumeImg:UIImage(named:"homeperfume2")!)
+        let perfume1 = Perfume(perfumeName: "Home Perfume Rituals".localized, perfumeSize: 150, perfumePrice: 66.75, perfumeImg:UIImage(named:"homeperfume2")!)
+        let perfume2 = Perfume(perfumeName: "Home Perfume Chakra".localized, perfumeSize: 200, perfumePrice: 187.25, perfumeImg:UIImage(named:"homeperfume3")!)
+        let perfume3 = Perfume(perfumeName: "Home Perfume Clasic".localized, perfumeSize: 150, perfumePrice: 135.25, perfumeImg: UIImage(named:"homeperfume4")!)
+        let perfume4 = Perfume(perfumeName: "Home Perfume Golden Orchid".localized, perfumeSize: 100, perfumePrice: 400.00, perfumeImg:UIImage(named:"homeperfume5")!)
+        let perfume5 = Perfume(perfumeName: "Home Perfume Areon".localized, perfumeSize: 100, perfumePrice: 125, perfumeImg:UIImage(named:"homeperfume2")!)
         
         PerfumeType.append(perfume1)
         PerfumeType.append(perfume2)

@@ -1,0 +1,36 @@
+/* 
+  localizable.strings
+  MY_Second_Project
+
+  Created by Njoud Alrshidi on 09/04/1443 AH.
+  
+*/
+"The Shopping Cart is Empty!" = "السله فارغة ";
+"Cartier Declaration" = "كارتير ديكلاريشن";
+"Excellence Jaguar" = "اكسلانس انتنس جاغوار";
+"Tom Ford Noir" = " نوار من توم فورد";
+"Eau Sauvage Parfum by Dior" = "سوفاج من ديور";
+"CALVIN KLEIN" = "كالفن كلاين";
+"L'Interdit Eau de Givenchy" = "جيفنشي لا انترديت او دو ";
+"Black Opium Eau de" = "بلاك اوبيوم ";
+"Gucci Bloom Eau De" = "قوتشي بلوم او دو";
+"Versace Crystal Noir Eau de" = "كريستال نوار من فرزاتشي";
+"CHANEL COCO" = "كوكو شانيل";
+"Home Perfume Rituals" = "عطر منزل ريتالز";
+"Home Perfume Chakra" = "عطر منزل من شاكرا";
+"Home Perfume Clasic" = "عطر منزل كلاسيك";
+"Home Perfume Golden Orchid" = "عطر منزل الاوركيد الذهبي";
+"Home Perfume Areon" = "عطر منزل اريون";
+"Login Invalid" = "خطأ في تسجيل الدخول";
+"All fields are required!" = "كل الخانات مطلوبة";
+"ok" = "تم";
+"Login is successfully" = "تم تسجيل الدخول بنجاح";
+"Welcome To My Perfume" = "اهلا بك في عطري";
+"ok" = "تم";
+"Invalid Sign-Up" = "خطأ في تسجيل دخول جديد";
+"Passwords do not match!" = "كلمات السر غير متطابقة";
+"ok" = "تم";
+"Sign-Up is successfully" = "تم تسجيل الدخول بنجاح";
+"Welcome To My Perfume!" = "اهلا بك في عطري";
+"ok" = "تم";
+

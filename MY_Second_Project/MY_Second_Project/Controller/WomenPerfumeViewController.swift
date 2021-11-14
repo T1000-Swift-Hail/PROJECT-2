@@ -26,11 +26,11 @@ func creatArray() -> [Perfume] {
     
     var PerfumeType : [Perfume] = []
     
-    let perfume1 = Perfume(perfumeName: "L'Interdit Eau de Givenchy", perfumeSize: 150, perfumePrice: 373.75, perfumeImg:UIImage(named:"wemen1")!)
-    let perfume2 = Perfume(perfumeName: "Black Opium Eau de", perfumeSize: 100, perfumePrice: 187.25, perfumeImg: UIImage(named:"wemen2")!)
-    let perfume3 = Perfume(perfumeName: "Gucci Bloom Eau De", perfumeSize: 150, perfumePrice: 500.25, perfumeImg:UIImage(named:"wemen3")!)
-    let perfume4 = Perfume(perfumeName: "Versace Crystal Noir Eau de", perfumeSize: 100, perfumePrice: 517.50, perfumeImg:UIImage(named:"wemen4")!)
-    let perfume5 = Perfume(perfumeName: "CHANEL COCO", perfumeSize: 100 , perfumePrice: 125, perfumeImg:UIImage(named:"wemen5")!)
+    let perfume1 = Perfume(perfumeName: "L'Interdit Eau de Givenchy".localized, perfumeSize: 150, perfumePrice: 373.75, perfumeImg:UIImage(named:"wemen1")!)
+    let perfume2 = Perfume(perfumeName: "Black Opium Eau de".localized, perfumeSize: 100, perfumePrice: 187.25, perfumeImg: UIImage(named:"wemen2")!)
+    let perfume3 = Perfume(perfumeName: "Gucci Bloom Eau De".localized, perfumeSize: 150, perfumePrice: 500.25, perfumeImg:UIImage(named:"wemen3")!)
+    let perfume4 = Perfume(perfumeName: "Versace Crystal Noir Eau de".localized, perfumeSize: 100, perfumePrice: 517.50, perfumeImg:UIImage(named:"wemen4")!)
+    let perfume5 = Perfume(perfumeName: "CHANEL COCO".localized, perfumeSize: 100 , perfumePrice: 125, perfumeImg:UIImage(named:"wemen5")!)
     
     PerfumeType.append(perfume1)
     PerfumeType.append(perfume2)

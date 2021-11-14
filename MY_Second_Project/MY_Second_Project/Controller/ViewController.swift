@@ -8,6 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+    }
 
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -20,10 +26,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var signUpButt: UIButton!
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+   
 
     @IBAction func loginButt(_ sender: UIButton) {
         
@@ -31,20 +34,24 @@ class ViewController: UIViewController {
         let userPassword = passwordTextField.text ?? ""
         
         if  userEmail.isEmpty || userPassword.isEmpty {
-            let myAlert = UIAlertController(title: "Login Invalid", message:"All fields are required!", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+            let myAlert = UIAlertController(title:NSLocalizedString("Login Invalid", comment: ""), message:NSLocalizedString("All fields are required!", comment: ""), preferredStyle: .alert)
+            let okAction = UIAlertAction(title: NSLocalizedString("ok", comment: ""), style: .default, handler: nil)
                 
             myAlert.addAction(okAction)
             present(myAlert , animated : true , completion : nil)
     }
      else{
-            let myAlert = UIAlertController(title: "Login is successfully", message:"Welcome To My Perfume", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+         print("Logged IN ...")
+         let myAlert = UIAlertController(title: "Login is successfully".localized, message:"Welcome To My Perfume".localized, preferredStyle: .alert)
+         let okAction = UIAlertAction(title: "ok".localized, style: .default, handler: { alertt in
+             self.performSegue(withIdentifier: "loginIdentifier" , sender: nil)
+             
+         })
                 
             myAlert.addAction(okAction)
-            present(myAlert , animated : true , completion : nil) }
-        
-        performSegue(withIdentifier: "loginIdentifier" , sender: nil)
+            present(myAlert , animated : true , completion : nil)
+            
+     }
         }
     
 
@@ -66,8 +73,8 @@ class ViewController: UIViewController {
         let repeatUserPassword = repeatPsswordSign.text ?? ""
         
         if  userEmail.isEmpty || userPassword.isEmpty || repeatUserPassword.isEmpty {
-            let myAlert = UIAlertController(title: "Invalid Sign-Up", message:"All fields are required!", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+            let myAlert = UIAlertController(title: "Invalid Sign-Up".localized, message:"All fields are required!".localized, preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "ok".localized, style: .default, handler: nil)
                 
             myAlert.addAction(okAction)
             present(myAlert , animated : true , completion : nil)
@@ -75,22 +82,32 @@ class ViewController: UIViewController {
         }
         
         else if (userPassword != repeatUserPassword){
-            let alert = UIAlertController(title: "Invalid Sign-Up", message:"Passwords do not match!", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+            let alert = UIAlertController(title: "Invalid Sign-Up".localized, message:"Passwords do not match!".localized, preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "ok".localized, style: .default, handler: nil)
             alert.addAction(okAction)
             self.present(alert , animated : true , completion : nil)
         }
         
         else {
-            let alert = UIAlertController(title: "Sign-Up is successfully", message:"Welcome To My Perfume!", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+            let alert = UIAlertController(title: "Sign-Up is successfully".localized, message:"Welcome To My Perfume!".localized, preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "ok".localized, style: .default, handler: { al in
+                self.performSegue(withIdentifier: "signUpIdentifier", sender: nil)
+                
+            })
             alert.addAction(okAction)
             self.present(alert , animated : true , completion : nil)
                        
         }
-        performSegue(withIdentifier: "signUpIdentifier", sender: nil)
+        
         
        }
 }
 
-
+extension String {
+    
+    var localized : String{
+        
+  return NSLocalizedString(self, comment: "")
+    }
+    
+}

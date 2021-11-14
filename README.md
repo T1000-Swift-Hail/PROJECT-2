@@ -1,15 +1,16 @@
 # PROJECT-2
 
 ### Project Name : 
-My Perfume
+My Perfume Store
 
 ### Project Description :
-An online store that offers the best perfumes of all kinds from international brands. The store has two main users: the admin and the customer.
+An online store that offers the perfumes of all kinds from international brands. The store has two main users: the admin and the customer.
 
 
 ###project Features List :
-- It gives the user many different Perfumes options
-- Supports Arabic and English languages
+- It gives the user many different Perfumes options.
+- Supports Arabic and English languages.
+- Dark mode.
 
 
 ### Define the scenes :

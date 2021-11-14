@@ -20,6 +20,7 @@
 		B7169E8027394528000E25C4 /* MenPerfumesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E7F27394528000E25C4 /* MenPerfumesViewController.swift */; };
 		B7169E8227398B12000E25C4 /* WomenPerfumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E8127398B12000E25C4 /* WomenPerfumeViewController.swift */; };
 		B7169E84273A1633000E25C4 /* HomePerfumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E83273A1632000E25C4 /* HomePerfumeViewController.swift */; };
+		B71FEFD02740F5A80084873F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B71FEFD22740F5A80084873F /* Localizable.strings */; };
 		B7FE40AA273AAC7F008FC1D8 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40A9273AAC7F008FC1D8 /* CartViewController.swift */; };
 		B7FE40B2273BE6A4008FC1D8 /* PerfumeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40B1273BE6A4008FC1D8 /* PerfumeDescription.swift */; };
 		B7FE40B6273CF46B008FC1D8 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40B5273CF46B008FC1D8 /* ShoppingCart.swift */; };
@@ -41,6 +42,10 @@
 		B7169E7F27394528000E25C4 /* MenPerfumesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenPerfumesViewController.swift; sourceTree = "<group>"; };
 		B7169E8127398B12000E25C4 /* WomenPerfumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenPerfumeViewController.swift; sourceTree = "<group>"; };
 		B7169E83273A1632000E25C4 /* HomePerfumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePerfumeViewController.swift; sourceTree = "<group>"; };
+		B71FEFCC2740EDD60084873F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		B71FEFCD2740EDD60084873F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B71FEFD12740F5A80084873F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B71FEFD32740F5AA0084873F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B7FE40A9273AAC7F008FC1D8 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		B7FE40B1273BE6A4008FC1D8 /* PerfumeDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfumeDescription.swift; sourceTree = "<group>"; };
 		B7FE40B5273CF46B008FC1D8 /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
@@ -76,57 +81,50 @@
 		B7169E5A2737EEE9000E25C4 /* MY_Second_Project */ = {
 			isa = PBXGroup;
 			children = (
-				B7FE40A8273AAC50008FC1D8 /* cart */,
-				B7FE40A5273AA903008FC1D8 /* Class */,
-				B7169E782739206F000E25C4 /* Categories */,
-				B7169E6F2738F779000E25C4 /* controller */,
+				B7FE40A5273AA903008FC1D8 /* Models */,
+				B7169E782739206F000E25C4 /* Controller */,
 				B7169E5B2737EEE9000E25C4 /* AppDelegate.swift */,
 				B7169E5D2737EEE9000E25C4 /* SceneDelegate.swift */,
-				B7169E5F2737EEE9000E25C4 /* ViewController.swift */,
 				B7169E612737EEE9000E25C4 /* Main.storyboard */,
 				B7169E642737EEEA000E25C4 /* Assets.xcassets */,
 				B7169E662737EEEA000E25C4 /* LaunchScreen.storyboard */,
 				B7169E692737EEEA000E25C4 /* Info.plist */,
+				B71FEFD22740F5A80084873F /* Localizable.strings */,
 			);
 			path = MY_Second_Project;
 			sourceTree = "<group>";
 		};
-		B7169E6F2738F779000E25C4 /* controller */ = {
+		B7169E782739206F000E25C4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		B7169E782739206F000E25C4 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
+				B7169E5F2737EEE9000E25C4 /* ViewController.swift */,
 				B71271A1273A54D800CBD52A /* CategoriesViewController.swift */,
-				B7169E792739211B000E25C4 /* MenPerfumes.swift */,
+				B7FE40A9273AAC7F008FC1D8 /* CartViewController.swift */,
 				B7169E7F27394528000E25C4 /* MenPerfumesViewController.swift */,
-				B7169E7B2739213A000E25C4 /* WomenPerfumes.swift */,
 				B7169E8127398B12000E25C4 /* WomenPerfumeViewController.swift */,
-				B7169E7D27392152000E25C4 /* HomePerfumes.swift */,
 				B7169E83273A1632000E25C4 /* HomePerfumeViewController.swift */,
+				B71FEFD4274141990084873F /* Cells */,
 			);
-			path = Categories;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		B7FE40A5273AA903008FC1D8 /* Class */ = {
+		B71FEFD4274141990084873F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B7169E792739211B000E25C4 /* MenPerfumes.swift */,
+				B7169E7B2739213A000E25C4 /* WomenPerfumes.swift */,
+				B7169E7D27392152000E25C4 /* HomePerfumes.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B7FE40A5273AA903008FC1D8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				B7FE40B1273BE6A4008FC1D8 /* PerfumeDescription.swift */,
 				B7FE40B5273CF46B008FC1D8 /* ShoppingCart.swift */,
 			);
-			path = Class;
-			sourceTree = "<group>";
-		};
-		B7FE40A8273AAC50008FC1D8 /* cart */ = {
-			isa = PBXGroup;
-			children = (
-				B7FE40A9273AAC7F008FC1D8 /* CartViewController.swift */,
-			);
-			path = cart;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +169,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = B7169E4F2737EEE9000E25C4;
 			productRefGroup = B7169E592737EEE9000E25C4 /* Products */;
@@ -188,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7169E682737EEEA000E25C4 /* LaunchScreen.storyboard in Resources */,
+				B71FEFD02740F5A80084873F /* Localizable.strings in Resources */,
 				B7169E652737EEEA000E25C4 /* Assets.xcassets in Resources */,
 				B7169E632737EEE9000E25C4 /* Main.storyboard in Resources */,
 			);
@@ -223,6 +223,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B7169E622737EEE9000E25C4 /* Base */,
+				B71FEFCC2740EDD60084873F /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -231,8 +232,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				B7169E672737EEEA000E25C4 /* Base */,
+				B71FEFCD2740EDD60084873F /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B71FEFD22740F5A80084873F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B71FEFD12740F5A80084873F /* ar */,
+				B71FEFD32740F5AA0084873F /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -242,6 +253,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -303,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

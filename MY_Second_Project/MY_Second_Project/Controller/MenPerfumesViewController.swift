@@ -21,11 +21,11 @@ class MenPerfumesViewController: UIViewController {
         
         var PerfumeType : [Perfume] = []
         
-        let perfume1 = Perfume(perfumeName: "Cartier Declaration", perfumeSize: 150, perfumePrice: 373.75, perfumeImg:UIImage(named:"menPerfum1")!)
-        let perfume2 = Perfume(perfumeName: "Excellence Jaguar", perfumeSize: 100 , perfumePrice: 187.25 , perfumeImg: UIImage(named:"menPerfume2")!)
-        let perfume3 = Perfume(perfumeName: "Tom Ford Noir", perfumeSize: 150, perfumePrice: 500.25 , perfumeImg: UIImage(named:"menPerfume3")!)
-        let perfume4 = Perfume(perfumeName: "Eau Sauvage Parfum by Dior", perfumeSize: 100, perfumePrice: 500.55, perfumeImg: UIImage(named:"menPerfume4")!)
-        let perfume5 = Perfume(perfumeName: "CALVIN KLEIN", perfumeSize: 100, perfumePrice: 373.75, perfumeImg: UIImage(named:"menPerfume5")!)
+        let perfume1 = Perfume(perfumeName:"Cartier Declaration".localized , perfumeSize: 150, perfumePrice: 373.75, perfumeImg:UIImage(named:"menPerfum1")!)
+        let perfume2 = Perfume(perfumeName: "Excellence Jaguar".localized, perfumeSize: 100 , perfumePrice: 187.25 , perfumeImg: UIImage(named:"menPerfume2")!)
+        let perfume3 = Perfume(perfumeName: "Tom Ford Noir".localized, perfumeSize: 150, perfumePrice: 500.25 , perfumeImg: UIImage(named:"menPerfume3")!)
+        let perfume4 = Perfume(perfumeName: "Eau Sauvage Parfum by Dior".localized, perfumeSize: 100, perfumePrice: 500.55, perfumeImg: UIImage(named:"menPerfume4")!)
+        let perfume5 = Perfume(perfumeName: "CALVIN KLEIN".localized, perfumeSize: 100, perfumePrice: 373.75, perfumeImg: UIImage(named:"menPerfume5")!)
         
         PerfumeType.append(perfume1)
         PerfumeType.append(perfume2)
