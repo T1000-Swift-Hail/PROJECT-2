@@ -18,7 +18,10 @@
 "5FO-85-TgI.normalTitle" = "Button";
 
 /* Class = "UINavigationItem"; title = "Library Book"; ObjectID = "Mwo-tE-JPb"; */
-"Mwo-tE-JPb.title" = "كتب المكتبة";
+"Mwo-tE-JPb.title" = "المكتبة";
+
+"Le5-4E-rFU.title" = "المفضلة";
+"vkM-0t-Nix.title" = "المفضلة";
 
 /* Class = "UITextField"; placeholder = "password"; ObjectID = "R5K-tX-7ug"; */
 "R5K-tX-7ug.placeholder" = "كلمة المرور";

@@ -11,8 +11,13 @@
 
 
 "Philosophy" = " الفلسفة";
-"kdisStories" = "قصص الأطفال";
+"KdisStories" = "قصص الأطفال";
 "Law" = "القانون";
 "MedicineAndHealth" = "الطب والصحة";
 "Astronomy" = "الفلك";
 "Psychology" = "علم النفس";
+"Sociology" = "علم الاجتماع";
+"customsAndTraditions" = "العادات والتقاليد";
+"Archeology" = "علم الآثار";
+  
+

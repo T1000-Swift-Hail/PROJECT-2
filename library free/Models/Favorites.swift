@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class Favorites {
+    var list = [Book]()
+}
+
+var myFavorites = Favorites()

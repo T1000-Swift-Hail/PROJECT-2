@@ -9,20 +9,25 @@ import UIKit
 
 class CategoriesUITableViewController: UITableViewController {
     
+    // this Array displays book crumbs with pictures, and it has been translated into Arabic
+    
     let categories = [
         Categories2(name: "Philosophy".localized, image1: UIImage(named: "philosophy-icon")!),
         Categories2(name: "KdisStories".localized, image1: UIImage(named: "kids.story1")!),
         Categories2(name: "Law".localized, image1: UIImage(named: "law.icon")!),
         Categories2(name: "MedicineAndHealth".localized, image1: UIImage(named: "books-health")!),
         Categories2(name: "Astronomy".localized, image1: UIImage(named: "astronmy2")!),
-        Categories2(name: "Psychology".localized, image1: UIImage(named: "psychology1")!)
-       ]
-    
-    
-    // Categories2(name: "", image1: UIImage(named: "")!),
+        Categories2(name: "Psychology".localized, image1: UIImage(named: "psychology1")!),
         
-    
+        Categories2(name: "Sociology".localized, image1: UIImage(named: "soclology")!),
         
+        Categories2(name: "customsAndTraditions".localized, image1: UIImage(named: "scustoms1")!),
+        
+        Categories2(name: "Archeology".localized, image1: UIImage(named: "archaeology-icon")!)
+        
+    ]
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +51,8 @@ class CategoriesUITableViewController: UITableViewController {
         return categories.count
     }
     
-    
+    //this func for to link the categories of books and their images to a cell and then display them in rows
+   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell") as! ListTableViewCell
@@ -113,6 +119,6 @@ extension String {
     var localized : String {
         
         return NSLocalizedString(self, comment: "")
-    
-}
+        
+    }
 }

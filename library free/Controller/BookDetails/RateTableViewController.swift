@@ -9,6 +9,7 @@ import UIKit
 
 class RateTableViewController: UITableViewController {
 
+    // This array displays the top-rated books with their pictures, descriptions, and ratings
     
  let Rating = [
     Book(name: "I Am Kind", description: "I Am Kind: The Positive Power Series I Am Kind follows a little girl who sees kindness all around her The little girl realizes that she, too, has the power to be kind, and that even small actions can have a big impact. In this new installment of the Positive Power early reader series, children will learn the affirmation I am kind through an encouraging story of community and everyday kindness", image : UIImage(named:"Image")!, rating: 5),

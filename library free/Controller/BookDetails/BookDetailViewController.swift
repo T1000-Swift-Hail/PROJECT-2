@@ -14,6 +14,7 @@ class BookDetailViewController: UIViewController {
     @IBOutlet weak var descrbtionBook : UILabel!
     @IBOutlet weak var ratingImag: UIImageView!
    
+
     @IBOutlet weak var bookFav: UIButton!
     
     var book : Book!
@@ -28,7 +29,7 @@ class BookDetailViewController: UIViewController {
         switch book.rating {
             
         case 2 :
-            ratingImag.image =  UIImage(named: "rating2")
+            ratingImag.image =  UIImage(named: "rating4")
         case 3 :
             ratingImag.image = UIImage(named: "rating3")
         case 4 :
@@ -36,14 +37,26 @@ class BookDetailViewController: UIViewController {
         case 5 :
             ratingImag.image = UIImage(named: "rating5")
         default:
-            ratingImag.image = UIImage(named: "rating2")
+            ratingImag.image = UIImage(named: "rating5")
         }
         
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func AddToFavorites(_ sender: UIBarButtonItem) {
+        
+        
+        sender.tintColor = UIColor.red
+        myFavorites.list.append(book)
+        print(myFavorites.list  )
+        
+    }
     
+
     
+@IBAction func addToFavoritesNow(_ sender: UIButton) {
+        print("kjfkljdlsk")
+    }
     
     /*
     // MARK: - Navigation

@@ -17,8 +17,3 @@ struct Categories2{
 
 
 
-//case Sociology
-//case archeology
-//case customsAndTraditions
-
-//

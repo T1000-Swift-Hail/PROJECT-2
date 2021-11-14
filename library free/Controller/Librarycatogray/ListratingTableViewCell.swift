@@ -10,6 +10,7 @@ import UIKit
 class ListratingTableViewCell: UITableViewCell {
 
     
+    
     @IBOutlet weak var Lablecell: UILabel!
     
     @IBOutlet weak var Imagcell: UIImageView!

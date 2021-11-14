@@ -13,7 +13,8 @@
 		294163FD2737C16D000D3A80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294163FB2737C16D000D3A80 /* Main.storyboard */; };
 		294163FF2737C16F000D3A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 294163FE2737C16F000D3A80 /* Assets.xcassets */; };
 		294164022737C16F000D3A80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294164002737C16F000D3A80 /* LaunchScreen.storyboard */; };
-		29FF988B2740EAF300CCBDA9 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF988A2740EAF300CCBDA9 /* FavoritesViewController.swift */; };
+		29FF988D2740F6C500CCBDA9 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF988C2740F6C500CCBDA9 /* Favorites.swift */; };
+		29FF988F2740F81900CCBDA9 /* FavoritesBookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF988E2740F81900CCBDA9 /* FavoritesBookTableViewController.swift */; };
 		D1B3867E273D66050071CE4A /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B3866E273D66050071CE4A /* LoginScreenViewController.swift */; };
 		D1B3867F273D66050071CE4A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B3866F273D66050071CE4A /* TableViewController.swift */; };
 		D1B38680273D66050071CE4A /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B38670273D66050071CE4A /* ListTableViewCell.swift */; };
@@ -39,7 +40,8 @@
 		294163FE2737C16F000D3A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		294164012737C16F000D3A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		294164032737C16F000D3A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29FF988A2740EAF300CCBDA9 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		29FF988C2740F6C500CCBDA9 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		29FF988E2740F81900CCBDA9 /* FavoritesBookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesBookTableViewController.swift; sourceTree = "<group>"; };
 		D1B3866E273D66050071CE4A /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		D1B3866F273D66050071CE4A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D1B38670273D66050071CE4A /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				D1B3866E273D66050071CE4A /* LoginScreenViewController.swift */,
 				D1B3866F273D66050071CE4A /* TableViewController.swift */,
 				D1B38670273D66050071CE4A /* ListTableViewCell.swift */,
+				29FF988E2740F81900CCBDA9 /* FavoritesBookTableViewController.swift */,
 				D1B38671273D66050071CE4A /* Librarycatogray */,
 				D1B38675273D66050071CE4A /* BookDetails */,
 			);
@@ -133,7 +136,6 @@
 			children = (
 				D1B38676273D66050071CE4A /* RateTableViewController.swift */,
 				D1B38677273D66050071CE4A /* BookDetailViewController.swift */,
-				29FF988A2740EAF300CCBDA9 /* FavoritesViewController.swift */,
 			);
 			path = BookDetails;
 			sourceTree = "<group>";
@@ -143,6 +145,7 @@
 			children = (
 				D1B3867C273D66050071CE4A /* User.swift */,
 				D1B3867D273D66050071CE4A /* Book.swift */,
+				29FF988C2740F6C500CCBDA9 /* Favorites.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,13 +231,14 @@
 				D1B3867E273D66050071CE4A /* LoginScreenViewController.swift in Sources */,
 				D1B3867F273D66050071CE4A /* TableViewController.swift in Sources */,
 				D1B38685273D66050071CE4A /* BookDetailViewController.swift in Sources */,
-				29FF988B2740EAF300CCBDA9 /* FavoritesViewController.swift in Sources */,
+				29FF988D2740F6C500CCBDA9 /* Favorites.swift in Sources */,
 				D1B38682273D66050071CE4A /* ListratingTableViewCell.swift in Sources */,
 				D1B38689273D66050071CE4A /* User.swift in Sources */,
 				294163F82737C16D000D3A80 /* SceneDelegate.swift in Sources */,
 				D1B38683273D66050071CE4A /* CategoriesUITableViewController.swift in Sources */,
 				D1B38680273D66050071CE4A /* ListTableViewCell.swift in Sources */,
 				D1B38681273D66050071CE4A /* Categories2.swift in Sources */,
+				29FF988F2740F81900CCBDA9 /* FavoritesBookTableViewController.swift in Sources */,
 				D1B38684273D66050071CE4A /* RateTableViewController.swift in Sources */,
 				D1B38686273D66050071CE4A /* CatogriesTableViewCell.swift in Sources */,
 			);
