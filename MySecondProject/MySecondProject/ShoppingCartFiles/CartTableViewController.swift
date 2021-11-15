@@ -38,6 +38,7 @@ class CartTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         tableView.reloadData()
+        
     }
     
     // MARK: - Table view data source
@@ -45,13 +46,15 @@ class CartTableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
+        
+        
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return shoppingCart.products.count
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "shoppingCartCell", for: indexPath)
@@ -60,11 +63,8 @@ class CartTableViewController: UITableViewController {
         cell.imageView?.image = UIImage(named:  shoppingCart.products[indexPath.row].imageName )
         
         return cell
+        
     }
-    ///
-    ///
-    ///
-    ///
     
     override func tableView(_ tableView: UITableView,commit editingStyle: UITableViewCell.EditingStyle,forRowAt indexPath: IndexPath) {
         

@@ -615,26 +615,14 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="go5-TM-MIt">
-                                <rect key="frame" x="90" y="720" width="235" height="31"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Sign out">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9py-2s-pU2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9py-2s-pU2" firstAttribute="trailing" secondItem="go5-TM-MIt" secondAttribute="trailing" constant="89" id="8uc-ly-SLA"/>
                             <constraint firstItem="9py-2s-pU2" firstAttribute="bottom" secondItem="gsk-ih-y1g" secondAttribute="bottom" constant="429.5" id="EUA-Io-ECH"/>
                             <constraint firstItem="9py-2s-pU2" firstAttribute="trailing" secondItem="gsk-ih-y1g" secondAttribute="trailing" constant="154" id="FMg-ii-Sh5"/>
-                            <constraint firstItem="go5-TM-MIt" firstAttribute="leading" secondItem="9py-2s-pU2" secondAttribute="leading" constant="90" id="FfO-Hk-v04"/>
                             <constraint firstItem="gsk-ih-y1g" firstAttribute="top" secondItem="9py-2s-pU2" secondAttribute="top" constant="12" id="Kmm-9M-GZd"/>
-                            <constraint firstItem="9py-2s-pU2" firstAttribute="bottom" secondItem="go5-TM-MIt" secondAttribute="bottom" constant="62" id="Kt1-2T-R2v"/>
                             <constraint firstItem="gsk-ih-y1g" firstAttribute="leading" secondItem="9py-2s-pU2" secondAttribute="leading" constant="20" id="c0M-m4-nF4"/>
-                            <constraint firstItem="go5-TM-MIt" firstAttribute="top" secondItem="gsk-ih-y1g" secondAttribute="bottom" constant="336.5" id="qDZ-Ex-YIr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BOm-aZ-iST"/>
@@ -1084,9 +1072,6 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemFillColor">
             <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
