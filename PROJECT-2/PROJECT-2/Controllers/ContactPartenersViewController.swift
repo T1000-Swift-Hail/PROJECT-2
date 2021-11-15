@@ -10,7 +10,8 @@ import UIKit
 class ContactPartenersViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
 
-
+// here we used the segmented controller (swich) to make the users choose what kind of company they want to contact and put picker to select then use segue to move to the next screen where they can write the message.
+    
     @IBOutlet weak var lblPartnerEmail: UILabel!
     
     @IBOutlet weak var segmentedController: UISegmentedControl!
@@ -82,13 +83,16 @@ class ContactPartenersViewController: UIViewController, UIPickerViewDelegate, UI
         
     }
     
-    //func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-    //}
     
-    //func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-    //}
+        if segue.identifier == "EmailScreen"{
+            let emailScreen  = segue.destination as! MessageVC
+            emailScreen.email = lblPartnerEmail.text
+        }
+    }
+    
     
 
 }

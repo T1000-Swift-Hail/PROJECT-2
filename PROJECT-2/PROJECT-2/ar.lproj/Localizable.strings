@@ -5,10 +5,20 @@
 "welcomeBack" = "أهلا بعودتك";
 "email" = "الايميل";
 "password" = "كلمة المرور";
-"login" = "تسجيل دخول";
+"login" = "دخول";
 "createAccount" = "حساب جديد";
 
-"plastic" = "بلاستيك";
-"nylon" = "نايلون";
-"paper" = "ورق";
-"cans" = "علب";
+"Plastic" = "بلاستيك";
+"Nylon" = "نايلون";
+"Paper" = "ورق";
+"Cans" = "علب";
+
+"Hi" = "مرحبا";
+"Did You Write Your Message" = "هل كتبت رسالتك";
+"Yes I Did" = "نعم كتبت";
+"Not Yet" = "ليس بعد";
+"Recycling aluminium uses only around 5% of the energy and emissions needed to make it from the raw material bauxite. The metal can be recycled without loss of properties, so getting the aluminium recycling habit is one of the best things we can do for the environment. Steel can also be recycled time and time again without loss of quality; by simply recycling our steel cans we can conserve non-renewable fossil fuels, reduce the consumption of energy and the emission of gasses like carbon dioxide into the atmosphere." = "تستخدم إعادة تدوير الألمنيوم حوالي 5٪ فقط من الطاقة والانبعاثات اللازمة لإنتاجه من مادة خام البوكسيت. يمكن إعادة تدوير المعدن دون فقدان الخصائص ، لذا فإن الحصول على عادة إعادة تدوير الألومنيوم هو أحد أفضل الأشياء التي يمكننا القيام بها من أجل البيئة. يمكن أيضًا إعادة تدوير الفولاذ مرارًا وتكرارًا دون فقدان الجودة ؛ وببساطة عن طريق إعادة تدوير علب الصلب ، يمكننا الحفاظ على الوقود الأحفوري غير المتجدد ، وتقليل استهلاك الطاقة وانبعاثات الغازات مثل ثاني أكسيد الكربون في الغلاف الجوي. ";
+
+"Plastic recycling refers to the process of recovering waste or scrap plastic and reprocessing the materials into functional and useful products. This activity is known as the plastic recycling process. The goal of recycling plastic is to reduce high rates of plastic pollution while putting less pressure on virgin materials to produce brand new plastic products. This approach helps to conserve resources and diverts plastics from landfills or unintended destinations such as oceans." = "يشير إعادة تدوير البلاستيك إلى عملية استعادة النفايات أو خردة البلاستيك وإعادة معالجة المواد إلى منتجات وظيفية ومفيدة. يُعرف هذا النشاط باسم عملية إعادة تدوير البلاستيك. والهدف من إعادة تدوير البلاستيك هو تقليل المعدلات العالية للتلوث البلاستيكي مع وضع ضغط أقل على المواد البكر لإنتاج منتجات بلاستيكية جديدة تمامًا. يساعد هذا النهج في الحفاظ على الموارد وتحويل البلاستيك عن مدافن النفايات أو الوجهات غير المقصودة مثل المحيطات .";
+"Nylon is a type of synthetic fiber fabric like polyester, made from petroleum products. Nylon was the first fabric made entirely in a laboratory and its invention represents the dawn of the age of synthetics.Nylon is a type of synthetic fiber fabric like polyester, made from petroleum products. Nylon was the first fabric made entirely in a laboratory and its invention represents the dawn of the age of synthetics." = "النايلون هو نوع من الألياف الاصطناعية مثل البوليستر ، مصنوع من المنتجات البترولية ، وكان النايلون هو أول نسيج مصنوع بالكامل في المختبر ، ويمثل اختراعه فجر عصر المواد التركيبية. النايلون هو نوع من أقمشة الألياف الاصطناعية مثل البوليستر ، مصنوع من المنتجات البترولية. كان النايلون هو أول نسيج مصنوع بالكامل في المختبر ويمثل اختراعه فجر عصر المواد التركيبية .";
+"process by which waste paper is turned into new paper products. It has a number of important benefits: It saves waste paper from occupying homes of people and producing methane as it breaks down. Because paper fibre contains carbon (originally absorbed by the tree from which it was produced), recycling keeps the carbon locked up for longer and out of the atmosphere.he paper is then washed to remove any film, glue, ink and other contaminants using soapy water. " = "العملية التي يتم من خلالها تحويل نفايات الورق إلى منتجات ورقية جديدة. ولها عدد من الفوائد المهمة: فهي توفر نفايات الورق من احتلال منازل الناس وتنتج غاز الميثان أثناء تحللها. لأن ألياف الورق تحتوي على الكربون (الذي تمتصه الشجرة في الأصل من الذي تم إنتاجه) ، فإن إعادة التدوير تحافظ على الكربون محبوسًا لفترة أطول وخارج الغلاف الجوي. ثم يتم غسل الورق لإزالة أي غشاء وغراء وحبر وملوثات أخرى باستخدام الماء والصابون. ";

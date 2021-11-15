@@ -77,18 +77,9 @@
 		AD26EE0E2737C79000F8F200 /* PROJECT-2 */ = {
 			isa = PBXGroup;
 			children = (
-				ADF2ED432740EFD600E5F4C2 /* New Group */,
 				AD26EE0F2737C79000F8F200 /* AppDelegate.swift */,
 				AD26EE112737C79000F8F200 /* SceneDelegate.swift */,
-				AD26EE132737C79000F8F200 /* ViewController.swift */,
-				AD7466482739083E00B5BE66 /* loginViewController.swift */,
-				ADF2ED05273B356000E5F4C2 /* sortingGuideViewController.swift */,
-				ADF2ED0B273BF48000E5F4C2 /* SecondVC.swift */,
-				ADF2ED09273BF0F500E5F4C2 /* SortingGuideCell.swift */,
-				ADF2ED332740211A00E5F4C2 /* RecycleIdeasViewController.swift */,
-				ADF2ED352740217800E5F4C2 /* IdeasCollectionViewCell.swift */,
-				AD7466462739081C00B5BE66 /* ContactPartenersViewController.swift */,
-				ADF2ED412740EC8E00E5F4C2 /* MessageVC.swift */,
+				ADF2ED432740EFD600E5F4C2 /* Controllers */,
 				AD26EE152737C79000F8F200 /* Main.storyboard */,
 				AD26EE182737C79600F8F200 /* Assets.xcassets */,
 				AD26EE1A2737C79600F8F200 /* LaunchScreen.storyboard */,
@@ -98,11 +89,20 @@
 			path = "PROJECT-2";
 			sourceTree = "<group>";
 		};
-		ADF2ED432740EFD600E5F4C2 /* New Group */ = {
+		ADF2ED432740EFD600E5F4C2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD26EE132737C79000F8F200 /* ViewController.swift */,
+				AD7466482739083E00B5BE66 /* loginViewController.swift */,
+				ADF2ED05273B356000E5F4C2 /* sortingGuideViewController.swift */,
+				ADF2ED0B273BF48000E5F4C2 /* SecondVC.swift */,
+				ADF2ED09273BF0F500E5F4C2 /* SortingGuideCell.swift */,
+				ADF2ED332740211A00E5F4C2 /* RecycleIdeasViewController.swift */,
+				ADF2ED352740217800E5F4C2 /* IdeasCollectionViewCell.swift */,
+				AD7466462739081C00B5BE66 /* ContactPartenersViewController.swift */,
+				ADF2ED412740EC8E00E5F4C2 /* MessageVC.swift */,
 			);
-			path = "New Group";
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

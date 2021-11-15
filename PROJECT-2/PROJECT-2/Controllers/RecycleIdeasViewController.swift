@@ -9,6 +9,7 @@ import UIKit
 
 class RecycleIdeasViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    //here we use collection view to show the ideas for the recycle and also use with collection the timer to make the photos change automaticly without any click also we used CGSize func to resize the photos
     
     @IBOutlet weak var collectionView: UICollectionView!
     var arrExampleIdea = [UIImage(named: "item1")!, UIImage(named: "item2")!, UIImage(named: "item3")!, UIImage(named: "item4")!, UIImage(named: "item5")!, UIImage(named: "item7")!, UIImage(named: "item8")!, UIImage(named: "item9")!]
@@ -46,10 +47,12 @@ class RecycleIdeasViewController: UIViewController, UICollectionViewDelegate, UI
         return cell
     }
     
-    //Size func is not working because of the CGSize // CGFloat
-    //func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        //return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
+    return CGSize(width: 343, height: 343)
+        
+    }
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat{
         return 0
         }
