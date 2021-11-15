@@ -32,10 +32,10 @@
 		F62E3193273BF387002687E4 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		F62E3195273BF3B1002687E4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F63A4704273C62DD00E79BF6 /* PopArtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopArtViewController.swift; sourceTree = "<group>"; };
-		F653BBEF27403DC800D0BD6D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		F653BBF027403DC900D0BD6D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		F653BBF427403DFB00D0BD6D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F653BBF627403E0700D0BD6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F653BBFF2741899500D0BD6D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		F653BC002741899D00D0BD6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		F697F2AA2737C1C5002E68D0 /* PERUGIA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PERUGIA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F697F2AD2737C1C5002E68D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F697F2AF2737C1C5002E68D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,52 +62,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F62E3199273C45D8002687E4 /* FirstScreen */ = {
+		F653BBF82741434A00D0BD6D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F6E04E54273CF84F00F84EDB /* FirstViewController.swift */,
 			);
-			path = FirstScreen;
+			path = View;
 			sourceTree = "<group>";
 		};
-		F62E319A273C46DD002687E4 /* SecondScreen */ = {
+		F653BBF92741435600D0BD6D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F6E04E56273CFB5B00F84EDB /* SecondViewController.swift */,
 			);
-			path = SecondScreen;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		F6844350273C49F7000E5972 /* ThirdScreen */ = {
+		F653BBFA2741437200D0BD6D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F62E3193273BF387002687E4 /* CollectionViewController.swift */,
-				F62E3195273BF3B1002687E4 /* CollectionViewCell.swift */,
 			);
-			path = ThirdScreen;
-			sourceTree = "<group>";
-		};
-		F6844351273C4A3C000E5972 /* FourthScreen */ = {
-			isa = PBXGroup;
-			children = (
-				F6003EB527384B6800E7C84E /* HomeTableViewCell.swift */,
-				F6A0FC5A27384E7C00614955 /* HomeViewController.swift */,
-			);
-			path = FourthScreen;
-			sourceTree = "<group>";
-		};
-		F6844352273C4C5F000E5972 /* FifthScreen */ = {
-			isa = PBXGroup;
-			children = (
-				F63A4704273C62DD00E79BF6 /* PopArtViewController.swift */,
-				F6E04E5A273D225400F84EDB /* PopArtCollectionViewCell.swift */,
-			);
-			path = FifthScreen;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F697F2A12737C1C5002E68D0 = {
 			isa = PBXGroup;
 			children = (
+				F653BBFA2741437200D0BD6D /* Model */,
+				F653BBF92741435600D0BD6D /* Controllers */,
+				F653BBF82741434A00D0BD6D /* View */,
 				F697F2AC2737C1C5002E68D0 /* PERUGIA */,
 				F697F2AB2737C1C5002E68D0 /* Products */,
 			);
@@ -124,11 +105,14 @@
 		F697F2AC2737C1C5002E68D0 /* PERUGIA */ = {
 			isa = PBXGroup;
 			children = (
-				F6844352273C4C5F000E5972 /* FifthScreen */,
-				F6844351273C4A3C000E5972 /* FourthScreen */,
-				F6844350273C49F7000E5972 /* ThirdScreen */,
-				F62E319A273C46DD002687E4 /* SecondScreen */,
-				F62E3199273C45D8002687E4 /* FirstScreen */,
+				F63A4704273C62DD00E79BF6 /* PopArtViewController.swift */,
+				F6E04E5A273D225400F84EDB /* PopArtCollectionViewCell.swift */,
+				F6003EB527384B6800E7C84E /* HomeTableViewCell.swift */,
+				F6A0FC5A27384E7C00614955 /* HomeViewController.swift */,
+				F62E3193273BF387002687E4 /* CollectionViewController.swift */,
+				F62E3195273BF3B1002687E4 /* CollectionViewCell.swift */,
+				F6E04E56273CFB5B00F84EDB /* SecondViewController.swift */,
+				F6E04E54273CF84F00F84EDB /* FirstViewController.swift */,
 				F697F2AD2737C1C5002E68D0 /* AppDelegate.swift */,
 				F697F2AF2737C1C5002E68D0 /* SceneDelegate.swift */,
 				F697F2B12737C1C5002E68D0 /* ViewController.swift */,
@@ -239,7 +223,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				F653BBF427403DFB00D0BD6D /* ar */,
-				F653BBF627403E0700D0BD6D /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -248,7 +231,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				F697F2B42737C1C5002E68D0 /* Base */,
-				F653BBEF27403DC800D0BD6D /* ar */,
+				F653BBFF2741899500D0BD6D /* ar */,
+				F653BC002741899D00D0BD6D /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

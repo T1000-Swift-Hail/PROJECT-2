@@ -21,30 +21,21 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var emailAddress: UITextField!
     @IBOutlet weak var pasword: UITextField!
     
-   
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         
     }
-    
 
     @IBAction func btnCreateAccount(_ sender: Any) {
- 
     performSegue(withIdentifier: Suges.CreateAccount.rawValue, sender: nil)
+    }
     
-
-}
     @IBAction func btnLogin(_ sender: Any) {
-        
-       
-        
+
             if emailAddress.text?.isEmpty ?? true || pasword.text?.isEmpty ?? true{
-                let alert = UIAlertController (title: "", message: "login in Incorrect", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                let alert = UIAlertController (title : "login in Incorrect".localized , message:"",preferredStyle: .alert)
+               alert.addAction(UIAlertAction(title: "OK".localized ,style: .default, handler: nil))
                 self.present(alert, animated: true)
             }else{
             }
@@ -55,11 +46,18 @@ class FirstViewController: UIViewController {
     @IBAction func btnSkip(_ sender: Any) {
         performSegue(withIdentifier: "IdentitfirerLogin", sender: nil)
     }
-    
-    
-    
+
+}
+
+
+extension String {
+    var localized: String {
+        return NSLocalizedString(self, comment: "")
     }
-    
+}
+   
+
+
     
     
 

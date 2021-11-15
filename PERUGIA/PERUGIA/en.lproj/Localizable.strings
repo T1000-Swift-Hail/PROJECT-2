@@ -1,7 +1,42 @@
-/* 
+/*
   Localizable.strings
   PERUGIA
 
   Created by AryafAlaqabali on 08/04/1443 AH.
   
 */
+
+"I agree to the Terms and Conditions" = "I agree to the Terms and Conditions"
+
+"ok" = "ok";
+"login in Incorrect" = "login in Incorrect";
+
+"Love" = "Love";
+"Beautiful abstract art" = "Beautiful abstract art";
+"People" = "People";
+"Two girls" = "Two girls";
+"Golden girl" = "Golden girl";
+"Girl" = "Girl";
+"Skulls" = "Skulls";
+
+"Mona Lisa" = "";
+"Charles Chaplin" = "";
+"Angelina Jolie" = "";
+"Alpert Einstein" = "";
+"Elephant" = "";
+"Van Gogh" = "";
+"Adel" = "";
+"Marilyn Monroe" = "";
+"Diana Princess" = "";
+"Hoorse" = "";
+
+"Elderly Man" = "";
+"Little Baby" = "";
+"Elderly Man" = "";
+"Abdel Halim Hafez" = "";
+"Daenerys Targaryen" = "";
+"Tupac Shakur" = "";
+"Boy" = "";
+"Charcoal Portrait" = "";
+"Mother and daughter1" = "";
+"" = "";

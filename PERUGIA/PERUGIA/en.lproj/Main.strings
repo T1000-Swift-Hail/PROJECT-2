@@ -1,0 +1,111 @@
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "2xJ-U9-Fuc"; */
+"2xJ-U9-Fuc.text" = "Email";
+
+/* Class = "UITextField"; placeholder = "Enter Email Address"; ObjectID = "6Md-5Z-hwp"; */
+"6Md-5Z-hwp.placeholder" = "Enter Email Address";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "7So-Ea-2WN"; */
+"7So-Ea-2WN.text" = "Description";
+
+/* Class = "UILabel"; text = "password"; ObjectID = "A3F-nt-gf6"; */
+"A3F-nt-gf6.text" = "password";
+
+/* Class = "UITextField"; placeholder = "Enter  Password"; ObjectID = "ABD-uq-NcI"; */
+"ABD-uq-NcI.placeholder" = "Enter  Password";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "DVg-m7-yA2"; */
+"DVg-m7-yA2.text" = "Name";
+
+/* Class = "UILabel"; text = "Best Paintings of the Month"; ObjectID = "I6J-Eb-fSc"; */
+"I6J-Eb-fSc.text" = "Best Paintings of the Month";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "INe-ha-5XY"; */
+"INe-ha-5XY.text" = "Password";
+
+/* Class = "UITextField"; placeholder = "Mobail Number.."; ObjectID = "JUf-nM-EEb"; */
+"JUf-nM-EEb.placeholder" = "Mobail Number..";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "KDn-JH-e8P"; */
+"KDn-JH-e8P.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KDn-JH-e8P"; */
+"KDn-JH-e8P.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Charcoal Art"; ObjectID = "KFB-Yy-Nxk"; */
+"KFB-Yy-Nxk.configuration.title" = "Charcoal Art";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KFB-Yy-Nxk"; */
+"KFB-Yy-Nxk.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Skip"; ObjectID = "NVc-on-XQP"; */
+"NVc-on-XQP.configuration.title" = "Skip";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NVc-on-XQP"; */
+"NVc-on-XQP.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "Nh8-Fs-pGx"; */
+"Nh8-Fs-pGx.text" = "Email";
+
+/* Class = "UIButton"; configuration.title = "Pop Art"; ObjectID = "Oug-hQ-E74"; */
+"Oug-hQ-E74.configuration.title" = "Pop Art";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Oug-hQ-E74"; */
+"Oug-hQ-E74.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Mobail Number"; ObjectID = "PSv-Zf-5fS"; */
+"PSv-Zf-5fS.text" = "Mobail Number";
+
+/* Class = "UITextField"; placeholder = "Email.."; ObjectID = "RCE-Ni-I9i"; */
+"RCE-Ni-I9i.placeholder" = "Email..";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ULe-1V-JJH"; */
+"ULe-1V-JJH.text" = "Label";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "ZCS-II-kdp"; */
+"ZCS-II-kdp.text" = "Name";
+
+/* Class = "UITextField"; placeholder = "Name.."; ObjectID = "bxa-0r-QJh"; */
+"bxa-0r-QJh.placeholder" = "Name..";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "cYx-9g-2Fm"; */
+"cYx-9g-2Fm.text" = "Label";
+
+/* Class = "UILabel"; text = "Thank you for using PERUGIA"; ObjectID = "cwN-fV-Y46"; */
+"cwN-fV-Y46.text" = "Thank you for using PERUGIA";
+
+/* Class = "UITextField"; placeholder = "password.."; ObjectID = "drz-Ju-gAL"; */
+"drz-Ju-gAL.placeholder" = "password..";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "f2b-FR-xkm"; */
+"f2b-FR-xkm.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "create new account"; ObjectID = "f9I-ng-jod"; */
+"f9I-ng-jod.configuration.title" = "create new account";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "f9I-ng-jod"; */
+"f9I-ng-jod.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Create new account"; ObjectID = "gSO-xW-Qd9"; */
+"gSO-xW-Qd9.configuration.title" = "Create new account";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gSO-xW-Qd9"; */
+"gSO-xW-Qd9.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "\n-To register for membership, you must:\n\n-Proof of attaining the age of 16\n \n-You agree that any information provided to us about yourself upon registration or at any time is true, accurate, current and complete.\n\n- We have full discretion to cancel your file at any time if we suspect that it has been used before\n\n-safety:\n-We care about the safety of our users. Although we work to protect the security of your content and account, PERUGIA cannot guarantee that unauthorized third parties will be able to defeat our security measures. We ask that you keep your password secure.\n\n-If we want to make a major change to the terms, we'll let you know. If you do not like the new terms, please stop using PERUGIA"; ObjectID = "hb4-B4-2UR"; */
+"hb4-B4-2UR.text" = "\n-To register for membership, you must:\n\n-Proof of attaining the age of 16\n \n-You agree that any information provided to us about yourself upon registration or at any time is true, accurate, current and complete.\n\n- We have full discretion to cancel your file at any time if we suspect that it has been used before\n\n-safety:\n-We care about the safety of our users. Although we work to protect the security of your content and account, PERUGIA cannot guarantee that unauthorized third parties will be able to defeat our security measures. We ask that you keep your password secure.\n\n-If we want to make a major change to the terms, we'll let you know. If you do not like the new terms, please stop using PERUGIA";
+
+/* Class = "UIButton"; configuration.title = "I agree to the Terms and Conditions"; ObjectID = "iSM-IJ-l2J"; */
+"iSM-IJ-l2J.configuration.title" = "I agree to the Terms and Conditions";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "iSM-IJ-l2J"; */
+"iSM-IJ-l2J.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Abstract Art"; ObjectID = "qwx-Cv-jFb"; */
+"qwx-Cv-jFb.configuration.title" = "Abstract Art";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qwx-Cv-jFb"; */
+"qwx-Cv-jFb.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "or"; ObjectID = "vcd-u5-MNA"; */
+"vcd-u5-MNA.text" = "or";

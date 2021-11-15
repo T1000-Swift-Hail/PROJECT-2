@@ -14,10 +14,10 @@ class HomeTableViewCell: UITableViewCell {
     
     @IBOutlet weak var lblPlateDrscription: UILabel!
     
-//    var check = true
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+      
     }
   
     func setupCell(photo: UIImage, name: String, description: String) {
@@ -29,7 +29,7 @@ class HomeTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        
     }
     
     @IBAction func addFavorite(_ sender: UIButton) {
@@ -52,5 +52,8 @@ class HomeTableViewCell: UITableViewCell {
 
    
         }
+    
+    
+    
 
 }
