@@ -21,17 +21,18 @@ The Home screen contains of
 -Username
 -New username
 -Password
+with class to new add variables and we used if statement for filling the Users details info
 
-The Seconed Scene is Category which contains of the Products 
+The Seconed Scene is Category which contains of the Products by useing the table view which contains of add and remove items button from the cart.
 
-The Third Scene is The Cart which the customer can include all his choosen products
+The Third Scene is The Cart which the customer can include all his choosen products and can also removed his chosen products 
 
-The last Scene is the Profile scene which the Customer can put all his info
+The last Scene is the Profile scene which the Customer can put all his info 
 
 
 ### User Stories :
-view the Products . 
-- Search for Products.
+User logs in
+-view the Products .
 - Add Products to the shopping cart .
 - Remove a product from the shopping cart.   
 

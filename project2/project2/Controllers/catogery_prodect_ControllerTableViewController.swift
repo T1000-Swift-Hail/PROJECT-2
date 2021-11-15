@@ -62,7 +62,7 @@ class catogery_prodect_ControllerTableViewController: UITableViewController {
         
         return cell
         
-    }//heightFoRowat
+    }//heightForRowat
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 105
     }
