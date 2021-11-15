@@ -1,30 +1,50 @@
-# PROJECT-2
-
-### Based on what you’ve learned until now , create a project of your choosing (impress us with your imagination).
-### Edit this README.md file with your Project info.
+## PROJECT-2
 
 
-### Project : 
-//Add project name
-
-### Project Description :
-// Add your project description
+## Project :  Saudi Electricity Company Application:
 
 
-### Features List :
-// Add your project features list
-- feature 1
-- feature 2
+ I created this project Based on what I learned until now by ussing And some other additions:
+ 
+   I
+- Used (Main And Code)
+
+- used protocool
+- Used Optionals.
+- Used arrays.
+- Used functions that return an output . 
+- Used Structs.
+- Used Classes with an initializer .
+- Used some form of Error Handling . 
+- Used a computed property . 
+- Used LOOPS
+- Used ARRAYS
+- Used DICT
+- Used SET
+- Used If , Else
+- Used Enume
+- Used Adaptive_Orientation
+- Used PhotosLibrary_Cam_Caching
+- Used UserDefaults_TableViewControllers
+- Used Adaptive
+- Used STACKVIEWS
 
 
-### Define the scenes :
-// Add description of the screens / scenes in your application.
 
 
-### User Stories :
-// Add user stories here.   
+#### Overview : It is an application that helps the user to activate and cancel services and use all the services of the Saudi Electricity Company
+
+
+## As a customer of the Saudi Electricity Company I can do the following:
+
+- Request to release electric current to a house or private building
+- Knowing the financial dues
+- Paying the financial dues
+- Inquiries about service consumption in the previous months
+- Inquire about consumption before the bill is due
+- Re-service after outage
+- fault maintenance
 
 
 
 
-#### Deadline for this project :  Deliver the project by 9:00 a.m. next Thursday Nov. 11, 2021 

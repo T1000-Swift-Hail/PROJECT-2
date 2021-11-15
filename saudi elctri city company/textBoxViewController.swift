@@ -5,9 +5,11 @@
 //  Created by Mohammed Abdullah on 04/04/1443 AH.
 //
 
+// MARK: - Textboks code
+
 import UIKit
 
-class textBoxViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class TextBoxViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     
     
@@ -17,7 +19,7 @@ class textBoxViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     var list = ["1", "2", "3", "4", "5", "6"]
     
-    var location = ["","Hail", "Tabuk", "Arar", "Jedah", "Makah", "Qasim"]
+    var city = ["","Hail", "Tabuk", "Arar", "Jedah", "Makah", "Qassim"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,15 +35,15 @@ class textBoxViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return location.count
+        return city.count
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        textBox.text = location[row]
+        textBox.text = city[row]
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         
-        return location[row]
+        return city[row]
         
     }
     

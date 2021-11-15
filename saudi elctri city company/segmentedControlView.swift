@@ -5,15 +5,16 @@
 //  Created by Mohammed Abdullah on 04/04/1443 AH.
 //
 
+// MARK: - segmantid code
 
 import UIKit
 
-class segmentedControlView: UIViewController{
+class SegmentedControlView: UIViewController{
     
     var segmentedControlView : UISegmentedControl!
     var changeViewLabel : UILabel!
     let choices = ["april", "may", "june"]
-    let bills = [200,300,400]
+    let bills = [297,401,366]
     
     override func loadView() {
         view = UIView()

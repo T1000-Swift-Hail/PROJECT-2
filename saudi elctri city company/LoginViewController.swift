@@ -5,16 +5,17 @@
 //  Created by Mohammed Abdullah on 03/04/1443 AH.
 //
 
+// MARK: - login code
 import UIKit
-class user {
+class User {
     var name:String = ""
     var age:Int = 0
-    var userPassword:Int = 0
+    var password:Int = 0
     
     init(name:String, age:Int, userPassword:Int){
         self.name = name
         self.age = age
-        self.userPassword = userPassword
+        self.password = userPassword
     }
 }
 
@@ -25,9 +26,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var signIn: UIButton!
     
     
-    var userAm = user(name: "mohammed", age: 26, userPassword: 10730)
-    var userRm = user(name: "raed",age: 30, userPassword: 21209)
-    var userFm = user(name: "faisal", age: 18, userPassword: 48901)
+    var userAm = User(name: "mohammed", age: 26, userPassword: 10730)
+    var userRm = User(name: "raed",age: 30, userPassword: 21209)
+    var userFm = User(name: "faisal", age: 18, userPassword: 48901)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +42,7 @@ class LoginViewController: UIViewController {
     @IBAction func signInAction(_ sender: UIButton) {
         guard let userName = userName.text else {return}
         guard let userPassword = Int(password.text ?? "0")else {return}
-        if userAm.name == userName && userAm.userPassword == userPassword {
+        if userAm.name == userName && userAm.password == userPassword {
             //displayAlert(withTitle: "Done", message: "", isLogin: true)
             performSegue(withIdentifier: "homePage", sender: nil)
         }else{
@@ -69,7 +70,7 @@ class LoginViewController: UIViewController {
         
         guard let userName = userName.text else {return}
         guard let userPassword = Int(password.text ?? "0")else {return}
-        if userAm.name == userName && userAm.userPassword == userPassword {
+        if userAm.name == userName && userAm.password == userPassword {
             displayAlert(withTitle: "Done", message: "", isLogin: true)
         }else{
             displayAlert(withTitle: "fail", message: "", isLogin: false)

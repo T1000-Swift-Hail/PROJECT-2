@@ -1,0 +1,252 @@
+
+/* Class = "UIButton"; configuration.title = "  Service Delivery Requirements"; ObjectID = "0BL-6x-eUw"; */
+"0BL-6x-eUw.configuration.title" = "  Service Delivery Requirements";
+
+/* Class = "UIButton"; normalTitle = "  Service Delivery Requirements"; ObjectID = "0BL-6x-eUw"; */
+"0BL-6x-eUw.normalTitle" = "  Service Delivery Requirements";
+
+/* Class = "UILabel"; text = "Privacy"; ObjectID = "2EJ-Wb-7ln"; */
+"2EJ-Wb-7ln.text" = "Privacy";
+
+/* Class = "UILabel"; text = "notifications"; ObjectID = "2GW-We-U5y"; */
+"2GW-We-U5y.text" = "notifications";
+
+/* Class = "UILabel"; text = "Define thermal insulation?"; ObjectID = "2II-dY-Eks"; */
+"2II-dY-Eks.text" = "Define thermal insulation?";
+
+/* Class = "UIButton"; configuration.title = "sign in"; ObjectID = "40X-yd-ctY"; */
+"40X-yd-ctY.configuration.title" = "sign in";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "40X-yd-ctY"; */
+"40X-yd-ctY.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Register For This Site"; ObjectID = "6qc-1x-1QU"; */
+"6qc-1x-1QU.text" = "Register For This Site";
+
+/* Class = "UILabel"; text = "Whatsapp\n920001100"; ObjectID = "7Ub-1e-aNR"; */
+"7Ub-1e-aNR.text" = "Whatsapp\n920001100";
+
+/* Class = "UITextField"; placeholder = "Enter Your Email"; ObjectID = "8HC-rO-uay"; */
+"8HC-rO-uay.placeholder" = "Enter Your Email";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "8Q9-OW-DzL"; */
+"8Q9-OW-DzL.title" = "Home";
+
+/* Class = "UILabel"; text = "ِEdit Profile"; ObjectID = "8ah-ef-X10"; */
+"8ah-ef-X10.text" = "ِEdit Profile";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "93N-1S-BYX"; */
+"93N-1S-BYX.placeholder" = "Password";
+
+/* Class = "UIButton"; configuration.title = "  New Order"; ObjectID = "9nY-Db-XTa"; */
+"9nY-Db-XTa.configuration.title" = "  New Order";
+
+/* Class = "UIButton"; normalTitle = "  New Order"; ObjectID = "9nY-Db-XTa"; */
+"9nY-Db-XTa.normalTitle" = "  New Order";
+
+/* Class = "UIButton"; configuration.title = "Sign In"; ObjectID = "A5C-jQ-rHv"; */
+"A5C-jQ-rHv.configuration.title" = "Sign In";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "A5C-jQ-rHv"; */
+"A5C-jQ-rHv.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "What is the fixed bill?"; ObjectID = "Bkc-GE-k1x"; */
+"Bkc-GE-k1x.text" = "What is the fixed bill?";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "ERC-Ju-WB3"; */
+"ERC-Ju-WB3.placeholder" = "Last Name";
+
+/* Class = "UILabel"; text = "Subscriber care"; ObjectID = "FFe-Og-pgb"; */
+"FFe-Og-pgb.text" = "Subscriber care";
+
+/* Class = "UIButton"; configuration.title = "Your safety is in your hands"; ObjectID = "FMI-0X-zjl"; */
+"FMI-0X-zjl.configuration.title" = "Your safety is in your hands";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "FMI-0X-zjl"; */
+"FMI-0X-zjl.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "express services"; ObjectID = "FR5-Bh-Chd"; */
+"FR5-Bh-Chd.configuration.title" = "express services";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "FR5-Bh-Chd"; */
+"FR5-Bh-Chd.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "GpX-Mq-iQH"; */
+"GpX-Mq-iQH.title" = "Item";
+
+/* Class = "UILabel"; text = "Edit Password"; ObjectID = "HEn-Bp-YUy"; */
+"HEn-Bp-YUy.text" = "Edit Password";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "K7b-JO-g4C"; */
+"K7b-JO-g4C.title" = "Home";
+
+/* Class = "UIButton"; configuration.title = "  Interruption Services"; ObjectID = "M9L-dh-MQU"; */
+"M9L-dh-MQU.configuration.title" = "  Interruption Services";
+
+/* Class = "UIButton"; normalTitle = "  Interruption Services"; ObjectID = "M9L-dh-MQU"; */
+"M9L-dh-MQU.normalTitle" = "  Interruption Services";
+
+/* Class = "UILabel"; text = "website\nwww.se.com.sa/ar-sa/"; ObjectID = "Mlv-s4-6Mf"; */
+"Mlv-s4-6Mf.text" = "website\nwww.se.com.sa/ar-sa/";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "MoJ-FW-UMO"; */
+"MoJ-FW-UMO.configuration.title" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MoJ-FW-UMO"; */
+"MoJ-FW-UMO.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "  Reconnection"; ObjectID = "O86-cn-qOj"; */
+"O86-cn-qOj.configuration.title" = "  Reconnection";
+
+/* Class = "UIButton"; normalTitle = "  Reconnection"; ObjectID = "O86-cn-qOj"; */
+"O86-cn-qOj.normalTitle" = "  Reconnection";
+
+/* Class = "UILabel"; text = "upgrade software"; ObjectID = "OxK-J1-D5e"; */
+"OxK-J1-D5e.text" = "upgrade software";
+
+/* Class = "UILabel"; text = "Emergency\n920001100"; ObjectID = "RmN-8r-awF"; */
+"RmN-8r-awF.text" = "Emergency\n920001100";
+
+/* Class = "UITabBarItem"; title = "General Information"; ObjectID = "SOK-XW-82j"; */
+"SOK-XW-82j.title" = "General Information";
+
+/* Class = "UILabel"; text = "Subscriber Service Center\n933"; ObjectID = "T7R-iM-nuA"; */
+"T7R-iM-nuA.text" = "Subscriber Service Center\n933";
+
+/* Class = "UILabel"; text = "the sounds"; ObjectID = "Tjr-zg-HDc"; */
+"Tjr-zg-HDc.text" = "the sounds";
+
+/* Class = "UILabel"; text = "Saudi Electricity"; ObjectID = "Y5q-AL-7yU"; */
+"Y5q-AL-7yU.text" = "Saudi Electricity";
+
+/* Class = "UIButton"; configuration.title = "  Voltage Change"; ObjectID = "YWp-Wi-tq7"; */
+"YWp-Wi-tq7.configuration.title" = "  Voltage Change";
+
+/* Class = "UIButton"; normalTitle = "  Voltage Change"; ObjectID = "YWp-Wi-tq7"; */
+"YWp-Wi-tq7.normalTitle" = "  Voltage Change";
+
+/* Class = "UIButton"; configuration.title = "thermal insulation"; ObjectID = "Yf9-XN-hRd"; */
+"Yf9-XN-hRd.configuration.title" = "thermal insulation";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Yf9-XN-hRd"; */
+"Yf9-XN-hRd.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "SignUp"; ObjectID = "Yv1-5D-0h5"; */
+"Yv1-5D-0h5.configuration.title" = "SignUp";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Yv1-5D-0h5"; */
+"Yv1-5D-0h5.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Welcome To The Services Of The Electrcity Company"; ObjectID = "Yx9-SE-RNp"; */
+"Yx9-SE-RNp.text" = "Welcome To The Services Of The Electrcity Company";
+
+/* Class = "UIButton"; configuration.title = "create account"; ObjectID = "ZEe-04-pN3"; */
+"ZEe-04-pN3.configuration.title" = "create account";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZEe-04-pN3"; */
+"ZEe-04-pN3.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "ZwJ-ZR-ku1"; */
+"ZwJ-ZR-ku1.placeholder" = "Confirm Password";
+
+/* Class = "UIButton"; configuration.title = "  My Bills"; ObjectID = "b5J-rX-4iA"; */
+"b5J-rX-4iA.configuration.title" = "  My Bills";
+
+/* Class = "UIButton"; normalTitle = "  My Bills"; ObjectID = "b5J-rX-4iA"; */
+"b5J-rX-4iA.normalTitle" = "  My Bills";
+
+/* Class = "UITextView"; text = "It is a service that allows the subscriber to set a specific monthly budget in return for the consumption of the electric service in exchange for the average consumption during the 12 months "; ObjectID = "bfP-UB-RQ1"; */
+"bfP-UB-RQ1.text" = "It is a service that allows the subscriber to set a specific monthly budget in return for the consumption of the electric service in exchange for the average consumption during the 12 months ";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "eVD-ph-chP"; */
+"eVD-ph-chP.placeholder" = "Password";
+
+/* Class = "UIButton"; configuration.title = "  Follow Up On An Order"; ObjectID = "g4M-dp-ypc"; */
+"g4M-dp-ypc.configuration.title" = "  Follow Up On An Order";
+
+/* Class = "UIButton"; normalTitle = "  Follow Up On An Order"; ObjectID = "g4M-dp-ypc"; */
+"g4M-dp-ypc.normalTitle" = "  Follow Up On An Order";
+
+/* Class = "UILabel"; text = "ENTER YOUR USERNAME AND PASSWORD"; ObjectID = "gfL-Jt-hIF"; */
+"gfL-Jt-hIF.text" = "ENTER YOUR USERNAME AND PASSWORD";
+
+/* Class = "UIButton"; configuration.title = "In the event of a power outage?"; ObjectID = "hIF-Rv-4OA"; */
+"hIF-Rv-4OA.configuration.title" = "In the event of a power outage?";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hIF-Rv-4OA"; */
+"hIF-Rv-4OA.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "User Name"; ObjectID = "ilP-yv-uQF"; */
+"ilP-yv-uQF.placeholder" = "User Name";
+
+/* Class = "UITextView"; text = "Thermal insulators slow the transfer of heat from outside the building to the inside or vice versa.\nBenefits of using thermal insulation:\n* walls\n* Bishops\n* Glass facades and windows"; ObjectID = "jKc-nC-37B"; */
+"jKc-nC-37B.text" = "Thermal insulators slow the transfer of heat from outside the building to the inside or vice versa.\nBenefits of using thermal insulation:\n* walls\n* Bishops\n* Glass facades and windows";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "jP9-cq-tyS"; */
+"jP9-cq-tyS.text" = "Location";
+
+/* Class = "UILabel"; text = "Welcome to the Saudi Electricity Company App"; ObjectID = "jzj-4s-Rij"; */
+"jzj-4s-Rij.text" = "Welcome to the Saudi Electricity Company App";
+
+/* Class = "UIButton"; configuration.title = "Service delivery requirements"; ObjectID = "kMX-fK-khS"; */
+"kMX-fK-khS.configuration.title" = "Service delivery requirements";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "kMX-fK-khS"; */
+"kMX-fK-khS.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Electricity Friend"; ObjectID = "mBp-Ij-fxQ"; */
+"mBp-Ij-fxQ.text" = "Electricity Friend";
+
+/* Class = "UITabBarItem"; title = "setting"; ObjectID = "mlv-0L-ds5"; */
+"mlv-0L-ds5.title" = "setting";
+
+/* Class = "UIButton"; configuration.title = "Interactive mobile messaging service"; ObjectID = "oeY-Jq-sRS"; */
+"oeY-Jq-sRS.configuration.title" = "Interactive mobile messaging service";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oeY-Jq-sRS"; */
+"oeY-Jq-sRS.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "fixed bill"; ObjectID = "okx-Ma-cXH"; */
+"okx-Ma-cXH.configuration.title" = "fixed bill";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "okx-Ma-cXH"; */
+"okx-Ma-cXH.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "language, region"; ObjectID = "p1l-Iy-xe2"; */
+"p1l-Iy-xe2.text" = "language, region";
+
+/* Class = "UIButton"; configuration.title = "  SEC Friend"; ObjectID = "pBe-Q2-k4o"; */
+"pBe-Q2-k4o.configuration.title" = "  SEC Friend";
+
+/* Class = "UIButton"; normalTitle = "  SEC Friend"; ObjectID = "pBe-Q2-k4o"; */
+"pBe-Q2-k4o.normalTitle" = "  SEC Friend";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "pXx-aq-27j"; */
+"pXx-aq-27j.placeholder" = "First Name";
+
+/* Class = "UINavigationItem"; title = "language"; ObjectID = "pbB-zo-SZq"; */
+"pbB-zo-SZq.title" = "language";
+
+/* Class = "UILabel"; text = "home phone\n92000222"; ObjectID = "piG-a9-jyL"; */
+"piG-a9-jyL.text" = "home phone\n92000222";
+
+/* Class = "UILabel"; text = "Welcome to the Saudi Electricity Company. We look forward to serving you It is a company wholly owned by the Saudi Electricity Company, and the National Electricity Transmission Company started its work as of 1/1/2012 AD, and its tasks are to operate and maintain the 110-380 kV electrical network."; ObjectID = "ssU-LA-hCr"; */
+"ssU-LA-hCr.text" = "Welcome to the Saudi Electricity Company. We look forward to serving you It is a company wholly owned by the Saudi Electricity Company, and the National Electricity Transmission Company started its work as of 1/1/2012 AD, and its tasks are to operate and maintain the 110-380 kV electrical network.";
+
+/* Class = "UIButton"; configuration.title = "  Contact Us"; ObjectID = "tGw-11-11c"; */
+"tGw-11-11c.configuration.title" = "  Contact Us";
+
+/* Class = "UIButton"; normalTitle = "  Contact Us"; ObjectID = "tGw-11-11c"; */
+"tGw-11-11c.normalTitle" = "  Contact Us";
+
+/* Class = "UITabBarItem"; title = "Connect with us"; ObjectID = "ulf-Ys-UfT"; */
+"ulf-Ys-UfT.title" = "Connect with us";
+
+/* Class = "UITextField"; placeholder = "Phone Number "; ObjectID = "uoG-ww-qxY"; */
+"uoG-ww-qxY.placeholder" = "Phone Number ";
+
+/* Class = "UIButton"; configuration.title = "Already Have An Account? Login"; ObjectID = "vmn-mW-Swu"; */
+"vmn-mW-Swu.configuration.title" = "Already Have An Account? Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vmn-mW-Swu"; */
+"vmn-mW-Swu.normalTitle" = "Button";
