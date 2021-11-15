@@ -39,7 +39,7 @@ class EditProfileUITableViewController: UITableViewController {
     }
     
     
-    
+    //to let user change iamge
     @IBAction func editingChanged(_ sender: Any) {
         
         userDefaults.set(editName.text ?? "", forKey: "userProfileName")

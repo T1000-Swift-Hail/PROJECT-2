@@ -36,7 +36,7 @@ extension ViewControllerAddToCart : UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CheckOutTableViewCell
         
-        
+        // add product secleted to the cart
         cell.productImage.image = myShoppingCart.products[indexPath.row].tshirtImage
         cell.ProducType.text = myShoppingCart.products[indexPath.row].productName
         cell.productPrice.text = "\(myShoppingCart.products[indexPath.row].price!)SAR"

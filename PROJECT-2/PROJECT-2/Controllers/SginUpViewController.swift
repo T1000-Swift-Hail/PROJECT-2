@@ -29,7 +29,7 @@ class SginUpViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
+    // sginup for new users declreation
     @IBAction func signUp(_ sender: Any) {
         
         let firstName = firstName.text
@@ -41,7 +41,7 @@ class SginUpViewController: UIViewController {
         let address = address.text
         let userPassword = userPassword.text
         
-        
+        //condition  for sginup user
         if firstName != nil && middleName != nil && lastName != nil && userName != nil && email != nil && phoneNumber != nil && address != nil && userPassword != nil {
             
             DisplayAlert(withTitle: "Signup successful", message: "", isSginup: true)
@@ -51,7 +51,7 @@ class SginUpViewController: UIViewController {
             DisplayAlert(withTitle: "fail", message: "", isSginup: false)
         }
     }
-    
+    // displayng alert with massage to user for Sginup
     func DisplayAlert(withTitle title: String, message: String,isSginup: Bool) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: NSLocalizedString("Ok", comment: ""), style: .default, handler: { action in

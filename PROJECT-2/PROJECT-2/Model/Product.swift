@@ -47,7 +47,7 @@ struct Product {
     var uiImage : UIImage?
     var tshirtImage :UIImage?
     
-    
+    // assgin produect brands for its type,price ,color,image for product brand and product type
     func getProducts() -> [Product] {
         
         var productAddias = Product(productType: .tshirt, productName: "T-shirt".localization, price: 600, quantity: 18 , productSize: .l, productBrand: .addias, productColor: .blue, uiImage: UIImage(named: "1")!, tshirtImage: UIImage(named: "addias black shirt")!)

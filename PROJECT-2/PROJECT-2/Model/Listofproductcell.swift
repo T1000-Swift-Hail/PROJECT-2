@@ -8,7 +8,7 @@
 import UIKit
 
 class Listofproductcell: UITableViewCell {
-    
+
     @IBOutlet weak var brandsImage: UIImageView!
     @IBOutlet weak var nameClothing: UILabel!
     @IBOutlet weak var sizeClothing: UISegmentedControl!
@@ -17,14 +17,15 @@ class Listofproductcell: UITableViewCell {
     @IBOutlet weak var priceClothing: UILabel!
     @IBOutlet weak var quantityProduct: UILabel!
     
-    
+    // image depends in colors
+    // size type
     var prodcutImageColors : [String]!
     let sizes: [SizeTypes] = [.l,.m,.s,.xl,.other]
     
     let colors = [ColorType.black,ColorType.blue,ColorType.white,ColorType.yellow,ColorType.other]
     var prodcut = Product()
     let userDefalts = UserDefaults.standard
-    
+    //
     @IBOutlet weak var addCard: UIButton!
     
     override func awakeFromNib() {
@@ -44,7 +45,7 @@ class Listofproductcell: UITableViewCell {
         
         // Initialization code
     }
-    
+    //  add product such as image and color to cart
     @IBAction func addToCart(_ sender: UIButton) {
         myShoppingCart.products.append(prodcut)
     }
@@ -71,7 +72,7 @@ class Listofproductcell: UITableViewCell {
         prodcut.tshirtImage = productImage.image
         
     }
-    
+    // size selected on segmented control
     @IBAction func changeSize(_ sender:UISegmentedControl) {
         
         guard let title = sender.titleForSegment(at: sender.selectedSegmentIndex) else { return }

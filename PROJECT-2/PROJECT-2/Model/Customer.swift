@@ -6,12 +6,12 @@
 //
 
 import Foundation
-
+//protocol
 protocol User {
     var userName :String {get}
     var userPassword :Int {get}
 }
-
+//struct for user customer 
 struct Customer: User {
     var userName: String
     var userPassword: Int

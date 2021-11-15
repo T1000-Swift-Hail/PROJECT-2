@@ -21,7 +21,7 @@ class LoginViewController:
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+    // displayng alert with massage to user for login
     func DisplayAlert(withTitle title: String, message: String,isLogin: Bool) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title:NSLocalizedString("Ok", comment: ""), style: .default, handler: { action in
@@ -48,7 +48,7 @@ class LoginViewController:
             DisplayAlert(withTitle: NSLocalizedString("fail", comment: ""), message: NSLocalizedString("Please Try Again!", comment: ""), isLogin: false)
         }
     }
-    
+    // log in action 
     @IBAction func loginActionBotton(_ sender: Any) {
         
         UserLogin()

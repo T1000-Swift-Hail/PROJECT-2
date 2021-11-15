@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+//calss shopping for cart
 class ShoppingCart {
     var products = [Product]()
 }
