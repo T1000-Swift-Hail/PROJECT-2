@@ -71,8 +71,13 @@ class CartViewController: UIViewController , UITableViewDelegate , UITableViewDa
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let deleteAction = UIContextualAction(style: .destructive, title: "") {
           ( action, view, complettionHandler) in
-           shoppingCart.item.remove(at :indexPath.row)
-//            self.shoppingCartAndroid.products.remove(at: indexPath.row)
+          
+            if indexPath.section == 0 {
+                shoppingCart.item.remove(at: indexPath.row)
+            } else {
+                shoppingCartAndroid.products.remove(at: indexPath.row)
+            }
+
             tableView.beginUpdates()
             tableView.deleteRows(at: [indexPath], with: .automatic)
             tableView.endUpdates()
