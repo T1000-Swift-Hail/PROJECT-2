@@ -1,0 +1,140 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "23M-CX-3aN"; */
+"23M-CX-3aN.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Central Park"; ObjectID = "4cP-n6-BOo"; */
+"4cP-n6-BOo.text" = "سنترال بارك";
+
+/* Class = "UILabel"; text = "New York City"; ObjectID = "814-n1-TdI"; */
+"814-n1-TdI.text" = "مدينة نيويورك";
+
+/* Class = "UITabBarItem"; title = "Search"; ObjectID = "8NG-cH-RJD"; */
+"8NG-cH-RJD.title" = "بحث";
+
+/* Class = "UILabel"; text = "Roma"; ObjectID = "9YC-XW-hpc"; */
+"9YC-XW-hpc.text" = "روما";
+
+/* Class = "UILabel"; text = "Already have account"; ObjectID = "DMP-9r-Doy"; */
+"DMP-9r-Doy.text" = "لديك حساب بالفعل";
+
+/* Class = "UILabel"; text = "New York City"; ObjectID = "DMh-9q-zZ0"; */
+"DMh-9q-zZ0.text" = "مدينة نيويورك";
+
+/* Class = "UITextField"; placeholder = "your name"; ObjectID = "DTh-ji-j4c"; */
+"DTh-ji-j4c.placeholder" = "اسمك";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "ENh-US-fTM"; */
+"ENh-US-fTM.title" = "الصفحة الرئيسية";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "HIB-e5-Mjw"; */
+"HIB-e5-Mjw.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Reviews"; ObjectID = "HKk-ip-w4k"; */
+"HKk-ip-w4k.title" = "المراجعات";
+
+/* Class = "UITextField"; placeholder = "email"; ObjectID = "Hfr-Qu-Re1"; */
+"Hfr-Qu-Re1.placeholder" = "البريد الإلكتروني";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "MXy-Gn-lJq"; */
+"MXy-Gn-lJq.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "MeW-yC-jOb"; */
+"MeW-yC-jOb.placeholder" = "كلمه السر";
+
+/* Class = "UILabel"; text = "Overview"; ObjectID = "N8o-B3-aSr"; */
+"N8o-B3-aSr.text" = "نظره عامة";
+
+/* Class = "UILabel"; text = "New York City"; ObjectID = "Nzc-xi-AwJ"; */
+"Nzc-xi-AwJ.text" = " نيويورك";
+
+/* Class = "UILabel"; text = "Destinations travelers love"; ObjectID = "PHt-9Z-KgQ"; */
+"PHt-9Z-KgQ.text" = "الواجهات الاكثر سفرا في العالم";
+
+/* Class = "UILabel"; text = "Come for the big dreams and dazzling lights, stay for the local haunts and the world's best pizza"; ObjectID = "PUV-Zv-pDo"; */
+"PUV-Zv-pDo.text" = "تعال من أجل الأحلام الكبيرة والأضواء المبهرة ، واستمتع بالملاذات المحلية وأفضل بيتزا في العالم";
+
+/* Class = "UILabel"; text = "Singapore"; ObjectID = "Qtx-mC-NpY"; */
+"Qtx-mC-NpY.text" = "سنغافورة";
+
+/* Class = "UIButton"; configuration.title = "Things to do "; ObjectID = "QzA-bP-4Eq"; */
+"QzA-bP-4Eq.configuration.title" = "الأشياء الذي ينبغي فعلها";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "QzA-bP-4Eq"; */
+"QzA-bP-4Eq.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Paris"; ObjectID = "Sl0-Tn-oxq"; */
+"Sl0-Tn-oxq.text" = "باريس";
+
+/* Class = "UIButton"; configuration.title = "  View map"; ObjectID = "Sn5-Po-6SJ"; */
+"Sn5-Po-6SJ.configuration.title" = "إعرض الخريطة";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Sn5-Po-6SJ"; */
+"Sn5-Po-6SJ.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Log In"; ObjectID = "TgG-EC-zJi"; */
+"TgG-EC-zJi.configuration.title" = "تسجيل دخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TgG-EC-zJi"; */
+"TgG-EC-zJi.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Sign Out"; ObjectID = "UHg-ph-sYE"; */
+"UHg-ph-sYE.configuration.title" = "أفتح حساب";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "UHg-ph-sYE"; */
+"UHg-ph-sYE.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Sign Out"; ObjectID = "UvO-Dd-KEx"; */
+"UvO-Dd-KEx.configuration.title" = "أفتح حساب";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "UvO-Dd-KEx"; */
+"UvO-Dd-KEx.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "your name"; ObjectID = "Wo7-0q-c40"; */
+"Wo7-0q-c40.placeholder" = "اسمك";
+
+/* Class = "UITableViewSection"; headerTitle = "Essential thing to do in New York City!"; ObjectID = "Z7j-CS-3aG"; */
+"Z7j-CS-3aG.headerTitle" = " قائمة الأشياء التي يمكنك القيام بها أثناء زيارة مدينة نيويورك!";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZXN-xg-srU"; */
+"ZXN-xg-srU.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "New user ?"; ObjectID = "aBq-bN-vgD"; */
+"aBq-bN-vgD.text" = "مستخدم جديد ؟";
+
+/* Class = "UIButton"; configuration.title = "Log In"; ObjectID = "aQs-W1-uVv"; */
+"aQs-W1-uVv.configuration.title" = "تسجيل دخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aQs-W1-uVv"; */
+"aQs-W1-uVv.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "eQf-5F-8TU"; */
+"eQf-5F-8TU.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Review"; ObjectID = "eRg-Zh-CGF"; */
+"eRg-Zh-CGF.title" = "المراجعات";
+
+/* Class = "UILabel"; text = " Top of the Rock"; ObjectID = "jbl-Y9-BtD"; */
+"jbl-Y9-BtD.text" = "أعلى الصخرة";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oyo-C4-oWw"; */
+"oyo-C4-oWw.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Brooklyn Bridge"; ObjectID = "pTu-kU-nD4"; */
+"pTu-kU-nD4.text" = "جسر بروكلين";
+
+/* Class = "UILabel"; text = "Singapore"; ObjectID = "qYj-tc-Uyr"; */
+"qYj-tc-Uyr.text" = "سنغافورة";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "rqH-Np-HTD"; */
+"rqH-Np-HTD.placeholder" = "كلمة المرور";
+
+/* Class = "UIButton"; configuration.title = "  View map"; ObjectID = "y4N-Ii-Tlg"; */
+"y4N-Ii-Tlg.configuration.title" = "إعرض الخريطة";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "y4N-Ii-Tlg"; */
+"y4N-Ii-Tlg.normalTitle" = "Button";
+"WKo-Am-ccT.text" = "نظرة عامة";
+"5n7-xy-cxy.text" = " نيويورك";
+"P8c-YX-HgB.text" = "تعال من أجل الأحلام الكبيرة والأضواء المبهرة ، واستمتع بالملاذات المحلية وأفضل بيتزا في العالم";
+"LSA-mA-qdM.configuration.title" = "";
+

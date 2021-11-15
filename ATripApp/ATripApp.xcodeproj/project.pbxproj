@@ -19,6 +19,8 @@
 		751D0149273A70E6005EEAA4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751D0148273A70E6005EEAA4 /* MapViewController.swift */; };
 		7552A658273FB2FF00BDB726 /* SingaporeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552A657273FB2FF00BDB726 /* SingaporeViewController.swift */; };
 		7552A65E2740592A00BDB726 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552A65D2740592A00BDB726 /* Countries.swift */; };
+		7552A660274065A400BDB726 /* SingaporeMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552A65F274065A400BDB726 /* SingaporeMap.swift */; };
+		7552A6672740F67100BDB726 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7552A6692740F67100BDB726 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,11 @@
 		751D0148273A70E6005EEAA4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7552A657273FB2FF00BDB726 /* SingaporeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingaporeViewController.swift; sourceTree = "<group>"; };
 		7552A65D2740592A00BDB726 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		7552A65F274065A400BDB726 /* SingaporeMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingaporeMap.swift; sourceTree = "<group>"; };
+		7552A6612740701E00BDB726 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		7552A6622740701F00BDB726 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		7552A6682740F67100BDB726 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7552A66B2741036D00BDB726 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +82,7 @@
 				751D01302739A2A0005EEAA4 /* Main.storyboard */,
 				751D01352739A2A4005EEAA4 /* LaunchScreen.storyboard */,
 				751D01382739A2A4005EEAA4 /* Info.plist */,
+				7552A6692740F67100BDB726 /* Localizable.strings */,
 			);
 			path = AdvisorTripApp;
 			sourceTree = "<group>";
@@ -88,7 +96,7 @@
 				7517E241273AF62300577120 /* ReviewsTableViewController.swift */,
 				7552A657273FB2FF00BDB726 /* SingaporeViewController.swift */,
 				751D012E2739A2A0005EEAA4 /* ViewController.swift */,
-				7552A65D2740592A00BDB726 /* Countries.swift */,
+				7552A65F274065A400BDB726 /* SingaporeMap.swift */,
 			);
 			path = VControllers;
 			sourceTree = "<group>";
@@ -113,6 +121,7 @@
 		7552A65C274058EA00BDB726 /* Modles */ = {
 			isa = PBXGroup;
 			children = (
+				7552A65D2740592A00BDB726 /* Countries.swift */,
 			);
 			path = Modles;
 			sourceTree = "<group>";
@@ -159,6 +168,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 751D011E2739A2A0005EEAA4;
 			productRefGroup = 751D01282739A2A0005EEAA4 /* Products */;
@@ -176,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				751D01372739A2A4005EEAA4 /* LaunchScreen.storyboard in Resources */,
+				7552A6672740F67100BDB726 /* Localizable.strings in Resources */,
 				751D01342739A2A4005EEAA4 /* Assets.xcassets in Resources */,
 				751D01322739A2A0005EEAA4 /* Main.storyboard in Resources */,
 			);
@@ -193,6 +204,7 @@
 				7517E242273AF62300577120 /* ReviewsTableViewController.swift in Sources */,
 				751D012F2739A2A0005EEAA4 /* ViewController.swift in Sources */,
 				7552A65E2740592A00BDB726 /* Countries.swift in Sources */,
+				7552A660274065A400BDB726 /* SingaporeMap.swift in Sources */,
 				751D012B2739A2A0005EEAA4 /* AppDelegate.swift in Sources */,
 				751D012D2739A2A0005EEAA4 /* SceneDelegate.swift in Sources */,
 				751D0145273A4708005EEAA4 /* HomeViewController.swift in Sources */,
@@ -207,6 +219,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				751D01312739A2A0005EEAA4 /* Base */,
+				7552A6612740701E00BDB726 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -215,8 +228,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				751D01362739A2A4005EEAA4 /* Base */,
+				7552A6622740701F00BDB726 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7552A6692740F67100BDB726 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7552A6682740F67100BDB726 /* ar */,
+				7552A66B2741036D00BDB726 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -226,6 +249,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -287,6 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

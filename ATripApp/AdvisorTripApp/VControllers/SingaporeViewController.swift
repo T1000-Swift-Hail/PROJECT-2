@@ -8,7 +8,7 @@
 import UIKit
 
 class SingaporeViewController: UIViewController {
-    
+   //passing data from storyboard to another
     var getData = " "
     var getSecondData = ""
     var getSingaporeData = ""
@@ -28,18 +28,17 @@ class SingaporeViewController: UIViewController {
         overviewLableText.text = getData
         singaporeLableText.text = getSingaporeData
         descriptionLable.text = getSecondData
+        
         singaporeImage.image = .init(named: "sing_1")
         secondSigaImage.image = .init(named: "sing_2")
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func singoMap(_ sender: Any) {
         performSegue(withIdentifier: "SingMap", sender: nil)
-        
-        
-        
     }
-    }
+}
     
     
 

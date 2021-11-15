@@ -9,14 +9,12 @@ import UIKit
 
 class ViewController: UIViewController  {
     
-   
-
     override func viewDidLoad() {
         super.viewDidLoad()
     
         // Do any additional setup after loading the view.
     }
-    
+    // performSegue to log in & sign up pages
     @IBAction func LogInBtn(_ sender: Any) {
         performSegue(withIdentifier: "BtnLogIn", sender: nil)
     }

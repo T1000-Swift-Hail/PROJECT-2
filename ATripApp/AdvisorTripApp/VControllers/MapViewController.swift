@@ -11,13 +11,16 @@ import MapKit
 import CoreLocation
 
 class MapViewControlle: UIViewController {
+    
     var check = "NY"
+    
     @IBOutlet weak var mapOutlet: MKMapView!
     
+    // display places on the map
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let places = [Countries(name: "NYC", lattitude: 40.71380627944659, longtitude:  -73.9989379757769), Countries(name: "Centeral Park", lattitude: 40.781174229456276, longtitude: -73.96664435646102), Countries(name: "Statue of Liberty National Monument", lattitude: 40.70547837282441, longtitude: -74.05249632231784), Countries(name: "Brooklyn Bridge", lattitude: 40.706272969516704, longtitude: -73.99691768954771), Countries(name: "Top of The Rock", lattitude: 40.75956149847025, longtitude: -73.97941435969796)]
+        let places = [Countries(name: "NYC".locatized, lattitude: 40.71380627944659, longtitude:  -73.9989379757769), Countries(name: "Centeral Park".locatized, lattitude: 40.781174229456276, longtitude: -73.96664435646102), Countries(name: "Statue of Liberty National Monument".locatized, lattitude: 40.70547837282441, longtitude: -74.05249632231784), Countries(name: "Brooklyn Bridge".locatized, lattitude: 40.706272969516704, longtitude: -73.99691768954771), Countries(name: "Top of The Rock".locatized, lattitude: 40.75956149847025, longtitude: -73.97941435969796)]
         
         let initalLoc = CLLocation(latitude: 40.71380627944659, longitude: -73.9989379757769)
         setStartingLocation(location: initalLoc, distance: 30000)
@@ -45,12 +48,6 @@ addAnnotation(places: places)
     }
 }
 
-
-//struct Countries {
-//  var name: String
-//  var lattitude: CLLocationDegrees
-//  var longtitude: CLLocationDegrees
-//}
 
 
 

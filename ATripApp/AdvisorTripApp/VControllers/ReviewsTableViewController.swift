@@ -11,10 +11,9 @@ import UIKit
 class ReviewsTableViewController: UITableViewController {
     
     
-    var items = ["Love the fact that I can view and manage","great app to see the essenation places to visit","easy to use and helpful app"]
+    var items = ["Love the fact that I can view and manage".locatized,"great app to see the essenation places to visit".locatized,"easy to use and helpful app".locatized]
     
     let userDefaluts = UserDefaults.standard
-    
     
     
     override func viewDidLoad() {
@@ -26,6 +25,7 @@ class ReviewsTableViewController: UITableViewController {
 
 
     }
+    // editing action to allow users to updata their reviews
     @IBAction func editng(_ sender: UIBarButtonItem) {
         if tableView.isEditing {
             tableView.isEditing = false
@@ -33,12 +33,12 @@ class ReviewsTableViewController: UITableViewController {
             tableView.isEditing = true
         }
     }
+    // textfiled with alrt to allow users to add their reviews
     @IBAction func addItem(_ sender: Any) {
         
-    
     var textFiled = UITextField()
-    let alert = UIAlertController(title: "Share your opinion", message: "", preferredStyle: .alert)
-    let action = UIAlertAction(title: "Post", style: .default) { action in
+        let alert = UIAlertController(title: "Share your opinion".locatized, message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Post".locatized, style: .default) { action in
             
         guard let text = textFiled.text else {return}
         self.items.append(text)
@@ -47,7 +47,7 @@ class ReviewsTableViewController: UITableViewController {
         }
 
         alert.addTextField { textFiledSet in
-            textFiledSet.placeholder = "Write your opinion..."
+            textFiledSet.placeholder = "Write your opinion...".locatized
             textFiled = textFiledSet
         }
 
