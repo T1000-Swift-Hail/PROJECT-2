@@ -14,7 +14,7 @@ class SartQuizViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+    //for start button.
     @IBAction func startquizzz() {
         performSegue(withIdentifier: "questionsPage", sender: nil)
         

@@ -12,14 +12,15 @@ class QuestionsPageViewController: UIViewController, UIPickerViewDelegate, UIPic
     
     
     
-    
+    //to choose the answer.
     @IBOutlet weak var optionsPickerVeiw: UIPickerView!
+    //to click confirm after choose the answer.
     @IBOutlet weak var confirm: UIButton!
+    //to change the question after every click.
     @IBOutlet weak var questionTitle: UILabel!
     
-    
+    //to count the score.
     var totalPoints = 0
-    
     var currentIndex = -1
     var gameModels = [Question]()
     
@@ -64,7 +65,7 @@ class QuestionsPageViewController: UIViewController, UIPickerViewDelegate, UIPic
     }
     
     
-    
+    //the questions with all answers.
     private func setupQuestions() {
         gameModels.append(Question(text: " أنا من ــــ " , answers: [
             Answer(text: " أمريكي " , correct: false),

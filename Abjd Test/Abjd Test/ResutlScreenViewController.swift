@@ -8,7 +8,7 @@
 import UIKit
 
 class ResutlScreenViewController: UIViewController {
-
+//for resutl screen.
     @IBOutlet weak var scoreLabel: UILabel!
     var totalPoints : Int!
     

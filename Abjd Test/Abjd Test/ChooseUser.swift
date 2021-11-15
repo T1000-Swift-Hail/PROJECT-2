@@ -10,10 +10,10 @@ import UIKit
 
 class ChooseUser : UITableViewController {
     
-    
+    //The defaluts users name.
     var items = ["Mary","John","Thomas"]
     
-    
+    //make the defalutsc users name in screen
     let userDefaluts = UserDefaults.standard
     
     

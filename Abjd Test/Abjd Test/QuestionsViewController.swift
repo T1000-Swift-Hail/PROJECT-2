@@ -339,40 +339,6 @@ class QuestionsViewController: UIViewController, UITableViewDelegate, UITableVie
         
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        tableView.deselectRow(at: indexPath, animated: true)
-//
-//        guard let question = currentQuestion else {
-//            return
-//        }
-//
-//        let answer = question.answers[indexPath.row]
-//
-//        if checkAnswer(answer: answer, question: question ) {
-//
-//            if let index = gameModels.firstIndex(where: { $0.text == question.text}) {
-//                if index < (gameModels.count - 1) {
-//                 let nextQuestion = gameModels[index+1]
-//                    print("\(nextQuestion.text)")
-//                    currentQuestion = nil
-//                    configureUI(question: nextQuestion)
-//
-//                }
-//                else {
-//                    let alert = UIAlertController(title: "Done", message: "You beat the game", preferredStyle: .alert)
-//                    alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-//                    present(alert, animated: true)
-//
-//            }
-//
-//        }
-//        else {
-//            let alert = UIAlertController(title: "Worng", message: "You Suck", preferredStyle: .alert)
-//            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-//            present(alert, animated: true)
-//        }
-//    }
-    
 }
 
 struct Question {
