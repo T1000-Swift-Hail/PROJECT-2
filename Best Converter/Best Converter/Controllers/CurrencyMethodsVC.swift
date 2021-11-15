@@ -24,6 +24,7 @@ class CurrencyMethodsVC: UIViewController {
         
         if segue.identifier == "toCurrency" {
             let vc = segue.destination as! ConversionFromVC
+            vc.typeSelected = typeSelected
         } else {
             
         }
@@ -41,7 +42,6 @@ class CurrencyMethodsVC: UIViewController {
         typeSelected = .AUD
         performSegue(withIdentifier: "toCurrency", sender: nil)
     }
-    
     @IBAction func toEuro(_ sender: UIButton) {
         typeSelected = .Euro
         performSegue(withIdentifier: "toCurrency", sender: nil)

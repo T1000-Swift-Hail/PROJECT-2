@@ -6,30 +6,30 @@
 //
 import UIKit
 
-class ConversionFromVC: UIViewController, UITextFieldDelegate {
+class ConversionFromVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
     
     var typeSelected:ConversionCurrency? = nil
+    var typeSelectedSet:ConversionCurrency? = nil
     var typeSelectedTo:ConversionCurrency? = nil
     var conversionCurrency = ConversionCurrency.USD
     var conversionCurrencyS = ConversionCurrency.USD
     
-    var previousCurrency: [Double] = []
+    var previousCurrency: [String] = []
     
     
     @IBOutlet weak var inputCurrency: UITextField!
     @IBOutlet weak var result: UILabel!
     @IBOutlet weak var segmentCurrency: UISegmentedControl!
-
-
-    // 1- array
+    @IBOutlet weak var tableView: UITableView!
     
-    //table
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        typeSelectedSet = typeSelected
         inputCurrency.delegate = self
-
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         //MARK: - Tap Gesture Recognizer, dismiss the keyboard when the user taps on the screen
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
@@ -37,195 +37,204 @@ class ConversionFromVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func conversionCurrencyTo(_ sender: UISegmentedControl) {
         
-        inputCurrency.text = ""
+        selectedCurrencyTo(sender)
         
-        switch typeSelected {
-            
+        switch typeSelectedSet {
         case .SAR:
-            switch typeSelectedTo {
-            case .USD:
-                conversionCurrency = .USD
-                guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-                result.text = "\(convertFromSarToUsd(sar: toDouble))"
-                previousCurrency.append(toDouble)
-            case .AUD:
-                guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-                result.text = "\(convertFromSarToAud(sar: toDouble))"
-                previousCurrency.append(toDouble)
-            case .Euro:
-                guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-                result.text = "\(convertFromSarToEuro(sar: toDouble))"
-                previousCurrency.append(toDouble)
-            default:
-                break
-            }
-            
+            toSAR()
         case .USD:
-            switch typeSelectedTo {
-            case .SAR:
-                guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-                result.text = "\(convertFromUsdToSar(usd: toDouble))"
-            case .AUD:
-                guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-                result.text = "\(convertFromUsdToAud(usd: toDouble))"
-            case .Euro:
-                guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-                result.text = "\(convertFromUsdToEuro(usd: toDouble))"
-            default:
-                break
-            }
-            
+            toUSD()
         case .AUD:
-            switch typeSelectedTo {
-            case .USD:
-                guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-                result.text = "\(convertFromAudToUsd(aud: toDouble))"
-            case .SAR:
-                guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-                result.text = "\(convertFromAudToSar(aud: toDouble))"
-            case .Euro:
-                guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-                result.text = "\(convertFromAudToEuro(aud: toDouble))"
-            default:
-                break
-            }
-            
+            toAUD()
         case .Euro:
-            switch typeSelectedTo {
-            case .USD:
-                guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-                result.text = "\(convertFromEuroToUsd(euro: toDouble))"
-            case .AUD:
-                guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-                result.text = "\(convertFromEuroToAud(euro: toDouble))"
-            case .SAR:
-                guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-                result.text = "\(convertFromEuroToSar(euro: toDouble))"
-            default:
-                break
-            }
+            toEuro()
         default:
             break
         }
     }
     
-    
-    @IBAction func inputCurrencyAction(_ sender: UITextField) {
-        
-        let amountCurrency = Double(inputCurrency.text ?? "0.0") ?? 0.0
-        
-        switch conversionCurrency {
-        case .SAR:
-            switch conversionCurrencyS {
-            case .USD:
-                let convertedCurrency = convertFromSarToUsd(sar: amountCurrency)
-                result.text = "\(String(format: "%.2f", convertedCurrency)) USD"
-            case .AUD:
-                let convertedCurrency = convertFromSarToAud(sar: amountCurrency)
-                result.text = "\(String(format: "%.2f", convertedCurrency)) AUD"
-            case .Euro:
-                let convertedCurrency = convertFromSarToEuro(sar: amountCurrency)
-                result.text = "\(String(format: "%.2f", convertedCurrency)) Euro"
-            case .SAR: break
-            }
-        case .USD:
-            switch conversionCurrencyS {
-            case .SAR:
-                let convertedCurrency = convertFromUsdToSar(usd: amountCurrency)
-                result.text = "\(String(format: "%.2f", convertedCurrency)) SAR"
-            case .AUD:
-                let convertedCurrency = convertFromUsdToAud(usd: amountCurrency)
-                result.text = "\(String(format: "%.2f", convertedCurrency)) AUD"
-            case .Euro:
-                let convertedCurrency = convertFromUsdToEuro(usd: amountCurrency)
-                result.text = "\(String(format: "%.2f", convertedCurrency)) Euro"
-            case .USD: break
-            }
-            
-            
-        case .AUD:
-            switch conversionCurrencyS {
-            case .USD:
-                let convertedCurrency = convertFromAudToUsd(aud: amountCurrency)
-                result.text = "\(String(format: "%.2f", convertedCurrency)) USD"
-            case .SAR:
-                let convertedCurrency = convertFromAudToSar(aud: amountCurrency)
-                result.text = "\(String(format: "%.2f", convertedCurrency)) SAR"
-            case .Euro:
-                let convertedCurrency = convertFromAudToEuro(aud: amountCurrency)
-                result.text = "\(String(format: "%.2f", convertedCurrency)) Euro"
-            case .AUD: break
-            }
-            
-            
-        case .Euro:
-            switch conversionCurrencyS {
-            case .USD:
-                let convertedCurrency = convertFromEuroToUsd(euro: amountCurrency)
-                result.text = "\(String(format: "%.2f", convertedCurrency)) USD"
-            case .AUD:
-                let convertedCurrency = convertFromEuroToAud(euro: amountCurrency)
-                result.text = "\(String(format: "%.2f", convertedCurrency)) AUD"
-            case .SAR:
-                let convertedCurrency = convertFromEuroToSar(euro: amountCurrency)
-                result.text = "\(String(format: "%.2f", convertedCurrency)) SAR"
-            case .Euro: break
-            }
-        }
+    @IBAction func inputCurrenc(_ sender: UITextField) {
         
     }
-        
-    
-    
-    
     
     
     
     
     //MARK: - Arithmetic functions for each currency
     func convertFromSarToUsd( sar: Double) -> Double {
-        return sar / 3.75000
+        return sar / 3.75
     }
     func convertFromSarToAud( sar: Double) -> Double {
-        return sar / 2.78368
+        return sar / 2.78
     }
     func convertFromSarToEuro( sar: Double) -> Double {
-        return sar / 4.33426
+        return sar / 4.33
     }
-
-     //MARK: - Arithmetic functions for each currency
+    
+    //MARK: - Arithmetic functions for each currency
     func convertFromUsdToSar( usd: Double) -> Double {
-        return usd / 0.266667
+        return usd / 0.27
     }
     func convertFromUsdToAud( usd: Double) -> Double {
-        return usd / 0.740211
+        return usd / 0.74
     }
     func convertFromUsdToEuro( usd: Double) -> Double {
-        return usd / 1.15878
+        return usd / 1.16
     }
     //MARK: - Arithmetic functions for each currency
     func convertFromAudToUsd( aud: Double) -> Double {
-        return aud / 1.35097
+        return aud / 1.35
     }
     func convertFromAudToSar( aud: Double) -> Double {
-        return aud / 0.360258
+        return aud / 0.36
     }
     func convertFromAudToEuro( aud: Double) -> Double {
-        return aud / 1.56145
+        return aud / 1.56
     }
     
     //MARK: - Arithmetic functions for each currency
     func convertFromEuroToUsd( euro: Double) -> Double {
-        return euro / 0.865199
+        return euro / 0.87
     }
     func convertFromEuroToAud( euro: Double) -> Double {
-        return euro / 0.640429
+        return euro / 0.64
     }
     func convertFromEuroToSar( euro: Double) -> Double {
-        return euro / 0.230720
+        return euro / 0.23
     }
     
     
+    
+    //MARK: -
+    
+    
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return previousCurrency.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+       cell.textLabel?.text = previousCurrency[indexPath.row]
+        
+        return cell
+    }
+    
+    //MARK: -
+
+    
+    fileprivate func selectedCurrencyTo(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            typeSelectedTo = .SAR
+        case 1:
+            typeSelectedTo = .AUD
+        case 2:
+            typeSelectedTo = .Euro
+        case 3:
+            typeSelectedTo = .USD
+        default:
+            print("")
+        }
+    }
+    
+    fileprivate func toSAR() {
+        guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return  }
+        switch typeSelectedTo {
+        case .USD:
+            result.text = "\(convertFromSarToUsd(sar: toDouble)) USD"
+            previousCurrency.append(result.text ?? " ")
+            tableView.reloadData()
+        case .AUD:
+            result.text = "\(convertFromSarToAud(sar: toDouble)) AUD"
+            previousCurrency.append(result.text ?? " ")
+            tableView.reloadData()
+        case .Euro:
+            result.text = "\(convertFromSarToEuro(sar: toDouble)) Euro"
+            previousCurrency.append(result.text ?? " ")
+            tableView.reloadData()
+        default:
+            break
+        }
+    }
+    
+    fileprivate func toUSD() {
+        switch typeSelectedTo {
+        case .SAR:
+            guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
+            result.text = "\(convertFromUsdToSar(usd: toDouble)) SAR"
+            previousCurrency.append(result.text ?? " ")
+            tableView.reloadData()
+        case .AUD:
+            guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
+            result.text = "\(convertFromUsdToAud(usd: toDouble)) AUD"
+            previousCurrency.append(result.text ?? " ")
+            tableView.reloadData()
+        case .Euro:
+            guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
+            result.text = "\(convertFromUsdToEuro(usd: toDouble)) Euro"
+            previousCurrency.append(result.text ?? " ")
+            tableView.reloadData()
+        default:
+            break
+        }
+    }
+    
+    fileprivate func toAUD() {
+        switch typeSelectedTo {
+        case .USD:
+            guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
+            result.text = "\(convertFromAudToUsd(aud: toDouble)) USD"
+            previousCurrency.append(result.text ?? " ")
+            tableView.reloadData()
+
+        case .SAR:
+            guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
+            result.text = "\(convertFromAudToSar(aud: toDouble)) SAR"
+            previousCurrency.append(result.text ?? " ")
+            tableView.reloadData()
+
+        case .Euro:
+            guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
+            result.text = "\(convertFromAudToEuro(aud: toDouble)) Euro"
+            previousCurrency.append(result.text ?? " ")
+            tableView.reloadData()
+
+        default:
+            break
+        }
+    }
+    
+    fileprivate func toEuro() {
+        switch typeSelectedTo {
+        case .USD:
+            guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
+            result.text = "\(convertFromEuroToUsd(euro: toDouble)) USD"
+            previousCurrency.append(result.text ?? " ")
+            tableView.reloadData()
+
+        case .AUD:
+            guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
+            result.text = "\(convertFromEuroToAud(euro: toDouble)) AUD"
+            previousCurrency.append(result.text ?? " ")
+            tableView.reloadData()
+
+        case .SAR:
+            guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
+            result.text = "\(convertFromEuroToSar(euro: toDouble)) SAR"
+            previousCurrency.append(result.text ?? " ")
+            tableView.reloadData()
+
+        default:
+            break
+        }
+    }
     
     
 }
