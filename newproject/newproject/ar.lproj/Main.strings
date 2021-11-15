@@ -1,6 +1,6 @@
 
 /* Class = "UILabel"; text = "Name: mohammad"; ObjectID = "2ix-O7-x96"; */
-"2ix-O7-x96.text" = "Name: محمد";
+"2ix-O7-x96.text" = "الاسم: محمد";
 
 /* Class = "UILabel"; text = "Is there refunds?"; ObjectID = "2qk-r3-166"; */
 "2qk-r3-166.text" = "هل هناك استرجاع؟";
@@ -33,7 +33,7 @@
 "B0D-Gh-fgh.normalTitle" = "Button";
 
 /* Class = "UITextField"; placeholder = "password..."; ObjectID = "B30-PU-gRm"; */
-"B30-PU-gRm.placeholder" = "password...";
+"B30-PU-gRm.placeholder" = "كلمة السر...";
 
 /* Class = "UIButton"; configuration.title = "Delet from system"; ObjectID = "D8h-9O-wr3"; */
 "D8h-9O-wr3.configuration.title" = "إحذف الصورة من النظام";
@@ -87,7 +87,7 @@
 "UKn-Py-s6g.normalTitle" = "Button";
 
 /* Class = "UILabel"; text = "The Privacy Rule establishes national standards to protect individuals' medical records and other personal health information and applies to health plans, health care clearinghouses, and those health care providers that conduct certain health care transactions electronically.  The Rule requires appropriate safeguards to protect the privacy of personal health information, and sets limits and conditions on the uses and disclosures that may be made of such information without patient authorization. The Rule also gives patients rights over their health information, including rights to examine and obtain a copy of their health records, and to request corrections."; ObjectID = "XAU-xH-gPG"; */
-"XAU-xH-gPG.text" = "The Privacy Rule establishes national standards to protect individuals' medical records and other personal health information and applies to health plans, health care clearinghouses, and those health care providers that conduct certain health care transactions electronically.  The Rule requires appropriate safeguards to protect the privacy of personal health information, and sets limits and conditions on the uses and disclosures that may be made of such information without patient authorization. The Rule also gives patients rights over their health information, including rights to examine and obtain a copy of their health records, and to request corrections.";
+"XAU-xH-gPG.text" = "تحدد قاعدة الخصوصية معايير وطنية لحماية السجلات الطبية للأفراد وغيرها من المعلومات الصحية الشخصية وتنطبق على الخطط الصحية ومراكز مقاصة الرعاية الصحية ومقدمي الرعاية الصحية الذين يجرون معاملات رعاية صحية معينة إلكترونيًا. تتطلب القاعدة ضمانات مناسبة لحماية خصوصية المعلومات الصحية ، وتضع حدودًا وشروطًا للاستخدامات والإفصاحات التي قد تتم من هذه المعلومات دون إذن المريض. تمنح القاعدة أيضًا حقوقًا للمرضى في معلوماتهم الصحية ، بما في ذلك حقوق فحص سجلاتهم الصحية والحصول عليها ، وطلب التصحيحات.";
 
 /* Class = "UINavigationItem"; title = "Line"; ObjectID = "YdR-MO-hoI"; */
 "YdR-MO-hoI.title" = "خط";
