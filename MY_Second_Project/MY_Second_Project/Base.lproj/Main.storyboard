@@ -462,7 +462,6 @@
                                                     </buttonConfiguration>
                                                     <connections>
                                                         <action selector="addToCartButt:" destination="WsI-H1-yyx" eventType="touchUpInside" id="0tD-WW-k3r"/>
-                                                        <action selector="addToCartButt:" destination="emw-tR-cM5" eventType="touchUpInside" id="TYi-Xr-OSn"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -730,7 +729,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ofd-m3-0cm"/>
+        <segue reference="7wT-jJ-xFb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="IMG_0191 2" width="903" height="828"/>

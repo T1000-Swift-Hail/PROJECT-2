@@ -94,12 +94,4 @@ class ViewController: UIViewController {
         
         }
    }
-// extension for localized
-extension String {
-    
-    var localized : String{
-        
-  return NSLocalizedString(self, comment: "")
-    }
-    
-}
+

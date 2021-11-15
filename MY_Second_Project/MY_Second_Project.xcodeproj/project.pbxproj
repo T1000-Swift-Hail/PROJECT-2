@@ -21,6 +21,7 @@
 		B7169E8227398B12000E25C4 /* WomenPerfumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E8127398B12000E25C4 /* WomenPerfumeViewController.swift */; };
 		B7169E84273A1633000E25C4 /* HomePerfumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7169E83273A1632000E25C4 /* HomePerfumeViewController.swift */; };
 		B71FEFD02740F5A80084873F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B71FEFD22740F5A80084873F /* Localizable.strings */; };
+		B71FEFD7274200FA0084873F /* localiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FEFD6274200FA0084873F /* localiz.swift */; };
 		B7FE40AA273AAC7F008FC1D8 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40A9273AAC7F008FC1D8 /* CartViewController.swift */; };
 		B7FE40B2273BE6A4008FC1D8 /* Perfume.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40B1273BE6A4008FC1D8 /* Perfume.swift */; };
 		B7FE40B6273CF46B008FC1D8 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE40B5273CF46B008FC1D8 /* ShoppingCart.swift */; };
@@ -46,6 +47,7 @@
 		B71FEFCD2740EDD60084873F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		B71FEFD12740F5A80084873F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B71FEFD32740F5AA0084873F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B71FEFD6274200FA0084873F /* localiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localiz.swift; sourceTree = "<group>"; };
 		B7FE40A9273AAC7F008FC1D8 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		B7FE40B1273BE6A4008FC1D8 /* Perfume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfume.swift; sourceTree = "<group>"; };
 		B7FE40B5273CF46B008FC1D8 /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
@@ -89,7 +91,7 @@
 				B7169E642737EEEA000E25C4 /* Assets.xcassets */,
 				B7169E662737EEEA000E25C4 /* LaunchScreen.storyboard */,
 				B7169E692737EEEA000E25C4 /* Info.plist */,
-				B71FEFD22740F5A80084873F /* Localizable.strings */,
+				B71FEFD5274200020084873F /* localized */,
 			);
 			path = MY_Second_Project;
 			sourceTree = "<group>";
@@ -118,11 +120,20 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		B71FEFD5274200020084873F /* localized */ = {
+			isa = PBXGroup;
+			children = (
+				B71FEFD22740F5A80084873F /* Localizable.strings */,
+			);
+			path = localized;
+			sourceTree = "<group>";
+		};
 		B7FE40A5273AA903008FC1D8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				B7FE40B1273BE6A4008FC1D8 /* Perfume.swift */,
 				B7FE40B5273CF46B008FC1D8 /* ShoppingCart.swift */,
+				B71FEFD6274200FA0084873F /* localiz.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71FEFD7274200FA0084873F /* localiz.swift in Sources */,
 				B71271A2273A54D800CBD52A /* CategoriesViewController.swift in Sources */,
 				B7169E7C2739213A000E25C4 /* WomenPerfumes.swift in Sources */,
 				B7169E602737EEE9000E25C4 /* ViewController.swift in Sources */,
