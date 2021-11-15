@@ -39,9 +39,31 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         guard let image = UIImage(named: "6img") else {return}
         arrPlate.append(Plate.init(name: "Golden girl".localized,  description: "Beautiful abstract art".localized, photo: image))
         
-//        guard let image = UIImage(named: "7img") else {return}
-//        arrPlate.append(Plate.init(name: "Boy", description: "canvas painting", photo: image))
-//        
+       
+        guard let image = UIImage(named: "8img") else {return}
+        arrPlate.append(Plate.init(name: "Girl".localized, description: "Beautiful abstract art".localized, photo: image))
+        
+        guard let image = UIImage(named: "9img") else {return}
+        arrPlate.append(Plate.init(name: "Skulls".localized, description: "Beautiful abstract art".localized, photo: image))
+        guard let image =  UIImage(named: "1img") else {return}
+        arrPlate.append(Plate.init(name: "Love".localized, description: "Beautiful abstract art".localized, photo: image))
+         
+        guard let image =  UIImage(named: "2img") else {return}
+        arrPlate.append(Plate.init(name: "People".localized, description: "Beautiful abstract art".localized, photo: image))
+        
+        guard let image = UIImage(named: "3img") else {return}
+        arrPlate.append(Plate.init(name: "Two girls".localized, description: "Beautiful abstract art".localized, photo: image))
+        
+        guard let image = UIImage(named: "4img") else {return}
+        arrPlate.append(Plate.init(name: "People".localized, description: "Beautiful abstract art".localized, photo: image))
+        
+        guard let image = UIImage(named: "5img") else {return}
+        arrPlate.append(Plate.init(name: "people".localized, description: "Beautiful abstract art".localized, photo: image))
+        
+        guard let image = UIImage(named: "6img") else {return}
+        arrPlate.append(Plate.init(name: "Golden girl".localized,  description: "Beautiful abstract art".localized, photo: image))
+        
+       
         guard let image = UIImage(named: "8img") else {return}
         arrPlate.append(Plate.init(name: "Girl".localized, description: "Beautiful abstract art".localized, photo: image))
         
@@ -49,10 +71,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         arrPlate.append(Plate.init(name: "Skulls".localized, description: "Beautiful abstract art".localized, photo: image))
         
 }
+    //Specifies the number of items in the list
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrPlate.count
     }
-
+//It feeds the cell with data
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell") as! HomeTableViewCell
         let Date = arrPlate[indexPath.row]

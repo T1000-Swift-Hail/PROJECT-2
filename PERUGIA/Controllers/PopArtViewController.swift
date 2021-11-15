@@ -53,11 +53,11 @@ class PopArtViewController: UIViewController, UICollectionViewDelegate, UICollec
 
     
     }
-   
+    //Specifies the number of items in the list
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrPopArt.count
     }
-    
+    //It feeds the cell with data
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier:"popArtCell" , for: indexPath) as! PopArtCollectionViewCell
         let PopArtData = arrPopArt[indexPath.row]
