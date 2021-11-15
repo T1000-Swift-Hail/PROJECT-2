@@ -1,9 +1,6 @@
 
-/* Class = "UILabel"; text = "Enter the unit in meter"; ObjectID = "1ws-9M-KAI"; */
-"1ws-9M-KAI.text" = "أدخل الوحدة بالمتر";
-
-/* Class = "UITextField"; placeholder = "0.0 SAR"; ObjectID = "2Hk-la-Nrq"; */
-"2Hk-la-Nrq.placeholder" = "0.0 SAR";
+/* Class = "UILabel"; text = "Enter the number of unit"; ObjectID = "1ws-9M-KAI"; */
+"1ws-9M-KAI.text" = "أدخل رقم الوحدة";
 
 /* Class = "UIButton"; configuration.title = "Conversion From Euro"; ObjectID = "33f-gQ-gfm"; */
 "33f-gQ-gfm.configuration.title" = "التحويل من اليورو";
@@ -11,17 +8,8 @@
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "33f-gQ-gfm"; */
 "33f-gQ-gfm.normalTitle" = "زر";
 
-/* Class = "UILabel"; text = "Enter the currency in USD"; ObjectID = "3Fu-oQ-a4W"; */
-"3Fu-oQ-a4W.text" = "أدخل العملة بالدولار الأمريكي";
-
-/* Class = "UILabel"; text = "Enter the currency in AUD"; ObjectID = "4VI-wA-Qit"; */
-"4VI-wA-Qit.text" = "أدخل العملة بالدولار الأسترالي";
-
 /* Class = "UILabel"; text = "0.0 "; ObjectID = "6h2-9c-rDw"; */
 "6h2-9c-rDw.text" = "0.0 ";
-
-/* Class = "UILabel"; text = "0.0 "; ObjectID = "7CR-fg-5ZJ"; */
-"7CR-fg-5ZJ.text" = "0.0 ";
 
 /* Class = "UINavigationItem"; title = "Currency Conversion"; ObjectID = "7FD-eM-0mh"; */
 "7FD-eM-0mh.title" = "تحويل العملات";
@@ -29,83 +17,17 @@
 /* Class = "UINavigationItem"; title = "Unit Conversion"; ObjectID = "9RK-GB-Lyu"; */
 "9RK-GB-Lyu.title" = "تحويل الوحدات";
 
-/* Class = "UINavigationItem"; title = "Unit Conversion"; ObjectID = "9rK-uQ-6wp"; */
-"9rK-uQ-6wp.title" = "تحويل الوحدات";
-
-/* Class = "UILabel"; text = "Enter the currency in Euro"; ObjectID = "BjF-ow-871"; */
-"BjF-ow-871.text" = "أدخل العملة باليورو";
-
-/* Class = "UISegmentedControl"; C25-yq-TTa.segmentTitles[0] = "SAR"; ObjectID = "C25-yq-TTa"; */
-"C25-yq-TTa.segmentTitles[0]" = "SAR";
-
-/* Class = "UISegmentedControl"; C25-yq-TTa.segmentTitles[1] = "ASD"; ObjectID = "C25-yq-TTa"; */
-"C25-yq-TTa.segmentTitles[1]" = "ASD";
-
-/* Class = "UISegmentedControl"; C25-yq-TTa.segmentTitles[2] = "Euro"; ObjectID = "C25-yq-TTa"; */
-"C25-yq-TTa.segmentTitles[2]" = "Euro";
-
-/* Class = "UILabel"; text = "0.0 "; ObjectID = "C9d-yr-y0c"; */
-"C9d-yr-y0c.text" = "0.0 ";
-
-/* Class = "UISegmentedControl"; DRl-Qw-rTV.segmentTitles[0] = "m"; ObjectID = "DRl-Qw-rTV"; */
-"DRl-Qw-rTV.segmentTitles[0]" = "m";
-
-/* Class = "UISegmentedControl"; DRl-Qw-rTV.segmentTitles[1] = "cm"; ObjectID = "DRl-Qw-rTV"; */
-"DRl-Qw-rTV.segmentTitles[1]" = "cm";
-
-/* Class = "UISegmentedControl"; DRl-Qw-rTV.segmentTitles[2] = "inch"; ObjectID = "DRl-Qw-rTV"; */
-"DRl-Qw-rTV.segmentTitles[2]" = "inch";
-
-/* Class = "UILabel"; text = "0.0 "; ObjectID = "Djp-vM-bhF"; */
-"Djp-vM-bhF.text" = "0.0 ";
-
 /* Class = "UIButton"; configuration.title = "Conversion From Meter"; ObjectID = "Dof-TE-M8M"; */
-"Dof-TE-M8M.configuration.title" = "التحويل من المتر";
+"Dof-TE-M8M.configuration.title" = "التحويل من متر";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Dof-TE-M8M"; */
 "Dof-TE-M8M.normalTitle" = "زر";
 
-/* Class = "UILabel"; text = "Enter the unit in inch"; ObjectID = "FZq-as-Paa"; */
-"FZq-as-Paa.text" = "أدخل الوحدة بالبوصة";
-
-/* Class = "UITabBarItem"; title = "Unit"; ObjectID = "Gsr-kY-cOG"; */
+/* Class = "UITabBarItem"; title = "Units"; ObjectID = "Gsr-kY-cOG"; */
 "Gsr-kY-cOG.title" = "الوحدات";
-
-/* Class = "UITextField"; placeholder = "0.0 cm"; ObjectID = "Gyf-Ev-BDE"; */
-"Gyf-Ev-BDE.placeholder" = "0.0 cm";
-
-/* Class = "UILabel"; text = "Enter the unit in kilometer"; ObjectID = "IvM-9g-13W"; */
-"IvM-9g-13W.text" = "أدخل الوحدة بالكيلومتر";
-
-/* Class = "UISegmentedControl"; KFb-bf-QZg.segmentTitles[0] = "USD"; ObjectID = "KFb-bf-QZg"; */
-"KFb-bf-QZg.segmentTitles[0]" = "USD";
-
-/* Class = "UISegmentedControl"; KFb-bf-QZg.segmentTitles[1] = "AUD"; ObjectID = "KFb-bf-QZg"; */
-"KFb-bf-QZg.segmentTitles[1]" = "AUD";
-
-/* Class = "UISegmentedControl"; KFb-bf-QZg.segmentTitles[2] = "SAR"; ObjectID = "KFb-bf-QZg"; */
-"KFb-bf-QZg.segmentTitles[2]" = "SAR";
-
-/* Class = "UILabel"; text = "Enter the currency in SAR"; ObjectID = "NJS-b0-m88"; */
-"NJS-b0-m88.text" = "أدخل العملة بالريال السعودي";
-
-/* Class = "UISegmentedControl"; NNX-Tx-M94.segmentTitles[0] = "km"; ObjectID = "NNX-Tx-M94"; */
-"NNX-Tx-M94.segmentTitles[0]" = "km";
-
-/* Class = "UISegmentedControl"; NNX-Tx-M94.segmentTitles[1] = "cm"; ObjectID = "NNX-Tx-M94"; */
-"NNX-Tx-M94.segmentTitles[1]" = "cm";
-
-/* Class = "UISegmentedControl"; NNX-Tx-M94.segmentTitles[2] = "m"; ObjectID = "NNX-Tx-M94"; */
-"NNX-Tx-M94.segmentTitles[2]" = "m";
-
-/* Class = "UILabel"; text = "0.0 "; ObjectID = "Pm7-Tj-gn1"; */
-"Pm7-Tj-gn1.text" = "0.0 ";
 
 /* Class = "UINavigationItem"; title = "Currency Conversion"; ObjectID = "Trg-dd-s8Z"; */
 "Trg-dd-s8Z.title" = "تحويل العملات";
-
-/* Class = "UITextField"; placeholder = "0.0 Euro"; ObjectID = "Vx2-EK-7Nj"; */
-"Vx2-EK-7Nj.placeholder" = "0.0 Euro";
 
 /* Class = "UIButton"; configuration.title = "Conversion From Kilometer"; ObjectID = "WgQ-GL-rTB"; */
 "WgQ-GL-rTB.configuration.title" = "التحويل من الكيلومتر";
@@ -113,20 +35,11 @@
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WgQ-GL-rTB"; */
 "WgQ-GL-rTB.normalTitle" = "زر";
 
-/* Class = "UILabel"; text = "0.0 "; ObjectID = "WrB-xN-gZD"; */
-"WrB-xN-gZD.text" = "0.0 ";
-
-/* Class = "UINavigationItem"; title = "Currency Conversion"; ObjectID = "Ws1-Ay-i2M"; */
-"Ws1-Ay-i2M.title" = "تحويل العملات";
-
 /* Class = "UIButton"; configuration.title = "Conversion From USD"; ObjectID = "Yn3-nb-ffX"; */
 "Yn3-nb-ffX.configuration.title" = "التحويل من الدولار الأمريكي";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Yn3-nb-ffX"; */
 "Yn3-nb-ffX.normalTitle" = "زر";
-
-/* Class = "UINavigationItem"; title = "Currency Conversion"; ObjectID = "ZZb-Am-wSk"; */
-"ZZb-Am-wSk.title" = "تحويل العملات";
 
 /* Class = "UIButton"; configuration.title = "Conversion From AUD"; ObjectID = "ZjD-RM-lUw"; */
 "ZjD-RM-lUw.configuration.title" = "التحويل من الدولار الاسترالي";
@@ -134,29 +47,14 @@
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZjD-RM-lUw"; */
 "ZjD-RM-lUw.normalTitle" = "زر";
 
-/* Class = "UISegmentedControl"; axd-nU-rVE.segmentTitles[0] = "USD"; ObjectID = "axd-nU-rVE"; */
-"axd-nU-rVE.segmentTitles[0]" = "USD";
-
-/* Class = "UISegmentedControl"; axd-nU-rVE.segmentTitles[1] = "AUD"; ObjectID = "axd-nU-rVE"; */
-"axd-nU-rVE.segmentTitles[1]" = "AUD";
-
-/* Class = "UISegmentedControl"; axd-nU-rVE.segmentTitles[2] = "Euro"; ObjectID = "axd-nU-rVE"; */
-"axd-nU-rVE.segmentTitles[2]" = "Euro";
-
 /* Class = "UIButton"; configuration.title = "Conversion From Inch"; ObjectID = "bd0-lc-hPq"; */
 "bd0-lc-hPq.configuration.title" = "التحويل من البوصة";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bd0-lc-hPq"; */
 "bd0-lc-hPq.normalTitle" = "زر";
 
-/* Class = "UILabel"; text = "0.0 "; ObjectID = "cpW-og-4tN"; */
-"cpW-og-4tN.text" = "0.0 ";
-
 /* Class = "UINavigationItem"; title = "Unit Conversion"; ObjectID = "fXj-0c-9Ug"; */
 "fXj-0c-9Ug.title" = "تحويل الوحدات";
-
-/* Class = "UITextField"; placeholder = "0.0 SAR"; ObjectID = "gXG-l1-0L0"; */
-"gXG-l1-0L0.placeholder" = "0.0 SAR";
 
 /* Class = "UISegmentedControl"; gdF-BI-zse.segmentTitles[0] = "km"; ObjectID = "gdF-BI-zse"; */
 "gdF-BI-zse.segmentTitles[0]" = "km";
@@ -167,35 +65,11 @@
 /* Class = "UISegmentedControl"; gdF-BI-zse.segmentTitles[2] = "inch"; ObjectID = "gdF-BI-zse"; */
 "gdF-BI-zse.segmentTitles[2]" = "inch";
 
-/* Class = "UITextField"; placeholder = "0.0 km"; ObjectID = "i4X-vJ-DNN"; */
-"i4X-vJ-DNN.placeholder" = "0.0 km";
+/* Class = "UISegmentedControl"; gdF-BI-zse.segmentTitles[3] = "m"; ObjectID = "gdF-BI-zse"; */
+"gdF-BI-zse.segmentTitles[3]" = "m";
 
-/* Class = "UINavigationItem"; title = "Currency Conversion"; ObjectID = "i6M-So-ZL8"; */
-"i6M-So-ZL8.title" = "تحويل العملات";
-
-/* Class = "UITextField"; placeholder = "0.0 AUD"; ObjectID = "jNG-HW-P05"; */
-"jNG-HW-P05.placeholder" = "0.0 AUD";
-
-/* Class = "UISegmentedControl"; k8b-Yw-72R.segmentTitles[0] = "km"; ObjectID = "k8b-Yw-72R"; */
-"k8b-Yw-72R.segmentTitles[0]" = "km";
-
-/* Class = "UISegmentedControl"; k8b-Yw-72R.segmentTitles[1] = "m"; ObjectID = "k8b-Yw-72R"; */
-"k8b-Yw-72R.segmentTitles[1]" = "m";
-
-/* Class = "UISegmentedControl"; k8b-Yw-72R.segmentTitles[2] = "inch"; ObjectID = "k8b-Yw-72R"; */
-"k8b-Yw-72R.segmentTitles[2]" = "inch";
-
-/* Class = "UITextField"; placeholder = "0.0 USD"; ObjectID = "k8x-Sw-YmY"; */
-"k8x-Sw-YmY.placeholder" = "0.0 USD";
-
-/* Class = "UISegmentedControl"; lVI-2O-jz5.segmentTitles[0] = "USD"; ObjectID = "lVI-2O-jz5"; */
-"lVI-2O-jz5.segmentTitles[0]" = "USD";
-
-/* Class = "UISegmentedControl"; lVI-2O-jz5.segmentTitles[1] = "SAR"; ObjectID = "lVI-2O-jz5"; */
-"lVI-2O-jz5.segmentTitles[1]" = "SAR";
-
-/* Class = "UISegmentedControl"; lVI-2O-jz5.segmentTitles[2] = "Euro"; ObjectID = "lVI-2O-jz5"; */
-"lVI-2O-jz5.segmentTitles[2]" = "Euro";
+/* Class = "UITextField"; placeholder = "0.0 "; ObjectID = "k8x-Sw-YmY"; */
+"k8x-Sw-YmY.placeholder" = "0.0 ";
 
 /* Class = "UISegmentedControl"; pTC-ly-Emo.segmentTitles[0] = "SAR"; ObjectID = "pTC-ly-Emo"; */
 "pTC-ly-Emo.segmentTitles[0]" = "SAR";
@@ -206,32 +80,23 @@
 /* Class = "UISegmentedControl"; pTC-ly-Emo.segmentTitles[2] = "Euro"; ObjectID = "pTC-ly-Emo"; */
 "pTC-ly-Emo.segmentTitles[2]" = "Euro";
 
-/* Class = "UINavigationItem"; title = "Currency Conversion"; ObjectID = "pV8-VX-Jvr"; */
-"pV8-VX-Jvr.title" = "تحويل العملات";
+/* Class = "UISegmentedControl"; pTC-ly-Emo.segmentTitles[3] = "USD"; ObjectID = "pTC-ly-Emo"; */
+"pTC-ly-Emo.segmentTitles[3]" = "USD";
 
-/* Class = "UITabBarItem"; title = "Currency"; ObjectID = "pvQ-jB-Sq2"; */
+/* Class = "UITabBarItem"; title = "Currencies"; ObjectID = "pvQ-jB-Sq2"; */
 "pvQ-jB-Sq2.title" = "العملات";
 
-/* Class = "UITextField"; placeholder = "0.0 m"; ObjectID = "qrc-1C-eJF"; */
-"qrc-1C-eJF.placeholder" = "0.0 m";
+/* Class = "UITextField"; placeholder = "0.0 "; ObjectID = "qrc-1C-eJF"; */
+"qrc-1C-eJF.placeholder" = "0.0 ";
 
 /* Class = "UILabel"; text = "0.0 "; ObjectID = "rnY-6U-IFP"; */
 "rnY-6U-IFP.text" = "0.0 ";
-
-/* Class = "UINavigationItem"; title = "Unit Conversion"; ObjectID = "ueZ-GI-Lwb"; */
-"ueZ-GI-Lwb.title" = "تحويل الوحدات";
-
-/* Class = "UINavigationItem"; title = "Unit Conversion"; ObjectID = "vA3-Cs-y3C"; */
-"vA3-Cs-y3C.title" = "تحويل الوحدات";
 
 /* Class = "UIButton"; configuration.title = "Conversion From SAR"; ObjectID = "vML-7P-nbd"; */
 "vML-7P-nbd.configuration.title" = "التحويل من ريال سعودي";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vML-7P-nbd"; */
-"vML-7P-nbd.normalTitle" = "زر";
-
-/* Class = "UITextField"; placeholder = "0.0 inch"; ObjectID = "vPT-0Y-apn"; */
-"vPT-0Y-apn.placeholder" = "0.0 inch";
+"vML-7P-nbd.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Conversion From Centimeter"; ObjectID = "vVu-Pu-3eK"; */
 "vVu-Pu-3eK.configuration.title" = "التحويل من السنتيمتر";
@@ -239,11 +104,5 @@
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vVu-Pu-3eK"; */
 "vVu-Pu-3eK.normalTitle" = "زر";
 
-/* Class = "UILabel"; text = "Enter the unit in centimeter"; ObjectID = "vXS-Ht-f92"; */
-"vXS-Ht-f92.text" = "أدخل الوحدة بالسنتيمتر";
-
-/* Class = "UILabel"; text = "Enter the currency in USD"; ObjectID = "wVm-E7-7FS"; */
-"wVm-E7-7FS.text" = "أدخل العملة بالدولار الأمريكي";
-
-/* Class = "UILabel"; text = "0.0 "; ObjectID = "zBF-MM-8aw"; */
-"zBF-MM-8aw.text" = "0.0 ";
+/* Class = "UILabel"; text = "Enter the number of currency:"; ObjectID = "wVm-E7-7FS"; */
+"wVm-E7-7FS.text" = "أدخل رقم العملة:";

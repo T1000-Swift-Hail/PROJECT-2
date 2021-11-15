@@ -35,6 +35,9 @@ class ConversionFromVC: UIViewController, UITextFieldDelegate, UITableViewDelega
         view.addGestureRecognizer(tap)
     }
     
+    //MARK: - IBAction for segment when choosing the user for any currency her want to convert
+
+    
     @IBAction func conversionCurrencyTo(_ sender: UISegmentedControl) {
         
         selectedCurrencyTo(sender)
@@ -60,7 +63,8 @@ class ConversionFromVC: UIViewController, UITextFieldDelegate, UITableViewDelega
     
     
     
-    //MARK: - Arithmetic functions for each currency
+    //MARK: - Arithmetic operations for conversion
+    
     func convertFromSarToUsd( sar: Double) -> Double {
         return sar / 3.75
     }
@@ -71,7 +75,8 @@ class ConversionFromVC: UIViewController, UITextFieldDelegate, UITableViewDelega
         return sar / 4.33
     }
     
-    //MARK: - Arithmetic functions for each currency
+
+
     func convertFromUsdToSar( usd: Double) -> Double {
         return usd / 0.27
     }
@@ -79,9 +84,12 @@ class ConversionFromVC: UIViewController, UITextFieldDelegate, UITableViewDelega
         return usd / 0.74
     }
     func convertFromUsdToEuro( usd: Double) -> Double {
+        
         return usd / 1.16
     }
-    //MARK: - Arithmetic functions for each currency
+
+
+
     func convertFromAudToUsd( aud: Double) -> Double {
         return aud / 1.35
     }
@@ -92,7 +100,9 @@ class ConversionFromVC: UIViewController, UITextFieldDelegate, UITableViewDelega
         return aud / 1.56
     }
     
-    //MARK: - Arithmetic functions for each currency
+
+
+
     func convertFromEuroToUsd( euro: Double) -> Double {
         return euro / 0.87
     }
@@ -105,7 +115,7 @@ class ConversionFromVC: UIViewController, UITextFieldDelegate, UITableViewDelega
     
     
     
-    //MARK: -
+    //MARK: - finction for table view
     
     
     
@@ -148,15 +158,21 @@ class ConversionFromVC: UIViewController, UITextFieldDelegate, UITableViewDelega
         guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return  }
         switch typeSelectedTo {
         case .USD:
-            result.text = "\(convertFromSarToUsd(sar: toDouble)) USD"
+            let converted = convertFromSarToUsd(sar: toDouble)
+            let resultRounded = String(format: "%.2f", converted)
+            result.text = "\(resultRounded) USD"
             previousCurrency.append(result.text ?? " ")
             tableView.reloadData()
         case .AUD:
-            result.text = "\(convertFromSarToAud(sar: toDouble)) AUD"
+            let converted = convertFromSarToAud(sar: toDouble)
+            let resultRounded = String(format: "%.2f", converted)
+            result.text = "\(resultRounded) AUD"
             previousCurrency.append(result.text ?? " ")
             tableView.reloadData()
         case .Euro:
-            result.text = "\(convertFromSarToEuro(sar: toDouble)) Euro"
+            let converted = convertFromSarToEuro(sar: toDouble)
+            let resultRounded = String(format: "%.2f", converted)
+            result.text = "\(resultRounded) Euro"
             previousCurrency.append(result.text ?? " ")
             tableView.reloadData()
         default:
@@ -168,17 +184,23 @@ class ConversionFromVC: UIViewController, UITextFieldDelegate, UITableViewDelega
         switch typeSelectedTo {
         case .SAR:
             guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-            result.text = "\(convertFromUsdToSar(usd: toDouble)) SAR"
+            let converted = convertFromUsdToSar(usd: toDouble)
+            let resultRounded = String(format: "%.2f", converted)
+            result.text = "\(resultRounded) SAR"
             previousCurrency.append(result.text ?? " ")
             tableView.reloadData()
         case .AUD:
             guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-            result.text = "\(convertFromUsdToAud(usd: toDouble)) AUD"
+            let converted = convertFromUsdToAud(usd: toDouble)
+            let resultRounded = String(format: "%.2f", converted)
+            result.text = "\(resultRounded) AUD"
             previousCurrency.append(result.text ?? " ")
             tableView.reloadData()
         case .Euro:
             guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-            result.text = "\(convertFromUsdToEuro(usd: toDouble)) Euro"
+            let converted = convertFromUsdToEuro(usd: toDouble)
+            let resultRounded = String(format: "%.2f", converted)
+            result.text = "\(resultRounded) Euro"
             previousCurrency.append(result.text ?? " ")
             tableView.reloadData()
         default:
@@ -190,19 +212,25 @@ class ConversionFromVC: UIViewController, UITextFieldDelegate, UITableViewDelega
         switch typeSelectedTo {
         case .USD:
             guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-            result.text = "\(convertFromAudToUsd(aud: toDouble)) USD"
+            let converted = convertFromAudToUsd(aud: toDouble)
+            let resultRounded = String(format: "%.2f", converted)
+            result.text = "\(resultRounded) USD"
             previousCurrency.append(result.text ?? " ")
             tableView.reloadData()
 
         case .SAR:
             guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-            result.text = "\(convertFromAudToSar(aud: toDouble)) SAR"
+            let converted = convertFromAudToSar(aud: toDouble)
+            let resultRounded = String(format: "%.2f", converted)
+            result.text = "\(resultRounded) SAR"
             previousCurrency.append(result.text ?? " ")
             tableView.reloadData()
 
         case .Euro:
             guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-            result.text = "\(convertFromAudToEuro(aud: toDouble)) Euro"
+            let converted = convertFromAudToEuro(aud: toDouble)
+            let resultRounded = String(format: "%.2f", converted)
+            result.text = "\(resultRounded) Euro"
             previousCurrency.append(result.text ?? " ")
             tableView.reloadData()
 
@@ -215,19 +243,25 @@ class ConversionFromVC: UIViewController, UITextFieldDelegate, UITableViewDelega
         switch typeSelectedTo {
         case .USD:
             guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-            result.text = "\(convertFromEuroToUsd(euro: toDouble)) USD"
+            let converted = convertFromEuroToUsd(euro: toDouble)
+            let resultRounded = String(format: "%.2f", converted)
+            result.text = "\(resultRounded) USD"
             previousCurrency.append(result.text ?? " ")
             tableView.reloadData()
 
         case .AUD:
             guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-            result.text = "\(convertFromEuroToAud(euro: toDouble)) AUD"
+            let converted = convertFromEuroToAud(euro: toDouble)
+            let resultRounded = String(format: "%.2f", converted)
+            result.text = "\(resultRounded) AUD"
             previousCurrency.append(result.text ?? " ")
             tableView.reloadData()
 
         case .SAR:
             guard let toDouble: Double = Double(inputCurrency.text ?? "nil") else { return }
-            result.text = "\(convertFromEuroToSar(euro: toDouble)) SAR"
+            let converted = convertFromEuroToSar(euro: toDouble)
+            let resultRounded = String(format: "%.2f", converted)
+            result.text = "\(resultRounded) SAR"
             previousCurrency.append(result.text ?? " ")
             tableView.reloadData()
 

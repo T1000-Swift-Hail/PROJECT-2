@@ -34,8 +34,8 @@
 		047F00632740DFB0004E718A /* ConversionFromVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionFromVC.swift; sourceTree = "<group>"; };
 		047F008E27418173004E718A /* ConversionFromUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionFromUnit.swift; sourceTree = "<group>"; };
 		047F0090274182BF004E718A /* UnitMethodsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitMethodsVC.swift; sourceTree = "<group>"; };
-		04B56246273A9DC5000CFC60 /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Main.strings"; sourceTree = "<group>"; };
-		04B56247273A9DC5000CFC60 /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		04B2AF8527426DD700E71DDA /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Main.strings"; sourceTree = "<group>"; };
+		04B2AF8627426DD700E71DDA /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +190,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				045D97822738A05200B69CB2 /* Base */,
-				04B56246273A9DC5000CFC60 /* ar-SA */,
+				04B2AF8527426DD700E71DDA /* ar-SA */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				045D97872738A05400B69CB2 /* Base */,
-				04B56247273A9DC5000CFC60 /* ar-SA */,
+				04B2AF8627426DD700E71DDA /* ar-SA */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

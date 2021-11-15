@@ -9,6 +9,7 @@ import UIKit
 
 class ConversionFromUnit: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
     
+    
     var typeSelected: ConversionUnit? = nil
     var typeSelectedSet:ConversionUnit? = nil
     var typeSelectedTo:ConversionUnit? = nil
@@ -17,6 +18,7 @@ class ConversionFromUnit: UIViewController, UITextFieldDelegate, UITableViewDele
     
     var previousUnit: [String] = []
     
+    //MARK: -
     @IBOutlet weak var inputUnit: UITextField!
     @IBOutlet weak var resultUnit: UILabel!
     @IBOutlet weak var segmentUnit: UISegmentedControl!
@@ -35,6 +37,7 @@ class ConversionFromUnit: UIViewController, UITextFieldDelegate, UITableViewDele
         
     }
     
+    //MARK: - IBAction for segment when choosing the user for any unit her want to convert
     
     @IBAction func conversionUnitTo(_ sender: UISegmentedControl) {
                 
@@ -47,17 +50,23 @@ class ConversionFromUnit: UIViewController, UITextFieldDelegate, UITableViewDele
 
             switch typeSelectedTo {
             case .cm:
-                resultUnit.text = "\(convertFromMToCm(meter: toDouble)) cm"
+                let converted = convertFromMToCm(meter: toDouble)
+                let resultRounded = String(format: "%.5f", converted)
+                resultUnit.text = "\(resultRounded) cm"
                 previousUnit.append(resultUnit.text ?? " ")
                 tableView.reloadData()
 
             case .km:
-                resultUnit.text = "\(convertFromMToKm(meter: toDouble)) km"
+                let converted = convertFromMToKm(meter: toDouble)
+                let resultRounded = String(format: "%.5f", converted)
+                resultUnit.text = "\(resultRounded) km"
                 previousUnit.append(resultUnit.text ?? " ")
                 tableView.reloadData()
 
             case .inch:
-                resultUnit.text = "\(convertFromMToInch(meter: toDouble)) inch"
+                let converted = convertFromMToInch(meter: toDouble)
+                let resultRounded = String(format: "%.5f", converted)
+                resultUnit.text = "\(resultRounded) inch"
                 previousUnit.append(resultUnit.text ?? " ")
                 tableView.reloadData()
 
@@ -66,20 +75,25 @@ class ConversionFromUnit: UIViewController, UITextFieldDelegate, UITableViewDele
             
         case .cm:
             guard let toDouble: Double = Double(inputUnit.text ?? "nil") else { return }
-
             switch typeSelectedTo {
             case .km:
-                resultUnit.text = "\(convertFromCmTokm(centimeter: toDouble)) km"
+                let converted = convertFromCmTokm(centimeter: toDouble)
+                let resultRounded = String(format: "%.5f", converted)
+                resultUnit.text = "\(resultRounded) km"
                 previousUnit.append(resultUnit.text ?? " ")
                 tableView.reloadData()
 
             case .m:
-                resultUnit.text = "\(convertFromCmToM(centimeter: toDouble)) m"
+                let converted = convertFromCmToM(centimeter: toDouble)
+                let resultRounded = String(format: "%.5f", converted)
+                resultUnit.text = "\(resultRounded) m"
                 previousUnit.append(resultUnit.text ?? " ")
                 tableView.reloadData()
 
             case .inch:
-                resultUnit.text = "\(convertFromCmToInch(centimeter: toDouble)) inch"
+                let converted = convertFromCmToInch(centimeter: toDouble)
+                let resultRounded = String(format: "%.5f", converted)
+                resultUnit.text = "\(resultRounded) inch"
                 previousUnit.append(resultUnit.text ?? " ")
                 tableView.reloadData()
 
@@ -88,45 +102,51 @@ class ConversionFromUnit: UIViewController, UITextFieldDelegate, UITableViewDele
             
         case .km:
             guard let toDouble: Double = Double(inputUnit.text ?? "nil") else { return }
-
             switch typeSelectedTo {
             case .cm:
-                resultUnit.text = "\(convertFromKmToCm(kilometer: toDouble)) cm"
+                let converted = convertFromKmToCm(kilometer: toDouble)
+                let resultRounded = String(format: "%.5f", converted)
+                resultUnit.text = "\(resultRounded) cm"
                 previousUnit.append(resultUnit.text ?? " ")
                 tableView.reloadData()
 
             case .m:
-                resultUnit.text = "\(converFromKmToM(kilometer: toDouble)) m"
+                let converted = converFromKmToM(kilometer: toDouble)
+                let resultRounded = String(format: "%.5f", converted)
+                resultUnit.text = "\(resultRounded) m"
                 previousUnit.append(resultUnit.text ?? " ")
                 tableView.reloadData()
-
             case .inch:
-                resultUnit.text = "\(convertFromKmToInch(kilometer: toDouble)) inch"
+                let converted = convertFromKmToInch(kilometer: toDouble)
+                let resultRounded = String(format: "%.5f", converted)
+                resultUnit.text = "\(resultRounded) inch"
                 previousUnit.append(resultUnit.text ?? " ")
                 tableView.reloadData()
-
             default: break
             }
-            
         case .inch:
             guard let toDouble: Double = Double(inputUnit.text ?? "nil") else { return }
-
             switch typeSelectedTo {
             case .cm:
-                resultUnit.text = "\(convertFromInchToCm(inch: toDouble)) cm"
+                let converted = convertFromInchToCm(inch: toDouble)
+                let resultRounded = String(format: "%.5f", converted)
+                resultUnit.text = "\(resultRounded) cm"
                 previousUnit.append(resultUnit.text ?? " ")
                 tableView.reloadData()
 
             case .km:
-                resultUnit.text = "\(convertFromInchToKm(inch: toDouble)) km"
+                let converted = convertFromInchToKm(inch: toDouble)
+                let resultRounded = String(format: "%.5f", converted)
+                resultUnit.text = "\(resultRounded) km"
                 previousUnit.append(resultUnit.text ?? " ")
                 tableView.reloadData()
 
             case .m:
-                resultUnit.text = "\(convertFromInchToM(inch: toDouble)) m"
+                let converted = convertFromInchToM(inch: toDouble)
+                let resultRounded = String(format: "%.5f", converted)
+                resultUnit.text = "\(resultRounded) m"
                 previousUnit.append(resultUnit.text ?? " ")
                 tableView.reloadData()
-
             default: break
             }
         default: break
@@ -134,14 +154,7 @@ class ConversionFromUnit: UIViewController, UITextFieldDelegate, UITableViewDele
         
         
     }
-    
-    
-    @IBAction func inputUnit(_ sender: UITextField) {
-
-    }
-
-    
-    //MARK: -
+    //MARK: - Arithmetic operations for conversion
     
     func convertFromMToKm( meter: Double) -> Double {
         return meter * 0.001
@@ -154,10 +167,6 @@ class ConversionFromUnit: UIViewController, UITextFieldDelegate, UITableViewDele
     }
     
     
-    //MARK: -
-    
-    
-    
     func converFromKmToM( kilometer: Double) -> Double {
         return kilometer * 1000
     }
@@ -167,10 +176,7 @@ class ConversionFromUnit: UIViewController, UITextFieldDelegate, UITableViewDele
     func convertFromKmToInch( kilometer: Double) -> Double {
         return kilometer * 39370.078
     }
-    
-    
-    //MARK: -
-    
+
     
     
     func convertFromCmTokm (centimeter: Double) -> Double {
@@ -182,9 +188,7 @@ class ConversionFromUnit: UIViewController, UITextFieldDelegate, UITableViewDele
     func convertFromCmToInch (centimeter: Double) -> Double {
         return centimeter * 0.39370
     }
-    
-    //MARK: -
-    
+        
     
     func convertFromInchToKm (inch: Double) -> Double {
         return inch * 0.0000254
@@ -214,7 +218,9 @@ class ConversionFromUnit: UIViewController, UITextFieldDelegate, UITableViewDele
         }
     }
     
-    
+  
+    //MARK: - finction for table view
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
