@@ -1,0 +1,162 @@
+
+/* Class = "UILabel"; text = "Name: mohammad"; ObjectID = "2ix-O7-x96"; */
+"2ix-O7-x96.text" = "Name: محمد";
+
+/* Class = "UILabel"; text = "Is there refunds?"; ObjectID = "2qk-r3-166"; */
+"2qk-r3-166.text" = "هل هناك استرجاع؟";
+
+/* Class = "UILabel"; text = "Email:mohhamad@hhhh.com"; ObjectID = "3ip-yk-faR"; */
+"3ip-yk-faR.text" = "Email:mohhamad@hhhh.com";
+
+/* Class = "UILabel"; text = "Enter our website www.bestTeam.com"; ObjectID = "4Qt-Tv-2bn"; */
+"4Qt-Tv-2bn.text" = "ادخل موقعنا  www.bestTeam.com";
+
+/* Class = "UILabel"; text = "Revenu:"; ObjectID = "4S3-Tg-Qa1"; */
+"4S3-Tg-Qa1.text" = "عائداتعائدات:";
+
+/* Class = "UILabel"; text = "send us an email on : bestTeam@bestteam.com"; ObjectID = "4nG-80-vMS"; */
+"4nG-80-vMS.text" = "send us an email on : bestTeam@bestteam.com";
+
+/* Class = "UILabel"; text = "Bank:alrajhe"; ObjectID = "5Du-lk-wsk"; */
+"5Du-lk-wsk.text" = "بنك الراجحي";
+
+/* Class = "UILabel"; text = "Acount number:SA2330000060804343"; ObjectID = "6Uk-p6-FDC"; */
+"6Uk-p6-FDC.text" = "Acount number:SA2330000060804343";
+
+/* Class = "UIButton"; configuration.title = "Add Imege"; ObjectID = "7fw-it-Nf5"; */
+"7fw-it-Nf5.configuration.title" = "أضف الصورة";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7fw-it-Nf5"; */
+"7fw-it-Nf5.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "B0D-Gh-fgh"; */
+"B0D-Gh-fgh.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "password..."; ObjectID = "B30-PU-gRm"; */
+"B30-PU-gRm.placeholder" = "password...";
+
+/* Class = "UIButton"; configuration.title = "Delet from system"; ObjectID = "D8h-9O-wr3"; */
+"D8h-9O-wr3.configuration.title" = "إحذف الصورة من النظام";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "D8h-9O-wr3"; */
+"D8h-9O-wr3.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "EBU-oG-2tB"; */
+"EBU-oG-2tB.title" = "Item";
+
+/* Class = "UILabel"; text = "Total Cost:"; ObjectID = "GJC-ZL-XEI"; */
+"GJC-ZL-XEI.text" = "التكلفة الكلية:";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "Lfa-Lu-wUC"; */
+"Lfa-Lu-wUC.placeholder" = "كلمة السر";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "Nbu-aG-7nt"; */
+"Nbu-aG-7nt.title" = "Item";
+
+/* Class = "UIButton"; configuration.title = "delete Imege"; ObjectID = "OJ9-Pg-7vB"; */
+"OJ9-Pg-7vB.configuration.title" = "إحذف الصورة";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "OJ9-Pg-7vB"; */
+"OJ9-Pg-7vB.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "mohhamad"; ObjectID = "QCh-E6-4V4"; */
+"QCh-E6-4V4.text" = "محمد";
+
+/* Class = "UILabel"; text = "Phone number:96688888889"; ObjectID = "QLk-3x-L1D"; */
+"QLk-3x-L1D.text" = "Phone number:96688888889";
+
+/* Class = "UILabel"; text = "NO"; ObjectID = "R5X-xY-eob"; */
+"R5X-xY-eob.text" = "لا";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "S1D-D9-5bl"; */
+"S1D-D9-5bl.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "NetProfit:"; ObjectID = "TRg-sg-xhC"; */
+"TRg-sg-xhC.text" = "الربح الصافي:";
+
+/* Class = "UILabel"; text = "Country:Saudi Arabia"; ObjectID = "Tj9-f3-tQ9"; */
+"Tj9-f3-tQ9.text" = "الدولة:المملكة العربية السعودية";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "To6-bH-rGk"; */
+"To6-bH-rGk.title" = "Item";
+
+/* Class = "UIButton"; configuration.title = "edit"; ObjectID = "UKn-Py-s6g"; */
+"UKn-Py-s6g.configuration.title" = "تعديل";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "UKn-Py-s6g"; */
+"UKn-Py-s6g.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "The Privacy Rule establishes national standards to protect individuals' medical records and other personal health information and applies to health plans, health care clearinghouses, and those health care providers that conduct certain health care transactions electronically.  The Rule requires appropriate safeguards to protect the privacy of personal health information, and sets limits and conditions on the uses and disclosures that may be made of such information without patient authorization. The Rule also gives patients rights over their health information, including rights to examine and obtain a copy of their health records, and to request corrections."; ObjectID = "XAU-xH-gPG"; */
+"XAU-xH-gPG.text" = "The Privacy Rule establishes national standards to protect individuals' medical records and other personal health information and applies to health plans, health care clearinghouses, and those health care providers that conduct certain health care transactions electronically.  The Rule requires appropriate safeguards to protect the privacy of personal health information, and sets limits and conditions on the uses and disclosures that may be made of such information without patient authorization. The Rule also gives patients rights over their health information, including rights to examine and obtain a copy of their health records, and to request corrections.";
+
+/* Class = "UINavigationItem"; title = "Line"; ObjectID = "YdR-MO-hoI"; */
+"YdR-MO-hoI.title" = "خط";
+
+/* Class = "UILabel"; text = "Common question"; ObjectID = "YlE-aN-UGo"; */
+"YlE-aN-UGo.text" = "الأسئلة الشاذعة";
+
+/* Class = "UILabel"; text = "Privacy"; ObjectID = "Zdz-yG-pRH"; */
+"Zdz-yG-pRH.text" = "الخصوصية";
+
+/* Class = "UITextField"; placeholder = "email..."; ObjectID = "av6-QH-QXH"; */
+"av6-QH-QXH.placeholder" = "الايميل...";
+
+/* Class = "UILabel"; text = "distrect:A"; ObjectID = "cJ7-g7-27G"; */
+"cJ7-g7-27G.text" = "القطاع:A";
+
+/* Class = "UIButton"; configuration.title = "sign up"; ObjectID = "fCw-6w-Xfi"; */
+"fCw-6w-Xfi.configuration.title" = "التسجيل";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fCw-6w-Xfi"; */
+"fCw-6w-Xfi.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Employee:"; ObjectID = "gDz-H7-jJV"; */
+"gDz-H7-jJV.text" = "الموظفين:";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "gJt-s3-RoV"; */
+"gJt-s3-RoV.title" = "Item";
+
+/* Class = "UIButton"; configuration.title = "sign up"; ObjectID = "gWZ-Lm-X9x"; */
+"gWZ-Lm-X9x.configuration.title" = "التسجيل";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gWZ-Lm-X9x"; */
+"gWZ-Lm-X9x.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "sign in"; ObjectID = "hIy-lt-Y6s"; */
+"hIy-lt-Y6s.configuration.title" = "تسجيل الدخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hIy-lt-Y6s"; */
+"hIy-lt-Y6s.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "City:Hail"; ObjectID = "hfa-qk-FL5"; */
+"hfa-qk-FL5.text" = "المدينة:حائل";
+
+/* Class = "UILabel"; text = "How to reset my password?"; ObjectID = "kIn-H5-C9c"; */
+"kIn-H5-C9c.text" = "كيف استطيع كلمة السر؟";
+
+/* Class = "UILabel"; text = "Acount informations"; ObjectID = "nS9-Pg-hQD"; */
+"nS9-Pg-hQD.text" = "معلومات الحساب";
+
+/* Class = "UILabel"; text = "post code:81411"; ObjectID = "nrI-S5-4p5"; */
+"nrI-S5-4p5.text" = "الرمز البريدي:81411";
+
+/* Class = "UILabel"; text = "Why us?"; ObjectID = "qL7-Nw-8IL"; */
+"qL7-Nw-8IL.text" = "لماذا نحن؟";
+
+/* Class = "UITextField"; placeholder = "email..."; ObjectID = "ryU-Zm-5Ls"; */
+"ryU-Zm-5Ls.placeholder" = "الايميل...";
+
+/* Class = "UILabel"; text = "Best apps devolping team"; ObjectID = "u9c-BG-P2m"; */
+"u9c-BG-P2m.text" = "Best apps devolping team";
+
+/* Class = "UILabel"; text = "How to connect us ?"; ObjectID = "vIS-U7-aR0"; */
+"vIS-U7-aR0.text" = "كيف تتواصل معنا؟";
+
+/* Class = "UIButton"; configuration.title = "sign in"; ObjectID = "w7c-BI-Wtb"; */
+"w7c-BI-Wtb.configuration.title" = "تسجيل الدخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "w7c-BI-Wtb"; */
+"w7c-BI-Wtb.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Bar"; ObjectID = "wK4-tU-MYD"; */
+"wK4-tU-MYD.title" = "Bar";

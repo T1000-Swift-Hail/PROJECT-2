@@ -37,6 +37,8 @@
 		6D940D6E273EC3DA0052E924 /* ChosePikerDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosePikerDataViewController.swift; sourceTree = "<group>"; };
 		6DBF62DD273B9CEE006418CE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6DBF62DF273BA5A4006418CE /* CashingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashingManager.swift; sourceTree = "<group>"; };
+		6DF22D6B2741CE3100C697CD /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		6DF22D6C2741CE3100C697CD /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		7A44AF2B5FA10DBA2800F5A0 /* Pods-newproject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newproject.debug.xcconfig"; path = "Target Support Files/Pods-newproject/Pods-newproject.debug.xcconfig"; sourceTree = "<group>"; };
 		E3EF347F29193944ABD5AEC4 /* Pods_newproject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newproject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -155,6 +157,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 6D48068C2735C8E00052E825;
 			packageReferences = (
@@ -247,6 +250,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D48069F2735C8E00052E825 /* Base */,
+				6DF22D6B2741CE3100C697CD /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -255,6 +259,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D4806A42735C8E60052E825 /* Base */,
+				6DF22D6C2741CE3100C697CD /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -327,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

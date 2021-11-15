@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "wlcom.png",
+      "filename" : "signinAny.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +12,6 @@
           "value" : "dark"
         }
       ],
-      "filename" : "welcomeDark.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
