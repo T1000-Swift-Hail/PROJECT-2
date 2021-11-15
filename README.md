@@ -25,7 +25,8 @@ Express delivery to the site
 
 
 ### User Stories :
-// Add user stories here.   
+The user logs in or registers a new user with an email and password
+Selects from products, adds to purchases, has the option to delete or favorite and choose a payment method  
 
 
 

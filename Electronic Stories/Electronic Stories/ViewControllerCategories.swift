@@ -25,6 +25,9 @@ class ViewControllerCategories: UIViewController {
    
 
     
+    @IBAction func showGalaxy(_ sender: Any) {
+        performSegue(withIdentifier: "galaxyProductsPage", sender: nil)
+    }
 }
 
 

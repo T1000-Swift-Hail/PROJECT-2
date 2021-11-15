@@ -35,11 +35,13 @@ class AndroidTableViewCell: UITableViewCell {
     }
 
   
+
     @IBAction func addGalaxy(_ sender: Any) {
-   
+  
     
     let proudect = Galaxy(name:nameAndroid.text ?? "" ,price: Double(Int(priceAndroid.text ?? "0") ?? 0) , photo : imgAndroid.image!)
-        shoppingAndroid.galxy1.append(proudect)
-     
+        shoppingCartAndroid.products.append(proudect)
+       
 }
 }
+

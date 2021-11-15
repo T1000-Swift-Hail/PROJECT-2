@@ -17,18 +17,17 @@ class LoginnViewController: UIViewController {
            super.viewDidLoad()
     }
     
-    
-    
+        
     @IBAction func btnRegistration(_ sender: UIButton) {
         
         if emilTextField.text?.isEmpty ?? true || passwordTextField.text?.isEmpty ?? true {
-            let alert = UIAlertController(title: "please full in Email", message: "your email is missing", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default , handler: nil))
+            let alert = UIAlertController(title: "please full in Email".localized, message: "your email is missing".localized, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK".localized, style: .default , handler: nil))
             self.present(alert, animated : true)
         }
         else {
     
-    let alert = UIAlertController(title: "Welcome To Store", message: "Complete Registration", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Welcome To Store".localized, message: "Complete Registration".localized, preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "OK", style: .default , handler: nil))
     self.present(alert, animated : true)
         }

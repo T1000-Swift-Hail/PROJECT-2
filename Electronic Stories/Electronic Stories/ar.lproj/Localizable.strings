@@ -1,8 +1,37 @@
-/* 
+/*
   Localizable.strings
   Electronic Stories
 
   Created by Asma Rasheed on 05/04/1443 AH.
   
 */
-"" = "";
+
+"Case Iphone 13" = "غلاف أيفون ١٣";
+"Case Iphone 12" = "غلاف أيفون ١٢";
+"charge" = "شـاحن";
+"Headphones1" = "سماعات ";
+"Headphones2" = "غلاف أيفون ١٣";
+"Bluetooth headset" = "سماعات رأس";
+"bluetooth earbuds" = "سماعات بلوتوث";
+"Glass Protector" = "شــاشة حمايه";
+"Case Galaxy 13" = "غلاف جالكسي ١٣";
+"Case Galaxy 12" = "غلاف جالكسي ١٢";
+"Smart Watch Galaxy1" = "ساعه ذكيه جالكسي";
+"Headset Galaxy1" = "سماعات رأس جالكسي";
+"Headset Galaxy2" = "سماعات رأس جالكسي ٢";
+"Smart Watch Galaxy2" = "ساعه ذكيه جالكسي ٢";
+"bluetooth earbuds" = "سماعه بلوتوث";
+"Case Galaxy 11" = "شاشة حمـايه";
+
+"please full in Email" = "يرجئ  تعبئة الأيميل";
+"your email is missing" = "بريد الألكتروني غير مسجل";
+"OK" = "نعم";
+"Welcome To Store" = "مرحباً بك في المتجر";
+"Complete Registration" = "أكملت التسجيل";
+"OK" = "نعم";
+
+"Choose the appropriate payment method " = "أختر طريقة دفع";
+"Welcome To Store" = "أهلاً وسهلاً بك";
+"please full in Email" = "يرجئ تعبئه الأيميل";
+"OK" = "تم";
+"Emil address" = "الايميل";

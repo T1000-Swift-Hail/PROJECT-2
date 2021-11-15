@@ -21,14 +21,14 @@ class AndroidViewController: UIViewController , UITableViewDelegate , UITableVie
         tableView.delegate = self
         tableView.dataSource = self
     
-        arrAndroid.append(Galaxy.init(name:"Case Galaxy 13" , price: 70, photo: UIImage(named: "case Galaxy1")!))
-        arrAndroid.append(Galaxy.init(name:"Case Galaxy 12" , price: 120, photo: UIImage(named: "case Galaxy2")!))
-        arrAndroid.append(Galaxy.init(name:"Smart Watch Galaxy1" , price: 1200, photo: UIImage(named: "Smart Galaxy1")!))
-        arrAndroid.append(Galaxy.init(name:"Headset Galaxy1" , price: 600, photo: UIImage(named: "GalaxyHeadset1")!))
-        arrAndroid.append(Galaxy.init(name:"Headset Galaxy1" , price: 550, photo: UIImage(named: "GalaxyHeadset2")!))
-        arrAndroid.append(Galaxy.init(name:"Smart Watch Galaxy2" , price: 900, photo: UIImage(named: "Smart Galaxy.1JPG")!))
-        arrAndroid.append(Galaxy.init(name:"bluetooth earbuds" , price: 300, photo: UIImage(named: "bluetooth earbuds")!))
-        arrAndroid.append(Galaxy.init(name:"Case Galaxy 11" , price: 100, photo: UIImage(named: "case11111")!))
+        arrAndroid.append(Galaxy.init(name:NSLocalizedString("Case Galaxy 13", comment: "") , price: 70, photo: UIImage(named: "case Galaxy1")!))
+        arrAndroid.append(Galaxy.init(name:NSLocalizedString("Case Galaxy 12", comment: "") , price: 120, photo: UIImage(named: "case Galaxy2")!))
+        arrAndroid.append(Galaxy.init(name:NSLocalizedString("Smart Watch Galaxy1", comment: "") , price: 1200, photo: UIImage(named: "Smart Galaxy1")!))
+        arrAndroid.append(Galaxy.init(name:NSLocalizedString("Headset Galaxy1", comment: ""), price: 600, photo: UIImage(named: "GalaxyHeadset1")!))
+        arrAndroid.append(Galaxy.init(name:NSLocalizedString("Headset Galaxy2", comment: "") , price: 550, photo: UIImage(named: "GalaxyHeadset2")!))
+        arrAndroid.append(Galaxy.init(name:NSLocalizedString("Smart Watch Galaxy2", comment: "") , price: 900, photo: UIImage(named: "Smart Galaxy.1JPG")!))
+        arrAndroid.append(Galaxy.init(name:NSLocalizedString("bluetooth earbuds", comment: "") , price: 300, photo: UIImage(named: "bluetooth earbuds")!))
+        arrAndroid.append(Galaxy.init(name:NSLocalizedString("Case Galaxy 11", comment: "") , price: 100, photo: UIImage(named: "case11111")!))
     
    
     

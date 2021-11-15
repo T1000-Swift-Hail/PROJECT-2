@@ -1,6 +1,6 @@
 
 /* Class = "UITextField"; text = "Last name"; ObjectID = "06o-0S-mfS"; */
-"06o-0S-mfS.text" = "Last name";
+"06o-0S-mfS.text" = "الآسم الأخير";
 
 /* Class = "UILabel"; text = "price"; ObjectID = "1ne-9J-V1t"; */
 "1ne-9J-V1t.text" = "السعر";
@@ -78,13 +78,13 @@
 "aSf-Er-Ffb.text" = "سجل الآن واستمتع بتجربة شراء رائعة";
 
 /* Class = "UILabel"; text = "paypal"; ObjectID = "b0c-d7-XQe"; */
-"b0c-d7-XQe.text" = "paypal";
+"b0c-d7-XQe.text" = "باي بال";
 
 /* Class = "UITextField"; text = "First name "; ObjectID = "eMt-YA-QZ0"; */
-"eMt-YA-QZ0.text" = "الأسم الأول ";
+"eMt-YA-QZ0.placeholder" = "الأسم الأول ";
 
 /* Class = "UITextField"; text = "Password"; ObjectID = "eUe-My-QNm"; */
-"eUe-My-QNm.text" = "كلمة السر";
+"eUe-My-QNm.placeholder" = "كلمة السر";
 
 /* Class = "UITextField"; text = " Find your favorite product here"; ObjectID = "eoc-9B-eIP"; */
 "eoc-9B-eIP.text" = " أبحث عن منتجك المفضل هنا";
@@ -93,10 +93,10 @@
 "esa-Ha-hj0.title" = "الحساب";
 
 /* Class = "UITextField"; text = "Password"; ObjectID = "iRE-Gq-Ci1"; */
-"iRE-Gq-Ci1.text" = "كلمة السر";
+"iRE-Gq-Ci1.placeholder" = "كلمة السر";
 
 /* Class = "UILabel"; text = "Mada"; ObjectID = "jGX-YS-cgr"; */
-"jGX-YS-cgr.text" = "Mada";
+"jGX-YS-cgr.text" = "مدى";
 
 /* Class = "UIButton"; configuration.title = "sign in"; ObjectID = "ndH-OU-mX7"; */
 "ndH-OU-mX7.configuration.title" = "دخـول";
@@ -105,4 +105,19 @@
 "ndH-OU-mX7.normalTitle" = "Button";
 
 /* Class = "UITextField"; text = "Emil address"; ObjectID = "sIl-gB-Gw4"; */
-"sIl-gB-Gw4.text" = "الأيميل";
+
+
+
+"vgk-b6-8KR.configuration.title" = "جالكسي";
+
+
+"6UA-Hk-hFs.text" = "أختر طريقة الدفع المناسبه";
+"eMt-YA-QZ0.placeholder" = "الاسم الأول";
+
+"iRE-Gq-Ci1.placeholder" = "كلمة السر";
+"7nE-TN-rIH.placeholder" = "الايميل";
+"06o-0S-mfS.placeholder" = "الآسم الأخير";
+"But-UY-nYD.placeholder" = "رقم الهاتف";
+"sIl-gB-Gw4.placeholder" = "الايميل";
+"2h5-j6-rSK.text" = "خدمة العملاء";
+"WPx-Q9-1eE.text" = "اتصل بنا";

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class Android {
-    var galxy1 = [Galaxy]()
+class ShoppingCartAndroid {
+    var products = [Galaxy]()
 }
- var shoppingAndroid = Android()
+ var shoppingCartAndroid = ShoppingCartAndroid()

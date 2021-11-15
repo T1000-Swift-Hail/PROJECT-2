@@ -16,13 +16,10 @@ class OrderViewController: UIViewController {
     }
     
     @IBAction func madaAction(_ sender: UISwitch) {
+        print ("status = \(sender.isOn)")
     }
     
     @IBAction func visaAction(_ sender: UISwitch) {
-    }
-    
-    @IBAction func paypalAction(_ sender: UISwitch) {
-        print ("status = \(sender.isOn)")
     }
     
 }

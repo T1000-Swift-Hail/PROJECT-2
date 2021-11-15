@@ -16,7 +16,6 @@
 		571936DF274036D00032EF84 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571936DE274036CF0032EF84 /* OrderViewController.swift */; };
 		571E8876273EEF2F000776E0 /* structGalaxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E8875273EEF2F000776E0 /* structGalaxy.swift */; };
 		571E8878273EF008000776E0 /* ShoppingAndroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E8877273EF008000776E0 /* ShoppingAndroid.swift */; };
-		573738EA273AE53000B8DE38 /* DarkMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573738E9273AE53000B8DE38 /* DarkMoodViewController.swift */; };
 		573738F0273B00E800B8DE38 /* LoginnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573738EF273B00E800B8DE38 /* LoginnViewController.swift */; };
 		574AE987273FCE7A00E688B7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574AE986273FCE7A00E688B7 /* SignInViewController.swift */; };
 		578172DD273951C8005DB1F2 /* phoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578172DC273951C8005DB1F2 /* phoneTableViewCell.swift */; };
@@ -40,7 +39,6 @@
 		571936DE274036CF0032EF84 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		571E8875273EEF2F000776E0 /* structGalaxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = structGalaxy.swift; sourceTree = "<group>"; };
 		571E8877273EF008000776E0 /* ShoppingAndroid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAndroid.swift; sourceTree = "<group>"; };
-		573738E9273AE53000B8DE38 /* DarkMoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkMoodViewController.swift; sourceTree = "<group>"; };
 		573738EB273AEA5B00B8DE38 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		573738EC273AEA5B00B8DE38 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		573738EF273B00E800B8DE38 /* LoginnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginnViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +68,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5717EDCF27417B7200E2D1E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				571B7A18274147D000224329 /* Cart */,
+				5777E9F8273CEB9A000828A2 /* Phone */,
+				571B7A172741478300224329 /* Android */,
+				573738EF273B00E800B8DE38 /* LoginnViewController.swift */,
+				574AE986273FCE7A00E688B7 /* SignInViewController.swift */,
+				57AD02652737E2E400766B0F /* ViewController.swift */,
+				571936DE274036CF0032EF84 /* OrderViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		571936E027403B520032EF84 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,23 +91,32 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		571B7A172741478300224329 /* Android */ = {
+			isa = PBXGroup;
+			children = (
+				57145397273E8BFC00B0F78E /* AndroidTableViewCell.swift */,
+				57145395273E8B7900B0F78E /* AndroidViewController.swift */,
+			);
+			path = Android;
+			sourceTree = "<group>";
+		};
+		571B7A18274147D000224329 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				5717D239273AB2570079E33E /* CartViewController.swift */,
+				5717D23B273AB51B0079E33E /* Shopping.swift */,
+				571E8877273EF008000776E0 /* ShoppingAndroid.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
 		5777E9F8273CEB9A000828A2 /* Phone */ = {
 			isa = PBXGroup;
 			children = (
 				578172DE27395520005DB1F2 /* phoneViewController.swift */,
 				578172DC273951C8005DB1F2 /* phoneTableViewCell.swift */,
-				5717D23B273AB51B0079E33E /* Shopping.swift */,
-				5717D239273AB2570079E33E /* CartViewController.swift */,
 			);
 			path = Phone;
-			sourceTree = "<group>";
-		};
-		578172D927392EDB005DB1F2 /* VcController */ = {
-			isa = PBXGroup;
-			children = (
-				573738EF273B00E800B8DE38 /* LoginnViewController.swift */,
-			);
-			path = VcController;
 			sourceTree = "<group>";
 		};
 		57AD02552737E2E400766B0F = {
@@ -117,23 +138,15 @@
 		57AD02602737E2E400766B0F /* Electronic Stories */ = {
 			isa = PBXGroup;
 			children = (
-				5777E9F8273CEB9A000828A2 /* Phone */,
-				578172D927392EDB005DB1F2 /* VcController */,
+				5717EDCF27417B7200E2D1E0 /* Controller */,
 				57AD02612737E2E400766B0F /* AppDelegate.swift */,
 				57AD02632737E2E400766B0F /* SceneDelegate.swift */,
-				57AD02652737E2E400766B0F /* ViewController.swift */,
 				57AD02672737E2E400766B0F /* Main.storyboard */,
 				57AD026A2737E2E500766B0F /* Assets.xcassets */,
 				57AD026C2737E2E500766B0F /* LaunchScreen.storyboard */,
 				57AD026F2737E2E500766B0F /* Info.plist */,
 				5717D229273A4F590079E33E /* ViewControllerCategories.swift */,
-				573738E9273AE53000B8DE38 /* DarkMoodViewController.swift */,
 				57AD455E273BBC5B0020AD9F /* Localizable.strings */,
-				57145397273E8BFC00B0F78E /* AndroidTableViewCell.swift */,
-				57145395273E8B7900B0F78E /* AndroidViewController.swift */,
-				571E8877273EF008000776E0 /* ShoppingAndroid.swift */,
-				574AE986273FCE7A00E688B7 /* SignInViewController.swift */,
-				571936DE274036CF0032EF84 /* OrderViewController.swift */,
 				571936E027403B520032EF84 /* Model */,
 			);
 			path = "Electronic Stories";
@@ -216,7 +229,6 @@
 				5717D23C273AB51B0079E33E /* Shopping.swift in Sources */,
 				57AD02662737E2E400766B0F /* ViewController.swift in Sources */,
 				5717D238273AB0F60079E33E /* Cartsturct.swift in Sources */,
-				573738EA273AE53000B8DE38 /* DarkMoodViewController.swift in Sources */,
 				578172DF27395520005DB1F2 /* phoneViewController.swift in Sources */,
 				57AD02622737E2E400766B0F /* AppDelegate.swift in Sources */,
 				5717D22A273A4F590079E33E /* ViewControllerCategories.swift in Sources */,

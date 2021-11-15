@@ -11,6 +11,8 @@ class CartViewController: UIViewController , UITableViewDelegate , UITableViewDa
 
     @IBOutlet weak var carttableView: UITableView!
     
+    let sections = ["iPhone Shopping Cart", "Android Shopping Cart"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,13 +29,35 @@ class CartViewController: UIViewController , UITableViewDelegate , UITableViewDa
         carttableView.reloadData()
       }
     
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sections.count
+    }
+    
+  
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections[section]
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return shoppingCart.item.count
+        if section == 0 {
+            return shoppingCart.item.count
+        }
+        else {
+            return shoppingCartAndroid.products.count
+        }
+        
     }
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
           let cell = tableView.dequeueReusableCell(withIdentifier: "cartCell" , for : indexPath)
-          cell.textLabel?.text = shoppingCart.item[indexPath.row].name
-          cell.imageView?.image = shoppingCart.item[indexPath.row].photo
+          
+          if indexPath.section == 0 {
+              cell.textLabel?.text = shoppingCart.item[indexPath.row].name
+              cell.imageView?.image = shoppingCart.item[indexPath.row].photo
+          } else {
+              cell.textLabel?.text = shoppingCartAndroid.products[indexPath.row].name
+              cell.imageView?.image = shoppingCartAndroid.products[indexPath.row].photo
+          }
         return cell
       }
 
@@ -48,6 +72,7 @@ class CartViewController: UIViewController , UITableViewDelegate , UITableViewDa
         let deleteAction = UIContextualAction(style: .destructive, title: "") {
           ( action, view, complettionHandler) in
            shoppingCart.item.remove(at :indexPath.row)
+//            self.shoppingCartAndroid.products.remove(at: indexPath.row)
             tableView.beginUpdates()
             tableView.deleteRows(at: [indexPath], with: .automatic)
             tableView.endUpdates()
