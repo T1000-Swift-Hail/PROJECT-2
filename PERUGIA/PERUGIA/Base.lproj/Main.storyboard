@@ -234,7 +234,7 @@
                                     <action selector="btnThirdUi:" destination="M5e-5O-OfY" eventType="touchUpInside" id="56L-Or-YU3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi2-GW-KMX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi2-GW-KMX">
                                 <rect key="frame" x="20" y="581.33333333333337" width="254" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="I agree to the Terms and Conditions">
@@ -245,7 +245,7 @@
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iph-7G-hzm">
-                                <rect key="frame" x="359" y="581.33333333333337" width="51" height="31"/>
+                                <rect key="frame" x="343" y="581.33333333333337" width="51" height="31"/>
                                 <connections>
                                     <action selector="agreeSwitched:" destination="Ozy-7K-aoJ" eventType="valueChanged" id="DPe-f4-V85"/>
                                 </connections>
@@ -261,13 +261,13 @@
                             <constraint firstItem="zsB-UE-VEL" firstAttribute="leading" secondItem="fli-uX-UO2" secondAttribute="leading" constant="20" id="Euw-XE-fZi"/>
                             <constraint firstItem="fli-uX-UO2" firstAttribute="trailing" secondItem="f9I-ng-jod" secondAttribute="trailing" constant="78" id="JN0-OU-oBu"/>
                             <constraint firstItem="SZ4-jV-Is2" firstAttribute="top" secondItem="Qht-cD-Vee" secondAttribute="topMargin" constant="-88" id="K53-97-rrg"/>
-                            <constraint firstItem="iph-7G-hzm" firstAttribute="leading" secondItem="zi2-GW-KMX" secondAttribute="trailing" constant="85" id="Pdu-hX-0cG"/>
+                            <constraint firstItem="iph-7G-hzm" firstAttribute="leading" secondItem="zi2-GW-KMX" secondAttribute="trailing" constant="69" id="Pdu-hX-0cG"/>
                             <constraint firstItem="zsB-UE-VEL" firstAttribute="top" secondItem="fli-uX-UO2" secondAttribute="top" constant="50" id="RVd-dh-Wgf"/>
                             <constraint firstItem="SZ4-jV-Is2" firstAttribute="leading" secondItem="fli-uX-UO2" secondAttribute="leading" id="RdF-w4-cgo"/>
                             <constraint firstAttribute="bottom" secondItem="SZ4-jV-Is2" secondAttribute="bottom" id="Wun-TY-YSy"/>
                             <constraint firstItem="SZ4-jV-Is2" firstAttribute="trailing" secondItem="fli-uX-UO2" secondAttribute="trailing" id="ZIc-aJ-Dtt"/>
                             <constraint firstItem="iph-7G-hzm" firstAttribute="top" secondItem="zsB-UE-VEL" secondAttribute="bottom" constant="58" id="imC-Hb-2rs"/>
-                            <constraint firstItem="fli-uX-UO2" firstAttribute="trailing" secondItem="iph-7G-hzm" secondAttribute="trailing" constant="20" id="t8D-HZ-tb8"/>
+                            <constraint firstItem="fli-uX-UO2" firstAttribute="trailing" secondItem="iph-7G-hzm" secondAttribute="trailing" constant="36" id="t8D-HZ-tb8"/>
                             <constraint firstItem="f9I-ng-jod" firstAttribute="leading" secondItem="fli-uX-UO2" secondAttribute="leading" constant="78" id="vdS-1M-kER"/>
                             <constraint firstItem="zi2-GW-KMX" firstAttribute="leading" secondItem="fli-uX-UO2" secondAttribute="leading" constant="20" id="x2F-KR-Ixk"/>
                         </constraints>
@@ -297,7 +297,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="33" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENw-Bt-0ih">
                                 <rect key="frame" x="20" y="88" width="388" height="601"/>
-                                <mutableString key="text">Thank you for using PERUGIA
+                                <string key="text">Thank you for using PERUGIA
 
 - To register for membership, you must:
 
@@ -310,7 +310,7 @@
 safety:
 We care about the safety of our users. Although we work to protect the security of your content and account, PERUGIA cannot guarantee that unauthorized third parties will be able to defeat our security measures. We ask that you keep your password secure.
 
-- If we want to make a major change to the terms, we'll let you know. If you do not like the new terms, please stop using PERUGIA</mutableString>
+- If we want to make a major change to the terms, we'll let you know. If you do not like the new terms, please stop using PERUGIA</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -768,7 +768,7 @@ We care about the safety of our users. Although we work to protect the security 
     </inferredMetricsTieBreakers>
     <resources>
         <image name="IMG_3064" width="600" height="1067"/>
-        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart" catalog="system" width="32" height="32"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="jpg" width="682" height="1024"/>
         <namedColor name="background_Dark">

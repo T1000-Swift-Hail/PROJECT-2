@@ -62,33 +62,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F653BBF82741434A00D0BD6D /* View */ = {
+		F653BBF82741434A00D0BD6D /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				F6E04E5A273D225400F84EDB /* PopArtCollectionViewCell.swift */,
+				F6003EB527384B6800E7C84E /* HomeTableViewCell.swift */,
+				F62E3195273BF3B1002687E4 /* CollectionViewCell.swift */,
+				F6E04E63274024ED00F84EDB /* CharcoalCollectionViewCell.swift */,
 			);
-			path = View;
+			path = cell;
 			sourceTree = "<group>";
 		};
 		F653BBF92741435600D0BD6D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F6E04E65274025B000F84EDB /* CharcoalViewController.swift */,
+				F63A4704273C62DD00E79BF6 /* PopArtViewController.swift */,
+				F6A0FC5A27384E7C00614955 /* HomeViewController.swift */,
+				F62E3193273BF387002687E4 /* CollectionViewController.swift */,
+				F6E04E56273CFB5B00F84EDB /* SecondViewController.swift */,
+				F6E04E54273CF84F00F84EDB /* FirstViewController.swift */,
+				F697F2B12737C1C5002E68D0 /* ViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F653BBFA2741437200D0BD6D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		F697F2A12737C1C5002E68D0 = {
 			isa = PBXGroup;
 			children = (
-				F653BBFA2741437200D0BD6D /* Model */,
 				F653BBF92741435600D0BD6D /* Controllers */,
-				F653BBF82741434A00D0BD6D /* View */,
+				F653BBF82741434A00D0BD6D /* cell */,
 				F697F2AC2737C1C5002E68D0 /* PERUGIA */,
 				F697F2AB2737C1C5002E68D0 /* Products */,
 			);
@@ -105,23 +108,12 @@
 		F697F2AC2737C1C5002E68D0 /* PERUGIA */ = {
 			isa = PBXGroup;
 			children = (
-				F63A4704273C62DD00E79BF6 /* PopArtViewController.swift */,
-				F6E04E5A273D225400F84EDB /* PopArtCollectionViewCell.swift */,
-				F6003EB527384B6800E7C84E /* HomeTableViewCell.swift */,
-				F6A0FC5A27384E7C00614955 /* HomeViewController.swift */,
-				F62E3193273BF387002687E4 /* CollectionViewController.swift */,
-				F62E3195273BF3B1002687E4 /* CollectionViewCell.swift */,
-				F6E04E56273CFB5B00F84EDB /* SecondViewController.swift */,
-				F6E04E54273CF84F00F84EDB /* FirstViewController.swift */,
 				F697F2AD2737C1C5002E68D0 /* AppDelegate.swift */,
 				F697F2AF2737C1C5002E68D0 /* SceneDelegate.swift */,
-				F697F2B12737C1C5002E68D0 /* ViewController.swift */,
 				F60F29432739295C007641BE /* Assets.xcassets */,
 				F697F2B32737C1C5002E68D0 /* Main.storyboard */,
 				F697F2B82737C1C6002E68D0 /* LaunchScreen.storyboard */,
 				F697F2BB2737C1C6002E68D0 /* Info.plist */,
-				F6E04E63274024ED00F84EDB /* CharcoalCollectionViewCell.swift */,
-				F6E04E65274025B000F84EDB /* CharcoalViewController.swift */,
 				F653BBF527403DFB00D0BD6D /* Localizable.strings */,
 			);
 			path = PERUGIA;
