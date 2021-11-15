@@ -8,31 +8,30 @@
 import UIKit
 class ListofbrandsTableViewController: UITableViewController {
     
-
-        var products = Product()
-        var allProducts: [Product] = []
+    var products = Product()
+    var allProducts: [Product] = []
+    var selectedProducts = [String]()
+    var userDefalts = UserDefaults.standard
     
-        var selectedProducts = [String]()
-        var userDefalts = UserDefaults.standard
-    
-        override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         allProducts = products.getProducts()
-
-            
+        
+        
     }
-
+    
     // MARK: - Table view data source
-
-
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return allProducts.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! Listofproductcell
         
         cell.prodcut = allProducts[indexPath.row]
@@ -40,15 +39,16 @@ class ListofbrandsTableViewController: UITableViewController {
         cell.brandsImage.image = allProducts[indexPath.row].uiImage
         cell.productImage.image = allProducts[indexPath.row].tshirtImage
         cell.prodcutImageColors = allProducts[indexPath.row].prodcutImageColors
+        cell.prodcut = allProducts[indexPath.row]
         
         
         guard let priceClothings = allProducts [indexPath.row].price else { return UITableViewCell() }
-        cell.priceClothing.text = "price: \(priceClothings) SAR"
+        cell.priceClothing.text = NSLocalizedString("price: \(priceClothings) SAR", comment: "")
         
         guard let quantityProducts = allProducts [indexPath.row].quantity else { return UITableViewCell() }
         cell.quantityProduct.text = "quantity: \(quantityProducts)"
-
-                                            
+        
+        
         return cell
     }
     
@@ -56,11 +56,9 @@ class ListofbrandsTableViewController: UITableViewController {
         return 350
     }
     
-    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        selectedProducts.append(allProducts[indexPath.row].productName ?? "")
-        userDefalts.set(selectedProducts, forKey: "products")
+        
     }
     
 }

@@ -8,7 +8,7 @@
 import UIKit
 
 class SginUpViewController: UIViewController {
-
+    
     @IBOutlet weak var firstName: UITextField!
     
     @IBOutlet weak var middleName: UITextField!
@@ -30,8 +30,6 @@ class SginUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
-    
     @IBAction func signUp(_ sender: Any) {
         
         let firstName = firstName.text
@@ -43,46 +41,29 @@ class SginUpViewController: UIViewController {
         let address = address.text
         let userPassword = userPassword.text
         
-
         
         if firstName != nil && middleName != nil && lastName != nil && userName != nil && email != nil && phoneNumber != nil && address != nil && userPassword != nil {
             
             DisplayAlert(withTitle: "Signup successful", message: "", isSginup: true)
             
-            
-        
-        
         }else{
-        
+            
             DisplayAlert(withTitle: "fail", message: "", isSginup: false)
-        
-        
+        }
     }
-    
-    
-    
-    }
-
-    
     
     func DisplayAlert(withTitle title: String, message: String,isSginup: Bool) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: { action in
+        let okAction = UIAlertAction(title: NSLocalizedString("Ok", comment: ""), style: .default, handler: { action in
             if isSginup {
-                self.performSegue(withIdentifier: "homeScreen", sender: nil)
+                self.performSegue(withIdentifier: NSLocalizedString("homeScreen", comment: ""), sender: nil)
             } else {
                 
             }
-
+            
         })
         alert.addAction(okAction)
         self.present(alert, animated: true)
     }
-    
-    
-    
-    
-   
-        
 }
 

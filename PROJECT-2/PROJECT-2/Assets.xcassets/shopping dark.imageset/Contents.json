@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "pexels-photo-6311670.jpg",
+      "filename" : "11 copy.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +12,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "darkenimage.jpg",
+      "filename" : "imageonline-co-darkenimage (1).jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -48,5 +48,8 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "localizable" : true
   }
 }

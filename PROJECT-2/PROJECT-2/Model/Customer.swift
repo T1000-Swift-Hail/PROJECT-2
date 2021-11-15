@@ -10,7 +10,6 @@ import Foundation
 protocol User {
     var userName :String {get}
     var userPassword :Int {get}
-    
 }
 
 struct Customer: User {
@@ -22,6 +21,4 @@ struct Customer: User {
     var email:String?
     var phoneNumber:Int?
     var address:String?
-    var shoppingCart:[Product]?
-    
 }
