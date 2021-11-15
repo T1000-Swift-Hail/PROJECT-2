@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 struct Busniss {
     
     var busnissName = String()
@@ -75,6 +76,7 @@ class ChosePikerDataViewController: UIViewController,UIPickerViewDelegate, UIPic
         DataType.text = ArrynameBusniss[row].rawValue
         
         switch ArrynameBusniss[row] {
+            
         case .factory:
             BusnissImeg.image  = factory.busnissImege
             NetProfitLabal.text = factory.busnissNetProfit

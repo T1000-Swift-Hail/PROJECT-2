@@ -1,11 +1,10 @@
 # PROJECT-2
 
-### Based on what you’ve learned until now , create a project of your choosing (impress us with your imagination).
-### Edit this README.md file with your Project info.
+
 
 
 ### Project : 
-// Project Name:Manege Your Busniss
+// Project Name:Busniss Manager
 
 ### Project Description :
 // A program that helps you to manage your business and projects in a professional way through easy-to-use interfaces and also provides you with some additional features, for example, the graphic feature to display your profits and costs .
@@ -16,17 +15,29 @@
 - feature :sign up user name and password
 - feature :sign in
 - feature :edite profile from settings
-- feature :display busnisses
-- feature :display charts
+- feature :display busnisses Data
+- feature :display charts Data
+- feature :Locolazation
+- feature :Dark mode
+
 
 ### Define the scenes :
-// Add description of the screens / scenes in your application.
+- welcome scene
+- Login scene
+- Signup scene
+- Busniss data scene
+- Chart scene
+- Sitting scene
+
+
 
 
 ### User Stories :
-// Add user stories here.   
+
+ I have more than one type of busniss i need a way to track my busniss esaly without cutting my vication or going to busniss location.   
 
 
 
+## Note :
 
-#### Deadline for this project :  Deliver the project by 9:00 a.m. next Thursday Nov. 11, 2021 
+I hope my project will be appreciated by you،thanku for every thing .
