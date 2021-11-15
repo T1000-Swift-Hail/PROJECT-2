@@ -45,11 +45,11 @@ class LoginPage: UIViewController {
         passWodText?.isSecureTextEntry = true
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissTap))
-            view.addGestureRecognizer(tap)
+        view.addGestureRecognizer(tap)
         
     }
-  
-
+    
+    
     
     // MARK: - Login Bottun
     
@@ -74,7 +74,7 @@ class LoginPage: UIViewController {
                 displayMyAlert(title: NSLocalizedString("Wrong", comment: ""), message: NSLocalizedString("UserName or Password is empity", comment: "") )
             }
             
-            else {
+            if user != myUsers.userNames || pass != myUsers.passWords  {
                 displayMyAlert(title: NSLocalizedString("Wrong", comment: ""), message: NSLocalizedString("UserName or Password is Wrong", comment: ""))}
         }
     }
@@ -101,7 +101,7 @@ class LoginPage: UIViewController {
     @objc func dismissTap() {
         usernameText.resignFirstResponder()
         passWodText.resignFirstResponder()
-      }
+    }
 }
 
 

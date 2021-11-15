@@ -509,7 +509,7 @@
                                 <color key="backgroundColor" red="1" green="0.91537050949999998" blue="0.68796410860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="74" translatesAutoresizingMaskIntoConstraints="NO" id="RPW-iK-0ao">
-                                <rect key="frame" x="132.33333333333331" y="64" width="149.33333333333331" height="406"/>
+                                <rect key="frame" x="132.33333333333331" y="100" width="149.33333333333331" height="406"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="s8i-WL-3g7">
                                         <rect key="frame" x="29.333333333333314" y="0.0" width="91" height="23"/>
@@ -559,7 +559,7 @@
                         <color key="backgroundColor" name="typingcolor"/>
                         <constraints>
                             <constraint firstItem="RPW-iK-0ao" firstAttribute="centerX" secondItem="4va-Oj-yiz" secondAttribute="centerX" id="JJo-Fh-UTc"/>
-                            <constraint firstItem="RPW-iK-0ao" firstAttribute="top" secondItem="4va-Oj-yiz" secondAttribute="top" constant="64" id="K5M-jB-yH5"/>
+                            <constraint firstItem="RPW-iK-0ao" firstAttribute="top" secondItem="4va-Oj-yiz" secondAttribute="top" constant="100" id="K5M-jB-yH5"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
