@@ -86,20 +86,60 @@
 		6D4806972735C8E00052E825 /* newproject */ = {
 			isa = PBXGroup;
 			children = (
+				6DF22D722742431400C697CD /* Profile */,
+				6DF22D70274242D100C697CD /* pikerview */,
+				6DF22D6F2742426100C697CD /* Cashing */,
+				6DF22D6E274240E400C697CD /* SigninAndSignup */,
+				6DF22D6D274240D900C697CD /* charts */,
 				6D4806982735C8E00052E825 /* AppDelegate.swift */,
 				6D48069A2735C8E00052E825 /* SceneDelegate.swift */,
 				6D48069E2735C8E00052E825 /* Main.storyboard */,
 				6D4806A12735C8E60052E825 /* Assets.xcassets */,
 				6D4806A32735C8E60052E825 /* LaunchScreen.storyboard */,
 				6D4806A62735C8E60052E825 /* Info.plist */,
-				6D11B7132735EFD3009996CA /* LineViewController.swift */,
-				6D48069C2735C8E00052E825 /* BarViewController.swift */,
-				6D5AD2292738FE60004BA433 /* LoginAndRegisterViewController.swift */,
-				6DBF62DD273B9CEE006418CE /* ProfileViewController.swift */,
-				6DBF62DF273BA5A4006418CE /* CashingManager.swift */,
-				6D940D6E273EC3DA0052E924 /* ChosePikerDataViewController.swift */,
 			);
 			path = newproject;
+			sourceTree = "<group>";
+		};
+		6DF22D6D274240D900C697CD /* charts */ = {
+			isa = PBXGroup;
+			children = (
+				6D48069C2735C8E00052E825 /* BarViewController.swift */,
+				6D11B7132735EFD3009996CA /* LineViewController.swift */,
+			);
+			path = charts;
+			sourceTree = "<group>";
+		};
+		6DF22D6E274240E400C697CD /* SigninAndSignup */ = {
+			isa = PBXGroup;
+			children = (
+				6D5AD2292738FE60004BA433 /* LoginAndRegisterViewController.swift */,
+			);
+			path = SigninAndSignup;
+			sourceTree = "<group>";
+		};
+		6DF22D6F2742426100C697CD /* Cashing */ = {
+			isa = PBXGroup;
+			children = (
+				6DBF62DF273BA5A4006418CE /* CashingManager.swift */,
+			);
+			path = Cashing;
+			sourceTree = "<group>";
+		};
+		6DF22D70274242D100C697CD /* pikerview */ = {
+			isa = PBXGroup;
+			children = (
+				6D940D6E273EC3DA0052E924 /* ChosePikerDataViewController.swift */,
+			);
+			path = pikerview;
+			sourceTree = "<group>";
+		};
+		6DF22D722742431400C697CD /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6DBF62DD273B9CEE006418CE /* ProfileViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		AAE22B208DBE810215EB8834 /* Frameworks */ = {
