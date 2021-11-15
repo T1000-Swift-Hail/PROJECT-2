@@ -36,11 +36,11 @@ class Listofproductcell: UITableViewCell {
         sizeClothing.setTitle(SizeTypes.s.rawValue, forSegmentAt: 3)
         sizeClothing.setTitle(SizeTypes.other.rawValue, forSegmentAt: 4)
         
-        colorClothing.setTitle(ColorType.black.rawValue, forSegmentAt: 0)
-        colorClothing.setTitle(ColorType.yellow.rawValue, forSegmentAt: 1)
-        colorClothing.setTitle(ColorType.white.rawValue, forSegmentAt: 2)
-        colorClothing.setTitle(ColorType.blue.rawValue, forSegmentAt: 3)
-        colorClothing.setTitle(ColorType.other.rawValue, forSegmentAt: 4)
+        colorClothing.setTitle(ColorType.black.rawValue.localization, forSegmentAt: 0)
+        colorClothing.setTitle(ColorType.yellow.rawValue.localization, forSegmentAt: 1)
+        colorClothing.setTitle(ColorType.white.rawValue.localization, forSegmentAt: 2)
+        colorClothing.setTitle(ColorType.blue.rawValue.localization, forSegmentAt: 3)
+        colorClothing.setTitle(ColorType.other.rawValue.localization, forSegmentAt: 4)
         
         // Initialization code
     }
@@ -52,7 +52,7 @@ class Listofproductcell: UITableViewCell {
         guard let title = sender.titleForSegment(at: sender.selectedSegmentIndex) else { return }
         
         switch title {
-        case ColorType.black.rawValue:
+        case ColorType.black.rawValue.localization:
             productImage.image = UIImage(named: prodcutImageColors[0])
             prodcut.productColor = .black
         case ColorType.yellow.rawValue:

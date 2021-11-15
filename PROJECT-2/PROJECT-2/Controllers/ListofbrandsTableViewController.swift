@@ -43,10 +43,11 @@ class ListofbrandsTableViewController: UITableViewController {
         
         
         guard let priceClothings = allProducts [indexPath.row].price else { return UITableViewCell() }
-        cell.priceClothing.text = NSLocalizedString("price: \(priceClothings) SAR", comment: "")
+        cell.priceClothing.text = "price: ".localization + "\(priceClothings) SAR"
+        
         
         guard let quantityProducts = allProducts [indexPath.row].quantity else { return UITableViewCell() }
-        cell.quantityProduct.text = "quantity: \(quantityProducts)"
+        cell.quantityProduct.text = "quantity: ".localization + "\(quantityProducts)" + "pieces available".localization
         
         
         return cell
@@ -63,3 +64,10 @@ class ListofbrandsTableViewController: UITableViewController {
     
 }
 
+extension String {
+    
+    var localization:String {
+        return NSLocalizedString(self, comment: "")
+    }
+    
+}

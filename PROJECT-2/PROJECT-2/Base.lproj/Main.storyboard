@@ -30,50 +30,58 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-photo-6311670" translatesAutoresizingMaskIntoConstraints="NO" id="DtL-cI-oV9">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="896" id="McC-0i-sY0"/>
-                                </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="vr4-fy-cW5">
-                                <rect key="frame" x="20" y="200" width="374" height="396"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="79" translatesAutoresizingMaskIntoConstraints="NO" id="SvD-MK-gYW">
+                                <rect key="frame" x="20" y="206" width="374" height="484"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5g3-Vt-Je3">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="198"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KY9-ws-hck">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="297"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noj-qS-HUX">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="198"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="198" id="Den-60-clH"/>
+                                                    <constraint firstAttribute="width" constant="374" id="H1S-Lf-mer"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="45"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fRu-0k-ste">
+                                                <rect key="frame" x="0.0" y="198" width="374" height="99"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BRV-7t-YQ5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="49.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="49.5" id="44y-Xe-4EI"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Sch-CI-qSN"/>
+                                                            <constraint firstAttribute="width" constant="374" id="Wja-i9-34R"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="23"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uZK-y7-b6m">
+                                                        <rect key="frame" x="0.0" y="49.5" width="374" height="49.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="49.5" id="0Gx-1c-wqc"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="3Jt-G1-BfH"/>
+                                                            <constraint firstAttribute="width" constant="374" id="vH6-Tb-mXY"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="23"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="198" id="CYs-sv-Vgy"/>
-                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Wge-NL-GFM">
-                                        <rect key="frame" x="0.0" y="198" width="374" height="198"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OUV-dM-YBj">
+                                        <rect key="frame" x="0.0" y="376" width="374" height="108"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BRV-7t-YQ5">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="49.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="49.5" id="44y-Xe-4EI"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="23"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uZK-y7-b6m">
-                                                <rect key="frame" x="0.0" y="49.5" width="374" height="49.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="49.5" id="0Gx-1c-wqc"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="23"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0O-B6-Ugp">
-                                                <rect key="frame" x="0.0" y="99" width="374" height="49.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="49.5" id="5uu-H1-VX6"/>
+                                                    <constraint firstAttribute="width" constant="374" id="HoB-ac-Qzv"/>
+                                                    <constraint firstAttribute="height" constant="50" id="cmd-eZ-XFs"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="" image="rectangle.portrait.and.arrow.right" catalog="system"/>
@@ -82,9 +90,10 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heQ-4p-cu4">
-                                                <rect key="frame" x="0.0" y="148.5" width="374" height="49.5"/>
+                                                <rect key="frame" x="0.0" y="58" width="374" height="50"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="49.5" id="7Ud-Tc-Qda"/>
+                                                    <constraint firstAttribute="width" constant="374" id="L4i-ru-fJY"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Uva-R6-HLo"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="22"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -97,45 +106,20 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="heQ-4p-cu4" firstAttribute="leading" secondItem="Wge-NL-GFM" secondAttribute="leading" id="0dJ-ap-rWe"/>
-                                            <constraint firstItem="e0O-B6-Ugp" firstAttribute="top" secondItem="uZK-y7-b6m" secondAttribute="bottom" id="7rr-GU-tnD"/>
-                                            <constraint firstItem="uZK-y7-b6m" firstAttribute="leading" secondItem="Wge-NL-GFM" secondAttribute="leading" id="9TU-nR-k0c"/>
-                                            <constraint firstAttribute="trailing" secondItem="BRV-7t-YQ5" secondAttribute="trailing" id="EMd-kL-o0z"/>
-                                            <constraint firstItem="BRV-7t-YQ5" firstAttribute="top" secondItem="Wge-NL-GFM" secondAttribute="top" id="GEi-ph-GR8"/>
-                                            <constraint firstItem="uZK-y7-b6m" firstAttribute="top" secondItem="BRV-7t-YQ5" secondAttribute="bottom" id="YX8-bB-eig"/>
-                                            <constraint firstAttribute="trailing" secondItem="uZK-y7-b6m" secondAttribute="trailing" id="asq-cx-VIt"/>
-                                            <constraint firstItem="BRV-7t-YQ5" firstAttribute="leading" secondItem="Wge-NL-GFM" secondAttribute="leading" id="dcL-7e-6Jh"/>
-                                            <constraint firstAttribute="trailing" secondItem="heQ-4p-cu4" secondAttribute="trailing" id="dyo-mk-C1C"/>
-                                            <constraint firstAttribute="bottom" secondItem="heQ-4p-cu4" secondAttribute="bottom" id="hK2-H2-yIl"/>
-                                            <constraint firstItem="e0O-B6-Ugp" firstAttribute="leading" secondItem="Wge-NL-GFM" secondAttribute="leading" id="ldh-gb-kGA"/>
-                                            <constraint firstAttribute="height" constant="198" id="xzm-nW-WV1"/>
-                                            <constraint firstAttribute="trailing" secondItem="e0O-B6-Ugp" secondAttribute="trailing" id="zsQ-Rb-j1k"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="5g3-Vt-Je3" secondAttribute="trailing" id="4iQ-3Q-Bdc"/>
-                                    <constraint firstItem="Wge-NL-GFM" firstAttribute="top" secondItem="5g3-Vt-Je3" secondAttribute="bottom" id="XEr-6y-E7P"/>
-                                    <constraint firstItem="5g3-Vt-Je3" firstAttribute="top" secondItem="vr4-fy-cW5" secondAttribute="top" id="cyi-6L-dJM"/>
-                                    <constraint firstItem="5g3-Vt-Je3" firstAttribute="leading" secondItem="vr4-fy-cW5" secondAttribute="leading" id="ffu-9d-Ist"/>
-                                    <constraint firstAttribute="height" constant="396" id="tx9-DD-Iwd"/>
-                                </constraints>
                                 <variation key="heightClass=compact" axis="horizontal"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
-                            <constraint firstItem="DtL-cI-oV9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1iv-cB-r4t"/>
-                            <constraint firstAttribute="bottom" secondItem="vr4-fy-cW5" secondAttribute="bottom" constant="300" id="2rW-aN-fXi"/>
-                            <constraint firstItem="DtL-cI-oV9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5t8-Zb-0es"/>
-                            <constraint firstAttribute="bottom" secondItem="DtL-cI-oV9" secondAttribute="bottom" id="7y7-YA-GPY"/>
-                            <constraint firstItem="vr4-fy-cW5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8kG-Rb-TfB"/>
-                            <constraint firstItem="vr4-fy-cW5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="200" id="CsP-4L-f5B"/>
-                            <constraint firstItem="DtL-cI-oV9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sjw-7h-60E"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vr4-fy-cW5" secondAttribute="trailing" constant="20" id="uh4-fd-duw"/>
-                            <constraint firstItem="vr4-fy-cW5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="v8H-Kw-fF9"/>
+                            <constraint firstItem="SvD-MK-gYW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="24P-l2-XSU"/>
+                            <constraint firstItem="SvD-MK-gYW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Z1-b2-uKb"/>
+                            <constraint firstItem="DtL-cI-oV9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WMC-uE-5PT"/>
+                            <constraint firstAttribute="trailing" secondItem="DtL-cI-oV9" secondAttribute="trailing" id="dXq-9W-Vkl"/>
+                            <constraint firstAttribute="bottom" secondItem="DtL-cI-oV9" secondAttribute="bottom" id="eIO-0l-YIN"/>
+                            <constraint firstItem="DtL-cI-oV9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nSe-U8-QWK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KA1-Rf-rkt"/>
@@ -161,40 +145,45 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopping dark" translatesAutoresizingMaskIntoConstraints="NO" id="wxE-Az-hwQ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3B-S3-m5L">
-                                <rect key="frame" x="20" y="820.5" width="374" height="41.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="41.5" id="zoJ-64-2eg"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Next">
-                                    <fontDescription key="titleFontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="22"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="ext-2Z-wyH" kind="show" id="Xuf-Jh-cMa"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome In Our Sotre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1R-cl-IAv">
-                                <rect key="frame" x="20" y="394" width="374" height="340"/>
-                                <fontDescription key="fontDescription" name="Tajawal-Black" family="Tajawal" pointSize="33"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="195" translatesAutoresizingMaskIntoConstraints="NO" id="cBO-za-LMU">
+                                <rect key="frame" x="20" y="224" width="374" height="408.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome In Our Sotre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1R-cl-IAv">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="172"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="374" id="2NN-8P-geG"/>
+                                            <constraint firstAttribute="height" constant="172" id="665-Tw-R8H"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tajawal-Black" family="Tajawal" pointSize="33"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3B-S3-m5L">
+                                        <rect key="frame" x="0.0" y="367" width="374" height="41.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41.5" id="ZT3-gC-8Yz"/>
+                                            <constraint firstAttribute="width" constant="374" id="qHy-K9-cPP"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Next">
+                                            <fontDescription key="titleFontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="22"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="ext-2Z-wyH" kind="show" id="Xuf-Jh-cMa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IbZ-Zn-7JG"/>
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
-                            <constraint firstItem="IbZ-Zn-7JG" firstAttribute="trailing" secondItem="O1R-cl-IAv" secondAttribute="trailing" constant="20" id="1ix-Ih-Jzd"/>
-                            <constraint firstAttribute="bottom" secondItem="wxE-Az-hwQ" secondAttribute="bottom" id="P1T-i0-3z0"/>
-                            <constraint firstItem="IbZ-Zn-7JG" firstAttribute="trailing" secondItem="P3B-S3-m5L" secondAttribute="trailing" constant="20" id="Raj-BU-MZX"/>
-                            <constraint firstItem="P3B-S3-m5L" firstAttribute="top" secondItem="O1R-cl-IAv" secondAttribute="bottom" constant="86.5" id="WI4-Jj-nsu"/>
-                            <constraint firstItem="wxE-Az-hwQ" firstAttribute="top" secondItem="0wF-sx-a7j" secondAttribute="top" id="XQc-hv-axL"/>
-                            <constraint firstItem="O1R-cl-IAv" firstAttribute="leading" secondItem="IbZ-Zn-7JG" secondAttribute="leading" constant="20" id="Xh1-L4-ebY"/>
-                            <constraint firstItem="O1R-cl-IAv" firstAttribute="top" secondItem="IbZ-Zn-7JG" secondAttribute="top" constant="350" id="f6M-DU-1Ny"/>
-                            <constraint firstItem="wxE-Az-hwQ" firstAttribute="trailing" secondItem="IbZ-Zn-7JG" secondAttribute="trailing" id="h3i-lx-zC9"/>
-                            <constraint firstItem="P3B-S3-m5L" firstAttribute="bottom" secondItem="IbZ-Zn-7JG" secondAttribute="bottom" id="tf2-Yi-dmT"/>
-                            <constraint firstItem="wxE-Az-hwQ" firstAttribute="leading" secondItem="IbZ-Zn-7JG" secondAttribute="leading" id="ujp-dy-oTP"/>
-                            <constraint firstItem="P3B-S3-m5L" firstAttribute="leading" secondItem="IbZ-Zn-7JG" secondAttribute="leading" constant="20" id="xhd-XT-mm9"/>
+                            <constraint firstItem="cBO-za-LMU" firstAttribute="centerY" secondItem="0wF-sx-a7j" secondAttribute="centerY" constant="-19.75" id="Zhg-F4-cLN"/>
+                            <constraint firstItem="wxE-Az-hwQ" firstAttribute="top" secondItem="0wF-sx-a7j" secondAttribute="top" id="bEj-wz-fBT"/>
+                            <constraint firstItem="wxE-Az-hwQ" firstAttribute="leading" secondItem="0wF-sx-a7j" secondAttribute="leading" id="bcg-j6-uSI"/>
+                            <constraint firstAttribute="bottom" secondItem="wxE-Az-hwQ" secondAttribute="bottom" id="ifw-78-5bD"/>
+                            <constraint firstAttribute="trailing" secondItem="wxE-Az-hwQ" secondAttribute="trailing" id="ohX-PD-887"/>
+                            <constraint firstItem="cBO-za-LMU" firstAttribute="centerX" secondItem="0wF-sx-a7j" secondAttribute="centerX" id="tkb-5K-mDh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yXU-v2-Wrc"/>

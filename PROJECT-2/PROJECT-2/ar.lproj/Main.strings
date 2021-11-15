@@ -45,7 +45,7 @@
 "LvQ-eE-El3.placeholder" = "رقم الجوال";
 
 /* Class = "UIButton"; configuration.title = "Delete From Cach"; ObjectID = "NQw-lE-tBY"; */
-"NQw-lE-tBY.configuration.title" = "حذف من النظام";
+"NQw-lE-tBY.configuration.title" = "حذف من ذاكرة التخزين المؤقت";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NQw-lE-tBY"; */
 "NQw-lE-tBY.normalTitle" = "Button";

@@ -40,7 +40,6 @@
 		0486AC6927414E07005D298A /* Tajawal-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Black.ttf"; sourceTree = "<group>"; };
 		0486AC6A27414E07005D298A /* Tajawal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Bold.ttf"; sourceTree = "<group>"; };
 		0486AC6D27414E55005D298A /* Tajawal-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Regular.ttf"; sourceTree = "<group>"; };
-		0486AC7227419BE1005D298A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0486AC762741EA24005D298A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		0486AC772741EA24005D298A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		0486AC782741FAB1005D298A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -106,7 +105,6 @@
 		04EEC5812737B121005321B9 = {
 			isa = PBXGroup;
 			children = (
-				0486AC752741E95A005D298A /* Localizable */,
 				04EEC58C2737B121005321B9 /* PROJECT-2 */,
 				04EEC58B2737B121005321B9 /* Products */,
 			);
@@ -123,6 +121,7 @@
 		04EEC58C2737B121005321B9 /* PROJECT-2 */ = {
 			isa = PBXGroup;
 			children = (
+				0486AC752741E95A005D298A /* Localizable */,
 				04BE4D5E273956CB00A1ABD8 /* Controllers */,
 				04EEC5AD27380C3A005321B9 /* Model */,
 				04EEC58D2737B121005321B9 /* AppDelegate.swift */,
@@ -246,7 +245,6 @@
 		0486AC7327419BE1005D298A /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0486AC7227419BE1005D298A /* en */,
 				0486AC782741FAB1005D298A /* ar */,
 			);
 			name = Localizable.strings;

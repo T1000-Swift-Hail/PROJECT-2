@@ -42,7 +42,7 @@ extension ViewControllerAddToCart : UITableViewDelegate,UITableViewDataSource {
         cell.productPrice.text = "\(myShoppingCart.products[indexPath.row].price!)SAR"
         cell.productColor.text = "\(myShoppingCart.products[indexPath.row].productColor?.rawValue ?? "")"
         cell.productSize.text = "\(myShoppingCart.products[indexPath.row].productSize?.rawValue ?? "")"
-        cell.productQuantity.text = "\(myShoppingCart.products[indexPath.row].quantity!) Piese avaliable"
+        cell.productQuantity.text = "\(myShoppingCart.products[indexPath.row].quantity!) pieces available"
         
         return cell
         
