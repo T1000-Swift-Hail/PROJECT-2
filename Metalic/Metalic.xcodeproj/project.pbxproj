@@ -13,6 +13,9 @@
 		D84D42222742316E008789E1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D84D42242742316E008789E1 /* Localizable.strings */; };
 		D8507FA82740479E00AAF78D /* LogOutAndProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507FA72740479E00AAF78D /* LogOutAndProfile.swift */; };
 		D8507FB72740776300AAF78D /* FirstCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507FB62740776300AAF78D /* FirstCalculatorViewController.swift */; };
+		D872F7562742513F00BCF451 /* LecolizedExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = D872F7552742513F00BCF451 /* LecolizedExtention.swift */; };
+		D872F75A2742521A00BCF451 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D872F7592742521A00BCF451 /* Enums.swift */; };
+		D872F75D274252FB00BCF451 /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D872F75C274252FB00BCF451 /* Struct.swift */; };
 		D8AA8BAD2737E5A600D40045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BAC2737E5A600D40045 /* AppDelegate.swift */; };
 		D8AA8BAF2737E5A600D40045 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BAE2737E5A600D40045 /* SceneDelegate.swift */; };
 		D8AA8BB12737E5A600D40045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BB02737E5A600D40045 /* ViewController.swift */; };
@@ -38,6 +41,9 @@
 		D84D42232742316E008789E1 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D8507FA72740479E00AAF78D /* LogOutAndProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutAndProfile.swift; sourceTree = "<group>"; };
 		D8507FB62740776300AAF78D /* FirstCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCalculatorViewController.swift; sourceTree = "<group>"; };
+		D872F7552742513F00BCF451 /* LecolizedExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecolizedExtention.swift; sourceTree = "<group>"; };
+		D872F7592742521A00BCF451 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		D872F75C274252FB00BCF451 /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
 		D8AA8BAC2737E5A600D40045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8AA8BAE2737E5A600D40045 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D8AA8BB02737E5A600D40045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,10 +74,40 @@
 		D872F7532742323800BCF451 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				D84D420F2741A2B8008789E1 /* ForBottunCalculator.swift */,
 				D8507FB62740776300AAF78D /* FirstCalculatorViewController.swift */,
 				D84D420D2741A2A6008789E1 /* secondcalculatorViewController.swift */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		D872F754274250E800BCF451 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D872F7552742513F00BCF451 /* LecolizedExtention.swift */,
+				D872F7592742521A00BCF451 /* Enums.swift */,
+				D872F75C274252FB00BCF451 /* Struct.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D872F757274251A300BCF451 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D8E14B10273AB33B0098A6FD /* DifinationView.swift */,
+				D8AA8BD6273A6A2700D40045 /* HomeTabBarViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D872F758274251D500BCF451 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D8AA8BAC2737E5A600D40045 /* AppDelegate.swift */,
+				D8AA8BAE2737E5A600D40045 /* SceneDelegate.swift */,
+				D8AA8BB02737E5A600D40045 /* ViewController.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		D8AA8BA02737E5A600D40045 = {
@@ -85,17 +121,14 @@
 		D8AA8BAB2737E5A600D40045 /* Metalic */ = {
 			isa = PBXGroup;
 			children = (
+				D872F754274250E800BCF451 /* Model */,
+				D872F757274251A300BCF451 /* Home */,
+				D8AA8BCD2739074000D40045 /* LoginRegister */,
 				D872F7532742323800BCF451 /* Calculator */,
 				D8E14B12273BAAAC0098A6FD /* Fonts */,
-				D8AA8BCD2739074000D40045 /* LoginRegister */,
-				D8AA8BAC2737E5A600D40045 /* AppDelegate.swift */,
-				D8AA8BAE2737E5A600D40045 /* SceneDelegate.swift */,
-				D8AA8BB02737E5A600D40045 /* ViewController.swift */,
-				D8AA8BD6273A6A2700D40045 /* HomeTabBarViewController.swift */,
-				D84D420F2741A2B8008789E1 /* ForBottunCalculator.swift */,
-				D8E14B10273AB33B0098A6FD /* DifinationView.swift */,
 				D8AA8BB72737E5A800D40045 /* LaunchScreen.storyboard */,
 				D8AA8BBA2737E5A800D40045 /* Info.plist */,
+				D872F758274251D500BCF451 /* Delegates */,
 				D8AA8BB52737E5A800D40045 /* Assets.xcassets */,
 				D8AA8BB22737E5A600D40045 /* Main.storyboard */,
 				D84D42242742316E008789E1 /* Localizable.strings */,
@@ -201,16 +234,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D872F7562742513F00BCF451 /* LecolizedExtention.swift in Sources */,
 				D8AA8BC12737F55A00D40045 /* LoginPage.swift in Sources */,
 				D8507FA82740479E00AAF78D /* LogOutAndProfile.swift in Sources */,
 				D84D42102741A2B8008789E1 /* ForBottunCalculator.swift in Sources */,
 				D84D42202741A77B008789E1 /* Registration.swift in Sources */,
 				D8AA8BB12737E5A600D40045 /* ViewController.swift in Sources */,
 				D84D420E2741A2A6008789E1 /* secondcalculatorViewController.swift in Sources */,
+				D872F75A2742521A00BCF451 /* Enums.swift in Sources */,
 				D8AA8BAD2737E5A600D40045 /* AppDelegate.swift in Sources */,
 				D8AA8BAF2737E5A600D40045 /* SceneDelegate.swift in Sources */,
 				D8AA8BD7273A6A2700D40045 /* HomeTabBarViewController.swift in Sources */,
 				D8E14B11273AB33B0098A6FD /* DifinationView.swift in Sources */,
+				D872F75D274252FB00BCF451 /* Struct.swift in Sources */,
 				D8507FB72740776300AAF78D /* FirstCalculatorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
