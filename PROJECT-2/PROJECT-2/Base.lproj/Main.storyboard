@@ -347,8 +347,11 @@
                                 <constraints>
                                     <constraint firstItem="ge5-J5-7FC" firstAttribute="leading" secondItem="SMh-pT-yh4" secondAttribute="leading" id="Aah-6b-xZx"/>
                                     <constraint firstAttribute="bottom" secondItem="ge5-J5-7FC" secondAttribute="bottom" id="Atj-ln-hsf"/>
+                                    <constraint firstAttribute="trailing" secondItem="0o5-4V-kM1" secondAttribute="trailing" id="BgI-tM-SnZ"/>
                                     <constraint firstAttribute="trailing" secondItem="ge5-J5-7FC" secondAttribute="trailing" id="ExO-pl-uou"/>
-                                    <constraint firstItem="ge5-J5-7FC" firstAttribute="top" secondItem="0o5-4V-kM1" secondAttribute="bottom" constant="39" id="cFH-e2-aZe"/>
+                                    <constraint firstItem="0o5-4V-kM1" firstAttribute="top" secondItem="SMh-pT-yh4" secondAttribute="top" id="RJa-Ba-1xf"/>
+                                    <constraint firstItem="0o5-4V-kM1" firstAttribute="leading" secondItem="SMh-pT-yh4" secondAttribute="leading" id="UE5-TU-FLm"/>
+                                    <constraint firstItem="ge5-J5-7FC" firstAttribute="top" secondItem="0o5-4V-kM1" secondAttribute="bottom" id="zj7-Vd-4TZ"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -374,17 +377,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCo-Dr-Zz6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCo-Dr-Zz6">
                                 <rect key="frame" x="20" y="114" width="374" height="209"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="209" id="SIG-cf-fdV"/>
+                                </constraints>
                                 <string key="text">This is an online international brands have the following brands Niki,Addias,Puma.We make sure, we Keeping you effortlessly stylish throughout the day lies at the core of what we do. At Clothing Shop Online, we’ve made it our mission to provide simple, affordable wardrobe staples to people who love to live. We’ve got the looks you want, from the brands you love, in the colors and sizes you need.</string>
                                 <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Everyday fashion is our promise to you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByL-0f-usS">
-                                <rect key="frame" x="20" y="56" width="374" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everyday fashion is our promise to you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByL-0f-usS">
+                                <rect key="frame" x="20" y="56" width="374" height="17"/>
                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -392,6 +396,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bec-6e-jO9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ByL-0f-usS" firstAttribute="top" secondItem="Bec-6e-jO9" secondAttribute="top" id="8dc-rt-eF9"/>
+                            <constraint firstItem="Bec-6e-jO9" firstAttribute="trailing" secondItem="ByL-0f-usS" secondAttribute="trailing" constant="20" id="BJH-aa-gwm"/>
+                            <constraint firstItem="Bec-6e-jO9" firstAttribute="bottom" secondItem="GCo-Dr-Zz6" secondAttribute="bottom" constant="490" id="dlL-M9-OsQ"/>
+                            <constraint firstItem="Bec-6e-jO9" firstAttribute="trailing" secondItem="GCo-Dr-Zz6" secondAttribute="trailing" constant="20" id="ipJ-rb-FEf"/>
+                            <constraint firstItem="ByL-0f-usS" firstAttribute="leading" secondItem="Bec-6e-jO9" secondAttribute="leading" constant="20" id="iwK-Ju-bTf"/>
+                            <constraint firstItem="GCo-Dr-Zz6" firstAttribute="leading" secondItem="Bec-6e-jO9" secondAttribute="leading" constant="20" id="vUV-MZ-wHP"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5Dk-QQ-9BG"/>
                 </viewController>

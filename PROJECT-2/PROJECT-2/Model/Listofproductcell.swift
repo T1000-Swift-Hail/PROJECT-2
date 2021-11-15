@@ -36,10 +36,10 @@ class Listofproductcell: UITableViewCell {
         sizeClothing.setTitle(SizeTypes.s.rawValue, forSegmentAt: 3)
         sizeClothing.setTitle(SizeTypes.other.rawValue, forSegmentAt: 4)
         
-        colorClothing.setTitle(ColorType.black.rawValue.localization, forSegmentAt: 0)
-        colorClothing.setTitle(ColorType.yellow.rawValue.localization, forSegmentAt: 1)
-        colorClothing.setTitle(ColorType.white.rawValue.localization, forSegmentAt: 2)
-        colorClothing.setTitle(ColorType.blue.rawValue.localization, forSegmentAt: 3)
+        colorClothing.setTitle(ColorType.black.rawValue.localization,forSegmentAt: 0)
+        colorClothing.setTitle(ColorType.yellow.rawValue.localization,forSegmentAt: 1)
+        colorClothing.setTitle(ColorType.white.rawValue.localization,forSegmentAt: 2)
+        colorClothing.setTitle(ColorType.blue.rawValue.localization,forSegmentAt: 3)
         colorClothing.setTitle(ColorType.other.rawValue.localization, forSegmentAt: 4)
         
         // Initialization code
@@ -49,19 +49,19 @@ class Listofproductcell: UITableViewCell {
         myShoppingCart.products.append(prodcut)
     }
     @IBAction func changeColorProduct(_ sender: UISegmentedControl) {
-        guard let title = sender.titleForSegment(at: sender.selectedSegmentIndex) else { return }
+        //guard let title = sender.titleForSegment(at: sender.selectedSegmentIndex) else { return }
         
-        switch title {
-        case ColorType.black.rawValue.localization:
+        switch sender.selectedSegmentIndex {
+        case 0:
             productImage.image = UIImage(named: prodcutImageColors[0])
             prodcut.productColor = .black
-        case ColorType.yellow.rawValue:
+        case 1:
             productImage.image = UIImage(named: prodcutImageColors[1])
             prodcut.productColor = .yellow
-        case ColorType.white.rawValue:
+        case 2:
             productImage.image = UIImage(named: prodcutImageColors[2])
             prodcut.productColor = .white
-        case ColorType.blue.rawValue:
+        case 3:
             productImage.image = UIImage(named: prodcutImageColors[3])
             prodcut.productColor = .blue
         default:

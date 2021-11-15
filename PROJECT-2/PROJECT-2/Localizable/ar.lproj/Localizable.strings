@@ -11,14 +11,12 @@
 "Please Try Again!" = "حاول مرة اخرى";
 "price: " = "سعر: ";
 "price: \(priceClothings) SAR" = "السعر\(سعر الملابس )ريال سعودي";
-
 "quantity: " = "الكمية: ";
-//"quantity:\(quantityProducts)
  "pieces available" = "الكمة المتبقية";
-"shoes" = "حذاء";
-"T-shirt" = "تيشرت";
   "تسجيل المستخدم جديد بنجاح!" = "";
 "T-shirt" = "تيشيرت";
+"pants" = "بنطلون";
+"shoes" = "حذاء";
 "Black" = "أسود";
 "Yellow" = "أصفر";
 "Blue" = "أزرق";
