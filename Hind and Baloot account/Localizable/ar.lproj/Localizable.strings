@@ -1,0 +1,41 @@
+/* 
+  Localizable.strings
+  Hind and Baloot account
+
+  Created by mac on 09/04/1443 AH.
+  
+*/
+
+
+"The application will be restarted" = "سوف يتم أعادة تشغيل التطبيق ";
+
+"Choose your preferred language "= "أختر لغتك المفضلة";
+
+
+
+
+
+//الترجمات الخاصه بالهند
+
+"Register" = "تسجيل";
+"Register the game type" = "اختر نوع التسجيله";
+"Pure" = "خالص";
+"Hind" = "هْند";
+"Joker" = "جوكر";
+"Color" = "لون";
+"Joker and Color" ="جوكر و لون";
+"Zat"="زات";
+"Jokren" ="جوكرين";
+"Jokren and Color" ="جوكرين و لون";
+"Jokren and Zat" ="جوكرين و زات";
+"Cancel" ="أنهاء";
+
+//الترجمات الخاصة بالبلوت
+
+"Us Winner" ="لهم الفوز";
+"Theirs Winner" ="لنا الفوز";
+
+
+"Einglish"="عربي";
+="";
+

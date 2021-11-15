@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042CBBBA274144D400EC1D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CBBB9274144D400EC1D09 /* AppDelegate.swift */; };
+		042CBBBC274144D400EC1D09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CBBBB274144D400EC1D09 /* SceneDelegate.swift */; };
+		042CBBBE274144D400EC1D09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CBBBD274144D400EC1D09 /* ViewController.swift */; };
+		042CBBC1274144D400EC1D09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042CBBBF274144D400EC1D09 /* Main.storyboard */; };
+		042CBBC3274144DC00EC1D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042CBBC2274144DC00EC1D09 /* Assets.xcassets */; };
+		042CBBC6274144DC00EC1D09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042CBBC4274144DC00EC1D09 /* LaunchScreen.storyboard */; };
+		042CBBD1274144DC00EC1D09 /* Hind_and_Baloot_accountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CBBD0274144DC00EC1D09 /* Hind_and_Baloot_accountTests.swift */; };
+		042CBBDB274144DD00EC1D09 /* Hind_and_Baloot_accountUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CBBDA274144DD00EC1D09 /* Hind_and_Baloot_accountUITests.swift */; };
+		042CBBDD274144DD00EC1D09 /* Hind_and_Baloot_accountUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CBBDC274144DD00EC1D09 /* Hind_and_Baloot_accountUITestsLaunchTests.swift */; };
+		042CBBF52741464300EC1D09 /* HindRigtFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CBBEB2741464300EC1D09 /* HindRigtFunc.swift */; };
+		042CBBF62741464300EC1D09 /* HindLeftFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CBBEC2741464300EC1D09 /* HindLeftFunc.swift */; };
+		042CBBF72741464300EC1D09 /* HindViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CBBED2741464300EC1D09 /* HindViewController+Ex.swift */; };
+		042CBBF82741464300EC1D09 /* HindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CBBEE2741464300EC1D09 /* HindViewController.swift */; };
+		042CBBF92741464300EC1D09 /* Backgame+Playagain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CBBF02741464300EC1D09 /* Backgame+Playagain.swift */; };
+		042CBBFA2741464300EC1D09 /* UIImageArrow direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CBBF12741464300EC1D09 /* UIImageArrow direction.swift */; };
+		042CBBFB2741464300EC1D09 /* UsRightFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CBBF22741464300EC1D09 /* UsRightFunc.swift */; };
+		042CBBFC2741464300EC1D09 /* ThirsLeftFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CBBF32741464300EC1D09 /* ThirsLeftFunc.swift */; };
+		042CBBFD2741464300EC1D09 /* BalootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CBBF42741464300EC1D09 /* BalootViewController.swift */; };
+		042CBC01274148C200EC1D09 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 042CBC03274148C200EC1D09 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		042CBBCD274144DC00EC1D09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 042CBBAE274144D400EC1D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 042CBBB5274144D400EC1D09;
+			remoteInfo = "Hind and Baloot account";
+		};
+		042CBBD7274144DC00EC1D09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 042CBBAE274144D400EC1D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 042CBBB5274144D400EC1D09;
+			remoteInfo = "Hind and Baloot account";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		042CBBB6274144D400EC1D09 /* Hind and Baloot account.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hind and Baloot account.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		042CBBB9274144D400EC1D09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		042CBBBB274144D400EC1D09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		042CBBBD274144D400EC1D09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		042CBBC0274144D400EC1D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		042CBBC2274144DC00EC1D09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		042CBBC5274144DC00EC1D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		042CBBC7274144DC00EC1D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042CBBCC274144DC00EC1D09 /* Hind and Baloot accountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hind and Baloot accountTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		042CBBD0274144DC00EC1D09 /* Hind_and_Baloot_accountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hind_and_Baloot_accountTests.swift; sourceTree = "<group>"; };
+		042CBBD6274144DC00EC1D09 /* Hind and Baloot accountUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hind and Baloot accountUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		042CBBDA274144DD00EC1D09 /* Hind_and_Baloot_accountUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hind_and_Baloot_accountUITests.swift; sourceTree = "<group>"; };
+		042CBBDC274144DD00EC1D09 /* Hind_and_Baloot_accountUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hind_and_Baloot_accountUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		042CBBEB2741464300EC1D09 /* HindRigtFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HindRigtFunc.swift; sourceTree = "<group>"; };
+		042CBBEC2741464300EC1D09 /* HindLeftFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HindLeftFunc.swift; sourceTree = "<group>"; };
+		042CBBED2741464300EC1D09 /* HindViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HindViewController+Ex.swift"; sourceTree = "<group>"; };
+		042CBBEE2741464300EC1D09 /* HindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HindViewController.swift; sourceTree = "<group>"; };
+		042CBBF02741464300EC1D09 /* Backgame+Playagain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Backgame+Playagain.swift"; sourceTree = "<group>"; };
+		042CBBF12741464300EC1D09 /* UIImageArrow direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageArrow direction.swift"; sourceTree = "<group>"; };
+		042CBBF22741464300EC1D09 /* UsRightFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsRightFunc.swift; sourceTree = "<group>"; };
+		042CBBF32741464300EC1D09 /* ThirsLeftFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirsLeftFunc.swift; sourceTree = "<group>"; };
+		042CBBF42741464300EC1D09 /* BalootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalootViewController.swift; sourceTree = "<group>"; };
+		042CBC02274148C200EC1D09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		042CBC04274148EF00EC1D09 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		042CBC05274148EF00EC1D09 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		042CBC06274148F000EC1D09 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		042CBBB3274144D400EC1D09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042CBBC9274144DC00EC1D09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042CBBD3274144DC00EC1D09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		042CBBAD274144D400EC1D09 = {
+			isa = PBXGroup;
+			children = (
+				042CBBBF274144D400EC1D09 /* Main.storyboard */,
+				042CBBC4274144DC00EC1D09 /* LaunchScreen.storyboard */,
+				048524262741628400086548 /* The main facade */,
+				042CBBB8274144D400EC1D09 /* Hind and Baloot account */,
+				042CBBE92741464300EC1D09 /* Controllers */,
+				042CBC0727414E3A00EC1D09 /* Localizable */,
+				042CBBCF274144DC00EC1D09 /* Hind and Baloot accountTests */,
+				042CBBD9274144DC00EC1D09 /* Hind and Baloot accountUITests */,
+				042CBBB7274144D400EC1D09 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		042CBBB7274144D400EC1D09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				042CBBB6274144D400EC1D09 /* Hind and Baloot account.app */,
+				042CBBCC274144DC00EC1D09 /* Hind and Baloot accountTests.xctest */,
+				042CBBD6274144DC00EC1D09 /* Hind and Baloot accountUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		042CBBB8274144D400EC1D09 /* Hind and Baloot account */ = {
+			isa = PBXGroup;
+			children = (
+				042CBBB9274144D400EC1D09 /* AppDelegate.swift */,
+				042CBBBB274144D400EC1D09 /* SceneDelegate.swift */,
+				042CBBC2274144DC00EC1D09 /* Assets.xcassets */,
+				042CBBC7274144DC00EC1D09 /* Info.plist */,
+			);
+			path = "Hind and Baloot account";
+			sourceTree = "<group>";
+		};
+		042CBBCF274144DC00EC1D09 /* Hind and Baloot accountTests */ = {
+			isa = PBXGroup;
+			children = (
+				042CBBD0274144DC00EC1D09 /* Hind_and_Baloot_accountTests.swift */,
+			);
+			path = "Hind and Baloot accountTests";
+			sourceTree = "<group>";
+		};
+		042CBBD9274144DC00EC1D09 /* Hind and Baloot accountUITests */ = {
+			isa = PBXGroup;
+			children = (
+				042CBBDA274144DD00EC1D09 /* Hind_and_Baloot_accountUITests.swift */,
+				042CBBDC274144DD00EC1D09 /* Hind_and_Baloot_accountUITestsLaunchTests.swift */,
+			);
+			path = "Hind and Baloot accountUITests";
+			sourceTree = "<group>";
+		};
+		042CBBE92741464300EC1D09 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				042CBBEA2741464300EC1D09 /* Hind */,
+				042CBBEF2741464300EC1D09 /* Baloot */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		042CBBEA2741464300EC1D09 /* Hind */ = {
+			isa = PBXGroup;
+			children = (
+				042CBBEB2741464300EC1D09 /* HindRigtFunc.swift */,
+				042CBBEC2741464300EC1D09 /* HindLeftFunc.swift */,
+				042CBBED2741464300EC1D09 /* HindViewController+Ex.swift */,
+				042CBBEE2741464300EC1D09 /* HindViewController.swift */,
+			);
+			path = Hind;
+			sourceTree = "<group>";
+		};
+		042CBBEF2741464300EC1D09 /* Baloot */ = {
+			isa = PBXGroup;
+			children = (
+				042CBBF02741464300EC1D09 /* Backgame+Playagain.swift */,
+				042CBBF12741464300EC1D09 /* UIImageArrow direction.swift */,
+				042CBBF22741464300EC1D09 /* UsRightFunc.swift */,
+				042CBBF32741464300EC1D09 /* ThirsLeftFunc.swift */,
+				042CBBF42741464300EC1D09 /* BalootViewController.swift */,
+			);
+			path = Baloot;
+			sourceTree = "<group>";
+		};
+		042CBC0727414E3A00EC1D09 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				042CBC03274148C200EC1D09 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		048524262741628400086548 /* The main facade */ = {
+			isa = PBXGroup;
+			children = (
+				042CBBBD274144D400EC1D09 /* ViewController.swift */,
+			);
+			path = "The main facade";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		042CBBB5274144D400EC1D09 /* Hind and Baloot account */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042CBBE0274144DD00EC1D09 /* Build configuration list for PBXNativeTarget "Hind and Baloot account" */;
+			buildPhases = (
+				042CBBB2274144D400EC1D09 /* Sources */,
+				042CBBB3274144D400EC1D09 /* Frameworks */,
+				042CBBB4274144D400EC1D09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hind and Baloot account";
+			productName = "Hind and Baloot account";
+			productReference = 042CBBB6274144D400EC1D09 /* Hind and Baloot account.app */;
+			productType = "com.apple.product-type.application";
+		};
+		042CBBCB274144DC00EC1D09 /* Hind and Baloot accountTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042CBBE3274144DD00EC1D09 /* Build configuration list for PBXNativeTarget "Hind and Baloot accountTests" */;
+			buildPhases = (
+				042CBBC8274144DC00EC1D09 /* Sources */,
+				042CBBC9274144DC00EC1D09 /* Frameworks */,
+				042CBBCA274144DC00EC1D09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				042CBBCE274144DC00EC1D09 /* PBXTargetDependency */,
+			);
+			name = "Hind and Baloot accountTests";
+			productName = "Hind and Baloot accountTests";
+			productReference = 042CBBCC274144DC00EC1D09 /* Hind and Baloot accountTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		042CBBD5274144DC00EC1D09 /* Hind and Baloot accountUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042CBBE6274144DD00EC1D09 /* Build configuration list for PBXNativeTarget "Hind and Baloot accountUITests" */;
+			buildPhases = (
+				042CBBD2274144DC00EC1D09 /* Sources */,
+				042CBBD3274144DC00EC1D09 /* Frameworks */,
+				042CBBD4274144DC00EC1D09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				042CBBD8274144DC00EC1D09 /* PBXTargetDependency */,
+			);
+			name = "Hind and Baloot accountUITests";
+			productName = "Hind and Baloot accountUITests";
+			productReference = 042CBBD6274144DC00EC1D09 /* Hind and Baloot accountUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		042CBBAE274144D400EC1D09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					042CBBB5274144D400EC1D09 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					042CBBCB274144DC00EC1D09 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 042CBBB5274144D400EC1D09;
+					};
+					042CBBD5274144DC00EC1D09 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 042CBBB5274144D400EC1D09;
+					};
+				};
+			};
+			buildConfigurationList = 042CBBB1274144D400EC1D09 /* Build configuration list for PBXProject "Hind and Baloot account" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+			);
+			mainGroup = 042CBBAD274144D400EC1D09;
+			productRefGroup = 042CBBB7274144D400EC1D09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				042CBBB5274144D400EC1D09 /* Hind and Baloot account */,
+				042CBBCB274144DC00EC1D09 /* Hind and Baloot accountTests */,
+				042CBBD5274144DC00EC1D09 /* Hind and Baloot accountUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		042CBBB4274144D400EC1D09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042CBBC6274144DC00EC1D09 /* LaunchScreen.storyboard in Resources */,
+				042CBC01274148C200EC1D09 /* Localizable.strings in Resources */,
+				042CBBC3274144DC00EC1D09 /* Assets.xcassets in Resources */,
+				042CBBC1274144D400EC1D09 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042CBBCA274144DC00EC1D09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042CBBD4274144DC00EC1D09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		042CBBB2274144D400EC1D09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042CBBF72741464300EC1D09 /* HindViewController+Ex.swift in Sources */,
+				042CBBF82741464300EC1D09 /* HindViewController.swift in Sources */,
+				042CBBFB2741464300EC1D09 /* UsRightFunc.swift in Sources */,
+				042CBBFC2741464300EC1D09 /* ThirsLeftFunc.swift in Sources */,
+				042CBBBE274144D400EC1D09 /* ViewController.swift in Sources */,
+				042CBBF62741464300EC1D09 /* HindLeftFunc.swift in Sources */,
+				042CBBFA2741464300EC1D09 /* UIImageArrow direction.swift in Sources */,
+				042CBBBA274144D400EC1D09 /* AppDelegate.swift in Sources */,
+				042CBBF52741464300EC1D09 /* HindRigtFunc.swift in Sources */,
+				042CBBFD2741464300EC1D09 /* BalootViewController.swift in Sources */,
+				042CBBBC274144D400EC1D09 /* SceneDelegate.swift in Sources */,
+				042CBBF92741464300EC1D09 /* Backgame+Playagain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042CBBC8274144DC00EC1D09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042CBBD1274144DC00EC1D09 /* Hind_and_Baloot_accountTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042CBBD2274144DC00EC1D09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042CBBDD274144DD00EC1D09 /* Hind_and_Baloot_accountUITestsLaunchTests.swift in Sources */,
+				042CBBDB274144DD00EC1D09 /* Hind_and_Baloot_accountUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		042CBBCE274144DC00EC1D09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 042CBBB5274144D400EC1D09 /* Hind and Baloot account */;
+			targetProxy = 042CBBCD274144DC00EC1D09 /* PBXContainerItemProxy */;
+		};
+		042CBBD8274144DC00EC1D09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 042CBBB5274144D400EC1D09 /* Hind and Baloot account */;
+			targetProxy = 042CBBD7274144DC00EC1D09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		042CBBBF274144D400EC1D09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				042CBBC0274144D400EC1D09 /* Base */,
+				042CBC04274148EF00EC1D09 /* ar */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		042CBBC4274144DC00EC1D09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				042CBBC5274144DC00EC1D09 /* Base */,
+				042CBC05274148EF00EC1D09 /* ar */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		042CBC03274148C200EC1D09 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				042CBC02274148C200EC1D09 /* en */,
+				042CBC06274148F000EC1D09 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		042CBBDE274144DD00EC1D09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		042CBBDF274144DD00EC1D09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		042CBBE1274144DD00EC1D09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hind and Baloot account/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Hind and Baloot";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sultan.Hind-and-Baloot-account";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		042CBBE2274144DD00EC1D09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hind and Baloot account/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Hind and Baloot";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sultan.Hind-and-Baloot-account";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		042CBBE4274144DD00EC1D09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sultan.Hind-and-Baloot-accountTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hind and Baloot account.app/Hind and Baloot account";
+			};
+			name = Debug;
+		};
+		042CBBE5274144DD00EC1D09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sultan.Hind-and-Baloot-accountTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hind and Baloot account.app/Hind and Baloot account";
+			};
+			name = Release;
+		};
+		042CBBE7274144DD00EC1D09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sultan.Hind-and-Baloot-accountUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hind and Baloot account";
+			};
+			name = Debug;
+		};
+		042CBBE8274144DD00EC1D09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sultan.Hind-and-Baloot-accountUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hind and Baloot account";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		042CBBB1274144D400EC1D09 /* Build configuration list for PBXProject "Hind and Baloot account" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042CBBDE274144DD00EC1D09 /* Debug */,
+				042CBBDF274144DD00EC1D09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042CBBE0274144DD00EC1D09 /* Build configuration list for PBXNativeTarget "Hind and Baloot account" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042CBBE1274144DD00EC1D09 /* Debug */,
+				042CBBE2274144DD00EC1D09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042CBBE3274144DD00EC1D09 /* Build configuration list for PBXNativeTarget "Hind and Baloot accountTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042CBBE4274144DD00EC1D09 /* Debug */,
+				042CBBE5274144DD00EC1D09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042CBBE6274144DD00EC1D09 /* Build configuration list for PBXNativeTarget "Hind and Baloot accountUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042CBBE7274144DD00EC1D09 /* Debug */,
+				042CBBE8274144DD00EC1D09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 042CBBAE274144D400EC1D09 /* Project object */;
+}

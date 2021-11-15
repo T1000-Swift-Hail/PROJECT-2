@@ -1,0 +1,98 @@
+/* Class = "UILabel"; text = "Game number"; ObjectID = "0Dt-7o-nEv"; */
+"0Dt-7o-nEv.text" = " اللعبة";
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "0HR-WB-C36"; */
+"0HR-WB-C36.text" = "المجموع";
+
+/* Class = "UIButton"; configuration.title = "Hind"; ObjectID = "82W-9E-ABA"; */
+"82W-9E-ABA.configuration.title" = "هْند";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "82W-9E-ABA"; */
+"82W-9E-ABA.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8ow-te-bUO"; */
+"8ow-te-bUO.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "DHZ-Ko-v83"; */
+"DHZ-Ko-v83.text" = "المجموع";
+
+/* Class = "UIButton"; configuration.title = "Hind Cuff"; ObjectID = "IL9-Ka-ljd"; */
+"IL9-Ka-ljd.configuration.title" = "قيد الهْند";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "IL9-Ka-ljd"; */
+"IL9-Ka-ljd.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Us"; ObjectID = "J7m-UH-IUI"; */
+"J7m-UH-IUI.text" = "لهم";
+
+/* Class = "UILabel"; text = "Us"; ObjectID = "JVU-fe-ejz"; */
+"JVU-fe-ejz.text" = "لنا";
+
+/* Class = "UITextField"; placeholder = "0"; ObjectID = "KEM-TL-KO4"; */
+"KEM-TL-KO4.placeholder" = "0";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Nop-dp-0PS"; */
+"Nop-dp-0PS.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Add"; ObjectID = "O0f-gf-Ckh"; */
+"O0f-gf-Ckh.configuration.title" = "أجمع";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "O0f-gf-Ckh"; */
+"O0f-gf-Ckh.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "*For suggestions and problems  you can communitcate via the Twitter platform."; ObjectID = "QPl-ur-Tnh"; */
+"QPl-ur-Tnh.configuration.title" = "*للاقتراحات و المشاكل يمكنكم التواصل معنا عبر منصة التويتر";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "QPl-ur-Tnh"; */
+"QPl-ur-Tnh.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Play Again"; ObjectID = "R1f-sd-Fkj"; */
+"R1f-sd-Fkj.configuration.title" = "تجديد الصكة";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "R1f-sd-Fkj"; */
+"R1f-sd-Fkj.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Theirs"; ObjectID = "Vbt-6g-Pp6"; */
+"Vbt-6g-Pp6.text" = "لنا";
+
+/* Class = "UIButton"; configuration.title = "Baloot Cuff"; ObjectID = "W0B-Q5-yPL"; */
+"W0B-Q5-yPL.configuration.title" = "قيد البلوت";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "W0B-Q5-yPL"; */
+"W0B-Q5-yPL.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Write the number in the opponent'sb hand"; ObjectID = "aMd-KY-t6X"; */
+"aMd-KY-t6X.text" = "اكتب العدد الذي بيد الخصم";
+
+/* Class = "UIButton"; configuration.title = "Replay the game"; ObjectID = "hGn-9A-7yr"; */
+"hGn-9A-7yr.configuration.title" = "تجديد اللعبة";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hGn-9A-7yr"; */
+"hGn-9A-7yr.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Theire"; ObjectID = "hPf-Yf-sdb"; */
+"hPf-Yf-sdb.text" = "لهم";
+
+/* Class = "UILabel"; text = "Difference"; ObjectID = "ie7-W5-NjY"; */
+"ie7-W5-NjY.text" = "الفرق";
+
+/* Class = "UITextField"; placeholder = "0"; ObjectID = "oP2-F1-Zxl"; */
+"oP2-F1-Zxl.placeholder" = "0";
+
+/* Class = "UITextField"; placeholder = "How much  down"; ObjectID = "rhG-Da-B8w"; */
+"rhG-Da-B8w.placeholder" = "كم بيدك";
+
+/* Class = "UIButton"; configuration.title = "Back"; ObjectID = "slI-NX-bhw"; */
+"slI-NX-bhw.configuration.title" = "الرجوع";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "slI-NX-bhw"; */
+"slI-NX-bhw.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Calculator"; ObjectID = "yJP-IK-Tss"; */
+"yJP-IK-Tss.text" = "حدد نوع القيد";
+
+/* Class = "UIButton"; configuration.title = "Hind"; ObjectID = "yY7-T1-gYa"; */
+"yY7-T1-gYa.configuration.title" = "هْند";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "yY7-T1-gYa"; */
+"yY7-T1-gYa.normalTitle" = "Button";
