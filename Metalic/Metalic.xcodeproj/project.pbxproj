@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		D84D420E2741A2A6008789E1 /* secondcalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84D420D2741A2A6008789E1 /* secondcalculatorViewController.swift */; };
 		D84D42102741A2B8008789E1 /* ForBottunCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84D420F2741A2B8008789E1 /* ForBottunCalculator.swift */; };
-		D84D42142741A320008789E1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D84D42132741A320008789E1 /* Localizable.strings */; };
 		D84D42202741A77B008789E1 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84D421F2741A77B008789E1 /* Registration.swift */; };
+		D84D42222742316E008789E1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D84D42242742316E008789E1 /* Localizable.strings */; };
 		D8507FA82740479E00AAF78D /* LogOutAndProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507FA72740479E00AAF78D /* LogOutAndProfile.swift */; };
 		D8507FB72740776300AAF78D /* FirstCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507FB62740776300AAF78D /* FirstCalculatorViewController.swift */; };
 		D8AA8BAD2737E5A600D40045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA8BAC2737E5A600D40045 /* AppDelegate.swift */; };
@@ -29,17 +29,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D84D42082741A134008789E1 /* Metalic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Metalic.app; path = "/Users/anashamad/Desktop/T1000/PROJECT-2/Metalic/build/Debug-iphoneos/Metalic.app"; sourceTree = "<absolute>"; };
 		D84D420D2741A2A6008789E1 /* secondcalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondcalculatorViewController.swift; sourceTree = "<group>"; };
 		D84D420F2741A2B8008789E1 /* ForBottunCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForBottunCalculator.swift; sourceTree = "<group>"; };
-		D84D42132741A320008789E1 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Metalic/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		D84D42172741A68A008789E1 /* ar-IQ */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-IQ"; path = "ar-IQ.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D84D42192741A69E008789E1 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D84D421A2741A69E008789E1 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
-		D84D421B2741A6B3008789E1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D84D421D2741A6FF008789E1 /* ar-IQ */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "ar-IQ"; path = "ar-IQ.lproj/Main.storyboard"; sourceTree = "<group>"; };
-		D84D421E2741A6FF008789E1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D84D421F2741A77B008789E1 /* Registration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		D84D422127422F88008789E1 /* Metalic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metalic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84D42232742316E008789E1 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D84D42252742317D008789E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D8507FA72740479E00AAF78D /* LogOutAndProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutAndProfile.swift; sourceTree = "<group>"; };
 		D8507FB62740776300AAF78D /* FirstCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCalculatorViewController.swift; sourceTree = "<group>"; };
 		D8AA8BAC2737E5A600D40045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,16 +68,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D872F7532742323800BCF451 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
 		D8AA8BA02737E5A600D40045 = {
 			isa = PBXGroup;
 			children = (
 				D8AA8BAB2737E5A600D40045 /* Metalic */,
+				D84D422127422F88008789E1 /* Metalic.app */,
 			);
 			sourceTree = "<group>";
 		};
 		D8AA8BAB2737E5A600D40045 /* Metalic */ = {
 			isa = PBXGroup;
 			children = (
+				D872F7532742323800BCF451 /* Calculator */,
 				D8E14B12273BAAAC0098A6FD /* Fonts */,
 				D8AA8BCD2739074000D40045 /* LoginRegister */,
 				D8AA8BAC2737E5A600D40045 /* AppDelegate.swift */,
@@ -93,7 +101,7 @@
 				D8E14B10273AB33B0098A6FD /* DifinationView.swift */,
 				D8AA8BB52737E5A800D40045 /* Assets.xcassets */,
 				D8AA8BB22737E5A600D40045 /* Main.storyboard */,
-				D84D42132741A320008789E1 /* Localizable.strings */,
+				D84D42242742316E008789E1 /* Localizable.strings */,
 			);
 			path = Metalic;
 			sourceTree = "<group>";
@@ -136,7 +144,7 @@
 			);
 			name = Metalic;
 			productName = Metalic;
-			productReference = D84D42082741A134008789E1 /* Metalic.app */;
+			productReference = D84D422127422F88008789E1 /* Metalic.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +171,6 @@
 				Base,
 				"ar-IQ",
 				ar,
-				ja,
 			);
 			mainGroup = D8AA8BA02737E5A600D40045;
 			productRefGroup = D8AA8BA02737E5A600D40045;
@@ -185,7 +192,7 @@
 				D8E14B19273BAADB0098A6FD /* CaviarDreams.ttf in Resources */,
 				D8AA8BB42737E5A600D40045 /* Main.storyboard in Resources */,
 				D8E14B1A273BAADB0098A6FD /* CaviarDreams_Italic.ttf in Resources */,
-				D84D42142741A320008789E1 /* Localizable.strings in Resources */,
+				D84D42222742316E008789E1 /* Localizable.strings in Resources */,
 				D8E14B18273BAADB0098A6FD /* CaviarDreams_BoldItalic.ttf in Resources */,
 				D8E14B17273BAADB0098A6FD /* CaviarDreams_Bold.ttf in Resources */,
 			);
@@ -215,13 +222,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		D84D42242742316E008789E1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D84D42232742316E008789E1 /* ar */,
+				D84D42252742317D008789E1 /* en */,
+			);
+			name = Localizable.strings;
+			path = Metalic;
+			sourceTree = SOURCE_ROOT;
+		};
 		D8AA8BB22737E5A600D40045 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D8AA8BB32737E5A600D40045 /* Base */,
 				D84D421A2741A69E008789E1 /* ar */,
 				D84D421D2741A6FF008789E1 /* ar-IQ */,
-				D84D421E2741A6FF008789E1 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -232,7 +248,6 @@
 				D8AA8BB82737E5A800D40045 /* Base */,
 				D84D42172741A68A008789E1 /* ar-IQ */,
 				D84D42192741A69E008789E1 /* ar */,
-				D84D421B2741A6B3008789E1 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
